@@ -14,6 +14,22 @@ Eli and Katrina both work on it:
   other person's edits.
 - `cavaier-bfcm26-sequence.html` here is a backup snapshot of the master, not the source.
 
+## Live bar (who's on the page, what Claude is doing)
+
+The top of the master page shows who has it open right now and which email each person is
+looking at, what Claude is doing, and an activity log (the **Activity** button). People can
+post "I'm working on…", "Waiting for Claude…" or a note there.
+
+**Any Claude session that edits the master must post to it** (page database, via `ArtifactData`):
+
+1. Before starting: set `live/claude` to `{state: "working", task: "<short task>", at: <epoch ms>, label: "<Eli's|Katrina's> Claude"}`
+   and add an `activity` doc `{at, actor: "claude", label, kind: "start", text}`.
+2. After publishing: set `live/claude` to `{state: "idle", task: "<what changed>", at, label}`
+   and add an `activity` doc with `kind: "done"`.
+
+Republishing the page must keep its capabilities (`room`, `user` with the `profile` scope, `db`):
+omit `capabilities` on a redeploy so they carry over.
+
 `archive/` holds the first generator scripts (v1–v7). They are out of date: the master has
 moved on since, so don't rebuild from them. `figimg/` and `imgcache26*/` are the source photos.
 
