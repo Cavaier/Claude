@@ -1,0 +1,347 @@
+<title>Cavaier BFCM Emails</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&family=Figtree:wght@300;400;500&family=Inter:wght@300;400&display=swap">
+<style>
+/* Layout: review canvas with a tab rail; one 600px email shown at a time, each built from the Cavaier brand sheet (Inter display, Figtree body, Bodoni wordmark, black/fog) */
+:root{
+  --canvas:#E9E9E7; --canvas-fg:#1A1A1A; --canvas-muted:#6E6E6B; --canvas-line:#D2D2CF; --canvas-card:#F6F6F4;
+  --black:#0B0B0B; --white:#FFFFFF; --fog:#F2F2F1; --fog2:#E6E6E4; --grey:#8B8B88; --line:#DCDCDA; --ink2:#3A3A38;
+  --wm:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --disp:"Inter","Helvetica Neue",Arial,sans-serif;
+  --body:"Figtree","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--canvas:#121212;--canvas-fg:#EDEDEB;--canvas-muted:#9A9A97;--canvas-line:#2C2C2B;--canvas-card:#1B1B1A;color-scheme:dark}}
+:root[data-theme="dark"]{--canvas:#121212;--canvas-fg:#EDEDEB;--canvas-muted:#9A9A97;--canvas-line:#2C2C2B;--canvas-card:#1B1B1A;color-scheme:dark}
+
+body{background:var(--canvas);color:var(--canvas-fg);font-family:var(--body);padding-inline:16px;padding-block:32px 72px}
+.wrap{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.top h1{margin:0;font:400 22px/1.2 var(--disp);letter-spacing:-.01em}
+.top p{margin:6px 0 0;font-size:13px;line-height:1.55;color:var(--canvas-muted)}
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.tab{appearance:none;border:1px solid var(--canvas-line);background:var(--canvas-card);color:var(--canvas-fg);padding:10px 8px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:3px;font-family:var(--body);min-width:0}
+.tab b{font:500 10px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--canvas-muted)}
+.tab span{font-size:13px;line-height:1.25}
+.tab[aria-selected="true"]{background:var(--canvas-fg);color:var(--canvas);border-color:var(--canvas-fg)}
+.tab[aria-selected="true"] b{color:inherit;opacity:.7}
+.tab:focus-visible{outline:2px solid var(--canvas-muted);outline-offset:2px}
+.meta{background:var(--canvas-card);border:1px solid var(--canvas-line);padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px;line-height:1.45}
+.meta dt{font:500 10px/1.9 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--canvas-muted)}
+.meta dd{margin:0;min-width:0}
+.notes{font-size:12.5px;line-height:1.6;color:var(--canvas-muted)}
+.notes ul{margin:6px 0 0;padding-left:18px}
+@media (max-width:520px){.tabs{grid-template-columns:repeat(3,1fr)}}
+
+/* ============ email system (fixed look, as sent) ============ */
+.em{background:var(--white);color:var(--black);box-shadow:0 30px 80px -45px rgba(0,0,0,.55);overflow:hidden}
+.em *{box-sizing:border-box}
+.em img{display:block;width:100%;object-fit:cover}
+.em a{color:inherit}
+.pad{padding-inline:24px}
+.wm{font:400 22px/1 var(--wm);letter-spacing:.08em;text-transform:uppercase;margin:0}
+.lab{font:500 10px/1.5 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--grey)}
+.disp{font-family:var(--disp);font-weight:400;letter-spacing:-.025em;text-transform:uppercase;margin:0;line-height:.92}
+.lt{font-weight:300}
+.copy{font:300 14px/1.6 var(--body);margin:0}
+.small{font:300 12.5px/1.55 var(--body);margin:0}
+.ulink{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid currentColor;padding-bottom:8px;text-decoration:none;font:400 13px/1 var(--body)}
+.boxbtn{display:flex;justify-content:space-between;align-items:center;border:1px solid currentColor;padding:13px 16px;text-decoration:none;font:400 13px/1 var(--body);max-width:300px;margin-inline:auto;gap:20px}
+.boxbtn i{font-style:normal;font-size:16px;line-height:1}
+.solid{display:inline-block;background:var(--black);color:var(--white)!important;text-decoration:none;font:500 11px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;padding:16px 30px}
+.ph{background:repeating-linear-gradient(135deg,#E3E3E1 0 12px,#DADAD8 12px 24px);display:flex;align-items:flex-end;justify-content:flex-end;padding:12px;max-width:100%}
+.ph.dk{background:repeating-linear-gradient(135deg,#1E1E1E 0 12px,#252525 12px 24px)}
+.ph span{font:500 9.5px/1.45 var(--body);letter-spacing:.14em;text-transform:uppercase;background:var(--white);color:var(--black);padding:5px 8px}
+.ph.dk span{background:#0B0B0B;color:#BDBDBB;outline:1px solid #333}
+.price{display:flex;gap:8px;font:400 13px/1.3 var(--body);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price s{color:var(--grey)}
+.rule{height:1px;background:var(--line)}
+.foot{background:#F0F0F0;color:var(--black);padding:36px 30px 34px;display:flex;flex-direction:column;gap:10px}
+.foot .soc{display:flex;justify-content:center;align-items:center;margin-bottom:26px}
+.foot .soc a{display:flex;padding:0 34px;color:var(--black)}
+.foot .soc a+a{border-left:1px solid #D9D9D9}
+.foot .soc svg{width:17px;height:17px;display:block}
+.foot .fb{display:block;text-decoration:none;font:400 11.5px/1 var(--disp);letter-spacing:.02em;text-transform:uppercase;padding:13px 20px;border:1px solid #D9D9D9;background:var(--white);color:var(--black)}
+.foot .fb.on{background:#1C1C1C;border-color:#1C1C1C;color:var(--white);padding-block:13px}
+.foot .fwm{font:400 19px/1 var(--wm);letter-spacing:.04em;text-transform:uppercase;margin:24px 0 18px;color:var(--black)}
+.foot .copy2{font:400 10.5px/1.4 var(--disp);text-transform:uppercase;color:#777;margin:0}
+.foot .legal{display:flex;align-items:center;font:400 9px/1 var(--disp);text-transform:uppercase;color:#333;margin-top:4px}
+.foot .legal span+span{border-left:1px solid #777;margin-left:12px;padding-left:12px}
+
+/* ---- shared clean system (01, 02, 04) ---- */
+.mbar{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}
+.mbar .wm{font-size:16px}
+.mbar nav{display:flex;gap:18px;font:400 11.5px/1 var(--body);color:var(--ink2)}
+.mttl{padding:44px 24px 26px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.mttl h2{font:300 34px/1.05 var(--disp);letter-spacing:-.02em;margin:6px 0 0}
+.mttl .small{max-width:200px;color:var(--ink2);text-align:right}
+.mttl.c{flex-direction:column;align-items:center;text-align:center;gap:10px}
+.mttl.c .small{text-align:center;max-width:320px}
+.mhero{aspect-ratio:552/360;margin:0 24px}
+.mgo{padding:18px 24px 0;display:flex;justify-content:flex-end}
+.mgo .ulink{width:200px}
+.msh{display:flex;justify-content:space-between;align-items:baseline;margin:0 24px;padding-bottom:10px;border-bottom:1px solid currentColor}
+.msh h3{margin:0;font:300 18px/1 var(--disp);letter-spacing:.02em;text-transform:uppercase}
+.mcta{padding:52px 24px 56px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.mcard{display:flex;flex-direction:column;gap:6px;text-decoration:none}
+.mcard h4{margin:8px 0 0;font:400 13px/1.3 var(--body)}
+.mcard .small{color:var(--grey)}
+
+/* 01 early access: white, centred, spec rows */
+.e1 .spec{margin:30px 24px 0}
+.e1 .spec div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font:300 13px/1.4 var(--body)}
+.e1 .spec div:first-child{border-top:1px solid var(--line)}
+.e1 .spec span:first-child{color:var(--grey)}
+.e1 .three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px 24px 0}
+.e1 .three img{aspect-ratio:1/1;background:var(--fog)}
+.e1 .first{padding-top:56px}
+
+/* 02 black friday: fog, 2-col lifestyle grid */
+.e2{background:var(--fog)}
+.e2 .sel{padding-top:56px}
+.e2 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px 12px;padding:20px 24px 0}
+.e2 .grid2 img{aspect-ratio:3/4}
+.e2 .grid2 .mcard h4{display:flex;justify-content:space-between;gap:10px}
+.e2 .trust{margin:52px 24px 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+.e2 .trust b{font:300 22px/1 var(--disp)}
+
+/* 04 cyber monday: white, quiet grid + FAQ */
+.e4{background:var(--white)}
+.e4 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px 12px;padding:20px 24px 0}
+.e4 .grid2 img{aspect-ratio:3/4}
+.e4 .mcard h4{display:flex;justify-content:space-between;gap:10px}
+.e4 .wide{margin:52px 24px 0;width:calc(100% - 48px);aspect-ratio:552/300}
+.e4 .faq{padding-top:56px}
+.e4 .q{margin:0 24px;border-bottom:1px solid var(--line);padding:15px 0;display:flex;flex-direction:column;gap:10px}
+.e4 .q div{display:flex;justify-content:space-between;font:300 13px/1.3 var(--body)}
+.e4 .q p{color:var(--ink2)}
+
+/* ---- E3 gift edit (Victoria numbered layout) ---- */
+.e3{background:var(--fog)}
+.e3 .bar{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}
+.e3 .bar .wm{font-size:16px}
+.e3 .bar nav{display:flex;gap:18px;font:400 11.5px/1 var(--body);color:var(--ink2)}
+.e3 .ttl{padding:44px 24px 26px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.e3 .ttl h2{font:300 34px/1.05 var(--disp);letter-spacing:-.02em;margin:6px 0 0}
+.e3 .ttl .small{max-width:190px;color:var(--ink2);text-align:right}
+.e3 .hero{aspect-ratio:552/360;margin:0 24px}
+.e3 .go{padding:18px 24px 0;display:flex;justify-content:flex-end}
+.e3 .go .ulink{width:200px}
+.band{padding:52px 24px 56px;display:flex;justify-content:center}
+.e3 .sec{padding-top:52px}
+.e3 .sh{display:flex;justify-content:space-between;align-items:flex-end;margin:0 24px;padding-bottom:10px;border-bottom:1px solid var(--black)}
+.e3 .sh .disp{font-size:18px;font-weight:300;letter-spacing:.02em}
+.e3 .strip{margin:18px 24px 6px;width:calc(100% - 48px);aspect-ratio:552/190}
+.e3 .items{padding:0 24px}
+.e3 .it{display:grid;grid-template-columns:1fr auto;gap:4px 18px;padding:16px 0;border-bottom:1px solid var(--line)}
+.e3 .it h4{margin:0;font:500 13px/1.3 var(--body)}
+.e3 .it .small{grid-column:1;color:var(--ink2)}
+.e3 .it .price{grid-row:1/3;grid-column:2;align-self:end}
+.e3 .gifts{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:18px 24px 0}
+.e3 .gifts img{aspect-ratio:4/5;background:var(--white)}
+.e3 .gifts div{display:flex;flex-direction:column;gap:6px}
+.e3 .gifts h4{margin:8px 0 0;font:500 13px/1.3 var(--body)}
+
+/* ---- E5 last call ---- */
+.e5{background:var(--fog)}
+.e5 .bar{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}
+.e5 .bar .wm{font-size:16px}
+.e5 .bar nav{display:flex;gap:18px;font:400 11.5px/1 var(--body);color:var(--ink2)}
+.e5 .ttl{padding:44px 24px 26px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.e5 .ttl h2{font:300 34px/1.05 var(--disp);letter-spacing:-.02em;margin:6px 0 0}
+.e5 .ttl .small{max-width:190px;color:var(--ink2);text-align:right}
+.e5 .timer{display:flex;justify-content:space-between;align-items:baseline;margin:0 24px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.e5 .timer .t{display:flex;align-items:baseline;gap:22px}
+.e5 .timer b{font:300 22px/1 var(--disp);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.e5 .timer b small{font:500 9px/1 var(--body);letter-spacing:.18em;color:var(--grey);margin-left:5px}
+.e5 .hero{aspect-ratio:552/360;margin:26px 24px 0}
+.e5 .one{padding:52px 24px 20px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.e5 .one img{aspect-ratio:1/1;background:var(--white)}
+.e5 .one > div{display:flex;flex-direction:column;gap:12px}
+.e5 .one h3{margin:0;font:300 24px/1.1 var(--disp);letter-spacing:-.02em}
+.e5 .sw{display:flex;gap:6px;align-items:center}
+.e5 .sw i{width:12px;height:12px;border-radius:50%;display:block;border:1px solid var(--line)}
+.e5 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 24px 0}
+.e5 .pair img{aspect-ratio:3/4}
+.e5 .cta{padding:44px 24px 56px;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+
+@media (max-width:480px){
+  .e5 .one{grid-template-columns:1fr}
+  .mttl:not(.c){flex-direction:column;align-items:flex-start}.mttl:not(.c) .small{text-align:left}
+  .mbar nav{display:none}
+  .e1 .three{grid-template-columns:1fr 1fr}
+  .e3 .ttl{flex-direction:column;align-items:flex-start}.e3 .ttl .small{text-align:left}
+  .e3 .bar nav,.e5 .bar nav{display:none}
+  .e5 .ttl{flex-direction:column;align-items:flex-start}.e5 .ttl .small{text-align:left}
+}
+@media (prefers-reduced-motion:no-preference){.em{animation:in .35s ease both}@keyframes in{from{opacity:.4;transform:translateY(6px)}to{opacity:1;transform:none}}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Cavaier · Black Friday / Cyber Monday</h1>
+    <p>Five emails, 24 Nov to 1 Dec. Product photos, names and prices come from cavaier.com. Striped boxes are hero placeholders for new campaign shots.</p>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="Emails">
+    <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><b>01 · Tue 24</b><span>Early access</span></button>
+    <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false"><b>02 · Fri 27</b><span>Black Friday</span></button>
+    <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false"><b>03 · Sat 28</b><span>Gift edit</span></button>
+    <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false"><b>04 · Mon 30</b><span>Cyber Monday</span></button>
+    <button class="tab" role="tab" id="t5" aria-controls="p5" aria-selected="false"><b>05 · Tue 1</b><span>Last call</span></button>
+  </div>
+
+  <!-- ================= 01 EARLY ACCESS ================= -->
+  <section id="p1" role="tabpanel" aria-labelledby="t1" class="panel">
+    <dl class="meta"><dt>Subject</dt><dd>You're in early</dd><dt>Preheader</dt><dd>Black Friday opens for subscribers today. Up to 40% off.</dd><dt>Send</dt><dd>Tue 24 Nov, 09:00 CET · subscribers</dd></dl>
+    <article class="em e1" aria-label="Email 1">
+      <div class="mbar"><p class="wm">Cavaier</p><span class="lab" style="color:var(--black)">Early access</span></div>
+      <div class="mttl c"><span class="lab">Subscribers only · from 24 Nov</span><h2>Black Friday, early</h2><p class="small">Three days before everyone else. No code needed.</p></div>
+      <div class="ph mhero"><span>Hero · campaign shot · 552×360</span></div>
+      <div class="spec">
+        <div><span>Offer</span><span>Up to 40% off</span></div>
+        <div><span>With two pieces</span><span>Free jewelry case</span></div>
+        <div><span>Opens to everyone</span><span>Fri 27 Nov</span></div>
+      </div>
+      <div class="first">
+        <div class="msh"><h3>First look</h3><span class="lab">03 pieces</span></div>
+        <div class="three">
+          <a class="mcard" href="#"><img src="{{braid-armband-1_0}}" alt="Braid Bracelet"><h4>Braid Bracelet</h4><div class="price">€39.95</div></a>
+          <a class="mcard" href="#"><img src="{{minimal-cuff_0}}" alt="Minimal Cuff"><h4>Minimal Cuff</h4><div class="price">€34.90</div></a>
+          <a class="mcard" href="#"><img src="{{crystal-necklace_0}}" alt="Crystal Necklace"><h4>Crystal Necklace</h4><div class="price">€89.95</div></a>
+        </div>
+      </div>
+      <div class="mcta"><a class="solid" href="#">Discover the collection</a><p class="small" style="color:var(--grey)">Jewelry you never have to take off.</p></div>
+      <footer class="foot"><div class="soc"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.6V13h2.7v8"/></svg></a></div><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Bracelets</a><a class="fb" href="#">Necklaces</a><p class="fwm">Cavaier</p><p class="copy2">© Copyright 2026 Cavaier</p><div class="legal"><span>Manage preferences</span><span>Unsubscribe</span></div></footer>
+    </article>
+  </section>
+
+  <!-- ================= 02 BLACK FRIDAY ================= -->
+  <section id="p2" role="tabpanel" aria-labelledby="t2" class="panel" hidden>
+    <dl class="meta"><dt>Subject</dt><dd>Black Friday is open</dd><dt>Preheader</dt><dd>Up to 40% off, and a free case with two pieces.</dd><dt>Send</dt><dd>Fri 27 Nov, 07:00 CET · full list</dd></dl>
+    <article class="em e2" aria-label="Email 2">
+      <div class="mbar"><p class="wm">Cavaier</p><nav><span>Women</span><span>Men</span><span>Sets</span></nav></div>
+      <div class="mttl"><div><span class="lab">Now open · until 30 Nov</span><h2>Black Friday</h2></div><p class="small">Up to 40% off. A free case with any two pieces.</p></div>
+      <div class="ph mhero"><span>Hero · campaign shot · 552×360</span></div>
+      <div class="mgo"><a class="ulink" href="#">Shop the sale <span>→</span></a></div>
+      <div class="sel">
+        <div class="msh"><h3>Selected</h3><span class="lab">06 pieces</span></div>
+        <div class="grid2">
+          <a class="mcard" href="#"><img src="{{rope-bracelet-2_1}}" alt="Rope Bracelet worn"><h4><span>Rope Bracelet</span><span class="price"><s>€49.95</s>€29.95</span></h4><p class="small">Black, silver or gold</p></a>
+          <a class="mcard" href="#"><img src="{{role-necklace-1_2}}" alt="Role Pendant Necklace worn"><h4><span>Role Pendant</span><span class="price">€39.95</span></h4><p class="small">One size, extension chain</p></a>
+          <a class="mcard" href="#"><img src="{{cube-bracelet-1_3}}" alt="Cube Bracelet worn"><h4><span>Cube Bracelet</span><span class="price"><s>€49.95</s>€29.95</span></h4><p class="small">Small, medium or large</p></a>
+          <a class="mcard" href="#"><img src="{{crystal-necklace_1}}" alt="Crystal Necklace worn"><h4><span>Crystal Necklace</span><span class="price">€89.95</span></h4><p class="small">55 cm</p></a>
+          <a class="mcard" href="#"><img src="{{role-bracelet_1}}" alt="Role Bracelet worn"><h4><span>Role Bracelet</span><span class="price"><s>€49.95</s>€29.95</span></h4><p class="small">Heat and sweat resistant</p></a>
+          <a class="mcard" href="#"><img src="{{cuban-necklace-1_1}}" alt="Cuban Necklace worn"><h4><span>Cuban Necklace</span><span class="price">€34.90</span></h4><p class="small">Black, silver or gold</p></a>
+        </div>
+      </div>
+      <div class="trust"><span class="lab">Trustpilot</span><b>4.5 / 5</b><span class="small" style="color:var(--grey)">2,179 reviews</span></div>
+      <div class="mcta"><a class="solid" href="#">Discover the collection</a></div>
+      <footer class="foot"><div class="soc"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.6V13h2.7v8"/></svg></a></div><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Bracelets</a><a class="fb" href="#">Necklaces</a><p class="fwm">Cavaier</p><p class="copy2">© Copyright 2026 Cavaier</p><div class="legal"><span>Manage preferences</span><span>Unsubscribe</span></div></footer>
+    </article>
+  </section>
+
+  <!-- ================= 03 GIFT EDIT ================= -->
+  <section id="p3" role="tabpanel" aria-labelledby="t3" class="panel" hidden>
+    <dl class="meta"><dt>Subject</dt><dd>The gift edit</dd><dt>Preheader</dt><dd>For her, for him, and for when you can't decide.</dd><dt>Send</dt><dd>Sat 28 Nov, 10:00 CET · full list</dd></dl>
+    <article class="em e3" aria-label="Email 3">
+      <div class="bar"><p class="wm">Cavaier</p><nav><span>For her</span><span>For him</span><span>Gift card</span></nav></div>
+      <div class="ttl"><div><span class="lab">Black Friday prices until Monday</span><h2>The gift edit</h2></div><p class="small">Pieces they'll never take off. Picked for her, for him, and for the undecided.</p></div>
+      <div class="ph hero"><span>Hero · gift moment · 552×360</span></div>
+      <div class="go"><a class="ulink" href="#">Shop gifts <span>→</span></a></div>
+
+      <div class="sec">
+        <div class="sh"><span class="disp lt" style="font-size:18px">01</span><span class="disp">For her</span></div>
+        <img class="strip" src="{{braid-armband-1_3}}" alt="Braid Bracelet worn">
+        <div class="items">
+          <div class="it"><h4>Cuban Necklace</h4><p class="small">One size, extension chain. Black, silver or gold.</p><div class="price">€34.90</div></div>
+          <div class="it"><h4>Braid Bracelet</h4><p class="small">Small, medium or large. Waterproof.</p><div class="price">€39.95</div></div>
+          <div class="it"><h4>Crystal Necklace</h4><p class="small">55 cm, recycled 316L steel.</p><div class="price">€89.95</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="sh"><span class="disp lt" style="font-size:18px">02</span><span class="disp">For him</span></div>
+        <img class="strip" src="{{3x-minimal-stack-set_1}}" alt="3x Minimal Stack Set worn">
+        <div class="items">
+          <div class="it"><h4>3x Minimal Stack Set</h4><p class="small">Three bracelets, worn together or apart.</p><div class="price">€94.95</div></div>
+          <div class="it"><h4>2x Duo Minimal Set</h4><p class="small">Two bracelets. Black or silver.</p><div class="price">€59.95</div></div>
+          <div class="it"><h4>Minimal Cuff</h4><p class="small">Adjustable. Black, silver or gold.</p><div class="price">€34.90</div></div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="sh"><span class="disp lt" style="font-size:18px">03</span><span class="disp">Can't decide</span></div>
+        <div class="gifts">
+          <div><img src="{{cavaier-gift-card_0}}" alt="Cavaier gift card"><h4>Gift card</h4><p class="small">Sent by email. €10 to €100, valid 3 months.</p></div>
+          <div><img src="{{jewelry-case_0}}" alt="Jewelry case"><h4>Jewelry case · €19.95</h4><p class="small">Free with any two pieces.</p></div>
+        </div>
+      </div>
+      <div class="band"><a class="solid" href="#">Discover the collection</a></div>
+      <footer class="foot"><div class="soc"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.6V13h2.7v8"/></svg></a></div><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Bracelets</a><a class="fb" href="#">Necklaces</a><p class="fwm">Cavaier</p><p class="copy2">© Copyright 2026 Cavaier</p><div class="legal"><span>Manage preferences</span><span>Unsubscribe</span></div></footer>
+    </article>
+  </section>
+
+  <!-- ================= 04 CYBER MONDAY ================= -->
+  <section id="p4" role="tabpanel" aria-labelledby="t4" class="panel" hidden>
+    <dl class="meta"><dt>Subject</dt><dd>Cyber Monday. The final day.</dd><dt>Preheader</dt><dd>Black Friday prices end at midnight.</dd><dt>Send</dt><dd>Mon 30 Nov, 08:00 CET · full list minus buyers</dd></dl>
+    <article class="em e4" aria-label="Email 4">
+      <div class="mbar"><p class="wm">Cavaier</p><nav><span>Women</span><span>Men</span><span>Sets</span></nav></div>
+      <div class="mttl"><div><span class="lab">Final day · ends 23:59 CET</span><h2>Cyber Monday</h2></div><p class="small">The last day for Black Friday prices.</p></div>
+      <div class="ph mhero"><span>Hero · product still on fog · 552×360</span></div>
+      <div class="mgo"><a class="ulink" href="#">Shop Cyber Monday <span>→</span></a></div>
+      <div style="padding-top:56px">
+        <div class="msh"><h3>Worn every day</h3><span class="lab">04 pieces</span></div>
+        <div class="grid2">
+          <a class="mcard" href="#"><img src="{{role-necklace-1_1}}" alt="Role Pendant Necklace worn"><h4><span>Role Pendant</span><span class="price">€39.95</span></h4></a>
+          <a class="mcard" href="#"><img src="{{role-bracelet_3}}" alt="Role Bracelet worn"><h4><span>Role Bracelet</span><span class="price"><s>€49.95</s>€29.95</span></h4></a>
+          <a class="mcard" href="#"><img src="{{cuban-bracelet_1}}" alt="Cuban Bracelet worn"><h4><span>Cuban Bracelet</span><span class="price">€29.95</span></h4></a>
+          <a class="mcard" href="#"><img src="{{rope-necklace-1_3}}" alt="Rope Pendant Necklace worn"><h4><span>Rope Pendant</span><span class="price">€39.95</span></h4></a>
+        </div>
+      </div>
+      <img class="wide" src="{{2x-duo-minimal-set_1}}" alt="2x Duo Minimal Set worn">
+      <div class="faq">
+        <div class="msh"><h3>Questions</h3><span class="lab">FAQ</span></div>
+        <div class="q"><div><span>Can I wear it in water?</span><span>−</span></div><p class="small">Yes. Every piece is waterproof, sweat resistant and heat resistant.</p></div>
+        <div class="q"><div><span>How do I find my size?</span><span>+</span></div></div>
+        <div class="q"><div><span>What is it made of?</span><span>+</span></div></div>
+        <div class="q"><div><span>How does the gift card work?</span><span>+</span></div></div>
+      </div>
+      <div class="mcta"><a class="solid" href="#">Discover the collection</a><p class="small" style="color:var(--grey)">Free jewelry case with any two pieces, until midnight.</p></div>
+      <footer class="foot"><div class="soc"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.6V13h2.7v8"/></svg></a></div><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Bracelets</a><a class="fb" href="#">Necklaces</a><p class="fwm">Cavaier</p><p class="copy2">© Copyright 2026 Cavaier</p><div class="legal"><span>Manage preferences</span><span>Unsubscribe</span></div></footer>
+    </article>
+  </section>
+
+  <!-- ================= 05 LAST CALL ================= -->
+  <section id="p5" role="tabpanel" aria-labelledby="t5" class="panel" hidden>
+    <dl class="meta"><dt>Subject</dt><dd>Last call</dd><dt>Preheader</dt><dd>The offer ends tonight at 23:59.</dd><dt>Send</dt><dd>Tue 1 Dec, 16:00 CET · engaged, not purchased</dd></dl>
+    <article class="em e5" aria-label="Email 5">
+      <div class="bar"><p class="wm">Cavaier</p><nav><span>Women</span><span>Men</span><span>Sets</span></nav></div>
+      <div class="ttl"><div><span class="lab">Black Friday · ends tonight</span><h2>Last call</h2></div><p class="small">The offer closes at 23:59 CET. After that, prices go back to normal.</p></div>
+      <div class="timer"><span class="lab">Time left</span><div class="t"><b>07<small>H</small></b><b>59<small>M</small></b><b>00<small>S</small></b></div></div>
+      <div class="ph hero"><span>Hero · close-up, cuff on wrist · 552×360</span></div>
+      <div class="one">
+        <img src="{{minimal-cuff_0}}" alt="Minimal Cuff">
+        <div><span class="lab">The one to keep</span><h3>Minimal Cuff</h3><p class="small">Sized however you want. Waterproof, recycled 316L steel.</p><div class="sw"><i style="background:#0B0B0B"></i><i style="background:#C9C9C7"></i><i style="background:#C8A86B"></i><span class="small" style="margin-left:4px">Black, silver, gold</span></div><div class="price">€34.90</div></div>
+      </div>
+      <div class="pair"><img src="{{minimal-cuff-1_3}}" alt="Minimal Cuff worn"><img src="{{minimal-cuff_3}}" alt="Minimal Cuff stacked"></div>
+      <div class="cta"><a class="solid" href="#">Discover the collection</a><p class="small" style="color:var(--grey)">Free jewelry case with any two pieces, until midnight.</p></div>
+      <footer class="foot"><div class="soc"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.6V13h2.7v8"/></svg></a></div><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Bracelets</a><a class="fb" href="#">Necklaces</a><p class="fwm">Cavaier</p><p class="copy2">© Copyright 2026 Cavaier</p><div class="legal"><span>Manage preferences</span><span>Unsubscribe</span></div></footer>
+    </article>
+  </section>
+
+  <div class="notes">
+    <strong>Check before building in Figma</strong>
+    <ul>
+      <li>Prices are converted from the store's SEK list (gift card rate). Bracelets already show €49.95 → €29.95 on the site; other pieces show full price until you set Black Friday prices.</li>
+      <li>The 40% figure and the free case with two pieces come from the current site. Confirm both hold for Black Friday.</li>
+      <li>Five hero placeholders, one per email. Everything else uses existing product photos.</li>
+      <li>The countdown in email 05 is static here. Swap it for a live timer block (for example Klaviyo's countdown) when building the send.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+const tabs=[...document.querySelectorAll('.tab')];
+function show(i){tabs.forEach((t,j)=>{const on=i===j;t.setAttribute('aria-selected',on);document.getElementById(t.getAttribute('aria-controls')).hidden=!on});try{localStorage.setItem('cav-tab',i)}catch(e){}}
+tabs.forEach((t,i)=>t.addEventListener('click',()=>show(i)));
+const h=location.hash.match(/^#e([1-5])$/);let start=h?+h[1]-1:0;
+if(!h){try{const s=+localStorage.getItem('cav-tab');if(s>=0&&s<5)start=s}catch(e){}}
+show(start);
+</script>

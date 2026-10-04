@@ -1,0 +1,201 @@
+<title>Cavaier Black Week Email</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: a 600px email column on a review canvas; the email alternates paper and ink bands like a lookbook */
+:root{
+  --canvas:#E4E3E0; --canvas-fg:#3A3936; --canvas-muted:#77756F;
+  --paper:#F3F2EF; --ink:#151515; --stone:#86847F; --silver:#C9C7C2; --rule:#D8D6D1; --night:#1D1D1C;
+  --ph-a:#D9D7D2; --ph-b:#CFCDC8; --ph-dark-a:#2A2A29; --ph-dark-b:#323231;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--canvas:#111110;--canvas-fg:#E6E5E1;--canvas-muted:#9A9893;color-scheme:dark}}
+:root[data-theme="dark"]{--canvas:#111110;--canvas-fg:#E6E5E1;--canvas-muted:#9A9893;color-scheme:dark}
+
+body{background:var(--canvas);color:var(--canvas-fg);font-family:var(--body);padding-inline:16px;padding-block:40px 64px}
+.review{max-width:600px;margin:0 auto 24px;display:flex;flex-direction:column;gap:6px}
+.review h1{font:500 13px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;margin:0}
+.review p{margin:0;font-size:13px;line-height:1.5;color:var(--canvas-muted)}
+.review .meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--canvas-muted)}
+.review .meta b{color:var(--canvas-fg);font-weight:500}
+
+/* ---------- email (single fixed look, like the sent email) ---------- */
+.email{max-width:600px;margin:0 auto;background:var(--paper);color:var(--ink);box-shadow:0 30px 80px -40px rgba(0,0,0,.45)}
+.email *{box-sizing:border-box}
+.cap{font:500 10.5px/1.4 var(--body);letter-spacing:.22em;text-transform:uppercase}
+.ph{position:relative;background:repeating-linear-gradient(135deg,var(--ph-a) 0 12px,var(--ph-b) 12px 24px);display:flex;align-items:flex-end;padding:12px;max-width:100%}
+.ph.dark{background:repeating-linear-gradient(135deg,var(--ph-dark-a) 0 12px,var(--ph-dark-b) 12px 24px)}
+.ph span{font:500 9.5px/1.45 var(--body);letter-spacing:.12em;text-transform:uppercase;background:var(--paper);color:var(--ink);padding:5px 8px;max-width:100%}
+.ph.dark span{background:var(--night);color:var(--silver);outline:1px solid #3a3a39}
+
+.pre{background:var(--ink);color:var(--silver);text-align:center;padding:10px 16px}
+.head{padding:28px 24px 0;text-align:center}
+.logo{font:400 30px/1 var(--display);letter-spacing:.42em;margin:0 0 0 .42em}
+.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 26px;margin-top:20px;padding-block:14px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+
+.hero{position:relative}
+.hero .ph{aspect-ratio:600/760}
+.hero-type{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:28px 24px 30px;color:var(--paper);pointer-events:none}
+.hero-type .top{display:flex;justify-content:space-between;color:var(--ink)}
+.hero h2{font:400 clamp(58px,16vw,96px)/.86 var(--display);margin:0;letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
+.hero h2 em{font-style:italic}
+
+.intro{padding:44px 40px 40px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+.intro p{margin:0;max-width:440px;font:300 15.5px/1.65 var(--body)}
+.offer{font:400 34px/1.1 var(--display);margin:0;text-wrap:balance}
+.offer em{font-style:italic}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:15px 34px;font:500 11px/1 var(--body);letter-spacing:.24em;text-transform:uppercase}
+.btn.light{background:var(--paper);color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--stone);outline-offset:3px}
+
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.tier{padding:22px 10px;text-align:center;display:flex;flex-direction:column;gap:6px}
+.tier+.tier{border-left:1px solid var(--rule)}
+.tier b{font:400 34px/1 var(--display);font-variant-numeric:tabular-nums}
+.tier span{font-size:12px;color:var(--stone)}
+
+.split{background:var(--night);color:var(--paper);padding:40px 24px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.split .ph{aspect-ratio:3/4}
+.split a{color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.split h3{margin:0;font:400 italic 26px/1 var(--display)}
+.split .cap{color:var(--silver)}
+.split-head{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;padding-bottom:8px}
+.split-head h3{font-style:normal;font-size:22px}
+
+.products{padding:44px 24px 40px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.sec-head h3{margin:0;font:400 28px/1 var(--display)}
+.sec-head a{color:var(--ink)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 14px}
+.prod{display:flex;flex-direction:column;gap:8px}
+.prod .ph{aspect-ratio:1/1}
+.prod .badge{position:absolute;top:10px;left:10px;background:var(--ink);color:var(--paper);font:500 9.5px/1 var(--body);letter-spacing:.16em;padding:6px 8px}
+.prod h4{margin:4px 0 0;font:500 13px/1.3 var(--body);letter-spacing:.04em}
+.price{font-size:13px;display:flex;gap:8px;font-variant-numeric:tabular-nums}
+.price s{color:var(--stone)}
+
+.edit{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:6px;padding:0 6px}
+.edit .a{grid-row:1/3;aspect-ratio:auto;min-height:420px}
+.edit .b,.edit .c{aspect-ratio:1/1}
+.quote{padding:44px 44px 48px;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+.quote blockquote{margin:0;font:400 italic 24px/1.35 var(--display);max-width:440px;text-wrap:balance}
+.quote .cap{color:var(--stone)}
+
+.usp{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule)}
+.usp div{padding:20px 10px;text-align:center;font-size:12px;line-height:1.45}
+.usp div+div{border-left:1px solid var(--rule)}
+.usp b{display:block;font:500 10.5px/1.4 var(--body);letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
+
+.last{position:relative}
+.last .ph{aspect-ratio:600/420}
+.last-type{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;color:var(--paper);padding:24px}
+.last-type h3{margin:0;font:400 46px/1 var(--display)}
+.last-type h3 em{font-style:italic}
+.last-type p{margin:0;font-size:14px;color:var(--silver)}
+
+.foot{background:var(--ink);color:var(--silver);padding:36px 24px 40px;text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center}
+.foot .logo{color:var(--paper);font-size:20px}
+.foot .social{display:flex;gap:22px}
+.foot p{margin:0;font-size:11px;line-height:1.6;color:var(--stone);max-width:420px}
+.foot a{color:var(--silver)}
+
+.note{max-width:600px;margin:20px auto 0;font-size:12px;line-height:1.55;color:var(--canvas-muted)}
+
+@media (max-width:480px){
+  .intro{padding:36px 22px}
+  .split{grid-template-columns:1fr}
+  .edit{grid-template-columns:1fr}
+  .edit .a{grid-row:auto;min-height:0;aspect-ratio:4/5}
+  .tier b{font-size:26px}
+  .quote{padding:36px 22px}
+}
+</style>
+
+<header class="review">
+  <h1>Cavaier · Black Week email</h1>
+  <div class="meta"><span><b>Subject:</b> The Archive Sale is open</span><span><b>Preheader:</b> Up to 40% off. Free shipping, everywhere.</span></div>
+  <p>Draft for review. Striped boxes are image placeholders with the shot we'd brief. Dates, discount tiers, product names and prices are placeholders to confirm.</p>
+</header>
+
+<article class="email" aria-label="Email preview">
+  <div class="pre cap">Black Week · Up to 40% off · Free worldwide shipping</div>
+
+  <div class="head">
+    <p class="logo">CAVAIER</p>
+    <nav class="nav cap"><span>Women</span><span>Men</span><span>Cuffs</span><span>Necklaces</span><span>Rings</span></nav>
+  </div>
+
+  <section class="hero">
+    <div class="ph"><span>Image · Hero, 600×760 · Model in black knit, hand to collar, silver cuff on wrist, soft window light</span></div>
+    <div class="hero-type">
+      <div class="top cap"><span>Stockholm</span><span>24 — 30 Nov</span></div>
+      <h2>Black<br><em>Week</em></h2>
+    </div>
+  </section>
+
+  <section class="intro">
+    <span class="cap" style="color:var(--stone)">The Archive Sale</span>
+    <p class="offer">Pieces made to stay, <em>for less</em>.</p>
+    <p>Once a year we open the archive. Cuffs, chains and rings designed in Stockholm, now up to 40% off. The more you choose, the more you save.</p>
+    <a class="btn" href="#">Shop the sale</a>
+  </section>
+
+  <section class="tiers" aria-label="Discount tiers">
+    <div class="tier"><span class="cap">Buy 1</span><b>20%</b><span>off</span></div>
+    <div class="tier"><span class="cap">Buy 2</span><b>30%</b><span>off</span></div>
+    <div class="tier"><span class="cap">Buy 3+</span><b>40%</b><span>off</span></div>
+  </section>
+
+  <section class="split">
+    <div class="split-head"><h3>Shop by wearer</h3><span class="cap" style="color:var(--stone)">01 / 02</span></div>
+    <a href="#"><div class="ph dark"><span>Image · Her, 3:4 · Layered necklaces, bare shoulder</span></div><h3>For her</h3><span class="cap">Shop now →</span></a>
+    <a href="#"><div class="ph dark"><span>Image · Him, 3:4 · Cuff and chain, rolled sleeve</span></div><h3>For him</h3><span class="cap">Shop now →</span></a>
+  </section>
+
+  <section class="products">
+    <div class="sec-head"><h3>Most loved</h3><a class="cap" href="#">View all</a></div>
+    <div class="grid">
+      <div class="prod"><div class="ph"><i class="badge">-30%</i><span>Packshot · Cuff</span></div><h4>Product name · Cuff</h4><div class="price"><s>€XXX</s><span>€XX</span></div></div>
+      <div class="prod"><div class="ph"><i class="badge">-30%</i><span>Packshot · Necklace</span></div><h4>Product name · Necklace</h4><div class="price"><s>€XXX</s><span>€XX</span></div></div>
+      <div class="prod"><div class="ph"><i class="badge">-30%</i><span>Packshot · Bracelet</span></div><h4>Product name · Bracelet</h4><div class="price"><s>€XXX</s><span>€XX</span></div></div>
+      <div class="prod"><div class="ph"><i class="badge">-30%</i><span>Packshot · Ring</span></div><h4>Product name · Ring</h4><div class="price"><s>€XXX</s><span>€XX</span></div></div>
+    </div>
+  </section>
+
+  <section class="edit" aria-label="Editorial images">
+    <div class="ph a"><span>Image · Editorial portrait, 4:5 · Black and white, jewelry in focus</span></div>
+    <div class="ph b"><span>Detail · Clasp macro</span></div>
+    <div class="ph c"><span>Detail · Gift box</span></div>
+  </section>
+
+  <section class="quote">
+    <span class="cap">4.5 / 5 on Trustpilot · 2,179 reviews</span>
+    <blockquote>"Beautiful minimal design and the quality holds up every day."</blockquote>
+    <span class="cap">Customer review · placeholder, swap for a real quote</span>
+  </section>
+
+  <section class="usp">
+    <div><b>Free shipping</b>Worldwide, on every order</div>
+    <div><b>Gift-ready</b>Packed in our signature box</div>
+    <div><b>Stockholm</b>Designed in Sweden</div>
+  </section>
+
+  <section class="last">
+    <div class="ph dark"><span>Image · Closing, 600×420 · Dark still life, pieces on stone</span></div>
+    <div class="last-type">
+      <span class="cap" style="color:var(--silver)">Ends 30 Nov, midnight</span>
+      <h3>While the <em>archive</em> lasts</h3>
+      <p>Limited quantities. No restocks.</p>
+      <a class="btn light" href="#">Shop Black Week</a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p class="logo">CAVAIER</p>
+    <div class="social cap"><span>Instagram</span><span>Facebook</span><span>TikTok</span></div>
+    <p>Cavaier · Stockholm, Sweden<br>You're receiving this because you signed up at cavaier.com.<br><a href="#">Unsubscribe</a> · <a href="#">View in browser</a></p>
+  </footer>
+</article>
+
+<p class="note">Built for 600px email width. On approval this goes into Figma: file "BFCM", page "Email Campaign", as one frame with each section as its own auto-layout block.</p>
