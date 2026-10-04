@@ -3,16 +3,19 @@
 14 sends, Nov 23 – Dec 6, 2026. Mock-ups for review before they are built in Figma
 (BFCM file, page "Email Campaign") and Klaviyo.
 
-- Live review page: https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S
-- `cavaier-bfcm26-sequence.html`: the built page (all images embedded).
+## The master
 
-## Rebuild
+**The one master is the shared page: https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S**
+Eli and Katrina both work on it:
 
-    python3 gen_bfcm26_v7.py
+- Leave a comment on the page and send it to Claude. The change goes live within a minute.
+- Any Claude session that edits the page starts from the latest published version and
+  republishes on top of it. Never regenerate it from older files: that would wipe the
+  other person's edits.
+- `cavaier-bfcm26-sequence.html` here is a backup snapshot of the master, not the source.
 
-The generators are layered patches: `gen_bfcm26.py` is the base and `v2`…`v7` each patch the
-one before. `bfcm26.tpl.html` is the page template. Images come from `figimg/` (Figma shoot)
-and the cavaier.com product images cached in `imgcache26*/`.
+`archive/` holds the first generator scripts (v1–v7). They are out of date: the master has
+moved on since, so don't rebuild from them. `figimg/` and `imgcache26*/` are the source photos.
 
 ## Open placeholders
 
