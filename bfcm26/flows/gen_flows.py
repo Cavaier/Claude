@@ -42,11 +42,20 @@ IMGS = {
     'cuban_M': 'cuban-bracelet__1',
     'case': 'jewelry-case__0',
 }
+# Dynamic slots show what Klaviyo actually pulls: the Shopify product image, in colour
+COLOR = {
+    'dz_set_W': '3x-minimal-stack-set-1__0', 'dz_set_M': '3x-minimal-stack-set__0',
+    'dz_crystal_neck': 'crystal-necklace__0', 'dz_braid_M': 'braid-armband__0', 'dz_braid_W': 'braid-armband-1__7',
+    'dz_case': 'jewelry-case__0',
+    'fd_W1': 'bracelet__0', 'fd_W2': 'braid-armband-1__7', 'fd_W3': 'crystal-necklace__4',
+    'fd_M1': 'braid-armband__0', 'fd_M2': 'cuban-necklace-1__0', 'fd_M3': 'cube-necklace-1__0',
+}
 WIDE = {k for k in IMGS if k.startswith('hero')}
 
-def enc(path, wide):
+def enc(path, wide, color=False):
     im = Image.open(path)
-    im = ImageOps.exif_transpose(im).convert('L').convert('RGB')  # black and white, like the campaign
+    im = ImageOps.exif_transpose(im).convert('RGB')
+    if not color: im = im.convert('L').convert('RGB')  # black and white, like the campaign
     w = 1000 if wide else 640
     if im.width > w:
         im = im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
@@ -57,6 +66,7 @@ def logo(i):
     return 'data:image/png;base64,' + base64.b64encode(open(os.path.join(HERE, f'logo{i}.png'), 'rb').read()).decode()
 
 IMGDATA = {k: enc(src(v), k in WIDE) for k, v in IMGS.items()}
+IMGDATA.update({k: enc(os.path.join(B, f'imgcache26/{v}.jpg'), False, True) for k, v in COLOR.items()})
 IMGDATA['logo'] = logo(0)
 
 def img(k, alt='', style='', cls=''):
@@ -86,17 +96,18 @@ def g(w, m, tag='span'):
 RED = 'var(--red)'
 PROOF = '★★★★★ &nbsp;Rated 4.5 on Trustpilot · 3,000+ reviews'
 
-# prices: the campaign's figures (Shopify shows .90 today, flagged on the page)
+# Static cards carry no fixed price: shoppers see prices in their own currency and the 30% only comes off
+# at checkout, so a hard-coded € sale price would be wrong for most of the list. Dynamic blocks print the
+# price Klaviyo receives. Sample figures below are Shopify's live EUR prices.
 P = {
     'set': ('€94.95', '€66.47'), 'rope': ('€29.95', '€20.97'), 'cube': ('€29.95', '€20.97'),
     'crystal_br': ('€39.95', '€27.97'), 'braid': ('€39.95', '€27.97'), 'cuban': ('€29.95', '€20.97'),
     'crystal_neck': ('€89.95', '€62.97'), 'cube_pend': ('€39.95', '€27.97'),
 }
-def price(p, hide_pre=False):
-    s, n = P[p]
-    pr = f'<span class="price"><s>{s}</s><span>{n}</span></span>'
+def price(p=None, hide_pre=False):
+    pr = '<span class="go red">30% off at checkout</span>'
     if hide_pre:
-        return st({'pre': '<span class="go">From Nov 23 at 30% off</span>', 'ea live d6': pr})
+        return st({'pre': '<span class="go">From Nov 23 · 30% off</span>', 'ea live d6': pr})
     return pr
 
 # ---------------------------------------------------------------- email modules
@@ -140,8 +151,8 @@ def line(left, right, mid=None):
     """Slim timeline: 'Today · x ——— ● date · y'. No countdowns."""
     o = '<div class="tline">' + f'<span class="a">{left}</span><i></i>'
     if mid:
-        o += f'<b></b><span class="m">{mid}</span><i></i>'
-    o += f'<b class="r"></b><span class="z">{right}</span></div>'
+        o += f'<b>●</b><span class="m">{mid}</span><i></i>'
+    o += f'<b class="r">●</b><span class="z">{right}</span></div>'
     return o
 
 def hdr(title, label):
@@ -167,12 +178,24 @@ def card(k, name, p, hide_pre=False, link='Shop', finish=None, gendered=False):
         f = '<span class="fin">' + ''.join(f'<i class="{c}"></i>' for c in finish) + '</span>'
     return f'<a class="pc" href="#">{im}<h4>{name}</h4>{f}{price(p, hide_pre)}</a>'
 
-def dyn(k_w, k_m, name_w, name_m, p_w, p_m, note='Dynamic block: the product they viewed', big=True):
-    """Dynamic product block (Klaviyo fills it). Shown with a sample product."""
+def dyn(W, M, note, big=True):
+    """Dynamic product block, drawn with a sample product. W/M = (image key, name, variant or '', price as Klaviyo prints it)."""
     cls = 'dyn big' if big else 'dyn'
-    return (f'<div class="{cls}"><a href="#" class="dimg">{g(img(k_w, name_w), img(k_m, name_m))}</a>'
-            f'<div class="dt"><h4>{g(name_w, name_m)}</h4>{g(price(p_w), price(p_m))}</div>'
+    def side(x):
+        k, n, v, pr = x
+        return (f'<h4>{n}</h4>' + (f'<span class="small mute">{v}</span>' if v else '')
+                + f'<span class="dp">{pr}</span><span class="go red">30% off at checkout</span>')
+    return (f'<div class="{cls}"><a href="#" class="dimg">{g(img(W[0], W[1]), img(M[0], M[1]))}</a>'
+            f'<div class="dt">{g(side(W), side(M), "div")}</div>'
             f'<p class="stand">{note}</p></div>')
+
+def feed():
+    """Klaviyo product block on a recommendation feed: catalog title + image, no prices (catalog is EUR only)."""
+    def c(k, n): return f'<a class="pc" href="#">{img(k, n)}<h4>{n}</h4><span class="go red">30% off</span></a>'
+    w = c('fd_W1', 'Crystal Bracelet') + c('fd_W2', 'Braid Bracelet') + c('fd_W3', 'Crystal Necklace')
+    m = c('fd_M1', 'Braid Bracelet') + c('fd_M2', 'Cuban Necklace') + c('fd_M3', 'Cube Pendant Necklace')
+    return '<div class="cards c3">' + g(w, m, 'div') + '</div>'
+
 
 def quote(n=1, who=None):
     q = ('<div class="quote"><span class="bx-stars">★★★★★</span>'
@@ -181,18 +204,21 @@ def quote(n=1, who=None):
     return q * n
 
 def order(compact=False):
-    def row(k, name, fin, p):
-        s, n = P[p]
-        return (f'<div class="or">{img(k, name)}<div><h4>{name}</h4><span class="small mute">{fin} · Qty 1</span></div>'
-                f'<span class="price"><s>{s}</s><span>{n}</span></span></div>')
-    w = row('crystal_neck', 'Crystal Necklace', 'Black', 'crystal_neck') + row('cube_W', 'Cube Bracelet', 'Black · M', 'cube')
-    m = row('set_M_cart', '3x Minimal Set', 'Black · M', 'set') + row('rope', 'Rope Bracelet', 'Black · M', 'rope')
-    tot = ('<div class="ot"><span>Jewelry case</span><span>Included</span></div>'
-           '<div class="ot"><span>Shipping</span><span>Free</span></div>'
-           + g('<div class="ot tt"><span>Total, 30% off applied</span><b>€83.94</b></div>',
-               '<div class="ot tt"><span>Total, 30% off applied</span><b>€87.44</b></div>', 'div'))
+    """Klaviyo table block repeating over event.extra.line_items. Sample cart in EUR; prices print in the shopper's currency.
+    Line prices arrive before discounts; the 30% and the case show up in Total Discounts, and $value is the total."""
+    def row(k, name, var, pr):
+        return (f'<div class="or">{img(k, name)}<div><h4>{name}</h4><span class="small mute">{var} · Qty 1</span></div>'
+                f'<span class="op">{pr}</span></div>')
+    case = row('dz_case', 'Jewelry Case', 'Black', 'Included')
+    w = row('dz_crystal_neck', 'Crystal Necklace', 'Black / 55 cm', '€89.90') + row('dz_braid_W', 'Braid Bracelet', 'Silver / Medium', '€39.90') + case
+    m = row('dz_set_M', '3x Minimal Set', 'Black / Medium', '€94.90') + row('dz_braid_M', 'Braid Bracelet', 'Black / Medium', '€39.90') + case
+    tot = (g('<div class="ot"><span>30% off + jewelry case</span><span class="red">−€58.84</span></div>',
+             '<div class="ot"><span>30% off + jewelry case</span><span class="red">−€60.34</span></div>', 'div')
+           + '<div class="ot"><span>Shipping</span><span>Free</span></div>'
+           + g('<div class="ot tt"><span>Total</span><b>€90.86</b></div>',
+               '<div class="ot tt"><span>Total</span><b>€94.36</b></div>', 'div'))
     return (f'<div class="order{" c" if compact else ""}"><div class="oh"><span>Your order</span><span class="lab">Saved</span></div>'
-            + g(w, m, 'div') + ('' if compact else tot) + '<p class="stand">Dynamic block: their checkout, from the Shopify recovery link</p></div>')
+            + g(w, m, 'div') + tot + '<p class="stand">Dynamic: Checkout Started line items, discounts and total, in the shopper’s currency</p></div>')
 
 def em(body, fog=False):
     return f'<article class="em{" fog" if fog else ""}">{body}{foot()}</article>'
@@ -333,10 +359,10 @@ entry('05', '1 · Welcome', '#4 Last Call', '3 days after Email 3', 'Oct 27 – 
 
 # --- Flow 2 · Browse
 LIVE = ['live']
-DYN_W = ('crystal_br', 'Crystal Bracelet', 'crystal_br')
-DYN_M = ('cube_M', 'Cube Bracelet', 'cube')
-def dyn_view(note='Dynamic block: the product they viewed', big=True):
-    return dyn(DYN_W[0], DYN_M[0], DYN_W[1], DYN_M[1], DYN_W[2], DYN_M[2], note, big)
+VIEW_W = ('dz_set_W', '3x Minimal Set', '', '€94.90')
+VIEW_M = ('dz_set_M', '3x Minimal Set', '', '€94.90')
+def dyn_view(big=True):
+    return dyn(VIEW_W, VIEW_M, 'Dynamic: Viewed Product name, image and price (shopper’s currency)', big)
 
 entry('06', '2 · Browse', '#1 Still Looking?', '4 hours after viewed product', 'Nov 27 – Dec 6', 2, LIVE,
  [('Trigger', 'Viewed product, no add to cart · exits: Added to Cart, Started Checkout, Placed Order'),
@@ -346,10 +372,9 @@ entry('06', '2 · Browse', '#1 Still Looking?', '4 hours after viewed product', 
  em(strip(LIVE) + top() + lead('Made to Stay On.', 'The piece you looked at is 30% off — shower, gym, all of it.')
     + dyn_view() + cta('See it at 30% off')
     + usps('100% waterproof', 'Stainless steel', 'Rated 4.5 on Trustpilot') + offer_compact()
-    + '<div style="height:44px"></div>' + hdr('Also in bracelets', '30% off')
-    + '<div class="cards c3">' + g(card('rope', 'Rope Bracelet', 'rope') + card('cube_W', 'Cube Bracelet', 'cube') + card('braid_W', 'Braid Bracelet', 'braid'),
-                                   card('rope', 'Rope Bracelet', 'rope') + card('braid_M', 'Braid Bracelet', 'braid') + card('cuban_M', 'Cuban Bracelet', 'cuban'), 'div') + '</div>'
-    + '<p class="stand">Dynamic: 3 related pieces from the same category</p>'
+    + '<div style="height:44px"></div>' + hdr('You might also like', '30% off')
+    + feed()
+    + '<p class="stand">Dynamic: Klaviyo product block on a recommendation feed, 3 items</p>'
     + '<div class="tlink" style="padding-bottom:48px"><a class="ulink" href="#">Take another look <span>→</span></a></div>'),
  'Product Spotlight')
 
@@ -369,10 +394,10 @@ entry('07', '2 · Browse', '#2 Worth It', '1 day after Email 1', 'Nov 27 – Dec
  'Customer Stories')
 
 # --- Flow 3 · Add to cart
-CART_W = ('crystal_neck', 'Crystal Necklace', 'crystal_neck')
-CART_M = ('set_M_cart', '3x Minimal Set', 'set')
+CART_W = ('dz_crystal_neck', 'Crystal Necklace', 'Black / 55 cm', '€89.90')
+CART_M = ('dz_braid_M', 'Braid Bracelet', 'Black / Medium', '€39.90')
 def dyn_cart(big=True):
-    return dyn(CART_W[0], CART_M[0], CART_W[1], CART_M[1], CART_W[2], CART_M[2], 'Dynamic block: the cart item', big)
+    return dyn(CART_W, CART_M, 'Dynamic: Added to Cart name, finish/size, image and price (shopper’s currency)', big)
 
 entry('08', '3 · Add to Cart', '#1 Saved For You', '2 hours after added to cart', 'Nov 27 – Dec 6', 2, LIVE,
  [('Trigger', 'Added to cart, no checkout · exits: Started Checkout, Placed Order'),
@@ -448,6 +473,34 @@ entry('14', '4 · Checkout', '#4 Final Hours', '2 days after Email 3', 'Nov 27 �
     + order(compact=True) + cta('Complete my order', 'Questions? Reply to this email.')),
  'Limited Time')
 
+
+# ---------------------------------------------------------------- how each email is built in Klaviyo
+C = lambda t: f'<code>{t}</code>'
+DATE = 'Date modules switch by themselves: ' + C("{% today '%Y-%m-%d' as d %}") + ' (before 2026-11-23 pre-sale, before 2026-11-27 early access, then live).'
+GEN = 'W/M: show/hide on ' + C("person|lookup:'Gender'") + ' (“Men” → M, else W).'
+SET = C("|find_replace:'Stack Set|Set'")
+VIEW = ('Trigger: Viewed Product (metric HtsYBH) · filter: no Added to Cart, Checkout Started or Placed Order since. '
+        'Block fields: ' + C('event.ProductName') + SET + ', ' + C('event.ImageURL') + ', ' + C('event.Price') +
+        ' (already text in the shopper’s currency), ' + C('event.URL') + '.')
+CART = ('Trigger: Shopify “Added to Cart” (WBpdcS), not the API metric of the same name (silent since Sep 2) · filter: no Checkout Started or Placed Order since. '
+        'Fields: ' + C("event|lookup:'Product Name'") + SET + ', ' + C('event.ImageURL') + ', ' + C("event|lookup:'Variant Name'") + ', ' +
+        C('event.Price') + ' + ' + C("event|lookup:'$currency'") + '. One item: the one they added.')
+CHK = ('Trigger: Shopify “Checkout Started” (LrhH24), not the API “Started Checkout” (no names or images) · filter: no Placed Order since. '
+       'Table block repeating over ' + C('event.extra.line_items') + ': ' + C('item.product.variant.images.0.src') + ', ' + C('item.title') + SET + ', ' +
+       C('item.variant_title') + ', ' + C('item.quantity') + ', ' + C('item.line_price') + ' + ' + C('event.extra.presentment_currency') +
+       '; the Jewelry Case row prints “Included”. Discount row ' + C("event|lookup:'Total Discounts'") + ', total ' + C("event|lookup:'$value'") +
+       ', button ' + C('event.extra.responsive_checkout_url') + '.')
+WEL = 'Trigger: added to the BFCM pop-up list (form SyHM2E, source POPUP26) · exits on Placed Order. ' + DATE + ' ' + GEN + ' Product cards are static images and links, no prices.'
+KB = {
+ '01': 'Trigger: added to the BFCM pop-up list (form SyHM2E, source POPUP26), send immediately. ' + DATE.replace(', then live', '') + ' ' + GEN + ' Save the date: add-to-calendar link. No product data.',
+ '02': WEL, '03': WEL, '04': WEL, '05': WEL,
+ '06': VIEW + ' “You might also like”: product block on a recommendation feed filtered to ' + C('event.Categories') + ', 3 items, title and image only.',
+ '07': VIEW, '08': CART, '09': CART, '10': CART,
+ '11': CHK, '12': CHK + ' Compact table.', '13': CHK + ' Compact table. ' + GEN + ' for the two quotes.',
+ '14': CHK + ' Compact table. Dec 6 copy: ' + C("{% if d == '2026-12-06' %}") + ', other days “Still Saved”. Turn the flow off on Dec 7 so nothing sends after the sale.',
+}
+for e in E: e['brief'].append(('Klaviyo', KB[e['no']]))
+
 # ---------------------------------------------------------------- page
 def rail(e):
     states = ' · '.join(SNAME[s] for s in e['states'])
@@ -507,7 +560,7 @@ html = f'''<title>Cavaier BFCM26 Flows</title>
   <header class="intro">
     <span class="kicker">BFCM26 · Klaviyo flows · Oct 27 – Dec 6</span>
     <h1>Cavaier BFCM26 flows</h1>
-    <p>Five flows, 14 emails, each in a women’s (W) and a men’s (M) version, written to the BFCM 2026 Flows brief. One row per email: the brief card, then the email at 600px. Use the bar to switch W / M and the date state (pre-sale, early access, live, Dec 6): emails that change with the date show that state, the rest show the only state they run in. Version A is the brief as written; more versions go to the right of it. Photography from the campaign shoots, in black and white.</p>
+    <p>Five flows, 14 emails, each in a women’s (W) and a men’s (M) version, written to the BFCM 2026 Flows brief. One row per email: the brief card, then the email at 600px. Use the bar to switch W / M and the date state (pre-sale, early access, live, Dec 6): emails that change with the date show that state, the rest show the only state they run in. Version A is the brief as written, drawn the way Klaviyo will render it: dynamic blocks show sample products from the real Shopify events, and each brief card has a “Klaviyo” line with the trigger, fields and logic. More versions go to the right of A. Static photography from the campaign shoots, in black and white.</p>
   </header>
 
   <section class="card">
@@ -535,10 +588,22 @@ html = f'''<title>Cavaier BFCM26 Flows</title>
     </div>
   </section>
 
+  <section class="card" id="build">
+    <span class="kicker">Built for Klaviyo</span>
+    <ul class="levers">
+      <li><b>Checked on your Klaviyo account</b> (test template rendered, then deleted): the <code>today</code> tag for the date switch, <code>find_replace</code> to print “3x Minimal Set” instead of Shopify’s “3x Minimal Stack Set”, the loop over checkout line items, and the <code>Gender</code> profile lookup.</li>
+      <li><b>Triggers.</b> Browse: Viewed Product. Cart: Shopify “Added to Cart” (the API one stopped on Sep 2). Checkout: Shopify “Checkout Started” (the API “Started Checkout” has no names or images). Each email’s Klaviyo line lists the exact fields.</li>
+      <li><b>Prices.</b> No fixed prices in static cards: shoppers see their own currency (recent events: EUR, AUD, QAR, SGD) and the 30% comes off at checkout. Dynamic blocks print the price Klaviyo receives with “30% off at checkout” under it; checkout emails show the real discount line and total.</li>
+      <li><b>Images.</b> Dynamic slots show the Shopify product image (colour), as Klaviyo will. Static sections use the campaign photos, uploaded to Klaviyo.</li>
+      <li><b>Email-safe.</b> No overlapping layers, gradients or shadows; the timeline is a hairline with glyph dots; buttons are bulletproof table buttons. Figtree loads in Apple Mail; Gmail and Outlook fall back to Helvetica/Arial.</li>
+      <li><b>W/M.</b> Profiles carry <code>Gender</code> = Women / Men from the pop-up; when it’s missing the email falls back to W.</li>
+    </ul>
+  </section>
+
   <section class="card" id="open">
     <span class="kicker">Open items</span>
     <ul class="levers">
-      <li><b>Prices.</b> Cards use the campaign’s prices (3x Minimal Set €94.95 → €66.47, Rope Bracelet €29.95 → €20.97, Crystal Necklace €89.95 → €62.97, Cube Pendant Necklace €39.95 → €27.97). Shopify shows €94.90, €29.90, €89.90 and €39.90 today. Which is right?</li>
+      <li><b>Date switch timezone.</b> Check in a Klaviyo preview which timezone the <code>today</code> tag uses (account vs recipient) before Nov 23.</li>
       <li><b>Testimonials.</b> Every quote is a placeholder until Katrina pulls verified Trustpilot reviews (Emails 05, 07, 09, 13).</li>
       <li><b>Holiday delivery.</b> Email 12 says orders by Dec 6 arrive for the holidays: CEO to confirm the cut-off.</li>
       <li><b>Matte Cuff.</b> “From Nov 28” swaps (Emails 03, 04, 05, 06) are noted in the brief cards, not drawn: there are no Matte Cuff photos yet and it isn’t in the store.</li>

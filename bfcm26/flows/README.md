@@ -23,8 +23,19 @@ Page **"BFCM Flows (synced)"** (`359:2`) in the BFCM file. One frame per email �
 (48 frames for Version A), named `NN-V-G-state · Subject`, with a brief block above each. Row = email.
 The "Email Campaign" and "Email Flow" pages are not touched. Tools and the loop: `figma/RUNBOOK.md`.
 
+## Built for Klaviyo
+
+Every email is drawn the way Klaviyo will render it, and each brief card has a "Klaviyo" line with the
+trigger metric, the event fields and the show/hide logic. Checked on the Klaviyo account with a temporary
+test template (rendered, then deleted): the `today` tag for the date switch, `find_replace` ("Stack Set" →
+"Set"), the loop over `event.extra.line_items`, and `person|lookup:'Gender'`.
+- Browse: Viewed Product. Cart: Shopify "Added to Cart" (the API metric stopped on Sep 2). Checkout: Shopify
+  "Checkout Started" (the API "Started Checkout" has no names or images).
+- No fixed prices in static cards (multi-currency list; 30% comes off at checkout). Dynamic blocks print the
+  event price; checkout emails show the discount line and total.
+
 ## Open items
 
-Listed on the page under "Open items": prices (campaign €x.95 vs Shopify €x.90 today), Trustpilot quotes
+Listed on the page under "Open items": timezone of the `today` date switch, Trustpilot quotes
 (Katrina), holiday delivery cut-off (CEO), Matte Cuff photos (from Nov 28 swaps not drawn), neutral version
 for Flow 0, pop-ups not on the page yet.

@@ -258,3 +258,20 @@ div.st{display:block}
 .dlx b{text-transform:none;letter-spacing:-.01em}
 .spec div:first-child span:first-child{color:var(--grey);font-weight:300}
 .spec.offer div:first-child span:first-child{color:var(--red);font-weight:400}
+/* ---- Klaviyo-real pass: email-safe versions ---- */
+.tline i{background:#BDBDBA!important}
+.tline b{width:auto!important;height:auto!important;border-radius:0!important;background:none!important;font:400 9px/1 Arial,sans-serif;color:var(--black)}
+.tline b.r{color:var(--red)}
+.ovc{margin:0 24px!important;box-shadow:none!important;border:1px solid var(--line);border-top:0}
+.fin i.s{background:#C9C9C6!important}
+.fin i.on{box-shadow:none!important}
+.go.red,.red{color:var(--red)}
+.dyn .dt>div{display:flex;flex-direction:column;gap:6px}
+.dyn.big .dt>div{flex-direction:row;flex-wrap:wrap;align-items:baseline;column-gap:14px;row-gap:4px;width:100%}
+.dyn.big .dt>div h4{flex:1 1 100%}
+.dp{font:400 13px/1.3 var(--body);font-variant-numeric:tabular-nums}
+.dyn.big .dimg img{object-fit:cover;background:#fff}
+.order .op{font:400 13px/1.3 var(--body);font-variant-numeric:tabular-nums}
+.order .or img{background:#fff}
+.cards>div.gW,.cards>div.gM{display:contents}
+.meta code,.levers code{font:400 11.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(128,128,128,.12);padding:1px 4px;overflow-wrap:anywhere}
