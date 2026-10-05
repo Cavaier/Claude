@@ -1,0 +1,15 @@
+{
+ "figma": {"file": "e0aqnfx3SvHowbEDDyMNMW", "page": "429:2", "section": "449:2", "image_library": "449:5"},
+ "ads": {
+  "01": {"name": "Big 30", "phase": "Sale live", "f45": "450:7", "f11": "450:25", "photo": "Cavaier 300:1485 DSC02487"},
+  "02": {"name": "Ranked list", "phase": "Sale live", "f45": "450:48", "f11": "450:81", "photo": "Shopify 3x Minimal Set silver, Minimal Cuff, Cube Bracelet"},
+  "03": {"name": "Receipt", "phase": "Sale live → Cyber Week", "f45": "450:119", "f11": "450:137", "photo": "Shopify 3x Minimal Stack Set black/gold/silver"},
+  "04": {"name": "Water checklist", "phase": "Sale live → Cyber Week", "f45": "452:7", "f11": "452:36", "photo": "Creative Bank 280:16 DSC09924"},
+  "05": {"name": "Case card", "phase": "Sale live → Cyber Week", "f45": "452:70", "f11": "452:88", "photo": "Creative Bank 280:8 DSC09734 + Shopify jewelry case"},
+  "06": {"name": "Diptych", "phase": "Sale live", "f45": "452:111", "f11": "452:128", "photo": "Cavaier 300:1486 DSC02511 + 306:111 DSC08998"},
+  "07": {"name": "Trust stat", "phase": "Retargeting", "f45": "453:7", "f11": "453:25", "photo": "Cavaier 312:9 DSC08318"},
+  "08": {"name": "Timeline", "phase": "BF teaser Nov 25–26", "f45": "453:48", "f11": "453:66", "photo": "Cavaier 377:256 DSC04856"},
+  "09": {"name": "Week calendar", "phase": "Cyber Week Nov 30–Dec 5", "f45": "453:89", "f11": "453:127", "photo": "Creative Bank 280:5 DSC09628"},
+  "10": {"name": "Ends tonight", "phase": "Last call Dec 6", "f45": "453:170", "f11": "453:187", "photo": "Creative Bank 280:4 DSC09625"}
+ }
+}
