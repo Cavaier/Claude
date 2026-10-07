@@ -23,8 +23,11 @@ def call(path, body=None, method=None, raw=None, ctype='application/vnd.api+json
         try:
             r = urllib.request.urlopen(req, timeout=120); t = r.read(); return json.loads(t) if t else {}
         except urllib.error.HTTPError as e:
-            if e.code in (429, 502, 503): time.sleep(min(60, 2 ** i)); continue
+            if e.code in (429, 500, 502, 503, 504): time.sleep(min(60, 2 ** i)); continue
             raise Exception(f'{e.code} {path}: {e.read().decode()[:1500]}')
+        except (ConnectionError, TimeoutError, urllib.error.URLError) as e:
+            time.sleep(min(60, 2 ** i))
+    raise Exception(f'gave up on {path}')
 
 
 def pages(path):
@@ -96,7 +99,7 @@ def step_templates():
         if cur and cur['hash'] == h: continue
         if cur: call(f'templates/{cur["id"]}/', {'data': {'type': 'template', 'id': cur['id'], 'attributes': {'name': name, 'html': html}}}, 'PATCH'); tid = cur['id']
         else: tid = call('templates/', {'data': {'type': 'template', 'attributes': {'name': name, 'editor_type': 'CODE', 'html': html}}})['data']['id']
-        T[e['id']] = dict(id=tid, hash=h, subject=r.subject(e), preview=r.preview(e)); save(); print('template', e['id'], tid)
+        T[e['id']] = dict(id=tid, hash=h); save(); print('template', e['id'], tid)
     print('templates', len(T))
 
 # ---------------------------------------------------------------- lists and segments
@@ -155,6 +158,19 @@ def sms_body(f, e, r):
     for k, v in tx.items():
         out += ('{% if ' if first else '{% elif ') + (r.cond(k.split()) or 'True') + ' %}' + one(v, k.split()[0]); first = False
     return out + '{% endif %}'
+# subject + preview: full date logic when it fits Klaviyo's 250 characters, else the current period's text
+# (switched on each period's first day by `push.py EU subjects`)
+import datetime
+SWITCH = [('pre', '2026-11-23'), ('ea', '2026-11-27'), ('bf', '2026-12-01'), ('cw', '2026-12-07'), ('xmas', '2026-12-18'), ('late', '2026-12-25')]
+def phase_now(day=None):
+    day = day or datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
+    return next((p for p, end in SWITCH if day < end), 'post')
+def subj_prev(r, e, phase=None):
+    out = []
+    for v in (e['subject'], e['preview']):
+        logic = r.short(v, e['phases'])
+        out.append(logic if len(logic) <= 250 else r.phase_texts(v, e['phases'])[phase or phase_now()])
+    return out
 def build_flow(f):
     fid, L = f['id'], K['lists']; fb = FB(); r = R(ACCT, fid, K['images']); T = K['templates']; pf = []
     trig = {
@@ -163,7 +179,7 @@ def build_flow(f):
         'F4': {'type': 'metric', 'id': M['cart'], 'trigger_filter': None}, 'F5': {'type': 'metric', 'id': M['checkout'], 'trigger_filter': None},
         'F6': {'type': 'metric', 'id': M['order'], 'trigger_filter': None}, 'F7': {'type': 'list', 'id': L['winback']}, 'F8': {'type': 'list', 'id': L['sunset']},
         'F10': {'type': 'list', 'id': L['salelive']}, 'F11': {'type': 'list', 'id': L['second']}, 'F12': {'type': 'metric', 'id': M['active'], 'trigger_filter': None},
-        'F13': {'type': 'metric', 'id': M['ordered'], 'trigger_filter': {'condition_groups': [{'conditions': [{'type': 'metric-property', 'field': 'Name', 'filter': {'type': 'string', 'operator': 'contains', 'value': 'Gift Card'}}]}]}},
+        'F13': {'type': 'metric', 'id': M['ordered'], 'trigger_filter': {'condition_groups': [{'conditions': [{'type': 'metric-property', 'metric_id': M['ordered'], 'field': 'Name', 'filter': {'type': 'string', 'operator': 'contains', 'value': 'Gift Card'}}]}]}},
         'S1': {'type': 'list', 'id': M['sms_list']}}.get(fid)
     if trig is None: return None  # F9: the Back in Stock trigger can't be created through the API
     pf = {'F2': since_start(M['cart'], M['checkout'], M['order']) + not_in_flow(3), 'F3': since_start(M['viewed'], M['cart'], M['checkout'], M['order']) + not_in_flow(7),
@@ -181,8 +197,8 @@ def build_flow(f):
                          'add_tracking_params': True, 'name': f'{e["id"]} · {e["name"]}'}, 'status': 'draft'})
             fb.prev = [(sms, 'next'), (split, 'next_if_false')]
             continue
-        t = T[e['id']]
-        fb.add('send-email', {'message': {'from_email': K['map']['from_email'], 'from_label': K['map']['from_label'], 'subject_line': t['subject'], 'preview_text': t['preview'],
+        t = T[e['id']]; sj, pv = subj_prev(r, e)
+        fb.add('send-email', {'message': {'from_email': K['map']['from_email'], 'from_label': K['map']['from_label'], 'subject_line': sj, 'preview_text': pv,
                'template_id': t['id'], 'smart_sending_enabled': e['id'] not in NO_SS, 'transactional': False, 'add_tracking_params': True, 'name': f'{e["id"]} · {e["name"]}'},
                'status': 'draft'})
     return dict(triggers=[trig], profile_filter={'condition_groups': pf} if pf else None, actions=fb.acts, entry_action_id=fb.acts[0]['temporary_id'], reentry_criteria=None)
@@ -199,14 +215,13 @@ def build_gender(kind):
     none = lambda vals: pm(mid, 'equals', 0, tf, anyof(vals))
     branches = [('Men', [[has(men)], [none(women)]]), ('Women', [[has(women)], [none(men)]])] + ([('Both', [[has(men)], [has(women)]])] if kind == 'G1' else [])
     split = fb.add('multi-branch-split', {'name': 'Which side', 'branches': [
-        {'branch_filter': {'condition_groups': [{'conditions': c} for c in conds]}, 'links': {}, 'order': i, 'name': f'Gender = {gv}'} for i, (gv, conds) in enumerate(branches)]
-        + [{'branch_filter': None, 'links': None, 'is_else': True}]}, ())
+        {'branch_id': f'b{i}', 'branch_filter': {'condition_groups': [{'conditions': c} for c in conds]}, 'links': {}, 'order': i, 'name': f'Gender = {gv}'} for i, (gv, conds) in enumerate(branches)]
+        + [{'branch_id': 'else', 'branch_filter': None, 'links': None, 'is_else': True}]}, ())
     for i, (gv, _) in enumerate(branches):
         fb.prev = []
         a = fb.add('update-profile', {'profile_operations': [
-            {'operator': 'update', 'property_type': 'string', 'property_key': 'Gender', 'property_value': gv},
-            {'operator': 'update', 'property_type': 'string', 'property_key': 'Gender source', 'property_value': src},
-            {'operator': 'update', 'property_type': 'date', 'property_key': 'Gender set on', 'property_value': 'today'}], 'status': 'draft'})
+            {'operator': 'update', 'property_type': 'string', 'property_key': "properties['Gender']", 'property_value': gv},
+            {'operator': 'create', 'property_type': 'string', 'property_key': "properties['Gender source']", 'property_value': src}], 'status': 'draft'})
         split['data']['branches'][i]['links'] = {'next': a['temporary_id']}
     pf = [{'conditions': [{'type': 'profile-property', 'property': "properties['Gender']", 'filter': {'type': 'existence', 'operator': 'not-set'}}]}]
     return dict(triggers=[{'type': 'metric', 'id': mid, 'trigger_filter': None}], profile_filter={'condition_groups': pf}, actions=fb.acts,
@@ -236,7 +251,7 @@ def step_campaigns():
         body = {'data': {'type': 'campaign', 'attributes': {'name': f'Q4 · {eid} · {e["name"]}', 'audiences': {'included': [S[seg]] if seg else [K['lists']['salelive']], 'excluded': []},
                 'send_strategy': {'method': 'static', 'datetime': when + TZ, 'options': {'is_local': True, 'send_past_recipients_immediately': False}},
                 'campaign-messages': {'data': [{'type': 'campaign-message', 'attributes': {'definition': {'channel': 'email', 'label': eid,
-                    'content': {'subject': T[eid]['subject'], 'preview_text': T[eid]['preview'], 'from_email': K['map']['from_email'], 'from_label': K['map']['from_label']}}}}]}}}}
+                    'content': dict(zip(('subject', 'preview_text'), subj_prev(R(ACCT, f['id'], K['images']), e, phase_now(when[:10]))), from_email=K['map']['from_email'], from_label=K['map']['from_label'])}}}]}}}}
         try:
             res = call('campaigns/', body); cid = res['data']['id']
             mid = res['data']['relationships']['campaign-messages']['data'][0]['id']
@@ -269,5 +284,23 @@ def step_backfill():
         call(f'profiles/{pid}/', {'data': {'type': 'profile', 'id': pid, 'attributes': {'properties': {'Gender': gv, 'Gender source': 'order backfill'}}}}, 'PATCH')
         if i % 250 == 0: print('backfill', i, '/', len(todo))
     B.update(done=True, updated=len(todo), split=dict(Counter(todo.values()))); save(); print('backfill', B)
+
+def step_subjects(day=None):
+    ph = phase_now(day); n = 0
+    for f in Q.FLOWS:
+        fl = K.get('flows', {}).get(f['id']) or {}
+        if not fl.get('id'): continue
+        r = R(ACCT, f['id'], K['images'])
+        want = {f'{e["id"]} · {e["name"]}': subj_prev(r, e, ph) for e in f['emails'] if not e.get('kind') and e['id'] not in SKIP_IN_FLOW}
+        for a in pages(f'flows/{fl["id"]}/flow-actions/'):
+            time.sleep(0.3)
+            d = call(f'flow-actions/{a["id"]}/')['data']['attributes'].get('definition') or {}
+            if d.get('type') != 'send-email': continue
+            msg = d['data']['message']; w = want.get(msg.get('name'))
+            if not w or (msg.get('subject_line'), msg.get('preview_text')) == tuple(w): continue
+            msg['subject_line'], msg['preview_text'] = w
+            d.pop('temporary_id', None)
+            call(f'flow-actions/{a["id"]}/', {'data': {'type': 'flow-action', 'id': a['id'], 'attributes': {'definition': d}}}, 'PATCH'); n += 1
+    print('subjects switched to', ph, n, 'emails')
 
 for s in STEPS: globals()['step_' + s]()

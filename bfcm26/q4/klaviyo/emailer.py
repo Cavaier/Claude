@@ -82,10 +82,10 @@ class R:
     def link(self, label=''):
         f, L = self.flow, re.sub(r'<[^>]+>', '', str(label)).lower()
         if 'gift card' in L or 'send the link' in L or 'send a gift' in L: return f'{self.base}/products/cavaier-gift-card'
-        if f == 'F5': return '{{ event.extra.checkout_url|default:"' + self.base + '/cart" }}'
+        if f == 'F5': return "{{ event.extra.checkout_url|default:'" + self.base + "/cart' }}"
         if f == 'F4' and ('cart' in L or 'yours' in L or 'finish' in L or 'it now' in L): return self.base + '/cart'
-        if f in ('F2', 'F4') and ('it' in L.split() or 'shop it' in L or 'back to' in L): return '{{ event.URL|default:"' + self.base + '" }}'
-        if f == 'F9': return '{{ event.URL|default:"' + self.base + '" }}'
+        if f in ('F2', 'F4') and ('it' in L.split() or 'shop it' in L or 'back to' in L): return "{{ event.URL|default:'" + self.base + "' }}"
+        if f == 'F9': return "{{ event.URL|default:'" + self.base + "' }}"
         if 'set' in L: return self.gender(f'{self.base}/collections/womens-sets', f'{self.base}/collections/mens-sets')
         return self.shop()
     def img(self, k, w=600, style=''):
@@ -232,7 +232,7 @@ class R:
                     f'<tr><td width="70" style="padding:12px 0;border-bottom:1px solid {LINE}"><img src="{{{{ item.product.images.0.src }}}}" width="60" alt="" style="display:block;width:60px;height:auto;border:0"></td>'
                     f'<td style="padding:12px 12px;border-bottom:1px solid {LINE}"><div style="font:400 11.5px/1.3 {FONT};letter-spacing:1.4px;text-transform:uppercase;color:{BLACK}">{{{{ item.title|find_replace:\'Stack Set|Set\' }}}}</div>'
                     f'<div style="margin-top:4px;font:300 12.5px/1.5 {FONT};color:{GREY}">{{{{ item.variant_title }}}} &middot; Qty {{{{ item.quantity }}}}</div></td>'
-                    f'<td align="right" style="padding:12px 0;border-bottom:1px solid {LINE};font:400 13px/1.3 {FONT};color:{BLACK}">{{% if item.title == "Jewelry Case" or item.title == "Schmuckkasten" %}}Included{{% else %}}{{{{ item.line_price }}}} {{{{ event.extra.presentment_currency }}}}{{% endif %}}</td></tr>'
+                    f'<td align="right" style="padding:12px 0;border-bottom:1px solid {LINE};font:400 13px/1.3 {FONT};color:{BLACK}">{{% if item.title == \'Jewelry Case\' or item.title == \'Schmuckkasten\' %}}Included{{% else %}}{{{{ item.line_price }}}} {{{{ event.extra.presentment_currency }}}}{{% endif %}}</td></tr>'
                     '{% endfor %}'
                     f'<tr><td colspan="2" style="padding:10px 0;font:300 13px {FONT};color:{GREY}">Discount</td><td align="right" style="padding:10px 0;font:300 13px {FONT};color:{RED}">&minus;{{{{ event|lookup:\'Total Discounts\' }}}} {{{{ event.extra.presentment_currency }}}}</td></tr>'
                     f'<tr><td colspan="2" style="padding:14px 0 0;font:500 10px/1 {FONT};letter-spacing:1.6px;text-transform:uppercase;color:{BLACK}">Total</td><td align="right" style="padding:14px 0 0;font:300 30px/1 {FONT};color:{RED}">{{{{ event|lookup:\'$value\' }}}} {{{{ event.extra.presentment_currency }}}}</td></tr>')
@@ -316,5 +316,33 @@ class R:
                 f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{FOG2}"><tr><td align="center" style="padding:0">'
                 f'<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:{bg}">{rows}</table>'
                 '</td></tr></table></body></html>')
-    def subject(self, e): return ("" if self.ctx else "{% today '%Y-%m-%d' as d %}") + self.plain(e['subject'])
-    def preview(self, e): return ("" if self.ctx else "{% today '%Y-%m-%d' as d %}") + self.plain(e['preview'])
+    # subject / preview: Klaviyo caps these at ~250 characters including logic, so they use a compact chain
+    # (upper bounds only, %y%m%d dates) and the main day of each period for day-level «tokens»
+    UPPER = [('pre', '261123'), ('ea', '261127'), ('bf', '261201'), ('cw', '261207'), ('xmas', CUT[2:].replace('-', '')), ('late', '261225')]
+    def _phase_text(self, v, p):
+        day = next((d for d in DAYS if d['phase'] == p and d['default']), None) or next((d for d in DAYS if d['phase'] == p), {})
+        if isinstance(v, dict) and not set(v) <= {'W', 'M'}:
+            v = next((x for k, x in v.items() if p in k.split()), '')
+        if isinstance(v, dict): v = v.get('W', '')
+        v = re.sub(r'<[^>]+>', '', v).replace('&nbsp;', ' ')
+        return re.sub(r'«(\w+)»', lambda m: day.get(m.group(1), ''), v)
+    def phase_texts(self, v, phases):
+        run = [p for p in ORDER if p in phases] or ORDER
+        return {p: self._phase_text(v, p if p in run else min(run, key=lambda x: abs(ORDER.index(x) - ORDER.index(p)))) for p in ORDER}
+    def short(self, v, phases):
+        if self.ctx: return self._phase_text(v, self.ctx['phase'])
+        vals = self.phase_texts(v, phases)
+        if len(set(vals.values())) == 1: return vals['pre']
+        segs = []
+        for p in ORDER:
+            if segs and segs[-1][1] == vals[p]: segs[-1][0] = p
+            else: segs.append([p, vals[p]])
+        out = "{%today '%y%m%d' as d%}"
+        bound = dict(self.UPPER)
+        for i, (p, txt) in enumerate(segs):
+            if i == len(segs) - 1: out += ('{%else%}' if i else '') + txt
+            else: out += ('{%if ' if i == 0 else '{%elif ') + f"d < '{bound[p]}'%}}" + txt
+        out += '{%endif%}'
+        return out
+    def subject(self, e): return self.short(e['subject'], e['phases'])
+    def preview(self, e): return self.short(e['preview'], e['phases'])

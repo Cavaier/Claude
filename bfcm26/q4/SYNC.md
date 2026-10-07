@@ -51,6 +51,16 @@ Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the
 - One-off backfill on the first push to each account: set `Gender` (+ `Gender source = order`) for existing customers with no Gender from their Ordered Product history, via the API.
 - F7, F8, F11 are list-triggered: bulk-add their segments on the dates in each flow's trigger (F8 Oct 19, F11 Nov 19, F7 Nov 23; F7/F11 top-up Dec 7).
 
+## Klaviyo push (done Oct 7, both accounts, all drafts)
+
+`klaviyo/push.py EU|US [images templates lists segments flows campaigns backfill subjects]`; ids in `sync_state.json['klaviyo']`.
+- 39 templates per account (`Q4 · F1E1 · …`), email-safe HTML from `klaviyo/emailer.py`; date phase + Gender logic inside; `klaviyo/rendertest.py` renders all through Klaviyo.
+- 15 flows per account as drafts (F1–F8, F10–F13, S1, G1, G2). F9 Back in Stock: build by hand (no API trigger), templates `Q4 · F9E1/E2` are ready.
+- Fixed-date steps F1E6, F1E7, F10E3, F13E2 are draft email campaigns; S2C1–C6 are draft SMS campaigns. None scheduled.
+- Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
+- Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; run `push.py EU subjects` and `push.py US subjects` on Nov 23, Nov 27, Dec 1, Dec 7, Dec 18 [cut-off] and Dec 25.
+- Gender backfill from order history: not run yet (needs an explicit go).
+
 ## What stays manual
 
 Pop-up forms · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
