@@ -1567,12 +1567,12 @@
     "S2C6": "01M4C5J1ZX8RMPSVRQFN9DGV34"
    },
    "forms": {
-    "ea": "YvijVQ",
-    "bf": "TzMdke",
-    "xmas": "R5H2RJ",
-    "late": "WZntEq",
-    "post": "TjTsi4",
-    "pre": "Un4LDD"
+    "ea": "VXV9kD",
+    "bf": "TtQWS9",
+    "xmas": "TVBuMY",
+    "late": "SAW9dk",
+    "post": "Ue7w33",
+    "pre": "YtZjP9"
    },
    "form_assets": {
     "side": {
@@ -1588,6 +1588,13 @@
      "original_image_url": null,
      "id": 380817423,
      "asset_id": 380817423
+    },
+    "mobile": {
+     "src": "https://cdn.klaviyomail.com/company/KCTpHb/images/673b4012-6381-4e04-bf47-9ecdac72d1dc.jpeg",
+     "alt_text": null,
+     "original_image_url": null,
+     "id": 380821518,
+     "asset_id": 380821518
     }
    }
   },
@@ -1983,12 +1990,12 @@
     "S2C6": "01M4C5MQT85MRF0SB21KMYMNT9"
    },
    "forms": {
-    "pre": "X8BYcF",
-    "ea": "REH5jQ",
-    "bf": "TnvGuV",
-    "xmas": "RqPihE",
-    "late": "WHtGtH",
-    "post": "RfyMAS"
+    "pre": "Y7tih4",
+    "ea": "QR8vTJ",
+    "bf": "SyV94P",
+    "xmas": "T7iVk4",
+    "late": "UP7yv9",
+    "post": "WwUbEe"
    },
    "form_assets": {
     "side": {
@@ -2004,6 +2011,13 @@
      "original_image_url": null,
      "id": 380820133,
      "asset_id": 380820133
+    },
+    "mobile": {
+     "src": "https://cdn.klaviyomail.com/company/XSpCr7/images/aa791741-44da-4086-8346-680a93dd7ff3.jpeg",
+     "alt_text": null,
+     "original_image_url": null,
+     "id": 380821601,
+     "asset_id": 380821601
     }
    }
   }

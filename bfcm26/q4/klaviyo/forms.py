@@ -47,6 +47,14 @@ if 'side' not in FA:
         im = photo(k); s = max(600 / im.width, Hh / im.height); im = im.resize((round(im.width * s), round(im.height * s)))
         x0 = (im.width - 600) // 2; y0 = (im.height - Hh) // 2; out.paste(im.crop((x0, y0, x0 + 600, y0 + Hh)), (i * 600, 0))
     b = io.BytesIO(); out.save(b, 'JPEG', quality=82); FA['side'] = upload('Q4 · pop-up photos', b.getvalue(), 'image/jpeg'); save()
+if 'mobile' not in FA:  # mobile: the same two photos as a 300 px strip on top (as in the mock-up)
+    def photo(k):
+        uri = GEN['load_img'](k); return Image.open(io.BytesIO(base64.b64decode(uri.split(',', 1)[1]))).convert('RGB')
+    W, Hh = 780, 600; out = Image.new('RGB', (W, Hh), (232, 232, 230))
+    for i, k in enumerate(['lf_w_black_top', 'lf_m_linen_chin']):
+        im = photo(k); s_ = max(390 / im.width, Hh / im.height); im = im.resize((round(im.width * s_), round(im.height * s_)))
+        x0 = (im.width - 390) // 2; y0 = (im.height - Hh) // 3; out.paste(im.crop((x0, y0, x0 + 390, y0 + Hh)), (i * 390, 0))
+    b = io.BytesIO(); out.save(b, 'JPEG', quality=82); FA['mobile'] = upload('Q4 · pop-up photos (mobile)', b.getvalue(), 'image/jpeg'); save()
 if 'logo' not in FA:
     FA['logo'] = upload('Q4 · logo', open(os.path.join(Q4, 'logo0.png'), 'rb').read(), 'image/png'); save()
 
@@ -83,14 +91,22 @@ def logo():
 def headblocks(kick, head, sub):
     out = []
     for dev, hs, ss in ((['desktop'], 54, 16), (['mobile'], 34, 14.5)):
-        c = (P(H.escape(kick.upper()), 10.5, 500, RED, 2, 1.4) if kick else '') + P(H.escape(head), hs, 300, BLACK, -1.5, 1.02)
+        c = (f'<p style="text-align:center;margin:0 0 26px"><img src="{FA["logo"]["src"]}" width="84" alt="Cavaier"></p>' +
+             (P(H.escape(kick.upper()), 10.5, 500, RED, 2, 1.4) if kick else '') + P(H.escape(head), hs, 300, BLACK, -1.5, 1.02))
         if sub: c += P(H.escape(sub), ss, 300, INK2, 0, 1.55)
         out.append(html(c, dev, 4, 14))
     return out
-def step(name, blocks):
+def mphoto():
+    return {'type': 'image', 'styles': {'horizontal_alignment': 'center', 'width': 390, 'padding': pad(0, 18), 'background_color': None,
+            'drop_shadow': {'enabled': False, 'color': '#000000', 'blur': 15, 'x_offset': 0, 'y_offset': 0}},
+            'properties': {'display_device': ['mobile'], 'classname': None, 'block_animation': None, 'image': FA['mobile'], 'additional_fields': None}, 'action': None}
+def step(name, rows):
+    # Klaviyo: blocks in one row sit side by side; at most 6 rows per column; content column styles must be null next to a side image
     side = {'rows': [], 'styles': {'background_color': None, 'background_image': {
         'styles': {'horizontal_alignment': 'center', 'width': 1200, 'position': 'cover', 'vertical_alignment': 'center', 'custom_width': None}, 'properties': FA['side']}}}
-    return {'name': name, 'columns': [side, {'rows': [{'blocks': blocks}], 'styles': None}]}  # at most 6 rows per column; content column styles must be null next to a side image
+    rows = [[mphoto()]] + rows
+    assert len(rows) <= 6, (name, len(rows))
+    return {'name': name, 'columns': [side, {'rows': [{'blocks': r} for r in rows], 'styles': None}]}
 
 # ---------------------------------------------------------------- copy per sale period
 PH = ['pre', 'ea', 'bf', 'xmas', 'late', 'post']
@@ -126,19 +142,19 @@ def version(p):
     disclosure = find('sms_disclosure')
     src = [{'name': '$source', 'value': 'POPUP26'}]
     fine = html(P('By signing up you agree to receive marketing emails from Cavaier. Unsubscribe anytime.', 11, 300, GREY, 0, 1.5), ['desktop', 'mobile'], 6, 0)
-    s1 = step('Email', [logo(), *headblocks(txt(PU['kick'], p), txt(PU['head'], p), txt(PU['sub'], p)), email_in,
-                        button(txt(PU['cta'], p), NEXT(EMAIL_LIST), extra=src), fine, link('Not now', CLOSE)])
-    s2 = step('Phone (SMS)', [logo(), *headblocks('One more step', txt(PU['sms_head'], p), txt(PU['sms_sub'], p)), phone_in,
-                              button('Text me', NEXT(SMS_LIST), extra=src)] + ([disclosure] if disclosure else []) + [link('No thanks', NEXT(EMAIL_LIST))])
+    s1 = step('Email', [headblocks(txt(PU['kick'], p), txt(PU['head'], p), txt(PU['sub'], p)), [email_in],
+                        [button(txt(PU['cta'], p), NEXT(EMAIL_LIST), extra=src)], [fine], [link('Not now', CLOSE)]])
+    s2 = step('Phone (SMS)', [headblocks('One more step', txt(PU['sms_head'], p), txt(PU['sms_sub'], p)), [phone_in],
+                              [button('Text me', NEXT(SMS_LIST), extra=src)]] + ([[disclosure]] if disclosure else []) + [[link('No thanks', NEXT(EMAIL_LIST))]])
     who = [button(g, NEXT(EMAIL_LIST), filled=False, extra=[{'name': 'Gender', 'value': g}]) for g in ('Women', 'Men', 'Both')]
-    s3 = step('Who do you shop for', [logo(), *headblocks('One more tap', 'Who do you shop for?', 'So every email shows the right pieces.'), *who, link('Skip', NEXT(EMAIL_LIST))])
+    s3 = step('Who do you shop for', [headblocks('One more tap', 'Who do you shop for?', 'So every email shows the right pieces.'), who, [link('Skip', NEXT(EMAIL_LIST))]])
     done_cta = 'Keep browsing' if p == 'pre' else txt(PU['done_cta'], p)  # the button closes the form
-    s4 = step('Done', [logo(), *headblocks(txt(PU['kick'], p), txt(PU['done_head'], p), txt(PU['done_sub'], p)), button(done_cta, CLOSE),
-                       html(P('★★★★★ &nbsp;Rated 4.5 on Trustpilot · 3,000+ reviews', 12, 300, INK2, 0, 1.4), ['desktop', 'mobile'], 16, 0)])
+    s4 = step('Done', [headblocks(txt(PU['kick'], p), txt(PU['done_head'], p), txt(PU['done_sub'], p)), [button(done_cta, CLOSE)],
+                       [html(P('★★★★★ &nbsp;Rated 4.5 on Trustpilot · 3,000+ reviews', 12, 300, INK2, 0, 1.4), ['desktop', 'mobile'], 16, 0)]])
     v = copy.deepcopy(live)
     v['steps'] = [s1, s2, s3, s4]
     v['name'] = f'Q4 · {PNAME[p]}'; v['status'] = 'draft'
-    v['properties'] = dict(v.get('properties') or {}, side_image_settings={'size': 'large', 'alignment': 'left', 'device_type': ['desktop', 'mobile']},
+    v['properties'] = dict(v.get('properties') or {}, side_image_settings={'size': 'large', 'alignment': 'left', 'device_type': ['desktop']},
                            show_close_button=True, rule_based_trigger_evaluation='any')
     st = v['styles']
     st.update(background_color=BG, background_image=None, width='custom', custom_width=1100, minimum_height=640,
