@@ -6,7 +6,7 @@ Text values: str | phase map {"pre": .., "bf cw": ..} | gender map {"W": .., "M"
 Any module may carry "phases": [...] and/or "gender": "W"|"M".
 Seeds the shared page once; after that the published artifact is the master.
 """
-import base64, io, json, os, html as H
+import base64, io, json, os, re, html as H
 from PIL import Image, ImageOps
 from q4_specs import FLOWS, PAGE
 
@@ -157,7 +157,7 @@ FIN = {'k': 'Black', 's': 'Silver', 'g': 'Gold'}
 def pcard(it):
     o = f'<a class="pc" href="#">{img(it["img"], "")}<h4>{t(it["name"])}</h4>'
     if it.get('finish'):
-        o += '<span class="fin">' + ''.join(f'<i class="{f}"></i>' for f in it['finish']) + f'<span>{" · ".join(FIN[f] for f in it["finish"])}</span></span>'
+        o += '<span class="fin">' + ''.join(f'<span><i class="{f}"></i>{FIN[f]}</span>' for f in it['finish']) + '</span>'
     if it.get('tag'): o += f'<span class="tag">{t(it["tag"])}</span>'
     return o + '</a>'
 
@@ -276,44 +276,71 @@ def email_html(e):
         body += wrap(m, RENDER[m['type']](m))
     return f'<article class="em{" fog" if e.get("bg") == "fog" else ""}" aria-label="{e["id"]}">{body}{foot()}</article>'
 
-# ---------------------------------------------------------------- page
+
+# ---------------------------------------------------------------- page (canvas: one vertical column per flow, zoom + pan)
 def phase_names(ps): return ' · '.join(PNAME[p] for p in ps)
 
-def entry_html(f, e):
+UNIT = {'m': ('minute', 'minutes'), 'h': ('hour', 'hours'), 'd': ('day', 'days')}
+def wait_label(d):
+    m = re.fullmatch(r'\+?(\d+)([mhd])', d)
+    if d == '0': return 'Sends right away'
+    if not m: return d[:1].upper() + d[1:]
+    n, u = int(m.group(1)), m.group(2)
+    return f'Wait {n} {UNIT[u][n != 1]}'
+
+def brief_tpl(e):
     meta = [('Email', f'<b>{e["id"]} · {e["name"]}</b>'), ('Send', e['delay']), ('Runs in', phase_names(e['phases'])),
             ('Subject', t(e['subject'])), ('Preview', t(e['preview'])), ('Job', e['goal']), ('Urgency', e.get('urgency', '')),
             ('Klaviyo', e['klaviyo'])]
     if e.get('notes'): meta.append(('Notes', e['notes']))
-    dl = '<dl class="meta">' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in meta if b) + '</dl>'
-    rail = (f'<div class="rail"><span class="no">{e["id"]}</span><p class="d">{e["name"]}</p><p class="tm2">{e["delay"]}</p>'
-            f'<p class="heat">{phase_names(e["phases"])}</p><p class="showing" aria-live="polite"></p></div>')
-    return (f'<section class="entry" id="{e["id"]}" data-states="{" ".join(e["phases"])}" data-s="{e["phases"][0]}">'
-            f'{rail}<div class="mainc">{email_html(e)}</div><div class="side">{dl}</div></section>\n')
+    return '<dl class="meta">' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in meta if b) + '</dl>'
 
-def flow_html(f):
+def flow_tpl(f):
     rows = [('Replaces', f['replaces']), ('Trigger', f['trigger']), ('Filters', f['filters']), ('Exits', f['exits']),
             ('Live', f['live']), ('Why', f['why'])]
-    o = (f'<section class="flowhead" id="{f["id"]}"><span class="fid">{f["id"]}</span><div><span class="kicker">{len(f["emails"])} emails</span>'
-         f'<h2>{f["name"]}</h2><dl>' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in rows) + '</dl></div></section>\n')
+    return '<dl class="meta">' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in rows) + '</dl>'
+
+def entry_html(f, e):
+    return (f'<div class="conn"><span class="wait">{wait_label(e["delay_short"])}</span></div>'
+            f'<section class="entry" id="{e["id"]}" data-states="{" ".join(e["phases"])}" data-s="{e["phases"][0]}" tabindex="0" aria-label="{e["id"]} {e["name"]}">'
+            f'<header class="elab"><b>{e["id"]}</b><span class="nm">{e["name"]}</span><span class="subj">{t(e["subject"])}</span>'
+            f'<span class="off" aria-live="polite"></span></header>'
+            f'{email_html(e)}</section>'
+            f'<template id="b-{e["id"]}"><h3>{e["id"]} · {e["name"]}</h3>{brief_tpl(e)}</template>\n')
+
+def flow_html(f):
+    o = (f'<div class="col" id="{f["id"]}">'
+         f'<section class="fhead" tabindex="0" data-flow="{f["id"]}"><span class="fid">{f["id"]}</span><div><h2>{f["name"]}</h2>'
+         f'<p>{len(f["emails"])} email{"s" if len(f["emails"]) != 1 else ""} · replaces {f["replaces"]}</p></div></section>'
+         f'<template id="b-{f["id"]}"><h3>{f["id"]} · {f["name"]}</h3>{flow_tpl(f)}</template>'
+         f'<div class="conn short"></div><div class="node trig"><span>Trigger</span>{f["trigger_short"]}</div>')
     for e in f['emails']:
         o += entry_html(f, e)
+    o += f'<div class="conn short"></div><div class="node exit"><span>Exits on</span>{f["exits"]}</div></div>\n'
     return o
 
 flows_html = ''.join(flow_html(f) for f in FLOWS)
 n_emails = sum(len(f['emails']) for f in FLOWS)
 map_rows = ''.join(
-    f'<tr><td><a href="#{f["id"]}">{f["id"]}</a></td><td>{f["name"]}</td><td>{f["trigger_short"]}</td><td class="n">{len(f["emails"])}</td>'
+    f'<tr><td><a href="#{f["id"]}" data-go="{f["id"]}">{f["id"]}</a></td><td>{f["name"]}</td><td>{f["trigger_short"]}</td><td class="n">{len(f["emails"])}</td>'
     f'<td>{" → ".join(e["delay_short"] for e in f["emails"])}</td><td>{f["replaces"]}</td></tr>' for f in FLOWS)
+jump_opts = ''.join(f'<option value="{f["id"]}">{f["id"]} · {f["name"]}</option>' +
+                    ''.join(f'<option value="{e["id"]}">&nbsp;&nbsp;&nbsp;{e["id"]} · {e["name"]}</option>' for e in f['emails']) for f in FLOWS)
 
 IMGDATA = {k: load_img(k) for k in sorted(USED - {'logo'})}
 IMGDATA['logo'] = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(HERE, 'logo0.png'), 'rb').read()).decode()
 
-CSS = open(os.path.join(HERE, 'q4.css')).read() + '\n' + open(os.path.join(HERE, 'live_css.css')).read()
-LIVE_JS = open(os.path.join(HERE, 'live_script.js')).read().replace("/^e\\d\\d$/.test(w)?'on '+w.slice(1)", "/^F\\dE\\d$/.test(w)?'on '+w")
+CSS = open(os.path.join(HERE, 'q4.css')).read() + '\n' + open(os.path.join(HERE, 'live_css.css')).read() + '\n' + open(os.path.join(HERE, 'canvas.css')).read()
+LIVE_JS = (open(os.path.join(HERE, 'live_script.js')).read()
+           .replace("/^e\\d\\d$/.test(w)?'on '+w.slice(1)", "/^F\\dE\\d$/.test(w)?'on '+w")
+           .replace("var best='top';document.querySelectorAll('.entry').forEach(function(e){if(e.getBoundingClientRect().top<160)best=e.id});return best;",
+                    "return window.__q4at||'top';"))
+assert "__q4at" in LIVE_JS
 
 phase_btns = ''.join(f'<button type="button" data-s="{p}" aria-pressed="{str(p == "bf").lower()}">{PNAME[p]}</button>' for p in PH)
 
 page = f'''<title>Cavaier Q4 Flows</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&family=Figtree:wght@200;300;400;500;600&display=swap">
 <style>
@@ -340,30 +367,54 @@ page = f'''<title>Cavaier Q4 Flows</title>
     <ol id="lvLog"><li><time></time><span class="hint">No activity yet.</span></li></ol>
   </div>
 </div>
-<div class="wrap" id="root" data-g="W">
+<div class="app" id="root" data-g="W">
+  <div class="tools" role="toolbar" aria-label="Canvas controls">
+    <div class="ttl"><b>Q4 flows</b><span>{len(FLOWS)} flows · {n_emails} emails</span></div>
+    <div class="seg" role="group" aria-label="Women or men"><button type="button" data-g="W" aria-pressed="true">W</button><button type="button" data-g="M" aria-pressed="false">M</button></div>
+    <div class="seg ph" role="group" aria-label="Q4 phase">{phase_btns}</div>
+    <div class="sp"></div>
+    <div class="zoom" role="group" aria-label="Zoom">
+      <button type="button" id="zOut" aria-label="Zoom out" title="Zoom out (−)">−</button>
+      <button type="button" id="zPct" title="Zoom to 100% (0)">100%</button>
+      <button type="button" id="zIn" aria-label="Zoom in" title="Zoom in (+)">+</button>
+      <button type="button" id="zFit" title="Fit all flows (1)">Fit</button>
+    </div>
+    <select class="jump" id="jump" aria-label="Jump to"><option value="">Jump to…</option>{jump_opts}</select>
+    <button type="button" class="pbtn" id="planBtn" aria-expanded="false" aria-controls="plan">Plan</button>
+  </div>
+  <div class="vp" id="vp" aria-label="Flow canvas. Drag or scroll to move, Ctrl/⌘ + scroll or pinch to zoom.">
+    <div class="board" id="board">
+      <div class="cols">
+{flows_html}
+      </div>
+    </div>
+    <p class="hintbar">Drag or scroll to move · Ctrl/⌘ + scroll or pinch to zoom · click an email for its brief</p>
+  </div>
+  <aside class="brief" id="brief" hidden aria-label="Email brief"><button type="button" class="x" id="briefX" aria-label="Close brief">×</button><div id="briefIn"></div></aside>
+  <aside class="plan" id="plan" hidden aria-label="Plan">
+    <button type="button" class="x" id="planX" aria-label="Close plan">×</button>
+    <div class="planin">
 {PAGE['intro'].format(n_flows=len(FLOWS), n_emails=n_emails)}
 {PAGE['top']}
   <div class="tbl narrow"><table><thead><tr><th>Flow</th><th>Name</th><th>Trigger</th><th>Emails</th><th>Timing</th><th>Replaces</th></tr></thead><tbody>{map_rows}</tbody></table></div>
 {PAGE['bottom']}
-  <div class="bar2">
-    <div class="ctl">
-      <div class="seg" role="group" aria-label="Women or men"><button type="button" data-g="W" aria-pressed="true">W</button><button type="button" data-g="M" aria-pressed="false">M</button></div>
-      <div class="seg" role="group" aria-label="Q4 phase">{phase_btns}</div>
     </div>
-    <select class="jump" id="jump" aria-label="Jump to"><option value="">Jump to…</option></select>
-  </div>
-{flows_html}
+  </aside>
 </div>
 <script type="application/json" id="imgs">{json.dumps(IMGDATA)}</script>
 <script>
 (function(){{
   var I=JSON.parse(document.getElementById('imgs').textContent);
-  document.querySelectorAll('img[data-k]').forEach(function(im){{var s=I[im.getAttribute('data-k')];if(s)im.src=s}});
-  var root=document.getElementById('root');
+  document.querySelectorAll('img[data-k]').forEach(function(im){{var s=I[im.getAttribute('data-k')];if(s)im.src=s;im.draggable=false}});
+  var $=function(id){{return document.getElementById(id)}};
+  var root=$('root'),vp=$('vp'),board=$('board'),brief=$('brief'),briefIn=$('briefIn'),plan=$('plan');
   var ORDER=['pre','ea','bf','cw','xmas','late','post'];
   var NAME={json.dumps(PNAME)};
-  var g='W',s='bf';
-  try{{g=localStorage.getItem('q4-g')||g;s=localStorage.getItem('q4-s')||s}}catch(e){{}}
+  var g='W',s='bf',open=null;
+  function ls(k,v){{try{{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}}catch(e){{return null}}}}
+  g=ls('q4-g')||g;s=ls('q4-s')||s;
+
+  // ---- W/M + phase
   function eff(states,want){{
     if(states.indexOf(want)>=0)return want;
     var wi=ORDER.indexOf(want),best=states[0],bd=99;
@@ -374,20 +425,121 @@ page = f'''<title>Cavaier Q4 Flows</title>
     root.setAttribute('data-g',g);
     document.querySelectorAll('.entry').forEach(function(e){{
       var states=e.getAttribute('data-states').split(' '),x=eff(states,s);e.setAttribute('data-s',x);
-      e.querySelector('.showing').textContent='Showing: '+NAME[x]+(x!==s?' (doesn’t send in '+NAME[s]+')':'');
+      var off=x!==s;e.classList.toggle('dim',off);
+      e.querySelector('.off').textContent=off?'Doesn’t send in '+NAME[s]+' · showing '+NAME[x]:'';
     }});
+    if(open&&open.classList.contains('entry'))brief.setAttribute('data-s',open.getAttribute('data-s'));
     document.querySelectorAll('button[data-g]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-g')===g))}});
-    document.querySelectorAll('button[data-s]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-s')===s))}});
-    try{{localStorage.setItem('q4-g',g);localStorage.setItem('q4-s',s)}}catch(e){{}}
+    document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-s')===s))}});
+    ls('q4-g',g);ls('q4-s',s);
   }}
   document.querySelectorAll('button[data-g]').forEach(function(b){{b.addEventListener('click',function(){{g=b.getAttribute('data-g');apply()}})}});
-  document.querySelectorAll('button[data-s]').forEach(function(b){{b.addEventListener('click',function(){{s=b.getAttribute('data-s');apply()}})}});
-  var j=document.getElementById('jump');
-  document.querySelectorAll('.flowhead,.entry').forEach(function(e){{var o=document.createElement('option');o.value=e.id;
-    o.textContent=e.classList.contains('flowhead')?e.id+' · '+e.querySelector('h2').textContent:'   '+e.id+' · '+e.querySelector('.d').textContent;j.appendChild(o)}});
-  j.addEventListener('change',function(){{if(j.value){{document.getElementById(j.value).scrollIntoView();j.value=''}}}});
+  document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.addEventListener('click',function(){{s=b.getAttribute('data-s');apply()}})}});
+
+  // ---- view: translate + scale
+  var x=0,y=0,k=1,MIN=0.05,MAX=2,saveT=null;
+  function clamp(v,a,b){{return Math.max(a,Math.min(b,v))}}
+  function set(){{
+    board.style.transform='translate('+x+'px,'+y+'px) scale('+k+')';
+    $('zPct').textContent=Math.round(k*100)+'%';
+    clearTimeout(saveT);saveT=setTimeout(function(){{ls('q4-view',JSON.stringify([x,y,k]))}},250);
+    window.dispatchEvent(new Event('scroll'));
+  }}
+  function zoomAt(nk,cx,cy){{nk=clamp(nk,MIN,MAX);x=cx-(cx-x)*nk/k;y=cy-(cy-y)*nk/k;k=nk;set()}}
+  function centre(){{var r=vp.getBoundingClientRect();return [r.width/2,r.height/2]}}
+  function bw(){{return board.scrollWidth}}
+  function fit(){{var r=vp.getBoundingClientRect();k=clamp((r.width-24)/bw(),MIN,1);x=(r.width-bw()*k)/2;y=16;set()}}
+  function go(id,nk){{
+    var el=$(id);if(!el)return;var r=vp.getBoundingClientRect(),W=r.width-(brief.hidden||r.width<760?0:brief.offsetWidth);
+    var col=el.closest('.col');
+    k=nk||clamp(Math.min(0.62,(W-32)/(col.offsetWidth+40)),MIN,MAX);
+    var cx=col.offsetLeft+col.offsetWidth/2,top=0,n=el;while(n&&n!==board){{top+=n.offsetTop;n=n.offsetParent}}
+    x=W/2-cx*k;y=24-(top-(el===col?0:28))*k;set();where(el.id);
+  }}
+  $('zIn').onclick=function(){{var c=centre();zoomAt(k*1.25,c[0],c[1])}};
+  $('zOut').onclick=function(){{var c=centre();zoomAt(k/1.25,c[0],c[1])}};
+  $('zPct').onclick=function(){{var c=centre();zoomAt(1,c[0],c[1])}};
+  $('zFit').onclick=fit;
+
+  vp.addEventListener('wheel',function(ev){{
+    if(ev.target.closest('.brief,.plan'))return;
+    ev.preventDefault();
+    var r=vp.getBoundingClientRect(),dy=ev.deltaMode===1?ev.deltaY*16:ev.deltaY,dx=ev.deltaMode===1?ev.deltaX*16:ev.deltaX;
+    if(ev.ctrlKey||ev.metaKey){{zoomAt(k*Math.exp(-dy*(Math.abs(dy)<50?0.01:0.0025)),ev.clientX-r.left,ev.clientY-r.top)}}
+    else{{if(ev.shiftKey&&!dx){{dx=dy;dy=0}}x-=dx;y-=dy;set()}}
+  }},{{passive:false}});
+
+  // drag to pan, two fingers to pinch
+  var pts={{}},moved=0,last=null,pinch=null;
+  vp.addEventListener('pointerdown',function(ev){{
+    if(ev.button>0||ev.target.closest('.brief,.plan,.hintbar'))return;
+    pts[ev.pointerId]=[ev.clientX,ev.clientY];vp.setPointerCapture(ev.pointerId);
+    var ids=Object.keys(pts);moved=ids.length>1?99:0;last=[ev.clientX,ev.clientY];
+    if(ids.length===2){{var a=pts[ids[0]],b=pts[ids[1]];pinch={{d:Math.hypot(a[0]-b[0],a[1]-b[1]),k:k}}}}
+    vp.classList.add('grab');
+  }});
+  vp.addEventListener('pointermove',function(ev){{
+    if(!pts[ev.pointerId])return;pts[ev.pointerId]=[ev.clientX,ev.clientY];
+    var ids=Object.keys(pts),r=vp.getBoundingClientRect();
+    if(ids.length===2&&pinch){{
+      var a=pts[ids[0]],b=pts[ids[1]],d=Math.hypot(a[0]-b[0],a[1]-b[1]);
+      var mx=(a[0]+b[0])/2-r.left,my=(a[1]+b[1])/2-r.top;
+      if(last){{x+=mx-last[0];y+=my-last[1]}}last=[mx,my];
+      zoomAt(pinch.k*d/pinch.d,mx,my);return;
+    }}
+    var dx=ev.clientX-last[0],dy=ev.clientY-last[1];last=[ev.clientX,ev.clientY];
+    moved+=Math.abs(dx)+Math.abs(dy);x+=dx;y+=dy;set();
+  }});
+  function up(ev){{delete pts[ev.pointerId];pinch=null;last=null;var ids=Object.keys(pts);if(ids.length===1)last=pts[ids[0]];if(!ids.length)vp.classList.remove('grab')}}
+  vp.addEventListener('pointerup',up);vp.addEventListener('pointercancel',up);
+  vp.addEventListener('click',function(ev){{if(moved>4){{ev.stopPropagation();ev.preventDefault()}}}},true);
+
+  // ---- brief panel
+  function where(id){{window.__q4at=id||'top';window.dispatchEvent(new Event('scroll'))}}
+  function show(node){{
+    if(open)open.classList.remove('sel');open=node;node.classList.add('sel');
+    var id=node.id||node.getAttribute('data-flow');
+    briefIn.textContent='';briefIn.appendChild($('b-'+id).content.cloneNode(true));
+    if(node.classList.contains('entry'))brief.setAttribute('data-s',node.getAttribute('data-s'));else brief.removeAttribute('data-s');
+    brief.hidden=false;where(node.classList.contains('entry')?id:'top');
+  }}
+  function hideBrief(){{brief.hidden=true;if(open)open.classList.remove('sel');open=null}}
+  $('briefX').onclick=hideBrief;
+  vp.addEventListener('click',function(ev){{
+    var a=ev.target.closest('a');if(a)ev.preventDefault();
+    var n=ev.target.closest('.entry,.fhead');if(n)show(n);else if(!ev.target.closest('.brief'))hideBrief();
+  }});
+  board.addEventListener('keydown',function(ev){{if(ev.key==='Enter'){{var n=ev.target.closest('.entry,.fhead');if(n)show(n)}}}});
+
+  // ---- plan drawer
+  function setPlan(o){{plan.hidden=!o;$('planBtn').setAttribute('aria-expanded',String(o))}}
+  $('planBtn').onclick=function(){{setPlan(plan.hidden)}};$('planX').onclick=function(){{setPlan(false)}};
+  plan.addEventListener('click',function(ev){{var a=ev.target.closest('a[data-go]');if(a){{ev.preventDefault();setPlan(false);go(a.getAttribute('data-go'))}}}});
+
+  // ---- jump + keys
+  var j=$('jump');
+  j.addEventListener('change',function(){{if(j.value){{var el=$(j.value);if(el.classList.contains('entry'))show(el);go(j.value);j.value=''}}}});
+  document.addEventListener('keydown',function(ev){{
+    if(ev.target.closest('input,select,textarea'))return;
+    var c=centre(),st=80;
+    if(ev.key==='+'||ev.key==='='){{zoomAt(k*1.25,c[0],c[1])}}
+    else if(ev.key==='-'||ev.key==='_'){{zoomAt(k/1.25,c[0],c[1])}}
+    else if(ev.key==='0'){{zoomAt(1,c[0],c[1])}}
+    else if(ev.key==='1'){{fit()}}
+    else if(ev.key==='Escape'){{hideBrief();setPlan(false)}}
+    else if(ev.key==='ArrowLeft'){{x+=st;set()}}else if(ev.key==='ArrowRight'){{x-=st;set()}}
+    else if(ev.key==='ArrowUp'){{y+=st;set()}}else if(ev.key==='ArrowDown'){{y-=st;set()}}
+    else return;
+    ev.preventDefault();
+  }});
+
+  function th(){{root.style.setProperty('--toolh',document.querySelector('.tools').offsetHeight+'px')}}th();window.addEventListener('resize',th);
   window.q4View=function(G,S){{g=G;s=S;apply()}};
+  window.q4Go=go;window.q4Fit=fit;window.q4Show=function(id){{show($(id))}};
   apply();
+  var v=null;try{{v=JSON.parse(ls('q4-view')||'null')}}catch(e){{}}
+  if(v&&v.length===3&&isFinite(v[0])&&isFinite(v[1])&&v[2]>=MIN&&v[2]<=MAX){{x=v[0];y=v[1];k=v[2];set()}}
+  else if(vp.getBoundingClientRect().width<760)go('F1');else fit();
 }})();
 </script>
 <script>{LIVE_JS}</script>
