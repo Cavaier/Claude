@@ -5,8 +5,8 @@ US,add redirect,/products/minimal-cuff-1,/products/minimal-cuff-for-her,internat
 International,add redirect,/products/icon-bracelet,/products/minimal-cuff-for-her,US name of the women's cuff
 International,add redirect,/products/lifetime-warranty,/,US-only product (draft on international)
 International,change existing redirect,/s/bf20,https://cavaier.com/collections/for-her?utm_campaign=bf20&utm_source=shareable_link,was …/collections/for-her-1 (would be two hops)
-International,fix broken redirect,/products/contre-bracelet,/collections/all-products,"old draft product, no longer sold: send stray visitors to All Products"
-International,fix broken redirect,/products/complice-bracelet,/collections/all-products,"old draft product, no longer sold: send stray visitors to All Products"
+International,fix broken redirect,/products/contre-bracelet,/collections/all-products-excluding-case,"old draft product, no longer sold: send stray visitors to All Products (the all-prodicts collection cannot be reached through the API, so it was left as is)"
+International,fix broken redirect,/products/complice-bracelet,/collections/all-products-excluding-case,"old draft product, no longer sold: send stray visitors to All Products (the all-prodicts collection cannot be reached through the API, so it was left as is)"
 International,fix broken redirect,/products/copy-of-signet-ring,/,rings no longer sold
 International,fix broken redirect,/products/somber-ring-1,/,rings no longer sold
 International,fix broken redirect,/products/luminous-rose,/,watches no longer sold
@@ -15,3 +15,6 @@ International,fix broken redirect,/collections/klaviyo,/,collection watches-jewe
 International,fix broken redirect,/products/lucky-sonny-full-cz-rings-solitaire-luxury-mens-rings-zircon-iced-ring-hip-hop-bling-jewelry-anel-anillo-bijoux-free-shipping,/,product no longer sold
 International,fix broken redirect,/products/orsa-jewels-100-real-925-woman-silver-tube-pendant-necklace-sterling-silver-long-bar-charm-stylish-cocktail-party-jewelry-sn138,/collections/for-her,closest: women's necklaces
 International,fix broken redirect,/products/korean-original-minimalist-design-natural-pearl-gold-bracelet-woman-fashion-personality-cuff-bracelet-jewelry-anniversary-gifts,/collections/for-her,closest: women's bracelets
+US,add redirect,/collections/all-prodicts,/collections/all-products,"international address, so swapping domains works"
+US,add redirect,/collections/fine-jewelry,/collections/fine,"international address, so swapping domains works"
+US,add redirect,/collections/all-products-excluding-case,/collections/all-products-excluding-lifetime-warranty,"international address, so swapping domains works"
