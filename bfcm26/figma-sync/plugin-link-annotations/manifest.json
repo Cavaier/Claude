@@ -1,0 +1,16 @@
+{
+  "name": "Cavaier link annotations",
+  "id": "cavaier-link-annotations",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma",
+    "dev"
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
