@@ -1,25 +1,25 @@
 store,type,item,language / domain,current address,new address,what happens
-International,collection,All Products,en,https://cavaier.com/collections/all-prodicts,https://cavaier.com/collections/all-prodicts,no change
-International,collection,All Products,ar,https://cavaier.com/ar/collections/all-prodicts,https://cavaier.com/ar/collections/all-prodicts,no change
-International,collection,All Products,de,https://cavaier.com/de/collections/alle-vorhersagen,https://cavaier.com/de/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
-International,collection,All Products,es,https://cavaier.com/es/collections/all-prodicts,https://cavaier.com/es/collections/all-prodicts,no change
-International,collection,All Products,fr,https://cavaier.com/fr/collections/all-prodicts,https://cavaier.com/fr/collections/all-prodicts,no change
-International,collection,All Products,he,https://cavaier.com/he/collections/all-prodicts,https://cavaier.com/he/collections/all-prodicts,no change
-International,collection,All Products,id,https://cavaier.com/id/collections/all-prodicts,https://cavaier.com/id/collections/all-prodicts,no change
-International,collection,All Products,it,https://cavaier.com/it/collections/all-prodicts,https://cavaier.com/it/collections/all-prodicts,no change
-International,collection,All Products,nb,https://cavaier.com/nb/collections/alle-prodicts,https://cavaier.com/nb/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
-International,collection,All Products,nl,https://cavaier.com/nl/collections/all-prodicts,https://cavaier.com/nl/collections/all-prodicts,no change
-International,collection,All Products,no,https://cavaier.com/no/collections/all-prodicts,https://cavaier.com/no/collections/all-prodicts,no change
-International,collection,All Products,pl,https://cavaier.com/pl/collections/all-prodicts,https://cavaier.com/pl/collections/all-prodicts,no change
-International,collection,All Products,pt,https://cavaier.com/pt/collections/all-prodicts,https://cavaier.com/pt/collections/all-prodicts,no change
-International,collection,All Products,sv,https://cavaier.com/sv/collections/alla-prodicts,https://cavaier.com/sv/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
-International,collection,All Products,th,https://cavaier.com/th/collections/all-prodicts,https://cavaier.com/th/collections/all-prodicts,no change
-International,collection,All Products,zh-Hant,https://cavaier.com/zh/collections/all-prodicts,https://cavaier.com/zh/collections/all-prodicts,no change
-International,collection,All Products,de-DE,https://cavaier.de/collections/alle-vorhersagen,https://cavaier.de/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
-International,collection,All Products,nl-NL,https://cavaier.nl/collections/all-prodicts,https://cavaier.nl/collections/all-prodicts,no change
-International,collection,All Products,nb-NO,https://cavaier.no/collections/alle-prodicts,https://cavaier.no/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
-International,collection,All Products,no-NO,https://cavaier.no/no/collections/all-prodicts,https://cavaier.no/no/collections/all-prodicts,no change
-International,collection,All Products,pl-PL,https://cavaier.pl/collections/all-prodicts,https://cavaier.pl/collections/all-prodicts,no change
+International,collection,All Products,en,https://cavaier.com/collections/all-prodicts,https://cavaier.com/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,ar,https://cavaier.com/ar/collections/all-prodicts,https://cavaier.com/ar/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,de,https://cavaier.com/de/collections/alle-vorhersagen,https://cavaier.com/de/collections/all-products,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,es,https://cavaier.com/es/collections/all-prodicts,https://cavaier.com/es/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,fr,https://cavaier.com/fr/collections/all-prodicts,https://cavaier.com/fr/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,he,https://cavaier.com/he/collections/all-prodicts,https://cavaier.com/he/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,id,https://cavaier.com/id/collections/all-prodicts,https://cavaier.com/id/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,it,https://cavaier.com/it/collections/all-prodicts,https://cavaier.com/it/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,nb,https://cavaier.com/nb/collections/alle-prodicts,https://cavaier.com/nb/collections/all-products,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,nl,https://cavaier.com/nl/collections/all-prodicts,https://cavaier.com/nl/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,no,https://cavaier.com/no/collections/all-prodicts,https://cavaier.com/no/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,pl,https://cavaier.com/pl/collections/all-prodicts,https://cavaier.com/pl/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,pt,https://cavaier.com/pt/collections/all-prodicts,https://cavaier.com/pt/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,sv,https://cavaier.com/sv/collections/alla-prodicts,https://cavaier.com/sv/collections/all-products,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,th,https://cavaier.com/th/collections/all-prodicts,https://cavaier.com/th/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,zh-Hant,https://cavaier.com/zh/collections/all-prodicts,https://cavaier.com/zh/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,de-DE,https://cavaier.de/collections/alle-vorhersagen,https://cavaier.de/collections/all-products,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,nl-NL,https://cavaier.nl/collections/all-prodicts,https://cavaier.nl/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,nb-NO,https://cavaier.no/collections/alle-prodicts,https://cavaier.no/collections/all-products,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,no-NO,https://cavaier.no/no/collections/all-prodicts,https://cavaier.no/no/collections/all-products,renamed (redirect created by the rename)
+International,collection,All Products,pl-PL,https://cavaier.pl/collections/all-prodicts,https://cavaier.pl/collections/all-products,renamed (redirect created by the rename)
 International,collection,All Products (ex: lifetime warranty / Sets),en,https://cavaier.com/collections/all-products-excluding-case,https://cavaier.com/collections/all-products-excluding-case,no change
 International,collection,All Products (ex: lifetime warranty / Sets),ar,https://cavaier.com/ar/collections/all-products-excluding-case,https://cavaier.com/ar/collections/all-products-excluding-case,no change
 International,collection,All Products (ex: lifetime warranty / Sets),de,https://cavaier.com/de/collections/all-products-excluding-case,https://cavaier.com/de/collections/all-products-excluding-case,no change
