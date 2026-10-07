@@ -34,7 +34,7 @@ Tooling in `../figma-sync/` (`extract_q4.js`, `compile_q4.py`, `builder_q4.js`, 
 3. `python3 sync_q4.py commit q4w q4res/<file>.json` for each result → frame ids + hashes land in `sync_state.json` (`figma` key).
 4. `python3 verify_q4.py js` → run `q4verify.js` via `use_figma` (read-only), save the result, `python3 verify_q4.py cmp <result.json>`: every frame's layers, positions and text are checked against its spec (a 1 px difference from half-pixel rounding is fine).
 
-Layout on page Email Flows (`359:2`), from x = 6000 (right of the old flows master, which is left untouched): section “Sign-up pop-up”, then one section per flow for Women, then the same for Men. Frames are edited in place on later pushes (found by id, else by `F1E1-W ·` name), never moved.
+Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the left is untouched), mirroring the canvas: “Sign-up pop-up” section with one row per sale period (6 × 7 frames), then a big “Women” title and one section per flow (huge title, then the flow diagram: header card, trigger, waits, email labels, exits, with each email frame placed on it), then the same for Men. Emails show the Black Friday view (others show their own first period), never greyed out. Frames are edited in place on later pushes (found by id, else by the code before ` · ` in the name). Batch 00 must run first (sections, moves, removals); the rest can run in parallel. `ONLYRE=<regex>` limits a push to matching keys.
 
 ## Per-account differences (never copy IDs across)
 

@@ -27,7 +27,7 @@ if sys.argv[1]=='js':
     "for(const k in ids){const em=await figma.getNodeByIdAsync(ids[k]);if(!em){out[k]=null;continue}let s='';let n=0;\n"
     " for(const sec of em.children){if(!('children' in sec))continue;for(const c of sec.children){n++;\n"
     "  if(c.type==='TEXT')s+='T'+r(c.x)+','+r(c.y)+';'+c.characters+'|';else if(c.type==='RECTANGLE')s+='R'+r(c.x)+','+r(c.y)+';'+r(c.width)+','+r(c.height)+'|';else s+='V'+r(c.x)+','+r(c.y)+';|'}}\n"
-    " let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))%M}out[k]=[n,h,em.name]}\nreturn out;")
+    " let h=0;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))%M}out[k]=[n,h,em.parent&&em.parent.name.slice(0,12),Math.round(em.x),Math.round(em.y)]}\nreturn out;")
     open(f'{HERE}/q4verify.js','w').write(js);print(len(js))
 else:
     R=json.load(open(sys.argv[2]));bad=[]
