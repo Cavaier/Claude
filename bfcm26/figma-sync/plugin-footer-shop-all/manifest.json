@@ -1,0 +1,16 @@
+{
+  "name": "Cavaier footer SHOP ALL links",
+  "id": "cavaier-footer-shop-all",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma",
+    "dev"
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
