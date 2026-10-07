@@ -44,6 +44,10 @@ put('L-POP',dict(name='POP title · Sign-up pop-up',w=6000,h=900,bg=None,S=[['la
 # ---------- bands
 SW,DX,PAD=1000,200,80
 yb=Y0+y+100+1800
+def mc(f):
+    ne=sum(1 for e in f['emails'] if not e.get('kind'));ns=sum(1 for e in f['emails'] if e.get('kind')=='sms')
+    p=([f"{ne} email"+('s' if ne!=1 else '')] if ne else [])+([f"{ns} text"+('s' if ns!=1 else '')] if ns else [])
+    return ' + '.join(p) or 'no messages, sets a profile property'
 NE=sum(1 for f in Q.FLOWS for e in f['emails'] if not e.get('kind'))
 SUB={'S':'S1 SMS welcome · S2 the six SMS campaigns · G1–G2 fill in Gender from orders and browsing',
      'W':f"{len(Q.FLOWS)} flows · {NE} emails + their texts · profile property Gender = “Women”, “Both” or empty",
@@ -58,11 +62,11 @@ for G,GN,FL in (('S','SMS + profile',Q.SFLOWS),('W','Women',Q.FLOWS),('M','Men',
         sk=f'{G}-{f["id"]}';tw=SW-2*PAD
         nl=lines(f['name'],96,tw);tl=lines('Trigger · '+f['trigger_short'],48,tw)
         ty=[0,300,300+nl*106+30,300+nl*106+30+tl*60+16]
-        th=ty[3]+lines(f"{len(f['emails'])} emails · replaces {f['replaces']}",40,tw)*52+160
+        th=ty[3]+lines(f"{mc(f)} · replaces {f['replaces']}",40,tw)*52+160
         put('T-'+sk,dict(name=f"{f['id']}-{G} title · {f['name']}",w=tw,h=th,bg=None,S=[['title',0,0,tw,th,0]],
             I=[T(0,0,ty[0],tw,290,f['id'],300,290,200),T(0,0,ty[1],tw,nl*106,f['name'],96,106,300),
                T(0,0,ty[2],tw,tl*60,'Trigger · '+f['trigger_short'],48,60,400),
-               T(0,0,ty[3],tw,52,f"{len(f['emails'])} email{'s' if len(f['emails'])!=1 else ''} · replaces {f['replaces']}",40,52,300,MU)]),sk,PAD,PAD)
+               T(0,0,ty[3],tw,52,f"{mc(f)} · replaces {f['replaces']}",40,52,300,MU)]),sk,PAD,PAD)
         dk='D-'+sk;de=E[dk];dy=PAD+th
         put(dk,emspec(dk,f"{f['id']}-{G} diagram · {f['name']} ({GN})"),sk,DX,dy)
         for e in f['emails']:
