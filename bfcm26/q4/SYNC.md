@@ -43,6 +43,14 @@ Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the
 - Christmas cut-off dates, shipping copy and the US catalog / product URLs are per store.
 - The pop-up is built by hand in each account’s form editor (no create-form API).
 
+## SMS and Gender (on push)
+
+- SMS texts live inside the same Klaviyo flows (F2, F4, F5, F7, F9) behind a “can receive SMS” split, plus S1 SMS Welcome. S2 is six scheduled SMS campaigns, not a flow.
+- Every text is checked by `gen_q4.py` to be plain GSM-7 and one segment (160 incl. 23-char link and the opt-out line).
+- G1/G2 set the profile property `Gender` from Ordered Product (English collections / tags) and Viewed Product (translated category names, list in `q4_specs.py`). They never overwrite an existing Gender.
+- One-off backfill on the first push to each account: set `Gender` (+ `Gender source = order`) for existing customers with no Gender from their Ordered Product history, via the API.
+- F7, F8, F11 are list-triggered: bulk-add their segments on the dates in each flow's trigger (F8 Oct 19, F11 Nov 19, F7 Nov 23; F7/F11 top-up Dec 7).
+
 ## What stays manual
 
 Pop-up forms · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
