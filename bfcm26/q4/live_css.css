@@ -1,0 +1,39 @@
+/* ---- live bar: who's here, what Claude is doing, activity ---- */
+.live{position:sticky;top:env(safe-area-inset-top,0px);z-index:7;margin-inline:-16px;padding:0 16px;height:46px;background:var(--canvas-fg);color:var(--canvas);display:flex;align-items:center;gap:14px;font:400 12.5px/1.2 var(--body)}
+.live .lv-in{max-width:800px;margin:0 auto;width:100%;display:flex;align-items:center;gap:14px;min-width:0}
+.live .dot{width:8px;height:8px;border-radius:50%;background:#7a7a77;flex:none}
+.live .dot.on{background:#3FB56B;box-shadow:0 0 0 3px rgba(63,181,107,.25)}
+.live .dot.work{background:#E0A526;animation:lvp 1.4s ease-in-out infinite}
+@keyframes lvp{50%{box-shadow:0 0 0 5px rgba(224,165,38,.25)}}
+@media (prefers-reduced-motion:reduce){.live .dot.work{animation:none}}
+.live .who{display:flex;align-items:center;gap:6px;min-width:0;flex:1 1 auto;overflow:hidden;white-space:nowrap}
+.live .chip{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border:1px solid rgba(128,128,128,.45);border-radius:99px;max-width:240px;overflow:hidden;text-overflow:ellipsis}
+.live .chip .at{opacity:.65}
+.live .chip .pd{width:7px;height:7px;border-radius:50%;background:#8a8a87;flex:none}
+.live .chip .pd.on{background:#3FB56B;box-shadow:0 0 0 2px rgba(63,181,107,.3)}
+.live .chip.off{opacity:.7}
+.live .cl{display:flex;align-items:center;gap:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto;max-width:42%}
+.live .cl span{overflow:hidden;text-overflow:ellipsis}
+.live button{appearance:none;border:1px solid var(--canvas);background:transparent;color:var(--canvas);font:500 10.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:8px 10px;cursor:pointer;flex:none}
+.live button:focus-visible{outline:2px solid var(--canvas);outline-offset:2px}
+.lvpanel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 46px);z-index:7;margin-inline:-16px;padding:16px;background:var(--canvas-card);border-bottom:1px solid var(--canvas-line);max-height:min(70vh,560px);overflow:auto}
+.lvpanel .in{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.lvpanel h3{margin:0;font:300 18px/1.2 var(--disp)}
+.lvpanel .hint{margin:0;font-size:12.5px;line-height:1.5;color:var(--canvas-muted)}
+.lvpanel form{display:flex;gap:8px;flex-wrap:wrap}
+.lvpanel select,.lvpanel input{font:400 13px/1 var(--body);padding:9px 10px;border:1px solid var(--canvas-line);background:var(--canvas);color:var(--canvas-fg);min-width:0}
+.lvpanel input{flex:1 1 220px}
+.lvpanel .pb{appearance:none;border:1px solid var(--canvas-fg);background:var(--canvas-fg);color:var(--canvas);font:500 10.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:10px 14px;cursor:pointer}
+.lvpanel .pb.ghost{background:transparent;color:var(--canvas-fg)}
+.lvpanel ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--canvas-line)}
+.lvpanel li{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:9px 0;border-bottom:1px solid var(--canvas-line);font-size:13px;line-height:1.45}
+.lvpanel li time{color:var(--canvas-muted);font-variant-numeric:tabular-nums;font-size:12px}
+.lvpanel li b{font-weight:500}
+.lvpanel li .k{font:500 9.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--canvas-muted);margin-right:6px}
+.live .chip{flex:0 1 auto;min-width:0;max-width:none}
+.live .chip>span:nth-child(2){flex:none}
+.live .chip .at{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.live .cl{max-width:34%}
+.bar2{top:calc(env(safe-area-inset-top,0px) + 46px)!important}
+.entry{scroll-margin-top:116px!important}
+@media (max-width:600px){.live .chip .at{display:none}.live .chip{padding:4px 7px}.live .cl{max-width:38%}}
