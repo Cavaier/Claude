@@ -1,0 +1,17 @@
+store,action,address,new destination,why
+US,add redirect,/collections/for-him-1,/collections/for-him,"old international address, so swapping domains works"
+US,add redirect,/collections/for-her-1,/collections/for-her,"old international address, so swapping domains works"
+US,add redirect,/products/minimal-cuff-1,/products/minimal-cuff-for-her,international name of the women's cuff
+International,add redirect,/products/icon-bracelet,/products/minimal-cuff-for-her,US name of the women's cuff
+International,add redirect,/products/lifetime-warranty,/,US-only product (draft on international)
+International,change existing redirect,/s/bf20,https://cavaier.com/collections/for-her?utm_campaign=bf20&utm_source=shareable_link,was …/collections/for-her-1 (would be two hops)
+International,fix broken redirect,/products/contre-bracelet,/collections/for-him,today ends on rope-bracelet-1 (does not exist). Please confirm destination
+International,fix broken redirect,/products/complice-bracelet,/collections/for-her,today ends on roots (draft). Please confirm destination
+International,fix broken redirect,/products/copy-of-signet-ring,/,rings no longer sold
+International,fix broken redirect,/products/somber-ring-1,/,rings no longer sold
+International,fix broken redirect,/products/luminous-rose,/,watches no longer sold
+International,fix broken redirect,/products/rose-luminous,/,watches no longer sold
+International,fix broken redirect,/collections/klaviyo,/,collection watches-jewelry no longer exists
+International,fix broken redirect,/products/lucky-sonny-full-cz-rings-solitaire-luxury-mens-rings-zircon-iced-ring-hip-hop-bling-jewelry-anel-anillo-bijoux-free-shipping,/,product no longer sold
+International,fix broken redirect,/products/orsa-jewels-100-real-925-woman-silver-tube-pendant-necklace-sterling-silver-long-bar-charm-stylish-cocktail-party-jewelry-sn138,/collections/for-her,closest: women's necklaces
+International,fix broken redirect,/products/korean-original-minimalist-design-natural-pearl-gold-bracelet-woman-fashion-personality-cuff-bracelet-jewelry-anniversary-gifts,/collections/for-her,closest: women's bracelets

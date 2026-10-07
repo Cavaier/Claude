@@ -1,0 +1,411 @@
+{
+ "store": "cavaier.com",
+ "taken": "2026-10-07",
+ "locales": [
+  "en",
+  "ar",
+  "de",
+  "es",
+  "fr",
+  "he",
+  "id",
+  "it",
+  "ja",
+  "nb",
+  "nl",
+  "no",
+  "pl",
+  "pt-PT",
+  "sv",
+  "th",
+  "zh-TW"
+ ],
+ "products": [
+  {
+   "id": "gid://shopify/Product/2019833282626",
+   "handle": "guidel-somber",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/2019834789954",
+   "handle": "guidel-rose",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/2019835904066",
+   "handle": "gents-sterling",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/2019836592194",
+   "handle": "gents-somber",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/6577831903298",
+   "handle": "roots",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/6650700529730",
+   "handle": "diamond-necklace",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/6708557611074",
+   "handle": "icon-earring",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/6729376038978",
+   "handle": "roots-ring",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/6729386721346",
+   "handle": "diamond-ring",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/6731040096322",
+   "handle": "silia-diamond",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/8345662685530",
+   "handle": "cube-bracelet",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8345665536346",
+   "handle": "rope-bracelet",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8370736365914",
+   "handle": "cube-bracelet-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8370741412186",
+   "handle": "rope-bracelet-2",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8411952021850",
+   "handle": "role-bracelet",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8479471960410",
+   "handle": "cuban-bracelet",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8483694838106",
+   "handle": "premium-box",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/8485194662234",
+   "handle": "role-bracelet-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8485206819162",
+   "handle": "copy-of-cuban-bracelet",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8485208195418",
+   "handle": "roots-bracelet",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/8554498654554",
+   "handle": "copy-of-cuban-bracelet-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8554500161882",
+   "handle": "cube-necklace",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8554501046618",
+   "handle": "rope-necklace",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8554501767514",
+   "handle": "role-necklace",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8633808945498",
+   "handle": "cuban-necklace",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8633812058458",
+   "handle": "cube-necklace-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8633820578138",
+   "handle": "role-necklace-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8633822871898",
+   "handle": "rope-necklace-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8892658516314",
+   "handle": "minimal-cuff",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8892659007834",
+   "handle": "bracelet",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8892659401050",
+   "handle": "minimal-cuff-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8892659597658",
+   "handle": "braid-armband",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/8892659892570",
+   "handle": "braid-armband-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/9026522743130",
+   "handle": "lifetime-warranty",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/9667568402778",
+   "handle": "cube-pendant-necklace-copy",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/9670820397402",
+   "handle": "rope-necklace-2",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/9670852411738",
+   "handle": "cuban-necklace-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/9670861848922",
+   "handle": "role-necklace-2",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10027486052698",
+   "handle": "jewelry-case",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10568857649498",
+   "handle": "cube-necklace-2",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10574162100570",
+   "handle": "rope-necklace-3",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10574240874842",
+   "handle": "role-necklace-3",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10574264402266",
+   "handle": "cuban-necklace-2",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10632034353498",
+   "handle": "duo-rings",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/10764068847962",
+   "handle": "plain-cuff",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/10764401443162",
+   "handle": "plain-cuff-1",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/10864847847770",
+   "handle": "cavaier-gift-card",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10869952479578",
+   "handle": "crystal-necklace",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10884336451930",
+   "handle": "stacked-set",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10894583464282",
+   "handle": "3x-minimal-stack-set",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10895535538522",
+   "handle": "minimal-ring",
+   "status": "DRAFT"
+  },
+  {
+   "id": "gid://shopify/Product/10896535912794",
+   "handle": "3x-minimal-stack-set-1",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/10988990824794",
+   "handle": "2x-duo-minimal-set",
+   "status": "ACTIVE"
+  },
+  {
+   "id": "gid://shopify/Product/11019882987866",
+   "handle": "glossy-matte-cuff-duo",
+   "status": "DRAFT"
+  }
+ ],
+ "collections": [
+  {
+   "id": "gid://shopify/Collection/262158975042",
+   "handle": "fine-jewelry"
+  },
+  {
+   "id": "gid://shopify/Collection/267124146242",
+   "handle": "for-her-1"
+  },
+  {
+   "id": "gid://shopify/Collection/267124179010",
+   "handle": "for-him-1"
+  },
+  {
+   "id": "gid://shopify/Collection/600294392154",
+   "handle": "all-prodicts"
+  },
+  {
+   "id": "gid://shopify/Collection/608750436698",
+   "handle": "necklace"
+  },
+  {
+   "id": "gid://shopify/Collection/622529806682",
+   "handle": "test"
+  },
+  {
+   "id": "gid://shopify/Collection/644886430042",
+   "handle": "all-products-excluding-case"
+  },
+  {
+   "id": "gid://shopify/Collection/648364786010",
+   "handle": "women-necklace"
+  },
+  {
+   "id": "gid://shopify/Collection/676168434010",
+   "handle": "womens-sets"
+  },
+  {
+   "id": "gid://shopify/Collection/676168466778",
+   "handle": "mens-sets"
+  }
+ ],
+ "redirects": [
+  {
+   "path": "/pages/test",
+   "target": "/pages/specs-care-somber"
+  },
+  {
+   "path": "/pages/specs-care",
+   "target": "/pages/specs-care-fsterling"
+  },
+  {
+   "path": "/products/luminous-rose",
+   "target": "/products/rose-luminous"
+  },
+  {
+   "path": "/products/rose-luminous",
+   "target": "/products/watch-luminous"
+  },
+  {
+   "path": "/products/lucky-sonny-full-cz-rings-solitaire-luxury-mens-rings-zircon-iced-ring-hip-hop-bling-jewelry-anel-anillo-bijoux-free-shipping",
+   "target": "/products/taire-ring"
+  },
+  {
+   "path": "/collections/klaviyo",
+   "target": "/collections/watches-jewelry"
+  },
+  {
+   "path": "/products/orsa-jewels-100-real-925-woman-silver-tube-pendant-necklace-sterling-silver-long-bar-charm-stylish-cocktail-party-jewelry-sn138",
+   "target": "/products/tube-jewels"
+  },
+  {
+   "path": "/products/korean-original-minimalist-design-natural-pearl-gold-bracelet-woman-fashion-personality-cuff-bracelet-jewelry-anniversary-gifts",
+   "target": "/products/linjer-pearl"
+  },
+  {
+   "path": "/products/copy-of-signet-ring",
+   "target": "/products/somber-ring-1"
+  },
+  {
+   "path": "/products/somber-ring-1",
+   "target": "/products/somber-ring"
+  },
+  {
+   "path": "/products/complice-bracelet",
+   "target": "/products/roots"
+  },
+  {
+   "path": "/products/contre-bracelet",
+   "target": "/products/rope-bracelet-1"
+  },
+  {
+   "path": "/s/dd42ab",
+   "target": "https://cavaier.com/?utm_campaign=dd42ab&utm_source=shareable_link"
+  },
+  {
+   "path": "/s/21225d",
+   "target": "https://cavaier.com/?utm_campaign=21225d&utm_source=shareable_link"
+  },
+  {
+   "path": "/s/sa",
+   "target": "https://cavaier.com/?utm_campaign=sa&utm_source=shareable_link"
+  },
+  {
+   "path": "/s/35918d",
+   "target": "https://cavaier.com/?utm_campaign=35918d&utm_source=shareable_link"
+  },
+  {
+   "path": "/s/bf20",
+   "target": "https://cavaier.com/collections/for-her-1?utm_campaign=bf20&utm_source=shareable_link"
+  },
+  {
+   "path": "/s/e09080",
+   "target": "https://cavaier.com/?utm_campaign=e09080&utm_source=shareable_link"
+  }
+ ]
+}

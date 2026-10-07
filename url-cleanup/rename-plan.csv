@@ -1,0 +1,1024 @@
+store,type,item,language / domain,current address,new address,what happens
+International,collection,All Products,en,https://cavaier.com/collections/all-prodicts,https://cavaier.com/collections/all-prodicts,no change
+International,collection,All Products,ar,https://cavaier.com/ar/collections/all-prodicts,https://cavaier.com/ar/collections/all-prodicts,no change
+International,collection,All Products,de,https://cavaier.com/de/collections/alle-vorhersagen,https://cavaier.com/de/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,es,https://cavaier.com/es/collections/all-prodicts,https://cavaier.com/es/collections/all-prodicts,no change
+International,collection,All Products,fr,https://cavaier.com/fr/collections/all-prodicts,https://cavaier.com/fr/collections/all-prodicts,no change
+International,collection,All Products,he,https://cavaier.com/he/collections/all-prodicts,https://cavaier.com/he/collections/all-prodicts,no change
+International,collection,All Products,id,https://cavaier.com/id/collections/all-prodicts,https://cavaier.com/id/collections/all-prodicts,no change
+International,collection,All Products,it,https://cavaier.com/it/collections/all-prodicts,https://cavaier.com/it/collections/all-prodicts,no change
+International,collection,All Products,nb,https://cavaier.com/nb/collections/alle-prodicts,https://cavaier.com/nb/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,nl,https://cavaier.com/nl/collections/all-prodicts,https://cavaier.com/nl/collections/all-prodicts,no change
+International,collection,All Products,no,https://cavaier.com/no/collections/all-prodicts,https://cavaier.com/no/collections/all-prodicts,no change
+International,collection,All Products,pl,https://cavaier.com/pl/collections/all-prodicts,https://cavaier.com/pl/collections/all-prodicts,no change
+International,collection,All Products,pt,https://cavaier.com/pt/collections/all-prodicts,https://cavaier.com/pt/collections/all-prodicts,no change
+International,collection,All Products,sv,https://cavaier.com/sv/collections/alla-prodicts,https://cavaier.com/sv/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,th,https://cavaier.com/th/collections/all-prodicts,https://cavaier.com/th/collections/all-prodicts,no change
+International,collection,All Products,zh-Hant,https://cavaier.com/zh/collections/all-prodicts,https://cavaier.com/zh/collections/all-prodicts,no change
+International,collection,All Products,de-DE,https://cavaier.de/collections/alle-vorhersagen,https://cavaier.de/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,nl-NL,https://cavaier.nl/collections/all-prodicts,https://cavaier.nl/collections/all-prodicts,no change
+International,collection,All Products,nb-NO,https://cavaier.no/collections/alle-prodicts,https://cavaier.no/collections/all-prodicts,"translated address dropped, English address used (redirect added)"
+International,collection,All Products,no-NO,https://cavaier.no/no/collections/all-prodicts,https://cavaier.no/no/collections/all-prodicts,no change
+International,collection,All Products,pl-PL,https://cavaier.pl/collections/all-prodicts,https://cavaier.pl/collections/all-prodicts,no change
+International,collection,All Products (ex: lifetime warranty / Sets),en,https://cavaier.com/collections/all-products-excluding-case,https://cavaier.com/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),ar,https://cavaier.com/ar/collections/all-products-excluding-case,https://cavaier.com/ar/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),de,https://cavaier.com/de/collections/all-products-excluding-case,https://cavaier.com/de/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),es,https://cavaier.com/es/collections/all-products-excluding-case,https://cavaier.com/es/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),fr,https://cavaier.com/fr/collections/all-products-excluding-case,https://cavaier.com/fr/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),he,https://cavaier.com/he/collections/all-products-excluding-case,https://cavaier.com/he/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),id,https://cavaier.com/id/collections/all-products-excluding-case,https://cavaier.com/id/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),it,https://cavaier.com/it/collections/all-products-excluding-case,https://cavaier.com/it/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),nb,https://cavaier.com/nb/collections/alle-produkter-unntatt-etui,https://cavaier.com/nb/collections/all-products-excluding-case,"translated address dropped, English address used (redirect added)"
+International,collection,All Products (ex: lifetime warranty / Sets),nl,https://cavaier.com/nl/collections/all-products-excluding-case,https://cavaier.com/nl/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),no,https://cavaier.com/no/collections/all-products-excluding-case,https://cavaier.com/no/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),pl,https://cavaier.com/pl/collections/all-products-excluding-case,https://cavaier.com/pl/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),pt,https://cavaier.com/pt/collections/all-products-excluding-case,https://cavaier.com/pt/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),sv,https://cavaier.com/sv/collections/alla-produkter-utom-fodral,https://cavaier.com/sv/collections/all-products-excluding-case,"translated address dropped, English address used (redirect added)"
+International,collection,All Products (ex: lifetime warranty / Sets),th,https://cavaier.com/th/collections/all-products-excluding-case,https://cavaier.com/th/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),zh-Hant,https://cavaier.com/zh/collections/all-products-excluding-case,https://cavaier.com/zh/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),de-DE,https://cavaier.de/collections/all-products-excluding-case,https://cavaier.de/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),nl-NL,https://cavaier.nl/collections/all-products-excluding-case,https://cavaier.nl/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),nb-NO,https://cavaier.no/collections/alle-produkter-unntatt-etui,https://cavaier.no/collections/all-products-excluding-case,"translated address dropped, English address used (redirect added)"
+International,collection,All Products (ex: lifetime warranty / Sets),no-NO,https://cavaier.no/no/collections/all-products-excluding-case,https://cavaier.no/no/collections/all-products-excluding-case,no change
+International,collection,All Products (ex: lifetime warranty / Sets),pl-PL,https://cavaier.pl/collections/all-products-excluding-case,https://cavaier.pl/collections/all-products-excluding-case,no change
+International,collection,Fine,en,https://cavaier.com/collections/fine-jewelry,https://cavaier.com/collections/fine-jewelry,no change
+International,collection,Fine,ar,https://cavaier.com/ar/collections/fine-jewelry,https://cavaier.com/ar/collections/fine-jewelry,no change
+International,collection,Fine,de,https://cavaier.com/de/collections/fine-jewelry,https://cavaier.com/de/collections/fine-jewelry,no change
+International,collection,Fine,es,https://cavaier.com/es/collections/fine-jewelry,https://cavaier.com/es/collections/fine-jewelry,no change
+International,collection,Fine,fr,https://cavaier.com/fr/collections/fine-jewelry,https://cavaier.com/fr/collections/fine-jewelry,no change
+International,collection,Fine,he,https://cavaier.com/he/collections/fine-jewelry,https://cavaier.com/he/collections/fine-jewelry,no change
+International,collection,Fine,id,https://cavaier.com/id/collections/fine-jewelry,https://cavaier.com/id/collections/fine-jewelry,no change
+International,collection,Fine,it,https://cavaier.com/it/collections/fine-jewelry,https://cavaier.com/it/collections/fine-jewelry,no change
+International,collection,Fine,nb,https://cavaier.com/nb/collections/fin-smykker,https://cavaier.com/nb/collections/fine-jewelry,"translated address dropped, English address used (redirect added)"
+International,collection,Fine,nl,https://cavaier.com/nl/collections/fine-jewelry,https://cavaier.com/nl/collections/fine-jewelry,no change
+International,collection,Fine,no,https://cavaier.com/no/collections/fine-jewelry,https://cavaier.com/no/collections/fine-jewelry,no change
+International,collection,Fine,pl,https://cavaier.com/pl/collections/fine-jewelry,https://cavaier.com/pl/collections/fine-jewelry,no change
+International,collection,Fine,pt,https://cavaier.com/pt/collections/fine-jewelry,https://cavaier.com/pt/collections/fine-jewelry,no change
+International,collection,Fine,sv,https://cavaier.com/sv/collections/fina-smycken,https://cavaier.com/sv/collections/fine-jewelry,"translated address dropped, English address used (redirect added)"
+International,collection,Fine,th,https://cavaier.com/th/collections/fine-jewelry,https://cavaier.com/th/collections/fine-jewelry,no change
+International,collection,Fine,zh-Hant,https://cavaier.com/zh/collections/fine-jewelry,https://cavaier.com/zh/collections/fine-jewelry,no change
+International,collection,Fine,de-DE,https://cavaier.de/collections/fine-jewelry,https://cavaier.de/collections/fine-jewelry,no change
+International,collection,Fine,nl-NL,https://cavaier.nl/collections/fine-jewelry,https://cavaier.nl/collections/fine-jewelry,no change
+International,collection,Fine,nb-NO,https://cavaier.no/collections/fin-smykker,https://cavaier.no/collections/fine-jewelry,"translated address dropped, English address used (redirect added)"
+International,collection,Fine,no-NO,https://cavaier.no/no/collections/fine-jewelry,https://cavaier.no/no/collections/fine-jewelry,no change
+International,collection,Fine,pl-PL,https://cavaier.pl/collections/fine-jewelry,https://cavaier.pl/collections/fine-jewelry,no change
+International,collection,For Her,en,https://cavaier.com/collections/for-her-1,https://cavaier.com/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,ar,https://cavaier.com/ar/collections/for-her-1,https://cavaier.com/ar/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,de,https://cavaier.com/de/collections/fur-sie-1,https://cavaier.com/de/collections/for-her,"translated address dropped, English address used (redirect added)"
+International,collection,For Her,es,https://cavaier.com/es/collections/for-her-1,https://cavaier.com/es/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,fr,https://cavaier.com/fr/collections/for-her-1,https://cavaier.com/fr/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,he,https://cavaier.com/he/collections/for-her-1,https://cavaier.com/he/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,id,https://cavaier.com/id/collections/for-her-1,https://cavaier.com/id/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,it,https://cavaier.com/it/collections/for-her-1,https://cavaier.com/it/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,nb,https://cavaier.com/nb/collections/for-henne-2,https://cavaier.com/nb/collections/for-her,"translated address dropped, English address used (redirect added)"
+International,collection,For Her,nl,https://cavaier.com/nl/collections/for-her-1,https://cavaier.com/nl/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,no,https://cavaier.com/no/collections/for-her-1,https://cavaier.com/no/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,pl,https://cavaier.com/pl/collections/for-her-1,https://cavaier.com/pl/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,pt,https://cavaier.com/pt/collections/for-her-1,https://cavaier.com/pt/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,sv,https://cavaier.com/sv/collections/for-henne-1,https://cavaier.com/sv/collections/for-her,"translated address dropped, English address used (redirect added)"
+International,collection,For Her,th,https://cavaier.com/th/collections/for-her-1,https://cavaier.com/th/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,zh-Hant,https://cavaier.com/zh/collections/for-her-1,https://cavaier.com/zh/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,de-DE,https://cavaier.de/collections/fur-sie-1,https://cavaier.de/collections/for-her,"translated address dropped, English address used (redirect added)"
+International,collection,For Her,nl-NL,https://cavaier.nl/collections/for-her-1,https://cavaier.nl/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,nb-NO,https://cavaier.no/collections/for-henne-2,https://cavaier.no/collections/for-her,"translated address dropped, English address used (redirect added)"
+International,collection,For Her,no-NO,https://cavaier.no/no/collections/for-her-1,https://cavaier.no/no/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Her,pl-PL,https://cavaier.pl/collections/for-her-1,https://cavaier.pl/collections/for-her,renamed (redirect created by the rename)
+International,collection,For Him,en,https://cavaier.com/collections/for-him-1,https://cavaier.com/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,ar,https://cavaier.com/ar/collections/for-him-1,https://cavaier.com/ar/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,de,https://cavaier.com/de/collections/fur-ihn-1,https://cavaier.com/de/collections/for-him,"translated address dropped, English address used (redirect added)"
+International,collection,For Him,es,https://cavaier.com/es/collections/for-him-1,https://cavaier.com/es/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,fr,https://cavaier.com/fr/collections/for-him-1,https://cavaier.com/fr/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,he,https://cavaier.com/he/collections/for-him-1,https://cavaier.com/he/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,id,https://cavaier.com/id/collections/for-him-1,https://cavaier.com/id/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,it,https://cavaier.com/it/collections/for-him-1,https://cavaier.com/it/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,nb,https://cavaier.com/nb/collections/for-ham-1,https://cavaier.com/nb/collections/for-him,"translated address dropped, English address used (redirect added)"
+International,collection,For Him,nl,https://cavaier.com/nl/collections/for-him-1,https://cavaier.com/nl/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,no,https://cavaier.com/no/collections/for-him-1,https://cavaier.com/no/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,pl,https://cavaier.com/pl/collections/for-him-1,https://cavaier.com/pl/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,pt,https://cavaier.com/pt/collections/for-him-1,https://cavaier.com/pt/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,sv,https://cavaier.com/sv/collections/for-honom-1,https://cavaier.com/sv/collections/for-him,"translated address dropped, English address used (redirect added)"
+International,collection,For Him,th,https://cavaier.com/th/collections/for-him-1,https://cavaier.com/th/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,zh-Hant,https://cavaier.com/zh/collections/for-him-1,https://cavaier.com/zh/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,de-DE,https://cavaier.de/collections/fur-ihn-1,https://cavaier.de/collections/for-him,"translated address dropped, English address used (redirect added)"
+International,collection,For Him,nl-NL,https://cavaier.nl/collections/for-him-1,https://cavaier.nl/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,nb-NO,https://cavaier.no/collections/for-ham-1,https://cavaier.no/collections/for-him,"translated address dropped, English address used (redirect added)"
+International,collection,For Him,no-NO,https://cavaier.no/no/collections/for-him-1,https://cavaier.no/no/collections/for-him,renamed (redirect created by the rename)
+International,collection,For Him,pl-PL,https://cavaier.pl/collections/for-him-1,https://cavaier.pl/collections/for-him,renamed (redirect created by the rename)
+International,collection,Men Necklace,en,https://cavaier.com/collections/necklace,https://cavaier.com/collections/necklace,no change
+International,collection,Men Necklace,ar,https://cavaier.com/ar/collections/necklace,https://cavaier.com/ar/collections/necklace,no change
+International,collection,Men Necklace,de,https://cavaier.com/de/collections/necklace,https://cavaier.com/de/collections/necklace,no change
+International,collection,Men Necklace,es,https://cavaier.com/es/collections/necklace,https://cavaier.com/es/collections/necklace,no change
+International,collection,Men Necklace,fr,https://cavaier.com/fr/collections/necklace,https://cavaier.com/fr/collections/necklace,no change
+International,collection,Men Necklace,he,https://cavaier.com/he/collections/necklace,https://cavaier.com/he/collections/necklace,no change
+International,collection,Men Necklace,id,https://cavaier.com/id/collections/necklace,https://cavaier.com/id/collections/necklace,no change
+International,collection,Men Necklace,it,https://cavaier.com/it/collections/necklace,https://cavaier.com/it/collections/necklace,no change
+International,collection,Men Necklace,nb,https://cavaier.com/nb/collections/halskjede,https://cavaier.com/nb/collections/necklace,"translated address dropped, English address used (redirect added)"
+International,collection,Men Necklace,nl,https://cavaier.com/nl/collections/necklace,https://cavaier.com/nl/collections/necklace,no change
+International,collection,Men Necklace,no,https://cavaier.com/no/collections/necklace,https://cavaier.com/no/collections/necklace,no change
+International,collection,Men Necklace,pl,https://cavaier.com/pl/collections/necklace,https://cavaier.com/pl/collections/necklace,no change
+International,collection,Men Necklace,pt,https://cavaier.com/pt/collections/necklace,https://cavaier.com/pt/collections/necklace,no change
+International,collection,Men Necklace,sv,https://cavaier.com/sv/collections/halsband,https://cavaier.com/sv/collections/necklace,"translated address dropped, English address used (redirect added)"
+International,collection,Men Necklace,th,https://cavaier.com/th/collections/necklace,https://cavaier.com/th/collections/necklace,no change
+International,collection,Men Necklace,zh-Hant,https://cavaier.com/zh/collections/necklace,https://cavaier.com/zh/collections/necklace,no change
+International,collection,Men Necklace,de-DE,https://cavaier.de/collections/necklace,https://cavaier.de/collections/necklace,no change
+International,collection,Men Necklace,nl-NL,https://cavaier.nl/collections/necklace,https://cavaier.nl/collections/necklace,no change
+International,collection,Men Necklace,nb-NO,https://cavaier.no/collections/halskjede,https://cavaier.no/collections/necklace,"translated address dropped, English address used (redirect added)"
+International,collection,Men Necklace,no-NO,https://cavaier.no/no/collections/necklace,https://cavaier.no/no/collections/necklace,no change
+International,collection,Men Necklace,pl-PL,https://cavaier.pl/collections/necklace,https://cavaier.pl/collections/necklace,no change
+International,collection,Men's Sets,en,https://cavaier.com/collections/mens-sets,https://cavaier.com/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,ar,https://cavaier.com/ar/collections/mens-sets,https://cavaier.com/ar/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,de,https://cavaier.com/de/collections/mens-sets,https://cavaier.com/de/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,es,https://cavaier.com/es/collections/mens-sets,https://cavaier.com/es/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,fr,https://cavaier.com/fr/collections/mens-sets,https://cavaier.com/fr/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,he,https://cavaier.com/he/collections/mens-sets,https://cavaier.com/he/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,id,https://cavaier.com/id/collections/mens-sets,https://cavaier.com/id/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,it,https://cavaier.com/it/collections/mens-sets,https://cavaier.com/it/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,nb,https://cavaier.com/nb/collections/mens-sets,https://cavaier.com/nb/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,nl,https://cavaier.com/nl/collections/mens-sets,https://cavaier.com/nl/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,no,https://cavaier.com/no/collections/mens-sets,https://cavaier.com/no/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,pl,https://cavaier.com/pl/collections/mens-sets,https://cavaier.com/pl/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,pt,https://cavaier.com/pt/collections/mens-sets,https://cavaier.com/pt/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,sv,https://cavaier.com/sv/collections/mens-sets,https://cavaier.com/sv/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,th,https://cavaier.com/th/collections/mens-sets,https://cavaier.com/th/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,zh-Hant,https://cavaier.com/zh/collections/mens-sets,https://cavaier.com/zh/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,de-DE,https://cavaier.de/collections/mens-sets,https://cavaier.de/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,nl-NL,https://cavaier.nl/collections/mens-sets,https://cavaier.nl/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,nb-NO,https://cavaier.no/collections/mens-sets,https://cavaier.no/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,no-NO,https://cavaier.no/no/collections/mens-sets,https://cavaier.no/no/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Men's Sets,pl-PL,https://cavaier.pl/collections/mens-sets,https://cavaier.pl/collections/sets-for-him,renamed (redirect created by the rename)
+International,collection,Test,en,https://cavaier.com/collections/test,https://cavaier.com/collections/test,no change
+International,collection,Test,ar,https://cavaier.com/ar/collections/test,https://cavaier.com/ar/collections/test,no change
+International,collection,Test,de,https://cavaier.com/de/collections/test,https://cavaier.com/de/collections/test,no change
+International,collection,Test,es,https://cavaier.com/es/collections/test,https://cavaier.com/es/collections/test,no change
+International,collection,Test,fr,https://cavaier.com/fr/collections/test,https://cavaier.com/fr/collections/test,no change
+International,collection,Test,he,https://cavaier.com/he/collections/test,https://cavaier.com/he/collections/test,no change
+International,collection,Test,id,https://cavaier.com/id/collections/test,https://cavaier.com/id/collections/test,no change
+International,collection,Test,it,https://cavaier.com/it/collections/test,https://cavaier.com/it/collections/test,no change
+International,collection,Test,nb,https://cavaier.com/nb/collections/test,https://cavaier.com/nb/collections/test,no change
+International,collection,Test,nl,https://cavaier.com/nl/collections/test,https://cavaier.com/nl/collections/test,no change
+International,collection,Test,no,https://cavaier.com/no/collections/test,https://cavaier.com/no/collections/test,no change
+International,collection,Test,pl,https://cavaier.com/pl/collections/test,https://cavaier.com/pl/collections/test,no change
+International,collection,Test,pt,https://cavaier.com/pt/collections/test,https://cavaier.com/pt/collections/test,no change
+International,collection,Test,sv,https://cavaier.com/sv/collections/test,https://cavaier.com/sv/collections/test,no change
+International,collection,Test,th,https://cavaier.com/th/collections/test,https://cavaier.com/th/collections/test,no change
+International,collection,Test,zh-Hant,https://cavaier.com/zh/collections/test,https://cavaier.com/zh/collections/test,no change
+International,collection,Test,de-DE,https://cavaier.de/collections/test,https://cavaier.de/collections/test,no change
+International,collection,Test,nl-NL,https://cavaier.nl/collections/test,https://cavaier.nl/collections/test,no change
+International,collection,Test,nb-NO,https://cavaier.no/collections/test,https://cavaier.no/collections/test,no change
+International,collection,Test,no-NO,https://cavaier.no/no/collections/test,https://cavaier.no/no/collections/test,no change
+International,collection,Test,pl-PL,https://cavaier.pl/collections/test,https://cavaier.pl/collections/test,no change
+International,collection,Women Necklace,en,https://cavaier.com/collections/women-necklace,https://cavaier.com/collections/women-necklace,no change
+International,collection,Women Necklace,ar,https://cavaier.com/ar/collections/women-necklace,https://cavaier.com/ar/collections/women-necklace,no change
+International,collection,Women Necklace,de,https://cavaier.com/de/collections/women-necklace,https://cavaier.com/de/collections/women-necklace,no change
+International,collection,Women Necklace,es,https://cavaier.com/es/collections/women-necklace,https://cavaier.com/es/collections/women-necklace,no change
+International,collection,Women Necklace,fr,https://cavaier.com/fr/collections/women-necklace,https://cavaier.com/fr/collections/women-necklace,no change
+International,collection,Women Necklace,he,https://cavaier.com/he/collections/women-necklace,https://cavaier.com/he/collections/women-necklace,no change
+International,collection,Women Necklace,id,https://cavaier.com/id/collections/women-necklace,https://cavaier.com/id/collections/women-necklace,no change
+International,collection,Women Necklace,it,https://cavaier.com/it/collections/women-necklace,https://cavaier.com/it/collections/women-necklace,no change
+International,collection,Women Necklace,nb,https://cavaier.com/nb/collections/dame-halskjede,https://cavaier.com/nb/collections/women-necklace,"translated address dropped, English address used (redirect added)"
+International,collection,Women Necklace,nl,https://cavaier.com/nl/collections/women-necklace,https://cavaier.com/nl/collections/women-necklace,no change
+International,collection,Women Necklace,no,https://cavaier.com/no/collections/women-necklace,https://cavaier.com/no/collections/women-necklace,no change
+International,collection,Women Necklace,pl,https://cavaier.com/pl/collections/women-necklace,https://cavaier.com/pl/collections/women-necklace,no change
+International,collection,Women Necklace,pt,https://cavaier.com/pt/collections/women-necklace,https://cavaier.com/pt/collections/women-necklace,no change
+International,collection,Women Necklace,sv,https://cavaier.com/sv/collections/kvinnor-halsband,https://cavaier.com/sv/collections/women-necklace,"translated address dropped, English address used (redirect added)"
+International,collection,Women Necklace,th,https://cavaier.com/th/collections/women-necklace,https://cavaier.com/th/collections/women-necklace,no change
+International,collection,Women Necklace,zh-Hant,https://cavaier.com/zh/collections/women-necklace,https://cavaier.com/zh/collections/women-necklace,no change
+International,collection,Women Necklace,de-DE,https://cavaier.de/collections/women-necklace,https://cavaier.de/collections/women-necklace,no change
+International,collection,Women Necklace,nl-NL,https://cavaier.nl/collections/women-necklace,https://cavaier.nl/collections/women-necklace,no change
+International,collection,Women Necklace,nb-NO,https://cavaier.no/collections/dame-halskjede,https://cavaier.no/collections/women-necklace,"translated address dropped, English address used (redirect added)"
+International,collection,Women Necklace,no-NO,https://cavaier.no/no/collections/women-necklace,https://cavaier.no/no/collections/women-necklace,no change
+International,collection,Women Necklace,pl-PL,https://cavaier.pl/collections/women-necklace,https://cavaier.pl/collections/women-necklace,no change
+International,collection,Women's Sets,en,https://cavaier.com/collections/womens-sets,https://cavaier.com/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,ar,https://cavaier.com/ar/collections/womens-sets,https://cavaier.com/ar/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,de,https://cavaier.com/de/collections/womens-sets,https://cavaier.com/de/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,es,https://cavaier.com/es/collections/womens-sets,https://cavaier.com/es/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,fr,https://cavaier.com/fr/collections/womens-sets,https://cavaier.com/fr/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,he,https://cavaier.com/he/collections/womens-sets,https://cavaier.com/he/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,id,https://cavaier.com/id/collections/womens-sets,https://cavaier.com/id/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,it,https://cavaier.com/it/collections/womens-sets,https://cavaier.com/it/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,nb,https://cavaier.com/nb/collections/womens-sets,https://cavaier.com/nb/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,nl,https://cavaier.com/nl/collections/womens-sets,https://cavaier.com/nl/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,no,https://cavaier.com/no/collections/womens-sets,https://cavaier.com/no/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,pl,https://cavaier.com/pl/collections/womens-sets,https://cavaier.com/pl/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,pt,https://cavaier.com/pt/collections/womens-sets,https://cavaier.com/pt/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,sv,https://cavaier.com/sv/collections/womens-sets,https://cavaier.com/sv/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,th,https://cavaier.com/th/collections/womens-sets,https://cavaier.com/th/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,zh-Hant,https://cavaier.com/zh/collections/womens-sets,https://cavaier.com/zh/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,de-DE,https://cavaier.de/collections/womens-sets,https://cavaier.de/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,nl-NL,https://cavaier.nl/collections/womens-sets,https://cavaier.nl/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,nb-NO,https://cavaier.no/collections/womens-sets,https://cavaier.no/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,no-NO,https://cavaier.no/no/collections/womens-sets,https://cavaier.no/no/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,Women's Sets,pl-PL,https://cavaier.pl/collections/womens-sets,https://cavaier.pl/collections/sets-for-her,renamed (redirect created by the rename)
+International,collection,klaviyo,en,https://cavaier.com/collections/klaviyo,https://cavaier.com/collections/klaviyo,no change
+International,product,2x Duo Minimal Set,en,https://cavaier.com/products/2x-duo-minimal-set,https://cavaier.com/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,ar,https://cavaier.com/ar/products/2x-duo-minimal-set,https://cavaier.com/ar/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,de,https://cavaier.com/de/products/2x-duo-minimal-set,https://cavaier.com/de/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,es,https://cavaier.com/es/products/2x-duo-minimal-set,https://cavaier.com/es/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,fr,https://cavaier.com/fr/products/2x-duo-minimal-set,https://cavaier.com/fr/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,he,https://cavaier.com/he/products/2x-duo-minimal-set,https://cavaier.com/he/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,id,https://cavaier.com/id/products/2x-duo-minimal-set,https://cavaier.com/id/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,it,https://cavaier.com/it/products/2x-duo-minimal-set,https://cavaier.com/it/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,nb,https://cavaier.com/nb/products/2x-duo-minimal-set,https://cavaier.com/nb/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,nl,https://cavaier.com/nl/products/2x-duo-minimal-set,https://cavaier.com/nl/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,no,https://cavaier.com/no/products/2x-duo-minimal-set,https://cavaier.com/no/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,pl,https://cavaier.com/pl/products/2x-duo-minimal-set,https://cavaier.com/pl/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,pt,https://cavaier.com/pt/products/2x-duo-minimal-set,https://cavaier.com/pt/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,sv,https://cavaier.com/sv/products/2x-duo-minimal-set,https://cavaier.com/sv/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,th,https://cavaier.com/th/products/2x-duo-minimal-set,https://cavaier.com/th/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,zh-Hant,https://cavaier.com/zh/products/2x-duo-minimal-set,https://cavaier.com/zh/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,de-DE,https://cavaier.de/products/2x-duo-minimal-set,https://cavaier.de/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,nl-NL,https://cavaier.nl/products/2x-duo-minimal-set,https://cavaier.nl/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,no-NO,https://cavaier.no/no/products/2x-duo-minimal-set,https://cavaier.no/no/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,nb-NO,https://cavaier.no/products/2x-duo-minimal-set,https://cavaier.no/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,2x Duo Minimal Set,pl-PL,https://cavaier.pl/products/2x-duo-minimal-set,https://cavaier.pl/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,en,https://cavaier.com/products/3x-minimal-stack-set-1,https://cavaier.com/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,ar,https://cavaier.com/ar/products/3x-minimal-stack-set-1,https://cavaier.com/ar/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,de,https://cavaier.com/de/products/3x-minimal-stack-set-1,https://cavaier.com/de/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,es,https://cavaier.com/es/products/3x-minimal-stack-set-1,https://cavaier.com/es/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,fr,https://cavaier.com/fr/products/3x-minimal-stack-set-1,https://cavaier.com/fr/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,he,https://cavaier.com/he/products/3x-minimal-stack-set-1,https://cavaier.com/he/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,id,https://cavaier.com/id/products/3x-minimal-stack-set-1,https://cavaier.com/id/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,it,https://cavaier.com/it/products/3x-minimal-stack-set-1,https://cavaier.com/it/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,nb,https://cavaier.com/nb/products/3x-minimal-stack-set-1,https://cavaier.com/nb/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,nl,https://cavaier.com/nl/products/3x-minimal-stack-set-1,https://cavaier.com/nl/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,no,https://cavaier.com/no/products/3x-minimal-stack-set-1,https://cavaier.com/no/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,pl,https://cavaier.com/pl/products/3x-minimal-stack-set-1,https://cavaier.com/pl/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,pt,https://cavaier.com/pt/products/3x-minimal-stack-set-1,https://cavaier.com/pt/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,sv,https://cavaier.com/sv/products/3x-minimal-stack-set-1,https://cavaier.com/sv/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,th,https://cavaier.com/th/products/3x-minimal-stack-set-1,https://cavaier.com/th/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,zh-Hant,https://cavaier.com/zh/products/3x-minimal-stack-set-1,https://cavaier.com/zh/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,de-DE,https://cavaier.de/products/3x-minimal-stack-set-1,https://cavaier.de/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,nl-NL,https://cavaier.nl/products/3x-minimal-stack-set-1,https://cavaier.nl/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,no-NO,https://cavaier.no/no/products/3x-minimal-stack-set-1,https://cavaier.no/no/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,nb-NO,https://cavaier.no/products/3x-minimal-stack-set-1,https://cavaier.no/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal - Stack Set,pl-PL,https://cavaier.pl/products/3x-minimal-stack-set-1,https://cavaier.pl/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,en,https://cavaier.com/products/3x-minimal-stack-set,https://cavaier.com/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,ar,https://cavaier.com/ar/products/3x-minimal-stack-set,https://cavaier.com/ar/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,de,https://cavaier.com/de/products/3x-minimal-stack-set,https://cavaier.com/de/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,es,https://cavaier.com/es/products/3x-minimal-stack-set,https://cavaier.com/es/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,fr,https://cavaier.com/fr/products/3x-minimal-stack-set,https://cavaier.com/fr/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,he,https://cavaier.com/he/products/3x-minimal-stack-set,https://cavaier.com/he/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,id,https://cavaier.com/id/products/3x-minimal-stack-set,https://cavaier.com/id/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,it,https://cavaier.com/it/products/3x-minimal-stack-set,https://cavaier.com/it/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,nb,https://cavaier.com/nb/products/3x-minimal-stack-set,https://cavaier.com/nb/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,nl,https://cavaier.com/nl/products/3x-minimal-stack-set,https://cavaier.com/nl/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,no,https://cavaier.com/no/products/3x-minimal-stack-set,https://cavaier.com/no/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,pl,https://cavaier.com/pl/products/3x-minimal-stack-set,https://cavaier.com/pl/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,pt,https://cavaier.com/pt/products/3x-minimal-stack-set,https://cavaier.com/pt/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,sv,https://cavaier.com/sv/products/3x-minimal-stack-set,https://cavaier.com/sv/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,th,https://cavaier.com/th/products/3x-minimal-stack-set,https://cavaier.com/th/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,zh-Hant,https://cavaier.com/zh/products/3x-minimal-stack-set,https://cavaier.com/zh/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,de-DE,https://cavaier.de/products/3x-minimal-stack-set,https://cavaier.de/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,nl-NL,https://cavaier.nl/products/3x-minimal-stack-set,https://cavaier.nl/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,no-NO,https://cavaier.no/no/products/3x-minimal-stack-set,https://cavaier.no/no/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,nb-NO,https://cavaier.no/products/3x-minimal-stack-set,https://cavaier.no/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,3x Minimal Stack Set,pl-PL,https://cavaier.pl/products/3x-minimal-stack-set,https://cavaier.pl/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,en,https://cavaier.com/products/stacked-set,https://cavaier.com/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,ar,https://cavaier.com/ar/products/stacked-set,https://cavaier.com/ar/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,de,https://cavaier.com/de/products/stacked-set,https://cavaier.com/de/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,es,https://cavaier.com/es/products/stacked-set,https://cavaier.com/es/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,fr,https://cavaier.com/fr/products/stacked-set,https://cavaier.com/fr/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,he,https://cavaier.com/he/products/stacked-set,https://cavaier.com/he/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,id,https://cavaier.com/id/products/stacked-set,https://cavaier.com/id/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,it,https://cavaier.com/it/products/stacked-set,https://cavaier.com/it/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,nb,https://cavaier.com/nb/products/stacked-set,https://cavaier.com/nb/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,nl,https://cavaier.com/nl/products/stacked-set,https://cavaier.com/nl/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,no,https://cavaier.com/no/products/stacked-set,https://cavaier.com/no/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,pl,https://cavaier.com/pl/products/stacked-set,https://cavaier.com/pl/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,pt,https://cavaier.com/pt/products/stacked-set,https://cavaier.com/pt/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,sv,https://cavaier.com/sv/products/stacked-set,https://cavaier.com/sv/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,th,https://cavaier.com/th/products/stacked-set,https://cavaier.com/th/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,zh-Hant,https://cavaier.com/zh/products/stacked-set,https://cavaier.com/zh/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,de-DE,https://cavaier.de/products/stacked-set,https://cavaier.de/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,nl-NL,https://cavaier.nl/products/stacked-set,https://cavaier.nl/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,no-NO,https://cavaier.no/no/products/stacked-set,https://cavaier.no/no/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,nb-NO,https://cavaier.no/products/stacked-set,https://cavaier.no/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,4x Stacked Set,pl-PL,https://cavaier.pl/products/stacked-set,https://cavaier.pl/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,en,https://cavaier.com/products/braid-armband-1,https://cavaier.com/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,ar,https://cavaier.com/ar/products/braid-armband-1,https://cavaier.com/ar/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,de,https://cavaier.com/de/products/braid-armband-1,https://cavaier.com/de/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,es,https://cavaier.com/es/products/braid-armband-1,https://cavaier.com/es/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,fr,https://cavaier.com/fr/products/braid-armband-1,https://cavaier.com/fr/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,he,https://cavaier.com/he/products/braid-armband-1,https://cavaier.com/he/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,id,https://cavaier.com/id/products/braid-armband-1,https://cavaier.com/id/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,it,https://cavaier.com/it/products/braid-armband-1,https://cavaier.com/it/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,nb,https://cavaier.com/nb/products/flette-armband-1,https://cavaier.com/nb/products/braid-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Braid - Bracelet,nl,https://cavaier.com/nl/products/braid-armband-1,https://cavaier.com/nl/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,no,https://cavaier.com/no/products/braid-armband-1,https://cavaier.com/no/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,pl,https://cavaier.com/pl/products/braid-armband-1,https://cavaier.com/pl/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,pt,https://cavaier.com/pt/products/braid-armband-1,https://cavaier.com/pt/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,sv,https://cavaier.com/sv/products/flatat-armband-1,https://cavaier.com/sv/products/braid-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Braid - Bracelet,th,https://cavaier.com/th/products/braid-armband-1,https://cavaier.com/th/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,zh-Hant,https://cavaier.com/zh/products/braid-armband-1,https://cavaier.com/zh/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,de-DE,https://cavaier.de/products/braid-armband-1,https://cavaier.de/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,nl-NL,https://cavaier.nl/products/braid-armband-1,https://cavaier.nl/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,no-NO,https://cavaier.no/no/products/braid-armband-1,https://cavaier.no/no/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid - Bracelet,nb-NO,https://cavaier.no/products/flette-armband-1,https://cavaier.no/products/braid-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Braid - Bracelet,pl-PL,https://cavaier.pl/products/braid-armband-1,https://cavaier.pl/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Braid Bracelet,en,https://cavaier.com/products/braid-armband,https://cavaier.com/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,ar,https://cavaier.com/ar/products/braid-armband,https://cavaier.com/ar/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,de,https://cavaier.com/de/products/braid-armband,https://cavaier.com/de/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,es,https://cavaier.com/es/products/braid-armband,https://cavaier.com/es/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,fr,https://cavaier.com/fr/products/braid-armband,https://cavaier.com/fr/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,he,https://cavaier.com/he/products/braid-armband,https://cavaier.com/he/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,id,https://cavaier.com/id/products/braid-armband,https://cavaier.com/id/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,it,https://cavaier.com/it/products/braid-armband,https://cavaier.com/it/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,nb,https://cavaier.com/nb/products/flette-armband,https://cavaier.com/nb/products/braid-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Braid Bracelet,nl,https://cavaier.com/nl/products/braid-armband,https://cavaier.com/nl/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,no,https://cavaier.com/no/products/braid-armband,https://cavaier.com/no/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,pl,https://cavaier.com/pl/products/braid-armband,https://cavaier.com/pl/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,pt,https://cavaier.com/pt/products/braid-armband,https://cavaier.com/pt/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,sv,https://cavaier.com/sv/products/flatat-armband,https://cavaier.com/sv/products/braid-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Braid Bracelet,th,https://cavaier.com/th/products/braid-armband,https://cavaier.com/th/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,zh-Hant,https://cavaier.com/zh/products/braid-armband,https://cavaier.com/zh/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,de-DE,https://cavaier.de/products/braid-armband,https://cavaier.de/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,nl-NL,https://cavaier.nl/products/braid-armband,https://cavaier.nl/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,no-NO,https://cavaier.no/no/products/braid-armband,https://cavaier.no/no/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Braid Bracelet,nb-NO,https://cavaier.no/products/flette-armband,https://cavaier.no/products/braid-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Braid Bracelet,pl-PL,https://cavaier.pl/products/braid-armband,https://cavaier.pl/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cavaier Gift Card,en,https://cavaier.com/products/cavaier-gift-card,https://cavaier.com/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,ar,https://cavaier.com/ar/products/cavaier-gift-card,https://cavaier.com/ar/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,de,https://cavaier.com/de/products/cavaier-gift-card,https://cavaier.com/de/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,es,https://cavaier.com/es/products/cavaier-gift-card,https://cavaier.com/es/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,fr,https://cavaier.com/fr/products/cavaier-gift-card,https://cavaier.com/fr/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,he,https://cavaier.com/he/products/cavaier-gift-card,https://cavaier.com/he/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,id,https://cavaier.com/id/products/cavaier-gift-card,https://cavaier.com/id/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,it,https://cavaier.com/it/products/cavaier-gift-card,https://cavaier.com/it/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,nb,https://cavaier.com/nb/products/cavaier-gift-card,https://cavaier.com/nb/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,nl,https://cavaier.com/nl/products/cavaier-gift-card,https://cavaier.com/nl/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,no,https://cavaier.com/no/products/cavaier-gift-card,https://cavaier.com/no/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,pl,https://cavaier.com/pl/products/cavaier-gift-card,https://cavaier.com/pl/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,pt,https://cavaier.com/pt/products/cavaier-gift-card,https://cavaier.com/pt/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,sv,https://cavaier.com/sv/products/cavaier-gift-card,https://cavaier.com/sv/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,th,https://cavaier.com/th/products/cavaier-gift-card,https://cavaier.com/th/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,zh-Hant,https://cavaier.com/zh/products/cavaier-gift-card,https://cavaier.com/zh/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,de-DE,https://cavaier.de/products/cavaier-gift-card,https://cavaier.de/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,nl-NL,https://cavaier.nl/products/cavaier-gift-card,https://cavaier.nl/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,no-NO,https://cavaier.no/no/products/cavaier-gift-card,https://cavaier.no/no/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,nb-NO,https://cavaier.no/products/cavaier-gift-card,https://cavaier.no/products/cavaier-gift-card,no change
+International,product,Cavaier Gift Card,pl-PL,https://cavaier.pl/products/cavaier-gift-card,https://cavaier.pl/products/cavaier-gift-card,no change
+International,product,Crystal - Bracelet,en,https://cavaier.com/products/bracelet,https://cavaier.com/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,ar,https://cavaier.com/ar/products/bracelet,https://cavaier.com/ar/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,de,https://cavaier.com/de/products/armband,https://cavaier.com/de/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,es,https://cavaier.com/es/products/pulsera,https://cavaier.com/es/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,fr,https://cavaier.com/fr/products/bracelet,https://cavaier.com/fr/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,he,https://cavaier.com/he/products/bracelet,https://cavaier.com/he/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,id,https://cavaier.com/id/products/bracelet,https://cavaier.com/id/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,it,https://cavaier.com/it/products/braccialetto,https://cavaier.com/it/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,nb,https://cavaier.com/nb/products/armband-3,https://cavaier.com/nb/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,nl,https://cavaier.com/nl/products/armband-1,https://cavaier.com/nl/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,no,https://cavaier.com/no/products/bracelet,https://cavaier.com/no/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,pl,https://cavaier.com/pl/products/bransoletka,https://cavaier.com/pl/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,pt,https://cavaier.com/pt/products/pulseira,https://cavaier.com/pt/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,sv,https://cavaier.com/sv/products/armband-2,https://cavaier.com/sv/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,th,https://cavaier.com/th/products/bracelet,https://cavaier.com/th/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,zh-Hant,https://cavaier.com/zh/products/%E6%89%8B%E9%8F%88,https://cavaier.com/zh/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,de-DE,https://cavaier.de/products/armband,https://cavaier.de/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,nl-NL,https://cavaier.nl/products/armband-1,https://cavaier.nl/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,no-NO,https://cavaier.no/no/products/bracelet,https://cavaier.no/no/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Bracelet,nb-NO,https://cavaier.no/products/armband-3,https://cavaier.no/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Bracelet,pl-PL,https://cavaier.pl/products/bransoletka,https://cavaier.pl/products/crystal-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Crystal - Necklace,en,https://cavaier.com/products/crystal-necklace,https://cavaier.com/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,ar,https://cavaier.com/ar/products/crystal-necklace,https://cavaier.com/ar/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,de,https://cavaier.com/de/products/crystal-necklace,https://cavaier.com/de/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,es,https://cavaier.com/es/products/crystal-necklace,https://cavaier.com/es/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,fr,https://cavaier.com/fr/products/crystal-necklace,https://cavaier.com/fr/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,he,https://cavaier.com/he/products/crystal-necklace,https://cavaier.com/he/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,id,https://cavaier.com/id/products/crystal-necklace,https://cavaier.com/id/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,it,https://cavaier.com/it/products/crystal-necklace,https://cavaier.com/it/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,nb,https://cavaier.com/nb/products/crystal-necklace,https://cavaier.com/nb/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,nl,https://cavaier.com/nl/products/crystal-necklace,https://cavaier.com/nl/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,no,https://cavaier.com/no/products/crystal-necklace,https://cavaier.com/no/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,pl,https://cavaier.com/pl/products/crystal-necklace,https://cavaier.com/pl/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,pt,https://cavaier.com/pt/products/crystal-necklace,https://cavaier.com/pt/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,sv,https://cavaier.com/sv/products/crystal-necklace,https://cavaier.com/sv/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,th,https://cavaier.com/th/products/crystal-necklace,https://cavaier.com/th/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,zh-Hant,https://cavaier.com/zh/products/crystal-necklace,https://cavaier.com/zh/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,de-DE,https://cavaier.de/products/crystal-necklace,https://cavaier.de/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,nl-NL,https://cavaier.nl/products/crystal-necklace,https://cavaier.nl/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,no-NO,https://cavaier.no/no/products/crystal-necklace,https://cavaier.no/no/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,nb-NO,https://cavaier.no/products/crystal-necklace,https://cavaier.no/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Crystal - Necklace,pl-PL,https://cavaier.pl/products/crystal-necklace,https://cavaier.pl/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,en,https://cavaier.com/products/copy-of-cuban-bracelet,https://cavaier.com/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,ar,https://cavaier.com/ar/products/copy-of-cuban-bracelet,https://cavaier.com/ar/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,de,https://cavaier.com/de/products/copy-of-cuban-bracelet,https://cavaier.com/de/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,es,https://cavaier.com/es/products/copy-of-cuban-bracelet,https://cavaier.com/es/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,fr,https://cavaier.com/fr/products/copy-of-cuban-bracelet,https://cavaier.com/fr/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,he,https://cavaier.com/he/products/copy-of-cuban-bracelet,https://cavaier.com/he/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,id,https://cavaier.com/id/products/copy-of-cuban-bracelet,https://cavaier.com/id/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,it,https://cavaier.com/it/products/copy-of-cuban-bracelet,https://cavaier.com/it/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,nb,https://cavaier.com/nb/products/kopi-av-cubansk-armband,https://cavaier.com/nb/products/cuban-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Bracelet,nl,https://cavaier.com/nl/products/copy-of-cuban-bracelet,https://cavaier.com/nl/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,no,https://cavaier.com/no/products/copy-of-cuban-bracelet,https://cavaier.com/no/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,pl,https://cavaier.com/pl/products/copy-of-cuban-bracelet,https://cavaier.com/pl/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,pt,https://cavaier.com/pt/products/copy-of-cuban-bracelet,https://cavaier.com/pt/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,sv,https://cavaier.com/sv/products/kopia-av-kubansk-armband,https://cavaier.com/sv/products/cuban-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Bracelet,th,https://cavaier.com/th/products/copy-of-cuban-bracelet,https://cavaier.com/th/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,zh-Hant,https://cavaier.com/zh/products/copy-of-cuban-bracelet,https://cavaier.com/zh/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,de-DE,https://cavaier.de/products/copy-of-cuban-bracelet,https://cavaier.de/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,nl-NL,https://cavaier.nl/products/copy-of-cuban-bracelet,https://cavaier.nl/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,no-NO,https://cavaier.no/no/products/copy-of-cuban-bracelet,https://cavaier.no/no/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Bracelet,nb-NO,https://cavaier.no/products/kopi-av-cubansk-armband,https://cavaier.no/products/cuban-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Bracelet,pl-PL,https://cavaier.pl/products/copy-of-cuban-bracelet,https://cavaier.pl/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,en,https://cavaier.com/products/cuban-necklace-1,https://cavaier.com/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,ar,https://cavaier.com/ar/products/cuban-necklace-1,https://cavaier.com/ar/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,de,https://cavaier.com/de/products/cuban-necklace-1,https://cavaier.com/de/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,es,https://cavaier.com/es/products/cuban-necklace-1,https://cavaier.com/es/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,fr,https://cavaier.com/fr/products/cuban-necklace-1,https://cavaier.com/fr/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,he,https://cavaier.com/he/products/cuban-necklace-1,https://cavaier.com/he/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,id,https://cavaier.com/id/products/cuban-necklace-1,https://cavaier.com/id/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,it,https://cavaier.com/it/products/cuban-necklace-1,https://cavaier.com/it/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,nb,https://cavaier.com/nb/products/kubansk-kjede-1,https://cavaier.com/nb/products/cuban-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Necklace,nl,https://cavaier.com/nl/products/cuban-necklace-1,https://cavaier.com/nl/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,no,https://cavaier.com/no/products/cuban-necklace-1,https://cavaier.com/no/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,pl,https://cavaier.com/pl/products/cuban-necklace-1,https://cavaier.com/pl/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,pt,https://cavaier.com/pt/products/cuban-necklace-1,https://cavaier.com/pt/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,sv,https://cavaier.com/sv/products/kubanskt-halsband-1,https://cavaier.com/sv/products/cuban-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Necklace,th,https://cavaier.com/th/products/cuban-necklace-1,https://cavaier.com/th/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,zh-Hant,https://cavaier.com/zh/products/cuban-necklace-1,https://cavaier.com/zh/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,de-DE,https://cavaier.de/products/cuban-necklace-1,https://cavaier.de/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,nl-NL,https://cavaier.nl/products/cuban-necklace-1,https://cavaier.nl/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,no-NO,https://cavaier.no/no/products/cuban-necklace-1,https://cavaier.no/no/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Necklace,nb-NO,https://cavaier.no/products/kubansk-kjede-1,https://cavaier.no/products/cuban-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Necklace,pl-PL,https://cavaier.pl/products/cuban-necklace-1,https://cavaier.pl/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,en,https://cavaier.com/products/cuban-necklace,https://cavaier.com/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,ar,https://cavaier.com/ar/products/cuban-necklace,https://cavaier.com/ar/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,de,https://cavaier.com/de/products/cuban-necklace,https://cavaier.com/de/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,es,https://cavaier.com/es/products/cuban-necklace,https://cavaier.com/es/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,fr,https://cavaier.com/fr/products/cuban-necklace,https://cavaier.com/fr/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,he,https://cavaier.com/he/products/cuban-necklace,https://cavaier.com/he/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,id,https://cavaier.com/id/products/cuban-necklace,https://cavaier.com/id/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,it,https://cavaier.com/it/products/cuban-necklace,https://cavaier.com/it/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,nb,https://cavaier.com/nb/products/kubansk-halskjede,https://cavaier.com/nb/products/cuban-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Pendant Necklace,nl,https://cavaier.com/nl/products/cuban-necklace,https://cavaier.com/nl/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,no,https://cavaier.com/no/products/cuban-necklace,https://cavaier.com/no/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,pl,https://cavaier.com/pl/products/cuban-necklace,https://cavaier.com/pl/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,pt,https://cavaier.com/pt/products/cuban-necklace,https://cavaier.com/pt/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,sv,https://cavaier.com/sv/products/kubansk-halsband,https://cavaier.com/sv/products/cuban-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Pendant Necklace,th,https://cavaier.com/th/products/cuban-necklace,https://cavaier.com/th/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/cuban-necklace,https://cavaier.com/zh/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,de-DE,https://cavaier.de/products/cuban-necklace,https://cavaier.de/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,nl-NL,https://cavaier.nl/products/cuban-necklace,https://cavaier.nl/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,no-NO,https://cavaier.no/no/products/cuban-necklace,https://cavaier.no/no/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban - Pendant Necklace,nb-NO,https://cavaier.no/products/kubansk-halskjede,https://cavaier.no/products/cuban-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cuban - Pendant Necklace,pl-PL,https://cavaier.pl/products/cuban-necklace,https://cavaier.pl/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,en,https://cavaier.com/products/cuban-bracelet,https://cavaier.com/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,ar,https://cavaier.com/ar/products/cuban-bracelet,https://cavaier.com/ar/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,de,https://cavaier.com/de/products/cuban-bracelet,https://cavaier.com/de/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,es,https://cavaier.com/es/products/cuban-bracelet,https://cavaier.com/es/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,fr,https://cavaier.com/fr/products/cuban-bracelet,https://cavaier.com/fr/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,he,https://cavaier.com/he/products/cuban-bracelet,https://cavaier.com/he/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,id,https://cavaier.com/id/products/cuban-bracelet,https://cavaier.com/id/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,it,https://cavaier.com/it/products/cuban-bracelet,https://cavaier.com/it/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,nb,https://cavaier.com/nb/products/cubansk-armband,https://cavaier.com/nb/products/cuban-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Bracelet,nl,https://cavaier.com/nl/products/cuban-bracelet,https://cavaier.com/nl/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,no,https://cavaier.com/no/products/cuban-bracelet,https://cavaier.com/no/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,pl,https://cavaier.com/pl/products/cuban-bracelet,https://cavaier.com/pl/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,pt,https://cavaier.com/pt/products/cuban-bracelet,https://cavaier.com/pt/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,sv,https://cavaier.com/sv/products/kubansk-armband,https://cavaier.com/sv/products/cuban-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Bracelet,th,https://cavaier.com/th/products/cuban-bracelet,https://cavaier.com/th/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,zh-Hant,https://cavaier.com/zh/products/cuban-bracelet,https://cavaier.com/zh/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,de-DE,https://cavaier.de/products/cuban-bracelet,https://cavaier.de/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,nl-NL,https://cavaier.nl/products/cuban-bracelet,https://cavaier.nl/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,no-NO,https://cavaier.no/no/products/cuban-bracelet,https://cavaier.no/no/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Bracelet,nb-NO,https://cavaier.no/products/cubansk-armband,https://cavaier.no/products/cuban-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Bracelet,pl-PL,https://cavaier.pl/products/cuban-bracelet,https://cavaier.pl/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,en,https://cavaier.com/products/cuban-necklace-2,https://cavaier.com/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,ar,https://cavaier.com/ar/products/cuban-necklace-2,https://cavaier.com/ar/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,de,https://cavaier.com/de/products/cuban-necklace-2,https://cavaier.com/de/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,es,https://cavaier.com/es/products/cuban-necklace-2,https://cavaier.com/es/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,fr,https://cavaier.com/fr/products/cuban-necklace-2,https://cavaier.com/fr/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,he,https://cavaier.com/he/products/cuban-necklace-2,https://cavaier.com/he/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,id,https://cavaier.com/id/products/cuban-necklace-2,https://cavaier.com/id/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,it,https://cavaier.com/it/products/cuban-necklace-2,https://cavaier.com/it/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,nb,https://cavaier.com/nb/products/kubansk-halskjede-2,https://cavaier.com/nb/products/cuban-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Necklace,nl,https://cavaier.com/nl/products/cuban-necklace-2,https://cavaier.com/nl/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,no,https://cavaier.com/no/products/cuban-necklace-2,https://cavaier.com/no/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,pl,https://cavaier.com/pl/products/cuban-necklace-2,https://cavaier.com/pl/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,pt,https://cavaier.com/pt/products/cuban-necklace-2,https://cavaier.com/pt/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,sv,https://cavaier.com/sv/products/kubanskt-halsband-2,https://cavaier.com/sv/products/cuban-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Necklace,th,https://cavaier.com/th/products/cuban-necklace-2,https://cavaier.com/th/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,zh-Hant,https://cavaier.com/zh/products/cuban-necklace-2,https://cavaier.com/zh/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,de-DE,https://cavaier.de/products/cuban-necklace-2,https://cavaier.de/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,nl-NL,https://cavaier.nl/products/cuban-necklace-2,https://cavaier.nl/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,no-NO,https://cavaier.no/no/products/cuban-necklace-2,https://cavaier.no/no/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Necklace,nb-NO,https://cavaier.no/products/kubansk-halskjede-2,https://cavaier.no/products/cuban-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Necklace,pl-PL,https://cavaier.pl/products/cuban-necklace-2,https://cavaier.pl/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,en,https://cavaier.com/products/copy-of-cuban-bracelet-1,https://cavaier.com/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,ar,https://cavaier.com/ar/products/copy-of-cuban-bracelet-1,https://cavaier.com/ar/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,de,https://cavaier.com/de/products/copy-of-cuban-bracelet-1,https://cavaier.com/de/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,es,https://cavaier.com/es/products/copy-of-cuban-bracelet-1,https://cavaier.com/es/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,fr,https://cavaier.com/fr/products/copy-of-cuban-bracelet-1,https://cavaier.com/fr/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,he,https://cavaier.com/he/products/copy-of-cuban-bracelet-1,https://cavaier.com/he/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,id,https://cavaier.com/id/products/copy-of-cuban-bracelet-1,https://cavaier.com/id/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,it,https://cavaier.com/it/products/copy-of-cuban-bracelet-1,https://cavaier.com/it/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,nb,https://cavaier.com/nb/products/kopi-av-kubansk-armband-1,https://cavaier.com/nb/products/cuban-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Pendant Necklace,nl,https://cavaier.com/nl/products/copy-of-cuban-bracelet-1,https://cavaier.com/nl/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,no,https://cavaier.com/no/products/copy-of-cuban-bracelet-1,https://cavaier.com/no/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,pl,https://cavaier.com/pl/products/copy-of-cuban-bracelet-1,https://cavaier.com/pl/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,pt,https://cavaier.com/pt/products/copy-of-cuban-bracelet-1,https://cavaier.com/pt/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,sv,https://cavaier.com/sv/products/kopia-av-kubanskt-armband-1,https://cavaier.com/sv/products/cuban-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Pendant Necklace,th,https://cavaier.com/th/products/copy-of-cuban-bracelet-1,https://cavaier.com/th/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/copy-of-cuban-bracelet-1,https://cavaier.com/zh/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,de-DE,https://cavaier.de/products/copy-of-cuban-bracelet-1,https://cavaier.de/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,nl-NL,https://cavaier.nl/products/copy-of-cuban-bracelet-1,https://cavaier.nl/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,no-NO,https://cavaier.no/no/products/copy-of-cuban-bracelet-1,https://cavaier.no/no/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cuban Pendant Necklace,nb-NO,https://cavaier.no/products/kopi-av-kubansk-armband-1,https://cavaier.no/products/cuban-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cuban Pendant Necklace,pl-PL,https://cavaier.pl/products/copy-of-cuban-bracelet-1,https://cavaier.pl/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,en,https://cavaier.com/products/cube-bracelet-1,https://cavaier.com/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,ar,https://cavaier.com/ar/products/cube-bracelet-1,https://cavaier.com/ar/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,de,https://cavaier.com/de/products/cube-bracelet-1,https://cavaier.com/de/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,es,https://cavaier.com/es/products/cube-bracelet-1,https://cavaier.com/es/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,fr,https://cavaier.com/fr/products/cube-bracelet-1,https://cavaier.com/fr/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,he,https://cavaier.com/he/products/cube-bracelet-1,https://cavaier.com/he/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,id,https://cavaier.com/id/products/cube-bracelet-1,https://cavaier.com/id/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,it,https://cavaier.com/it/products/cube-bracelet-1,https://cavaier.com/it/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,nb,https://cavaier.com/nb/products/kube-armband-1,https://cavaier.com/nb/products/cube-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Bracelet,nl,https://cavaier.com/nl/products/cube-bracelet-1,https://cavaier.com/nl/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,no,https://cavaier.com/no/products/cube-bracelet-1,https://cavaier.com/no/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,pl,https://cavaier.com/pl/products/cube-bracelet-1,https://cavaier.com/pl/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,pt,https://cavaier.com/pt/products/cube-bracelet-1,https://cavaier.com/pt/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,sv,https://cavaier.com/sv/products/kub-armband-1,https://cavaier.com/sv/products/cube-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Bracelet,th,https://cavaier.com/th/products/cube-bracelet-1,https://cavaier.com/th/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,zh-Hant,https://cavaier.com/zh/products/cube-bracelet-1,https://cavaier.com/zh/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,de-DE,https://cavaier.de/products/cube-bracelet-1,https://cavaier.de/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,nl-NL,https://cavaier.nl/products/cube-bracelet-1,https://cavaier.nl/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,no-NO,https://cavaier.no/no/products/cube-bracelet-1,https://cavaier.no/no/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Bracelet,nb-NO,https://cavaier.no/products/kube-armband-1,https://cavaier.no/products/cube-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Bracelet,pl-PL,https://cavaier.pl/products/cube-bracelet-1,https://cavaier.pl/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,en,https://cavaier.com/products/cube-pendant-necklace-copy,https://cavaier.com/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,ar,https://cavaier.com/ar/products/cube-pendant-necklace-copy,https://cavaier.com/ar/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,de,https://cavaier.com/de/products/cube-pendant-necklace-copy,https://cavaier.com/de/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,es,https://cavaier.com/es/products/cube-pendant-necklace-copy,https://cavaier.com/es/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,fr,https://cavaier.com/fr/products/cube-pendant-necklace-copy,https://cavaier.com/fr/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,he,https://cavaier.com/he/products/cube-pendant-necklace-copy,https://cavaier.com/he/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,id,https://cavaier.com/id/products/cube-pendant-necklace-copy,https://cavaier.com/id/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,it,https://cavaier.com/it/products/cube-pendant-necklace-copy,https://cavaier.com/it/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,nb,https://cavaier.com/nb/products/kube-anheng-halskjede-kopi,https://cavaier.com/nb/products/cube-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Necklace,nl,https://cavaier.com/nl/products/cube-pendant-necklace-copy,https://cavaier.com/nl/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,no,https://cavaier.com/no/products/cube-pendant-necklace-copy,https://cavaier.com/no/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,pl,https://cavaier.com/pl/products/cube-pendant-necklace-copy,https://cavaier.com/pl/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,pt,https://cavaier.com/pt/products/cube-pendant-necklace-copy,https://cavaier.com/pt/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,sv,https://cavaier.com/sv/products/kub-hange-halsband-kopia,https://cavaier.com/sv/products/cube-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Necklace,th,https://cavaier.com/th/products/cube-pendant-necklace-copy,https://cavaier.com/th/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,zh-Hant,https://cavaier.com/zh/products/cube-pendant-necklace-copy,https://cavaier.com/zh/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,de-DE,https://cavaier.de/products/cube-pendant-necklace-copy,https://cavaier.de/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,nl-NL,https://cavaier.nl/products/cube-pendant-necklace-copy,https://cavaier.nl/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,no-NO,https://cavaier.no/no/products/cube-pendant-necklace-copy,https://cavaier.no/no/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Necklace,nb-NO,https://cavaier.no/products/kube-anheng-halskjede-kopi,https://cavaier.no/products/cube-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Necklace,pl-PL,https://cavaier.pl/products/cube-pendant-necklace-copy,https://cavaier.pl/products/cube-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,en,https://cavaier.com/products/cube-necklace-1,https://cavaier.com/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,ar,https://cavaier.com/ar/products/cube-necklace-1,https://cavaier.com/ar/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,de,https://cavaier.com/de/products/cube-necklace-1,https://cavaier.com/de/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,es,https://cavaier.com/es/products/cube-necklace-1,https://cavaier.com/es/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,fr,https://cavaier.com/fr/products/cube-necklace-1,https://cavaier.com/fr/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,he,https://cavaier.com/he/products/cube-necklace-1,https://cavaier.com/he/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,id,https://cavaier.com/id/products/cube-necklace-1,https://cavaier.com/id/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,it,https://cavaier.com/it/products/cube-necklace-1,https://cavaier.com/it/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,nb,https://cavaier.com/nb/products/kube-halskjede-1,https://cavaier.com/nb/products/cube-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Pendant Necklace,nl,https://cavaier.com/nl/products/cube-necklace-1,https://cavaier.com/nl/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,no,https://cavaier.com/no/products/cube-necklace-1,https://cavaier.com/no/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,pl,https://cavaier.com/pl/products/cube-necklace-1,https://cavaier.com/pl/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,pt,https://cavaier.com/pt/products/cube-necklace-1,https://cavaier.com/pt/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,sv,https://cavaier.com/sv/products/kub-halsband-1,https://cavaier.com/sv/products/cube-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Pendant Necklace,th,https://cavaier.com/th/products/cube-necklace-1,https://cavaier.com/th/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/cube-necklace-1,https://cavaier.com/zh/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,de-DE,https://cavaier.de/products/cube-necklace-1,https://cavaier.de/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,nl-NL,https://cavaier.nl/products/cube-necklace-1,https://cavaier.nl/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,no-NO,https://cavaier.no/no/products/cube-necklace-1,https://cavaier.no/no/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube - Pendant Necklace,nb-NO,https://cavaier.no/products/kube-halskjede-1,https://cavaier.no/products/cube-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Cube - Pendant Necklace,pl-PL,https://cavaier.pl/products/cube-necklace-1,https://cavaier.pl/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Cube Bracelet,en,https://cavaier.com/products/cube-bracelet,https://cavaier.com/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,ar,https://cavaier.com/ar/products/cube-bracelet,https://cavaier.com/ar/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,de,https://cavaier.com/de/products/cube-bracelet,https://cavaier.com/de/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,es,https://cavaier.com/es/products/cube-bracelet,https://cavaier.com/es/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,fr,https://cavaier.com/fr/products/cube-bracelet,https://cavaier.com/fr/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,he,https://cavaier.com/he/products/cube-bracelet,https://cavaier.com/he/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,id,https://cavaier.com/id/products/cube-bracelet,https://cavaier.com/id/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,it,https://cavaier.com/it/products/cube-bracelet,https://cavaier.com/it/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,nb,https://cavaier.com/nb/products/kube-armband,https://cavaier.com/nb/products/cube-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Bracelet,nl,https://cavaier.com/nl/products/cube-bracelet,https://cavaier.com/nl/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,no,https://cavaier.com/no/products/cube-bracelet,https://cavaier.com/no/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,pl,https://cavaier.com/pl/products/cube-bracelet,https://cavaier.com/pl/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,pt,https://cavaier.com/pt/products/cube-bracelet,https://cavaier.com/pt/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,sv,https://cavaier.com/sv/products/kub-armband,https://cavaier.com/sv/products/cube-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Bracelet,th,https://cavaier.com/th/products/cube-bracelet,https://cavaier.com/th/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,zh-Hant,https://cavaier.com/zh/products/cube-bracelet,https://cavaier.com/zh/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,de-DE,https://cavaier.de/products/cube-bracelet,https://cavaier.de/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,nl-NL,https://cavaier.nl/products/cube-bracelet,https://cavaier.nl/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,no-NO,https://cavaier.no/no/products/cube-bracelet,https://cavaier.no/no/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Bracelet,nb-NO,https://cavaier.no/products/kube-armband,https://cavaier.no/products/cube-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Bracelet,pl-PL,https://cavaier.pl/products/cube-bracelet,https://cavaier.pl/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,en,https://cavaier.com/products/cube-necklace-2,https://cavaier.com/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,ar,https://cavaier.com/ar/products/cube-necklace-2,https://cavaier.com/ar/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,de,https://cavaier.com/de/products/cube-necklace-2,https://cavaier.com/de/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,es,https://cavaier.com/es/products/cube-necklace-2,https://cavaier.com/es/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,fr,https://cavaier.com/fr/products/cube-necklace-2,https://cavaier.com/fr/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,he,https://cavaier.com/he/products/cube-necklace-2,https://cavaier.com/he/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,id,https://cavaier.com/id/products/cube-necklace-2,https://cavaier.com/id/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,it,https://cavaier.com/it/products/cube-necklace-2,https://cavaier.com/it/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,nb,https://cavaier.com/nb/products/kube-kjede-2,https://cavaier.com/nb/products/cube-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Necklace,nl,https://cavaier.com/nl/products/cube-necklace-2,https://cavaier.com/nl/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,no,https://cavaier.com/no/products/cube-necklace-2,https://cavaier.com/no/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,pl,https://cavaier.com/pl/products/cube-necklace-2,https://cavaier.com/pl/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,pt,https://cavaier.com/pt/products/cube-necklace-2,https://cavaier.com/pt/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,sv,https://cavaier.com/sv/products/kub-halsband-2,https://cavaier.com/sv/products/cube-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Necklace,th,https://cavaier.com/th/products/cube-necklace-2,https://cavaier.com/th/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,zh-Hant,https://cavaier.com/zh/products/cube-necklace-2,https://cavaier.com/zh/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,de-DE,https://cavaier.de/products/cube-necklace-2,https://cavaier.de/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,nl-NL,https://cavaier.nl/products/cube-necklace-2,https://cavaier.nl/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,no-NO,https://cavaier.no/no/products/cube-necklace-2,https://cavaier.no/no/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Necklace,nb-NO,https://cavaier.no/products/kube-kjede-2,https://cavaier.no/products/cube-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Necklace,pl-PL,https://cavaier.pl/products/cube-necklace-2,https://cavaier.pl/products/cube-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,en,https://cavaier.com/products/cube-necklace,https://cavaier.com/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,ar,https://cavaier.com/ar/products/cube-necklace,https://cavaier.com/ar/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,de,https://cavaier.com/de/products/cube-necklace,https://cavaier.com/de/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,es,https://cavaier.com/es/products/cube-necklace,https://cavaier.com/es/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,fr,https://cavaier.com/fr/products/cube-necklace,https://cavaier.com/fr/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,he,https://cavaier.com/he/products/cube-necklace,https://cavaier.com/he/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,id,https://cavaier.com/id/products/cube-necklace,https://cavaier.com/id/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,it,https://cavaier.com/it/products/cube-necklace,https://cavaier.com/it/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,nb,https://cavaier.com/nb/products/kube-halskjede,https://cavaier.com/nb/products/cube-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Pendant Necklace,nl,https://cavaier.com/nl/products/cube-necklace,https://cavaier.com/nl/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,no,https://cavaier.com/no/products/cube-necklace,https://cavaier.com/no/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,pl,https://cavaier.com/pl/products/cube-necklace,https://cavaier.com/pl/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,pt,https://cavaier.com/pt/products/cube-necklace,https://cavaier.com/pt/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,sv,https://cavaier.com/sv/products/kub-halsband,https://cavaier.com/sv/products/cube-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Pendant Necklace,th,https://cavaier.com/th/products/cube-necklace,https://cavaier.com/th/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/cube-necklace,https://cavaier.com/zh/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,de-DE,https://cavaier.de/products/cube-necklace,https://cavaier.de/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,nl-NL,https://cavaier.nl/products/cube-necklace,https://cavaier.nl/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,no-NO,https://cavaier.no/no/products/cube-necklace,https://cavaier.no/no/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Cube Pendant Necklace,nb-NO,https://cavaier.no/products/kube-halskjede,https://cavaier.no/products/cube-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Cube Pendant Necklace,pl-PL,https://cavaier.pl/products/cube-necklace,https://cavaier.pl/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Jewelry Case,en,https://cavaier.com/products/jewelry-case,https://cavaier.com/products/jewelry-case,no change
+International,product,Jewelry Case,ar,https://cavaier.com/ar/products/jewelry-case,https://cavaier.com/ar/products/jewelry-case,no change
+International,product,Jewelry Case,de,https://cavaier.com/de/products/jewelry-case,https://cavaier.com/de/products/jewelry-case,no change
+International,product,Jewelry Case,es,https://cavaier.com/es/products/jewelry-case,https://cavaier.com/es/products/jewelry-case,no change
+International,product,Jewelry Case,fr,https://cavaier.com/fr/products/jewelry-case,https://cavaier.com/fr/products/jewelry-case,no change
+International,product,Jewelry Case,he,https://cavaier.com/he/products/jewelry-case,https://cavaier.com/he/products/jewelry-case,no change
+International,product,Jewelry Case,id,https://cavaier.com/id/products/jewelry-case,https://cavaier.com/id/products/jewelry-case,no change
+International,product,Jewelry Case,it,https://cavaier.com/it/products/jewelry-case,https://cavaier.com/it/products/jewelry-case,no change
+International,product,Jewelry Case,nb,https://cavaier.com/nb/products/smykke-skrin,https://cavaier.com/nb/products/jewelry-case,"translated address dropped, English address used (redirect added)"
+International,product,Jewelry Case,nl,https://cavaier.com/nl/products/jewelry-case,https://cavaier.com/nl/products/jewelry-case,no change
+International,product,Jewelry Case,no,https://cavaier.com/no/products/jewelry-case,https://cavaier.com/no/products/jewelry-case,no change
+International,product,Jewelry Case,pl,https://cavaier.com/pl/products/jewelry-case,https://cavaier.com/pl/products/jewelry-case,no change
+International,product,Jewelry Case,pt,https://cavaier.com/pt/products/jewelry-case,https://cavaier.com/pt/products/jewelry-case,no change
+International,product,Jewelry Case,sv,https://cavaier.com/sv/products/smycken-fodral,https://cavaier.com/sv/products/jewelry-case,"translated address dropped, English address used (redirect added)"
+International,product,Jewelry Case,th,https://cavaier.com/th/products/jewelry-case,https://cavaier.com/th/products/jewelry-case,no change
+International,product,Jewelry Case,zh-Hant,https://cavaier.com/zh/products/jewelry-case,https://cavaier.com/zh/products/jewelry-case,no change
+International,product,Jewelry Case,de-DE,https://cavaier.de/products/jewelry-case,https://cavaier.de/products/jewelry-case,no change
+International,product,Jewelry Case,nl-NL,https://cavaier.nl/products/jewelry-case,https://cavaier.nl/products/jewelry-case,no change
+International,product,Jewelry Case,no-NO,https://cavaier.no/no/products/jewelry-case,https://cavaier.no/no/products/jewelry-case,no change
+International,product,Jewelry Case,nb-NO,https://cavaier.no/products/smykke-skrin,https://cavaier.no/products/jewelry-case,"translated address dropped, English address used (redirect added)"
+International,product,Jewelry Case,pl-PL,https://cavaier.pl/products/jewelry-case,https://cavaier.pl/products/jewelry-case,no change
+International,product,Minimal - Cuff,en,https://cavaier.com/products/minimal-cuff-1,https://cavaier.com/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,ar,https://cavaier.com/ar/products/minimal-cuff-1,https://cavaier.com/ar/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,de,https://cavaier.com/de/products/minimal-cuff-1,https://cavaier.com/de/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,es,https://cavaier.com/es/products/minimal-cuff-1,https://cavaier.com/es/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,fr,https://cavaier.com/fr/products/minimal-cuff-1,https://cavaier.com/fr/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,he,https://cavaier.com/he/products/minimal-cuff-1,https://cavaier.com/he/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,id,https://cavaier.com/id/products/minimal-cuff-1,https://cavaier.com/id/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,it,https://cavaier.com/it/products/minimal-cuff-1,https://cavaier.com/it/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,nb,https://cavaier.com/nb/products/minimal-mansjett-1,https://cavaier.com/nb/products/minimal-cuff-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Minimal - Cuff,nl,https://cavaier.com/nl/products/minimal-cuff-1,https://cavaier.com/nl/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,no,https://cavaier.com/no/products/minimal-cuff-1,https://cavaier.com/no/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,pl,https://cavaier.com/pl/products/minimal-cuff-1,https://cavaier.com/pl/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,pt,https://cavaier.com/pt/products/minimal-cuff-1,https://cavaier.com/pt/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,sv,https://cavaier.com/sv/products/minimal-manschett-1,https://cavaier.com/sv/products/minimal-cuff-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Minimal - Cuff,th,https://cavaier.com/th/products/minimal-cuff-1,https://cavaier.com/th/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,zh-Hant,https://cavaier.com/zh/products/minimal-cuff-1,https://cavaier.com/zh/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,de-DE,https://cavaier.de/products/minimal-cuff-1,https://cavaier.de/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,nl-NL,https://cavaier.nl/products/minimal-cuff-1,https://cavaier.nl/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,no-NO,https://cavaier.no/no/products/minimal-cuff-1,https://cavaier.no/no/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal - Cuff,nb-NO,https://cavaier.no/products/minimal-mansjett-1,https://cavaier.no/products/minimal-cuff-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Minimal - Cuff,pl-PL,https://cavaier.pl/products/minimal-cuff-1,https://cavaier.pl/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+International,product,Minimal Cuff,en,https://cavaier.com/products/minimal-cuff,https://cavaier.com/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,ar,https://cavaier.com/ar/products/minimal-cuff,https://cavaier.com/ar/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,de,https://cavaier.com/de/products/minimal-cuff,https://cavaier.com/de/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,es,https://cavaier.com/es/products/minimal-cuff,https://cavaier.com/es/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,fr,https://cavaier.com/fr/products/minimal-cuff,https://cavaier.com/fr/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,he,https://cavaier.com/he/products/minimal-cuff,https://cavaier.com/he/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,id,https://cavaier.com/id/products/minimal-cuff,https://cavaier.com/id/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,it,https://cavaier.com/it/products/minimal-cuff,https://cavaier.com/it/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,nb,https://cavaier.com/nb/products/minimal-mansjett,https://cavaier.com/nb/products/minimal-cuff-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Minimal Cuff,nl,https://cavaier.com/nl/products/minimal-cuff,https://cavaier.com/nl/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,no,https://cavaier.com/no/products/minimal-cuff,https://cavaier.com/no/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,pl,https://cavaier.com/pl/products/minimal-cuff,https://cavaier.com/pl/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,pt,https://cavaier.com/pt/products/minimal-cuff,https://cavaier.com/pt/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,sv,https://cavaier.com/sv/products/minimal-manchett,https://cavaier.com/sv/products/minimal-cuff-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Minimal Cuff,th,https://cavaier.com/th/products/minimal-cuff,https://cavaier.com/th/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,zh-Hant,https://cavaier.com/zh/products/minimal-cuff,https://cavaier.com/zh/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,de-DE,https://cavaier.de/products/minimal-cuff,https://cavaier.de/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,nl-NL,https://cavaier.nl/products/minimal-cuff,https://cavaier.nl/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,no-NO,https://cavaier.no/no/products/minimal-cuff,https://cavaier.no/no/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Minimal Cuff,nb-NO,https://cavaier.no/products/minimal-mansjett,https://cavaier.no/products/minimal-cuff-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Minimal Cuff,pl-PL,https://cavaier.pl/products/minimal-cuff,https://cavaier.pl/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+International,product,Role - Bracelet,en,https://cavaier.com/products/role-bracelet-1,https://cavaier.com/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,ar,https://cavaier.com/ar/products/role-bracelet-1,https://cavaier.com/ar/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,de,https://cavaier.com/de/products/role-bracelet-1,https://cavaier.com/de/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,es,https://cavaier.com/es/products/role-bracelet-1,https://cavaier.com/es/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,fr,https://cavaier.com/fr/products/role-bracelet-1,https://cavaier.com/fr/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,he,https://cavaier.com/he/products/role-bracelet-1,https://cavaier.com/he/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,id,https://cavaier.com/id/products/role-bracelet-1,https://cavaier.com/id/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,it,https://cavaier.com/it/products/role-bracelet-1,https://cavaier.com/it/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,nb,https://cavaier.com/nb/products/rolle-armband-1,https://cavaier.com/nb/products/role-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Bracelet,nl,https://cavaier.com/nl/products/role-bracelet-1,https://cavaier.com/nl/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,no,https://cavaier.com/no/products/role-bracelet-1,https://cavaier.com/no/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,pl,https://cavaier.com/pl/products/role-bracelet-1,https://cavaier.com/pl/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,pt,https://cavaier.com/pt/products/role-bracelet-1,https://cavaier.com/pt/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,sv,https://cavaier.com/sv/products/roll-armband-1,https://cavaier.com/sv/products/role-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Bracelet,th,https://cavaier.com/th/products/role-bracelet-1,https://cavaier.com/th/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,zh-Hant,https://cavaier.com/zh/products/role-bracelet-1,https://cavaier.com/zh/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,de-DE,https://cavaier.de/products/role-bracelet-1,https://cavaier.de/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,nl-NL,https://cavaier.nl/products/role-bracelet-1,https://cavaier.nl/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,no-NO,https://cavaier.no/no/products/role-bracelet-1,https://cavaier.no/no/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Bracelet,nb-NO,https://cavaier.no/products/rolle-armband-1,https://cavaier.no/products/role-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Bracelet,pl-PL,https://cavaier.pl/products/role-bracelet-1,https://cavaier.pl/products/role-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,en,https://cavaier.com/products/role-necklace-2,https://cavaier.com/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,ar,https://cavaier.com/ar/products/role-necklace-2,https://cavaier.com/ar/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,de,https://cavaier.com/de/products/role-necklace-2,https://cavaier.com/de/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,es,https://cavaier.com/es/products/role-necklace-2,https://cavaier.com/es/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,fr,https://cavaier.com/fr/products/role-necklace-2,https://cavaier.com/fr/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,he,https://cavaier.com/he/products/role-necklace-2,https://cavaier.com/he/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,id,https://cavaier.com/id/products/role-necklace-2,https://cavaier.com/id/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,it,https://cavaier.com/it/products/role-necklace-2,https://cavaier.com/it/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,nb,https://cavaier.com/nb/products/rolle-halskjede-2,https://cavaier.com/nb/products/role-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Necklace,nl,https://cavaier.com/nl/products/role-necklace-2,https://cavaier.com/nl/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,no,https://cavaier.com/no/products/role-necklace-2,https://cavaier.com/no/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,pl,https://cavaier.com/pl/products/role-necklace-2,https://cavaier.com/pl/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,pt,https://cavaier.com/pt/products/role-necklace-2,https://cavaier.com/pt/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,sv,https://cavaier.com/sv/products/roll-halsband-2,https://cavaier.com/sv/products/role-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Necklace,th,https://cavaier.com/th/products/role-necklace-2,https://cavaier.com/th/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,zh-Hant,https://cavaier.com/zh/products/role-necklace-2,https://cavaier.com/zh/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,de-DE,https://cavaier.de/products/role-necklace-2,https://cavaier.de/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,nl-NL,https://cavaier.nl/products/role-necklace-2,https://cavaier.nl/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,no-NO,https://cavaier.no/no/products/role-necklace-2,https://cavaier.no/no/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Necklace,nb-NO,https://cavaier.no/products/rolle-halskjede-2,https://cavaier.no/products/role-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Necklace,pl-PL,https://cavaier.pl/products/role-necklace-2,https://cavaier.pl/products/role-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,en,https://cavaier.com/products/role-necklace-1,https://cavaier.com/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,ar,https://cavaier.com/ar/products/role-necklace-1,https://cavaier.com/ar/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,de,https://cavaier.com/de/products/role-necklace-1,https://cavaier.com/de/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,es,https://cavaier.com/es/products/role-necklace-1,https://cavaier.com/es/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,fr,https://cavaier.com/fr/products/role-necklace-1,https://cavaier.com/fr/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,he,https://cavaier.com/he/products/role-necklace-1,https://cavaier.com/he/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,id,https://cavaier.com/id/products/role-necklace-1,https://cavaier.com/id/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,it,https://cavaier.com/it/products/role-necklace-1,https://cavaier.com/it/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,nb,https://cavaier.com/nb/products/rolle-halskjede-1,https://cavaier.com/nb/products/role-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Pendant Necklace,nl,https://cavaier.com/nl/products/role-necklace-1,https://cavaier.com/nl/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,no,https://cavaier.com/no/products/role-necklace-1,https://cavaier.com/no/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,pl,https://cavaier.com/pl/products/role-necklace-1,https://cavaier.com/pl/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,pt,https://cavaier.com/pt/products/role-necklace-1,https://cavaier.com/pt/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,sv,https://cavaier.com/sv/products/roll-halsband-1,https://cavaier.com/sv/products/role-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Pendant Necklace,th,https://cavaier.com/th/products/role-necklace-1,https://cavaier.com/th/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/role-necklace-1,https://cavaier.com/zh/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,de-DE,https://cavaier.de/products/role-necklace-1,https://cavaier.de/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,nl-NL,https://cavaier.nl/products/role-necklace-1,https://cavaier.nl/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,no-NO,https://cavaier.no/no/products/role-necklace-1,https://cavaier.no/no/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role - Pendant Necklace,nb-NO,https://cavaier.no/products/rolle-halskjede-1,https://cavaier.no/products/role-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Role - Pendant Necklace,pl-PL,https://cavaier.pl/products/role-necklace-1,https://cavaier.pl/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Role Bracelet,en,https://cavaier.com/products/role-bracelet,https://cavaier.com/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,ar,https://cavaier.com/ar/products/role-bracelet,https://cavaier.com/ar/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,de,https://cavaier.com/de/products/role-bracelet,https://cavaier.com/de/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,es,https://cavaier.com/es/products/role-bracelet,https://cavaier.com/es/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,fr,https://cavaier.com/fr/products/role-bracelet,https://cavaier.com/fr/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,he,https://cavaier.com/he/products/role-bracelet,https://cavaier.com/he/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,id,https://cavaier.com/id/products/role-bracelet,https://cavaier.com/id/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,it,https://cavaier.com/it/products/role-bracelet,https://cavaier.com/it/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,nb,https://cavaier.com/nb/products/rolle-armband,https://cavaier.com/nb/products/role-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Bracelet,nl,https://cavaier.com/nl/products/role-bracelet,https://cavaier.com/nl/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,no,https://cavaier.com/no/products/role-bracelet,https://cavaier.com/no/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,pl,https://cavaier.com/pl/products/role-bracelet,https://cavaier.com/pl/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,pt,https://cavaier.com/pt/products/role-bracelet,https://cavaier.com/pt/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,sv,https://cavaier.com/sv/products/roll-armband,https://cavaier.com/sv/products/role-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Bracelet,th,https://cavaier.com/th/products/role-bracelet,https://cavaier.com/th/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,zh-Hant,https://cavaier.com/zh/products/role-bracelet,https://cavaier.com/zh/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,de-DE,https://cavaier.de/products/role-bracelet,https://cavaier.de/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,nl-NL,https://cavaier.nl/products/role-bracelet,https://cavaier.nl/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,no-NO,https://cavaier.no/no/products/role-bracelet,https://cavaier.no/no/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Bracelet,nb-NO,https://cavaier.no/products/rolle-armband,https://cavaier.no/products/role-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Bracelet,pl-PL,https://cavaier.pl/products/role-bracelet,https://cavaier.pl/products/role-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,en,https://cavaier.com/products/role-necklace-3,https://cavaier.com/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,ar,https://cavaier.com/ar/products/role-necklace-3,https://cavaier.com/ar/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,de,https://cavaier.com/de/products/role-necklace-3,https://cavaier.com/de/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,es,https://cavaier.com/es/products/role-necklace-3,https://cavaier.com/es/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,fr,https://cavaier.com/fr/products/role-necklace-3,https://cavaier.com/fr/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,he,https://cavaier.com/he/products/role-necklace-3,https://cavaier.com/he/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,id,https://cavaier.com/id/products/role-necklace-3,https://cavaier.com/id/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,it,https://cavaier.com/it/products/role-necklace-3,https://cavaier.com/it/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,nb,https://cavaier.com/nb/products/rolle-halskjede-3,https://cavaier.com/nb/products/role-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Necklace,nl,https://cavaier.com/nl/products/role-necklace-3,https://cavaier.com/nl/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,no,https://cavaier.com/no/products/role-necklace-3,https://cavaier.com/no/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,pl,https://cavaier.com/pl/products/role-necklace-3,https://cavaier.com/pl/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,pt,https://cavaier.com/pt/products/role-necklace-3,https://cavaier.com/pt/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,sv,https://cavaier.com/sv/products/roll-halsband-3,https://cavaier.com/sv/products/role-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Necklace,th,https://cavaier.com/th/products/role-necklace-3,https://cavaier.com/th/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,zh-Hant,https://cavaier.com/zh/products/role-necklace-3,https://cavaier.com/zh/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,de-DE,https://cavaier.de/products/role-necklace-3,https://cavaier.de/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,nl-NL,https://cavaier.nl/products/role-necklace-3,https://cavaier.nl/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,no-NO,https://cavaier.no/no/products/role-necklace-3,https://cavaier.no/no/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Necklace,nb-NO,https://cavaier.no/products/rolle-halskjede-3,https://cavaier.no/products/role-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Necklace,pl-PL,https://cavaier.pl/products/role-necklace-3,https://cavaier.pl/products/role-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,en,https://cavaier.com/products/role-necklace,https://cavaier.com/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,ar,https://cavaier.com/ar/products/role-necklace,https://cavaier.com/ar/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,de,https://cavaier.com/de/products/role-necklace,https://cavaier.com/de/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,es,https://cavaier.com/es/products/role-necklace,https://cavaier.com/es/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,fr,https://cavaier.com/fr/products/role-necklace,https://cavaier.com/fr/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,he,https://cavaier.com/he/products/role-necklace,https://cavaier.com/he/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,id,https://cavaier.com/id/products/role-necklace,https://cavaier.com/id/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,it,https://cavaier.com/it/products/role-necklace,https://cavaier.com/it/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,nb,https://cavaier.com/nb/products/rolle-halskjede,https://cavaier.com/nb/products/role-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Pendant Necklace,nl,https://cavaier.com/nl/products/role-necklace,https://cavaier.com/nl/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,no,https://cavaier.com/no/products/role-necklace,https://cavaier.com/no/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,pl,https://cavaier.com/pl/products/role-necklace,https://cavaier.com/pl/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,pt,https://cavaier.com/pt/products/role-necklace,https://cavaier.com/pt/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,sv,https://cavaier.com/sv/products/roll-halsband,https://cavaier.com/sv/products/role-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Pendant Necklace,th,https://cavaier.com/th/products/role-necklace,https://cavaier.com/th/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/role-necklace,https://cavaier.com/zh/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,de-DE,https://cavaier.de/products/role-necklace,https://cavaier.de/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,nl-NL,https://cavaier.nl/products/role-necklace,https://cavaier.nl/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,no-NO,https://cavaier.no/no/products/role-necklace,https://cavaier.no/no/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Role Pendant Necklace,nb-NO,https://cavaier.no/products/rolle-halskjede,https://cavaier.no/products/role-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Role Pendant Necklace,pl-PL,https://cavaier.pl/products/role-necklace,https://cavaier.pl/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,en,https://cavaier.com/products/rope-bracelet-2,https://cavaier.com/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,ar,https://cavaier.com/ar/products/rope-bracelet-2,https://cavaier.com/ar/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,de,https://cavaier.com/de/products/rope-bracelet-2,https://cavaier.com/de/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,es,https://cavaier.com/es/products/rope-bracelet-2,https://cavaier.com/es/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,fr,https://cavaier.com/fr/products/rope-bracelet-2,https://cavaier.com/fr/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,he,https://cavaier.com/he/products/rope-bracelet-2,https://cavaier.com/he/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,id,https://cavaier.com/id/products/rope-bracelet-2,https://cavaier.com/id/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,it,https://cavaier.com/it/products/rope-bracelet-2,https://cavaier.com/it/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,nb,https://cavaier.com/nb/products/tau-armband-2,https://cavaier.com/nb/products/rope-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Bracelet,nl,https://cavaier.com/nl/products/rope-bracelet-2,https://cavaier.com/nl/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,no,https://cavaier.com/no/products/rope-bracelet-2,https://cavaier.com/no/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,pl,https://cavaier.com/pl/products/rope-bracelet-2,https://cavaier.com/pl/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,pt,https://cavaier.com/pt/products/rope-bracelet-2,https://cavaier.com/pt/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,sv,https://cavaier.com/sv/products/rep-armband-2,https://cavaier.com/sv/products/rope-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Bracelet,th,https://cavaier.com/th/products/rope-bracelet-2,https://cavaier.com/th/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,zh-Hant,https://cavaier.com/zh/products/rope-bracelet-2,https://cavaier.com/zh/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,de-DE,https://cavaier.de/products/rope-bracelet-2,https://cavaier.de/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,nl-NL,https://cavaier.nl/products/rope-bracelet-2,https://cavaier.nl/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,no-NO,https://cavaier.no/no/products/rope-bracelet-2,https://cavaier.no/no/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Bracelet,nb-NO,https://cavaier.no/products/tau-armband-2,https://cavaier.no/products/rope-bracelet-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Bracelet,pl-PL,https://cavaier.pl/products/rope-bracelet-2,https://cavaier.pl/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,en,https://cavaier.com/products/rope-necklace-2,https://cavaier.com/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,ar,https://cavaier.com/ar/products/rope-necklace-2,https://cavaier.com/ar/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,de,https://cavaier.com/de/products/rope-necklace-2,https://cavaier.com/de/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,es,https://cavaier.com/es/products/rope-necklace-2,https://cavaier.com/es/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,fr,https://cavaier.com/fr/products/rope-necklace-2,https://cavaier.com/fr/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,he,https://cavaier.com/he/products/rope-necklace-2,https://cavaier.com/he/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,id,https://cavaier.com/id/products/rope-necklace-2,https://cavaier.com/id/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,it,https://cavaier.com/it/products/rope-necklace-2,https://cavaier.com/it/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,nb,https://cavaier.com/nb/products/tau-halskjede-2,https://cavaier.com/nb/products/rope-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Necklace,nl,https://cavaier.com/nl/products/rope-necklace-2,https://cavaier.com/nl/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,no,https://cavaier.com/no/products/rope-necklace-2,https://cavaier.com/no/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,pl,https://cavaier.com/pl/products/rope-necklace-2,https://cavaier.com/pl/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,pt,https://cavaier.com/pt/products/rope-necklace-2,https://cavaier.com/pt/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,sv,https://cavaier.com/sv/products/rep-halsband-2,https://cavaier.com/sv/products/rope-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Necklace,th,https://cavaier.com/th/products/rope-necklace-2,https://cavaier.com/th/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,zh-Hant,https://cavaier.com/zh/products/rope-necklace-2,https://cavaier.com/zh/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,de-DE,https://cavaier.de/products/rope-necklace-2,https://cavaier.de/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,nl-NL,https://cavaier.nl/products/rope-necklace-2,https://cavaier.nl/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,no-NO,https://cavaier.no/no/products/rope-necklace-2,https://cavaier.no/no/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Necklace,nb-NO,https://cavaier.no/products/tau-halskjede-2,https://cavaier.no/products/rope-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Necklace,pl-PL,https://cavaier.pl/products/rope-necklace-2,https://cavaier.pl/products/rope-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,en,https://cavaier.com/products/rope-necklace-1,https://cavaier.com/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,ar,https://cavaier.com/ar/products/rope-necklace-1,https://cavaier.com/ar/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,de,https://cavaier.com/de/products/rope-necklace-1,https://cavaier.com/de/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,es,https://cavaier.com/es/products/rope-necklace-1,https://cavaier.com/es/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,fr,https://cavaier.com/fr/products/rope-necklace-1,https://cavaier.com/fr/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,he,https://cavaier.com/he/products/rope-necklace-1,https://cavaier.com/he/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,id,https://cavaier.com/id/products/rope-necklace-1,https://cavaier.com/id/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,it,https://cavaier.com/it/products/rope-necklace-1,https://cavaier.com/it/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,nb,https://cavaier.com/nb/products/tau-halskjede-1,https://cavaier.com/nb/products/rope-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Pendant Necklace,nl,https://cavaier.com/nl/products/rope-necklace-1,https://cavaier.com/nl/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,no,https://cavaier.com/no/products/rope-necklace-1,https://cavaier.com/no/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,pl,https://cavaier.com/pl/products/rope-necklace-1,https://cavaier.com/pl/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,pt,https://cavaier.com/pt/products/rope-necklace-1,https://cavaier.com/pt/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,sv,https://cavaier.com/sv/products/rep-halsband-1,https://cavaier.com/sv/products/rope-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Pendant Necklace,th,https://cavaier.com/th/products/rope-necklace-1,https://cavaier.com/th/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/rope-necklace-1,https://cavaier.com/zh/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,de-DE,https://cavaier.de/products/rope-necklace-1,https://cavaier.de/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,nl-NL,https://cavaier.nl/products/rope-necklace-1,https://cavaier.nl/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,no-NO,https://cavaier.no/no/products/rope-necklace-1,https://cavaier.no/no/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope - Pendant Necklace,nb-NO,https://cavaier.no/products/tau-halskjede-1,https://cavaier.no/products/rope-pendant-necklace-for-her,"translated address dropped, English address used (redirect added)"
+International,product,Rope - Pendant Necklace,pl-PL,https://cavaier.pl/products/rope-necklace-1,https://cavaier.pl/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+International,product,Rope Bracelet,en,https://cavaier.com/products/rope-bracelet,https://cavaier.com/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,ar,https://cavaier.com/ar/products/rope-bracelet,https://cavaier.com/ar/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,de,https://cavaier.com/de/products/rope-bracelet,https://cavaier.com/de/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,es,https://cavaier.com/es/products/rope-bracelet,https://cavaier.com/es/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,fr,https://cavaier.com/fr/products/rope-bracelet,https://cavaier.com/fr/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,he,https://cavaier.com/he/products/rope-bracelet,https://cavaier.com/he/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,id,https://cavaier.com/id/products/rope-bracelet,https://cavaier.com/id/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,it,https://cavaier.com/it/products/rope-bracelet,https://cavaier.com/it/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,nb,https://cavaier.com/nb/products/tau-armband,https://cavaier.com/nb/products/rope-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Bracelet,nl,https://cavaier.com/nl/products/rope-bracelet,https://cavaier.com/nl/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,no,https://cavaier.com/no/products/rope-bracelet,https://cavaier.com/no/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,pl,https://cavaier.com/pl/products/rope-bracelet,https://cavaier.com/pl/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,pt,https://cavaier.com/pt/products/rope-bracelet,https://cavaier.com/pt/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,sv,https://cavaier.com/sv/products/rep-armband,https://cavaier.com/sv/products/rope-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Bracelet,th,https://cavaier.com/th/products/rope-bracelet,https://cavaier.com/th/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,zh-Hant,https://cavaier.com/zh/products/rope-bracelet,https://cavaier.com/zh/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,de-DE,https://cavaier.de/products/rope-bracelet,https://cavaier.de/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,nl-NL,https://cavaier.nl/products/rope-bracelet,https://cavaier.nl/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,no-NO,https://cavaier.no/no/products/rope-bracelet,https://cavaier.no/no/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Bracelet,nb-NO,https://cavaier.no/products/tau-armband,https://cavaier.no/products/rope-bracelet-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Bracelet,pl-PL,https://cavaier.pl/products/rope-bracelet,https://cavaier.pl/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,en,https://cavaier.com/products/rope-necklace-3,https://cavaier.com/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,ar,https://cavaier.com/ar/products/rope-necklace-3,https://cavaier.com/ar/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,de,https://cavaier.com/de/products/rope-necklace-3,https://cavaier.com/de/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,es,https://cavaier.com/es/products/rope-necklace-3,https://cavaier.com/es/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,fr,https://cavaier.com/fr/products/rope-necklace-3,https://cavaier.com/fr/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,he,https://cavaier.com/he/products/rope-necklace-3,https://cavaier.com/he/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,id,https://cavaier.com/id/products/rope-necklace-3,https://cavaier.com/id/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,it,https://cavaier.com/it/products/rope-necklace-3,https://cavaier.com/it/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,nb,https://cavaier.com/nb/products/tau-halskjede-3,https://cavaier.com/nb/products/rope-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Necklace,nl,https://cavaier.com/nl/products/rope-necklace-3,https://cavaier.com/nl/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,no,https://cavaier.com/no/products/rope-necklace-3,https://cavaier.com/no/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,pl,https://cavaier.com/pl/products/rope-necklace-3,https://cavaier.com/pl/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,pt,https://cavaier.com/pt/products/rope-necklace-3,https://cavaier.com/pt/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,sv,https://cavaier.com/sv/products/rep-halsband-3,https://cavaier.com/sv/products/rope-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Necklace,th,https://cavaier.com/th/products/rope-necklace-3,https://cavaier.com/th/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,zh-Hant,https://cavaier.com/zh/products/rope-necklace-3,https://cavaier.com/zh/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,de-DE,https://cavaier.de/products/rope-necklace-3,https://cavaier.de/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,nl-NL,https://cavaier.nl/products/rope-necklace-3,https://cavaier.nl/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,no-NO,https://cavaier.no/no/products/rope-necklace-3,https://cavaier.no/no/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Necklace,nb-NO,https://cavaier.no/products/tau-halskjede-3,https://cavaier.no/products/rope-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Necklace,pl-PL,https://cavaier.pl/products/rope-necklace-3,https://cavaier.pl/products/rope-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,en,https://cavaier.com/products/rope-necklace,https://cavaier.com/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,ar,https://cavaier.com/ar/products/rope-necklace,https://cavaier.com/ar/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,de,https://cavaier.com/de/products/rope-necklace,https://cavaier.com/de/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,es,https://cavaier.com/es/products/rope-necklace,https://cavaier.com/es/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,fr,https://cavaier.com/fr/products/rope-necklace,https://cavaier.com/fr/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,he,https://cavaier.com/he/products/rope-necklace,https://cavaier.com/he/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,id,https://cavaier.com/id/products/rope-necklace,https://cavaier.com/id/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,it,https://cavaier.com/it/products/rope-necklace,https://cavaier.com/it/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,nb,https://cavaier.com/nb/products/tau-halskjede,https://cavaier.com/nb/products/rope-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Pendant Necklace,nl,https://cavaier.com/nl/products/rope-necklace,https://cavaier.com/nl/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,no,https://cavaier.com/no/products/rope-necklace,https://cavaier.com/no/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,pl,https://cavaier.com/pl/products/rope-necklace,https://cavaier.com/pl/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,pt,https://cavaier.com/pt/products/rope-necklace,https://cavaier.com/pt/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,sv,https://cavaier.com/sv/products/rep-halsband,https://cavaier.com/sv/products/rope-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Pendant Necklace,th,https://cavaier.com/th/products/rope-necklace,https://cavaier.com/th/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,zh-Hant,https://cavaier.com/zh/products/rope-necklace,https://cavaier.com/zh/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,de-DE,https://cavaier.de/products/rope-necklace,https://cavaier.de/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,nl-NL,https://cavaier.nl/products/rope-necklace,https://cavaier.nl/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,no-NO,https://cavaier.no/no/products/rope-necklace,https://cavaier.no/no/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,Rope Pendant Necklace,nb-NO,https://cavaier.no/products/tau-halskjede,https://cavaier.no/products/rope-pendant-necklace-for-him,"translated address dropped, English address used (redirect added)"
+International,product,Rope Pendant Necklace,pl-PL,https://cavaier.pl/products/rope-necklace,https://cavaier.pl/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
+International,product,complice-bracelet,en,https://cavaier.com/products/complice-bracelet,https://cavaier.com/products/complice-bracelet,no change
+International,product,contre-bracelet,en,https://cavaier.com/products/contre-bracelet,https://cavaier.com/products/contre-bracelet,no change
+International,product,copy-of-signet-ring,en,https://cavaier.com/products/copy-of-signet-ring,https://cavaier.com/products/copy-of-signet-ring,no change
+International,product,korean-original-minimalist-design-natural-pearl-gold-bracelet-woman-fashion-personality-cuff-bracelet-jewelry-anniversary-gifts,en,https://cavaier.com/products/korean-original-minimalist-design-natural-pearl-gold-bracelet-woman-fashion-personality-cuff-bracelet-jewelry-anniversary-gifts,https://cavaier.com/products/korean-original-minimalist-design-natural-pearl-gold-bracelet-woman-fashion-personality-cuff-bracelet-jewelry-anniversary-gifts,no change
+International,product,lucky-sonny-full-cz-rings-solitaire-luxury-mens-rings-zircon-iced-ring-hip-hop-bling-jewelry-anel-anillo-bijoux-free-shipping,en,https://cavaier.com/products/lucky-sonny-full-cz-rings-solitaire-luxury-mens-rings-zircon-iced-ring-hip-hop-bling-jewelry-anel-anillo-bijoux-free-shipping,https://cavaier.com/products/lucky-sonny-full-cz-rings-solitaire-luxury-mens-rings-zircon-iced-ring-hip-hop-bling-jewelry-anel-anillo-bijoux-free-shipping,no change
+International,product,luminous-rose,en,https://cavaier.com/products/luminous-rose,https://cavaier.com/products/luminous-rose,no change
+International,product,orsa-jewels-100-real-925-woman-silver-tube-pendant-necklace-sterling-silver-long-bar-charm-stylish-cocktail-party-jewelry-sn138,en,https://cavaier.com/products/orsa-jewels-100-real-925-woman-silver-tube-pendant-necklace-sterling-silver-long-bar-charm-stylish-cocktail-party-jewelry-sn138,https://cavaier.com/products/orsa-jewels-100-real-925-woman-silver-tube-pendant-necklace-sterling-silver-long-bar-charm-stylish-cocktail-party-jewelry-sn138,no change
+International,product,rose-luminous,en,https://cavaier.com/products/rose-luminous,https://cavaier.com/products/rose-luminous,no change
+International,product,somber-ring-1,en,https://cavaier.com/products/somber-ring-1,https://cavaier.com/products/somber-ring-1,no change
+US,collection,All Products,en,https://us.cavaier.com/collections/all-products,https://us.cavaier.com/collections/all-products,no change
+US,collection,All Products (ex lifetime warranty / Sets),en,https://us.cavaier.com/collections/all-products-excluding-lifetime-warranty,https://us.cavaier.com/collections/all-products-excluding-lifetime-warranty,no change
+US,collection,Fine,en,https://us.cavaier.com/collections/fine,https://us.cavaier.com/collections/fine,no change
+US,collection,For Her,en,https://us.cavaier.com/collections/for-her,https://us.cavaier.com/collections/for-her,no change
+US,collection,For Him,en,https://us.cavaier.com/collections/for-him,https://us.cavaier.com/collections/for-him,no change
+US,collection,Men's Sets,en,https://us.cavaier.com/collections/mens-sets,https://us.cavaier.com/collections/sets-for-him,renamed (redirect created by the rename)
+US,collection,Necklace,en,https://us.cavaier.com/collections/necklace,https://us.cavaier.com/collections/necklace,no change
+US,collection,Women's Sets,en,https://us.cavaier.com/collections/womens-sets,https://us.cavaier.com/collections/sets-for-her,renamed (redirect created by the rename)
+US,collection,You may also like - Men - Necklace,en,https://us.cavaier.com/collections/you-may-also-like,https://us.cavaier.com/collections/you-may-also-like,no change
+US,collection,You may also like - Women - Necklace,en,https://us.cavaier.com/collections/you-may-also-like-women-necklace,https://us.cavaier.com/collections/you-may-also-like-women-necklace,no change
+US,product,2x Duo Minimal Set,en,https://us.cavaier.com/products/2x-duo-minimal-set,https://us.cavaier.com/products/2x-duo-minimal-set-for-him,renamed (redirect created by the rename)
+US,product,3x Minimal - Stack Set,en,https://us.cavaier.com/products/3x-minimal-stack-set-1,https://us.cavaier.com/products/3x-minimal-stack-set-for-her,renamed (redirect created by the rename)
+US,product,3x Minimal Stack Set,en,https://us.cavaier.com/products/3x-minimal-stack-set,https://us.cavaier.com/products/3x-minimal-stack-set-for-him,renamed (redirect created by the rename)
+US,product,4x Stacked Set,en,https://us.cavaier.com/products/stacked-set,https://us.cavaier.com/products/4x-stacked-set-for-him,renamed (redirect created by the rename)
+US,product,Braid - Bracelet,en,https://us.cavaier.com/products/braid-armband-1,https://us.cavaier.com/products/braid-bracelet-for-her,renamed (redirect created by the rename)
+US,product,Braid Bracelet,en,https://us.cavaier.com/products/braid-armband,https://us.cavaier.com/products/braid-bracelet-for-him,renamed (redirect created by the rename)
+US,product,Cavaier Gift Card,en,https://us.cavaier.com/products/cavaier-gift-card,https://us.cavaier.com/products/cavaier-gift-card,no change
+US,product,Crystal - Bracelet,en,https://us.cavaier.com/products/bracelet,https://us.cavaier.com/products/crystal-bracelet-for-her,renamed (redirect created by the rename)
+US,product,Crystal - Necklace,en,https://us.cavaier.com/products/crystal-necklace,https://us.cavaier.com/products/crystal-necklace-for-her,renamed (redirect created by the rename)
+US,product,Cuban - Bracelet,en,https://us.cavaier.com/products/copy-of-cuban-bracelet,https://us.cavaier.com/products/cuban-bracelet-for-her,renamed (redirect created by the rename)
+US,product,Cuban - Necklace,en,https://us.cavaier.com/products/cuban-necklace-1,https://us.cavaier.com/products/cuban-necklace-for-her,renamed (redirect created by the rename)
+US,product,Cuban - Pendant Necklace,en,https://us.cavaier.com/products/cuban-necklace,https://us.cavaier.com/products/cuban-pendant-necklace-for-her,renamed (redirect created by the rename)
+US,product,Cuban Bracelet,en,https://us.cavaier.com/products/cuban-bracelet,https://us.cavaier.com/products/cuban-bracelet-for-him,renamed (redirect created by the rename)
+US,product,Cuban Necklace,en,https://us.cavaier.com/products/cuban-necklace-2,https://us.cavaier.com/products/cuban-necklace-for-him,renamed (redirect created by the rename)
+US,product,Cuban Pendant Necklace,en,https://us.cavaier.com/products/copy-of-cuban-bracelet-1,https://us.cavaier.com/products/cuban-pendant-necklace-for-him,renamed (redirect created by the rename)
+US,product,Cube - Bracelet,en,https://us.cavaier.com/products/cube-bracelet-1,https://us.cavaier.com/products/cube-bracelet-for-her,renamed (redirect created by the rename)
+US,product,Cube - Necklace,en,https://us.cavaier.com/products/cube-pendant-necklace-copy,https://us.cavaier.com/products/cube-necklace-for-her,renamed (redirect created by the rename)
+US,product,Cube - Pendant Necklace,en,https://us.cavaier.com/products/cube-necklace-1,https://us.cavaier.com/products/cube-pendant-necklace-for-her,renamed (redirect created by the rename)
+US,product,Cube Bracelet,en,https://us.cavaier.com/products/cube-bracelet,https://us.cavaier.com/products/cube-bracelet-for-him,renamed (redirect created by the rename)
+US,product,Cube Necklace,en,https://us.cavaier.com/products/cube-necklace-2,https://us.cavaier.com/products/cube-necklace-for-him,renamed (redirect created by the rename)
+US,product,Cube Pendant Necklace,en,https://us.cavaier.com/products/cube-necklace,https://us.cavaier.com/products/cube-pendant-necklace-for-him,renamed (redirect created by the rename)
+US,product,Jewelry Case,en,https://us.cavaier.com/products/jewelry-case,https://us.cavaier.com/products/jewelry-case,no change
+US,product,Lifetime Warranty,en,https://us.cavaier.com/products/lifetime-warranty,https://us.cavaier.com/products/lifetime-warranty,no change
+US,product,Minimal - Cuff,en,https://us.cavaier.com/products/icon-bracelet,https://us.cavaier.com/products/minimal-cuff-for-her,renamed (redirect created by the rename)
+US,product,Minimal Cuff,en,https://us.cavaier.com/products/minimal-cuff,https://us.cavaier.com/products/minimal-cuff-for-him,renamed (redirect created by the rename)
+US,product,Role - Bracelet,en,https://us.cavaier.com/products/role-bracelet-1,https://us.cavaier.com/products/role-bracelet-for-her,renamed (redirect created by the rename)
+US,product,Role - Necklace,en,https://us.cavaier.com/products/role-necklace-2,https://us.cavaier.com/products/role-necklace-for-her,renamed (redirect created by the rename)
+US,product,Role - Pendant Necklace,en,https://us.cavaier.com/products/role-necklace-1,https://us.cavaier.com/products/role-pendant-necklace-for-her,renamed (redirect created by the rename)
+US,product,Role Bracelet,en,https://us.cavaier.com/products/role-bracelet,https://us.cavaier.com/products/role-bracelet-for-him,renamed (redirect created by the rename)
+US,product,Role Necklace,en,https://us.cavaier.com/products/role-necklace-3,https://us.cavaier.com/products/role-necklace-for-him,renamed (redirect created by the rename)
+US,product,Role Pendant Necklace,en,https://us.cavaier.com/products/role-necklace,https://us.cavaier.com/products/role-pendant-necklace-for-him,renamed (redirect created by the rename)
+US,product,Rope - Bracelet,en,https://us.cavaier.com/products/rope-bracelet-2,https://us.cavaier.com/products/rope-bracelet-for-her,renamed (redirect created by the rename)
+US,product,Rope - Necklace,en,https://us.cavaier.com/products/rope-necklace-2,https://us.cavaier.com/products/rope-necklace-for-her,renamed (redirect created by the rename)
+US,product,Rope - Pendant Necklace,en,https://us.cavaier.com/products/rope-necklace-1,https://us.cavaier.com/products/rope-pendant-necklace-for-her,renamed (redirect created by the rename)
+US,product,Rope Bracelet,en,https://us.cavaier.com/products/rope-bracelet,https://us.cavaier.com/products/rope-bracelet-for-him,renamed (redirect created by the rename)
+US,product,Rope Necklace,en,https://us.cavaier.com/products/rope-necklace-3,https://us.cavaier.com/products/rope-necklace-for-him,renamed (redirect created by the rename)
+US,product,Rope Pendant Necklace,en,https://us.cavaier.com/products/rope-necklace,https://us.cavaier.com/products/rope-pendant-necklace-for-him,renamed (redirect created by the rename)
