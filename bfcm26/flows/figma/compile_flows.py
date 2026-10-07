@@ -1,0 +1,57 @@
+import json,sys,os
+KEEPF=os.environ.get('KEEPF','1')=='1'  # flows: footer is drawn from the page (no footer component)
+D=sys.argv[1]
+E=json.load(open(f'{D}/emails.json'));H=json.load(open('hashes.json'))
+def hx(c):
+    if not c: return None
+    a=c.get('a',1)
+    s='#%02x%02x%02x'%(round(c['r']*255),round(c['g']*255),round(c['b']*255))
+    return s+('%02x'%round(a*255) if a<1 else '')
+def r1(v): return round(v,1)
+def comp(e):
+    S=[[s['n'],r1(s['x']),r1(s['y']),r1(s['w']),r1(s['h']),1 if s['clip'] else 0] for s in e['secs']]
+    I=[]
+    fsec=[i for i,s in enumerate(e['secs']) if s['n']=='footer']
+    for i in fsec: S[i][0]='FOOTER'
+    for it in e['items']:
+        sec=it.get('sec',0)
+        if sec in fsec and not KEEPF: continue
+        if sec is None or sec<0: continue
+        sx,sy=e['secs'][sec]['x'],e['secs'][sec]['y']  # flows: item coords are relative to their section (so diffs survive section shifts)
+        b=[sec,r1(it['x']-sx),r1(it['y']-sy),r1(it['w']),r1(it['h'])]
+        o=round(it.get('o',1),3)
+        if it['t']=='r': I.append(['r',*b,hx(it['f']),o,r1(it.get('cr',0)),hx(it.get('st')),it.get('sw',0),1 if it.get('dash') else 0])
+        elif it['t']=='g': I.append(['g',*b,[[round(s['pos'],3),hx(s['c']) if s['c']['a']>=1 else hx(s['c'])] for s in it['g']['stops']],it['g']['ang'],o,r1(it.get('cr',0))])
+        elif it['t']=='i': I.append(['i',*b,H[it['k']],it['m'],o,r1(it.get('cr',0)),1 if it.get('bl')=='multiply' else 0])
+        elif it['t']=='v': I.append(['v',*b,it['svg'],o])
+        elif it['t']=='x':
+            ca=it['h'] if not it['ml'] else it['fs']*1.2
+            # line box top
+            yy=it['y']-(it['lh']-min(ca,it['h']))/2
+            b[2]=r1(yy-sy)
+            I.append(['x',*b,it['s'],it['ff'],it['fw'],1 if it['it'] else 0,it['fs'],r1(it['lh']),round(it['ls'],2),hx(it['c']),o,it['dec'],it['ml'],it.get('al','left')])
+    return S,I
+VERS=['A','B','C','D','E','F','G','H','I','J'];STO=['pre','ea','live','d6'];GO=['W','M']
+SN={'pre':'Pre-sale','ea':'Early access','live':'Live','d6':'Dec 6'}
+def key(e): return (VERS.index(e['ver']),STO.index(e['st']),GO.index(e['g']))
+rows={}
+for e in E: rows.setdefault(e['eid'],[]).append(e)
+layout={};y=0
+for eid in sorted(rows):
+    r=sorted(rows[eid],key=key);hmax=max(v['h'] for v in r)
+    for k,v in enumerate(r): layout[v['id']]=dict(x=320+k*680,y=y+200,by=y,rowY=y)
+    layout[eid]=dict(y=y,h=hmax)
+    y+=200+hmax+260
+out={}
+for e in E:
+    S,I=comp(e)
+    m=e['meta'];subj=m.get('Subject','');prev=m.get('Preview','')
+    note=m.get('Note') or ''
+    code=f"{e['no']}-{e['ver']}-{e['g']}-{e['st']}"
+    name=f"{code} · {subj}"
+    spec=dict(name=name,w=round(e['w']),h=round(e['h']),bg=hx(e['bg']) or '#ffffff',S=S,I=I)
+    fl=m.get('Flow','')
+    br=dict(name=f"{code} brief",l1=f"{e['no']} · {fl} · Version {e['ver']} · {'Women' if e['g']=='W' else 'Men'} · {SN[e['st']]}",l2=f"Subject: {subj}",l3=f"Preview: {prev} · {m.get('Timing','')}",l4=note[:300])
+    out[e['id']]=dict(spec=spec,brief=br,pos=layout[e['id']])
+json.dump(dict(emails=out,rows={k:v for k,v in layout.items() if len(k)==3}),open(f'{D}/compiled.json','w'))
+print(len(out), max(len(json.dumps(v['spec'])) for v in out.values()))
