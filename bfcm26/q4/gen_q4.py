@@ -198,7 +198,8 @@ FEED = {'W': [('p_crystal_br', 'Crystal Bracelet'), ('p_braid_silver', 'Braid Br
         'M': [('p_braid_black', 'Braid Bracelet'), ('p_cuban_neck', 'Cuban Necklace'), ('p_cube_pend', 'Cube Pendant Necklace')]}
 FEEDNOTE = {'recommended': 'Dynamic · Klaviyo product block, “Recommended for you” feed (catalog title + image, no price)',
             'viewed_together': 'Dynamic · Klaviyo product block, “Viewed together” feed for the product in the event',
-            'bestsellers': 'Dynamic · Klaviyo product block, best-sellers feed (catalog title + image, no price)'}
+            'bestsellers': 'Dynamic · Klaviyo product block, best-sellers feed (catalog title + image, no price)',
+            'recently_viewed': 'Dynamic · Klaviyo product block, “Recently viewed” feed: the pieces this person looked at (no price)'}
 def m_product_feed(m):
     tag = {'pre post': 'Best seller', 'ea': 'Members 30% off', 'bf cw': '30% off', 'xmas': 'Gift pick', 'late': 'Gift pick'}
     def side(g):
@@ -285,6 +286,7 @@ UNIT = {'m': ('minute', 'minutes'), 'h': ('hour', 'hours'), 'd': ('day', 'days')
 def wait_label(d):
     m = re.fullmatch(r'\+?(\d+)([mhd])', d)
     if d == '0': return 'Sends right away'
+    if re.match(r'(Jan|Feb|Mar|Oct|Nov|Dec) \d', d): return 'Wait until ' + d
     if not m: return d[:1].upper() + d[1:]
     n, u = int(m.group(1)), m.group(2)
     return f'Wait {n} {UNIT[u][n != 1]}'

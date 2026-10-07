@@ -196,6 +196,38 @@ F1['emails'].append(dict(id='F1E5', name='Last call', delay='+4 days', delay_sho
                                          ['Shipping', '[shipping offer to confirm]']]),
     M('cta', label='«cta»', proof=True)]))
 
+F1['emails'].append(dict(id='F1E6', name='You joined for today', delay='Wait until Mon Nov 23, 09:00', delay_short='Nov 23', phases=['ea'], bg='white', banner=B_WEL,
+  subject='Your access is open.', preview='You joined for this. Go.',
+  goal='Pre-sale sign-ups finished the welcome weeks ago. Wake them the hour early access opens.',
+  urgency='Members-only window: 4 days before everyone.',
+  klaviyo='After E5: conditional split “Joined the list before 2026-11-23” → yes: Wait until Mon Nov 23, 09:00 → E6. No: skip to the Nov 27 split. Smart sending off (it’s the moment they signed up for). ' + GEN,
+  notes='Only for people who joined in pre-sale (Oct 27 – Nov 22).',
+  modules=[
+    M('big_type', kicker='Early access · opens today', big='Open.', title='You joined for today.',
+      sub='Members shop 30% off everything from now. On Friday it opens to everyone.'),
+    TICKET,
+    M('cta', label='Shop early access'),
+    M('section_header', title='Your shortlist', label='Members 30% off'),
+    M('product_feed', source='recently_viewed', count=3),
+    CASE,
+    M('cta', label='Shop early access', proof=True)]))
+
+F1['emails'].append(dict(id='F1E7', name='Now everyone’s in', delay='Wait until Fri Nov 27, 08:00', delay_short='Nov 27', phases=['bf'], bg='fog', banner=B_WEL,
+  subject='It’s Black Friday.', preview='Now everyone gets 30% off.',
+  goal='The joiners who didn’t buy in early access get the Black Friday opening, framed as “you were first”.',
+  urgency='Black Friday is today; Matte Cuff tomorrow.',
+  klaviyo='Split “Joined before 2026-11-27” → Wait until Fri Nov 27, 08:00 → E7; later joiners exit (their welcome already runs in the sale). Exits on Placed Order. ' + GEN,
+  notes='Only for people who joined before Black Friday and haven’t ordered.',
+  modules=[
+    M('big_type', kicker='Black Friday · today', big='Today.', title='Now everyone’s in.',
+      sub='You had first pick. The 30% stays on, now for everyone, and the Matte Cuff launches tomorrow.'),
+    M('cta', label='Shop Black Friday'),
+    M('hero_photo', img={'W': 'lf_w_black_bracelet', 'M': 'lf_m_wrist_close'}, shape='wide'),
+    M('section_header', title='Still on your list', label='30% off'),
+    M('product_feed', source='recently_viewed', count=3),
+    OFFER,
+    M('cta', label='Shop Black Friday', proof=True)]))
+
 # ================================================================= F2 Browse
 F2 = dict(id='F2', name='Q4 Browse Abandonment', trigger_short='Viewed Product', replaces='Browse Abandonment (RkFCNW) → Manual on Oct 27',
   trigger='Viewed Product (HtsYBH)',
@@ -566,6 +598,162 @@ F9['emails'].append(dict(id='F9E1', name='It’s back', delay='When their varian
     M('text', size='s', body='You’re getting this because you asked to hear when it was back.')]))
 
 
+F9['emails'].append(dict(id='F9E2', name='It sold out once', delay='+1 day', delay_short='+1d', phases=ALL, bg='fog', banner=B_REC,
+  subject={'pre ea post late': 'Still in stock.', 'bf cw': 'Still here, still 30%.', 'xmas': 'Still in time.'},
+  preview='It sold out once already.',
+  goal='Second touch for the waiting list: the true fact that it sold out before is the urgency.',
+  urgency='Real: it sold out once. Today row in ea/bf/cw/xmas.',
+  klaviyo='Filters: variant still in stock (Back in Stock trigger keeps it) · no Placed Order since the restock email. ' + TODAY,
+  notes='No invented stock levels: only “it sold out once”, which is true for everyone in this flow.',
+  modules=[
+    M('headline', size='xl', title='It sold out once.', sub='You asked for it, it came back, and it’s still here today.'),
+    M('dynamic_product', source='bis', size='side'),
+    DEADLINE,
+    M('quote', count=1, who=WHO),
+    M('cta', label={'pre ea post late': 'Get it now', 'bf cw': 'Get it at 30% off', 'xmas': 'Order for Christmas'}, proof=True)]))
+
+# ================================================================= F10 Sale is live (for recent browsers)
+F10 = dict(id='F10', name='Sale Live · Your Picks', trigger_short='Browsed, didn’t buy (30 days)', replaces='NEW',
+  trigger='Added to List “Q4 · Sale live”: on Mon Nov 23, 09:00 add the segment “Viewed Product or Added to Cart in the last 30 days, no order since” for early-access members; on Fri Nov 27, 08:00 add everyone else in it',
+  filters='No Placed Order in the last 30 days · subscribed to email · smart sending on', exits='Placed Order',
+  live='Nov 23 → Dec 6',
+  why='The people who looked in October and November are the hottest audience the day the sale opens. Campaigns show everyone the same products; this shows each person the pieces they looked at, at 30% off.',
+  emails=[])
+
+F10['emails'].append(dict(id='F10E1', name='Your picks, 30% off', delay='On entry (Nov 23 or Nov 27)', delay_short='0', phases=['ea', 'bf'], bg='white', banner=B_REC,
+  subject='Your picks, 30% off.', preview='«prev»',
+  goal='Open the sale with their own shortlist: the pieces they looked at, now 30% off.', urgency='Today line: early access opens today / it’s Black Friday.',
+  klaviyo='Trigger: Added to List. Feed block “Recently viewed” (Klaviyo catalog). ' + TODAY + ' ' + GEN,
+  modules=[
+    M('headline', kicker='«kick»', title='Your picks. 30% off.', sub='The pieces you looked at lately are 30% off at checkout. No code.'),
+    M('product_feed', source='recently_viewed', count=3),
+    M('cta', label='«cta»'),
+    OFFER, M('quote', count=1, who=WHO),
+    M('cta', label='Shop your picks', proof=True)]))
+
+F10['emails'].append(dict(id='F10E2', name='Still on your list', delay='+2 days', delay_short='+2d', phases=['ea', 'bf', 'cw'], bg='fog', banner=B_REC,
+  subject='«subj»', preview='Your picks are still 30% off.',
+  goal='Second push with the day’s reason, and the pair-and-case idea to lift order value.', urgency='Today line.',
+  klaviyo='As F10E1. ' + TODAY,
+  modules=[
+    M('big_type', kicker='«kick»', big='«big»', title='«head»', sub='«line»'),
+    M('section_header', title='Still on your list', label='30% off'),
+    M('product_feed', source='recently_viewed', count=3),
+    CASE, DEADLINE,
+    M('cta', label='«cta»', proof=True)]))
+
+F10['emails'].append(dict(id='F10E3', name='30% ends tomorrow', delay='Wait until Sat Dec 5, 09:00', delay_short='Dec 5', phases=['cw'], bg='white', banner=B_REC,
+  subject='30% ends tomorrow.', preview='Your picks, then full price.',
+  goal='The real deadline, once, when it’s close: the day before 30% ends.', urgency='Ends tomorrow, Sunday midnight.',
+  klaviyo='Wait until Sat Dec 5, 09:00 (account time zone). Exits on Placed Order. ' + GEN,
+  modules=[
+    M('big_type', kicker='Ends tomorrow', big='Tomorrow.', title='30% ends tomorrow.', sub='Sunday at midnight, the pieces you looked at go back to full price.'),
+    M('product_feed', source='recently_viewed', count=3),
+    M('deadline', label='30% off ends', value='Tomorrow, midnight'),
+    M('cta', label='Shop before tomorrow', proof=True)]))
+
+# ================================================================= F11 Second purchase
+F11 = dict(id='F11', name='Second Purchase · Customers', trigger_short='1 order, 30–119 days ago', replaces='NEW',
+  trigger='Segment entry: exactly 1 Placed Order, last order 30–119 days ago (F7 Winback takes over at 120)',
+  filters='Subscribed to email · not in this flow in 60 days · smart sending on', exits='Placed Order',
+  live='Oct 27 → Jan 10',
+  why='One-time buyers are the gap between post-purchase (ends day 8) and winback (starts day 120). They already trust the product, and in Q4 they buy for themselves and for others. Nothing reaches them today.',
+  emails=[])
+
+F11['emails'].append(dict(id='F11E1', name='It goes with yours', delay='On entry', delay_short='0', phases=ALL, bg='white', banner=B_WEL,
+  subject={'pre post': 'It goes with yours.', 'ea': 'Customers shop first.', 'bf cw': 'Next piece, 30% off.', 'xmas': 'One for them?', 'late': 'A gift in minutes.'},
+  preview={'pre': 'Customers shop first, Nov 23.', 'ea bf cw xmas late': '«prev»', 'post': 'Two pieces, case included.'},
+  goal='Sell the piece that completes what they bought.', urgency='Customers’ early access (pre/ea), today line in the sale.',
+  klaviyo='Trigger: segment. Feed “Recommended for you” (based on their order). Customers must be in the early-access audience. ' + TODAY + ' ' + DATE + ' ' + GEN,
+  modules=[
+    M('headline', kicker='For customers', title='It goes with yours.',
+      sub={'pre': 'As a customer you shop 30% off everything from Monday, Nov 23, before the public sale.', 'ea bf cw': '«line»',
+           'xmas': 'Order by [cut-off date] for Christmas delivery.', 'late': 'Too late to ship. A gift card lands in their inbox in minutes.',
+           'post': 'Two pieces or more and the jewelry case comes with them.'}),
+    M('section_header', title='Picked to match yours', label=TAG), M('product_feed', source='recommended', count=3),
+    TICKET, CASE, GC(),
+    M('cta', label={'pre': 'See what matches', 'ea bf cw xmas late': '«cta»', 'post': 'Shop what matches'}, proof=True)]))
+
+F11['emails'].append(dict(id='F11E2', name='Their turn', delay='+4 days', delay_short='+4d', phases=ALL, bg='fog', banner=B_WEL,
+  subject={'pre post': 'Still wearing yours?', 'ea bf cw': 'Gifts, 30% off.', 'xmas': 'Their gift, sorted.', 'late': 'Gift cards, sent instantly.'},
+  preview={'pre post': 'Most people buy a second.', 'ea bf cw xmas': '«prev»', 'late': 'In their inbox instantly.'},
+  goal='Turn a happy customer into the gift-giver.', urgency='Today row.',
+  klaviyo='As F11E1. ' + TODAY,
+  notes='“Most people buy a second” needs checking against Shopify repeat-rate before launch; else use “Made to be given, too.”',
+  modules=[
+    M('hero_photo', img={'W': 'lf_w_crossed', 'M': 'lf_m_linen_chest'}, shape='wide'),
+    M('headline', title='The gift you already know works.', sub='You wear yours every day. Give them the same.'),
+    GUIDE, dict(CASE, phases=['pre', 'ea', 'bf', 'cw', 'xmas', 'post']), DEADLINE, GC(),
+    M('cta', label={'pre post': 'Shop gifts', 'ea bf cw xmas late': '«cta»'})]))
+
+F11['emails'].append(dict(id='F11E3', name='Why today', delay='+5 days', delay_short='+5d', phases=['ea', 'bf', 'cw', 'xmas'], bg='white', banner=B_WEL,
+  subject='«subj»', preview='«prev»',
+  goal='Close on the day’s reason.', urgency='Giant today word + today row.',
+  klaviyo='Live Nov 23 → [cut-off]; Manual outside. As F11E1. ' + TODAY,
+  notes='Doesn’t send in pre, late or post.',
+  modules=[
+    M('big_type', kicker='«kick»', big='«big»', title='«head»', sub='«line»'),
+    M('product_feed', source='recommended', count=3), DEADLINE,
+    M('cta', label='«cta»', proof=True)]))
+
+# ================================================================= F12 Site abandonment
+F12 = dict(id='F12', name='Site Visit · No Product', trigger_short='Active on Site', replaces='NEW',
+  trigger='Active on Site (Klaviyo onsite, KHDq43)',
+  filters='No Viewed Product, Viewed Collection, Added to Cart or Placed Order since starting (F2, F3, F4 take over) · not in this flow in 14 days · smart sending on',
+  exits='Viewed Product / Added to Cart / Placed Order', live='Oct 27 → Jan 10',
+  why='Known visitors who land and leave without opening a product. The lowest intent of the recovery flows, so it’s short: a guide in, then best sellers.',
+  emails=[])
+
+F12['emails'].append(dict(id='F12E1', name='Start here', delay='2 hours after', delay_short='2h', phases=ALL, bg='white', banner=B_REC,
+  subject={'pre post': 'Find your piece.', 'ea': 'Early access is open.', 'bf cw': '30% off everything.', 'xmas': 'Gifts, sorted.', 'late': 'Too late to ship?'},
+  preview={'pre post': 'Start with our best sellers.', 'ea bf cw': '«prev»', 'xmas': 'Order by [cut-off date].', 'late': 'Send a gift card instead.'},
+  goal='Turn a bounce into a product view.', urgency='Phase offer bar / cut-off calendar.',
+  klaviyo='Trigger Active on Site. ' + TODAY + ' ' + DATE,
+  modules=[
+    M('headline', kicker={'pre post': 'Start here', 'ea bf cw': '«kick»', 'xmas': 'Christmas gift guide', 'late': 'Last-minute gifts'},
+      title='Who are you shopping for?', sub='Pick who it’s for. We’ll take it from there.'),
+    GUIDE, OFFER, CAL, GC(),
+    M('cta', label={'pre post': 'Shop best sellers', 'ea bf cw': '«cta»', 'xmas': 'Shop for Christmas', 'late': 'Send a gift card'}, proof=True)]))
+
+F12['emails'].append(dict(id='F12E2', name='Best sellers', delay='+1 day', delay_short='+1d', phases=ALL, bg='fog', banner=B_REC,
+  subject={'pre post': 'Our best sellers.', 'ea bf cw xmas': '«subj»', 'late': 'A gift in minutes.'},
+  preview={'pre post': 'The ones people keep on.', 'ea bf cw xmas': '«prev»', 'late': 'In their inbox instantly.'},
+  goal='The safest first pick, with proof.', urgency='Today row.', klaviyo='As F12E1.',
+  modules=[
+    M('hero_photo', img={'W': 'lf_w_wet_swim', 'M': 'lf_m_beach_arm'}, shape='wide'),
+    M('headline', align='left', title='The ones people keep on.', sub='Rated 4.5 on Trustpilot from 3,000+ reviews.'),
+    M('product_feed', source='bestsellers', count=3), DEADLINE, GC(),
+    M('cta', label={'pre post': 'Shop best sellers', 'ea bf cw xmas': '«cta»', 'late': 'Send a gift card'}, proof=True)]))
+
+# ================================================================= F13 Gift card buyers
+F13 = dict(id='F13', name='Gift Card Buyers', trigger_short='Bought a gift card', replaces='NEW',
+  trigger='Placed Order where Items contains “Gift Card”', filters='Smart sending off for E1', exits='E2: Placed Order since',
+  live='Nov 23 → Jan 10',
+  why='Last-minute buyers want to know the gift arrives. Then, in January, the person who sorted everyone else gets a reason to treat themselves.',
+  emails=[])
+
+F13['emails'].append(dict(id='F13E1', name='How to give it', delay='15 minutes after', delay_short='15m', phases=['ea', 'bf', 'cw', 'xmas', 'late', 'post'], bg='white', banner=B_WEL,
+  subject='Your gift card is ready.', preview='Here’s how to give it.',
+  goal='Reassure: the gift arrives, and how to make it feel like a gift.', urgency='None: service email.',
+  klaviyo='Trigger Placed Order, filter Items contains “Gift Card”. Shopify sends the card itself; this email is the how-to. ' + GEN,
+  notes='Check how the store’s gift card app delivers to the recipient (date picker or not) and match step 1.',
+  modules=[
+    M('headline', title='Your gift card is ready.', sub='Here’s how to make it feel like a gift.'),
+    M('steps', items=['It goes to the email you chose, on the date you chose. [match the gift card app]', 'Add a note: it shows above the card.',
+                      'They pick the piece. Made to stay on, like yours.']),
+    M('gift_card', title='Any amount, any piece.', text='The card works on everything, including Sets and the Matte Cuff.', cta='Send another'),
+    M('text', size='s', body='Questions? Reply to this email.')]))
+
+F13['emails'].append(dict(id='F13E2', name='One for you', delay='Wait until Sat Jan 2, 09:00', delay_short='Jan 2', phases=['post'], bg='fog', banner=B_WEL,
+  subject='One for you, too?', preview='You sorted everyone else.',
+  goal='Turn the gift-giver into a buyer for themselves.', urgency='None: new year.',
+  klaviyo='Wait until Sat Jan 2, 09:00. Filter: no Placed Order since the gift card. Feed “Recommended for you”. ' + GEN,
+  modules=[
+    M('hero_photo', img={'W': 'lf_w_face_wet', 'M': 'lf_m_hand_rock'}, shape='tall'),
+    M('headline', title='You sorted everyone else.', sub='Start the year with a piece made to stay on.'),
+    M('product_feed', source='recommended', count=3), CASE,
+    M('cta', label='Shop for yourself', proof=True)]))
+
 # ================================================================= today lines (urgency from the send date)
 # Every «token» in the copy is filled from the row for the day the email sends. Far from a deadline, the reason to act is
 # today’s moment (Black Friday is today, Matte Cuff launches today, order today and it ships Monday). The end date
@@ -634,7 +822,7 @@ DAYS = [
     'Send a gift card', 'Christmas Eve', 'Instant', 'still in time', 'In their inbox instantly'),
 ]
 
-FLOWS = [F1, F2, F3, F4, F5, F6, F7, F8, F9]
+FLOWS = [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13]
 
 # ================================================================= page copy
 PAGE = {}
@@ -644,7 +832,13 @@ PAGE['intro'] = '''  <header class="intro narrow">
     <p>{n_flows} flows and {n_emails} emails that replace the evergreen flows from Oct 27 to Jan 10. Every email changes with the calendar, inside one Klaviyo template: use the bar to switch women’s / men’s and the Q4 phase. Brief card on the right of each email: send time, subject and preview for the phase, the job, the urgency device and the Klaviyo build. Mock-up only: nothing is live in Klaviyo.</p>
   </header>'''
 
-PAGE['top'] = '''  <section class="card narrow">
+PAGE['top'] = '''  <section class="card narrow" style="border-color:var(--red)">
+    <span class="kicker" style="color:var(--red)">Fix first · before Oct 27</span>
+    <h2>Product tracking has been broken since early September.</h2>
+    <p class="notes" style="color:inherit;font-size:14px">“Viewed Product” fell from about 10,000 a week in August to about 2,800 since Sep 1. Orders fell too, but views per order halved (about 21 → 11). The old “Added to Cart” tracking died the same day, and “Viewed Page” and shipping events went quiet. Browse (F2), Sale live (F10) and the recently-viewed feeds all run on this event: Browse earned €7,048 last Q4. Check the Klaviyo onsite tracking on the theme (product page snippet / app embed) and test a product view on a known profile.</p>
+  </section>
+
+  <section class="card narrow">
     <span class="kicker">What the Q4 flows have to beat · Q4 2025, email, Placed Order</span>
     <div class="stats">
       <div><b>€10,886</b><span>Checkout Abandoned · €1.37 per recipient · 8,212 recipients</span></div>
@@ -652,7 +846,7 @@ PAGE['top'] = '''  <section class="card narrow">
       <div><b>€7,048</b><span>Browse · €0.35 per recipient · 20,138 recipients</span></div>
       <div><b>€231</b><span>Winback · €0.02 per recipient · 11,172 recipients</span></div>
     </div>
-    <p class="notes">Also in Q4 2025: Aimerce app flows €4,094 (Checkout €1,916, Browse €1,683, Add to Cart €401, Site abandonment €93) and the Trustpilot review flow €1,147. About €32,000 from flows in total. No welcome or post-purchase flow sent in Q4 2025.</p>
+    <p class="notes">Also in Q4 2025: the Trustpilot review flow, €1,147. No welcome or post-purchase flow sent in Q4 2025.</p>
   </section>
 
   <section class="card narrow">
@@ -681,9 +875,10 @@ PAGE['bottom'] = '''  <section class="card narrow">
     <div class="tbl" style="border:0"><table style="min-width:0"><tbody>
       <tr><td class="n"><b>Oct 13 – 16</b></td><td>Build F1–F9 in Klaviyo as drafts: one template per email, phase blocks by date, W/M blocks by Gender. Test each phase in a copy with the date thresholds moved.</td></tr>
       <tr><td class="n"><b>Mon Oct 19</b></td><td>F8 Sunset live. Sunset Flow (YiWP9H) → Manual.</td></tr>
-      <tr><td class="n"><b>Tue Oct 27, 09:00</b></td><td>F1–F7 and F9 live. Same hour → Manual: Welcome Series (QVmUhV), Browse Abandonment (RkFCNW), Add to Cart Abandoned (Syiqdb), Checkout Abandoned (Ub2mSt), Customer Winback (VipiiT). Emails waiting in a Manual flow don’t send. Send the one-off winback launch campaign to the lapsed segment. Check the Aimerce app flows are off (they sent in Q4 2025) or shoppers get two of everything.</td></tr>
+      <tr><td class="n"><b>Tue Oct 27, 09:00</b></td><td>F1–F7, F9 and F11–F13 live. Same hour → Manual: Welcome Series (QVmUhV), Browse Abandonment (RkFCNW), Add to Cart Abandoned (Syiqdb), Checkout Abandoned (Ub2mSt), Customer Winback (VipiiT). Emails waiting in a Manual flow don’t send. Send the one-off winback launch campaign to the lapsed segment.</td></tr>
       <tr><td class="n"><b>Sun Nov 15</b></td><td>F8 off. Nov 16–22: suppress profiles who got both sunset emails and didn’t click.</td></tr>
-      <tr><td class="n"><b>Mon Nov 23</b></td><td>Window emails on: F1E5, F5E4 (from Nov 27), F2E3 (from Nov 27), F6E3, F7E3. Everything else switches copy by itself.</td></tr>
+      <tr><td class="n"><b>Mon Nov 23</b></td><td>Window emails on: F1E5, F5E4 (from Nov 27), F2E3 (from Nov 27), F6E3, F7E3, F11E3. 09:00: add early-access members from the “browsed, didn’t buy” segment to the F10 list. Everything else switches copy by itself.</td></tr>
+      <tr><td class="n"><b>Fri Nov 27, 08:00</b></td><td>Add everyone else from that segment to the F10 list.</td></tr>
       <tr><td class="n"><b>[Cut-off date]</b></td><td>Fill every [cut-off] placeholder once the dates are confirmed. F1E5, F2E3, F5E4, F7E3 → Manual after the cut-off.</td></tr>
       <tr><td class="n"><b>Fri Dec 25</b></td><td>No flow sends: send-time windows skip Christmas Day.</td></tr>
       <tr><td class="n"><b>Sun Jan 10</b></td><td>Q4 flows → Manual, evergreen flows back on. Keep F6 Post-purchase and F3 live if they beat the old numbers.</td></tr>
