@@ -8,7 +8,7 @@ Seeds the shared page once; after that the published artifact is the master.
 """
 import base64, io, json, os, re, html as H
 from PIL import Image, ImageOps
-from q4_specs import FLOWS, PAGE
+from q4_specs import FLOWS, PAGE, DAYS, KEYS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 B = os.path.dirname(HERE)
@@ -59,10 +59,11 @@ PNAME = {'pre': 'Pre-sale', 'ea': 'Early access', 'bf': 'Black Friday', 'cw': 'C
 def is_g(v): return isinstance(v, dict) and set(v) <= {'W', 'M'} and v
 def is_p(v): return isinstance(v, dict) and not is_g(v)
 
+BT = re.compile(r'«(\w+)»')
 def t(v, tag='span'):
     """Render a text value (str | phase map | gender map). Strings are trusted HTML-lite."""
     if v is None: return ''
-    if isinstance(v, str): return v
+    if isinstance(v, str): return BT.sub(lambda m: f'<span class="bt" data-bt="{m.group(1)}"></span>', v)
     if is_g(v):
         return f'<{tag} class="gW">{t(v.get("W",""), tag)}</{tag}><{tag} class="gM">{t(v.get("M",""), tag)}</{tag}>'
     out = []
@@ -258,7 +259,7 @@ def strip(banner):
         if ' · ' in s:
             a, b = s.split(' · ', 1); return f'<span class="rs">{a}</span> · {b}'
         return f'<span class="rs">{s}</span>'
-    if isinstance(banner, str): return f'<div class="strip">{one(banner)}</div>'
+    if isinstance(banner, str): return f'<div class="strip">{t(one(banner))}</div>'
     return '<div class="strip">' + t({k: one(v) for k, v in banner.items()}) + '</div>'
 
 def foot():
@@ -337,6 +338,8 @@ LIVE_JS = (open(os.path.join(HERE, 'live_script.js')).read()
                     "return window.__q4at||'top';"))
 assert "__q4at" in LIVE_JS
 
+day_rows = ''.join(f'<tr><td class="n"><b>{d["label"]}</b></td><td>{d["big"]}</td><td>{d["head"]}</td><td>{d["subj"]}</td><td>{d["prev"]}</td><td>{d["endl"]}: {d["dl"]}</td></tr>' for d in DAYS)
+DAYJS = json.dumps([{k: d[k] for k in ['id', 'phase', 'label', 'default'] + KEYS} for d in DAYS])
 phase_btns = ''.join(f'<button type="button" data-s="{p}" aria-pressed="{str(p == "bf").lower()}">{PNAME[p]}</button>' for p in PH)
 
 page = f'''<title>Cavaier Q4 Flows</title>
@@ -372,6 +375,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
     <div class="ttl"><b>Q4 flows</b><span>{len(FLOWS)} flows · {n_emails} emails</span></div>
     <div class="seg" role="group" aria-label="Women or men"><button type="button" data-g="W" aria-pressed="true">W</button><button type="button" data-g="M" aria-pressed="false">M</button></div>
     <div class="seg ph" role="group" aria-label="Q4 phase">{phase_btns}</div>
+    <div class="seg days" id="days" role="group" aria-label="Send day" hidden></div>
     <div class="sp"></div>
     <div class="zoom" role="group" aria-label="Zoom">
       <button type="button" id="zOut" aria-label="Zoom out" title="Zoom out (−)">−</button>
@@ -397,6 +401,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
 {PAGE['intro'].format(n_flows=len(FLOWS), n_emails=n_emails)}
 {PAGE['top']}
   <div class="tbl narrow"><table><thead><tr><th>Flow</th><th>Name</th><th>Trigger</th><th>Emails</th><th>Timing</th><th>Replaces</th></tr></thead><tbody>{map_rows}</tbody></table></div>
+{PAGE['urgency'].replace('{day_rows}', day_rows)}
 {PAGE['bottom']}
     </div>
   </aside>
@@ -410,9 +415,22 @@ page = f'''<title>Cavaier Q4 Flows</title>
   var root=$('root'),vp=$('vp'),board=$('board'),brief=$('brief'),briefIn=$('briefIn'),plan=$('plan');
   var ORDER=['pre','ea','bf','cw','xmas','late','post'];
   var NAME={json.dumps(PNAME)};
-  var g='W',s='bf',open=null;
+  var g='W',s='bf',open=null,day=null;
+  var DAYS={DAYJS};
+  function dayOf(id){{for(var i=0;i<DAYS.length;i++)if(DAYS[i].id===id)return DAYS[i];return null}}
+  function defDay(ph){{var l=DAYS.filter(function(d){{return d.phase===ph}});return l.filter(function(d){{return d.default}})[0]||l[0]||null}}
+  function fill(root,ph){{
+    var d=(day&&day.phase===ph)?day:defDay(ph);
+    root.querySelectorAll('.bt').forEach(function(b){{b.textContent=d?d[b.getAttribute('data-bt')]||'':''}});
+  }}
+  function dayBar(){{
+    var box=$('days');box.textContent='';var list=DAYS.filter(function(d){{return d.phase===s}});
+    box.hidden=!list.length;
+    list.forEach(function(d){{var b=document.createElement('button');b.type='button';b.textContent=d.label;
+      b.setAttribute('aria-pressed',String(day&&day.id===d.id));b.onclick=function(){{day=d;ls('q4-d',d.id);apply()}};box.appendChild(b)}});
+  }}
   function ls(k,v){{try{{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}}catch(e){{return null}}}}
-  g=ls('q4-g')||g;s=ls('q4-s')||s;
+  g=ls('q4-g')||g;s=ls('q4-s')||s;day=dayOf(ls('q4-d'));
 
   // ---- W/M + phase
   function eff(states,want){{
@@ -422,19 +440,23 @@ page = f'''<title>Cavaier Q4 Flows</title>
     return best;
   }}
   function apply(){{
+    if(!day||day.phase!==s)day=defDay(s);
     root.setAttribute('data-g',g);
     document.querySelectorAll('.entry').forEach(function(e){{
       var states=e.getAttribute('data-states').split(' '),x=eff(states,s);e.setAttribute('data-s',x);
       var off=x!==s;e.classList.toggle('dim',off);
       e.querySelector('.off').textContent=off?'Doesn’t send in '+NAME[s]+' · showing '+NAME[x]:'';
+      fill(e,x);
     }});
+    dayBar();
+    if(open&&open.classList.contains('entry'))fill(briefIn,open.getAttribute('data-s'));
     if(open&&open.classList.contains('entry'))brief.setAttribute('data-s',open.getAttribute('data-s'));
     document.querySelectorAll('button[data-g]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-g')===g))}});
     document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-s')===s))}});
     ls('q4-g',g);ls('q4-s',s);
   }}
   document.querySelectorAll('button[data-g]').forEach(function(b){{b.addEventListener('click',function(){{g=b.getAttribute('data-g');apply()}})}});
-  document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.addEventListener('click',function(){{s=b.getAttribute('data-s');apply()}})}});
+  document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.addEventListener('click',function(){{s=b.getAttribute('data-s');day=null;apply()}})}});
 
   // ---- view: translate + scale
   var x=0,y=0,k=1,MIN=0.05,MAX=2,saveT=null;
@@ -500,7 +522,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
     if(open)open.classList.remove('sel');open=node;node.classList.add('sel');
     var id=node.id||node.getAttribute('data-flow');
     briefIn.textContent='';briefIn.appendChild($('b-'+id).content.cloneNode(true));
-    if(node.classList.contains('entry'))brief.setAttribute('data-s',node.getAttribute('data-s'));else brief.removeAttribute('data-s');
+    if(node.classList.contains('entry')){{brief.setAttribute('data-s',node.getAttribute('data-s'));fill(briefIn,node.getAttribute('data-s'))}}else brief.removeAttribute('data-s');
     brief.hidden=false;where(node.classList.contains('entry')?id:'top');
   }}
   function hideBrief(){{brief.hidden=true;if(open)open.classList.remove('sel');open=null}}
@@ -534,7 +556,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
   }});
 
   function th(){{root.style.setProperty('--toolh',document.querySelector('.tools').offsetHeight+'px')}}th();window.addEventListener('resize',th);
-  window.q4View=function(G,S){{g=G;s=S;apply()}};
+  window.q4View=function(G,S,D){{g=G;s=S;day=D?dayOf(D):null;apply()}};
   window.q4Go=go;window.q4Fit=fit;window.q4Show=function(id){{show($(id))}};
   apply();
   var v=null;try{{v=JSON.parse(ls('q4-view')||'null')}}catch(e){{}}
