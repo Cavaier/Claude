@@ -8,7 +8,7 @@ Seeds the shared page once; after that the published artifact is the master.
 """
 import base64, io, json, os, re, html as H
 from PIL import Image, ImageOps
-from q4_specs import FLOWS, PAGE, DAYS, KEYS
+from q4_specs import FLOWS, PAGE, DAYS, KEYS, POPUP
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 B = os.path.dirname(HERE)
@@ -277,7 +277,7 @@ def email_html(e):
     return f'<article class="em{" fog" if e.get("bg") == "fog" else ""}" aria-label="{e["id"]}">{body}{foot()}</article>'
 
 
-# ---------------------------------------------------------------- page (canvas: one vertical column per flow, zoom + pan)
+# ---------------------------------------------------------------- page (canvas: pop-up band, then Women and Men bands; one column per flow)
 def phase_names(ps): return ' · '.join(PNAME[p] for p in ps)
 
 UNIT = {'m': ('minute', 'minutes'), 'h': ('hour', 'hours'), 'd': ('day', 'days')}
@@ -301,48 +301,107 @@ def flow_tpl(f):
             ('Live', f['live']), ('Why', f['why'])]
     return '<dl class="meta">' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in rows) + '</dl>'
 
-def entry_html(f, e):
+TEMPLATES = ''.join(f'<template id="b-{f["id"]}"><h3>{f["id"]} · {f["name"]}</h3>{flow_tpl(f)}</template>' +
+                    ''.join(f'<template id="b-{e["id"]}"><h3>{e["id"]} · {e["name"]}</h3>{brief_tpl(e)}</template>' for e in f['emails'])
+                    for f in FLOWS)
+TEMPLATES += ('<template id="b-POP"><h3>Sign-up pop-up</h3><dl class="meta">' +
+              ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in POPUP['brief']) + '</dl></template>')
+
+def entry_html(G, f, e):
     return (f'<div class="conn"><span class="wait">{wait_label(e["delay_short"])}</span></div>'
-            f'<section class="entry" id="{e["id"]}" data-states="{" ".join(e["phases"])}" data-s="{e["phases"][0]}" tabindex="0" aria-label="{e["id"]} {e["name"]}">'
+            f'<section class="entry" id="{G}-{e["id"]}" data-id="{e["id"]}" data-states="{" ".join(e["phases"])}" data-s="{e["phases"][0]}" tabindex="0" aria-label="{e["id"]} {e["name"]}">'
             f'<header class="elab"><b>{e["id"]}</b><span class="nm">{e["name"]}</span><span class="subj">{t(e["subject"])}</span>'
             f'<span class="off" aria-live="polite"></span></header>'
-            f'{email_html(e)}</section>'
-            f'<template id="b-{e["id"]}"><h3>{e["id"]} · {e["name"]}</h3>{brief_tpl(e)}</template>\n')
+            f'{email_html(e)}</section>\n')
 
-def flow_html(f):
-    o = (f'<div class="col" id="{f["id"]}">'
-         f'<section class="fhead" tabindex="0" data-flow="{f["id"]}"><span class="fid">{f["id"]}</span><div><h2>{f["name"]}</h2>'
+def flow_html(G, f):
+    o = (f'<div class="col" id="{G}-{f["id"]}">'
+         f'<section class="fhead" tabindex="0" data-id="{f["id"]}"><span class="fid">{f["id"]}</span><div><h2>{f["name"]}</h2>'
          f'<p>{len(f["emails"])} email{"s" if len(f["emails"]) != 1 else ""} · replaces {f["replaces"]}</p></div></section>'
-         f'<template id="b-{f["id"]}"><h3>{f["id"]} · {f["name"]}</h3>{flow_tpl(f)}</template>'
          f'<div class="conn short"></div><div class="node trig"><span>Trigger</span>{f["trigger_short"]}</div>')
     for e in f['emails']:
-        o += entry_html(f, e)
+        o += entry_html(G, f, e)
     o += f'<div class="conn short"></div><div class="node exit"><span>Exits on</span>{f["exits"]}</div></div>\n'
     return o
 
-flows_html = ''.join(flow_html(f) for f in FLOWS)
 n_emails = sum(len(f['emails']) for f in FLOWS)
+GNAME = {'W': 'Women', 'M': 'Men'}
+def band_html(G):
+    return (f'<section class="band" id="band-{G}" data-g="{G}"><header class="bandh"><span class="bk">Every email as {GNAME[G].lower()} see it</span>'
+            f'<h1>{GNAME[G]}</h1><p>{len(FLOWS)} flows · {n_emails} emails · profile property Gender = {"“Men”" if G == "M" else "“Women”, “Both” or empty"}</p></header>'
+            f'<div class="cols">{"".join(flow_html(G, f) for f in FLOWS)}</div></section>\n')
+
+# ---- pop-up frames
+P_ = POPUP
+def pop_body(step, mob=False):
+    close = '<span class="px" aria-hidden="true">×</span>'
+    logo = f'<p class="plogo">{img("logo", "Cavaier", "width:84px;height:14px", "logo")}</p>'
+    if step == 1:
+        b = (f'<span class="lab red">{t(P_["kick"])}</span><h2>{t(P_["head"])}</h2><p class="psub">{t(P_["sub"])}</p>'
+             '<div class="pin"><span>Email address</span></div>'
+             f'<a class="pbtn2" href="#">{t(P_["cta"])}</a>'
+             '<p class="pfine">By signing up you agree to receive marketing emails from Cavaier. Unsubscribe anytime.</p>'
+             '<p class="pno">Not now</p>')
+    elif step == 2:
+        b = ('<span class="lab red">One more tap</span><h2>Who do you shop for?</h2><p class="psub">So every email shows the right pieces.</p>'
+             '<div class="pchoice"><a href="#">Women</a><a href="#">Men</a><a href="#">Both</a></div><p class="pno">Skip</p>')
+    else:
+        b = (f'<span class="lab red">{t(P_["kick"])}</span><h2>{t(P_["done_head"])}</h2><p class="psub">{t(P_["done_sub"])}</p>'
+             f'<a class="pbtn2" href="#">{t(P_["done_cta"])}</a>'
+             '<p class="pproof">★★★★★ Rated 4.5 on Trustpilot · 3,000+ reviews</p>')
+    return close + logo + b
+
+def pop_frame(step, mob):
+    pics = f'<div class="ppics">{img("lf_w_black_top", "")}{img("lf_m_linen_chin", "")}</div>'
+    cls = 'pf mob' if mob else 'pf desk'
+    cap = ['Step 1 · email', 'Step 2 · who it’s for', 'Done'][step - 1]
+    return (f'<figure class="{cls}"><figcaption>{"Mobile" if mob else "Desktop"} · {cap}</figcaption>'
+            f'<div class="pscreen"><div class="pover">{pics}<div class="pbody">{pop_body(step, mob)}</div></div></div></figure>')
+
+def teaser_frame():
+    return ('<figure class="pf tz"><figcaption>After closing · teaser tab</figcaption><div class="pscreen site">'
+            f'<div class="fake"><p class="plogo">{img("logo", "Cavaier", "width:84px;height:14px", "logo")}</p><i></i><i></i><i class="s"></i>'
+            f'<div class="fg"><span></span><span></span><span></span></div></div>'
+            f'<span class="ptz">{t(P_["teaser"])} <b>›</b></span></div></figure>')
+
+POP_HTML = ('<section class="band pop" id="band-P" data-s="bf"><header class="bandh"><span class="bk">Feeds F1 and the women / men split</span>'
+            '<h1>Sign-up pop-up</h1><p>Full screen on desktop; full screen on mobile after 10 seconds or the 2nd page. Click any frame for the setup.</p></header>'
+            '<div class="prow" tabindex="0" data-id="POP">' + ''.join(pop_frame(s_, False) for s_ in (1, 2, 3)) + '</div>'
+            '<div class="prow" tabindex="0" data-id="POP">' + ''.join(pop_frame(s_, True) for s_ in (1, 2, 3)) + teaser_frame() + '</div></section>\n')
+
 map_rows = ''.join(
-    f'<tr><td><a href="#{f["id"]}" data-go="{f["id"]}">{f["id"]}</a></td><td>{f["name"]}</td><td>{f["trigger_short"]}</td><td class="n">{len(f["emails"])}</td>'
+    f'<tr><td><a href="#W-{f["id"]}" data-go="W-{f["id"]}">{f["id"]}</a></td><td>{f["name"]}</td><td>{f["trigger_short"]}</td><td class="n">{len(f["emails"])}</td>'
     f'<td>{" → ".join(e["delay_short"] for e in f["emails"])}</td><td>{f["replaces"]}</td></tr>' for f in FLOWS)
-jump_opts = ''.join(f'<option value="{f["id"]}">{f["id"]} · {f["name"]}</option>' +
-                    ''.join(f'<option value="{e["id"]}">&nbsp;&nbsp;&nbsp;{e["id"]} · {e["name"]}</option>' for e in f['emails']) for f in FLOWS)
+jump_opts = '<option value="band-P">Sign-up pop-up</option>' + ''.join(
+    f'<optgroup label="{GNAME[G]}">' + ''.join(
+        f'<option value="{G}-{f["id"]}">{f["id"]} · {f["name"]}</option>' +
+        ''.join(f'<option value="{G}-{e["id"]}">&nbsp;&nbsp;&nbsp;{e["id"]} · {e["name"]}</option>' for e in f['emails']) for f in FLOWS) + '</optgroup>'
+    for G in ('W', 'M'))
+
+BOARD = POP_HTML + band_html('W') + band_html('M')
 
 IMGDATA = {k: load_img(k) for k in sorted(USED - {'logo', 'ic_ig', 'ic_tt', 'ic_fb'})}
 for _k in ('ig', 'tt', 'fb'):
     IMGDATA['ic_' + _k] = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(HERE, 'icons', _k + '.png'), 'rb').read()).decode()
 IMGDATA['logo'] = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(HERE, 'logo0.png'), 'rb').read()).decode()
 
-CSS = open(os.path.join(HERE, 'q4.css')).read() + '\n' + open(os.path.join(HERE, 'live_css.css')).read() + '\n' + open(os.path.join(HERE, 'canvas.css')).read()
+CSS = (open(os.path.join(HERE, 'q4.css')).read() + '\n' + open(os.path.join(HERE, 'live_css.css')).read() + '\n' +
+       open(os.path.join(HERE, 'canvas.css')).read() + '\n' + open(os.path.join(HERE, 'popup.css')).read())
 LIVE_JS = (open(os.path.join(HERE, 'live_script.js')).read()
-           .replace("/^e\\d\\d$/.test(w)?'on '+w.slice(1)", "/^F\\dE\\d$/.test(w)?'on '+w")
+           .replace("function whereLabel(w){return w&&/^e\\d\\d$/.test(w)?'on '+w.slice(1):'overview'}",
+                    "function whereLabel(w){return w&&w!=='top'?'on '+w:'overview'}")
            .replace("var best='top';document.querySelectorAll('.entry').forEach(function(e){if(e.getBoundingClientRect().top<160)best=e.id});return best;",
                     "return window.__q4at||'top';"))
-assert "__q4at" in LIVE_JS
+assert "__q4at" in LIVE_JS and "w!=='top'" in LIVE_JS
 
-day_rows = ''.join(f'<tr><td class="n"><b>{d["label"]}</b></td><td>{d["big"]}</td><td>{d["head"]}</td><td>{d["subj"]}</td><td>{d["prev"]}</td><td>{d["endl"]}: {d["dl"]}</td></tr>' for d in DAYS)
+day_rows = ''.join(f'<tr><td class="n"><b>{d["label"]}</b></td><td>{d["big"]}</td><td>{d["head"]}</td><td>{d["subj"]}</td><td>{d["prev"]}</td><td>{d["endl"]}: {d["dl"]}</td></tr>'
+                   for d in DAYS if d['big'])
 DAYJS = json.dumps([{k: d[k] for k in ['id', 'phase', 'label', 'default'] + KEYS} for d in DAYS])
-phase_btns = ''.join(f'<button type="button" data-s="{p}" aria-pressed="{str(p == "bf").lower()}">{PNAME[p]}</button>' for p in PH)
+day_btns = ''
+for p in PH:
+    ds = [d for d in DAYS if d['phase'] == p]
+    day_btns += (f'<div class="dgrp"><span class="dph">{PNAME[p]}</span><div class="dbs">' +
+                 ''.join(f'<button type="button" data-day="{d["id"]}" aria-pressed="false">{d["label"]}</button>' for d in ds) + '</div></div>')
 
 page = f'''<title>Cavaier Q4 Flows</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -372,12 +431,9 @@ page = f'''<title>Cavaier Q4 Flows</title>
     <ol id="lvLog"><li><time></time><span class="hint">No activity yet.</span></li></ol>
   </div>
 </div>
-<div class="app" id="root" data-g="W">
+<div class="app" id="root">
   <div class="tools" role="toolbar" aria-label="Canvas controls">
-    <div class="ttl"><b>Q4 flows</b><span>{len(FLOWS)} flows · {n_emails} emails</span></div>
-    <div class="seg" role="group" aria-label="Women or men"><button type="button" data-g="W" aria-pressed="true">W</button><button type="button" data-g="M" aria-pressed="false">M</button></div>
-    <div class="seg ph" role="group" aria-label="Q4 phase">{phase_btns}</div>
-    <div class="seg days" id="days" role="group" aria-label="Send day" hidden></div>
+    <div class="ttl"><b>Q4 flows</b><span>{len(FLOWS)} flows · {n_emails} emails · pop-up</span></div>
     <div class="sp"></div>
     <div class="zoom" role="group" aria-label="Zoom">
       <button type="button" id="zOut" aria-label="Zoom out" title="Zoom out (−)">−</button>
@@ -387,12 +443,11 @@ page = f'''<title>Cavaier Q4 Flows</title>
     </div>
     <select class="jump" id="jump" aria-label="Jump to"><option value="">Jump to…</option>{jump_opts}</select>
     <button type="button" class="pbtn" id="planBtn" aria-expanded="false" aria-controls="plan">Plan</button>
+    <div class="days" id="days" role="group" aria-label="Send day"><span class="dlab">Send day</span>{day_btns}</div>
   </div>
   <div class="vp" id="vp" aria-label="Flow canvas. Drag or scroll to move, Ctrl/⌘ + scroll or pinch to zoom.">
     <div class="board" id="board">
-      <div class="cols">
-{flows_html}
-      </div>
+{BOARD}
     </div>
     <p class="hintbar">Drag or scroll to move · Ctrl/⌘ + scroll or pinch to zoom · click an email for its brief</p>
   </div>
@@ -408,6 +463,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
     </div>
   </aside>
 </div>
+{TEMPLATES}
 <script type="application/json" id="imgs">{json.dumps(IMGDATA)}</script>
 <script>
 (function(){{
@@ -417,68 +473,60 @@ page = f'''<title>Cavaier Q4 Flows</title>
   var root=$('root'),vp=$('vp'),board=$('board'),brief=$('brief'),briefIn=$('briefIn'),plan=$('plan');
   var ORDER=['pre','ea','bf','cw','xmas','late','post'];
   var NAME={json.dumps(PNAME)};
-  var g='W',s='bf',open=null,day=null;
   var DAYS={DAYJS};
+  var open=null,day=null;
+  function ls(k,v){{try{{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}}catch(e){{return null}}}}
   function dayOf(id){{for(var i=0;i<DAYS.length;i++)if(DAYS[i].id===id)return DAYS[i];return null}}
   function defDay(ph){{var l=DAYS.filter(function(d){{return d.phase===ph}});return l.filter(function(d){{return d.default}})[0]||l[0]||null}}
-  function fill(root,ph){{
-    var d=(day&&day.phase===ph)?day:defDay(ph);
-    root.querySelectorAll('.bt').forEach(function(b){{b.textContent=d?d[b.getAttribute('data-bt')]||'':''}});
-  }}
-  function dayBar(){{
-    var box=$('days');box.textContent='';var list=DAYS.filter(function(d){{return d.phase===s}});
-    box.hidden=!list.length;
-    list.forEach(function(d){{var b=document.createElement('button');b.type='button';b.textContent=d.label;
-      b.setAttribute('aria-pressed',String(day&&day.id===d.id));b.onclick=function(){{day=d;ls('q4-d',d.id);apply()}};box.appendChild(b)}});
-  }}
-  function ls(k,v){{try{{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}}catch(e){{return null}}}}
-  g=ls('q4-g')||g;s=ls('q4-s')||s;day=dayOf(ls('q4-d'));
+  day=dayOf(ls('q4-d'))||dayOf('2026-11-27');
 
-  // ---- W/M + phase
+  // ---- send day drives everything: phase blocks + today lines
   function eff(states,want){{
     if(states.indexOf(want)>=0)return want;
     var wi=ORDER.indexOf(want),best=states[0],bd=99;
     states.forEach(function(x){{var d=Math.abs(ORDER.indexOf(x)-wi);if(d<bd){{bd=d;best=x}}}});
     return best;
   }}
+  function fill(el,ph){{
+    var d=(day&&day.phase===ph)?day:defDay(ph);
+    el.querySelectorAll('.bt').forEach(function(b){{b.textContent=d?d[b.getAttribute('data-bt')]||'':''}});
+  }}
   function apply(){{
-    if(!day||day.phase!==s)day=defDay(s);
-    root.setAttribute('data-g',g);
+    var s=day.phase;
     document.querySelectorAll('.entry').forEach(function(e){{
       var states=e.getAttribute('data-states').split(' '),x=eff(states,s);e.setAttribute('data-s',x);
       var off=x!==s;e.classList.toggle('dim',off);
-      e.querySelector('.off').textContent=off?'Doesn’t send in '+NAME[s]+' · showing '+NAME[x]:'';
+      e.querySelector('.off').textContent=off?'Doesn’t send on '+day.label+' ('+NAME[s]+') · showing '+NAME[x]:'';
       fill(e,x);
     }});
-    dayBar();
-    if(open&&open.classList.contains('entry'))fill(briefIn,open.getAttribute('data-s'));
-    if(open&&open.classList.contains('entry'))brief.setAttribute('data-s',open.getAttribute('data-s'));
-    document.querySelectorAll('button[data-g]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-g')===g))}});
-    document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-s')===s))}});
-    ls('q4-g',g);ls('q4-s',s);
+    var pb=$('band-P');pb.setAttribute('data-s',s);fill(pb,s);
+    if(open&&open.classList.contains('entry')){{brief.setAttribute('data-s',open.getAttribute('data-s'));fill(briefIn,open.getAttribute('data-s'))}}
+    document.querySelectorAll('#days button').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-day')===day.id))}});
+    ls('q4-d',day.id);
   }}
-  document.querySelectorAll('button[data-g]').forEach(function(b){{b.addEventListener('click',function(){{g=b.getAttribute('data-g');apply()}})}});
-  document.querySelectorAll('.tools button[data-s]').forEach(function(b){{b.addEventListener('click',function(){{s=b.getAttribute('data-s');day=null;apply()}})}});
+  document.querySelectorAll('#days button').forEach(function(b){{b.addEventListener('click',function(){{day=dayOf(b.getAttribute('data-day'));apply()}})}});
 
   // ---- view: translate + scale
-  var x=0,y=0,k=1,MIN=0.05,MAX=2,saveT=null;
+  var x=0,y=0,k=1,MIN=0.03,MAX=2,saveT=null;
   function clamp(v,a,b){{return Math.max(a,Math.min(b,v))}}
   function set(){{
     board.style.transform='translate('+x+'px,'+y+'px) scale('+k+')';
     $('zPct').textContent=Math.round(k*100)+'%';
-    clearTimeout(saveT);saveT=setTimeout(function(){{ls('q4-view',JSON.stringify([x,y,k]))}},250);
+    clearTimeout(saveT);saveT=setTimeout(function(){{ls('q4-view2',JSON.stringify([x,y,k]))}},250);
     window.dispatchEvent(new Event('scroll'));
   }}
   function zoomAt(nk,cx,cy){{nk=clamp(nk,MIN,MAX);x=cx-(cx-x)*nk/k;y=cy-(cy-y)*nk/k;k=nk;set()}}
   function centre(){{var r=vp.getBoundingClientRect();return [r.width/2,r.height/2]}}
   function bw(){{return board.scrollWidth}}
   function fit(){{var r=vp.getBoundingClientRect();k=clamp((r.width-24)/bw(),MIN,1);x=(r.width-bw()*k)/2;y=16;set()}}
+  function pos(el){{var l=0,t=0,n=el;while(n&&n!==board){{l+=n.offsetLeft;t+=n.offsetTop;n=n.offsetParent}}return [l,t]}}
   function go(id,nk){{
     var el=$(id);if(!el)return;var r=vp.getBoundingClientRect(),W=r.width-(brief.hidden||r.width<760?0:brief.offsetWidth);
-    var col=el.closest('.col');
+    var col=el.closest('.col')||el,p=pos(col),q=pos(el);
     k=nk||clamp(Math.min(0.62,(W-32)/(col.offsetWidth+40)),MIN,MAX);
-    var cx=col.offsetLeft+col.offsetWidth/2,top=0,n=el;while(n&&n!==board){{top+=n.offsetTop;n=n.offsetParent}}
-    x=W/2-cx*k;y=24-(top-(el===col?0:28))*k;set();where(el.id);
+    if(el.classList.contains('band')){{x=24-(p[0]+40)*k;y=24-q[1]*k;set();where('top');return}}
+    x=W/2-(p[0]+col.offsetWidth/2)*k;y=24-(q[1]-(el===col?0:28))*k;set();
+    where(el.classList.contains('entry')?el.id:'top');
   }}
   $('zIn').onclick=function(){{var c=centre();zoomAt(k*1.25,c[0],c[1])}};
   $('zOut').onclick=function(){{var c=centre();zoomAt(k/1.25,c[0],c[1])}};
@@ -486,17 +534,15 @@ page = f'''<title>Cavaier Q4 Flows</title>
   $('zFit').onclick=fit;
 
   vp.addEventListener('wheel',function(ev){{
-    if(ev.target.closest('.brief,.plan'))return;
     ev.preventDefault();
     var r=vp.getBoundingClientRect(),dy=ev.deltaMode===1?ev.deltaY*16:ev.deltaY,dx=ev.deltaMode===1?ev.deltaX*16:ev.deltaX;
     if(ev.ctrlKey||ev.metaKey){{zoomAt(k*Math.exp(-dy*(Math.abs(dy)<50?0.01:0.0025)),ev.clientX-r.left,ev.clientY-r.top)}}
     else{{if(ev.shiftKey&&!dx){{dx=dy;dy=0}}x-=dx;y-=dy;set()}}
   }},{{passive:false}});
 
-  // drag to pan, two fingers to pinch
   var pts={{}},moved=0,last=null,pinch=null;
   vp.addEventListener('pointerdown',function(ev){{
-    if(ev.button>0||ev.target.closest('.brief,.plan,.hintbar'))return;
+    if(ev.button>0||ev.target.closest('.hintbar'))return;
     pts[ev.pointerId]=[ev.clientX,ev.clientY];vp.setPointerCapture(ev.pointerId);
     var ids=Object.keys(pts);moved=ids.length>1?99:0;last=[ev.clientX,ev.clientY];
     if(ids.length===2){{var a=pts[ids[0]],b=pts[ids[1]];pinch={{d:Math.hypot(a[0]-b[0],a[1]-b[1]),k:k}}}}
@@ -522,18 +568,19 @@ page = f'''<title>Cavaier Q4 Flows</title>
   function where(id){{window.__q4at=id||'top';window.dispatchEvent(new Event('scroll'))}}
   function show(node){{
     if(open)open.classList.remove('sel');open=node;node.classList.add('sel');
-    var id=node.id||node.getAttribute('data-flow');
+    var id=node.getAttribute('data-id'),band=node.closest('.band');
     briefIn.textContent='';briefIn.appendChild($('b-'+id).content.cloneNode(true));
+    brief.setAttribute('data-g',band.getAttribute('data-g')||'W');
     if(node.classList.contains('entry')){{brief.setAttribute('data-s',node.getAttribute('data-s'));fill(briefIn,node.getAttribute('data-s'))}}else brief.removeAttribute('data-s');
-    brief.hidden=false;where(node.classList.contains('entry')?id:'top');
+    brief.hidden=false;where(node.classList.contains('entry')?node.id:'top');
   }}
   function hideBrief(){{brief.hidden=true;if(open)open.classList.remove('sel');open=null}}
   $('briefX').onclick=hideBrief;
   vp.addEventListener('click',function(ev){{
     var a=ev.target.closest('a');if(a)ev.preventDefault();
-    var n=ev.target.closest('.entry,.fhead');if(n)show(n);else if(!ev.target.closest('.brief'))hideBrief();
+    var n=ev.target.closest('.entry,.fhead,.prow');if(n)show(n);else hideBrief();
   }});
-  board.addEventListener('keydown',function(ev){{if(ev.key==='Enter'){{var n=ev.target.closest('.entry,.fhead');if(n)show(n)}}}});
+  board.addEventListener('keydown',function(ev){{if(ev.key==='Enter'){{var n=ev.target.closest('.entry,.fhead,.prow');if(n)show(n)}}}});
 
   // ---- plan drawer
   function setPlan(o){{plan.hidden=!o;$('planBtn').setAttribute('aria-expanded',String(o))}}
@@ -542,7 +589,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
 
   // ---- jump + keys
   var j=$('jump');
-  j.addEventListener('change',function(){{if(j.value){{var el=$(j.value);if(el.classList.contains('entry'))show(el);go(j.value);j.value=''}}}});
+  j.addEventListener('change',function(){{if(j.value){{var el=$(j.value);if(el.classList.contains('entry'))show(el);go(j.value,el.classList.contains('band')?0.35:null);j.value=''}}}});
   document.addEventListener('keydown',function(ev){{
     if(ev.target.closest('input,select,textarea'))return;
     var c=centre(),st=80;
@@ -558,12 +605,13 @@ page = f'''<title>Cavaier Q4 Flows</title>
   }});
 
   function th(){{root.style.setProperty('--toolh',document.querySelector('.tools').offsetHeight+'px')}}th();window.addEventListener('resize',th);
-  window.q4View=function(G,S,D){{g=G;s=S;day=D?dayOf(D):null;apply()}};
+  window.q4View=function(G,S,D){{day=dayOf(D)||defDay(S)||day;apply()}};
+  window.q4Day=function(D){{day=dayOf(D);apply()}};
   window.q4Go=go;window.q4Fit=fit;window.q4Show=function(id){{show($(id))}};
   apply();
-  var v=null;try{{v=JSON.parse(ls('q4-view')||'null')}}catch(e){{}}
+  var v=null;try{{v=JSON.parse(ls('q4-view2')||'null')}}catch(e){{}}
   if(v&&v.length===3&&isFinite(v[0])&&isFinite(v[1])&&v[2]>=MIN&&v[2]<=MAX){{x=v[0];y=v[1];k=v[2];set()}}
-  else if(vp.getBoundingClientRect().width<760)go('F1');else fit();
+  else if(vp.getBoundingClientRect().width<760)go('W-F1');else fit();
 }})();
 </script>
 <script>{LIVE_JS}</script>

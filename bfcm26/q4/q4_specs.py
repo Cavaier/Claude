@@ -754,6 +754,36 @@ F13['emails'].append(dict(id='F13E2', name='One for you', delay='Wait until Sat 
     M('product_feed', source='recommended', count=3), CASE,
     M('cta', label='Shop for yourself', proof=True)]))
 
+# ================================================================= sign-up pop-up (feeds F1 and the W/M blocks)
+POPUP = dict(
+  kick={'pre': 'Early access · Opens Mon Nov 23', 'ea bf cw': '«kick»', 'xmas': 'Christmas', 'late': 'Last minute', 'post': 'Cavaier'},
+  head={'pre': 'Shop Black Friday first.', 'ea': 'Members are shopping now.', 'bf cw': 'Get the gift guide.', 'xmas': 'Christmas, sorted.',
+        'late': 'Too late to ship?', 'post': 'Made to stay on.'},
+  sub={'pre': 'Members shop 30% off everything from Monday, Nov 23. Four days before everyone else.',
+       'ea': 'Join and shop 30% off everything today. On Friday it opens to everyone.',
+       'bf cw': '30% off everything is live. Join for the gift guide, sorted by who it’s for, and one heads-up before it ends.',
+       'xmas': 'Join for the gift guide and the last order date for Christmas delivery.',
+       'late': 'Join and we’ll send the gift card link. It lands in their inbox in a minute.',
+       'post': 'Join for new pieces and first access to the next sale.'},
+  cta={'pre': 'Get early access', 'ea': 'Join & shop 30% off', 'bf cw': 'Send me the guide', 'xmas': 'Send me the dates', 'late': 'Send me the link',
+       'post': 'Join the list'},
+  done_head={'pre': 'You’re in.', 'ea': 'You’re in. Shop now.', 'bf cw xmas late': 'Check your inbox.', 'post': 'Welcome to Cavaier.'},
+  done_sub={'pre': 'Early access opens Monday, Nov 23 at 09:00. We’ll email you the moment it does.',
+            'ea': 'Your early access is open. 30% comes off at checkout.',
+            'bf cw': 'The gift guide is on its way. 30% off everything, applied at checkout.',
+            'xmas': 'Your gift guide and the delivery dates are on their way.', 'late': 'The gift card link is on its way.',
+            'post': 'Your welcome email is on its way.'},
+  done_cta={'pre': 'Add Nov 23 to my calendar', 'ea': 'Shop early access', 'bf cw xmas post': 'Keep shopping', 'late': 'Send a gift card'},
+  teaser={'pre': 'Early access', 'ea': 'Early access is open', 'bf cw': 'Gift guide', 'xmas': 'Christmas dates', 'late': 'Gift card', 'post': 'Join Cavaier'},
+  brief=[
+    ('Why full screen', 'Agreed on desktop: a full-screen form converts best and the page behind is still one click away. On mobile, a full-screen form the moment someone lands from Google is penalised in search ranking (intrusive interstitials), so on mobile it opens after 10 seconds or on the second page view, never on landing, and the close button is always visible.'),
+    ('Klaviyo form', 'Type: Full screen. Step 1 email → step 2 “Who do you shop for?” → success. Adds to the BFCM pop-up list that triggers F1, with hidden property <code>source = POPUP26</code>.'),
+    ('Step 2 = W/M', 'Women / Men / Both buttons write the profile property <code>Gender</code> = “Women”, “Men” or “Both”. Every email shows the men’s version for “Men” and the women’s version otherwise, so this one tap is what makes the W/M blocks right.'),
+    ('Show rules', 'Desktop: after 5 seconds or on exit intent. Mobile: after 10 seconds or on the 2nd page view. Not on cart, checkout or the back-in-stock form. Hide from anyone already subscribed. Closed → show again after 3 days. Teaser tab bottom-left stays after closing.'),
+    ('Copy by date', 'Klaviyo forms don’t switch copy by date: publish the next version on Nov 23 09:00, Nov 27 08:00, Dec 7, the cut-off and Dec 26 (one draft per phase, ready in advance).'),
+    ('No fake urgency', 'No countdowns, no “only today”. The early-access date and the sale itself are the reason.'),
+  ])
+
 # ================================================================= today lines (urgency from the send date)
 # Every «token» in the copy is filled from the row for the day the email sends. Far from a deadline, the reason to act is
 # today’s moment (Black Friday is today, Matte Cuff launches today, order today and it ships Monday). The end date
@@ -763,6 +793,7 @@ def D(id, phase, label, ban, kick, big, head, line, subj, prev, cta, endl, endv,
     return dict(id=id, phase=phase, label=label, default=default, ban=ban, kick=kick, big=big, head=head, line=line, subj=subj, prev=prev,
                 cta=cta, endl=endl, endv=endv, ends=ends, dl=dl)
 DAYS = [
+  D('pre', 'pre', 'Oct 27 – Nov 22', *[''] * 12),
   D('2026-11-23', 'ea', 'Mon 23', 'Early access', 'Early access · opens today', 'Today.', 'Early access opens today.',
     'Members shop 30% off everything first. Everyone else waits until Friday.', 'Early access is open.', 'Members shop first, today.',
     'Shop early access', 'Head start', '4 days', 'then everyone', '4 days, then everyone', True),
@@ -820,6 +851,7 @@ DAYS = [
   D('2026-12-24', 'late', 'Thu 24', 'Christmas Eve', 'Christmas Eve', 'Tonight.', 'Christmas Eve. Still sorted.',
     'A digital gift card lands in their inbox in a minute.', 'Christmas Eve, sorted.', 'A gift card, sent now.',
     'Send a gift card', 'Christmas Eve', 'Instant', 'still in time', 'In their inbox instantly'),
+  D('post', 'post', 'Dec 26 – Jan 10', *[''] * 12),
 ]
 
 FLOWS = [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13]
@@ -877,7 +909,7 @@ PAGE['bottom'] = '''  <section class="card narrow">
       <tr><td class="n"><b>Mon Oct 19</b></td><td>F8 Sunset live. Sunset Flow (YiWP9H) → Manual.</td></tr>
       <tr><td class="n"><b>Tue Oct 27, 09:00</b></td><td>F1–F7, F9 and F11–F13 live. Same hour → Manual: Welcome Series (QVmUhV), Browse Abandonment (RkFCNW), Add to Cart Abandoned (Syiqdb), Checkout Abandoned (Ub2mSt), Customer Winback (VipiiT). Emails waiting in a Manual flow don’t send. Send the one-off winback launch campaign to the lapsed segment.</td></tr>
       <tr><td class="n"><b>Sun Nov 15</b></td><td>F8 off. Nov 16–22: suppress profiles who got both sunset emails and didn’t click.</td></tr>
-      <tr><td class="n"><b>Mon Nov 23</b></td><td>Window emails on: F1E5, F5E4 (from Nov 27), F2E3 (from Nov 27), F6E3, F7E3, F11E3. 09:00: add early-access members from the “browsed, didn’t buy” segment to the F10 list. Everything else switches copy by itself.</td></tr>
+      <tr><td class="n"><b>Mon Nov 23</b></td><td>Pop-up: publish the early-access version at 09:00 (and the Black Friday, Christmas, last-minute and after-Christmas versions on Nov 27, Dec 7, the cut-off and Dec 26). Window emails on: F1E5, F5E4 (from Nov 27), F2E3 (from Nov 27), F6E3, F7E3, F11E3. 09:00: add early-access members from the “browsed, didn’t buy” segment to the F10 list. Everything else switches copy by itself.</td></tr>
       <tr><td class="n"><b>Fri Nov 27, 08:00</b></td><td>Add everyone else from that segment to the F10 list.</td></tr>
       <tr><td class="n"><b>[Cut-off date]</b></td><td>Fill every [cut-off] placeholder once the dates are confirmed. F1E5, F2E3, F5E4, F7E3 → Manual after the cut-off.</td></tr>
       <tr><td class="n"><b>Fri Dec 25</b></td><td>No flow sends: send-time windows skip Christmas Day.</td></tr>

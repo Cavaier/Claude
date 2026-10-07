@@ -48,7 +48,7 @@ td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
 .jump{font:400 13px/1 var(--body);padding:9px 10px;border:1px solid var(--canvas-line);background:var(--canvas-card);color:var(--canvas-fg);max-width:100%}
 
 /* ---- W/M and phase states ---- */
-#root[data-g="W"] .gM,#root[data-g="M"] .gW{display:none!important}
+[data-g="W"] .gM,[data-g="M"] .gW{display:none!important}
 [data-s="pre"] .st:not(.phP),[data-s="ea"] .st:not(.phE),[data-s="bf"] .st:not(.phB),[data-s="cw"] .st:not(.phC),[data-s="xmas"] .st:not(.phX),[data-s="late"] .st:not(.phL),[data-s="post"] .st:not(.phO){display:none!important}
 span.gW:has(>img),span.gM:has(>img){display:block}
 .grid>.gW,.grid>.gM,.tiles>.gW,.tiles>.gM{display:contents}
