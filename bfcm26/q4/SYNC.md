@@ -60,7 +60,8 @@ Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the
 - Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
 - Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; run `push.py EU subjects` and `push.py US subjects` on Nov 23, Nov 27, Dec 1, Dec 7, Dec 18 [cut-off] and Dec 25.
 - Gender backfill from order history: not run yet (needs an explicit go).
+- Pop-ups: `klaviyo/forms.py EU|US` built six draft forms per account (`Q4 Pop-up · Pre-sale` … `After Christmas`), cloned from the live POP-UP form (styles, background image, display rules), steps email → phone → who → done, hidden from cart/checkout. Publish the next one on each switch date and switch the previous one off.
 
 ## What stays manual
 
-Pop-up forms · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
+Publishing the pop-up for each period · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
