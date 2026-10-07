@@ -39,8 +39,8 @@ for ph in ['pre','ea','bf','xmas','late','post']:
     y+=ROWH
 popw=x+80
 secs.append(dict(key='POP',name='Sign-up pop-up · one version per sale period',x=X0,y=Y0,w=popw,h=y+100))
-put('L-POP',dict(name='POP title · Sign-up pop-up',w=6000,h=900,bg=None,S=[['label',0,0,6000,900,0]],
-    I=[T(0,0,0,6000,520,'Sign-up pop-up',480,520,200),T(0,0,560,6000,200,'Full screen · email → who do you shop for → done · copy changes on each date below',90,110,300,MU)]),'PAGE',X0,Y0-1200)
+put('L-POP',dict(name='POP title · Sign-up pop-up',w=7600,h=1000,bg='#ECECEA',S=[['label',0,0,7600,1000,0]],
+    I=[T(0,120,90,7360,520,'Sign-up pop-up',480,520,200),T(0,120,650,7360,200,'Full screen · email → phone → who do you shop for → done · copy changes on each date below',90,110,300,MU)]),'PAGE',X0,Y0-1300)
 # ---------- bands
 SW,DX,PAD=1000,200,80
 yb=Y0+y+100+1800
@@ -54,8 +54,8 @@ SUB={'S':'S1 SMS welcome · S2 the six SMS campaigns · G1–G2 fill in Gender f
      'M':f"{len(Q.FLOWS)} flows · {NE} emails + their texts · profile property Gender = “Men”"}
 BANDTOP={}
 for G,GN,FL in (('S','SMS + profile',Q.SFLOWS),('W','Women',Q.FLOWS),('M','Men',Q.FLOWS)):
-    put(f'L-{G}',dict(name=f'{G} band title · {GN}',w=8000,h=900,bg=None,S=[['label',0,0,8000,900,0]],
-        I=[T(0,0,0,8000,520,GN,480,520,200),T(0,0,560,8000,200,SUB[G],90,110,300,MU)]),'PAGE',X0,yb-1200)
+    put(f'L-{G}',dict(name=f'{G} band title · {GN}',w=8000,h=1000,bg='#ECECEA',S=[['label',0,0,8000,1000,0]],
+        I=[T(0,120,90,7760,520,GN,480,520,200),T(0,120,650,7760,200,SUB[G],90,110,300,MU)]),'PAGE',X0,yb-1300)
     BANDTOP[G]=yb-1200
     x=X0;bandh=0
     for f in FL:
@@ -85,11 +85,12 @@ AX0=X0-1500
 svgp=[];txt=[]
 for i,(key,lab) in enumerate([('M-F1','Email · Men → F1, men’s versions'),('W-F1','Email · Women, Both or skipped → F1, women’s versions'),('S-S1','Phone number → S1 SMS Welcome')]):
     s_=SEC[key];gx=X0-1200+i*300;ty=s_['y']+300;tx=s_['x']-30
-    pts=[(jx,jy),(jx,gy+i*60),(gx,gy+i*60),(gx,ty),(tx,ty)]
+    pts=[(jx,pop['y']+pop['h']),(jx,gy+i*60),(gx,gy+i*60),(gx,ty),(tx,ty)]
     svgp.append('<path d="M'+' L'.join(f'{a-AX0},{b-Y0}' for a,b in pts)+'" fill="none" stroke="#A82C24" stroke-width="24" stroke-linejoin="round"/>')
     svgp.append(f'<path d="M{tx-90-AX0},{ty-60-Y0} L{tx-AX0},{ty-Y0} L{tx-90-AX0},{ty+60-Y0}" fill="none" stroke="#A82C24" stroke-width="24" stroke-linejoin="round"/>')
     txt.append(T(0,s_['x']-AX0,s_['y']-260-Y0,6000,150,lab,120,140,500,'#A82C24',ml=0))
-AW=max(SEC[k]['x'] for k in ('S-S1','W-F1','M-F1'))+200-AX0;AH=SEC['M-F1']['y']+600-Y0
+AW=max(jx+200,max(SEC[k]['x'] for k in ('S-S1','W-F1','M-F1'))+200)-AX0
+svgp.insert(0,f'<circle cx="{jx-AX0}" cy="{pop["y"]+pop["h"]-Y0}" r="40" fill="#A82C24"/>');AH=SEC['M-F1']['y']+600-Y0
 svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{AW}" height="{AH}" viewBox="0 0 {AW} {AH}">'+''.join(svgp)+'</svg>'
 put('A-POP',dict(name='A-POP arrows · pop-up to flows',w=AW,h=AH,bg=None,S=[['arrows',0,0,AW,AH,0]],I=[['v',0,0,0,AW,AH,svg,1]]+txt,back=1),'PAGE',AX0,Y0)
 for k,v in out.items():
