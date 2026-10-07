@@ -60,7 +60,7 @@ Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the
 - Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
 - Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; run `push.py EU subjects` and `push.py US subjects` on Nov 23, Nov 27, Dec 1, Dec 7, Dec 18 [cut-off] and Dec 25.
 - Gender backfill from order history: not run yet (needs an explicit go).
-- Pop-ups: `klaviyo/forms.py EU|US` built six draft forms per account (`Q4 Pop-up · Pre-sale` … `After Christmas`), cloned from the live POP-UP form (styles, background image, display rules), steps email → phone → who → done, hidden from cart/checkout. Publish the next one on each switch date and switch the previous one off.
+- Pop-ups: `klaviyo/forms.py EU|US` built six draft forms per account (`Q4 Pop-up · Pre-sale` … `After Christmas`), built to the Figma design (two B/W photos as the side image, #F2F2F1 panel, logo, red kicker, light headline, black buttons, “Not now”, teaser tab), steps email → phone → who → done, shown after 5 s / exit intent / 2nd page, hidden from cart/checkout. `--replace` rebuilds them. Klaviyo limits: max 6 rows per column; the content column's styles must be null next to a side image; skip links must submit (they re-submit the email list). Publish the next one on each switch date and switch the previous one off.
 
 ## What stays manual
 
