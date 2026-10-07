@@ -25,6 +25,8 @@ if missing: json.dump(missing,open(f'{D}/missing_images.json','w'));print('NEW I
 subprocess.run(['python3',f'{HERE}/compile_q4.py',D],check=True,cwd=HERE)
 CC=json.load(open(f'{D}/compiled.json'));C=CC['emails']
 changed=[i for i in C if i not in fg['emails'] or fg['emails'][i]['hash']!=H([C[i]['spec'],C[i]['brief']])]
+ONLY=set(filter(None,os.environ.get('ONLY','').split(',')))
+if ONLY: changed=[i for i in changed if i in ONLY]
 removed=[i for i in fg['emails'] if i not in C]
 print('changed',len(changed),changed[:12],'removed',removed)
 b=open(f'{HERE}/builder_q4.js').read()
