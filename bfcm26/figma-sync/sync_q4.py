@@ -15,7 +15,7 @@ if cmd=='commit':
     res=json.load(open(sys.argv[3]));C=json.load(open(f'{D}/compiled.json'))['emails']
     fg['sections'].update(res.get('sections',{}))
     for i,v in res.get('emails',{}).items():
-        fg['emails'][i]=dict(em=v['em'],br=v['br'],hash=H([C[i]['spec'],C[i]['brief']]))
+        fg['emails'][i]=dict(em=v['em'],br=v.get('br'),hash=H([C[i]['spec'],C[i]['brief']]))
     json.dump(st,open(ST,'w'),indent=1);print('sync_state: figma',len(fg['emails']),'emails',len(fg['sections']),'sections');sys.exit()
 env={**os.environ,'NODE_PATH':subprocess.run(['npm','root','-g'],capture_output=True,text=True).stdout.strip()}
 subprocess.run(['node',f'{HERE}/extract_q4.js',os.path.join(HERE,'..','q4','cavaier-q4-flows.html'),D],check=True,env=env)
@@ -27,15 +27,20 @@ CC=json.load(open(f'{D}/compiled.json'));C=CC['emails']
 changed=[i for i in C if i not in fg['emails'] or fg['emails'][i]['hash']!=H([C[i]['spec'],C[i]['brief']])]
 ONLY=set(filter(None,os.environ.get('ONLY','').split(',')))
 if ONLY: changed=[i for i in changed if i in ONLY]
+import re
+if os.environ.get('ONLYRE'): changed=[i for i in changed if re.match(os.environ['ONLYRE'],i)]
 removed=[i for i in fg['emails'] if i not in C]
 print('changed',len(changed),changed[:12],'removed',removed)
 b=open(f'{HERE}/builder_q4.js').read()
 secjs=("\nconst SEC={};\nawait figma.loadFontAsync({family:'Figtree',style:'Regular'});\n"
  "async function sec(k,name,x,y,w,h,old){let s=old?await figma.getNodeByIdAsync(old):null;if(!s){s=page.findOne(n=>n.type==='SECTION'&&n.name===name)}"
- "if(!s){s=figma.createSection();page.appendChild(s);s.x=x;s.y=y;s.resizeWithoutConstraints(w,h)}else if(s.height<h||s.width<w){s.resizeWithoutConstraints(Math.max(s.width,w),Math.max(s.height,h))}s.name=name;SEC[k]=s;return s}\n")
+ "if(!s){s=figma.createSection();page.appendChild(s)}s.x=x;s.y=y;s.resizeWithoutConstraints(w,h);s.name=name;SEC[k]=s;return s}\nSEC.PAGE=page;\n")
 for s_ in CC['sections']:
     secjs+=f"await sec({json.dumps(s_['key'])},{json.dumps(s_['name'])},{s_['x']},{s_['y']},{s_['w']},{s_['h']},{json.dumps(fg['sections'].get(s_['key']))});\n"
-rm=''.join(f"{{for(const k of ['{fg['emails'][i]['em']}','{fg['emails'][i]['br']}']){{const a=await figma.getNodeByIdAsync(k);if(a)a.remove()}}}}\n" for i in removed)
+rm=''.join(f"{{for(const k of {json.dumps([fg['emails'][i]['em'],fg['emails'][i].get('br')])}){{const a=k&&await figma.getNodeByIdAsync(k);if(a)a.remove()}}}}\n" for i in removed)
+# frames that did not change: put them where the layout says (section + position), drop briefs the layout no longer has
+mv=[[fg['emails'][i]['em'],C[i]['sec'],C[i]['pos']['x'],C[i]['pos']['y'],fg['emails'][i].get('br') if not C[i]['brief'] else None] for i in C if i in fg['emails'] and i not in changed]
+rm+=('const MV='+json.dumps(mv)+';for(const [id,sk,x,y,br] of MV){const n=await figma.getNodeByIdAsync(id);if(n){if(n.parent!==SEC[sk])SEC[sk].appendChild(n);n.x=x;n.y=y}if(br){const a=await figma.getNodeByIdAsync(br);if(a)a.remove()}}\n') if mv else ''
 batches=[];cur=[];base=len(b)+len(secjs)+300;size=base+len(rm)
 order=sorted(changed,key=lambda i:(i.split('-')[0]!='POP',list(C).index(i)))
 for i in order:
@@ -45,11 +50,12 @@ for i in order:
 batches.append(cur)
 for f in [x for x in os.listdir(HERE) if x.startswith('q4batch')]: os.remove(f'{HERE}/{f}')
 for n,bt in enumerate(batches):
-    code=b+secjs+'const R={emails:{},sections:{}};for(const k in SEC)R.sections[k]=SEC[k].id;\n'+(rm if n==0 else '')
+    code=b+secjs+'const R={emails:{},sections:{}};for(const k in SEC)if(k!=="PAGE")R.sections[k]=SEC[k].id;\n'+(rm if n==0 else '')
     for i in bt:
         e=C[i];p=e['pos'];o=fg['emails'].get(i,{})
+        brj=(f"const br=await brief({json.dumps(e['brief'],separators=(',',':'))},{p['x']},{p['by']},{json.dumps(o.get('br'))},P);" if e['brief'] else 'const br=null;')
         code+=(f"{{const P=SEC[{json.dumps(e['sec'])}];const em=await build({spec_js(e['spec'])},{p['x']},{p['y']},{json.dumps(o.get('em'))},P);\n"
-               f"const br=await brief({json.dumps(e['brief'],separators=(',',':'))},{p['x']},{p['by']},{json.dumps(o.get('br'))},P);R.emails[{json.dumps(i)}]={{em:em.id,br:br.id}};}}\n")
+               f"{brj}R.emails[{json.dumps(i)}]={{em:em.id,br:br&&br.id}};}}\n")
     code+='return R;'
     if bt or rm or n==0: open(f'{HERE}/q4batch{n:02d}.js','w').write(code)
 print('batches',[len(x) for x in batches])

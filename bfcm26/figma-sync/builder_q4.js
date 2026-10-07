@@ -11,8 +11,8 @@ async function build(E,X,Y,old,PAR){
   // edit the existing frame in place: find it by id, else by its code in the name (e.g. "03-A"); keep the frame, its position and parent
   let em=old?await figma.getNodeByIdAsync(old):null;
   if(!em||em.type!=='FRAME'){const code=E.name.split(' · ')[0];em=PAR.findOne(n=>n.type==='FRAME'&&n.name.startsWith(code+' ·'))}
-  if(em){for(const c of [...em.children])c.remove();em.name=E.name}else{em=figma.createFrame();em.name=E.name;PAR.appendChild(em);em.x=X;em.y=Y}
-  em.resize(E.w,E.h);em.fills=[solid(E.bg)];em.clipsContent=true;
+  if(em){for(const c of [...em.children])c.remove();em.name=E.name;if(em.parent!==PAR)PAR.appendChild(em);em.x=X;em.y=Y}else{em=figma.createFrame();em.name=E.name;PAR.appendChild(em);em.x=X;em.y=Y}
+  if(E.back&&PAR.children[0]!==em)PAR.insertChild(0,em);em.resize(E.w,E.h);em.fills=E.bg?[solid(E.bg)]:[];em.clipsContent=true;
   const secs=E.S.map(s=>{if(s[0]==='FOOTER'&&FOOT){const ins=FOOT.createInstance();em.appendChild(ins);ins.x=s[1];ins.y=s[2];return null}const f=figma.createFrame();f.name=s[0];em.appendChild(f);f.x=s[1];f.y=s[2];f.resize(Math.max(1,s[3]),Math.max(1,s[4]));f.fills=[];f.clipsContent=!!s[5];return f});
   for(const it of E.I){const s=E.S[it[1]];const P=secs[it[1]];const x=it[2]-s[1],y=it[3]-s[2],w=Math.max(.5,it[4]),h=Math.max(.5,it[5]);let n;
     if(it[0]==='r'){n=figma.createRectangle();n.resize(w,h);n.fills=it[6]?[solid(it[6],it[7])]:[];if(it[9]){n.strokes=[solid(it[9],it[7])];n.strokeWeight=it[10];n.strokeAlign='INSIDE';if(it[11])n.dashPattern=[4,3]}if(it[8])n.cornerRadius=it[8];n.name='bg'}
