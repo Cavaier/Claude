@@ -1,0 +1,16 @@
+{
+  "name": "Cavaier footer BRACELETS + NECKLACES links",
+  "id": "cavaier-footer-buttons",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma",
+    "dev"
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
