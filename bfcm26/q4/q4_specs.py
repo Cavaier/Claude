@@ -456,7 +456,7 @@ F6['emails'].append(dict(id='F6E1', name='Thank you', delay='1 hour after', dela
   klaviyo='Trigger Placed Order. Smart sending off. ' + DATE + ' ' + GEN,
   modules=[
     M('headline', title='Thank you.', sub='Your order is confirmed. Here’s what happens next.'),
-    M('steps', items=['We pack it, with the jewelry case if you chose 2+ pieces.', 'It ships with tracking: [delivery times to confirm].', 'Put it on. Leave it on.']),
+    M('steps', items=['We pack it, with the jewelry case if you chose 2+ pieces.', 'It ships within 24 hours, with tracking.', 'Put it on. Leave it on.']),
     M('section_header', title={'pre post': 'Complete the look', 'ea bf cw': 'While it’s 30% off', 'xmas': 'Their gift, sorted', 'late': 'Last-minute gifts'},
       label={'pre post': 'Case with 2+', 'ea bf cw': '30% off', 'xmas': 'Order by [cut-off]', 'late': 'Gift cards'}),
     GUIDE,
@@ -781,18 +781,18 @@ DAYS = [
   D('2026-11-28', 'bf', 'Sat 28', 'New today', 'New today · Matte Cuff', 'New.', 'The Matte Cuff is here.',
     'It launches today, at 30% off with everything else.', 'New today: Matte Cuff.', 'Launch day, at 30% off.',
     'Shop 30% off', 'New today', 'Matte Cuff', 'launch day', 'Matte Cuff, 30% off'),
-  D('2026-11-29', 'bf', 'Sun 29', 'Black Friday weekend', 'Black Friday weekend', 'Sunday.', 'Order today, it ships [Monday].',
-    '30% off everything. Order today and you’re first in line on [Monday].', 'Sunday, 30% off.', 'Order today, ships [Monday].',
-    'Shop 30% off', 'Order today', 'Ships [Mon]', 'first in line', 'Ships [Monday]'),
+  D('2026-11-29', 'bf', 'Sun 29', 'Black Friday weekend', 'Black Friday weekend · Sunday', 'Sets.', 'Sunday is for Sets.',
+    'Three pieces in one tap, the jewelry case included, and 30% off.', 'Sunday, 30% off Sets.', 'Three pieces, case included.',
+    'Shop the Sets', 'Today', 'Sets', 'case included', 'Sets, 30% off + case'),
   D('2026-11-30', 'bf', 'Mon 30', 'Cyber Monday', 'Cyber Monday · today', 'Today.', 'It’s Cyber Monday.',
     '30% off everything, taken off at checkout. No code.', 'It’s Cyber Monday.', 'Cyber Monday: 30% off everything.',
     'Shop Cyber Monday', 'Today', 'Cyber Monday', '30% off everything', 'Cyber Monday, 30% off'),
   D('2026-12-01', 'cw', 'Tue 1', 'Cyber Week', 'Cyber Week · starts today', 'This week.', '30% off. This week only.',
     'Cyber Week is the last stretch of the sale. 30% off everything, still.', 'This week only.', '30% off everything, still.',
     'Shop 30% off', 'Cyber Week', 'This week', 'last stretch', '30% off, this week only', True),
-  D('2026-12-02', 'cw', 'Wed 2', 'Cyber Week', 'Cyber Week', 'Today.', 'Order today, wear it [Friday].',
-    'Still 30% off everything. Order today and it’s with you by [Friday].', 'Wear it this weekend.', 'Order today, 30% off.',
-    'Shop 30% off', 'Order today', 'By [Fri]', 'with you', 'With you by [Friday]'),
+  D('2026-12-02', 'cw', 'Wed 2', 'Cyber Week', 'Cyber Week · gift early', 'Gifts.', 'Christmas gifts, at 30% off.',
+    'Get the Christmas gifts done now, at 30% off. After Sunday, full price.', 'Christmas gifts, 30% off.', 'Gift now, before full price.',
+    'Shop gifts at 30% off', 'Gifts', '30% off', 'until Sunday', 'Christmas gifts, 30% off'),
   D('2026-12-03', 'cw', 'Thu 3', 'Ends this Sunday', 'Ends this Sunday', 'Sunday.', '30% ends this Sunday.',
     'Four days left at 30% off. Then everything goes back to full price.', 'Ends this Sunday.', 'Four days left at 30%.',
     'Shop 30% off', '30% off ends', 'Sunday', 'at midnight', 'This Sunday, midnight'),
@@ -865,7 +865,7 @@ PAGE['top'] = '''  <section class="card narrow" style="border-color:var(--red)">
 PAGE['urgency'] = '''
   <section class="card narrow">
     <span class="kicker">Urgency · every email sells today</span>
-    <p class="notes" style="color:inherit;font-size:14px">The reason to act comes from the day the email sends, not from the end of the sale. On Nov 27 the email says “It’s Black Friday”, on Nov 28 “The Matte Cuff launches today”, on Dec 2 “Order today, wear it [Friday]”. “Sun Dec 6” only leads from Thu Dec 3, and “Tonight” only on Dec 6. Same for Christmas: “In time” first, then “[3] days left”, then “Last day”. Use the day buttons under the phases to see each day. In Klaviyo it’s one saved block with one line per date.</p>
+    <p class="notes" style="color:inherit;font-size:14px">The reason to act comes from the day the email sends, not from the end of the sale. On Nov 27 the email says “It’s Black Friday”, on Nov 28 “The Matte Cuff launches today”, on Nov 29 “Sunday is for Sets”, on Dec 2 “Christmas gifts, at 30% off”. “Sun Dec 6” only leads from Thu Dec 3, and “Tonight” only on Dec 6. Same for Christmas: “In time” first, then “[3] days left”, then “Last day”. Use the day buttons under the phases to see each day. In Klaviyo it’s one saved block with one line per date.</p>
     <div class="tbl" style="border:0"><table style="min-width:0"><thead><tr><th>Day</th><th>Big word</th><th>Headline</th><th>Subject</th><th>Preview</th><th>Today row</th></tr></thead><tbody>{day_rows}</tbody></table></div>
   </section>
 '''

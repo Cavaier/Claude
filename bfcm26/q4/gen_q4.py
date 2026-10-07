@@ -46,7 +46,7 @@ def load_img(k):
 def img(k, alt='', style='', cls=''):
     if isinstance(k, dict):
         return f'<span class="gW">{img(k["W"], alt, style, cls)}</span><span class="gM">{img(k["M"], alt, style, cls)}</span>'
-    if k != 'logo':
+    if k != 'logo' and not k.startswith('ic_'):
         assert k.startswith('lf_') and k[3:] in LF or k in P, f'unknown image {k}'
     USED.add(k)
     return f'<img data-k="{k}" alt="{H.escape(alt)}"' + (f' class="{cls}"' if cls else '') + (f' style="{style}"' if style else '') + '>'
@@ -264,12 +264,10 @@ def strip(banner):
     return '<div class="strip">' + t({k: one(v) for k, v in banner.items()}) + '</div>'
 
 def foot():
-    return ('<footer class="foot"><div class="soc">'
-            '<a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></a>'
-            '<a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7"/></svg></a>'
-            '<a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.6V3.7a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.6V13h2.7v8"/></svg></a></div>'
-            '<div class="fnav"><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Men</a><a class="fb" href="#">Women</a><a class="fb" href="#">Men’s Sets</a><a class="fb" href="#">Women’s Sets</a></div>'
-            f'<p class="fwm">{img("logo", "Cavaier", "width:64px;height:10.7px", "logo")}</p>'
+    ic = lambda k, lab, sz: f'<a href="#" aria-label="{lab}">{img(k, lab, f"width:{sz}px;height:{sz}px", "ic")}</a>'
+    return ('<footer class="foot"><div class="soc">' + ic('ic_ig', 'Instagram', 28) + ic('ic_tt', 'TikTok', 28) + ic('ic_fb', 'Facebook', 30) + '</div>'
+            '<div class="fnav"><a class="fb on" href="#">Shop all</a><a class="fb" href="#">Bracelets</a><a class="fb" href="#">Necklaces</a></div>'
+            f'<p class="fwm">{img("logo", "Cavaier", "width:80px;height:13.4px", "logo")}</p>'
             '<p class="copy2">© Copyright 2026 Cavaier</p><div class="legal"><span>Manage preferences</span><span>Unsubscribe</span></div></footer>')
 
 def email_html(e):
@@ -330,7 +328,9 @@ map_rows = ''.join(
 jump_opts = ''.join(f'<option value="{f["id"]}">{f["id"]} · {f["name"]}</option>' +
                     ''.join(f'<option value="{e["id"]}">&nbsp;&nbsp;&nbsp;{e["id"]} · {e["name"]}</option>' for e in f['emails']) for f in FLOWS)
 
-IMGDATA = {k: load_img(k) for k in sorted(USED - {'logo'})}
+IMGDATA = {k: load_img(k) for k in sorted(USED - {'logo', 'ic_ig', 'ic_tt', 'ic_fb'})}
+for _k in ('ig', 'tt', 'fb'):
+    IMGDATA['ic_' + _k] = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(HERE, 'icons', _k + '.png'), 'rb').read()).decode()
 IMGDATA['logo'] = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(HERE, 'logo0.png'), 'rb').read()).decode()
 
 CSS = open(os.path.join(HERE, 'q4.css')).read() + '\n' + open(os.path.join(HERE, 'live_css.css')).read() + '\n' + open(os.path.join(HERE, 'canvas.css')).read()
