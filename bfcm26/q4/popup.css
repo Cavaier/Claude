@@ -41,3 +41,12 @@
 .fake .fg{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fake .fg span{height:180px;background:#EFEFED}
 .ptz{position:absolute;left:14px;bottom:24px;background:#0B0B0B;color:#fff;font:500 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;padding:13px 16px}
 .ptz b{font-weight:400;margin-left:6px}
+.pin.tel{gap:14px}
+.pin.tel .cc{color:#0B0B0B;padding-right:14px;border-right:1px solid #DCDCDA}
+.pf.jr .pscreen.jcard{width:620px;height:750px;padding:44px 46px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px;background:#fff;border:3px solid var(--red)}
+.jcard .jk{margin:14px 0 0;font:500 11px/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.jcard .jk:first-child{margin-top:0}
+.jcard .jh{margin:0;font:300 40px/1.05 var(--body);letter-spacing:-.025em}
+.jcard .jsub{margin:2px 0 0;font:300 15px/1.5 var(--body);color:#3A3A38}
+.jcard ol{margin:6px 0 0;padding:0 0 0 20px;font:400 15px/1.45 var(--body)}
+.jcard ol li+li{margin-top:4px}

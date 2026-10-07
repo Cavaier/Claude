@@ -854,10 +854,208 @@ DAYS = [
   D('post', 'post', 'Dec 26 – Jan 10', *[''] * 12),
 ]
 
+
+# ================================================================= SMS (Klaviyo SMS, both accounts)
+# SMS goes out only at the highest-intent moments. Texts: plain GSM-7 characters only (straight ' and ", no – ’ … €),
+# "Cavaier:" first, one shortened link, Klaviyo appends the opt-out line. One text = 160 characters, so every SMS
+# below is checked to stay one segment with the link and the opt-out line counted.
+SMS_KL = ('SMS block in the same flow. Conditional split before it: <code>Can receive SMS marketing</code> = true. '
+          'SMS smart sending 24 h (one text a day at most). Quiet hours on: nothing between 20:00 and 10:00 recipient-local, texts wait until 10:00. '
+          'Link: Klaviyo shortens it (counted as 23 characters). Opt-out line added by Klaviyo.')
+def T(id, name, delay, delay_short, phases, text, goal, klaviyo='', notes='', product=None):
+    return dict(kind='sms', id=id, name=name, delay=delay, delay_short=delay_short, phases=list(phases), text=text, goal=goal,
+                klaviyo=(klaviyo + ' ' + SMS_KL).strip(), notes=notes, product=product)
+
+def _after(flow, eid, entry):
+    i = [e['id'] for e in flow['emails']].index(eid); flow['emails'].insert(i + 1, entry)
+
+_after(F2, 'F2E1', T('F2T1', 'Browse text', '+3 hours', '+3h', ['ea', 'bf', 'cw'],
+  {'ea': "Cavaier: The {product} you looked at is 30% off for members today. No code: {link}",
+   'bf cw': "Cavaier: The {product} you looked at is 30% off today. No code needed: {link}"},
+  goal='One text, only while 30% is on: browse texts outside the sale cost more than they make.',
+  klaviyo='Filter: no Added to Cart, Checkout Started or Placed Order since the trigger. Product name from <code>event.ProductName</code>.',
+  product={'W': 'Braid Bracelet', 'M': '3x Minimal Set'}))
+_after(F4, 'F4E1', T('F4T1', 'Cart text', '+2 hours', '+2h', ALL,
+  {'pre post': "Cavaier: Your {product} is still in your cart. Waterproof, made to stay on: {link}",
+   'ea': "Cavaier: Your cart is saved and 30% comes off at checkout. Members only until Friday: {link}",
+   'bf cw': "Cavaier: Your cart is saved and 30% comes off at checkout. No code needed: {link}",
+   'xmas': "Cavaier: Your cart is saved. Order by [cut-off] for Christmas delivery: {link}",
+   'late': "Cavaier: Your cart won't arrive by Christmas, a gift card will. Sent in a minute: {link}"},
+  goal='Second touch on a cart, three hours after it was left, while the email sits unopened.',
+  klaviyo='Filter: no Checkout Started or Placed Order since the trigger. Link: the cart URL from the event.',
+  product={'W': 'Braid Bracelet', 'M': '3x Minimal Set'}))
+_after(F5, 'F5E1', T('F5T1', 'Checkout text', '+1 hour', '+1h', ALL,
+  {'pre post': "Cavaier: One step left. Your checkout is saved, shipping included: {link}",
+   'ea bf cw': "Cavaier: One step left. Your 30% is already applied at checkout: {link}",
+   'xmas': "Cavaier: One step left. Order by [cut-off] and it arrives for Christmas: {link}",
+   'late': "Cavaier: Too late to ship this one. A gift card arrives in a minute instead: {link}"},
+  goal='The highest-value text in the system: a started checkout, 1 h 45 min old, one tap from done.',
+  klaviyo='Filter: no Placed Order since the trigger. Link: <code>event.extra.responsive_checkout_url</code>. Smart sending off for this text.'))
+_after(F7, 'F7E1', T('F7T1', 'Customers-first text', '+3 hours', '+3h', ['ea', 'xmas'],
+  {'ea': "Cavaier: Customers first. You shop 30% off everything before Black Friday. No code: {link}",
+   'xmas': "Cavaier: Christmas gifts, sorted by who they're for. Order by [cut-off] for delivery: {link}"},
+  goal='Past customers with a phone number get the early-access news by text the day they enter.',
+  klaviyo='Filter: no Placed Order since entering.'))
+_after(F9, 'F9E1', T('F9T1', 'Back in stock text', 'Same time', '0', ALL,
+  {'pre ea xmas late post': "Cavaier: It's back. The {product} you asked about is in stock again: {link}",
+   'bf cw': "Cavaier: It's back, and 30% off. The {product} you asked about is in stock: {link}"},
+  goal='Restocks sell out again fast. The text lands first; the email follows with the details.',
+  klaviyo='Smart sending off. Product name and URL from the Back in Stock event.',
+  product={'W': 'Crystal Necklace', 'M': 'Cuban Necklace'}))
+
+# ---- SMS-only flows, the SMS campaigns, and the gender flows (their own band, not split by women / men)
+S1 = dict(id='S1', name='SMS Welcome', trigger_short='Subscribed to SMS', replaces='NEW (no SMS welcome today)',
+  trigger='Subscribed to Text Messaging Marketing (any source: pop-up step 2, checkout, back-in-stock form)',
+  filters='Never been in this flow', exits='Placed Order',
+  live='Oct 27 → Jan 10', sms=True,
+  why='The EU account already collects about 1,000 phone numbers a month through the current pop-up and sends them almost nothing. A welcome text right after sign-up is the most-read message they will ever get from Cavaier.',
+  emails=[
+    T('S1T1', 'You\'re on the text list', 'Immediately', '0', ALL,
+      {'pre': "Cavaier: You're on the text list. Early access opens Mon Nov 23 and the link comes here first: {link}",
+       'ea': "Cavaier: You're in. Members shop 30% off everything now, before Black Friday. No code needed: {link}",
+       'bf cw': "Cavaier: You're in. 30% off everything is live, taken off at checkout. Start with the gift guide: {link}",
+       'xmas': "Cavaier: You're in. Order by [cut-off] for Christmas delivery. Gifts sorted by who they're for: {link}",
+       'late': "Cavaier: Too late to ship? Send a digital gift card. It lands in their inbox in a minute: {link}",
+       'post': "Cavaier: Welcome. Jewelry made to stay on: waterproof, steel, every day. Start here: {link}"},
+      goal='Confirm the sign-up and hand over the one link that matters this week.',
+      klaviyo='Sends straight away (quiet hours still apply). Smart sending off.'),
+    T('S1T2', 'Still deciding?', '+2 days', '+2d', ['ea', 'bf', 'cw', 'xmas'],
+      {'ea': "Cavaier: Early access ends Thursday. Your 30% off is still waiting, no code: {link}",
+       'bf cw': "Cavaier: Still deciding? Sets are 30% off and come with the jewelry case: {link}",
+       'xmas': "Cavaier: Christmas cut-off is [cut-off]. Best sellers, ready to gift: {link}"},
+      goal='One nudge in the sale weeks for sign-ups who haven\'t ordered. Nothing in pre-sale or after Christmas.',
+      klaviyo='Filter: no Placed Order since entering.')])
+
+S2 = dict(id='S2', name='SMS Campaigns · Sale Moments', trigger_short='SMS subscribers, scheduled', replaces='NEW · campaigns, not a flow',
+  trigger='Six campaigns to the segment “Can receive SMS marketing”, scheduled now for the dates below',
+  filters='Exclude: Placed Order in the last 2 days · got any SMS in the last 20 hours · Unengaged sunset group',
+  exits='—', live='Nov 23 → Dec 22', sms=True, campaign=True,
+  why='Date moments (early access opens, Black Friday, Cyber Monday, last hours, the Christmas cut-off) are the same for everyone, so they are campaigns, not flows. A flow with “wait until date” steps would send yesterday\'s alert to anyone who joins late. Six texts across five weeks, never two in a day.',
+  emails=[
+    T('S2C1', 'Early access opens', 'Mon Nov 23, 09:00', 'Mon Nov 23, 09:00', ['ea'],
+      "Cavaier: Early access is open. 30% off everything for members, 4 days before Black Friday. No code: {link}",
+      goal='The biggest text of the season: the first hour of early access.', klaviyo='Campaign. Send 09:00 in each recipient\'s time zone (Klaviyo local time).'),
+    T('S2C2', 'Black Friday', 'Fri Nov 27, 08:00', 'Fri Nov 27, 08:00', ['bf'],
+      "Cavaier: It's Black Friday. 30% off everything, jewelry case included with 2+ pieces: {link}",
+      goal='Black Friday opens for everyone.', klaviyo='Campaign, recipient-local time. US: not before 08:00 local.'),
+    T('S2C3', 'Cyber Monday', 'Mon Nov 30, 12:00', 'Mon Nov 30, 12:00', ['bf'],
+      "Cavaier: Cyber Monday. 30% off everything, applied at checkout. No code: {link}",
+      goal='Second-biggest day. Midday, when phones are in hand.', klaviyo='Campaign, recipient-local time.'),
+    T('S2C4', 'Last hours', 'Sun Dec 6, 18:00', 'Sun Dec 6, 18:00', ['cw'],
+      "Cavaier: Last hours. 30% off ends tonight at midnight, then full price: {link}",
+      goal='The real deadline, once, six hours before it.', klaviyo='Campaign, recipient-local time.'),
+    T('S2C5', 'Christmas cut-off', '[Cut-off day], 10:00', '[cut-off], 10:00', ['xmas'],
+      "Cavaier: Today is the last day to order for Christmas delivery. Gifts by who they're for: {link}",
+      goal='The cut-off is a real deadline and texts get read the same hour.', klaviyo='Campaign. One per region if the cut-off dates differ.'),
+    T('S2C6', 'Gift card, last minute', 'Tue Dec 22, 10:00', 'Tue Dec 22, 10:00', ['late'],
+      "Cavaier: Too late to ship? A Cavaier gift card lands in their inbox in a minute: {link}",
+      goal='Saves the last-minute buyer who thinks it\'s too late.', klaviyo='Campaign, recipient-local time.')])
+
+def STEP(id, kind, title, rows, delay_short=None):
+    return dict(kind='step', id=id, step=kind, title=title, rows=rows, delay_short=delay_short, phases=ALL)
+MEN_CATS = ['For Him', "Men's Sets", 'Men Necklace', 'You may also like - Men - Necklace', 'Für Ihn', 'Herrensets', 'Halskette für Herren',
+            'Pour Lui', 'Ensembles pour hommes', 'Collier pour homme', 'Para Él', 'Conjuntos para Hombres', 'Collar para hombre', 'Per Lui',
+            'Set da uomo', 'Collana da uomo', 'Voor Hem', 'Heren Sets', 'Herenketting', 'Dla niego', 'Zestawy męskie', 'Naszyjnik męski',
+            'För honom', 'Herrset', 'Halsband med manmotiv', 'For ham', 'Herresett', 'Menn Halskjede', 'Conjuntos Masculinos', 'בשבילו',
+            'סטים לגברים', 'مجموعات الرجال', '給他', '男士套裝', '男士項鍊']
+WOMEN_CATS = ['For Her', "Women's Sets", 'Women Necklace', 'You may also like - Women - Necklace', 'Für Sie', 'Damen-Sets', 'Damenhalskette',
+              'Pour Elle', 'Ensembles pour femmes', 'Collier pour femmes', 'Para Ella', 'Conjuntos de Mujer', 'Collar para mujer', 'Per Lei',
+              'Completi da donna', 'Collana da donna', 'Voor haar', 'Damessets', 'Damesketting', 'Dla Niej', 'Zestawy damskie', 'För henne',
+              'Damset', 'Halsband för kvinnor', 'For henne', 'Kvinnesmykke', 'Para Ela', 'Conjuntos de Mulher', 'בשבילה', 'סטים לנשים',
+              'مجموعات النساء', '為她', '女裝套裝', '女士項鍊']
+G1 = dict(id='G1', name='Gender from Orders', trigger_short='Ordered Product', replaces='NEW',
+  trigger='Ordered Product · profile filter: <code>Gender</code> is not set',
+  filters='Never overwrites: anyone with a Gender (pop-up answer or an earlier match) is filtered out at the trigger',
+  exits='—', live='Oct 27 → for good (keep it after Q4)', util=True,
+  why='Without a Gender, people get the women\'s version. Ordered Product carries the product\'s collections and tags in English on both stores (“For Him”, “Men\'s Sets”, tag “man”; “For Her”, “Women\'s Sets”, tag “women”), so a past order is the most reliable signal. One-off backfill on push: Claude sets Gender for every existing customer from their order history through the API.',
+  emails=[
+    STEP('G1a', 'Split', 'What have they ordered, ever?',
+         [['Only men\'s pieces', '→ Gender = Men'], ['Only women\'s pieces', '→ Gender = Women'], ['Both', '→ Gender = Both']]),
+    STEP('G1b', 'Update profile', 'Write it down',
+         [['Gender', 'Men · Women · Both'], ['Gender source', 'order'], ['Gender set on', 'today']]),
+  ])
+G2 = dict(id='G2', name='Gender from Browsing', trigger_short='Viewed Product', replaces='NEW',
+  trigger='Viewed Product · profile filter: <code>Gender</code> is not set',
+  filters='Never overwrites a pop-up answer or an order match · re-checks on every view until it can decide',
+  exits='—', live='Oct 27 → for good', util=True,
+  why='Most sign-ups haven\'t ordered yet. Two or more product views on one side and none on the other is a clear signal. Mixed browsing (common in gift season) sets nothing, so they keep the women\'s default until an order or the pop-up answers it.',
+  emails=[
+    STEP('G2a', 'Wait', '1 hour', [['Let the visit finish', 'so one session counts as a whole']], delay_short=None),
+    STEP('G2b', 'Split', 'Product views in the last 14 days',
+         [['2+ men\'s, no women\'s', '→ Gender = Men'], ['2+ women\'s, no men\'s', '→ Gender = Women'], ['Mixed or only 1 view', '→ nothing yet']]),
+    STEP('G2c', 'Update profile', 'Write it down',
+         [['Gender', 'Men · Women'], ['Gender source', 'browsing'], ['Gender set on', 'today']]),
+  ])
+SFLOWS = [S1, S2, G1, G2]
+
+# ---- winback, second purchase and sunset: bulk-add the whole segment instead of waiting for people to cross the line
+F7.update(trigger_short='Last order 120+ days · bulk add',
+  trigger='Added to List “Q4 · Winback”. Mon Nov 23, 09:00: add everyone in the segment “last order 120+ days ago”. Mon Dec 7, 09:00: add the people who crossed 120 days since. “Never been in this flow” stops repeats.',
+  live='Nov 23 → Jan 10',
+  why='A segment trigger only fires on the day someone crosses 120 days, so in a six-week sale it would reach a handful of people. The lapsed customers worth reaching are already in the segment: thousands of them, from earlier in 2026 and before. Adding the whole segment to a list on the day early access opens sends every one of them the flow. The current winback made €231 from 11,172 sends in Q4 2025 (€0.02 per recipient).')
+F7['emails'][0].update(delay='On entry (Nov 23 or Dec 7, 09:00)', delay_short='0')
+F11.update(trigger_short='1 order, 30–119 days ago · bulk add',
+  trigger='Added to List “Q4 · Second purchase”. Thu Nov 19, 09:00: add everyone in the segment “exactly 1 order, last order 30–119 days ago”. Mon Dec 7, 09:00: add the people who entered the segment since. F7 takes over at 120 days.',
+  live='Nov 19 → Jan 10',
+  why='Same reason as F7: a segment trigger would only catch people on the day they cross 30 days. Adding the whole segment on Nov 19 means every one-time buyer gets “early access Monday”, then the sale. They already trust the product, and in Q4 they buy for themselves and for others.')
+F11['emails'][0].update(delay='On entry (Nov 19 or Dec 7, 09:00)', delay_short='0')
+F8.update(trigger_short='No click in 120 days · bulk add',
+  trigger='Added to List “Q4 · Sunset”. Mon Oct 19, 09:00: add everyone in the segment “subscribed 120+ days, no click and no order in 120 days” (clicks, not opens: Apple Mail fakes opens).',
+  why='Inbox placement decides Black Friday. A segment trigger would only catch people the day they hit 120 days; the problem is everyone already past it. Ask them all once, keep the ones who click, suppress the rest before Nov 23.')
+
+# ---- pop-up: phone number becomes step 2 (the current EU form already collects about 1,000 a month)
+POPUP.update(
+  sms_head={'pre': 'Get the early access text.', 'ea bf cw': 'Get the last-call text.', 'xmas': 'Get the cut-off text.',
+            'late': 'Get the gift card by text.', 'post': 'Get first access by text.'},
+  sms_sub={'pre': 'We text you the link the moment early access opens on Nov 23. A few texts a season, never more than one a day.',
+           'ea': 'One text before early access ends, one when Black Friday opens. That’s all.',
+           'bf cw': 'One text before 30% off ends on Dec 6, and the Christmas cut-off. Never more than one a day.',
+           'xmas': 'We text you on the last order day for Christmas delivery.',
+           'late': 'The gift card link, straight to your phone. It’s sent in a minute.',
+           'post': 'New pieces and the next sale, by text, before anyone else.'},
+  sms_fine='By tapping “Text me” you agree to receive recurring automated marketing texts from Cavaier at this number. Consent is not a condition of purchase. Msg & data rates may apply. Reply STOP to opt out, HELP for help. Privacy Policy.')
+POPUP['brief'][1] = ('Klaviyo form', 'Type: Full screen. Step 1 email → step 2 phone number (SMS consent, skippable) → step 3 “Who do you shop for?” → success. Email adds to the BFCM pop-up list that triggers F1 (hidden property <code>source = POPUP26</code>); the phone number adds SMS consent, which triggers S1.')
+POPUP['brief'].insert(2, ('Step 2 = SMS', 'Phone number with a country picker defaulting to the visitor’s country. Klaviyo shows the legal consent text under the button; keep it. The current EU form (SyHM2E) already collects about 1,000 numbers a month, so leaving the phone step out would cost about a thousand SMS subscribers a month in the busiest season.'))
+POPUP['brief'][3] = ('Step 3 = W/M', POPUP['brief'][3][1])
+
+# ---- what each period's sign-ups get next (journey card at the end of each pop-up row)
+JOURNEY = {
+  'pre': ['F1 welcome, pre-sale versions: E1–E4 over four days', 'E6 the morning early access opens (Nov 23), E7 on Black Friday', 'Phone → S1T1 now, then the SMS campaigns'],
+  'ea': ['F1 welcome, early-access versions: E1–E5, one a day', 'E7 on Black Friday if they haven’t ordered', 'Phone → S1T1 now, S1T2 two days later'],
+  'bf': ['F1 welcome, 30% versions: E1–E5, one a day', 'Last-hours email and text before Dec 6 midnight', 'Phone → S1T1 now, S1T2 two days later'],
+  'xmas': ['F1 welcome, Christmas versions with the cut-off: E1–E5', 'Cut-off campaign on the last order day', 'Phone → S1T1 now, S1T2 two days later'],
+  'late': ['F1 welcome, gift-card versions: E1–E4', 'Gift card link in every message', 'Phone → S1T1 with the gift card link'],
+  'post': ['F1 welcome, after-Christmas versions: E1–E4', 'Back to the evergreen welcome on Jan 10', 'Phone → S1T1 now'],
+}
+
 FLOWS = [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13]
 
 # ================================================================= page copy
 PAGE = {}
+PAGE['sms'] = '''  <section class="card narrow">
+    <span class="kicker">SMS · the system</span>
+    <h2>Texts only where a minute matters.</h2>
+    <p class="notes" style="color:inherit;font-size:14px">Both Klaviyo accounts can send SMS. The EU account collects about 1,000 phone numbers a month through the current pop-up and has sent them almost nothing; the US account has a few hundred. A text costs real money per message and gets read within minutes, so it goes only where speed decides the sale: a checkout or cart left behind, a restock, a sign-up, and the five date moments everyone shares.</p>
+    <div class="tbl" style="border:0"><table style="min-width:0"><thead><tr><th>Where</th><th>Text</th><th>When</th><th>Why a text</th></tr></thead><tbody>
+      <tr><td class="n"><b>Pop-up step 2</b></td><td>Phone number + consent</td><td>After the email</td><td>Keeps the ~1,000 numbers a month the current form already collects.</td></tr>
+      <tr><td class="n"><b>S1</b></td><td>SMS welcome · T1, T2</td><td>Now · +2 days in the sale weeks</td><td>The most-read message they will get from Cavaier.</td></tr>
+      <tr><td class="n"><b>F5</b></td><td>Checkout text</td><td>1 h 45 min after checkout</td><td>One tap from done. The highest-value text in the system.</td></tr>
+      <tr><td class="n"><b>F4</b></td><td>Cart text</td><td>3 hours after the cart</td><td>Lands while the email sits unopened.</td></tr>
+      <tr><td class="n"><b>F9</b></td><td>Back in stock text</td><td>On restock, with the email</td><td>Restocks sell out again within hours.</td></tr>
+      <tr><td class="n"><b>F2</b></td><td>Browse text</td><td>5 hours after the view, sale weeks only</td><td>Pays only while 30% is on.</td></tr>
+      <tr><td class="n"><b>F7</b></td><td>Customers-first text</td><td>3 hours after the bulk add</td><td>Past customers hear about early access the same day.</td></tr>
+      <tr><td class="n"><b>S2</b></td><td>Six campaigns</td><td>Nov 23 · 27 · 30 · Dec 6 · cut-off · Dec 22</td><td>Date moments are the same for everyone, so they are campaigns.</td></tr>
+    </tbody></table></div>
+    <ul class="levers">
+      <li><b>Never more than one text a day:</b> SMS smart sending 24 h on every flow text; campaigns exclude anyone texted in the last 20 hours and anyone who ordered in the last 2 days.</li>
+      <li><b>Quiet hours</b> 20:00–10:00 recipient-local for flow texts. Campaigns go out at the times listed, in each recipient’s time zone; in the US never before 08:00 or after 21:00 local.</li>
+      <li><b>One segment per text:</b> plain characters only (no curly quotes, dashes or emoji, which halve the length to 70), “Cavaier:” first, one link, Klaviyo’s opt-out line. Every text on this page shows its count.</li>
+      <li><b>Consent:</b> only profiles with SMS consent get texts. The pop-up keeps Klaviyo’s legal line under the button. EU and UK numbers get the sender name “Cavaier”; US numbers send from the toll-free number already on the US account.</li>
+      <li><b>Women / men:</b> texts are the same for both; links go to the women’s or men’s collection by Gender.</li>
+    </ul>
+  </section>
+'''
+
 PAGE['intro'] = '''  <header class="intro narrow">
     <span class="kicker">Cavaier · Q4 2026 · Klaviyo flows · mock-up</span>
     <h1>Q4 flows: Black Friday to Christmas</h1>

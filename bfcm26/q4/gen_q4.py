@@ -8,7 +8,7 @@ Seeds the shared page once; after that the published artifact is the master.
 """
 import base64, io, json, os, re, html as H
 from PIL import Image, ImageOps
-from q4_specs import FLOWS, PAGE, DAYS, KEYS, POPUP
+from q4_specs import FLOWS, PAGE, DAYS, KEYS, POPUP, SFLOWS, JOURNEY
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 B = os.path.dirname(HERE)
@@ -277,6 +277,40 @@ def email_html(e):
     return f'<article class="em{" fog" if e.get("bg") == "fog" else ""}" aria-label="{e["id"]}">{body}{foot()}</article>'
 
 
+# ---------------------------------------------------------------- SMS cards (GSM-7 checked, one segment each)
+GSM = set("@£$¥èéùìòÇ\nØøÅåΔ_ΦΓΛΩΠΨΣΘΞÆæßÉ !\"#¤%&'()*+,-./0123456789:;<=>?¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ§¿abcdefghijklmnopqrstuvwxyzäöñüà")
+LINK_SHOW, LINK_LEN = 'cavaier.com/s/x7K2pQ', 23
+OPT = 'Reply STOP to opt out'
+def sms_len(txt, prod):
+    out = 0
+    for p in ([prod] if isinstance(prod, str) or prod is None else list(prod.values())):
+        body = txt.replace('{product}', p or '').replace('{link}', '')
+        bad = [c for c in body if c not in GSM and c not in '[]']  # [placeholders] get replaced by a date before launch
+        assert not bad, f'non-GSM characters {bad} in: {txt}'
+        out = max(out, len(body) + body.count('[') + body.count(']') + LINK_LEN + 2 + len(OPT))
+    return out
+def sms_bubble(txt, prod):
+    n = sms_len(txt, prod)
+    assert n <= 160, f'{n} chars (over one SMS): {txt}'
+    h = H.escape(txt)
+    if prod is not None:
+        pv = (f'<span class="tok">{H.escape(prod)}</span>' if isinstance(prod, str) else
+              f'<span class="tok"><span class="gW">{H.escape(prod["W"])}</span><span class="gM">{H.escape(prod["M"])}</span></span>')
+        h = h.replace('{product}', pv)
+    h = h.replace('{link}', f'<u>{LINK_SHOW}</u>')
+    return (f'<p class="bub">{h}<br><br>{OPT}</p>'
+            f'<p class="scount"><span>1 SMS</span><span>{n}/160 characters</span></p>')
+def sms_html(e):
+    tx = e['text']
+    if isinstance(tx, str): inner = sms_bubble(tx, e.get('product'))
+    else:
+        inner = ''.join(f'<div class="st {" ".join(PC[x] for x in k.split())}">{sms_bubble(v, e.get("product"))}</div>' for k, v in tx.items())
+    return (f'<article class="em sms" aria-label="{e["id"]}"><div class="sh"><span class="av">C</span>'
+            f'<div><b>Cavaier</b><span>Text message</span></div></div><div class="sbody">{inner}</div></article>')
+def step_html(e):
+    rows = ''.join(f'<div><span>{H.escape(a)}</span><b>{H.escape(b)}</b></div>' for a, b in e['rows'])
+    return f'<div class="step"><span class="sk">{e["step"]}</span><b class="stt">{e["title"]}</b><div class="srows">{rows}</div></div>'
+
 # ---------------------------------------------------------------- page (canvas: pop-up band, then Women and Men bands; one column per flow)
 def phase_names(ps): return ' · '.join(PNAME[p] for p in ps)
 
@@ -289,7 +323,17 @@ def wait_label(d):
     n, u = int(m.group(1)), m.group(2)
     return f'Wait {n} {UNIT[u][n != 1]}'
 
+def sms_brief(e):
+    tx = e['text'] if isinstance(e['text'], dict) else {' '.join(e['phases']): e['text']}
+    prod = e.get('product')
+    vers = ''.join(f'<p style="margin:0 0 8px"><b>{phase_names(k.split())}</b> · {sms_len(v, prod)}/160<br>{H.escape(v).replace("{link}", "[link]")}</p>' for k, v in tx.items())
+    meta = [('Text', f'<b>{e["id"]} · {e["name"]}</b>'), ('Send', e['delay']), ('Runs in', phase_names(e['phases'])),
+            ('Copy', vers), ('Job', e['goal']), ('Klaviyo', e['klaviyo'])]
+    if e.get('notes'): meta.append(('Notes', e['notes']))
+    return '<dl class="meta">' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in meta if b) + '</dl>'
+
 def brief_tpl(e):
+    if e.get('kind') == 'sms': return sms_brief(e)
     meta = [('Email', f'<b>{e["id"]} · {e["name"]}</b>'), ('Send', e['delay']), ('Runs in', phase_names(e['phases'])),
             ('Subject', t(e['subject'])), ('Preview', t(e['preview'])), ('Job', e['goal']), ('Urgency', e.get('urgency', '')),
             ('Klaviyo', e['klaviyo'])]
@@ -302,34 +346,54 @@ def flow_tpl(f):
     return '<dl class="meta">' + ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in rows) + '</dl>'
 
 TEMPLATES = ''.join(f'<template id="b-{f["id"]}"><h3>{f["id"]} · {f["name"]}</h3>{flow_tpl(f)}</template>' +
-                    ''.join(f'<template id="b-{e["id"]}"><h3>{e["id"]} · {e["name"]}</h3>{brief_tpl(e)}</template>' for e in f['emails'])
-                    for f in FLOWS)
+                    ''.join(f'<template id="b-{e["id"]}"><h3>{e["id"]} · {e["name"]}</h3>{brief_tpl(e)}</template>' for e in f['emails'] if e.get('kind') != 'step')
+                    for f in FLOWS + SFLOWS)
 TEMPLATES += ('<template id="b-POP"><h3>Sign-up pop-up</h3><dl class="meta">' +
               ''.join(f'<dt>{a}</dt><dd>{b}</dd>' for a, b in POPUP['brief']) + '</dl></template>')
 
 def entry_html(G, f, e):
-    return (f'<div class="conn"><span class="wait">{wait_label(e["delay_short"])}</span></div>'
+    if e.get('kind') == 'step':
+        return f'<div class="conn short"></div>{step_html(e)}\n'
+    wl = ('Sends ' + e['delay']) if f.get('campaign') else wait_label(e['delay_short'])
+    if e.get('kind') == 'sms':
+        return (f'<div class="conn"><span class="wait">{wl}</span></div>'
+                f'<section class="entry tx" id="{G}-{e["id"]}" data-id="{e["id"]}" data-states="{" ".join(e["phases"])}" data-s="{e["phases"][0]}" tabindex="0" aria-label="{e["id"]} {e["name"]}">'
+                f'<header class="elab"><b>{e["id"]}</b><span class="nm">{e["name"]}</span><span class="chn">SMS</span>'
+                f'<span class="off" aria-live="polite"></span></header>'
+                f'{sms_html(e)}</section>\n')
+    return (f'<div class="conn"><span class="wait">{wl}</span></div>'
             f'<section class="entry" id="{G}-{e["id"]}" data-id="{e["id"]}" data-states="{" ".join(e["phases"])}" data-s="{e["phases"][0]}" tabindex="0" aria-label="{e["id"]} {e["name"]}">'
             f'<header class="elab"><b>{e["id"]}</b><span class="nm">{e["name"]}</span><span class="subj">{t(e["subject"])}</span>'
             f'<span class="off" aria-live="polite"></span></header>'
             f'{email_html(e)}</section>\n')
 
+def msg_count(f):
+    ne = sum(1 for e in f['emails'] if not e.get('kind')); ns = sum(1 for e in f['emails'] if e.get('kind') == 'sms')
+    parts = ([f'{ne} email' + ('s' if ne != 1 else '')] if ne else []) + ([f'{ns} text' + ('s' if ns != 1 else '')] if ns else [])
+    return ' + '.join(parts) or 'no messages, sets a profile property'
+
 def flow_html(G, f):
     o = (f'<div class="col" id="{G}-{f["id"]}">'
          f'<section class="fhead" tabindex="0" data-id="{f["id"]}"><span class="fid">{f["id"]}</span><div><h2>{f["name"]}</h2>'
-         f'<p>{len(f["emails"])} email{"s" if len(f["emails"]) != 1 else ""} · replaces {f["replaces"]}</p></div></section>'
+         f'<p>{msg_count(f)} · replaces {f["replaces"]}</p></div></section>'
          f'<div class="conn short"></div><div class="node trig"><span>Trigger</span>{f["trigger_short"]}</div>')
     for e in f['emails']:
         o += entry_html(G, f, e)
-    o += f'<div class="conn short"></div><div class="node exit"><span>Exits on</span>{f["exits"]}</div></div>\n'
+    if f.get('exits') and f['exits'] != '—': o += f'<div class="conn short"></div><div class="node exit"><span>Exits on</span>{f["exits"]}</div>'
+    o += '</div>\n'
     return o
 
-n_emails = sum(len(f['emails']) for f in FLOWS)
-GNAME = {'W': 'Women', 'M': 'Men'}
+n_emails = sum(1 for f in FLOWS for e in f['emails'] if not e.get('kind'))
+n_texts = sum(1 for f in FLOWS + SFLOWS for e in f['emails'] if e.get('kind') == 'sms')
+GNAME = {'W': 'Women', 'M': 'Men', 'S': 'SMS + profile'}
 def band_html(G):
     return (f'<section class="band" id="band-{G}" data-g="{G}"><header class="bandh"><span class="bk">Every email as {GNAME[G].lower()} see it</span>'
-            f'<h1>{GNAME[G]}</h1><p>{len(FLOWS)} flows · {n_emails} emails · profile property Gender = {"“Men”" if G == "M" else "“Women”, “Both” or empty"}</p></header>'
+            f'<h1>{GNAME[G]}</h1><p>{len(FLOWS)} flows · {n_emails} emails + their texts · profile property Gender = {"“Men”" if G == "M" else "“Women”, “Both” or empty"}</p></header>'
             f'<div class="cols">{"".join(flow_html(G, f) for f in FLOWS)}</div></section>\n')
+def sband_html():
+    return ('<section class="band sband" id="band-S" data-g="S"><header class="bandh"><span class="bk">Texts and data for everyone, women and men</span>'
+            '<h1>SMS + profile</h1><p>S1 SMS welcome · S2 the six SMS campaigns · G1–G2 fill in Gender from orders and browsing. The texts inside F2, F4, F5, F7 and F9 sit in those flows below.</p></header>'
+            f'<div class="cols">{"".join(flow_html("S", f) for f in SFLOWS)}</div></section>\n')
 
 # ---- pop-up frames
 P_ = POPUP
@@ -343,6 +407,11 @@ def pop_body(step, mob=False):
              '<p class="pfine">By signing up you agree to receive marketing emails from Cavaier. Unsubscribe anytime.</p>'
              '<p class="pno">Not now</p>')
     elif step == 2:
+        b = (f'<span class="lab red">One more step</span><h2>{t(P_["sms_head"])}</h2><p class="psub">{t(P_["sms_sub"])}</p>'
+             '<div class="pin tel"><span class="cc">+44 ▾</span><span>Phone number</span></div>'
+             '<a class="pbtn2" href="#">Text me</a>'
+             f'<p class="pfine">{P_["sms_fine"]}</p><p class="pno">No thanks</p>')
+    elif step == 3:
         b = ('<span class="lab red">One more tap</span><h2>Who do you shop for?</h2><p class="psub">So every email shows the right pieces.</p>'
              '<div class="pchoice"><a href="#">Women</a><a href="#">Men</a><a href="#">Both</a></div><p class="pno">Skip</p>')
     else:
@@ -354,9 +423,16 @@ def pop_body(step, mob=False):
 def pop_frame(step, mob):
     pics = f'<div class="ppics">{img("lf_w_black_top", "")}{img("lf_m_linen_chin", "")}</div>'
     cls = 'pf mob' if mob else 'pf desk'
-    cap = ['Step 1 · email', 'Step 2 · who it’s for', 'Done'][step - 1]
+    cap = ['Step 1 · email', 'Step 2 · phone', 'Step 3 · who it’s for', 'Done'][step - 1]
     return (f'<figure class="{cls}"><figcaption>{"Mobile" if mob else "Desktop"} · {cap}</figcaption>'
             f'<div class="pscreen"><div class="pover">{pics}<div class="pbody">{pop_body(step, mob)}</div></div></div></figure>')
+
+def journey_frame():
+    rows = ''.join(f'<div class="st {PC[p]}{" " + PC["cw"] if p == "bf" else ""}"><ol>' + ''.join(f'<li>{x}</li>' for x in JOURNEY[p]) + '</ol></div>' for p in JOURNEY)
+    return ('<figure class="pf jr"><figcaption>After sign-up · where they go</figcaption><div class="pscreen jcard">'
+            '<p class="jk">Email</p><p class="jh">→ F1 Welcome</p><p class="jsub">One flow for every version of the pop-up. Its copy follows the date, so each sign-up gets the version that matches the promise they signed up for.</p>'
+            f'{rows}<p class="jk">Phone</p><p class="jh">→ S1 SMS Welcome</p><p class="jk">Who do you shop for</p><p class="jh">→ Women or Men versions</p>'
+            '<p class="jsub">Men → men’s versions. Women, Both, or skipped → women’s versions, until G1 or G2 can tell from orders or browsing.</p></div></figure>')
 
 def teaser_frame():
     return ('<figure class="pf tz"><figcaption>After closing · teaser tab</figcaption><div class="pscreen site">'
@@ -366,19 +442,20 @@ def teaser_frame():
 
 POP_HTML = ('<section class="band pop" id="band-P" data-s="bf"><header class="bandh"><span class="bk">Feeds F1 and the women / men split</span>'
             '<h1>Sign-up pop-up</h1><p>Full screen on desktop; full screen on mobile after 10 seconds or the 2nd page. Click any frame for the setup.</p></header>'
-            '<div class="prow" tabindex="0" data-id="POP">' + ''.join(pop_frame(s_, False) for s_ in (1, 2, 3)) + '</div>'
-            '<div class="prow" tabindex="0" data-id="POP">' + ''.join(pop_frame(s_, True) for s_ in (1, 2, 3)) + teaser_frame() + '</div></section>\n')
+            '<div class="prow" tabindex="0" data-id="POP">' + ''.join(pop_frame(s_, False) for s_ in (1, 2, 3, 4)) + journey_frame() + '</div>'
+            '<div class="prow" tabindex="0" data-id="POP">' + ''.join(pop_frame(s_, True) for s_ in (1, 2, 3, 4)) + teaser_frame() + '</div></section>\n')
 
 map_rows = ''.join(
-    f'<tr><td><a href="#W-{f["id"]}" data-go="W-{f["id"]}">{f["id"]}</a></td><td>{f["name"]}</td><td>{f["trigger_short"]}</td><td class="n">{len(f["emails"])}</td>'
-    f'<td>{" → ".join(e["delay_short"] for e in f["emails"])}</td><td>{f["replaces"]}</td></tr>' for f in FLOWS)
-jump_opts = '<option value="band-P">Sign-up pop-up</option>' + ''.join(
+    f'<tr><td><a href="#{"S" if f in SFLOWS else "W"}-{f["id"]}" data-go="{"S" if f in SFLOWS else "W"}-{f["id"]}">{f["id"]}</a></td><td>{f["name"]}</td><td>{f["trigger_short"]}</td><td class="n">{msg_count(f)}</td>'
+    f'<td>{" → ".join((e.get("delay_short") or "·") + (" SMS" if e.get("kind") == "sms" else "") for e in f["emails"])}</td><td>{f["replaces"]}</td></tr>' for f in FLOWS + SFLOWS)
+jump_opts = '<option value="band-P">Sign-up pop-up</option>' + '<optgroup label="SMS + profile">' + ''.join(
+    f'<option value="S-{f["id"]}">{f["id"]} · {f["name"]}</option>' for f in SFLOWS) + '</optgroup>' + ''.join(
     f'<optgroup label="{GNAME[G]}">' + ''.join(
         f'<option value="{G}-{f["id"]}">{f["id"]} · {f["name"]}</option>' +
-        ''.join(f'<option value="{G}-{e["id"]}">&nbsp;&nbsp;&nbsp;{e["id"]} · {e["name"]}</option>' for e in f['emails']) for f in FLOWS) + '</optgroup>'
+        ''.join(f'<option value="{G}-{e["id"]}">&nbsp;&nbsp;&nbsp;{e["id"]} · {e["name"]}</option>' for e in f['emails'] if e.get('kind') != 'step') for f in FLOWS) + '</optgroup>'
     for G in ('W', 'M'))
 
-BOARD = POP_HTML + band_html('W') + band_html('M')
+BOARD = POP_HTML + sband_html() + band_html('W') + band_html('M') + '<svg class="arrows" id="arrows" aria-hidden="true"></svg>'
 
 IMGDATA = {k: load_img(k) for k in sorted(USED - {'logo', 'ic_ig', 'ic_tt', 'ic_fb'})}
 for _k in ('ig', 'tt', 'fb'):
@@ -433,7 +510,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
 </div>
 <div class="app" id="root">
   <div class="tools" role="toolbar" aria-label="Canvas controls">
-    <div class="ttl"><b>Q4 flows</b><span>{len(FLOWS)} flows · {n_emails} emails · pop-up</span></div>
+    <div class="ttl"><b>Q4 flows</b><span>{len(FLOWS) + len(SFLOWS)} flows · {n_emails} emails · {n_texts} texts · pop-up</span></div>
     <div class="sp"></div>
     <div class="zoom" role="group" aria-label="Zoom">
       <button type="button" id="zOut" aria-label="Zoom out" title="Zoom out (−)">−</button>
@@ -458,6 +535,7 @@ page = f'''<title>Cavaier Q4 Flows</title>
 {PAGE['intro'].format(n_flows=len(FLOWS), n_emails=n_emails)}
 {PAGE['top']}
   <div class="tbl narrow"><table><thead><tr><th>Flow</th><th>Name</th><th>Trigger</th><th>Emails</th><th>Timing</th><th>Replaces</th></tr></thead><tbody>{map_rows}</tbody></table></div>
+{PAGE['sms']}
 {PAGE['urgency'].replace('{day_rows}', day_rows)}
 {PAGE['bottom']}
     </div>
@@ -605,6 +683,20 @@ page = f'''<title>Cavaier Q4 Flows</title>
   }});
 
   function th(){{root.style.setProperty('--toolh',document.querySelector('.tools').offsetHeight+'px')}}th();window.addEventListener('resize',th);
+  // ---- pop-up → flow arrows (journey card down a left gutter into each target flow)
+  function drawArrows(){{
+    var sv=$('arrows'),jc=document.querySelector('.pf.jr .pscreen'),pb=$('band-P');if(!sv||!jc||!pb)return;
+    var W=board.scrollWidth,Hh=board.scrollHeight;sv.setAttribute('width',W);sv.setAttribute('height',Hh);sv.setAttribute('viewBox','0 0 '+W+' '+Hh);
+    var j=pos(jc),jx=j[0]+jc.offsetWidth/2,jy=j[1]+jc.offsetHeight,y0=pos(pb)[1]+pb.offsetHeight-50,o='<circle cx="'+jx+'" cy="'+jy+'" r="10"/>';
+    [['S-S1','Phone number → S1 SMS Welcome',50],['W-F1','Email · Women, Both or skipped → F1, women’s versions',100],['M-F1','Email · Men → F1, men’s versions',150]].forEach(function(t){{
+      var c=$(t[0]);if(!c)return;var h=c.querySelector('.fhead')||c,q=pos(h),ty=q[1]+60,tx=q[0]-10;
+      o+='<path d="M'+jx+' '+jy+' V'+y0+' H'+t[2]+' V'+ty+' H'+tx+'"/><path d="M'+(tx-22)+' '+(ty-14)+' L'+tx+' '+ty+' L'+(tx-22)+' '+(ty+14)+'"/>'
+        +'<text x="'+q[0]+'" y="'+(q[1]-22)+'">'+t[1]+'</text>';
+    }});
+    sv.innerHTML=o;
+  }}
+  window.addEventListener('load',drawArrows);
+  if(window.ResizeObserver)new ResizeObserver(function(){{drawArrows()}}).observe(board);
   window.q4View=function(G,S,D){{day=dayOf(D)||defDay(S)||day;apply()}};
   window.q4Day=function(D){{day=dayOf(D);apply()}};
   window.q4Go=go;window.q4Fit=fit;window.q4Show=function(id){{show($(id))}};
