@@ -2,7 +2,7 @@
 Run after comments_to_annotations.js. Needs FIGMA_TOKEN. Leaves every non-link comment alone.
 Usage: python3 delete_link_comments.py          (dry run)
        python3 delete_link_comments.py --apply  (delete)"""
-import json, os, sys, urllib.request
+import json, os, sys, time, urllib.request, urllib.error
 KEY = 'e0aqnfx3SvHowbEDDyMNMW'
 H = {'X-Figma-Token': os.environ['FIGMA_TOKEN']}
 rows = json.load(open(os.path.join(os.path.dirname(__file__), 'link_comments.json')))
@@ -24,6 +24,11 @@ if '--apply' in sys.argv:
     n = 0
     for cid, _, _ in ok:
         req = urllib.request.Request(f'https://api.figma.com/v1/files/{KEY}/comments/{cid}', headers=H, method='DELETE')
-        try: urllib.request.urlopen(req); n += 1
-        except Exception as e: print('  failed', cid, e)
+        for attempt in range(8):
+            try: urllib.request.urlopen(req); n += 1; break
+            except urllib.error.HTTPError as e:
+                if e.code == 404: break  # already deleted
+                if e.code == 429: time.sleep(int(e.headers.get('Retry-After') or 20)); continue
+                print('  failed', cid, e); break
+        time.sleep(0.5)
     print('deleted', n)
