@@ -17,7 +17,8 @@ def ph(v,p):
     for k,x in v.items():
         if p in k.split(): return x
     return next(iter(v.values()))
-def clean(s): return re.sub(r'«\w+»','',re.sub(r'<[^>]+>','',str(s or ''))).strip()
+DEF={d['phase']:d for d in Q.DAYS if d['default']}
+def clean(s,p=None): return re.sub(r'«(\w+)»',lambda m:str(DEF.get(p,{}).get(m.group(1),'')),re.sub(r'<[^>]+>','',str(s or ''))).strip()
 X0,Y0=6000,0;COLW=600;GAP=220;PAD=80;BRH=150;EGAP=140
 out={};secs=[]
 # pop-up
@@ -35,8 +36,8 @@ for G,GN in (('W','Women'),('M','Men')):
     for f in Q.FLOWS:
         yy=PAD
         for e in f['emails']:
-            k=f"{G}-{e['id']}";x_=E[k];p0=e['phases'][0]
-            subj=clean(ph(e['subject'],p0));prev=clean(ph(e['preview'],p0))
+            k=f"{G}-{e['id']}";x_=E[k];p0=x_.get('st') or e['phases'][0]
+            subj=x_.get('subj','').strip() or clean(ph(e['subject'],p0),p0);prev=clean(ph(e['preview'],p0),p0)
             out[k]=dict(pos=dict(x=PAD,y=yy+BRH,by=yy),sec=f"{G}-{f['id']}",
                 spec_name=f"{e['id']}-{G} · {subj}",
                 brief=dict(name=f"{e['id']}-{G} brief",l1=f"{e['id']} · {e['name']} · {GN} · {e['delay']} · shown: {PN[p0]}",
