@@ -34,7 +34,7 @@ print('changed',len(changed),changed[:12],'removed',removed)
 b=open(f'{HERE}/builder_q4.js').read()
 secjs=("\nconst SEC={};\nawait figma.loadFontAsync({family:'Figtree',style:'Regular'});\n"
  "async function sec(k,name,x,y,w,h,old){let s=old?await figma.getNodeByIdAsync(old):null;if(!s){s=page.findOne(n=>n.type==='SECTION'&&n.name===name)}"
- "if(!s){s=figma.createSection();page.appendChild(s)}s.x=x;s.y=y;s.resizeWithoutConstraints(w,h);s.name=name;SEC[k]=s;return s}\nSEC.PAGE=page;\n")
+ "if(!s){s=figma.createSection();page.appendChild(s)}s.x=x;s.y=y;s.resizeWithoutConstraints(w,h);s.name=name;s.fills=[{type:'SOLID',color:{r:236/255,g:236/255,b:234/255}}];SEC[k]=s;return s}\nSEC.PAGE=page;\n")
 for s_ in CC['sections']:
     secjs+=f"await sec({json.dumps(s_['key'])},{json.dumps(s_['name'])},{s_['x']},{s_['y']},{s_['w']},{s_['h']},{json.dumps(fg['sections'].get(s_['key']))});\n"
 rm=''.join(f"{{for(const k of {json.dumps([fg['emails'][i]['em'],fg['emails'][i].get('br')])}){{const a=k&&await figma.getNodeByIdAsync(k);if(a)a.remove()}}}}\n" for i in removed)

@@ -28,7 +28,7 @@ PERIOD={'pre':'Oct 27 – Nov 22','ea':'Nov 23 – 26 · publish Nov 23, 09:00',
 LABW,GAP,ROWH=1500,120,844+420
 y=200
 for ph in ['pre','ea','bf','xmas','late','post']:
-    put(f'L-POP-{ph}',dict(name=f'{PN[ph]} · pop-up label',w=LABW-200,h=600,bg=None,S=[['label',0,0,LABW-200,600,0]],
+    put(f'L-POP-{ph}',dict(name=f'POP-{ph} label · {PN[ph]}',w=LABW-200,h=600,bg=None,S=[['label',0,0,LABW-200,600,0]],
         I=[T(0,0,0,LABW-200,150,PN[ph],120,132,300),T(0,0,170,LABW-200,120,PERIOD[ph],44,56,300,MU)]),'POP',80,y)
     x=LABW
     for i in range(1,8):
@@ -38,13 +38,13 @@ for ph in ['pre','ea','bf','xmas','late','post']:
     y+=ROWH
 popw=x+80
 secs.append(dict(key='POP',name='Sign-up pop-up · one version per sale period',x=X0,y=Y0,w=popw,h=y+100))
-put('L-POP',dict(name='Sign-up pop-up · title',w=6000,h=900,bg=None,S=[['label',0,0,6000,900,0]],
+put('L-POP',dict(name='POP title · Sign-up pop-up',w=6000,h=900,bg=None,S=[['label',0,0,6000,900,0]],
     I=[T(0,0,0,6000,520,'Sign-up pop-up',480,520,200),T(0,0,560,6000,200,'Full screen · email → who do you shop for → done · copy changes on each date below',90,110,300,MU)]),'PAGE',X0,Y0-1200)
 # ---------- bands
 SW,DX,PAD=1000,200,80
 yb=Y0+y+100+1800
 for G,GN in (('W','Women'),('M','Men')):
-    put(f'L-{G}',dict(name=f'{GN} · title',w=8000,h=900,bg=None,S=[['label',0,0,8000,900,0]],
+    put(f'L-{G}',dict(name=f'{G} band title · {GN}',w=8000,h=900,bg=None,S=[['label',0,0,8000,900,0]],
         I=[T(0,0,0,8000,520,GN,480,520,200),T(0,0,560,8000,200,f"{len(Q.FLOWS)} flows · {sum(len(f['emails']) for f in Q.FLOWS)} emails · profile property Gender = "+('“Men”' if G=='M' else '“Women”, “Both” or empty'),90,110,300,MU)]),'PAGE',X0,yb-1200)
     x=X0;bandh=0
     for f in Q.FLOWS:
@@ -52,12 +52,12 @@ for G,GN in (('W','Women'),('M','Men')):
         nl=lines(f['name'],96,tw);tl=lines('Trigger · '+f['trigger_short'],48,tw)
         ty=[0,300,300+nl*106+30,300+nl*106+30+tl*60+16]
         th=ty[3]+lines(f"{len(f['emails'])} emails · replaces {f['replaces']}",40,tw)*52+160
-        put('T-'+sk,dict(name=f"{f['id']} · title",w=tw,h=th,bg=None,S=[['title',0,0,tw,th,0]],
+        put('T-'+sk,dict(name=f"{f['id']}-{G} title · {f['name']}",w=tw,h=th,bg=None,S=[['title',0,0,tw,th,0]],
             I=[T(0,0,ty[0],tw,290,f['id'],300,290,200),T(0,0,ty[1],tw,nl*106,f['name'],96,106,300),
                T(0,0,ty[2],tw,tl*60,'Trigger · '+f['trigger_short'],48,60,400),
                T(0,0,ty[3],tw,52,f"{len(f['emails'])} email{'s' if len(f['emails'])!=1 else ''} · replaces {f['replaces']}",40,52,300,MU)]),sk,PAD,PAD)
         dk='D-'+sk;de=E[dk];dy=PAD+th
-        put(dk,emspec(dk,f"{f['id']} · flow diagram ({GN})"),sk,DX,dy)
+        put(dk,emspec(dk,f"{f['id']}-{G} diagram · {f['name']} ({GN})"),sk,DX,dy)
         for e in f['emails']:
             k=f"{G}-{e['id']}";px,py=de['place'][k]
             put(k,emspec(k,f"{e['id']}-{G} · "+re.sub(r'^subject\s*·\s*','',E[k]['subj'].strip(),flags=re.I)),sk,DX+px,dy+py)

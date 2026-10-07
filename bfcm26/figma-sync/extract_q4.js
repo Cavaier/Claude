@@ -108,6 +108,7 @@ const data=await p.evaluate(()=>{
       const acs=getComputedStyle(art);
       res.push({id:R0.id,eid:R0.eid,g:R0.g,cap:R0.cap||'',subj:R0.subj||'',st:R0.st||'',ph:R0.ph||'',place:R0.place||null,w:A.width,h:A.height,bg:rgba(acs.backgroundColor),secs,items});
   }
+  const ud=document.createElement('style');ud.textContent='.entry.dim .em{opacity:1!important;filter:none!important}.elab .off{display:none!important}';document.head.appendChild(ud);
   click(BF);
   document.querySelectorAll('section.entry').forEach(sec=>{const g=sec.id.split('-')[0];ext({art:sec.querySelector('article.em'),id:sec.id,eid:sec.dataset.id,g,subj:(sec.querySelector('.elab .subj')||{}).innerText||'',st:sec.dataset.s})});
   for(const [ph,d] of [['pre','pre'],['ea','2026-11-23'],['bf',BF],['xmas','x1'],['late','l1'],['post','post']]){click(d);
