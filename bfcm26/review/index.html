@@ -60,7 +60,7 @@ textarea{font:inherit;font-size:13px;width:100%;box-sizing:border-box;min-height
   <header>
     <div class="lab">Cavaier · BFCM26 · Email campaigns</div>
     <h1>Image review, slot by slot</h1>
-    <p class="intro">Each slot shows the image in Figma now next to the new one, made from the real Shopify product photo in the colour look. Press Yes and Claude places it into the Figma frame, keeping the crop. Press No, write what to change, and Claude makes a new one.</p>
+    <p class="intro">Each slot shows the image in Figma now next to the new one, made from the real Shopify product photo in the colour look. Press Yes and Claude places it into the Figma frame, keeping the crop. Press No, write what to change, and Claude makes a new one. Each answer goes straight to Claude, so work starts as soon as you press.</p>
     <div class="stats">
       <div class="stat"><span class="lab">Approved</span><b class="mono" id="sApproved">0 / 0</b></div>
       <div class="stat"><span class="lab">Redo</span><b class="mono" id="sRedo">0</b></div>
@@ -79,7 +79,8 @@ textarea{font:inherit;font-size:13px;width:100%;box-sizing:border-box;min-height
 <script>
 const SLOTS = [
   {email:"01-J · Your VIP early access", frame:"353:1394", dir:"Colour", items:[
-    {id:"01J-him-bracelets", title:"For him · Bracelets", product:"Rope Bracelet (men's)", finish:"Black", node:"402:1497", cost:0.0292, cur:"img/cur_01J_him_bracelets.jpg", nw:"img/new_01J_him_bracelets.jpg"},
+    {id:"01J-him-bracelets", title:"For him · Bracelets", product:"2x Duo Minimal Set (men's)", finish:"Black", node:"402:1497", cost:0.0585, v:1791486700000, cur:"img/cur_01J_him_bracelets.jpg", nw:"img/new_01J_him_bracelets_v2.jpg",
+      flag:"Redone with the 2x Duo after your note. Tile price says €29.90 → €20.93, but the Duo is €59.90 in Shopify."},
     {id:"01J-him-sets", title:"For him · Sets", product:"3x Minimal Stack Set (men's)", finish:"Gold", node:"402:1508", cost:0.0293, cur:"img/cur_01J_him_sets.jpg", nw:"img/new_01J_him_sets.jpg"},
     {id:"01J-him-necklaces", title:"For him · Necklaces", product:"Rope Pendant Necklace (CAVAIER bar)", finish:"Silver", node:"402:1518", cost:0.0294, cur:"img/cur_01J_him_necklaces.jpg", nw:"img/new_01J_him_necklaces.jpg",
       flag:"Current image is black and white in a colour email. Tile price says €34.90, Shopify has this necklace at €39.90."},
@@ -97,7 +98,7 @@ const SLOTS = [
 ];
 const all = SLOTS.flatMap(e => e.items);
 const decisions = {};
-let db = null, me = null;
+let db = null, me = null, comments = null;
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const usd = n => "$" + n.toFixed(2);
@@ -143,14 +144,15 @@ function build(){
 function paint(){
   let yes = 0, no = 0;
   for (const s of all){
-    const d = decisions[s.id], card = document.getElementById("s-"+s.id), st = document.getElementById("st-"+s.id);
+    const raw = decisions[s.id], d = raw && (!s.v || raw.at > s.v) ? raw : null, redone = raw && !d, card = document.getElementById("s-"+s.id), st = document.getElementById("st-"+s.id);
     card.classList.toggle("yes", d?.verdict === "yes"); card.classList.toggle("no", d?.verdict === "no");
     document.getElementById("y-"+s.id).setAttribute("aria-pressed", d?.verdict === "yes");
     document.getElementById("n-"+s.id).setAttribute("aria-pressed", d?.verdict === "no");
     const ta = document.getElementById("t-"+s.id);
-    if (d && document.activeElement !== ta && !ta.dataset.dirty) ta.value = d.note || "";
+    if (document.activeElement !== ta && !ta.dataset.dirty) ta.value = d ? (d.note || "") : "";
     st.className = "status" + (d ? " " + d.verdict : "");
-    st.textContent = !d ? "Waiting for your answer"
+    st.textContent = redone ? `New version made after your note “${raw.note || ""}”. Answer again.`
+      : !d ? "Waiting for your answer"
       : d.verdict === "yes" ? "Approved. Claude will place it in Figma."
       : "Redo" + (d.note ? `: “${d.note}”` : ". Add a note so Claude knows what to change.");
     if (d?.verdict === "yes") yes++; if (d?.verdict === "no") no++;
@@ -164,9 +166,20 @@ async function decide(id, verdict){
   const ta = document.getElementById("t-"+id);
   const st = document.getElementById("st-"+id);
   st.textContent = "Saving…";
+  const s = all.find(x => x.id === id);
+  const note = ta.value.trim();
+  let sent = false;
+  if (comments) {
+    try {
+      const anchor = await comments.anchorFor(document.getElementById("s-"+id));
+      await comments.sendToClaude({anchor, text: `[image review] ${id} · ${s.title} · ${verdict === "yes" ? "YES, place it" : "NO, redo"}${note ? ": " + note : ""}`});
+      sent = true;
+    } catch (e) {}
+  }
   try {
     await db.collection("decisions").doc(id).set({verdict, note: ta.value.trim(), by: me || "", at: Date.now()});
     delete ta.dataset.dirty;
+    if (!sent) { st.className = "status " + verdict; st.textContent += " Saved. Tell Claude in chat to pick it up."; }
   } catch (e) {
     st.className = "status no";
     st.textContent = "Not saved: you need edit access to answer. Ask Eli to share the page with you as a contributor.";
@@ -179,6 +192,7 @@ document.addEventListener("input", e => { if (e.target.tagName === "TEXTAREA") e
 (async () => {
   const user = await window.claude?.use?.("user");
   if (user) { try { me = await user.id(); } catch {} }
+  comments = await window.claude?.use?.("comments");
   db = await window.claude?.use?.("db");
   if (!db) {
     document.getElementById("offline").hidden = false;
