@@ -8,10 +8,10 @@ The previous session couldn't reach the API (the key and network change only app
 - `api.openai.com` must be allowed in Network access. Test: `curl -s -o /dev/null -w "%{http_code}" https://api.openai.com/v1/models -H "Authorization: Bearer $OPENAI_API_KEY"` → 200.
 - Before the first image, read OpenAI's current image-API pricing page and show the per-image cost for the model and quality used. Draft at low/medium quality, final at high.
 
-## The look (Eli's references, 3 photos in the session that wrote this)
-- **Colour direction:** icy, muted colours, as in the close-up of the black 3x Minimal Stack Set on a hairy male wrist on a white background. Cool, desaturated skin, soft daylight, macro detail, white or pale grey ground.
-- **Monochrome direction:** true black and white, as in the man's face with the silver CAVAIER bar pendant held across the eye, and the woman's neck and collarbone with the silver pendant against an ivory satin slip on a grey studio background. Fine grain, soft studio light, skin texture visible.
-- **One direction per email: all colour or all monochrome, never mixed in one email.**
+## The look (Eli's reference photos are in `lookref/`: open them before every prompt)
+- **Default = colour** (`lookref/colour-default_black-3x-set-wrist.webp`). This is the baseline for every email unless one is chosen as monochrome. Macro close-up of the black 3x set on a hairy male wrist, white background. Icy, muted, desaturated tones, natural cool skin with visible pores and fine hairs, soft daylight, shallow depth of field, the piece in sharp focus. Every colour image matches this tone, colour grade and style.
+- **Monochrome = the full-email alternative** (`lookref/mono_woman-eye-bar-pendant.webp`, `lookref/mono_man-eye-bar-pendant.webp`). True black and white, tight crop on the face, the silver snake chain with the engraved CAVAIER bar held taut across the face under the eye. Soft studio light, high skin-texture detail, fine grain, quiet and intimate.
+- **One direction per email: when an email is monochrome, every image in it is monochrome. Never mix the two in one email.**
 - Calm, minimal, premium. No props overload, no text in images.
 - Period vibe goes into the setting and light, not into loud props:
   - Black Friday: high contrast.
