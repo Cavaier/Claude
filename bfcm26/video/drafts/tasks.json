@@ -98,5 +98,47 @@
       "file": "../finals/R1-07-sticker.mp4",
       "note": "720p was refused for the draft-to-final step; rendered at 1080p."
     }
+  },
+  "M445-C1": {
+    "task_id": "cgt-20261009071302-rr2ma",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "size": "480x854",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 22330,
+    "draft_task_id": "cgt-20261009071302-rr2ma",
+    "file": "M445-C1.mp4"
+  },
+  "M445-C2": {
+    "task_id": "cgt-20261009071304-w53f6",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "size": "480x854",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 32813,
+    "draft_task_id": "cgt-20261009071304-w53f6",
+    "file": "M445-C2.mp4"
+  },
+  "M445-C3-photo": {
+    "task_id": "cgt-20261009071307-o5xtp",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "139:189",
+    "size": "556x756",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 89541,
+    "draft_task_id": "cgt-20261009071307-o5xtp",
+    "file": "M445-C3-photo.mp4"
   }
 }
