@@ -401,10 +401,19 @@ def step_backfill():
     gset = set(p['id'] for p in pages(f'segments/{K["segments"]["gender_set"]}/profiles/?page[size]=100&fields[profile]=id'))
     todo = {pid: ('Both' if m and w else 'Men' if m else 'Women') for pid, (m, w) in per.items() if (m or w) and pid not in gset}
     print('customers with orders', len(per), 'already have Gender', len(gset & set(per)), 'to set', len(todo))
-    for i, (pid, gv) in enumerate(todo.items()):
-        call(f'profiles/{pid}/', {'data': {'type': 'profile', 'id': pid, 'attributes': {'properties': {'Gender': gv, 'Gender source': 'order backfill'}}}}, 'PATCH')
-        if i % 250 == 0: print('backfill', i, '/', len(todo))
-    B.update(done=True, updated=len(todo), split=dict(Counter(todo.values()))); save(); print('backfill', B)
+    from concurrent.futures import ThreadPoolExecutor
+    def one(item):
+        pid, gv = item
+        try: call(f'profiles/{pid}/', {'data': {'type': 'profile', 'id': pid, 'attributes': {'properties': {'Gender': gv, 'Gender source': 'order backfill'}}}}, 'PATCH'); return 0
+        except Exception as ex:
+            if not str(ex).startswith('404'): raise
+            return 1  # profile deleted or merged since it ordered
+    gone = 0
+    with ThreadPoolExecutor(8) as ex:  # Klaviyo allows ~700 profile updates a minute
+        for i, g in enumerate(ex.map(one, todo.items())):
+            gone += g
+            if i % 500 == 0: print('backfill', i, '/', len(todo), flush=True)
+    B.update(done=True, updated=len(todo) - gone, gone=gone, split=dict(Counter(todo.values()))); save(); print('backfill', B)
 
 def step_subjects(day=None):
     ph = phase_now(day); n = 0
