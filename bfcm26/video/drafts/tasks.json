@@ -64,5 +64,18 @@
     "seed": 59712,
     "draft_task_id": "cgt-20261009054321-eyhcu",
     "file": "W415-C3-night-hook.mp4"
+  },
+  "W415-C2-stack-chart": {
+    "task_id": "cgt-20261009061113-7axtq",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 12152,
+    "draft_task_id": "cgt-20261009061113-7axtq",
+    "file": "W415-C2-stack-chart.mp4"
   }
 }
