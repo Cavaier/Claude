@@ -6,10 +6,10 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from q4_specs import DAYS, KEYS
 
 ORDER = ['pre', 'ea', 'bf', 'cw', 'xmas', 'late', 'post']
-CUT = '2026-12-18'  # first "last minute" day = day after the Christmas cut-off [placeholder until the CEO confirms]
+CUT = '2026-12-11'  # first "last minute" day = day after the Christmas cut-off (Thu Dec 10, confirmed Oct 8)
 PR = {'pre': (None, '2026-11-11'), 'ea': ('2026-11-11', '2026-11-13'), 'bf': ('2026-11-13', '2026-12-01'), 'cw': ('2026-12-01', '2026-12-07'),
       'xmas': ('2026-12-07', CUT), 'late': (CUT, '2026-12-25'), 'post': ('2026-12-25', None)}
-DAYRANGE = {'b1': ('2026-11-14', '2026-11-27'), 'x1': ('2026-12-07', '2026-12-14'), 'x2': ('2026-12-14', '2026-12-17'), 'x3': ('2026-12-17', CUT), 'l1': (CUT, '2026-12-24')}
+DAYRANGE = {'b1': ('2026-11-14', '2026-11-26'), 'x1': ('2026-12-07', '2026-12-09'), 'l1': (CUT, '2026-12-24')}
 FONT = "'Figtree','Helvetica Neue',Helvetica,Arial,sans-serif"
 SERIF = "'Bodoni Moda',Didot,'Bodoni 72',Georgia,serif"
 BLACK, WHITE, FOG, FOG2, GREY, LINE, INK2, RED = '#0B0B0B', '#FFFFFF', '#F2F2F1', '#E8E8E6', '#8B8B88', '#DCDCDA', '#3A3A38', '#A82C24'
@@ -205,7 +205,7 @@ class R:
            'bis': ("{{ event.ImageURL }}", "{{ event.ProductName|find_replace:'Stack Set|Set' }}", None, None)}
     def m_dynamic_product(self, m):
         im, nm, var, pr = self.DYN[m['source']]
-        under = {'ea': 'Members save 30%', 'bf cw': '30% off at checkout', 'xmas': 'Order by [cut-off] for Christmas', 'late': 'Or send a gift card'}
+        under = {'ea': 'Members save 30%', 'bf cw': '30% off at checkout', 'xmas': 'Order by Dec 10 for Christmas', 'late': 'Or send a gift card'}
         href = '{{ event.URL }}'
         if self.ctx:  # preview stand-ins
             im = self.IMG.get('p_set_w' if self.ctx['g'] == 'W' else 'p_set_m'); nm = '3x Minimal Set'; var = var and 'Black / Medium'; pr = pr and '€94.90'
@@ -243,8 +243,7 @@ class R:
                         f'<td style="padding:15px 0;font:500 9.5px/1.3 {FONT};letter-spacing:1.6px;text-transform:uppercase;color:{GREY}">{self.t(m["label"])}</td>'
                         f'<td align="right" style="padding:15px 0;font:300 22px/1 {FONT};color:{RED}">{self.t(m["value"])}</td></tr></table>', '30px 24px 0')
     def m_shipping_calendar(self, m):
-        rows = m.get('rows') or [['Netherlands &amp; EU', '[cut-off date]'], ['United Kingdom', '[cut-off date]'], ['US, Canada, Australia', '[cut-off date]'], ['Rest of world', '[cut-off date]']]
-        if self.acct == 'US': rows = m.get('rows') or [['United States', '[cut-off date]'], ['Canada', '[cut-off date]']]
+        rows = m.get('rows') or [['Christmas delivery, every country', 'Order by Thu Dec 10'], ['After Dec 10', 'A gift card arrives instantly']]
         trs = ''.join(f'<tr><td style="padding:12px 18px;border-top:1px solid {LINE};font:300 13px/1.4 {FONT}">{self.t(a)}</td><td align="right" style="padding:12px 18px;border-top:1px solid {LINE};font:300 13px/1.4 {FONT};color:{RED}">{self.t(b)}</td></tr>' for a, b in rows)
         return self.row(f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {LINE};background:{WHITE}"><tr><td style="padding:14px 18px;font:400 11px {FONT};letter-spacing:1.8px;text-transform:uppercase">{self.t(m.get("title", "Order by, for Christmas"))}</td><td align="right" style="padding:14px 18px;font:500 10px {FONT};letter-spacing:2px;text-transform:uppercase;color:{GREY}">Standard delivery</td></tr>{trs}</table>', '30px 24px 0')
     def m_gift_box(self, m):
@@ -262,10 +261,11 @@ class R:
         trs = ''.join(f'<tr><td width="24" style="padding:11px 0;border-bottom:1px solid {LINE};color:{RED};font:500 14px {FONT}">&#10003;</td><td style="padding:11px 0;border-bottom:1px solid {LINE};font:300 14px/1.45 {FONT}">{self.t(x)}</td></tr>' for x in m['items'])
         return self.row(f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid {LINE}">{trs}</table>', '30px 40px 0')
     def m_quote(self, m):
-        who = m.get('who') or 'Name · Trustpilot'
-        q = (f'<div style="border:1px dashed #BDBDBA;background:{WHITE};padding:22px 24px;text-align:center;margin-bottom:10px"><div style="font:12px {FONT};letter-spacing:2.4px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>'
-             f'<p style="margin:8px 0;font:300 16px/1.45 {FONT};color:{INK2}">[Verified Trustpilot review &mdash; to pull]</p><div style="font:400 11px/1.3 {FONT};color:{GREY}">{self.t(who)}</div></div>')
-        return self.row(q * m.get('count', 1), '30px 24px 0')
+        from q4_specs import QUOTES, WHO, WHO2
+        q = ''.join(f'<div style="border:1px solid {LINE};background:{WHITE};padding:22px 24px;text-align:center;margin-bottom:10px"><div style="font:12px {FONT};letter-spacing:2.4px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>'
+                    f'<p style="margin:8px 0;font:300 16px/1.45 {FONT};color:{INK2}">&ldquo;{self.t(QUOTES[i])}&rdquo;</p><div style="font:400 11px/1.3 {FONT};color:{GREY}">{self.t(WHO if i == 0 else WHO2)}</div></div>'
+                    for i in range(min(2, m.get('count', 1))))
+        return self.row(q, '30px 24px 0')
     def m_score(self, m):
         return self.row(f'<div style="text-align:center"><div style="font:12px {FONT};letter-spacing:2.4px">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div style="font:200 96px/0.9 {FONT};letter-spacing:-5px;margin:6px 0">4.5</div>{self.lab("Trustpilot · 3,000+ reviews", False)}</div>', '44px 24px 0')
     def m_faq(self, m):

@@ -65,6 +65,9 @@ if 'map' not in K:
     msg = next(a['data']['message'] for a in chk['actions'] if a['type'] == 'send-email')
     K['map'] = dict(metrics=M, from_email=msg['from_email'], from_label=msg['from_label']); save()
 M = K['map']['metrics']
+for _k, _n in (('opened', 'Opened Email'), ('checkout_started', 'Checkout Started'), ('subscribed', 'Subscribed to Email Marketing'), ('bounced', 'Bounced Email')):
+    if _k not in M: M[_k] = metric(_n); save()
+REAL_OPEN = [{'property': 'machine_open', 'filter': {'type': 'boolean', 'operator': 'equals', 'value': False}}]
 print(ACCT, 'map', K['map'])
 
 # ---------------------------------------------------------------- images
@@ -86,9 +89,12 @@ def upload(k):
             f'--{bnd}\r\nContent-Disposition: form-data; name="file"; filename="q4_{k}.{ext}"\r\nContent-Type: {mime}\r\n\r\n').encode() + data + f'\r\n--{bnd}--\r\n'.encode()
     return call('image-upload/', raw=body, ctype=f'multipart/form-data; boundary={bnd}')['data']['attributes']['image_url']
 def step_images():
-    I = K.setdefault('images', {})
+    I = K.setdefault('images', {}); IH = K.setdefault('image_hash', {}); local = LOCALIMG()
     for k in used_images():
-        if k not in I: I[k] = upload(k); save(); print('image', k)
+        h = hashlib.sha1(local[k].encode()).hexdigest()[:16]
+        if k not in I or (k in IH and IH[k] != h) or (k not in IH and k == 'p_cuff_black'):  # re-upload when the photo changes
+            I[k] = upload(k); print('image', k)
+        IH[k] = h; save()
     print('images', len(I))
 
 # ---------------------------------------------------------------- templates (one per email; phase + Gender logic inside)
@@ -125,20 +131,37 @@ CONSENT = lambda ch: {'type': 'profile-marketing-consent', 'consent': {'channel'
 SEGS = {
     'lapsed': ('Q4 · Lapsed 120+ days (bulk-add to Q4 · Winback)', lambda: [[pm(M['order'], 'greater-than', 0, ALLTIME)], [pm(M['order'], 'equals', 0, LAST(120))]]),
     'second': ('Q4 · One order, 30–119 days ago (bulk-add to Q4 · Second purchase)', lambda: [[pm(M['order'], 'equals', 1, ALLTIME)], [pm(M['order'], 'equals', 0, LAST(30))]]),
-    'unengaged': ('Q4 · No click or order in 120 days (bulk-add to Q4 · Sunset)', lambda: [[pm(M['clicked'], 'equals', 0, LAST(120))], [pm(M['order'], 'equals', 0, LAST(120))], [CONSENT('email')]]),
-    'browsed': ('Q4 · Browsed in 30 days, no order (bulk-add to Q4 · Sale live)', lambda: [[pm(M['viewed'], 'greater-than', 0, LAST(30)), pm(M['cart'], 'greater-than', 0, LAST(30))], [pm(M['order'], 'equals', 0, LAST(30))]]),
+    'unengaged': ('Q4 · No click, real open, visit or order in 180 days (bulk-add to Q4 · Sunset)', lambda: [[pm(M['clicked'], 'equals', 0, LAST(180))], [pm(M['opened'], 'equals', 0, LAST(180), REAL_OPEN)],
+                  [pm(M['active'], 'equals', 0, LAST(180))], [pm(M['order'], 'equals', 0, LAST(180))], [CONSENT('email')],
+                  [{'type': 'profile-property', 'property': 'created', 'filter': {'type': 'date', 'operator': 'at-least', 'unit': 'day', 'quantity': 90}}]]),
+    'big': ('Q4 · BIG send: engaged in 180 days, or clicked / ordered in 2 years', lambda: [[{'type': 'profile-marketing-consent', 'consent': {'channel': 'email', 'can_receive_marketing': True, 'consent_status': {'subscription': 'any', 'filters': None}}}],
+                  [pm(M['clicked'], 'greater-than', 0, LAST(180)), pm(M['opened'], 'greater-than', 0, LAST(180), REAL_OPEN), pm(M['active'], 'greater-than', 0, LAST(180)),
+                   pm(M['checkout_started'], 'greater-than', 0, LAST(180)), pm(M['order'], 'greater-than', 0, LAST(730)), pm(M['subscribed'], 'greater-than', 0, LAST(90)),
+                   pm(M['clicked'], 'greater-than', 0, LAST(730))],
+                  [pm(M['bounced'], 'equals', 0, LAST(30))]]),
+    'browsed': ('Q4 · Browsed in 60 days, no order (bulk-add to Q4 · Sale live)', lambda: [[pm(M['viewed'], 'greater-than', 0, LAST(60)), pm(M['cart'], 'greater-than', 0, LAST(60))], [pm(M['order'], 'equals', 0, LAST(30))]]),
     'sms': ('Q4 · Can receive SMS', lambda: [[CONSENT('sms')]]),
-    'popup_presale': ('Q4 · Pop-up list, no order in 30 days (bulk-add for F1E6 / F1E7)', lambda: [[{'type': 'profile-group-membership', 'is_member': True, 'group_ids': [M['welcome_list']]}], [pm(M['order'], 'equals', 0, LAST(30))]]),
     'giftcard': ('Q4 · Bought a gift card in the last 60 days (bulk-add for F13E2)', lambda: [[pm(M['ordered'], 'greater-than', 0, LAST(60), [{'property': 'Name', 'filter': {'type': 'string', 'operator': 'contains', 'value': 'Gift Card'}}])]]),
     'salelive_open': ('Q4 · On Sale live list, no order in 7 days (bulk-add for F10E3)', lambda: [[{'type': 'profile-group-membership', 'is_member': True, 'group_ids': [K['lists']['salelive']]}], [pm(M['order'], 'equals', 0, LAST(7))]]),
+    'sunset_noclick': ('Q4 · On the Sunset list, no click in 14 days (suppress on Nov 2)', lambda: [[{'type': 'profile-group-membership', 'is_member': True, 'group_ids': [K['lists']['sunset']]}], [pm(M['clicked'], 'equals', 0, LAST(14))]]),
     'gender_set': ('Q4 · Gender set', lambda: [[{'type': 'profile-property', 'property': "properties['Gender']", 'filter': {'type': 'existence', 'operator': 'is-set'}}]]),
 }
+RETIRED = {'popup_presale'}  # F1E6 / F1E7 were dropped (campaigns 01 and 03 carry those days)
+REDEF = {'browsed', 'unengaged'}  # browsed 30 -> 60 days, sunset 120 -> 180 days with real opens and visits (Oct 8)
 def step_segments():
     S = K.setdefault('segments', {}); have = {s['attributes']['name']: s['id'] for s in pages('segments/')}
     names = {v: k for k, v in have.items()}
+    SH = K.setdefault('segment_hash', {})
+    for key in [k for k in list(S) if k in RETIRED]:
+        try: call(f'segments/{S[key]}/', method='DELETE'); print('deleted segment', key, S[key])
+        except Exception as ex: print('segment delete failed', key, str(ex)[:200])
+        del S[key]; save()
     for key, (name, fn) in SEGS.items():
         if key in S:
-            if names.get(S[key], name) != name: call(f'segments/{S[key]}/', {'data': {'type': 'segment', 'id': S[key], 'attributes': {'name': name}}}, 'PATCH'); print('renamed', name)
+            d = {'condition_groups': [{'conditions': c} for c in fn()]}; h = H(d)
+            if names.get(S[key], name) != name or (key in SH and SH[key] != h) or (key not in SH and key in REDEF):
+                call(f'segments/{S[key]}/', {'data': {'type': 'segment', 'id': S[key], 'attributes': {'name': name, 'definition': d}}}, 'PATCH'); print('updated', name)
+            SH[key] = h; save()
             continue
         try:
             S[key] = have.get(name) or call('segments/', {'data': {'type': 'segment', 'attributes': {'name': name, 'definition': {'condition_groups': [{'conditions': c} for c in fn()]}}}})['data']['id']
@@ -158,11 +181,10 @@ class FB:
 def since_start(*mids): return [{'conditions': [pm(x, 'equals', 0, {'type': 'date', 'operator': 'flow-start'})]} for x in mids]
 def not_in_flow(days): return [{'conditions': [{'type': 'profile-not-in-flow', 'timeframe_filter': LAST(days)}]}]
 SMS_SPLIT = {'condition_groups': [{'conditions': [{'type': 'profile-marketing-consent', 'consent': {'channel': 'sms', 'can_receive_marketing': True, 'consent_status': {'subscription': 'subscribed', 'filters': None}}}]}]}
-NO_SS = {'F1E1', 'F5E1', 'F6E1', 'F9E1'}
+NO_SS = {'F1E1', 'F4E1', 'F5E1', 'F6E1', 'F9E1'}  # cart and checkout reminders always send, even on campaign days
 # fixed-date emails: the flow API has no "wait until date", so each is its own one-email flow triggered by a list,
 # and on the send date its segment is bulk-added to that list (`push.py EU release F1E6`)
-DATED = {'F1E6': ('popup_presale', '2026-11-11T09:00'), 'F1E7': ('popup_presale', '2026-11-13T08:00'),
-         'F10E3': ('salelive_open', '2026-12-05T09:00'), 'F13E2': ('giftcard', '2027-01-02T09:00')}
+DATED = {'F10E3': ('salelive_open', '2026-12-05T09:00'), 'F13E2': ('giftcard', '2027-01-02T09:00')}
 SKIP_IN_FLOW = set(DATED)
 def sms_body(f, e, r):
     prod = {'F2': '{{ event.Name }}', 'F4': "{{ event|lookup:'Product Name' }}", 'F9': '{{ event.ProductName }}'}.get(f['id'], '')
@@ -177,7 +199,7 @@ def sms_body(f, e, r):
 # subject + preview: full date logic when it fits Klaviyo's 250 characters, else the current period's text
 # (switched on each period's first day by `push.py EU subjects`)
 import datetime
-SWITCH = [('pre', '2026-11-11'), ('ea', '2026-11-13'), ('bf', '2026-12-01'), ('cw', '2026-12-07'), ('xmas', '2026-12-18'), ('late', '2026-12-25')]
+SWITCH = [('pre', '2026-11-11'), ('ea', '2026-11-13'), ('bf', '2026-12-01'), ('cw', '2026-12-07'), ('xmas', '2026-12-11'), ('late', '2026-12-25')]
 def phase_now(day=None):
     day = day or datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
     return next((p for p, end in SWITCH if day < end), 'post')
@@ -254,7 +276,7 @@ def build_gender(kind):
                 entry_action_id=fb.acts[0]['temporary_id'], reentry_criteria=None)
 def step_flows():
     F = K.setdefault('flows', {})
-    for f, d in [(f, build_flow(f)) for f in Q.FLOWS + [Q.S1]] + [(Q.G1, build_gender('G1')), (Q.G2, build_gender('G2'))]:
+    for f, d in [(f, build_flow(f)) for f in Q.FLOWS + [Q.S1] if not f.get('campaign')] + [(Q.G1, build_gender('G1')), (Q.G2, build_gender('G2'))]:
         if d is None: F[f['id']] = dict(id=None, note='build by hand: Back in Stock trigger, templates are ready'); save(); continue
         h = H([d, f['name'], [K['templates'].get(e['id'], {}).get('hash') for e in f['emails']]]); cur = F.get(f['id'])
         if cur and cur.get('hash') == h: continue
@@ -285,24 +307,73 @@ def step_dated():
         time.sleep(1.2)
         res = call('flows/', {'data': {'type': 'flow', 'attributes': {'name': f'Q4 · {eid} · {e["name"]} · {when[:10]} {when[11:]}', 'definition': d}}})
         F[eid] = dict(id=res['data']['id'], hash=h); save(); print('dated flow', eid, res['data']['id'])
+    for eid in ('F1E6', 'F1E7'):  # retired: the campaigns on Nov 11 and Nov 13 carry these
+        if F.get(eid, {}).get('id'):
+            try: call(f'flows/{F[eid]["id"]}/', method='DELETE'); print('deleted dated flow', eid)
+            except Exception as ex: print('flow delete failed', eid, str(ex)[:200])
+            del F[eid]; save()
+        lid = K['lists'].pop('d_' + eid, None)
+        if lid:
+            try: call(f'lists/{lid}/', method='DELETE'); print('deleted list', eid, lid)
+            except Exception as ex: print('list delete failed', eid, str(ex)[:200])
+            save()
     C = K.get('campaigns', {})  # the earlier draft email campaigns for these four are replaced by the flows
     for eid in DATED:
         if eid in C:
             try: call(f'campaigns/{C[eid]}/', method='DELETE'); print('deleted campaign', eid, C[eid])
             except Exception as ex: print('campaign delete failed', eid, str(ex)[:200]); continue
             del C[eid]; save()
-def step_release():  # run on the send date only, once the flow is live: this is what sends the email
-    eid = STEPS[STEPS.index('release') + 1]; STEPS.remove(eid); seg = K['segments'][DATED[eid][0]]; lid = K['lists']['d_' + eid]
+def arg():  # the value after the current step name on the command line
+    v = STEPS[STEPS.index(CUR) + 1]; STEPS.remove(v); return v
+def flow_status(key):
+    fid = K.get('flows', {}).get(key, {}).get('id')
+    return call(f'flows/{fid}/')['data']['attributes']['status'] if fid else None
+def add_segment_to_list(seg, lid):
     ids = [p['id'] for p in pages(f'segments/{seg}/profiles/?page[size]=100&fields[profile]=id')]
     for i in range(0, len(ids), 1000):
         call(f'lists/{lid}/relationships/profiles/', {'data': [{'type': 'profile', 'id': x} for x in ids[i:i + 1000]]})
-    print('release', eid, len(ids), 'profiles added to', lid)
+    return len(ids)
+# date steps: each acts only when the flow it feeds is live, so nothing sends before the go-live
+def step_release():  # push.py EU release F10E3: on the send date, add the segment to the dated flow's list
+    eid = arg(); st_ = flow_status(eid)
+    if st_ != 'live': print('release', eid, 'skipped: flow is', st_); return
+    print('release', eid, add_segment_to_list(K['segments'][DATED[eid][0]], K['lists']['d_' + eid]), 'profiles added')
+def step_bulkadd():  # push.py EU bulkadd lapsed winback F7: add a segment to the list that triggers a flow
+    seg, lst, fl = arg(), arg(), arg(); st_ = flow_status(fl)
+    if st_ != 'live': print('bulkadd', seg, '->', lst, 'skipped:', fl, 'is', st_); return
+    print('bulkadd', seg, '->', lst, add_segment_to_list(K['segments'][seg], K['lists'][lst]), 'profiles added')
+def step_suppress_sunset():  # after F8: suppress sunset recipients who did not click (needs F8 to have been switched on)
+    st_ = flow_status('F8')
+    if st_ in (None, 'draft'): print('suppress_sunset skipped: F8 is', st_); return
+    seg = K['segments']['sunset_noclick']
+    n = sum(1 for _ in pages(f'segments/{seg}/profiles/?page[size]=100&fields[profile]=id'))
+    call('profile-suppression-bulk-create-jobs/', {'data': {'type': 'profile-suppression-bulk-create-job', 'attributes': {'profiles': {'data': []}},
+         'relationships': {'segment': {'data': {'type': 'segment', 'id': seg}}}}})
+    print('suppress_sunset: suppression job started for', n, 'profiles')
 
 # ---------------------------------------------------------------- campaigns (drafts with the planned send time; nothing is scheduled)
 TZ = '+01:00' if ACCT == 'EU' else '-05:00'
-CAMP_SMS = {'S2C1': '2026-11-11T09:00:00', 'S2C2': '2026-11-13T08:00:00', 'S2C3': '2026-11-30T12:00:00', 'S2C4': '2026-12-06T18:00:00', 'S2C5': '2026-12-17T10:00:00', 'S2C6': '2026-12-22T10:00:00'}
+CAMP_SMS = {'S2C1': '2026-11-11T09:00:00', 'S2C2': '2026-11-13T08:00:00', 'S2C3': '2026-11-30T12:00:00', 'S2C4': '2026-12-06T18:00:00', 'S2C5': '2026-12-10T12:00:00', 'S2C6': '2026-12-22T10:00:00',
+            'S2C7': '2026-11-27T19:00:00', 'S2C8': '2026-11-28T10:00:00'}
+CAMP_EMAIL = {}  # the Christmas emails are the campaign page's XM-01 to XM-06 (built with the other campaigns)
 def step_campaigns():
-    C = K.setdefault('campaigns', {}); S = K['segments']
+    C = K.setdefault('campaigns', {}); S = K['segments']; CH = K.setdefault('campaign_hash', {})
+    for f, e in emails():
+        if e['id'] not in CAMP_EMAIL: continue
+        when = CAMP_EMAIL[e['id']]; r = R(ACCT, f['id'], K['images']); t = K['templates'][e['id']]
+        h = H([e['name'], when, t['hash'], subj_prev(r, e, phase_now(when[:10]))])
+        if e['id'] in C and CH.get(e['id']) == h: continue
+        if e['id'] in C:
+            try: call(f'campaigns/{C[e["id"]]}/', method='DELETE')
+            except Exception as ex: print('campaign delete failed', e['id'], str(ex)[:200]); continue
+        sj, pv = subj_prev(r, e, phase_now(when[:10]))
+        body = {'data': {'type': 'campaign', 'attributes': {'name': f'Q4 · {e["id"]} · {e["name"]}', 'audiences': {'included': [S['eng90']], 'excluded': []},
+                'send_strategy': {'method': 'static', 'datetime': when + TZ, 'options': {'is_local': True, 'send_past_recipients_immediately': False}},
+                'campaign-messages': {'data': [{'type': 'campaign-message', 'attributes': {'definition': {'channel': 'email', 'label': e['id'],
+                    'content': {'subject': sj, 'preview_text': pv, 'from_email': K['map']['from_email'], 'from_label': K['map']['from_label']}}}}]}}}}
+        res = call('campaigns/', body); cid = res['data']['id']; mid = res['data']['relationships']['campaign-messages']['data'][0]['id']
+        call('campaign-message-assign-template/', {'data': {'type': 'campaign-message', 'id': mid, 'relationships': {'template': {'data': {'type': 'template', 'id': t['id']}}}}})
+        C[e['id']] = cid; CH[e['id']] = h; save(); print('email campaign', e['id'], cid)
     r = R(ACCT, 'S2', K['images']); CH = K.setdefault('campaign_hash', {})
     for e in Q.S2['emails']:
         h = H([e['name'], CAMP_SMS[e['id']], sms_body(Q.S2, e, r)])
@@ -353,5 +424,5 @@ def step_subjects(day=None):
             call(f'flow-actions/{a["id"]}/', {'data': {'type': 'flow-action', 'id': a['id'], 'attributes': {'definition': d}}}, 'PATCH'); n += 1
     print('subjects switched to', ph, n, 'emails')
 
-for s in list(STEPS):
-    if s in STEPS: globals()['step_' + s]()
+for CUR in list(STEPS):
+    if CUR in STEPS: globals()['step_' + CUR]()

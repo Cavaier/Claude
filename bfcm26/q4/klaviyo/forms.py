@@ -9,6 +9,8 @@ import q4_specs as Q
 from preview import g as GEN
 from PIL import Image
 A = sys.argv[1]; REPLACE = '--replace' in sys.argv
+ONLY = sys.argv[sys.argv.index('--only') + 1] if '--only' in sys.argv else None  # rebuild one period's form
+# note: the forms API creates forms as drafts only and can't edit them, so publishing is done in Klaviyo (Sign-up forms → Publish)
 LIVE = {'EU': 'SyHM2E', 'US': 'YdzGsM'}[A]
 ST = os.path.join(Q4, 'sync_state.json')
 
@@ -114,7 +116,10 @@ PNAME = {'pre': 'Pre-sale', 'ea': 'Early access', 'bf': 'Black Friday + Cyber We
 DAY = {p: next((d for d in Q.DAYS if d['phase'] == p and d['default']), None) or next(d for d in Q.DAYS if d['phase'] == p) for p in PH}
 def txt(v, p):
     if isinstance(v, dict): v = next((x for k, x in v.items() if p in k.split()), '')
-    return re.sub(r'«(\w+)»', lambda m: DAY[p].get(m.group(1), ''), v)
+    v = re.sub(r'«(\w+)»', lambda m: DAY[p].get(m.group(1), ''), v)
+    if A == 'US':  # US store: 12-hour clock ("at 09:00" -> "at 9 AM")
+        v = re.sub(r'\b(\d{1,2}):(\d\d)\b', lambda m: f"{int(m.group(1)) % 12 or 12}{'' if m.group(2) == '00' else ':' + m.group(2)} {'AM' if int(m.group(1)) < 12 else 'PM'}", v)
+    return v
 
 live_def = call(f'forms/{LIVE}/')['data']['attributes']['definition']
 live = next(x for x in live_def['versions'] if x.get('status') == 'live')
@@ -178,7 +183,8 @@ def version(p):
 
 F = K.setdefault('forms', {})
 for p in PH:
-    if p in F and not REPLACE and not str(F[p]).startswith('v1:'): continue
+    if ONLY and p != ONLY: continue
+    if p in F and not REPLACE and not ONLY and not str(F[p]).startswith('v1:'): continue
     old = str(F.get(p, '')).replace('v1:', '')
     if old:
         try: call(f'forms/{old}/', method='DELETE')

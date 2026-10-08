@@ -24,7 +24,7 @@ P = {
     'p_crystal_neck': 'crystal-necklace__0', 'p_crystal_neck_silver': 'crystal-necklace__4', 'p_crystal_neck_worn': 'crystal-necklace__1',
     'p_cuban_neck': 'cuban-necklace-1__0', 'p_cuban_neck_worn': 'cuban-necklace-1__1', 'p_cube_pend': 'cube-necklace-1__0',
     'p_cube_pend_worn': 'cube-necklace__1', 'p_role_pend': 'role-necklace__0', 'p_role_pend_worn': 'role-necklace-1__2',
-    'p_rope_br': 'rope-bracelet-2__1', 'p_rope_neck_worn': 'rope-necklace__3', 'p_cuff_black': 'minimal-cuff-1__0',
+    'p_rope_br': 'rope-bracelet-2__1', 'p_rope_neck_worn': 'rope-necklace__3', 'p_cuff_black': 'matte-cuff__0',
     'p_cuff_worn': 'minimal-cuff__3', 'p_case': 'jewelry-case__0', 'p_case_open': 'jewelry-case__1', 'p_giftcard': 'cavaier-gift-card__0',
     'p_cube_br_m': 'cube-bracelet__1', 'p_cube_br_w': 'cube-bracelet-1__1',
 }
@@ -188,7 +188,7 @@ DYN = {
 def m_dynamic_product(m):
     im, nm, var, pr, note = DYN[m['source']]
     under = {'pre post': '', 'ea': '<span class="red">Members save 30%</span>', 'bf cw': '<span class="red">30% off at checkout</span>',
-             'xmas': '<span class="red">Order by [cut-off] for Christmas</span>', 'late': '<span class="red">Or send a gift card</span>'}
+             'xmas': '<span class="red">Order by Dec 10 for Christmas</span>', 'late': '<span class="red">Or send a gift card</span>'}
     o = f'<div class="m-dyn{" side" if m.get("size") == "side" else ""}"><a href="#">{img(im, "")}</a><div class="dt"><h4>{t(nm)}</h4>'
     if var: o += f'<span class="small mute">{t(var)}</span>'
     o += f'<span class="dp">{t(pr)}</span>{t(under)}</div><p class="stand">{note}</p></div>'
@@ -229,7 +229,7 @@ def m_order_table(m):
 def m_deadline(m): return f'<div class="m-dl"><span>{t(m["label"])}</span><b>{t(m["value"])}</b></div>'
 
 def m_shipping_calendar(m):
-    rows = m.get('rows') or [['Netherlands & EU', '[cut-off date]'], ['United Kingdom', '[cut-off date]'], ['US, Canada, Australia', '[cut-off date]'], ['Rest of world', '[cut-off date]']]
+    rows = m.get('rows') or [['Christmas delivery, every country', 'Order by Thu Dec 10'], ['After Dec 10', 'A gift card arrives instantly']]
     return (f'<div class="m-cal"><div class="ch"><b>{t(m.get("title", "Order by, for Christmas"))}</b><span class="lab">Standard delivery</span></div>'
             + ''.join(f'<div class="cr"><span>{t(a)}</span><span>{t(b)}</span></div>' for a, b in rows) + '</div>')
 
@@ -244,9 +244,9 @@ def m_steps(m): return '<div class="m-steps">' + ''.join(f'<div><b>0{i+1}</b><p>
 def m_checklist(m): return '<div class="m-check">' + ''.join(f'<div><i>✓</i><span>{t(x)}</span></div>' for x in m['items']) + '</div>'
 
 def m_quote(m):
-    who = m.get('who') or 'Name · Trustpilot'
-    q = f'<div class="m-quote"><span class="stars">★★★★★</span><p>[Verified Trustpilot review — to pull]</p><span class="who">{t(who)}</span></div>'
-    return q * m.get('count', 1)
+    from q4_specs import QUOTES, WHO, WHO2
+    return ''.join(f'<div class="m-quote"><span class="stars">★★★★★</span><p>“{t(QUOTES[i])}”</p><span class="who">{t(WHO if i == 0 else WHO2)}</span></div>'
+                   for i in range(min(2, m.get('count', 1))))
 
 def m_score(m): return '<div class="m-score"><span class="stars">★★★★★</span><b>4.5</b><span class="lab">Trustpilot · 3,000+ reviews</span></div>'
 def m_faq(m): return '<div class="m-faq">' + ''.join(f'<div><b>{t(q)}</b><p>{t(a)}</p></div>' for q, a in m['items']) + '</div>'
@@ -392,7 +392,7 @@ def band_html(G):
             f'<div class="cols">{"".join(flow_html(G, f) for f in FLOWS)}</div></section>\n')
 def sband_html():
     return ('<section class="band sband" id="band-S" data-g="S"><header class="bandh"><span class="bk">Texts and data for everyone, women and men</span>'
-            '<h1>SMS + profile</h1><p>S1 SMS welcome · S2 the six SMS campaigns · G1–G2 fill in Gender from orders and browsing. The texts inside F2, F4, F5, F7 and F9 sit in those flows below.</p></header>'
+            '<h1>SMS + profile</h1><p>S1 SMS welcome · S2 the eight SMS campaigns · G1–G2 fill in Gender from orders and browsing. The texts inside F2, F4, F5, F7 and F9 sit in those flows below.</p></header>'
             f'<div class="cols">{"".join(flow_html("S", f) for f in SFLOWS)}</div></section>\n')
 
 # ---- pop-up frames

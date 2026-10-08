@@ -200,7 +200,7 @@ div.st,div.gW,div.gM{display:block}
 .m-check div{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font:300 14px/1.45 var(--body)}
 .m-check div:first-child{border-top:1px solid var(--line)}
 .m-check i{font-style:normal;color:var(--red);font-weight:500}
-.m-quote{margin:30px 24px 0;padding:22px 24px;border:1px dashed #BDBDBA;display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;background:var(--white)}
+.m-quote{margin:30px 24px 0;padding:22px 24px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;background:var(--white)}
 .m-quote+.m-quote{margin-top:10px}
 .m-quote p{font:300 16px/1.45 var(--body);color:var(--ink2)}
 .m-quote .who{font:400 11px/1.3 var(--body);color:var(--grey)}
