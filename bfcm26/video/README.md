@@ -7,7 +7,9 @@ Drafts go to `drafts/`, approved finals (720p) to `finals/`. The sharp text laye
 | Video | Source static | Lane |
 |---|---|---|
 | M Batch 470 - C1 | R1-02-highlight (M 467 C2) | men |
-| M Batch 470 - C2 | R1-06-checklist (M 468 C3) | men |
-| M Batch 470 - C3 | R1-07-sticker (M 469 C1) | men |
+| M Batch 471 - C1 | R1-06-checklist (M 468 C3) | men |
+| M Batch 472 - C1 | R1-07-sticker (M 469 C1) | men |
 | W Batch 416 - C1 | W415-C3-night-hook | women |
 | W Batch 416 - C2 | W415-C1-red-deal | women |
+
+A batch is an ad set. Videos made from a static batch form their own video batch (new number), shown beside that batch's row; it fills C1-C3, then a new video batch starts. The statics stay live.
