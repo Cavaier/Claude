@@ -97,6 +97,42 @@
       "seed": 10387,
       "file": "../finals/R1-07-sticker.mp4",
       "note": "720p was refused for the draft-to-final step; rendered at 1080p."
+    },
+    "M445-C2": {
+      "task_id": "cgt-20261009072544-pa56e",
+      "draft_task_id": "cgt-20261009071304-w53f6",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "size": "1080x1920",
+      "duration": 5,
+      "duration_actual_s": 5.042,
+      "fps": 24,
+      "generate_audio": false,
+      "seed": 32813,
+      "file": "../finals/M445-C2.mp4"
+    },
+    "M445-C3-photo": {
+      "task_id": "cgt-20261009072545-t5ll8",
+      "draft_task_id": "cgt-20261009071307-o5xtp",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "ratio": "618:839",
+      "width": 1236,
+      "height": 1678,
+      "size": "1236x1678",
+      "duration": 5,
+      "duration_actual_s": 5.042,
+      "fps": 24,
+      "generate_audio": false,
+      "seed": 89541,
+      "file": "../finals/M445-C3-photo.mp4"
     }
   },
   "M445-C1": {
@@ -140,5 +176,19 @@
     "seed": 89541,
     "draft_task_id": "cgt-20261009071307-o5xtp",
     "file": "M445-C3-photo.mp4"
+  },
+  "M445-C1-v2": {
+    "task_id": "cgt-20261009072543-0aoih",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "size": "480x854",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 94139,
+    "draft_task_id": "cgt-20261009072543-0aoih",
+    "file": "M445-C1-v2.mp4"
   }
 }
