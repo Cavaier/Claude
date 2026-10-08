@@ -1,0 +1,68 @@
+{
+  "_notes": "Seedance 2.5 drafts (draft=true, 480p, 5 s, no audio). ratio was not sent: ModelArk rejects ratio for first-frame i2v and follows the 9:16 input image (output 480x854). To render a final, POST a task with model dreamina-seedance-2-5-260628 and only a draft_task content item referencing draft_task_id; do not resend prompt/image/duration/ratio/generate_audio. Third-party docs say the draft-to-final step may only accept 1080p (720p unconfirmed). Drafts stay renderable about 7 days.",
+  "R1-02-highlight": {
+    "task_id": "cgt-20261009054308-njn3u",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 66926,
+    "draft_task_id": "cgt-20261009054308-njn3u",
+    "file": "R1-02-highlight.mp4"
+  },
+  "R1-06-checklist": {
+    "task_id": "cgt-20261009054313-w79kd",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 81166,
+    "draft_task_id": "cgt-20261009054313-w79kd",
+    "file": "R1-06-checklist.mp4"
+  },
+  "R1-07-sticker": {
+    "task_id": "cgt-20261009054316-e7ani",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 10387,
+    "draft_task_id": "cgt-20261009054316-e7ani",
+    "file": "R1-07-sticker.mp4"
+  },
+  "W415-C1-red-deal": {
+    "task_id": "cgt-20261009054318-zsf94",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 86922,
+    "draft_task_id": "cgt-20261009054318-zsf94",
+    "file": "W415-C1-red-deal.mp4"
+  },
+  "W415-C3-night-hook": {
+    "task_id": "cgt-20261009054321-eyhcu",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "ratio": "240:427",
+    "duration": 5,
+    "generate_audio": false,
+    "seed": 59712,
+    "draft_task_id": "cgt-20261009054321-eyhcu",
+    "file": "W415-C3-night-hook.mp4"
+  }
+}
