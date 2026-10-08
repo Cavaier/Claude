@@ -59,3 +59,8 @@ Text-only letters (no images): V10-06, V10-08, V10-16, V10-17, 14-A.
 
 ## Context
 Strategy, rules and audit history: Figma flows page 359:2, Rules panel 754:2 (sections 1–8). Sale from Nov 13: prices already 30% off on the site, no code (only early access Nov 11–12 uses BF26). Domains: EU cavaier.com, US us.cavaier.com.
+
+## Status (session 2, Oct 8)
+- `OPENAI_API_KEY` is set, but `api.openai.com` is still denied by the environment's network policy (proxy 403 on CONNECT). Eli needs to add `api.openai.com` under Allowed domains in Network access (environment settings → Edit), then start a new session.
+- Product reference photos are mapped in `imgref/refs.json` (handle → Shopify CDN URLs). Rerun the download snippet into `imgref/` (images are gitignored, ~100 MB).
+- Not yet done: the pricing check (platform.openai.com wasn't reachable either), the review page, and any generation.
