@@ -2,7 +2,7 @@
 
 Inputs (`inputs/*.jpg`) are the clean photo layers of the statics: no text, 1080x1920.
 Seedance 2.5 (ModelArk, `SEEDANCE_API_KEY`) animates them with gentle slow motion only.
-Drafts go to `drafts/`, approved finals (720p) to `finals/`. The sharp text layer is laid back on top afterwards.
+Drafts go to `drafts/`, approved finals (1080p, 1080x1920) to `finals/`. The sharp text layer is laid back on top afterwards.
 
 | Video | Source static | Lane |
 |---|---|---|
@@ -11,5 +11,6 @@ Drafts go to `drafts/`, approved finals (720p) to `finals/`. The sharp text laye
 | M Batch 472 - C1 | R1-07-sticker (M 469 C1) | men |
 | W Batch 416 - C1 | W415-C3-night-hook | women |
 | W Batch 416 - C2 | W415-C1-red-deal | women |
+| W Batch 416 - C3 | W415-C2-stack-chart | women |
 
 A batch is an ad set. Videos made from a static batch form their own video batch (new number), shown beside that batch's row; it fills C1-C3, then a new video batch starts. The statics stay live.
