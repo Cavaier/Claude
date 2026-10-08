@@ -111,7 +111,7 @@ const data=await p.evaluate(()=>{
   const ud=document.createElement('style');ud.textContent='.entry.dim .em{opacity:1!important;filter:none!important}.elab .off{display:none!important}';document.head.appendChild(ud);
   click(BF);
   document.querySelectorAll('section.entry').forEach(sec=>{const g=sec.id.split('-')[0];ext({art:sec.querySelector('article.em'),id:sec.id,eid:sec.dataset.id,g,subj:(sec.querySelector('.elab .subj')||{}).innerText||'',st:sec.dataset.s})});
-  for(const [ph,d] of [['pre','pre'],['ea','2026-11-23'],['bf',BF],['xmas','x1'],['late','l1'],['post','post']]){click(d);
+  for(const [ph,d] of [['pre','pre'],['ea','2026-11-11'],['bf',BF],['xmas','x1'],['late','l1'],['post','post']]){click(d);
     document.querySelectorAll('#band-P figure.pf').forEach((f,i)=>ext({art:f.querySelector('.pscreen'),id:'POP-'+ph+'-'+(i+1),eid:'POP',g:'P',ph,cap:f.querySelector('figcaption').textContent}))}
   click(BF);
   const hs=document.createElement('style');hs.textContent='.col article.em{visibility:hidden!important}';document.head.appendChild(hs);

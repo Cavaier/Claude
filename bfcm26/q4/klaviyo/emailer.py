@@ -7,9 +7,9 @@ from q4_specs import DAYS, KEYS
 
 ORDER = ['pre', 'ea', 'bf', 'cw', 'xmas', 'late', 'post']
 CUT = '2026-12-18'  # first "last minute" day = day after the Christmas cut-off [placeholder until the CEO confirms]
-PR = {'pre': (None, '2026-11-23'), 'ea': ('2026-11-23', '2026-11-27'), 'bf': ('2026-11-27', '2026-12-01'), 'cw': ('2026-12-01', '2026-12-07'),
+PR = {'pre': (None, '2026-11-11'), 'ea': ('2026-11-11', '2026-11-13'), 'bf': ('2026-11-13', '2026-12-01'), 'cw': ('2026-12-01', '2026-12-07'),
       'xmas': ('2026-12-07', CUT), 'late': (CUT, '2026-12-25'), 'post': ('2026-12-25', None)}
-DAYRANGE = {'x1': ('2026-12-07', '2026-12-14'), 'x2': ('2026-12-14', '2026-12-17'), 'x3': ('2026-12-17', CUT), 'l1': (CUT, '2026-12-24')}
+DAYRANGE = {'b1': ('2026-11-14', '2026-11-27'), 'x1': ('2026-12-07', '2026-12-14'), 'x2': ('2026-12-14', '2026-12-17'), 'x3': ('2026-12-17', CUT), 'l1': (CUT, '2026-12-24')}
 FONT = "'Figtree','Helvetica Neue',Helvetica,Arial,sans-serif"
 SERIF = "'Bodoni Moda',Didot,'Bodoni 72',Georgia,serif"
 BLACK, WHITE, FOG, FOG2, GREY, LINE, INK2, RED = '#0B0B0B', '#FFFFFF', '#F2F2F1', '#E8E8E6', '#8B8B88', '#DCDCDA', '#3A3A38', '#A82C24'
@@ -318,7 +318,7 @@ class R:
                 '</td></tr></table></body></html>')
     # subject / preview: Klaviyo caps these at ~250 characters including logic, so they use a compact chain
     # (upper bounds only, %y%m%d dates) and the main day of each period for day-level «tokens»
-    UPPER = [('pre', '261123'), ('ea', '261127'), ('bf', '261201'), ('cw', '261207'), ('xmas', CUT[2:].replace('-', '')), ('late', '261225')]
+    UPPER = [('pre', '261111'), ('ea', '261113'), ('bf', '261201'), ('cw', '261207'), ('xmas', CUT[2:].replace('-', '')), ('late', '261225')]
     def _phase_text(self, v, p):
         day = next((d for d in DAYS if d['phase'] == p and d['default']), None) or next((d for d in DAYS if d['phase'] == p), {})
         if isinstance(v, dict) and not set(v) <= {'W', 'M'}:

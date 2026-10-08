@@ -43,23 +43,28 @@ Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the
 - Christmas cut-off dates, shipping copy and the US catalog / product URLs are per store.
 - The pop-up is built by hand in each account’s form editor (no create-form API).
 
+## Calendar (changed Oct 8)
+
+Pre-sale Oct 27 – Nov 10 · early access Wed Nov 11 – Thu Nov 12, members only, code **BF26** (30% off) · Black Friday sale Nov 13 – 30 (the website switches to Black Friday on Nov 13; no code; Black Friday day Nov 27, Matte Cuff Nov 28, Cyber Monday Nov 30) · Cyber Week Dec 1 – 6 · then Christmas as before. F8 sunset now runs Oct 19 – Nov 1 (suppress Nov 2 – 9). Day line `b1` covers Nov 14 – 26.
+After a copy change, `push.py EU|US templates lists flows dated campaigns` rebuilds the affected draft flows (flow hashes include template HTML) and the SMS campaigns; `forms.py EU|US --replace` rebuilds the pop-ups.
+
 ## SMS and Gender (on push)
 
 - SMS texts live inside the same Klaviyo flows (F2, F4, F5, F7, F9) behind a “can receive SMS” split, plus S1 SMS Welcome. S2 is six scheduled SMS campaigns, not a flow.
 - Every text is checked by `gen_q4.py` to be plain GSM-7 and one segment (160 incl. 23-char link and the opt-out line).
 - G1/G2 set the profile property `Gender` from Ordered Product (English collections / tags) and Viewed Product (translated category names, list in `q4_specs.py`). They never overwrite an existing Gender.
 - One-off backfill on the first push to each account: set `Gender` (+ `Gender source = order`) for existing customers with no Gender from their Ordered Product history, via the API.
-- F7, F8, F11 are list-triggered: bulk-add their segments on the dates in each flow's trigger (F8 Oct 19, F11 Nov 19, F7 Nov 23; F7/F11 top-up Dec 7).
+- F7, F8, F11 are list-triggered: bulk-add their segments on the dates in each flow's trigger (F8 Oct 19, F11 Nov 9, F7 Nov 11; F7/F11 top-up Dec 7).
 
 ## Klaviyo push (done Oct 7, both accounts, all drafts)
 
 `klaviyo/push.py EU|US [images templates lists segments flows dated campaigns backfill subjects | release <EID>]`; ids in `sync_state.json['klaviyo']`.
 - 39 templates per account (`Q4 · F1E1 · …`), email-safe HTML from `klaviyo/emailer.py`; date phase + Gender logic inside; `klaviyo/rendertest.py` renders all through Klaviyo.
 - 19 flows per account as drafts (F1–F8, F10–F13, S1, G1, G2 + the 4 dated ones below). F9 Back in Stock: build by hand (no API trigger), templates `Q4 · F9E1/E2` are ready.
-- Fixed-date emails F1E6 (Nov 23 09:00), F1E7 (Nov 27 08:00), F10E3 (Dec 5 09:00), F13E2 (Jan 2 09:00) are their own one-email draft flows (`Q4 · F1E6 · … · date`), triggered by lists `Q4 · Send <EID> · <date>`. The flow API has no "wait until date", so on the send date (flow live first) run `push.py EU release F1E6` / `push.py US release F1E6` at the send time: it adds the segment (pop-up no-order / On Sale live no order in 7 days / gift card buyers) to the list and the flow sends at once. Each flow skips anyone who orders after entering. The earlier draft email campaigns for these four were deleted (Oct 8).
+- Fixed-date emails F1E6 (Nov 11 09:00), F1E7 (Nov 13 08:00), F10E3 (Dec 5 09:00), F13E2 (Jan 2 09:00) are their own one-email draft flows (`Q4 · F1E6 · … · date`), triggered by lists `Q4 · Send <EID> · <date>`. The flow API has no "wait until date", so on the send date (flow live first) run `push.py EU release F1E6` / `push.py US release F1E6` at the send time: it adds the segment (pop-up no-order / On Sale live no order in 7 days / gift card buyers) to the list and the flow sends at once. Each flow skips anyone who orders after entering. The earlier draft email campaigns for these four were deleted (Oct 8).
 - The only campaigns are S2C1–C6, draft SMS campaigns. None scheduled.
 - Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
-- Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; run `push.py EU subjects` and `push.py US subjects` on Nov 23, Nov 27, Dec 1, Dec 7, Dec 18 [cut-off] and Dec 25.
+- Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; run `push.py EU subjects` and `push.py US subjects` on Nov 11, Nov 13, Dec 1, Dec 7, Dec 18 [cut-off] and Dec 25.
 - Gender backfill from order history: not run yet (needs an explicit go).
 - Pop-ups: `klaviyo/forms.py EU|US` built six draft forms per account (`Q4 Pop-up · Pre-sale` … `After Christmas`), built to the Figma design (two B/W photos as the side image, #F2F2F1 panel, logo, red kicker, light headline, black buttons, “Not now”, teaser tab), steps email → phone → who → done, shown after 5 s / exit intent / 2nd page, hidden from cart/checkout. `--replace` rebuilds them. Klaviyo limits: max 6 rows per column; the content column's styles must be null next to a side image; skip links must submit (they re-submit the email list). Publish the next one on each switch date and switch the previous one off.
 

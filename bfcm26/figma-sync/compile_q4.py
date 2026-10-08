@@ -24,7 +24,7 @@ def emspec(k,name):
 X0,Y0=6000,0
 # ---------- pop-up: one row per period
 ROWH0=844+420
-PERIOD={'pre':'Oct 27 – Nov 22','ea':'Nov 23 – 26 · publish Nov 23, 09:00','bf':'Nov 27 – Dec 6 · Black Friday + Cyber Week · publish Nov 27, 08:00',
+PERIOD={'pre':'Oct 27 – Nov 10','ea':'Nov 11 – 12 · code BF26 · publish Nov 11, 09:00','bf':'Nov 13 – Dec 6 · Black Friday + Cyber Week · publish Nov 13, 08:00',
         'xmas':'Dec 7 – Christmas cut-off · publish Dec 7','late':'Cut-off – Dec 24 · publish on the cut-off day','post':'Dec 26 → · publish Dec 26'}
 LABW,GAP,ROWH=1500,120,844+420
 y=200

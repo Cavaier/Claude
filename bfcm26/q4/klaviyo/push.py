@@ -109,10 +109,13 @@ def step_lists():
     for key, name in [('winback', 'Q4 · Winback'), ('second', 'Q4 · Second purchase'), ('sunset', 'Q4 · Sunset'), ('salelive', 'Q4 · Sale live')]:
         if key not in L:
             L[key] = have.get(name) or call('lists/', {'data': {'type': 'list', 'attributes': {'name': name}}})['data']['id']; save(); print('list', name, L[key])
+    names = {v: k for k, v in have.items()}
     for eid, (seg, when) in DATED.items():
         key, name = 'd_' + eid, f'Q4 · Send {eid} · {when[:10]} (bulk-add on the day)'
         if key not in L:
             L[key] = have.get(name) or call('lists/', {'data': {'type': 'list', 'attributes': {'name': name}}})['data']['id']; save(); print('list', name, L[key])
+        elif names.get(L[key], name) != name:
+            call(f'lists/{L[key]}/', {'data': {'type': 'list', 'id': L[key], 'attributes': {'name': name}}}, 'PATCH'); print('renamed', name)
 def pm(mid, op, val, tf, filters=None):
     return {'type': 'profile-metric', 'metric_id': mid, 'measurement': 'count', 'measurement_filter': {'type': 'numeric', 'operator': op, 'value': val},
             'timeframe_filter': tf, 'metric_filters': filters}
@@ -158,7 +161,7 @@ SMS_SPLIT = {'condition_groups': [{'conditions': [{'type': 'profile-marketing-co
 NO_SS = {'F1E1', 'F5E1', 'F6E1', 'F9E1'}
 # fixed-date emails: the flow API has no "wait until date", so each is its own one-email flow triggered by a list,
 # and on the send date its segment is bulk-added to that list (`push.py EU release F1E6`)
-DATED = {'F1E6': ('popup_presale', '2026-11-23T09:00'), 'F1E7': ('popup_presale', '2026-11-27T08:00'),
+DATED = {'F1E6': ('popup_presale', '2026-11-11T09:00'), 'F1E7': ('popup_presale', '2026-11-13T08:00'),
          'F10E3': ('salelive_open', '2026-12-05T09:00'), 'F13E2': ('giftcard', '2027-01-02T09:00')}
 SKIP_IN_FLOW = set(DATED)
 def sms_body(f, e, r):
@@ -174,7 +177,7 @@ def sms_body(f, e, r):
 # subject + preview: full date logic when it fits Klaviyo's 250 characters, else the current period's text
 # (switched on each period's first day by `push.py EU subjects`)
 import datetime
-SWITCH = [('pre', '2026-11-23'), ('ea', '2026-11-27'), ('bf', '2026-12-01'), ('cw', '2026-12-07'), ('xmas', '2026-12-18'), ('late', '2026-12-25')]
+SWITCH = [('pre', '2026-11-11'), ('ea', '2026-11-13'), ('bf', '2026-12-01'), ('cw', '2026-12-07'), ('xmas', '2026-12-18'), ('late', '2026-12-25')]
 def phase_now(day=None):
     day = day or datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
     return next((p for p, end in SWITCH if day < end), 'post')
@@ -243,7 +246,7 @@ def step_flows():
     F = K.setdefault('flows', {})
     for f, d in [(f, build_flow(f)) for f in Q.FLOWS + [Q.S1]] + [(Q.G1, build_gender('G1')), (Q.G2, build_gender('G2'))]:
         if d is None: F[f['id']] = dict(id=None, note='build by hand: Back in Stock trigger, templates are ready'); save(); continue
-        h = H(d); cur = F.get(f['id'])
+        h = H([d, f['name'], [K['templates'].get(e['id'], {}).get('hash') for e in f['emails']]]); cur = F.get(f['id'])
         if cur and cur.get('hash') == h: continue
         if cur and cur.get('id'):  # flows can't be edited through the API: replace our own draft
             try: call(f'flows/{cur["id"]}/', method='DELETE')
@@ -264,7 +267,7 @@ def build_dated(eid):
 def step_dated():
     F = K.setdefault('flows', {})
     for eid, (seg, when) in DATED.items():
-        f, e, d = build_dated(eid); h = H(d); cur = F.get(eid)
+        f, e, d = build_dated(eid); h = H([d, e['name'], when, K['templates'][eid]['hash']]); cur = F.get(eid)
         if cur and cur.get('hash') == h: continue
         if cur and cur.get('id'):
             try: call(f'flows/{cur["id"]}/', method='DELETE')
@@ -287,16 +290,21 @@ def step_release():  # run on the send date only, once the flow is live: this is
 
 # ---------------------------------------------------------------- campaigns (drafts with the planned send time; nothing is scheduled)
 TZ = '+01:00' if ACCT == 'EU' else '-05:00'
-CAMP_SMS = {'S2C1': '2026-11-23T09:00:00', 'S2C2': '2026-11-27T08:00:00', 'S2C3': '2026-11-30T12:00:00', 'S2C4': '2026-12-06T18:00:00', 'S2C5': '2026-12-17T10:00:00', 'S2C6': '2026-12-22T10:00:00'}
+CAMP_SMS = {'S2C1': '2026-11-11T09:00:00', 'S2C2': '2026-11-13T08:00:00', 'S2C3': '2026-11-30T12:00:00', 'S2C4': '2026-12-06T18:00:00', 'S2C5': '2026-12-17T10:00:00', 'S2C6': '2026-12-22T10:00:00'}
 def step_campaigns():
     C = K.setdefault('campaigns', {}); S = K['segments']
-    r = R(ACCT, 'S2', K['images'])
+    r = R(ACCT, 'S2', K['images']); CH = K.setdefault('campaign_hash', {})
     for e in Q.S2['emails']:
-        if e['id'] in C: continue
+        h = H([e['name'], CAMP_SMS[e['id']], sms_body(Q.S2, e, r)])
+        if e['id'] in C and CH.get(e['id']) == h: continue
+        if e['id'] in C:  # date or text changed: replace our own draft
+            try: call(f'campaigns/{C[e["id"]]}/', method='DELETE'); print('deleted sms campaign', e['id'], C[e['id']])
+            except Exception as ex: print('sms campaign delete failed', e['id'], str(ex)[:200]); continue
+            del C[e['id']]; save()
         body = {'data': {'type': 'campaign', 'attributes': {'name': f'Q4 · {e["id"]} · SMS · {e["name"]}', 'audiences': {'included': [S['sms']], 'excluded': []},
                 'send_strategy': {'method': 'static', 'datetime': CAMP_SMS[e['id']] + TZ, 'options': {'is_local': True, 'send_past_recipients_immediately': False}},
                 'campaign-messages': {'data': [{'type': 'campaign-message', 'attributes': {'definition': {'channel': 'sms', 'content': {'body': sms_body(Q.S2, e, r)}}}}]}}}}
-        try: C[e['id']] = call('campaigns/', body)['data']['id']; save(); print('sms campaign', e['id'], C[e['id']])
+        try: C[e['id']] = call('campaigns/', body)['data']['id']; CH[e['id']] = h; save(); print('sms campaign', e['id'], C[e['id']])
         except Exception as ex: print('SMS CAMPAIGN FAILED', e['id'], str(ex)[:500])
 
 # ---------------------------------------------------------------- Gender backfill from order history (never overwrites a Gender)

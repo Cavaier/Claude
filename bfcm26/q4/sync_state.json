@@ -53,8 +53,8 @@
    },
    "W-F1E4": {
     "em": "614:1062",
-    "br": "614:1143",
-    "hash": "c9ed1cc28f26a06f"
+    "br": null,
+    "hash": "4667206850b033dc"
    },
    "W-F1E5": {
     "em": "615:913",
@@ -64,12 +64,12 @@
    "W-F1E6": {
     "em": "615:1003",
     "br": null,
-    "hash": "a73bf1bd2820bb94"
+    "hash": "e09d4f8db5bb8bc8"
    },
    "W-F1E7": {
     "em": "616:350",
-    "br": "616:431",
-    "hash": "44582e8786ee7bf1"
+    "br": null,
+    "hash": "778f07fabca0fd76"
    },
    "W-F2E1": {
     "em": "616:436",
@@ -83,13 +83,13 @@
    },
    "W-F2E3": {
     "em": "618:450",
-    "br": "618:514",
-    "hash": "aa1e5b9d55bb2ce3"
+    "br": null,
+    "hash": "a39aec357cbcad55"
    },
    "W-F3E1": {
     "em": "619:2",
-    "br": "619:97",
-    "hash": "6aec45a9d0b0e1e9"
+    "br": null,
+    "hash": "842247087d12821f"
    },
    "W-F3E2": {
     "em": "619:102",
@@ -98,8 +98,8 @@
    },
    "W-F4E1": {
     "em": "612:2",
-    "br": "612:75",
-    "hash": "6c80528e70c6c3c7"
+    "br": null,
+    "hash": "150ca8718e374bc4"
    },
    "W-F4E2": {
     "em": "612:80",
@@ -138,8 +138,8 @@
    },
    "W-F6E2": {
     "em": "616:157",
-    "br": "616:255",
-    "hash": "9cb5acf7c4aeafb4"
+    "br": null,
+    "hash": "4c01a75750c594e4"
    },
    "W-F6E3": {
     "em": "616:260",
@@ -153,8 +153,8 @@
    },
    "W-F7E2": {
     "em": "618:281",
-    "br": "618:359",
-    "hash": "2bb611d4074869a5"
+    "br": null,
+    "hash": "91a66f1bb5436a17"
    },
    "W-F7E3": {
     "em": "612:362",
@@ -164,12 +164,12 @@
    "W-F8E1": {
     "em": "612:444",
     "br": null,
-    "hash": "67f6163779c5fb3d"
+    "hash": "beab7201aa6cedda"
    },
    "W-F8E2": {
     "em": "612:516",
     "br": null,
-    "hash": "6116e3f3a34ab590"
+    "hash": "2745f19c1d312944"
    },
    "W-F9E1": {
     "em": "613:326",
@@ -183,8 +183,8 @@
    },
    "W-F10E1": {
     "em": "613:467",
-    "br": "613:549",
-    "hash": "cd489f224516277c"
+    "br": null,
+    "hash": "20777c1fbdeb2a88"
    },
    "W-F10E2": {
     "em": "614:219",
@@ -213,8 +213,8 @@
    },
    "W-F12E1": {
     "em": "616:594",
-    "br": "616:670",
-    "hash": "c9320f112c0257a3"
+    "br": null,
+    "hash": "e6813f31cc1b81b0"
    },
    "W-F12E2": {
     "em": "616:675",
@@ -248,8 +248,8 @@
    },
    "M-F1E4": {
     "em": "613:665",
-    "br": "613:746",
-    "hash": "626eb62623008f5f"
+    "br": null,
+    "hash": "5f40befc04871614"
    },
    "M-F1E5": {
     "em": "614:758",
@@ -259,12 +259,12 @@
    "M-F1E6": {
     "em": "614:848",
     "br": null,
-    "hash": "52556c905643d4ce"
+    "hash": "cf3b8f56e5eb2faa"
    },
    "M-F1E7": {
     "em": "615:561",
-    "br": "615:642",
-    "hash": "b942e9d90d76788a"
+    "br": null,
+    "hash": "f3be1ffd3afbbf41"
    },
    "M-F2E1": {
     "em": "615:647",
@@ -278,13 +278,13 @@
    },
    "M-F2E3": {
     "em": "616:88",
-    "br": "616:152",
-    "hash": "bfff9b619f0afd29"
+    "br": null,
+    "hash": "40f0ff225feb49ca"
    },
    "M-F3E1": {
     "em": "618:2",
-    "br": "618:97",
-    "hash": "793420aa2e79d0c0"
+    "br": null,
+    "hash": "f04172258cec00fe"
    },
    "M-F3E2": {
     "em": "618:102",
@@ -293,8 +293,8 @@
    },
    "M-F4E1": {
     "em": "612:182",
-    "br": "612:255",
-    "hash": "faa376dee65fbec0"
+    "br": null,
+    "hash": "266e5df2921789d9"
    },
    "M-F4E2": {
     "em": "612:260",
@@ -429,12 +429,12 @@
    "POP-pre-1": {
     "em": "624:2",
     "br": "624:26",
-    "hash": "82ed1d64cc00c596"
+    "hash": "32bdbcab3199e1e9"
    },
    "POP-pre-2": {
     "em": "624:28",
     "br": "624:59",
-    "hash": "5869870ba5ba8fd0"
+    "hash": "e2af29e712c1d403"
    },
    "POP-pre-3": {
     "em": "624:61",
@@ -444,17 +444,17 @@
    "POP-pre-4": {
     "em": "624:79",
     "br": "624:103",
-    "hash": "5510e49fd19e8861"
+    "hash": "5988534b4182e68f"
    },
    "POP-pre-5": {
     "em": "624:105",
     "br": "624:137",
-    "hash": "6ccd3eb6a266c89e"
+    "hash": "47628878f247183b"
    },
    "D-W-F12": {
     "em": "625:2",
     "br": null,
-    "hash": "b21161507b5ea3d6"
+    "hash": "fd8da7b20f3c53f5"
    },
    "D-W-F13": {
     "em": "625:60",
@@ -474,17 +474,17 @@
    "POP-pre-6": {
     "em": "626:2",
     "br": "626:19",
-    "hash": "bf6e4bec939c9d34"
+    "hash": "0c0c9f2ce494d9cc"
    },
    "POP-pre-7": {
     "em": "626:21",
     "br": "626:34",
-    "hash": "307addcaa6d38a94"
+    "hash": "bfde7667a0f22325"
    },
    "POP-ea-1": {
     "em": "626:36",
     "br": "626:60",
-    "hash": "57d1418d91a52f85"
+    "hash": "b200b89969da48e1"
    },
    "POP-ea-2": {
     "em": "626:62",
@@ -499,17 +499,17 @@
    "POP-ea-4": {
     "em": "627:557",
     "br": "627:582",
-    "hash": "e73a87464581873d"
+    "hash": "2e83299be3fe44c2"
    },
    "POP-ea-5": {
     "em": "627:584",
     "br": "627:616",
-    "hash": "5725cf4e60b3f250"
+    "hash": "5df7593188286b8d"
    },
    "POP-ea-6": {
     "em": "627:618",
     "br": "627:635",
-    "hash": "705735748e373e4e"
+    "hash": "a210aa6105602814"
    },
    "POP-ea-7": {
     "em": "627:637",
@@ -659,17 +659,17 @@
    "L-POP-pre": {
     "em": "627:94",
     "br": null,
-    "hash": "319e090a44e8f91b"
+    "hash": "6b26f78bcf80131e"
    },
    "L-POP-ea": {
     "em": "627:98",
     "br": null,
-    "hash": "4fe0c1fa20b8b093"
+    "hash": "0ffaf865258c016c"
    },
    "L-POP-bf": {
     "em": "627:102",
     "br": null,
-    "hash": "d8ac6a237cdafd23"
+    "hash": "854103ca53576fa9"
    },
    "L-POP-xmas": {
     "em": "627:106",
@@ -704,7 +704,7 @@
    "D-W-F1": {
     "em": "628:8",
     "br": null,
-    "hash": "f751f84894ad434e"
+    "hash": "f431e583703d56fd"
    },
    "T-W-F2": {
     "em": "629:364",
@@ -714,7 +714,7 @@
    "D-W-F2": {
     "em": "629:370",
     "br": null,
-    "hash": "d81f67c6deb8e8a2"
+    "hash": "d8dd73ab5f295876"
    },
    "T-W-F3": {
     "em": "629:443",
@@ -724,7 +724,7 @@
    "D-W-F3": {
     "em": "630:2",
     "br": null,
-    "hash": "894aed80ea5689a8"
+    "hash": "56770b3d34c896d7"
    },
    "T-W-F4": {
     "em": "630:60",
@@ -734,7 +734,7 @@
    "D-W-F4": {
     "em": "630:66",
     "br": null,
-    "hash": "151280983b292485"
+    "hash": "8de705db23d5ef45"
    },
    "T-W-F5": {
     "em": "630:139",
@@ -754,7 +754,7 @@
    "D-W-F6": {
     "em": "627:822",
     "br": null,
-    "hash": "6071b5247e76df61"
+    "hash": "38becacb53a1b660"
    },
    "T-W-F7": {
     "em": "627:895",
@@ -764,7 +764,7 @@
    "D-W-F7": {
     "em": "628:766",
     "br": null,
-    "hash": "2a955c4ceeee59f1"
+    "hash": "a956d38c74f78d63"
    },
    "T-W-F8": {
     "em": "628:839",
@@ -794,7 +794,7 @@
    "D-W-F10": {
     "em": "630:327",
     "br": null,
-    "hash": "3aea3b71222ff842"
+    "hash": "fa942e37d4ff3bf2"
    },
    "T-W-F11": {
     "em": "630:467",
@@ -819,7 +819,7 @@
    "D-M-F1": {
     "em": "629:134",
     "br": null,
-    "hash": "5ba9c66681010deb"
+    "hash": "4c5571594bb6874a"
    },
    "T-M-F2": {
     "em": "630:242",
@@ -829,7 +829,7 @@
    "D-M-F2": {
     "em": "630:248",
     "br": null,
-    "hash": "e1e0372de8647403"
+    "hash": "3f6074f848e7fecb"
    },
    "T-M-F3": {
     "em": "630:321",
@@ -839,7 +839,7 @@
    "D-M-F3": {
     "em": "627:126",
     "br": null,
-    "hash": "3e4fd086de83599d"
+    "hash": "78fde498ef8bcea6"
    },
    "T-M-F4": {
     "em": "627:184",
@@ -849,7 +849,7 @@
    "D-M-F4": {
     "em": "627:190",
     "br": null,
-    "hash": "a1b1ef1277a84fc6"
+    "hash": "1cfae857d4730b15"
    },
    "T-M-F5": {
     "em": "627:263",
@@ -869,7 +869,7 @@
    "D-M-F6": {
     "em": "628:517",
     "br": null,
-    "hash": "d522c2f75c27b635"
+    "hash": "bcd3b82be5a2a1cf"
    },
    "T-M-F7": {
     "em": "628:590",
@@ -949,7 +949,7 @@
    "POP-pre-9": {
     "em": "636:643",
     "br": "636:660",
-    "hash": "32ecd8fee0b205b0"
+    "hash": "880f5c4f5bc797d6"
    },
    "POP-pre-10": {
     "em": "636:662",
@@ -964,7 +964,7 @@
    "POP-ea-9": {
     "em": "638:645",
     "br": "638:662",
-    "hash": "e507f7184db3650c"
+    "hash": "6d300465e7520092"
    },
    "POP-ea-10": {
     "em": "638:664",
@@ -1064,17 +1064,17 @@
    "D-S-S2": {
     "em": "636:384",
     "br": null,
-    "hash": "164b016b0cca250e"
+    "hash": "5455dc909777d1a2"
    },
    "S-S2C1": {
     "em": "636:493",
     "br": null,
-    "hash": "08a55a831d6d1232"
+    "hash": "b6b90f0147e2ac3a"
    },
    "S-S2C2": {
     "em": "636:509",
     "br": null,
-    "hash": "a55a9dc1a04b7f9d"
+    "hash": "3be56cb2586ec361"
    },
    "S-S2C3": {
     "em": "636:525",
@@ -1134,7 +1134,7 @@
    "W-F7T1": {
     "em": "637:212",
     "br": null,
-    "hash": "2a0be537ccf580bb"
+    "hash": "df804746c51bd1f6"
    },
    "W-F9T1": {
     "em": "638:364",
@@ -1239,237 +1239,159 @@
    "templates": {
     "F1E1": {
      "id": "TRMJGt",
-     "hash": "d7a8c4445623fdde",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}You\u2019re on the list.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your access is open.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your 30% is waiting.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Welcome. Gifts, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Welcome. Gift in minutes.{% elif d >= '2026-12-25' %}Welcome to Cavaier.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}First access: Monday, Nov 23.{% elif d >= '2026-11-23' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off] for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Digital gift cards, sent instantly.{% elif d >= '2026-12-25' %}Jewelry made to stay on.{% endif %}"
+     "hash": "9ef5e8a26d4680b3"
     },
     "F1E2": {
      "id": "WPCt6N",
-     "hash": "580b3ce390b767c6",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Pick your Set first.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your Set, 30% off.{% elif d >= '2026-11-27' and d < '2026-12-07' %}The Sets, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The gift: a Set.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% elif d >= '2026-12-25' %}Start with a Set.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Shortlist now. Shop Nov 23.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Best sellers, members first.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Three pieces, one tap.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Ready to give, case included.{% elif d >= '2026-12-18' and d < '2026-12-25' %}They choose. You look good.{% elif d >= '2026-12-25' %}The pieces worn every day.{% endif %}"
+     "hash": "5d33a8f9f6f8bc91"
     },
     "F1E3": {
      "id": "WcBqub",
-     "hash": "8577b4dd94dfbb87",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Shower. Gym. Sleep.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Made to stay on.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Worn daily. 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}A gift worn daily.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Worn daily, gifted instantly.{% elif d >= '2026-12-25' %}Made to stay on.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Why nobody takes them off.{% elif d >= '2026-11-23' and d < '2026-11-27' %}And members save 30%.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Rated 4.5 on Trustpilot.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Waterproof steel, case included.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards arrive in minutes.{% elif d >= '2026-12-25' %}Rated 4.5 on Trustpilot.{% endif %}"
+     "hash": "f1b9e381f0d18ff8"
     },
     "F1E4": {
      "id": "VzAmRy",
-     "hash": "b4cf5c676091e50c",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Nov 23. You\u2019re first.{% elif d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}{% elif d >= '2026-12-25' %}Your first piece.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Members shop 30% off first.{% elif d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-25' %}Case included with two pieces.{% endif %}"
+     "hash": "fe27b3fc9bfaf20b"
     },
     "F1E5": {
      "id": "WJZcKq",
-     "hash": "4c1a1832940b40e7",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "28d3e0c317b1b44a"
     },
     "F1E6": {
      "id": "UjygCi",
-     "hash": "132853233e39e329",
-     "subject": "{% today '%Y-%m-%d' as d %}Your access is open.",
-     "preview": "{% today '%Y-%m-%d' as d %}You joined for this. Go."
+     "hash": "520bd1cce1c45f7a"
     },
     "F1E7": {
      "id": "XUq3Dg",
-     "hash": "38dbcf390fd1a280",
-     "subject": "{% today '%Y-%m-%d' as d %}It\u2019s Black Friday.",
-     "preview": "{% today '%Y-%m-%d' as d %}Now everyone gets 30% off."
+     "hash": "46da653df04eb426"
     },
     "F2E1": {
      "id": "VuX7wa",
-     "hash": "f0327d6217fd0381",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Still thinking about it?{% elif d >= '2026-11-23' and d < '2026-11-27' %}Unlock 30% on this.{% elif d >= '2026-11-27' and d < '2026-12-07' %}It\u2019s 30% off now.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Gift it by Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Too late to ship?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}It\u2019s still here for you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Join early access to save.{% elif d >= '2026-11-27' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Send a gift card instead.{% endif %}"
+     "hash": "651da7cfdd966a5c"
     },
     "F2E2": {
      "id": "YsMPUv",
-     "hash": "742f3f3d03fcd47c",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Worth a second look.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Still 30% for members.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Still 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The gift they\u2019ll wear.{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift, in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Rated 4.5 on Trustpilot.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Join today, save 30%.{% elif d >= '2026-11-27' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Case included with two pieces.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Digital gift card, sent instantly.{% endif %}"
+     "hash": "b461aa78344289b4"
     },
     "F2E3": {
      "id": "UeV2gU",
-     "hash": "80cfdd514187b31d",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "713e04d3e762cb58"
     },
     "F3E1": {
      "id": "XPLMhS",
-     "hash": "b14c8a567dff0571",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Find their piece.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your 30% gift guide.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Gift guide: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The Christmas gift guide.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gifts that arrive instantly.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}For her, him, or you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Members shop first, 30% off.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Every piece, no code needed.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Send a gift card now.{% endif %}"
+     "hash": "76e4186134dfa99f"
     },
     "F3E2": {
      "id": "SYSV3E",
-     "hash": "0d993ec6a290d789",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Our best sellers.{% elif d >= '2026-11-23' and d < '2026-12-07' %}Best sellers, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Our best-selling gifts.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Best gift: the choice.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Start with the Set.{% elif d >= '2026-11-23' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards arrive in minutes.{% endif %}"
+     "hash": "0985e61553b0c837"
     },
     "F4E1": {
      "id": "SmRSr3",
-     "hash": "cf6fed115d79725d",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Still in your cart.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your cart, 30% off?{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your cart, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Your gift is waiting.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Too late? Gift card.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}We saved it for you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Join early access to save.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Already applied at checkout.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Arrives in their inbox instantly.{% endif %}"
+     "hash": "f6b9c2ca26846232"
     },
     "F4E2": {
      "id": "XK9wWu",
-     "hash": "82604e4baf1977df",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Make it a pair.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Pair it, save 30%.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Pair it at 30%.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Make it a set.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Or a gift card.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Two pieces, case included.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Members shop first, 30% off.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Two pieces, case included.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Two gifts, one case.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Arrives in minutes, by email.{% endif %}"
+     "hash": "e60406de05c3eb17"
     },
     "F4E3": {
      "id": "TxgHiT",
-     "hash": "cc07e2d959931cbf",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Last reminder: your cart.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Waterproof steel, made to stay.{% elif d >= '2026-11-23' and d < '2026-11-27' or d >= '2026-12-07' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your cart, still 30% off.{% endif %}"
+     "hash": "df87ab1804150da1"
     },
     "F5E1": {
      "id": "R7PMbM",
-     "hash": "b086d8f0e62c110d",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-12-07' or d >= '2026-12-25' %}One step left.{% elif d >= '2026-12-07' and d < '2026-12-18' %}One step to Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Your order is saved.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Your order is saved.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Finish before the public sale.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your 30% is already applied.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Or send a gift card.{% endif %}"
+     "hash": "bc5f20fae20c0f46"
     },
     "F5E2": {
      "id": "TsDsXv",
-     "hash": "c7cf12fcd299324e",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-25' %}No surprises at checkout.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Shipping is on us.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Arrives before Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Need it by Christmas?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-25' %}Here\u2019s exactly what to expect.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Included on every order.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Delivery dates, by country.{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift card arrives instantly.{% endif %}"
+     "hash": "117b8e75d92d1261"
     },
     "F5E3": {
      "id": "R3cwQp",
-     "hash": "8f965d3d2b6f37ba",
-     "subject": "{% today '%Y-%m-%d' as d %}Why they kept theirs.",
-     "preview": "{% today '%Y-%m-%d' as d %}Rated 4.5 on Trustpilot."
+     "hash": "edd0a751d4c0834f"
     },
     "F5E4": {
      "id": "YcU4Sj",
-     "hash": "0ced0bdb5bf0ef73",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "8d1f51e1e0c06023"
     },
     "F6E1": {
      "id": "TZ3feJ",
-     "hash": "977d4cf96dd2bce1",
-     "subject": "{% today '%Y-%m-%d' as d %}Thank you. Truly.",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Here\u2019s what happens next.{% elif d >= '2026-11-23' and d < '2026-12-07' %}Gifts too? Still 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}More gifts? Order by [cut-off].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards arrive instantly.{% endif %}"
+     "hash": "f1cc1a3a38679159"
     },
     "F6E2": {
      "id": "RzAj7C",
-     "hash": "17adb8aefa74227b",
-     "subject": "{% today '%Y-%m-%d' as d %}How to wear it.",
-     "preview": "{% today '%Y-%m-%d' as d %}Stack, layer, leave it on."
+     "hash": "8956a6d8bfe5b636"
     },
     "F6E3": {
      "id": "WjQV2s",
-     "hash": "ee11be1eb3d7b413",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d >= '2026-11-23' and d < '2026-12-07' %}One for them?{% elif d >= '2026-12-07' and d < '2026-12-18' %}Their gift, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% endif %}"
+     "hash": "e5a1777781fe3ac6"
     },
     "F7E1": {
      "id": "VGPSpP",
-     "hash": "5332a65f328ec0c7",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Early access, for you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your access is open.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Come back to 30%.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Back for Christmas?{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% elif d >= '2026-12-25' %}Ready for another?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Customers shop first, Nov 23.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Before the public sale Friday.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Everything, applied at checkout.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Choose an amount, send now.{% elif d >= '2026-12-25' %}Case included with two pieces.{% endif %}"
+     "hash": "9cce25cb72255f8b"
     },
     "F7E2": {
      "id": "RuX4Le",
-     "hash": "35df035d1a637516",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}What\u2019s new at Cavaier.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Members\u2019 30% is open.{% elif d >= '2026-11-27' and d < '2026-12-01' %}30% off, everything.{% elif d >= '2026-12-01' and d < '2026-12-07' %}New: the Matte Cuff.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The gift guide.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Sets, cuffs and the classics.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Before the public sale Friday.{% elif d >= '2026-11-27' and d < '2026-12-01' %}Applied automatically at checkout.{% elif d >= '2026-12-01' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}They choose. You look good.{% endif %}"
+     "hash": "4f57cb69e6a64a26"
     },
     "F7E3": {
      "id": "QRW29B",
-     "hash": "1fb60466ded99620",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "234d541d89338bd0"
     },
     "F8E1": {
      "id": "WfdEF4",
-     "hash": "637e38877d25cf02",
-     "subject": "{% today '%Y-%m-%d' as d %}Still want early access?",
-     "preview": "{% today '%Y-%m-%d' as d %}One tap keeps you listed."
+     "hash": "681cf3bf50ade7ae"
     },
     "F8E2": {
      "id": "UZbzrN",
-     "hash": "40c7fda8029674df",
-     "subject": "{% today '%Y-%m-%d' as d %}Last email from us?",
-     "preview": "{% today '%Y-%m-%d' as d %}Unless you tap below."
+     "hash": "151b65737c66a9ce"
     },
     "F9E1": {
      "id": "SzJDiG",
-     "hash": "5a014c1d58f29302",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-18' %}It\u2019s back in stock.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Back, and 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Back for Christmas.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-18' %}The one you waited for.{% elif d >= '2026-11-27' and d < '2026-12-07' %}30% off at checkout.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% endif %}"
+     "hash": "157d500605aae932"
     },
     "F9E2": {
      "id": "RjGy5s",
-     "hash": "b2f99a3da49ee366",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-18' %}Still in stock.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Still here, still 30%.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Still in time.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}It sold out once already."
+     "hash": "b07227c5e324263e"
     },
     "F10E1": {
      "id": "Yvq67n",
-     "hash": "838bbafb1e62a413",
-     "subject": "{% today '%Y-%m-%d' as d %}Your picks, 30% off.",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "228d01a9316a170e"
     },
     "F10E2": {
      "id": "XfmYS8",
-     "hash": "ba53b93fb31fc875",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}Your picks are still 30% off."
+     "hash": "37530671bc4c1cae"
     },
     "F10E3": {
      "id": "Squ8BU",
-     "hash": "32464e056979e119",
-     "subject": "{% today '%Y-%m-%d' as d %}30% ends tomorrow.",
-     "preview": "{% today '%Y-%m-%d' as d %}Your picks, then full price."
+     "hash": "93cc6ecf7f7caebd"
     },
     "F11E1": {
      "id": "XH8wMX",
-     "hash": "143d32e859877f37",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}It goes with yours.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Customers shop first.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Next piece, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}One for them?{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Customers shop first, Nov 23.{% elif d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-25' %}Two pieces, case included.{% endif %}"
+     "hash": "4a1143a5ebe31158"
     },
     "F11E2": {
      "id": "R5NM3g",
-     "hash": "f95a85938782b01a",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Still wearing yours?{% elif d >= '2026-11-23' and d < '2026-12-07' %}Gifts, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Their gift, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Most people buy a second.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-18' and d < '2026-12-25' %}In their inbox instantly.{% endif %}"
+     "hash": "6af9e9e35a32e77b"
     },
     "F11E3": {
      "id": "Wt6ryH",
-     "hash": "824ba8f8d56a34cf",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "6b158b73c617295f"
     },
     "F12E1": {
      "id": "XCvgsz",
-     "hash": "0da09c28fb4a7d6d",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Find your piece.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Early access is open.{% elif d >= '2026-11-27' and d < '2026-12-07' %}30% off everything.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Gifts, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Too late to ship?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Start with our best sellers.{% elif d >= '2026-11-23' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Send a gift card instead.{% endif %}"
+     "hash": "be6f099df3e2a0ba"
     },
     "F12E2": {
      "id": "Vd4kjt",
-     "hash": "434fdd575643df96",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Our best sellers.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}The ones people keep on.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-18' and d < '2026-12-25' %}In their inbox instantly.{% endif %}"
+     "hash": "0a9965c542807ab8"
     },
     "F13E1": {
      "id": "SaAmzJ",
-     "hash": "d135db1ac5ecfcd8",
-     "subject": "{% today '%Y-%m-%d' as d %}Your gift card is ready.",
-     "preview": "{% today '%Y-%m-%d' as d %}Here\u2019s how to give it."
+     "hash": "621d7413d0781f7b"
     },
     "F13E2": {
      "id": "RxziX7",
-     "hash": "eae3b601fdb26aea",
-     "subject": "{% today '%Y-%m-%d' as d %}One for you, too?",
-     "preview": "{% today '%Y-%m-%d' as d %}You sorted everyone else."
+     "hash": "65b2d3e26d2acc5a"
     }
    },
    "lists": {
@@ -1495,101 +1417,101 @@
    },
    "flows": {
     "F1": {
-     "id": "XdmeF6",
-     "hash": "f803de658fad28a8"
+     "id": "WzSpt8",
+     "hash": "dda715fbe047a7fd"
     },
     "F2": {
-     "id": "WSQdhw",
-     "hash": "301b9cbeb420f302"
+     "id": "TPUrWs",
+     "hash": "a04407db91f9c00c"
     },
     "F3": {
-     "id": "RfEMHT",
-     "hash": "b591e6d07c7d8de5"
+     "id": "T3CSD3",
+     "hash": "a8926cdc317af759"
     },
     "F4": {
-     "id": "TrdWNP",
-     "hash": "25ae6d4ac541bbea"
+     "id": "R5WurL",
+     "hash": "dd77fc0fd8a0e9d3"
     },
     "F5": {
-     "id": "Syj9a2",
-     "hash": "be1736f3b375b9dd"
+     "id": "RdbYY3",
+     "hash": "9bd647458ed4c2f5"
     },
     "F6": {
-     "id": "YiJ5fU",
-     "hash": "99e0c47fdb94bc75"
+     "id": "WSXEJx",
+     "hash": "deba749e07cd999f"
     },
     "F7": {
-     "id": "UpmgRn",
-     "hash": "68ca7f41eaff8538"
+     "id": "XT7YVB",
+     "hash": "402d09d2086cf2e2"
     },
     "F8": {
-     "id": "SgqmXj",
-     "hash": "61faa1914d107b19"
+     "id": "XDedTr",
+     "hash": "42c2d57747122302"
     },
     "F9": {
      "id": null,
      "note": "build by hand: Back in Stock trigger, templates are ready"
     },
     "F10": {
-     "id": "Wj2EU8",
-     "hash": "746c3bdda548d1cd"
+     "id": "QQDXrW",
+     "hash": "7c873f205c1ed7e8"
     },
     "F11": {
-     "id": "UmkgGR",
-     "hash": "0df1d2a0060c48b8"
+     "id": "WFG9Te",
+     "hash": "50e2ff8afb45ddfa"
     },
     "F12": {
-     "id": "X9Uuqq",
-     "hash": "96f6cc9e68aa2c96"
+     "id": "Wmb8vE",
+     "hash": "81f51030fd04ef85"
     },
     "F13": {
-     "id": "YcF4Nm",
-     "hash": "8032c0a4c08b578d"
+     "id": "WJiq67",
+     "hash": "65d5ee2f1b54acef"
     },
     "S1": {
-     "id": "RuJ4Gg",
-     "hash": "6520dd7ee4d2f557"
+     "id": "STyS2X",
+     "hash": "9e6f6d8bb25b8b61"
     },
     "G1": {
-     "id": "UYHjkp",
-     "hash": "c21876b2960188b9"
+     "id": "SJimkb",
+     "hash": "163eb3f331553bf4"
     },
     "G2": {
-     "id": "RjehY3",
-     "hash": "56e1822a53f23f40"
+     "id": "UTRwr7",
+     "hash": "e249124f9f463b92"
     },
     "F1E6": {
-     "id": "XtBdgL",
-     "hash": "89db63e755e19727"
+     "id": "UPeg5H",
+     "hash": "e5a973f0312b5f9e"
     },
     "F1E7": {
-     "id": "Sy66Fa",
-     "hash": "34e0ee9cea57b090"
+     "id": "VTZQCb",
+     "hash": "e65c8da214cabbc8"
     },
     "F10E3": {
-     "id": "SZQCAZ",
-     "hash": "7c1390523d8657a0"
+     "id": "XBNtMg",
+     "hash": "db1b7a9d618ba04c"
     },
     "F13E2": {
-     "id": "SicjCY",
-     "hash": "d7bfc85e2dca00b4"
+     "id": "TRGc5w",
+     "hash": "33b5f85eab1759ed"
     }
    },
    "campaigns": {
-    "S2C1": "01M4C5HTRRZB5PYVP0TQD599F1",
-    "S2C2": "01M4C5HW01X3RBE3A4564H2VYP",
-    "S2C3": "01M4C5HXCMBNNNY9NV2BR57ZYX",
-    "S2C4": "01M4C5HYWJFEYX829KAKH4ATZH",
-    "S2C5": "01M4C5J0EYTTJSW4N03Z0CAZ6D",
-    "S2C6": "01M4C5J1ZX8RMPSVRQFN9DGV34"
+    "S2C1": "01M4DAB5FHAFSEEEESWRT77TPE",
+    "S2C2": "01M4DAB77AS2WG0KZCXTGX5Q3X",
+    "S2C3": "01M4DAB903EYVZ4Y69TMGW9FKS",
+    "S2C4": "01M4DABAT4HYHWE3X2G4V3WTT9",
+    "S2C5": "01M4DABCFR99TME0WSX9NA9929",
+    "S2C6": "01M4DABE3GZ7DJ3XJH6AGVA5BC"
    },
    "forms": {
-    "ea": "VXV9kD",
-    "bf": "TtQWS9",
-    "xmas": "TVBuMY",
-    "late": "SAW9dk",
-    "post": "Ue7w33",
-    "pre": "YtZjP9"
+    "ea": "RLT3js",
+    "bf": "WswnSS",
+    "xmas": "Tjr9MK",
+    "late": "YxshCq",
+    "post": "VWJQNw",
+    "pre": "Wa2mDP"
    },
    "form_assets": {
     "side": {
@@ -1613,6 +1535,14 @@
      "id": 380821518,
      "asset_id": 380821518
     }
+   },
+   "campaign_hash": {
+    "S2C1": "3a1050258f61d37e",
+    "S2C2": "af50d82ac67ada05",
+    "S2C3": "feb2c630e4f97362",
+    "S2C4": "e4fe9ec3ab9aee1e",
+    "S2C5": "0638ed6b823967ab",
+    "S2C6": "3acdc7f12eeb98d7"
    }
   },
   "US": {
@@ -1679,237 +1609,159 @@
    "templates": {
     "F1E1": {
      "id": "SqASBn",
-     "hash": "bad5edcd8bc4371e",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}You\u2019re on the list.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your access is open.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your 30% is waiting.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Welcome. Gifts, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Welcome. Gift in minutes.{% elif d >= '2026-12-25' %}Welcome to Cavaier.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}First access: Monday, Nov 23.{% elif d >= '2026-11-23' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off] for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Digital gift cards, sent instantly.{% elif d >= '2026-12-25' %}Jewelry made to stay on.{% endif %}"
+     "hash": "7dd60deb2bf2044d"
     },
     "F1E2": {
      "id": "UKqyp6",
-     "hash": "2cb38de7cb92c933",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Pick your Set first.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your Set, 30% off.{% elif d >= '2026-11-27' and d < '2026-12-07' %}The Sets, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The gift: a Set.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% elif d >= '2026-12-25' %}Start with a Set.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Shortlist now. Shop Nov 23.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Best sellers, members first.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Three pieces, one tap.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Ready to give, case included.{% elif d >= '2026-12-18' and d < '2026-12-25' %}They choose. You look good.{% elif d >= '2026-12-25' %}The pieces worn every day.{% endif %}"
+     "hash": "4399d61017f12696"
     },
     "F1E3": {
      "id": "U8pvLt",
-     "hash": "581e1ba5c3c9a93c",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Shower. Gym. Sleep.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Made to stay on.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Worn daily. 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}A gift worn daily.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Worn daily, gifted instantly.{% elif d >= '2026-12-25' %}Made to stay on.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Why nobody takes them off.{% elif d >= '2026-11-23' and d < '2026-11-27' %}And members save 30%.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Rated 4.5 on Trustpilot.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Waterproof steel, case included.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards arrive in minutes.{% elif d >= '2026-12-25' %}Rated 4.5 on Trustpilot.{% endif %}"
+     "hash": "2c02bfc68fa23b22"
     },
     "F1E4": {
      "id": "VhNkEj",
-     "hash": "69b25931c3b3091f",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Nov 23. You\u2019re first.{% elif d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}{% elif d >= '2026-12-25' %}Your first piece.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Members shop 30% off first.{% elif d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-25' %}Case included with two pieces.{% endif %}"
+     "hash": "4bd52f9d5c5a3b70"
     },
     "F1E5": {
      "id": "TqKcNs",
-     "hash": "7f3ce88451b54dcf",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "49d6ccce82f0d2a6"
     },
     "F1E6": {
      "id": "TfuG7E",
-     "hash": "8bcaf28d5cd2e95e",
-     "subject": "{% today '%Y-%m-%d' as d %}Your access is open.",
-     "preview": "{% today '%Y-%m-%d' as d %}You joined for this. Go."
+     "hash": "c98018dcea49ade2"
     },
     "F1E7": {
      "id": "VAimTn",
-     "hash": "8c4b0073b1705191",
-     "subject": "{% today '%Y-%m-%d' as d %}It\u2019s Black Friday.",
-     "preview": "{% today '%Y-%m-%d' as d %}Now everyone gets 30% off."
+     "hash": "2a8a5bb2ed05070f"
     },
     "F2E1": {
      "id": "Yy96hH",
-     "hash": "25f2eed1507e540a",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Still thinking about it?{% elif d >= '2026-11-23' and d < '2026-11-27' %}Unlock 30% on this.{% elif d >= '2026-11-27' and d < '2026-12-07' %}It\u2019s 30% off now.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Gift it by Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Too late to ship?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}It\u2019s still here for you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Join early access to save.{% elif d >= '2026-11-27' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Send a gift card instead.{% endif %}"
+     "hash": "bdb11245351713aa"
     },
     "F2E2": {
      "id": "XV83F6",
-     "hash": "5fc84948b96b9f3c",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Worth a second look.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Still 30% for members.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Still 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The gift they\u2019ll wear.{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift, in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Rated 4.5 on Trustpilot.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Join today, save 30%.{% elif d >= '2026-11-27' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Case included with two pieces.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Digital gift card, sent instantly.{% endif %}"
+     "hash": "ea8b367f14661a62"
     },
     "F2E3": {
      "id": "RhNhUp",
-     "hash": "d6b0ce10535511ca",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "8fdcfa616454a3ff"
     },
     "F3E1": {
      "id": "USE4Vm",
-     "hash": "bcf5fc67d3c6bb12",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Find their piece.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your 30% gift guide.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Gift guide: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The Christmas gift guide.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gifts that arrive instantly.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}For her, him, or you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Members shop first, 30% off.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Every piece, no code needed.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Send a gift card now.{% endif %}"
+     "hash": "8e5df2f4e1a4a723"
     },
     "F3E2": {
      "id": "Rdb3yZ",
-     "hash": "770340c752a19afd",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Our best sellers.{% elif d >= '2026-11-23' and d < '2026-12-07' %}Best sellers, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Our best-selling gifts.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Best gift: the choice.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Start with the Set.{% elif d >= '2026-11-23' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards arrive in minutes.{% endif %}"
+     "hash": "99d4a973a374d4c5"
     },
     "F4E1": {
      "id": "XFegCU",
-     "hash": "e1e248c598f2bff5",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Still in your cart.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your cart, 30% off?{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your cart, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Your gift is waiting.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Too late? Gift card.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}We saved it for you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Join early access to save.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Already applied at checkout.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Arrives in their inbox instantly.{% endif %}"
+     "hash": "d7791585076d6b22"
     },
     "F4E2": {
      "id": "TtmsZj",
-     "hash": "24b71c8cea88786a",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Make it a pair.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Pair it, save 30%.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Pair it at 30%.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Make it a set.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Or a gift card.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Two pieces, case included.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Members shop first, 30% off.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Two pieces, case included.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Two gifts, one case.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Arrives in minutes, by email.{% endif %}"
+     "hash": "e51f6cb9edb48715"
     },
     "F4E3": {
      "id": "VfMkvN",
-     "hash": "488a0eb83ceeef58",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Last reminder: your cart.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Waterproof steel, made to stay.{% elif d >= '2026-11-23' and d < '2026-11-27' or d >= '2026-12-07' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your cart, still 30% off.{% endif %}"
+     "hash": "4eb6c2069a609049"
     },
     "F5E1": {
      "id": "YdC4U9",
-     "hash": "e044f1e390f0a77c",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-12-07' or d >= '2026-12-25' %}One step left.{% elif d >= '2026-12-07' and d < '2026-12-18' %}One step to Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Your order is saved.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Your order is saved.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Finish before the public sale.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Your 30% is already applied.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Or send a gift card.{% endif %}"
+     "hash": "7d06b51575ce88c1"
     },
     "F5E2": {
      "id": "RvF4N4",
-     "hash": "2ab75923d7ead820",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-25' %}No surprises at checkout.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Shipping is on us.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Arrives before Christmas.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Need it by Christmas?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-25' %}Here\u2019s exactly what to expect.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Included on every order.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Delivery dates, by country.{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift card arrives instantly.{% endif %}"
+     "hash": "945fbcad0a13e4c3"
     },
     "F5E3": {
      "id": "S44R5h",
-     "hash": "ed456e8a45b5f69d",
-     "subject": "{% today '%Y-%m-%d' as d %}Why they kept theirs.",
-     "preview": "{% today '%Y-%m-%d' as d %}Rated 4.5 on Trustpilot."
+     "hash": "0050954af37ee357"
     },
     "F5E4": {
      "id": "TKRuen",
-     "hash": "0ff38d4fc94c27e2",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "cd929fe2cb687c6c"
     },
     "F6E1": {
      "id": "SvPnZ8",
-     "hash": "df46b2910863d7d8",
-     "subject": "{% today '%Y-%m-%d' as d %}Thank you. Truly.",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Here\u2019s what happens next.{% elif d >= '2026-11-23' and d < '2026-12-07' %}Gifts too? Still 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}More gifts? Order by [cut-off].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards arrive instantly.{% endif %}"
+     "hash": "187d49f7e3233558"
     },
     "F6E2": {
      "id": "TFedSY",
-     "hash": "9ea0cb2d6a60b983",
-     "subject": "{% today '%Y-%m-%d' as d %}How to wear it.",
-     "preview": "{% today '%Y-%m-%d' as d %}Stack, layer, leave it on."
+     "hash": "d3594691d36b2bee"
     },
     "F6E3": {
      "id": "WD4Whj",
-     "hash": "50150f7a3cd56479",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d >= '2026-11-23' and d < '2026-12-07' %}One for them?{% elif d >= '2026-12-07' and d < '2026-12-18' %}Their gift, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% endif %}"
+     "hash": "054a3477363a892d"
     },
     "F7E1": {
      "id": "TAAXxA",
-     "hash": "63eade9bc48d5a66",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Early access, for you.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Your access is open.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Come back to 30%.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Back for Christmas?{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% elif d >= '2026-12-25' %}Ready for another?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Customers shop first, Nov 23.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Before the public sale Friday.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Everything, applied at checkout.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Choose an amount, send now.{% elif d >= '2026-12-25' %}Case included with two pieces.{% endif %}"
+     "hash": "9e95605ccd98c1d4"
     },
     "F7E2": {
      "id": "UKZNrs",
-     "hash": "d0ba09115bb0b95a",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}What\u2019s new at Cavaier.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Members\u2019 30% is open.{% elif d >= '2026-11-27' and d < '2026-12-01' %}30% off, everything.{% elif d >= '2026-12-01' and d < '2026-12-07' %}New: the Matte Cuff.{% elif d >= '2026-12-07' and d < '2026-12-18' %}The gift guide.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Sets, cuffs and the classics.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Before the public sale Friday.{% elif d >= '2026-11-27' and d < '2026-12-01' %}Applied automatically at checkout.{% elif d >= '2026-12-01' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}They choose. You look good.{% endif %}"
+     "hash": "22565fe6308e327a"
     },
     "F7E3": {
      "id": "RHxPFH",
-     "hash": "cd2b7f80236f3bd3",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "8f8adcb1c85d1841"
     },
     "F8E1": {
      "id": "Ygej72",
-     "hash": "0300418b8c2b9ac7",
-     "subject": "{% today '%Y-%m-%d' as d %}Still want early access?",
-     "preview": "{% today '%Y-%m-%d' as d %}One tap keeps you listed."
+     "hash": "21273021c546a49f"
     },
     "F8E2": {
      "id": "QZTwHG",
-     "hash": "ce64166c5210b59b",
-     "subject": "{% today '%Y-%m-%d' as d %}Last email from us?",
-     "preview": "{% today '%Y-%m-%d' as d %}Unless you tap below."
+     "hash": "73d49821320f48af"
     },
     "F9E1": {
      "id": "VLa8Cw",
-     "hash": "f2e9f3fb325aea46",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-18' %}It\u2019s back in stock.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Back, and 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Back for Christmas.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-18' %}The one you waited for.{% elif d >= '2026-11-27' and d < '2026-12-07' %}30% off at checkout.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% endif %}"
+     "hash": "9c43f3e2a2f9dc18"
     },
     "F9E2": {
      "id": "V995ZT",
-     "hash": "09969cc39447f5f8",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-27' or d >= '2026-12-18' %}Still in stock.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Still here, still 30%.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Still in time.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}It sold out once already."
+     "hash": "890e3869f8dbe77c"
     },
     "F10E1": {
      "id": "S6F7ga",
-     "hash": "921f0111a20a7d6d",
-     "subject": "{% today '%Y-%m-%d' as d %}Your picks, 30% off.",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "b1da0cb5ff05306a"
     },
     "F10E2": {
      "id": "RtE4Dx",
-     "hash": "61be6ccd66f43b47",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}Your picks are still 30% off."
+     "hash": "276a2522e0381341"
     },
     "F10E3": {
      "id": "Y2ky4Q",
-     "hash": "1ddf3caf8c701097",
-     "subject": "{% today '%Y-%m-%d' as d %}30% ends tomorrow.",
-     "preview": "{% today '%Y-%m-%d' as d %}Your picks, then full price."
+     "hash": "f338b01ce6f0f3fd"
     },
     "F11E1": {
      "id": "Xpjvsd",
-     "hash": "8f3530b649b09da3",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}It goes with yours.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Customers shop first.{% elif d >= '2026-11-27' and d < '2026-12-07' %}Next piece, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}One for them?{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' %}Customers shop first, Nov 23.{% elif d >= '2026-11-23' and d < '2026-12-25' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-25' %}Two pieces, case included.{% endif %}"
+     "hash": "538ec91d01af3cdc"
     },
     "F11E2": {
      "id": "XVHhHs",
-     "hash": "0edd3c852104b2ed",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Still wearing yours?{% elif d >= '2026-11-23' and d < '2026-12-07' %}Gifts, 30% off.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Their gift, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Gift cards, sent instantly.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Most people buy a second.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-18' and d < '2026-12-25' %}In their inbox instantly.{% endif %}"
+     "hash": "064ece6ecd8541bf"
     },
     "F11E3": {
      "id": "StNnQB",
-     "hash": "35724a3412e83821",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}"
+     "hash": "d36bee8ea1cebf80"
     },
     "F12E1": {
      "id": "WB3W8N",
-     "hash": "d01445f7742b82f8",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Find your piece.{% elif d >= '2026-11-23' and d < '2026-11-27' %}Early access is open.{% elif d >= '2026-11-27' and d < '2026-12-07' %}30% off everything.{% elif d >= '2026-12-07' and d < '2026-12-18' %}Gifts, sorted.{% elif d >= '2026-12-18' and d < '2026-12-25' %}Too late to ship?{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Start with our best sellers.{% elif d >= '2026-11-23' and d < '2026-12-07' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-07' and d < '2026-12-18' %}Order by [cut-off date].{% elif d >= '2026-12-18' and d < '2026-12-25' %}Send a gift card instead.{% endif %}"
+     "hash": "2902d86510e3337f"
     },
     "F12E2": {
      "id": "VkZQTy",
-     "hash": "83c1d169f6eeb45c",
-     "subject": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}Our best sellers.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Early access is open.{% elif d == '2026-11-24' %}Three days ahead.{% elif d == '2026-11-25' %}Two days ahead.{% elif d == '2026-11-26' %}Last members-only day.{% elif d == '2026-11-27' %}It\u2019s Black Friday.{% elif d == '2026-11-28' %}New today: Matte Cuff.{% elif d == '2026-11-29' %}Sunday, 30% off Sets.{% elif d == '2026-11-30' %}It\u2019s Cyber Monday.{% elif d == '2026-12-01' %}This week only.{% elif d == '2026-12-02' %}Christmas gifts, 30% off.{% elif d == '2026-12-03' %}Ends this Sunday.{% elif d == '2026-12-04' %}Last weekend at 30%.{% elif d == '2026-12-05' %}30% ends tomorrow.{% elif d == '2026-12-06' %}Final hours: 30% off.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Gifts, in good time.{% elif d >= '2026-12-14' and d < '2026-12-17' %}[3] days for Christmas.{% elif d >= '2026-12-17' and d < '2026-12-18' %}Last day for Christmas.{% elif d >= '2026-12-18' and d < '2026-12-24' %}Still time: gift cards.{% elif d == '2026-12-24' %}Christmas Eve, sorted.{% endif %}{% elif d >= '2026-12-18' and d < '2026-12-25' %}A gift in minutes.{% endif %}",
-     "preview": "{% today '%Y-%m-%d' as d %}{% if d < '2026-11-23' or d >= '2026-12-25' %}The ones people keep on.{% elif d >= '2026-11-23' and d < '2026-12-18' %}{% if d == '2026-11-23' %}Members shop first, today.{% elif d == '2026-11-24' %}Shop before the crowd today.{% elif d == '2026-11-25' %}Still members only, today.{% elif d == '2026-11-26' %}Tomorrow, everyone gets in.{% elif d == '2026-11-27' %}Black Friday: 30% off everything.{% elif d == '2026-11-28' %}Launch day, at 30% off.{% elif d == '2026-11-29' %}Three pieces, case included.{% elif d == '2026-11-30' %}Cyber Monday: 30% off everything.{% elif d == '2026-12-01' %}30% off everything, still.{% elif d == '2026-12-02' %}Gift now, before full price.{% elif d == '2026-12-03' %}Four days left at 30%.{% elif d == '2026-12-04' %}Ends Sunday at midnight.{% elif d == '2026-12-05' %}Then back to full price.{% elif d == '2026-12-06' %}Midnight, then full price.{% elif d >= '2026-12-07' and d < '2026-12-14' %}Order today, there by Christmas.{% elif d >= '2026-12-14' and d < '2026-12-17' %}Order by [cut-off date].{% elif d >= '2026-12-17' and d < '2026-12-18' %}Order today, there in time.{% elif d >= '2026-12-18' and d < '2026-12-24' %}In their inbox instantly.{% elif d == '2026-12-24' %}A gift card, sent now.{% endif %}{% elif d >= '2026-12-18' and d < '2026-12-25' %}In their inbox instantly.{% endif %}"
+     "hash": "b2acd474fbbad525"
     },
     "F13E1": {
      "id": "SVyULs",
-     "hash": "3ed35872fa6b4849",
-     "subject": "{% today '%Y-%m-%d' as d %}Your gift card is ready.",
-     "preview": "{% today '%Y-%m-%d' as d %}Here\u2019s how to give it."
+     "hash": "ed0020d8e779b3bb"
     },
     "F13E2": {
      "id": "XFPwFg",
-     "hash": "ff5959d54d8c1a1b",
-     "subject": "{% today '%Y-%m-%d' as d %}One for you, too?",
-     "preview": "{% today '%Y-%m-%d' as d %}You sorted everyone else."
+     "hash": "c753244650b8a899"
     }
    },
    "lists": {
@@ -1935,101 +1787,101 @@
    },
    "flows": {
     "F1": {
-     "id": "SjXSdt",
-     "hash": "dbc177c0c533df76"
+     "id": "RuCg7Q",
+     "hash": "8ce20a6df5168045"
     },
     "F2": {
-     "id": "SH79MU",
-     "hash": "ea95be23b847a5d7"
+     "id": "UPAg6C",
+     "hash": "bf3c08b8163fc8ca"
     },
     "F3": {
-     "id": "SUXUFz",
-     "hash": "a62df57789e44fd5"
+     "id": "SMgBxX",
+     "hash": "88bb9668e8541c1b"
     },
     "F4": {
-     "id": "SdjBHy",
-     "hash": "6ece6f3c0496f748"
+     "id": "XsTX7p",
+     "hash": "8b09999b324182f9"
     },
     "F5": {
-     "id": "WfVUEm",
-     "hash": "4922252a3e922f4a"
+     "id": "UScwhv",
+     "hash": "57da6ba472da6b6a"
     },
     "F6": {
-     "id": "TFetQt",
-     "hash": "03f3baaa6923e415"
+     "id": "WqJCKN",
+     "hash": "cd47c96d214ecdc0"
     },
     "F7": {
-     "id": "U8YZLi",
-     "hash": "7eadee529f195a2d"
+     "id": "VxPP6Z",
+     "hash": "a2dc9cd40c519b41"
     },
     "F8": {
-     "id": "SbiBz3",
-     "hash": "b729869c7d50a5f8"
+     "id": "UAhK6N",
+     "hash": "e18003caae1ad905"
     },
     "F9": {
      "id": null,
      "note": "build by hand: Back in Stock trigger, templates are ready"
     },
     "F10": {
-     "id": "V4w5BY",
-     "hash": "e120706a1e0522a7"
+     "id": "UXr2Ff",
+     "hash": "424ed046cf82924e"
     },
     "F11": {
-     "id": "SyrT9u",
-     "hash": "9b50f5d4e694e89f"
+     "id": "UNavYt",
+     "hash": "a5151c0bc8fe40a0"
     },
     "F12": {
-     "id": "RLajQ5",
-     "hash": "907686033974de04"
+     "id": "S8PNPb",
+     "hash": "8a33bed2d746ca90"
     },
     "F13": {
-     "id": "WYbtEJ",
-     "hash": "c080a728f53efec6"
+     "id": "V23gS8",
+     "hash": "05202f5bf7771817"
     },
     "S1": {
-     "id": "TR6ezB",
-     "hash": "71fc803639a6165d"
+     "id": "XgdGis",
+     "hash": "0178d54850586dfa"
     },
     "G1": {
-     "id": "SwqSYX",
-     "hash": "a364842ac19bf660"
+     "id": "ST6mY5",
+     "hash": "21527d3ed643c372"
     },
     "G2": {
-     "id": "Xc4eyp",
-     "hash": "f74edeff095e8805"
+     "id": "QVpXLN",
+     "hash": "924c2dc6ba949b9c"
     },
     "F1E6": {
-     "id": "X2rVph",
-     "hash": "ae89bd1eb9ca1881"
+     "id": "RpavGD",
+     "hash": "3b8168475fe60441"
     },
     "F1E7": {
-     "id": "S6UNMF",
-     "hash": "9b944afbcc5ccd7e"
+     "id": "W4MRg5",
+     "hash": "da0014e6993b2170"
     },
     "F10E3": {
-     "id": "VB9jtf",
-     "hash": "acb4b2af6820957f"
+     "id": "UJ8vFr",
+     "hash": "068e0ecf2ca0f1a6"
     },
     "F13E2": {
-     "id": "YukMwc",
-     "hash": "a22c56a2cbf23740"
+     "id": "XBjXJn",
+     "hash": "ed6ef05270e724e9"
     }
    },
    "campaigns": {
-    "S2C1": "01M4C5MGPV7X7MPXM5B8EA87SD",
-    "S2C2": "01M4C5MHTJP4EA0M73XNTAJF4J",
-    "S2C3": "01M4C5MKCFW0200E6G7KXEAXDW",
-    "S2C4": "01M4C5MMVW5YKBGNHGWV6NFH95",
-    "S2C5": "01M4C5MP941E0TMFEMJ3A82MBS",
-    "S2C6": "01M4C5MQT85MRF0SB21KMYMNT9"
+    "S2C1": "01M4DAFH82HG4PYB0YWXED7C66",
+    "S2C2": "01M4DAFJWKCRWD87EXYAM4R4PF",
+    "S2C3": "01M4DAFMHQCRDRE21GWMR01495",
+    "S2C4": "01M4DAFP9RA5V1YYEP16WBQVHB",
+    "S2C5": "01M4DAFQXXQBM0GHAG12AXD57N",
+    "S2C6": "01M4DAFSFK0VHC2J4EV3PY6RDP"
    },
    "forms": {
-    "pre": "Y7tih4",
-    "ea": "QR8vTJ",
-    "bf": "SyV94P",
-    "xmas": "T7iVk4",
-    "late": "UP7yv9",
-    "post": "WwUbEe"
+    "pre": "WjS8nX",
+    "ea": "RqkZMm",
+    "bf": "W5YmkM",
+    "xmas": "R5PYpM",
+    "late": "UvreHX",
+    "post": "VAcPgr"
    },
    "form_assets": {
     "side": {
@@ -2053,6 +1905,14 @@
      "id": 380821601,
      "asset_id": 380821601
     }
+   },
+   "campaign_hash": {
+    "S2C1": "c1678ac82422eddd",
+    "S2C2": "3c55b7ebd1f8d749",
+    "S2C3": "6c1f40c7c0f606ab",
+    "S2C4": "50be8e2dd37482a2",
+    "S2C5": "25632ed5f1019a22",
+    "S2C6": "45e66c7baae0c8ae"
    }
   }
  }
