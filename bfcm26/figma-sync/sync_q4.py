@@ -35,13 +35,15 @@ b=open(f'{HERE}/builder_q4.js').read()
 secjs=("\nconst SEC={};\nawait figma.loadFontAsync({family:'Figtree',style:'Regular'});\n"
  "async function sec(k,name,x,y,w,h,old){let s=old?await figma.getNodeByIdAsync(old):null;if(!s){s=page.findOne(n=>n.type==='SECTION'&&n.name===name)}"
  "if(!s){s=figma.createSection();page.appendChild(s)}s.x=x;s.y=y;s.resizeWithoutConstraints(w,h);s.name=name;s.fills=[{type:'SOLID',color:{r:236/255,g:236/255,b:234/255}}];SEC[k]=s;return s}\nSEC.PAGE=page;\n")
+secbase=secjs
 for s_ in CC['sections']:
     secjs+=f"await sec({json.dumps(s_['key'])},{json.dumps(s_['name'])},{s_['x']},{s_['y']},{s_['w']},{s_['h']},{json.dumps(fg['sections'].get(s_['key']))});\n"
 rm=''.join(f"{{for(const k of {json.dumps([fg['emails'][i]['em'],fg['emails'][i].get('br')])}){{const a=k&&await figma.getNodeByIdAsync(k);if(a)a.remove()}}}}\n" for i in removed)
 # frames that did not change: put them where the layout says (section + position), drop briefs the layout no longer has
 mv=[[fg['emails'][i]['em'],C[i]['sec'],C[i]['pos']['x'],C[i]['pos']['y'],fg['emails'][i].get('br') if not C[i]['brief'] else None] for i in C if i in fg['emails'] and i not in changed]
+if os.environ.get('NOMV'): mv=[]  # frames already where the layout puts them
 rm+=('const MV='+json.dumps(mv)+';for(const [id,sk,x,y,br] of MV){const n=await figma.getNodeByIdAsync(id);if(n){if(n.parent!==SEC[sk])SEC[sk].appendChild(n);n.x=x;n.y=y}if(br){const a=await figma.getNodeByIdAsync(br);if(a)a.remove()}}\n') if mv else ''
-batches=[];cur=[];base=len(b)+len(secjs)+300;size=base+len(rm)
+batches=[];cur=[];base=len(b)+1500;size=len(b)+len(secjs)+len(rm)
 order=sorted(changed,key=lambda i:(i.split('-')[0]!='POP',list(C).index(i)))
 for i in order:
     s=len(spec_js(C[i]['spec']))+700
@@ -49,8 +51,16 @@ for i in order:
     cur.append(i);size+=s
 batches.append(cur)
 for f in [x for x in os.listdir(HERE) if x.startswith('q4batch')]: os.remove(f'{HERE}/{f}')
+def seclite(keys):  # later batches: look up only the sections they use (batch 00 has created and placed them all)
+    o=secbase
+    for s_ in CC['sections']:
+        if s_['key'] not in keys: continue
+        sid=fg['sections'].get(s_['key'])
+        o+=(f"SEC[{json.dumps(s_['key'])}]=await figma.getNodeByIdAsync({json.dumps(sid)});\n" if sid else
+            f"await sec({json.dumps(s_['key'])},{json.dumps(s_['name'])},{s_['x']},{s_['y']},{s_['w']},{s_['h']},null);\n")
+    return o
 for n,bt in enumerate(batches):
-    code=b+secjs+'const R={emails:{},sections:{}};for(const k in SEC)if(k!=="PAGE")R.sections[k]=SEC[k].id;\n'+(rm if n==0 else '')
+    code=b+(secjs if n==0 else seclite({C[i]['sec'] for i in bt}))+'const R={emails:{},sections:{}};for(const k in SEC)if(k!=="PAGE")R.sections[k]=SEC[k].id;\n'+(rm if n==0 else '')
     for i in bt:
         e=C[i];p=e['pos'];o=fg['emails'].get(i,{})
         brj=(f"const br=await brief({json.dumps(e['brief'],separators=(',',':'))},{p['x']},{p['by']},{json.dumps(o.get('br'))},P);" if e['brief'] else 'const br=null;')
