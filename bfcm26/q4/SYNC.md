@@ -53,10 +53,11 @@ Layout on page Email Flows (`359:2`), from x = 6000 (the old flows master on the
 
 ## Klaviyo push (done Oct 7, both accounts, all drafts)
 
-`klaviyo/push.py EU|US [images templates lists segments flows campaigns backfill subjects]`; ids in `sync_state.json['klaviyo']`.
+`klaviyo/push.py EU|US [images templates lists segments flows dated campaigns backfill subjects | release <EID>]`; ids in `sync_state.json['klaviyo']`.
 - 39 templates per account (`Q4 · F1E1 · …`), email-safe HTML from `klaviyo/emailer.py`; date phase + Gender logic inside; `klaviyo/rendertest.py` renders all through Klaviyo.
-- 15 flows per account as drafts (F1–F8, F10–F13, S1, G1, G2). F9 Back in Stock: build by hand (no API trigger), templates `Q4 · F9E1/E2` are ready.
-- Fixed-date steps F1E6, F1E7, F10E3, F13E2 are draft email campaigns; S2C1–C6 are draft SMS campaigns. None scheduled.
+- 19 flows per account as drafts (F1–F8, F10–F13, S1, G1, G2 + the 4 dated ones below). F9 Back in Stock: build by hand (no API trigger), templates `Q4 · F9E1/E2` are ready.
+- Fixed-date emails F1E6 (Nov 23 09:00), F1E7 (Nov 27 08:00), F10E3 (Dec 5 09:00), F13E2 (Jan 2 09:00) are their own one-email draft flows (`Q4 · F1E6 · … · date`), triggered by lists `Q4 · Send <EID> · <date>`. The flow API has no "wait until date", so on the send date (flow live first) run `push.py EU release F1E6` / `push.py US release F1E6` at the send time: it adds the segment (pop-up no-order / On Sale live no order in 7 days / gift card buyers) to the list and the flow sends at once. Each flow skips anyone who orders after entering. The earlier draft email campaigns for these four were deleted (Oct 8).
+- The only campaigns are S2C1–C6, draft SMS campaigns. None scheduled.
 - Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
 - Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; run `push.py EU subjects` and `push.py US subjects` on Nov 23, Nov 27, Dec 1, Dec 7, Dec 18 [cut-off] and Dec 25.
 - Gender backfill from order history: not run yet (needs an explicit go).

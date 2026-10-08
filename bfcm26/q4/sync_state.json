@@ -1476,7 +1476,11 @@
     "winback": "WhPURV",
     "second": "RsW4BH",
     "sunset": "SCkTvz",
-    "salelive": "XnBvqp"
+    "salelive": "XnBvqp",
+    "d_F1E6": "Ykw2Vz",
+    "d_F1E7": "VV56Nt",
+    "d_F10E3": "R6beyf",
+    "d_F13E2": "YfSLAb"
    },
    "segments": {
     "lapsed": "XUZhFC",
@@ -1486,7 +1490,8 @@
     "sms": "TKJJeU",
     "popup_presale": "V9XA5G",
     "giftcard": "XuMfRq",
-    "gender_set": "VBJ7Zx"
+    "gender_set": "VBJ7Zx",
+    "salelive_open": "RxVLu6"
    },
    "flows": {
     "F1": {
@@ -1552,13 +1557,25 @@
     "G2": {
      "id": "RjehY3",
      "hash": "56e1822a53f23f40"
+    },
+    "F1E6": {
+     "id": "XtBdgL",
+     "hash": "89db63e755e19727"
+    },
+    "F1E7": {
+     "id": "Sy66Fa",
+     "hash": "34e0ee9cea57b090"
+    },
+    "F10E3": {
+     "id": "SZQCAZ",
+     "hash": "7c1390523d8657a0"
+    },
+    "F13E2": {
+     "id": "SicjCY",
+     "hash": "d7bfc85e2dca00b4"
     }
    },
    "campaigns": {
-    "F1E6": "01M4C5HGMS2VFEJE6V9H275091",
-    "F1E7": "01M4C5HK6FNYB21M2GCFNK52A0",
-    "F10E3": "01M4C5HPA1SZQH53FE1XBA4R7R",
-    "F13E2": "01M4C5HS0V2C8EJK9CS4ZSRM7W",
     "S2C1": "01M4C5HTRRZB5PYVP0TQD599F1",
     "S2C2": "01M4C5HW01X3RBE3A4564H2VYP",
     "S2C3": "01M4C5HXCMBNNNY9NV2BR57ZYX",
@@ -1899,7 +1916,11 @@
     "winback": "Wmab6C",
     "second": "XrVKD6",
     "sunset": "TLsJgJ",
-    "salelive": "W7gq4s"
+    "salelive": "W7gq4s",
+    "d_F1E6": "Vyx5gn",
+    "d_F1E7": "T9699g",
+    "d_F10E3": "Sw56wD",
+    "d_F13E2": "TFtVqv"
    },
    "segments": {
     "lapsed": "W2D9H4",
@@ -1909,7 +1930,8 @@
     "sms": "Y7z4sA",
     "popup_presale": "Yvx64j",
     "giftcard": "WCtWcs",
-    "gender_set": "XMSM6i"
+    "gender_set": "XMSM6i",
+    "salelive_open": "ULfvWX"
    },
    "flows": {
     "F1": {
@@ -1975,13 +1997,25 @@
     "G2": {
      "id": "Xc4eyp",
      "hash": "f74edeff095e8805"
+    },
+    "F1E6": {
+     "id": "X2rVph",
+     "hash": "ae89bd1eb9ca1881"
+    },
+    "F1E7": {
+     "id": "S6UNMF",
+     "hash": "9b944afbcc5ccd7e"
+    },
+    "F10E3": {
+     "id": "VB9jtf",
+     "hash": "acb4b2af6820957f"
+    },
+    "F13E2": {
+     "id": "YukMwc",
+     "hash": "a22c56a2cbf23740"
     }
    },
    "campaigns": {
-    "F1E6": "01M4C5M5QMS5E1FF1KKGE8JX6X",
-    "F1E7": "01M4C5M8KHZTMZVFBDEDZ9XMZG",
-    "F10E3": "01M4C5MBKG7ASSCZX3MA256R2W",
-    "F13E2": "01M4C5ME4FSM9YQR25PZT1X6ZD",
     "S2C1": "01M4C5MGPV7X7MPXM5B8EA87SD",
     "S2C2": "01M4C5MHTJP4EA0M73XNTAJF4J",
     "S2C3": "01M4C5MKCFW0200E6G7KXEAXDW",
