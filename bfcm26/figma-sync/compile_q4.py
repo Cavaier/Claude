@@ -52,11 +52,11 @@ NE=sum(1 for f in Q.FLOWS for e in f['emails'] if not e.get('kind'))
 SUB={'S':'S1 SMS welcome · S2 the six SMS campaigns · G1–G2 fill in Gender from orders and browsing',
      'W':f"{len(Q.FLOWS)} flows · {NE} emails + their texts · profile property Gender = “Women”, “Both” or empty",
      'M':f"{len(Q.FLOWS)} flows · {NE} emails + their texts · profile property Gender = “Men”"}
-BANDTOP={}
+BANDTOP={};BANDY={}
 for G,GN,FL in (('S','SMS + profile',Q.SFLOWS),('W','Women',Q.FLOWS),('M','Men',Q.FLOWS)):
     put(f'L-{G}',dict(name=f'{G} band title · {GN}',w=8000,h=1000,bg='#ECECEA',S=[['label',0,0,8000,1000,0]],
         I=[T(0,120,90,7760,520,GN,480,520,200),T(0,120,650,7760,200,SUB[G],90,110,300,MU)]),'PAGE',X0,yb-1300)
-    BANDTOP[G]=yb-1200
+    BANDTOP[G]=yb-1200;BANDY[G]=yb
     x=X0;bandh=0
     for f in FL:
         sk=f'{G}-{f["id"]}';tw=SW-2*PAD
@@ -78,6 +78,68 @@ for G,GN,FL in (('S','SMS + profile',Q.SFLOWS),('W','Women',Q.FLOWS),('M','Men',
         secs.append(dict(key=sk,name=f"{GN} · {f['id']} · {f['name']}",x=x,y=yb,w=SW,h=h))
         x+=SW+300;bandh=max(bandh,h)
     yb+=bandh+2600
+# ---------- by period: next to each gender band, one section per flow, a row per email and a column per sale period
+PHS=['pre','ea','bf','cw','xmas','late','post']
+PDATE={'pre':'Oct 27 – Nov 10','ea':'Nov 11 – 12 · code BF26','bf':'Nov 13 – 30 · shown: Nov 14 – 26','cw':'Dec 1 – 6',
+       'xmas':'Dec 7 – [cut-off]','late':'[Cut-off] – Dec 24','post':'Dec 26 – Jan 10'}
+COLW,CG,LW=600,220,1000
+GW=LW+len(PHS)*(COLW+CG)+PAD;LIM=16000
+px0=max(s_['x']+s_['w'] for s_ in secs)+1500
+for G,GN in (('W','Women'),('M','Men')):
+    top=BANDY[G];cx,cy=px0,top;maxx=cx
+    put(f'L-P{G}',dict(name=f'P{G} title · {GN} · every period',w=GW,h=1000,bg='#ECECEA',S=[['label',0,0,GW,1000,0]],
+        I=[T(0,120,90,GW-240,520,f'{GN} · every period',480,520,200),
+           T(0,120,650,GW-240,200,'Each email once per sale period it sends in. Copy that changes by the day is in the Day lines table next to the pop-up.',90,110,300,MU)]),'PAGE',px0,top-1300)
+    for f in Q.FLOWS:
+        rows=[]
+        for e in f['emails']:
+            if e.get('kind'): continue
+            grp={}
+            for ph in PHS:
+                k=f'PV-{G}-{e["id"]}-{ph}'
+                if k not in E: continue
+                sp=emspec(k,'');sg=json.dumps([sp['S'],sp['I'],sp['h'],sp['bg']])
+                grp.setdefault(sg,[]).append(ph)
+            if grp: rows.append((e,list(grp.values())))
+        hh=PAD+620;h=hh+sum(max(round(E[f'PV-{G}-{e["id"]}-{g[0]}']['h']) for g in gs)+420 for e,gs in rows)+PAD
+        if cy>top and cy+h>top+LIM: cx+=GW+500;cy=top
+        sk=f'P{G}-{f["id"]}'
+        secs.append(dict(key=sk,name=f"{GN} · {f['id']} · {f['name']} · every period",x=cx,y=cy,w=GW,h=h))
+        put('PT-'+sk,dict(name=f"{sk} title · {f['name']}",w=GW-2*PAD,h=360,bg=None,S=[['title',0,0,GW-2*PAD,360,0]],
+            I=[T(0,0,0,GW-2*PAD,130,f"{f['id']} · {f['name']}",110,130,300),T(0,0,160,GW-2*PAD,60,'Trigger · '+f['trigger_short'],48,60,400),
+               T(0,0,240,GW-2*PAD,52,'One row per email · one column per sale period · a frame covers every period named above it',40,52,300,MU)]),sk,PAD,PAD)
+        put('PH-'+sk,dict(name=f"{sk} periods",w=len(PHS)*(COLW+CG),h=170,bg=None,S=[['periods',0,0,len(PHS)*(COLW+CG),170,0]],
+            I=[it for i,ph in enumerate(PHS) for it in (T(0,i*(COLW+CG),0,COLW,70,PN[ph],56,70,500),T(0,i*(COLW+CG),84,COLW,44,PDATE[ph],34,44,300,MU))]),sk,LW,PAD+440)
+        ry=hh
+        for e,gs in rows:
+            rh=max(round(E[f'PV-{G}-{e["id"]}-{g[0]}']['h']) for g in gs)
+            put(f'PL-{G}-{e["id"]}',dict(name=f"PL-{G}-{e['id']} · row label",w=LW-PAD-120,h=420,bg=None,S=[['label',0,0,LW-PAD-120,420,0]],
+                I=[T(0,0,0,LW-PAD-120,110,e['id'],96,110,300),T(0,0,130,LW-PAD-120,120,e['name'],44,56,400),T(0,0,270,LW-PAD-120,100,e['delay'],34,44,300,MU)]),sk,PAD,ry+150)
+            for g in gs:
+                k=f'PV-{G}-{e["id"]}-{g[0]}';subj=re.sub(r'^subject\s*·\s*','',E[k]['subj'].strip(),flags=re.I)
+                lab=' + '.join(PN[x] for x in g)
+                put(k,emspec(k,f"{e['id']}-{G}-{g[0]} · {lab} · {subj}"),sk,LW+PHS.index(g[0])*(COLW+CG),ry+150,
+                    dict(name=f'{k} brief',l1=lab,l2=subj,l3='',l4=''))
+            ry+=rh+420
+        cy+=h+500;maxx=max(maxx,cx+GW)
+    px0=maxx+1500
+# ---------- day lines: the «token» copy for every sale day
+DCOL=[('Day','label',420),('Period','phase',380),('Kicker','kick',620),('Big word','big',330),('Headline','head',820),('Line','line',1500),('Subject','subj',700),('Preview','prev',760),('Button','cta',560)]
+DW=sum(c[2]+60 for c in DCOL)+240;dI=[T(0,120,90,DW-240,200,'Day lines · what changes each day',150,180,200),
+    T(0,120,300,DW-240,60,'Every «token» in the emails is filled from the row for the day the email sends; a range row covers each day in it.',44,60,300,MU)]
+xx=120
+for nm,_,w in DCOL: dI.append(T(0,xx,460,w,50,nm.upper(),30,50,500,MU));xx+=w+60
+yy=540
+for d in Q.DAYS:
+    if d['phase'] in ('pre','post'): continue
+    vals={**{k:d[k] for k in Q.KEYS},'label':d['label'],'phase':PN[d['phase']]};xx=120;rh=0
+    for nm,key,w in DCOL:
+        v=str(vals.get(key,'') or '—');n=lines(v,34,w);dI.append(['x',0,xx,yy,w,n*46,v,'Figtree',500 if key=='label' else 300,0,34,46,0,FG,1,'',1,'left']);xx+=w+60;rh=max(rh,n*46)
+    dI.append(['r',0,120,yy+rh+22,DW-240,1,'#DCDCDA',1,0,None,0,0]);yy+=rh+46
+DH=yy+120
+popsec=next(s_ for s_ in secs if s_['key']=='POP')
+secs.append(dict(key='DAYS',name='Day lines · what changes each day',x=popsec['x']+popsec['w']+800,y=Y0,w=DW+200,h=DH+200))
+put('DAYTAB',dict(name='DAYTAB · day lines',w=DW,h=DH,bg='#FFFFFF',S=[['table',0,0,DW,DH,0]],I=dI),'DAYS',100,100)
 SEC={s_['key']:s_ for s_ in secs}
 pop=SEC['POP'];jx=X0+out['POP-post-5']['pos']['x']+310;jy=Y0+out['POP-post-5']['pos']['y']+750
 gy=pop['y']+pop['h']+250

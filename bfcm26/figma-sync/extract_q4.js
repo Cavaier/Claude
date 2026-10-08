@@ -113,6 +113,10 @@ const data=await p.evaluate(()=>{
   document.querySelectorAll('section.entry').forEach(sec=>{const g=sec.id.split('-')[0];ext({art:sec.querySelector('article.em'),id:sec.id,eid:sec.dataset.id,g,subj:(sec.querySelector('.elab .subj')||{}).innerText||'',st:sec.dataset.s})});
   for(const [ph,d] of [['pre','pre'],['ea','2026-11-11'],['bf',BF],['xmas','x1'],['late','l1'],['post','post']]){click(d);
     document.querySelectorAll('#band-P figure.pf').forEach((f,i)=>ext({art:f.querySelector('.pscreen'),id:'POP-'+ph+'-'+(i+1),eid:'POP',g:'P',ph,cap:f.querySelector('figcaption').textContent}))}
+  // every email once per sale period (the period's main day), for the by-period grids
+  for(const [ph,d] of [['pre','pre'],['ea','2026-11-11'],['bf','b1'],['cw','2026-12-01'],['xmas','x1'],['late','l1'],['post','post']]){click(d);
+    document.querySelectorAll('section.entry').forEach(sec=>{const g=sec.id.split('-')[0];if(g!=='W'&&g!=='M')return;if(!/E\d+$/.test(sec.dataset.id||sec.id))return;if(!(sec.dataset.states||'').split(' ').includes(ph))return;
+      ext({art:sec.querySelector('article.em'),id:'PV-'+sec.id+'-'+ph,eid:sec.dataset.id,g,ph,subj:(sec.querySelector('.elab .subj')||{}).innerText||''})})}
   click(BF);
   const hs=document.createElement('style');hs.textContent='.col article.em{visibility:hidden!important}';document.head.appendChild(hs);
   document.querySelectorAll('.band .col').forEach(col=>{const C=col.getBoundingClientRect();const place={};
