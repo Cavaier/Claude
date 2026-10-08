@@ -77,5 +77,26 @@
     "seed": 12152,
     "draft_task_id": "cgt-20261009061113-7axtq",
     "file": "W415-C2-stack-chart.mp4"
+  },
+  "finals": {
+    "R1-07-sticker": {
+      "task_id": "cgt-20261009063311-0vbmi",
+      "draft_task_id": "cgt-20261009054316-e7ani",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "size": "1080x1920",
+      "duration": 5,
+      "duration_actual_s": 5.042,
+      "fps": 24,
+      "generate_audio": false,
+      "seed": 10387,
+      "file": "../finals/R1-07-sticker.mp4",
+      "note": "720p was refused for the draft-to-final step; rendered at 1080p."
+    }
   }
 }
