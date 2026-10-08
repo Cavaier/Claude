@@ -1,0 +1,61 @@
+# KICKOFF: new campaign and flow images (OpenAI image API)
+
+Start a new session in this environment and say: "Continue from bfcm26/KICKOFF-images.md".
+The previous session couldn't reach the API (the key and network change only apply to new sessions).
+
+## Setup check (first thing)
+- `OPENAI_API_KEY` must be set in the environment (Network secrets / env var). Never print it.
+- `api.openai.com` must be allowed in Network access. Test: `curl -s -o /dev/null -w "%{http_code}" https://api.openai.com/v1/models -H "Authorization: Bearer $OPENAI_API_KEY"` → 200.
+- Before the first image, read OpenAI's current image-API pricing page and show the per-image cost for the model and quality used. Draft at low/medium quality, final at high.
+
+## The look (Eli's references, 3 photos in the session that wrote this)
+- **Colour direction:** icy, muted colours, as in the close-up of the black 3x Minimal Stack Set on a hairy male wrist on a white background. Cool, desaturated skin, soft daylight, macro detail, white or pale grey ground.
+- **Monochrome direction:** true black and white, as in the man's face with the silver CAVAIER bar pendant held across the eye, and the woman's neck and collarbone with the silver pendant against an ivory satin slip on a grey studio background. Fine grain, soft studio light, skin texture visible.
+- **One direction per email: all colour or all monochrome, never mixed in one email.**
+- Calm, minimal, premium. No props overload, no text in images.
+- Period vibe goes into the setting and light, not into loud props:
+  - Black Friday: high contrast.
+  - Matte Cuff weekend: matte stone or concrete.
+  - Cyber Monday / Cyber Week: cool night light.
+  - Christmas: warm low light, wool, the wrapped jewelry case.
+  - Last minute: a gift card moment.
+  - After Christmas: soft daylight.
+
+## Product accuracy (non-negotiable)
+- Every image is generated from the real Shopify product photo as the reference (images edit endpoint). Only the scene, model and light change; the piece must stay identical (chain types, the 3 bands of the set, the CAVAIER engraved bar, clasp).
+- Women's vs men's: Shopify titles with " - " are women's ("3x Minimal - Stack Set" = `3x-minimal-stack-set-for-her`), without are men's ("3x Minimal Stack Set" = `3x-minimal-stack-set-for-him`). Match the copy next to the image: "3X SET · WOMEN" → women's set on a woman, "· MEN" → men's set on a man.
+- Best seller all year: the 3x Minimal Cuff/Stack Set (both versions).
+- Duo: only `2x-duo-minimal-set-for-him` exists. Crystal Necklace / Crystal Bracelet exist only for her.
+- Matte Cuff and Glossy + Matte duo don't exist in Shopify yet, so there's no reference photo. Skip those slots or ask Eli.
+- Pull product images: Shopify Admin GraphQL `products(query:"handle:...") { media { ... on MediaImage { image { url } } } }`.
+
+## Review workflow Eli asked for
+- One review page (artifact or Figma page), campaign by campaign, slot by slot.
+- Each slot shows: current image, new image, product and finish it must show, colour or monochrome, cost of that image and running total.
+- Eli answers yes → place it into the Figma frame (replace the IMAGE fill on that layer, keep crop) and go to the next slot. No → regenerate with his note.
+- Start with **email campaigns** (Figma page 310:2: EU section 382:1418, US section 536:919; US copies use the same images). Flows come later; many flow blocks are dynamic Klaviyo product feeds.
+
+## Campaign image slots (EU frame IDs; visible slot layer first, the larger layer is the cropped photo inside)
+| Email | Slots (product) |
+|---|---|
+| 01-J Your VIP early access (353:1394) | For him: Bracelets, Sets, Necklaces · For her: Bracelets, Sets, Necklaces · "Not sure? 3x Minimal Set" |
+| 02-D Used your VIP code? (315:26) | 3X SET · WOMEN (402:1616), 3X SET · MEN (402:1627) |
+| V10-03 It's open to everyone (412:1424) | hero (412:1445) · 3X MINIMAL SET, 2X DUO, ROPE BRACELET, MINIMAL CUFF tiles |
+| V10-04 What's selling first (412:1496) | 4 rank thumbnails: men's set, women's set, Rope, Cube |
+| V10-05 Shower, gym, sleep (412:1574) | In the water / Every day / By the sea + Cube bracelet, Minimal Cuff |
+| V10-07 Goes with everything (412:1673) | 4 finish photos (Silver, Gold, Black, Silver) + 5 product thumbs |
+| V10-09 Black Friday is tomorrow (412:1785) | 2 hero halves + 3X SET, ROPE BRACELET, 2X DUO |
+| 03-A 30% off · Black Friday (319:1298) | hero (505:1247) · 3X MINIMAL SET, MINIMAL CUFF, 3X SET banner |
+| 04-B Rated 4.5 (315:962) | 3 review photos: 3X SET · MEN, 3X SET · WOMEN, 2X DUO |
+| 05-B Gifts under €25 (315:1377) | Rope, Cube, Minimal Cuff, Cuban Necklace, Crystal Bracelet, Braid, Rope Pendant Necklace, 3x Set |
+| 06-C Meet the Matte Cuff (316:1276) | Matte Cuff images: no product photo yet, ask Eli |
+| 07-C One more thing (317:1332) | Matte Cuff thumbnail: no product photo yet |
+| 08-E It's Cyber Monday (318:1508) | hero (Glossy + Matte): no product photo yet |
+| 10-B €66.43 for three (315:3793) | hero 3x set (407:1481) · men's set, women's set, duo tiles |
+| 12-C Compliments every single day (315:1682) | hero (407:1556) · 3x set, Crystal Necklace, Matte Cuff, Rope Pendant thumbs |
+| 13-A Final call (315:1877) | hero (407:1675) · men's set, women's set, Matte Cuff, duo |
+
+Text-only letters (no images): V10-06, V10-08, V10-16, V10-17, 14-A.
+
+## Context
+Strategy, rules and audit history: Figma flows page 359:2, Rules panel 754:2 (sections 1–8). Sale from Nov 13: prices already 30% off on the site, no code (only early access Nov 11–12 uses BF26). Domains: EU cavaier.com, US us.cavaier.com.
