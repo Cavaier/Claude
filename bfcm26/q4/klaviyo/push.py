@@ -218,17 +218,27 @@ def build_flow(f):
                'template_id': t['id'], 'smart_sending_enabled': e['id'] not in NO_SS, 'transactional': False, 'add_tracking_params': True, 'name': f'{e["id"]} · {e["name"]}'},
                'status': 'draft'})
     return dict(triggers=[trig], profile_filter={'condition_groups': pf} if pf else None, actions=fb.acts, entry_action_id=fb.acts[0]['temporary_id'], reentry_criteria=None)
-MEN_ORD = ['For Him', "Men's Sets", 'Men Necklace', 'You may also like - Men - Necklace']
-WOMEN_ORD = ['For Her', "Women's Sets", 'Women Necklace', 'You may also like - Women - Necklace']
+# both stores: every women's product name has a spaced hyphen ("Cube - Bracelet"), no men's product has one ("Cube Bracelet"),
+# in every language; these non-jewellery items count for neither
+# Klaviyo takes a single filter per metric condition. Women's side: the spaced hyphen. Men's side, orders: the men's tags
+# (add-ons like Jewelry Case and Lifetime Warranty have no hyphen and no tags, so they count for neither). Men's side,
+# browsing: no spaced hyphen (an add-on view there can only block a women's match, never set the wrong side).
+WOMEN_F = [{'property': 'Name', 'filter': {'type': 'string', 'operator': 'contains', 'value': ' - '}}]
+MEN_F_ORD = [{'property': 'Tags', 'filter': {'type': 'list', 'operator': 'contains-any', 'value': ['man', 'men', 'mens sets']}}]
+MEN_F_VIEW = [{'property': 'Name', 'filter': {'type': 'string', 'operator': 'not-contains', 'value': ' - '}}]
+def side(p):
+    name, tags = p.get('Name') or '', p.get('Tags') or []
+    if isinstance(tags, str): tags = re.findall(r"'([^']*)'", tags)
+    if ' - ' in name: return 'W'
+    return 'M' if set(tags) & {'man', 'men', 'mens sets'} else None
 def build_gender(kind):
     fb = FB()
-    if kind == 'G1': mid, prop, men, women, tf, need, src = M['ordered'], 'Collections', MEN_ORD, WOMEN_ORD, ALLTIME, 0, 'order'
+    if kind == 'G1': mid, men, women, tf, need, src = M['ordered'], MEN_F_ORD, WOMEN_F, ALLTIME, 0, 'order'
     else:
-        mid, prop, men, women, tf, need, src = M['viewed'], 'Categories', Q.MEN_CATS, Q.WOMEN_CATS, LAST(14), 1, 'browsing'
+        mid, men, women, tf, need, src = M['viewed'], MEN_F_VIEW, WOMEN_F, LAST(14), 1, 'browsing'
         fb.add('time-delay', {'unit': 'hours', 'value': 1, 'secondary_value': None, 'timezone': 'profile'})
-    anyof = lambda vals: [{'property': prop, 'filter': {'type': 'list', 'operator': 'contains-any', 'value': vals}}]
-    has = lambda vals: pm(mid, 'greater-than', need, tf, anyof(vals))
-    none = lambda vals: pm(mid, 'equals', 0, tf, anyof(vals))
+    has = lambda f: pm(mid, 'greater-than', need, tf, f)
+    none = lambda f: pm(mid, 'equals', 0, tf, f)
     branches = [('Men', [[has(men)], [none(women)]]), ('Women', [[has(women)], [none(men)]])] + ([('Both', [[has(men)], [has(women)]])] if kind == 'G1' else [])
     split = fb.add('multi-branch-split', {'name': 'Which side', 'branches': [
         {'branch_id': f'b{i}', 'branch_filter': {'condition_groups': [{'conditions': c} for c in conds]}, 'links': {}, 'order': i, 'name': f'Gender = {gv}'} for i, (gv, conds) in enumerate(branches)]
@@ -315,8 +325,8 @@ def step_backfill():
     for ev in pages(f'events/?filter={f}&page[size]=200&fields[event]=event_properties&include=profile&fields[profile]=id'):
         pid = ((ev.get('relationships') or {}).get('profile', {}).get('data') or {}).get('id')
         if not pid: continue
-        cols = ev['attributes']['event_properties'].get('Collections') or []
-        a = per.setdefault(pid, [False, False]); a[0] |= any(c in MEN_ORD for c in cols); a[1] |= any(c in WOMEN_ORD for c in cols)
+        sd = side(ev['attributes']['event_properties'])
+        a = per.setdefault(pid, [False, False]); a[0] |= sd == 'M'; a[1] |= sd == 'W'
     gset = set(p['id'] for p in pages(f'segments/{K["segments"]["gender_set"]}/profiles/?page[size]=100&fields[profile]=id'))
     todo = {pid: ('Both' if m and w else 'Men' if m else 'Women') for pid, (m, w) in per.items() if (m or w) and pid not in gset}
     print('customers with orders', len(per), 'already have Gender', len(gset & set(per)), 'to set', len(todo))

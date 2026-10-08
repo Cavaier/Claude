@@ -83,10 +83,10 @@ PHS=['pre','ea','bf','cw','xmas','late','post']
 PDATE={'pre':'Oct 27 – Nov 10','ea':'Nov 11 – 12 · code BF26','bf':'Nov 13 – 30 · shown: Nov 14 – 26','cw':'Dec 1 – 6',
        'xmas':'Dec 7 – [cut-off]','late':'[Cut-off] – Dec 24','post':'Dec 26 – Jan 10'}
 COLW,CG,LW=600,220,1000
-GW=LW+len(PHS)*(COLW+CG)+PAD;LIM=16000
-px0=max(s_['x']+s_['w'] for s_ in secs)+1500
+GW=LW+len(PHS)*(COLW+CG)+PAD;LIM=16000;VG=1800  # VG: room for the section name between stacked sections
+px0=max(s_['x']+s_['w'] for s_ in secs)+1500;pbottom=0
 for G,GN in (('W','Women'),('M','Men')):
-    top=BANDY[G];cx,cy=px0,top;maxx=cx
+    top=max(BANDY[G],pbottom+3200);cx,cy=px0,top;maxx=cx
     put(f'L-P{G}',dict(name=f'P{G} title · {GN} · every period',w=GW,h=1000,bg='#ECECEA',S=[['label',0,0,GW,1000,0]],
         I=[T(0,120,90,GW-240,520,f'{GN} · every period',480,520,200),
            T(0,120,650,GW-240,200,'Each email once per sale period it sends in. Copy that changes by the day is in the Day lines table next to the pop-up.',90,110,300,MU)]),'PAGE',px0,top-1300)
@@ -102,7 +102,7 @@ for G,GN in (('W','Women'),('M','Men')):
                 grp.setdefault(sg,[]).append(ph)
             if grp: rows.append((e,list(grp.values())))
         hh=PAD+620;h=hh+sum(max(round(E[f'PV-{G}-{e["id"]}-{g[0]}']['h']) for g in gs)+420 for e,gs in rows)+PAD
-        if cy>top and cy+h>top+LIM: cx+=GW+500;cy=top
+        if cy>top and cy+h>top+LIM: cx+=GW+800;cy=top
         sk=f'P{G}-{f["id"]}'
         secs.append(dict(key=sk,name=f"{GN} · {f['id']} · {f['name']} · every period",x=cx,y=cy,w=GW,h=h))
         put('PT-'+sk,dict(name=f"{sk} title · {f['name']}",w=GW-2*PAD,h=360,bg=None,S=[['title',0,0,GW-2*PAD,360,0]],
@@ -121,8 +121,7 @@ for G,GN in (('W','Women'),('M','Men')):
                 put(k,emspec(k,f"{e['id']}-{G}-{g[0]} · {lab} · {subj}"),sk,LW+PHS.index(g[0])*(COLW+CG),ry+150,
                     dict(name=f'{k} brief',l1=lab,l2=subj,l3='',l4=''))
             ry+=rh+420
-        cy+=h+500;maxx=max(maxx,cx+GW)
-    px0=maxx+1500
+        pbottom=max(pbottom,cy+h);cy+=h+VG;maxx=max(maxx,cx+GW)
 # ---------- day lines: the «token» copy for every sale day
 DCOL=[('Day','label',420),('Period','phase',380),('Kicker','kick',620),('Big word','big',330),('Headline','head',820),('Line','line',1500),('Subject','subj',700),('Preview','prev',760),('Button','cta',560)]
 DW=sum(c[2]+60 for c in DCOL)+240;dI=[T(0,120,90,DW-240,200,'Day lines · what changes each day',150,180,200),

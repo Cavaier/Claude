@@ -52,7 +52,7 @@ After a copy change, `push.py EU|US templates lists flows dated campaigns` rebui
 
 - SMS texts live inside the same Klaviyo flows (F2, F4, F5, F7, F9) behind a “can receive SMS” split, plus S1 SMS Welcome. S2 is six scheduled SMS campaigns, not a flow.
 - Every text is checked by `gen_q4.py` to be plain GSM-7 and one segment (160 incl. 23-char link and the opt-out line).
-- G1/G2 set the profile property `Gender` from Ordered Product (English collections / tags) and Viewed Product (translated category names, list in `q4_specs.py`). They never overwrite an existing Gender.
+- G1/G2 set the profile property `Gender`. Rule (both stores, every language): women's product names have a spaced hyphen (“Cube - Bracelet”), men's never do (“Cube Bracelet”). Orders: women's = Name contains ` - `, men's = Tags contain `man`/`men`/`mens sets` (add-ons like Jewelry Case and Lifetime Warranty have neither). Views: women's = Name contains ` - `, men's = Name without it. Klaviyo's API takes only one filter per metric condition, hence the split. They never overwrite an existing Gender; the order backfill uses the same rule.
 - One-off backfill on the first push to each account: set `Gender` (+ `Gender source = order`) for existing customers with no Gender from their Ordered Product history, via the API.
 - F7, F8, F11 are list-triggered: bulk-add their segments on the dates in each flow's trigger (F8 Oct 19, F11 Nov 9, F7 Nov 11; F7/F11 top-up Dec 7).
 
