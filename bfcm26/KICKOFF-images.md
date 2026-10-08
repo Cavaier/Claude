@@ -64,3 +64,4 @@ Strategy, rules and audit history: Figma flows page 359:2, Rules panel 754:2 (se
 - `OPENAI_API_KEY` is set, but `api.openai.com` is still denied by the environment's network policy (proxy 403 on CONNECT). Eli needs to add `api.openai.com` under Allowed domains in Network access (environment settings → Edit), then start a new session.
 - Product reference photos are mapped in `imgref/refs.json` (handle → Shopify CDN URLs). Rerun the download snippet into `imgref/` (images are gitignored, ~100 MB).
 - Not yet done: the pricing check (platform.openai.com wasn't reachable either), the review page, and any generation.
+- 02-D picks (Eli): the v2 low-quality drafts `imggen/d_02D_*_low2.png` → saved as `imggen/pick_02D_men.png` / `pick_02D_women.png` (gitignored; regenerate from the v2 prompt if the container is gone). Detail is sufficient at 1024×1536 for the 270×360 slots, so a chosen draft can be the final without a high-quality rerun.
