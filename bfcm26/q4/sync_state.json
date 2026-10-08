@@ -3809,7 +3809,11 @@
      "collection": "TK8Zdc",
      "clicked": "Pivb4Z",
      "order": "M8VZY5",
-     "sms_list": "SnBrZ9"
+     "sms_list": "SnBrZ9",
+     "opened": "HQAgca",
+     "checkout_started": "LrhH24",
+     "subscribed": "SQs5kV",
+     "bounced": "NKKCJk"
     },
     "from_email": "info@cavaier.com",
     "from_label": "Cavaier"
@@ -3847,7 +3851,7 @@
     "p_cube_br_w": "https://cdn.klaviyomail.com/company/KCTpHb/images/24c1e66f-2790-4592-85fb-4c8f12926871.jpeg",
     "p_cube_pend": "https://cdn.klaviyomail.com/company/KCTpHb/images/ee38ee31-7675-41d8-b946-a61f6a7a2430.jpeg",
     "p_cube_pend_worn": "https://cdn.klaviyomail.com/company/KCTpHb/images/a6140622-a4e1-4c64-9c83-9fcedaffb798.jpeg",
-    "p_cuff_black": "https://cdn.klaviyomail.com/company/KCTpHb/images/e089b4b5-2060-44ec-ad67-07dd22046f46.jpeg",
+    "p_cuff_black": "https://cdn.klaviyomail.com/company/KCTpHb/images/9689387c-a4ac-4af8-ab8d-366f0fdf3f3f.jpeg",
     "p_cuff_worn": "https://cdn.klaviyomail.com/company/KCTpHb/images/214b76fa-1397-4962-a878-c0241e1cf5f8.jpeg",
     "p_giftcard": "https://cdn.klaviyomail.com/company/KCTpHb/images/76136973-28ba-4bc4-b793-3cd5b3a2e278.jpeg",
     "p_role_pend_worn": "https://cdn.klaviyomail.com/company/KCTpHb/images/aa966b45-218e-4baa-80bf-1bb1be695310.jpeg",
@@ -3861,107 +3865,99 @@
    "templates": {
     "F1E1": {
      "id": "TRMJGt",
-     "hash": "9ef5e8a26d4680b3"
+     "hash": "d61aac7f6abe4476"
     },
     "F1E2": {
      "id": "WPCt6N",
-     "hash": "5d33a8f9f6f8bc91"
+     "hash": "40c0c916cceed1f0"
     },
     "F1E3": {
      "id": "WcBqub",
-     "hash": "f1b9e381f0d18ff8"
+     "hash": "95acd79e51b07fac"
     },
     "F1E4": {
      "id": "VzAmRy",
-     "hash": "fe27b3fc9bfaf20b"
+     "hash": "36f42bde39f78b2a"
     },
     "F1E5": {
      "id": "WJZcKq",
-     "hash": "28d3e0c317b1b44a"
-    },
-    "F1E6": {
-     "id": "UjygCi",
-     "hash": "520bd1cce1c45f7a"
-    },
-    "F1E7": {
-     "id": "XUq3Dg",
-     "hash": "46da653df04eb426"
+     "hash": "1a774f6031c0f80d"
     },
     "F2E1": {
      "id": "VuX7wa",
-     "hash": "651da7cfdd966a5c"
+     "hash": "16734973a2515c3e"
     },
     "F2E2": {
      "id": "YsMPUv",
-     "hash": "b461aa78344289b4"
+     "hash": "99f2f72150424781"
     },
     "F2E3": {
      "id": "UeV2gU",
-     "hash": "713e04d3e762cb58"
+     "hash": "c80cdcd5a6ec8672"
     },
     "F3E1": {
      "id": "XPLMhS",
-     "hash": "76e4186134dfa99f"
+     "hash": "6d4713c182fef60c"
     },
     "F3E2": {
      "id": "SYSV3E",
-     "hash": "0985e61553b0c837"
+     "hash": "62cf324008a00611"
     },
     "F4E1": {
      "id": "SmRSr3",
-     "hash": "f6b9c2ca26846232"
+     "hash": "c9fd7b9aad5bc1cc"
     },
     "F4E2": {
      "id": "XK9wWu",
-     "hash": "e60406de05c3eb17"
+     "hash": "5b80af6b0f2ed577"
     },
     "F4E3": {
      "id": "TxgHiT",
-     "hash": "df87ab1804150da1"
+     "hash": "f347f23d3f5aef5f"
     },
     "F5E1": {
      "id": "R7PMbM",
-     "hash": "bc5f20fae20c0f46"
+     "hash": "96eafcaf3673cdb9"
     },
     "F5E2": {
      "id": "TsDsXv",
-     "hash": "117b8e75d92d1261"
+     "hash": "e9a83cd48e1676cf"
     },
     "F5E3": {
      "id": "R3cwQp",
-     "hash": "edd0a751d4c0834f"
+     "hash": "94fe24ac203e3a15"
     },
     "F5E4": {
      "id": "YcU4Sj",
-     "hash": "8d1f51e1e0c06023"
+     "hash": "025100b0615a7e67"
     },
     "F6E1": {
      "id": "TZ3feJ",
-     "hash": "f1cc1a3a38679159"
+     "hash": "df9c80831912691d"
     },
     "F6E2": {
      "id": "RzAj7C",
-     "hash": "8956a6d8bfe5b636"
+     "hash": "f56d734cbbdb5b61"
     },
     "F6E3": {
      "id": "WjQV2s",
-     "hash": "e5a1777781fe3ac6"
+     "hash": "bcbae8bf923e6bc8"
     },
     "F7E1": {
      "id": "VGPSpP",
-     "hash": "9cce25cb72255f8b"
+     "hash": "c92e3c443b8a6922"
     },
     "F7E2": {
      "id": "RuX4Le",
-     "hash": "4f57cb69e6a64a26"
+     "hash": "4ba72ffbfcf61eab"
     },
     "F7E3": {
      "id": "QRW29B",
-     "hash": "234d541d89338bd0"
+     "hash": "344c7717de83d367"
     },
     "F8E1": {
      "id": "WfdEF4",
-     "hash": "681cf3bf50ade7ae"
+     "hash": "31719eef6624f127"
     },
     "F8E2": {
      "id": "UZbzrN",
@@ -3969,51 +3965,51 @@
     },
     "F9E1": {
      "id": "SzJDiG",
-     "hash": "157d500605aae932"
+     "hash": "f86d51308482d34c"
     },
     "F9E2": {
      "id": "RjGy5s",
-     "hash": "b07227c5e324263e"
+     "hash": "faf913579fcf6040"
     },
     "F10E1": {
      "id": "Yvq67n",
-     "hash": "228d01a9316a170e"
+     "hash": "99ee5a5dbb4e4b3a"
     },
     "F10E2": {
      "id": "XfmYS8",
-     "hash": "37530671bc4c1cae"
+     "hash": "5c98d66112bc74d8"
     },
     "F10E3": {
      "id": "Squ8BU",
-     "hash": "93cc6ecf7f7caebd"
+     "hash": "1b367cc135bd4753"
     },
     "F11E1": {
      "id": "XH8wMX",
-     "hash": "4a1143a5ebe31158"
+     "hash": "19468340e90a2058"
     },
     "F11E2": {
      "id": "R5NM3g",
-     "hash": "6af9e9e35a32e77b"
+     "hash": "4c5ae7fe1886b127"
     },
     "F11E3": {
      "id": "Wt6ryH",
-     "hash": "6b158b73c617295f"
+     "hash": "a6d77792b0b53621"
     },
     "F12E1": {
      "id": "XCvgsz",
-     "hash": "be6f099df3e2a0ba"
+     "hash": "1c8f58191e54e822"
     },
     "F12E2": {
      "id": "Vd4kjt",
-     "hash": "0a9965c542807ab8"
+     "hash": "d1c57e60a0d4111e"
     },
     "F13E1": {
      "id": "SaAmzJ",
-     "hash": "621d7413d0781f7b"
+     "hash": "d51ba467e8b136b0"
     },
     "F13E2": {
      "id": "RxziX7",
-     "hash": "65b2d3e26d2acc5a"
+     "hash": "9121c897f4403ffe"
     }
    },
    "lists": {
@@ -4021,8 +4017,6 @@
     "second": "RsW4BH",
     "sunset": "SCkTvz",
     "salelive": "XnBvqp",
-    "d_F1E6": "Ykw2Vz",
-    "d_F1E7": "VV56Nt",
     "d_F10E3": "R6beyf",
     "d_F13E2": "YfSLAb"
    },
@@ -4032,67 +4026,71 @@
     "unengaged": "ShPS7Z",
     "browsed": "UCDxTH",
     "sms": "TKJJeU",
-    "popup_presale": "V9XA5G",
     "giftcard": "XuMfRq",
     "gender_set": "VBJ7Zx",
-    "salelive_open": "RxVLu6"
+    "salelive_open": "RxVLu6",
+    "eng30": "WbCwfT",
+    "eng60": "XbLQsX",
+    "eng90": "RDeFeJ",
+    "eng180": "VFQYbx",
+    "big": "SKcZPp"
    },
    "flows": {
     "F1": {
-     "id": "WzSpt8",
-     "hash": "dda715fbe047a7fd"
+     "id": "ResTrD",
+     "hash": "9932b352372145e2"
     },
     "F2": {
-     "id": "TPUrWs",
-     "hash": "a04407db91f9c00c"
+     "id": "YsLFEs",
+     "hash": "30b2dd071c8ed79b"
     },
     "F3": {
-     "id": "T3CSD3",
-     "hash": "a8926cdc317af759"
+     "id": "UsLCUw",
+     "hash": "5c5f379b66140bf1"
     },
     "F4": {
-     "id": "R5WurL",
-     "hash": "dd77fc0fd8a0e9d3"
+     "id": "SqsYmR",
+     "hash": "31e4e74f676b1697"
     },
     "F5": {
-     "id": "RdbYY3",
-     "hash": "9bd647458ed4c2f5"
+     "id": "V8pVJ2",
+     "hash": "059fb745cb706baa"
     },
     "F6": {
-     "id": "WSXEJx",
-     "hash": "deba749e07cd999f"
+     "id": "SZt2PX",
+     "hash": "ae7a8c2a0570f0f7"
     },
     "F7": {
-     "id": "XT7YVB",
-     "hash": "402d09d2086cf2e2"
+     "id": "VZEKpJ",
+     "hash": "f048d2b3649a7138"
     },
     "F8": {
-     "id": "XDedTr",
-     "hash": "42c2d57747122302"
+     "id": "Rb29aX",
+     "hash": "f8ff488578a444ca"
     },
     "F9": {
      "id": null,
      "note": "build by hand: Back in Stock trigger, templates are ready"
     },
     "F10": {
-     "id": "QQDXrW",
-     "hash": "7c873f205c1ed7e8"
+     "id": "WdLLiQ",
+     "hash": "814a564b08046244"
     },
     "F11": {
-     "id": "WFG9Te",
-     "hash": "50e2ff8afb45ddfa"
+     "id": "WY3jtJ",
+     "hash": "32581d549c1c54e1"
     },
     "F12": {
-     "id": "Wmb8vE",
-     "hash": "81f51030fd04ef85"
+     "id": "TrMNDD",
+     "hash": "bfef08e305af7a72"
     },
     "F13": {
-     "id": "WJiq67",
-     "hash": "65d5ee2f1b54acef"
+     "id": "SufJDs",
+     "hash": "72674710293e2d6a"
     },
     "S1": {
-     "id": "STyS2X",
-     "hash": "9e6f6d8bb25b8b61"
+     "id": "WmBwTt",
+     "hash": "2e0defd66c3be250"
     },
     "G1": {
      "id": "QZfdBd",
@@ -4102,38 +4100,32 @@
      "id": "RULhsT",
      "hash": "361183b0f4851d8e"
     },
-    "F1E6": {
-     "id": "UPeg5H",
-     "hash": "e5a973f0312b5f9e"
-    },
-    "F1E7": {
-     "id": "VTZQCb",
-     "hash": "e65c8da214cabbc8"
-    },
     "F10E3": {
-     "id": "XBNtMg",
-     "hash": "db1b7a9d618ba04c"
+     "id": "VzjXA4",
+     "hash": "a7371567f98eeef8"
     },
     "F13E2": {
-     "id": "TRGc5w",
-     "hash": "33b5f85eab1759ed"
+     "id": "RJArwU",
+     "hash": "3d0b0acb86515e86"
     }
    },
    "campaigns": {
     "S2C1": "01M4DAB5FHAFSEEEESWRT77TPE",
-    "S2C2": "01M4DAB77AS2WG0KZCXTGX5Q3X",
     "S2C3": "01M4DAB903EYVZ4Y69TMGW9FKS",
     "S2C4": "01M4DABAT4HYHWE3X2G4V3WTT9",
-    "S2C5": "01M4DABCFR99TME0WSX9NA9929",
-    "S2C6": "01M4DABE3GZ7DJ3XJH6AGVA5BC"
+    "S2C6": "01M4DABE3GZ7DJ3XJH6AGVA5BC",
+    "S2C2": "01M4EMFYYKQKWGJ18V58FBSTK0",
+    "S2C7": "01M4EMG0GDNEA3B3AW8HCZGXQ1",
+    "S2C8": "01M4EMG1Y0WZVN92XZ32EMR8BY",
+    "S2C5": "01M4EMG4VC1XS1JABXSXD1MNPW"
    },
    "forms": {
-    "ea": "RLT3js",
-    "bf": "WswnSS",
-    "xmas": "Tjr9MK",
-    "late": "YxshCq",
-    "post": "VWJQNw",
-    "pre": "Wa2mDP"
+    "ea": "VCLXNd",
+    "bf": "RXhWrR",
+    "xmas": "XfWkBU",
+    "late": "Xbj6gw",
+    "post": "UFeTN2",
+    "pre": "TnAymT"
    },
    "form_assets": {
     "side": {
@@ -4160,11 +4152,68 @@
    },
    "campaign_hash": {
     "S2C1": "3a1050258f61d37e",
-    "S2C2": "af50d82ac67ada05",
+    "S2C2": "e6b86ff1f4478d05",
     "S2C3": "feb2c630e4f97362",
     "S2C4": "e4fe9ec3ab9aee1e",
-    "S2C5": "0638ed6b823967ab",
-    "S2C6": "3acdc7f12eeb98d7"
+    "S2C5": "255d6e9cf684cf55",
+    "S2C6": "3acdc7f12eeb98d7",
+    "S2C7": "15d0ca025c51e363",
+    "S2C8": "0020bae96b84f273"
+   },
+   "segment_hash": {
+    "lapsed": "5c6a9580f0cfd2b0",
+    "second": "8ed423ce89ef0ab6",
+    "unengaged": "c18a575563488a93",
+    "browsed": "93fb48dd44457e51",
+    "sms": "6def5bdc38f21f1a",
+    "giftcard": "9993806be14c9a1f",
+    "salelive_open": "cd5d8319fba64a46",
+    "gender_set": "2a0be7d9b813d8d4",
+    "big": "6a6591caff6973c4"
+   },
+   "image_hash": {
+    "ic_fb": "a16ac5ab5ae70d9d",
+    "ic_ig": "0cbd7c26914999e9",
+    "ic_tt": "6610433dc246bc38",
+    "lf_m_3x_set": "eb5a3ff8e8d4c30a",
+    "lf_m_beach_arm": "63fe3a024f58393d",
+    "lf_m_bw_fist": "f6c1272b40615660",
+    "lf_m_hand_hair": "613fb0ebf08117e6",
+    "lf_m_hand_rock": "e1850ec52748a8ee",
+    "lf_m_linen_chest": "889dc7f3840a9f72",
+    "lf_m_linen_chin": "eaca1cf7330d7f56",
+    "lf_m_wrist_close": "1d09b46fe0d5bb71",
+    "lf_w_3x_set": "f33a19dded28ca56",
+    "lf_w_black_bracelet": "89e958425893df7f",
+    "lf_w_black_top": "2381285acc6c5ccd",
+    "lf_w_chair": "bcfa16d8b22e6e09",
+    "lf_w_crossed": "bc0f0ad5a4f84600",
+    "lf_w_face_wet": "47e755dceade57c3",
+    "lf_w_wet_swim": "cedfa0f2a8daf46b",
+    "logo": "05c22602f1c6ed87",
+    "p_braid_black": "4e22d8553584b5b4",
+    "p_braid_silver": "df525a7e617166b9",
+    "p_case": "0a25923f8255c9d3",
+    "p_case_open": "18d5ca719719bbb4",
+    "p_crystal_br": "95912ac3763dc173",
+    "p_crystal_neck_silver": "a2745cc6d8a2d35b",
+    "p_crystal_neck_worn": "c234278c9f85f616",
+    "p_cuban_neck": "4bae27c9a2d8c55d",
+    "p_cuban_neck_worn": "77f3de05318c6f8a",
+    "p_cube_br_m": "cb442a3960d4ac24",
+    "p_cube_br_w": "f9f137d7c01be023",
+    "p_cube_pend": "45b806ca310d0125",
+    "p_cube_pend_worn": "9e46a6168e39b2a2",
+    "p_cuff_black": "115a7e2e869fe478",
+    "p_cuff_worn": "3043ac568360fa80",
+    "p_giftcard": "49366ab98b7d2320",
+    "p_role_pend_worn": "11acaf96e3af201a",
+    "p_rope_neck_worn": "d4b5136be441b2dc",
+    "p_set_m": "46a926c854b8b80a",
+    "p_set_m_silver": "87ddcfff9e78b376",
+    "p_set_w": "ba12b7e68889be6e",
+    "p_set_w_gold": "8e487fcd1baa9b7e",
+    "p_stacked": "a6abc26f8aad2672"
    }
   },
   "US": {
@@ -4179,7 +4228,11 @@
      "collection": "TADr9Y",
      "clicked": "VUHedQ",
      "order": "TzTys8",
-     "sms_list": "SDWR3w"
+     "sms_list": "SDWR3w",
+     "opened": "SfecRu",
+     "checkout_started": "SWSvPv",
+     "subscribed": "RmvKCS",
+     "bounced": "XxSB3x"
     },
     "from_email": "info@cavaier.com",
     "from_label": "Cavaier"
@@ -4217,7 +4270,7 @@
     "p_cube_br_w": "https://cdn.klaviyomail.com/company/XSpCr7/images/0e0b10a3-7f13-4bcf-a3ab-52e03da53ff2.jpeg",
     "p_cube_pend": "https://cdn.klaviyomail.com/company/XSpCr7/images/7ad50579-877b-4953-b521-36020d47145d.jpeg",
     "p_cube_pend_worn": "https://cdn.klaviyomail.com/company/XSpCr7/images/d3470204-c173-4122-b2b1-434ff748be0c.jpeg",
-    "p_cuff_black": "https://cdn.klaviyomail.com/company/XSpCr7/images/5ac24205-38d4-4b13-9c57-a7ee35deab48.jpeg",
+    "p_cuff_black": "https://cdn.klaviyomail.com/company/XSpCr7/images/5f163968-0671-47e1-a75f-32fec4b1df93.jpeg",
     "p_cuff_worn": "https://cdn.klaviyomail.com/company/XSpCr7/images/34baa27b-6584-4228-9a82-d972447e0337.jpeg",
     "p_giftcard": "https://cdn.klaviyomail.com/company/XSpCr7/images/9e6b69af-1c8d-4b34-b096-5581e10911a4.jpeg",
     "p_role_pend_worn": "https://cdn.klaviyomail.com/company/XSpCr7/images/0df15927-c40c-4a45-b7db-defbca354d67.jpeg",
@@ -4231,107 +4284,99 @@
    "templates": {
     "F1E1": {
      "id": "SqASBn",
-     "hash": "7dd60deb2bf2044d"
+     "hash": "71d1fe2ef763251c"
     },
     "F1E2": {
      "id": "UKqyp6",
-     "hash": "4399d61017f12696"
+     "hash": "c1a0df4849a264e3"
     },
     "F1E3": {
      "id": "U8pvLt",
-     "hash": "2c02bfc68fa23b22"
+     "hash": "5f8d3f799c71f19a"
     },
     "F1E4": {
      "id": "VhNkEj",
-     "hash": "4bd52f9d5c5a3b70"
+     "hash": "21d6992ac2fa5787"
     },
     "F1E5": {
      "id": "TqKcNs",
-     "hash": "49d6ccce82f0d2a6"
-    },
-    "F1E6": {
-     "id": "TfuG7E",
-     "hash": "c98018dcea49ade2"
-    },
-    "F1E7": {
-     "id": "VAimTn",
-     "hash": "2a8a5bb2ed05070f"
+     "hash": "b0c7b9ac504ccca1"
     },
     "F2E1": {
      "id": "Yy96hH",
-     "hash": "bdb11245351713aa"
+     "hash": "507ca9246f471c58"
     },
     "F2E2": {
      "id": "XV83F6",
-     "hash": "ea8b367f14661a62"
+     "hash": "0709e232c45d1553"
     },
     "F2E3": {
      "id": "RhNhUp",
-     "hash": "8fdcfa616454a3ff"
+     "hash": "755d541f2c6243da"
     },
     "F3E1": {
      "id": "USE4Vm",
-     "hash": "8e5df2f4e1a4a723"
+     "hash": "0f49c6b90fc36930"
     },
     "F3E2": {
      "id": "Rdb3yZ",
-     "hash": "99d4a973a374d4c5"
+     "hash": "c57d9cbc85e38023"
     },
     "F4E1": {
      "id": "XFegCU",
-     "hash": "d7791585076d6b22"
+     "hash": "d787310bde6864e3"
     },
     "F4E2": {
      "id": "TtmsZj",
-     "hash": "e51f6cb9edb48715"
+     "hash": "d7781ff3d753c464"
     },
     "F4E3": {
      "id": "VfMkvN",
-     "hash": "4eb6c2069a609049"
+     "hash": "cee7d84fa9ba3c6d"
     },
     "F5E1": {
      "id": "YdC4U9",
-     "hash": "7d06b51575ce88c1"
+     "hash": "929a16cf798861ef"
     },
     "F5E2": {
      "id": "RvF4N4",
-     "hash": "945fbcad0a13e4c3"
+     "hash": "5f34795a68ad382a"
     },
     "F5E3": {
      "id": "S44R5h",
-     "hash": "0050954af37ee357"
+     "hash": "2872a992a241aed2"
     },
     "F5E4": {
      "id": "TKRuen",
-     "hash": "cd929fe2cb687c6c"
+     "hash": "fb252727e1bdf03f"
     },
     "F6E1": {
      "id": "SvPnZ8",
-     "hash": "187d49f7e3233558"
+     "hash": "343d1fc00cc63fc0"
     },
     "F6E2": {
      "id": "TFedSY",
-     "hash": "d3594691d36b2bee"
+     "hash": "bedfdb9c8f964c1c"
     },
     "F6E3": {
      "id": "WD4Whj",
-     "hash": "054a3477363a892d"
+     "hash": "48f8b0ce6917eb54"
     },
     "F7E1": {
      "id": "TAAXxA",
-     "hash": "9e95605ccd98c1d4"
+     "hash": "48adf70280bb3f3a"
     },
     "F7E2": {
      "id": "UKZNrs",
-     "hash": "22565fe6308e327a"
+     "hash": "93128acef8bb4023"
     },
     "F7E3": {
      "id": "RHxPFH",
-     "hash": "8f8adcb1c85d1841"
+     "hash": "f70847f179ab5da5"
     },
     "F8E1": {
      "id": "Ygej72",
-     "hash": "21273021c546a49f"
+     "hash": "e7ddd2cb95e6b284"
     },
     "F8E2": {
      "id": "QZTwHG",
@@ -4339,51 +4384,51 @@
     },
     "F9E1": {
      "id": "VLa8Cw",
-     "hash": "9c43f3e2a2f9dc18"
+     "hash": "9dab1fef1a92f299"
     },
     "F9E2": {
      "id": "V995ZT",
-     "hash": "890e3869f8dbe77c"
+     "hash": "f2ecede9b4d088f2"
     },
     "F10E1": {
      "id": "S6F7ga",
-     "hash": "b1da0cb5ff05306a"
+     "hash": "0dd34809154d090a"
     },
     "F10E2": {
      "id": "RtE4Dx",
-     "hash": "276a2522e0381341"
+     "hash": "79411cfd715b07d0"
     },
     "F10E3": {
      "id": "Y2ky4Q",
-     "hash": "f338b01ce6f0f3fd"
+     "hash": "fabfe54ea3beec0f"
     },
     "F11E1": {
      "id": "Xpjvsd",
-     "hash": "538ec91d01af3cdc"
+     "hash": "2527ce0477f3fccc"
     },
     "F11E2": {
      "id": "XVHhHs",
-     "hash": "064ece6ecd8541bf"
+     "hash": "e37568eed5c6ad6b"
     },
     "F11E3": {
      "id": "StNnQB",
-     "hash": "d36bee8ea1cebf80"
+     "hash": "23907f812a6a40df"
     },
     "F12E1": {
      "id": "WB3W8N",
-     "hash": "2902d86510e3337f"
+     "hash": "eb2a1161b249364d"
     },
     "F12E2": {
      "id": "VkZQTy",
-     "hash": "b2acd474fbbad525"
+     "hash": "93f08049db546fdd"
     },
     "F13E1": {
      "id": "SVyULs",
-     "hash": "ed0020d8e779b3bb"
+     "hash": "51624050579401d3"
     },
     "F13E2": {
      "id": "XFPwFg",
-     "hash": "c753244650b8a899"
+     "hash": "b233a730c5635023"
     }
    },
    "lists": {
@@ -4391,8 +4436,6 @@
     "second": "XrVKD6",
     "sunset": "TLsJgJ",
     "salelive": "W7gq4s",
-    "d_F1E6": "Vyx5gn",
-    "d_F1E7": "T9699g",
     "d_F10E3": "Sw56wD",
     "d_F13E2": "TFtVqv"
    },
@@ -4402,67 +4445,71 @@
     "unengaged": "R2uLL4",
     "browsed": "TYjvap",
     "sms": "Y7z4sA",
-    "popup_presale": "Yvx64j",
     "giftcard": "WCtWcs",
     "gender_set": "XMSM6i",
-    "salelive_open": "ULfvWX"
+    "salelive_open": "ULfvWX",
+    "eng30": "RiHDRa",
+    "eng60": "SiRY4e",
+    "eng90": "S9Btms",
+    "eng180": "UpMSML",
+    "big": "VQheKZ"
    },
    "flows": {
     "F1": {
-     "id": "RuCg7Q",
-     "hash": "8ce20a6df5168045"
+     "id": "XMnSPS",
+     "hash": "d8753f9fce56b8ff"
     },
     "F2": {
-     "id": "UPAg6C",
-     "hash": "bf3c08b8163fc8ca"
+     "id": "WPQNPF",
+     "hash": "46ab9f30b3186ca6"
     },
     "F3": {
-     "id": "SMgBxX",
-     "hash": "88bb9668e8541c1b"
+     "id": "WzX3Mv",
+     "hash": "36fbbff87a9a4eff"
     },
     "F4": {
-     "id": "XsTX7p",
-     "hash": "8b09999b324182f9"
+     "id": "VH4e8G",
+     "hash": "eeacb414a45711dc"
     },
     "F5": {
-     "id": "UScwhv",
-     "hash": "57da6ba472da6b6a"
+     "id": "SX6gC2",
+     "hash": "75538c66fb1c32c8"
     },
     "F6": {
-     "id": "WqJCKN",
-     "hash": "cd47c96d214ecdc0"
+     "id": "VApXCM",
+     "hash": "8c17521ea8a09b46"
     },
     "F7": {
-     "id": "VxPP6Z",
-     "hash": "a2dc9cd40c519b41"
+     "id": "Ub7mGK",
+     "hash": "b3ecc4efcfb08d15"
     },
     "F8": {
-     "id": "UAhK6N",
-     "hash": "e18003caae1ad905"
+     "id": "THW5Pg",
+     "hash": "394c850beb69a639"
     },
     "F9": {
      "id": null,
      "note": "build by hand: Back in Stock trigger, templates are ready"
     },
     "F10": {
-     "id": "UXr2Ff",
-     "hash": "424ed046cf82924e"
+     "id": "WrT3br",
+     "hash": "6e42b439fc56836d"
     },
     "F11": {
-     "id": "UNavYt",
-     "hash": "a5151c0bc8fe40a0"
+     "id": "T7wheZ",
+     "hash": "2f36b8fa477dbd7a"
     },
     "F12": {
-     "id": "S8PNPb",
-     "hash": "8a33bed2d746ca90"
+     "id": "XGwnt3",
+     "hash": "036314dee913cac4"
     },
     "F13": {
-     "id": "V23gS8",
-     "hash": "05202f5bf7771817"
+     "id": "V3bFhK",
+     "hash": "22c1b24898adb483"
     },
     "S1": {
-     "id": "XgdGis",
-     "hash": "0178d54850586dfa"
+     "id": "SsuetR",
+     "hash": "4aa3093b2f263758"
     },
     "G1": {
      "id": "VSKk4i",
@@ -4472,38 +4519,32 @@
      "id": "WkvRY9",
      "hash": "60689cec736baf49"
     },
-    "F1E6": {
-     "id": "RpavGD",
-     "hash": "3b8168475fe60441"
-    },
-    "F1E7": {
-     "id": "W4MRg5",
-     "hash": "da0014e6993b2170"
-    },
     "F10E3": {
-     "id": "UJ8vFr",
-     "hash": "068e0ecf2ca0f1a6"
+     "id": "X3ujFT",
+     "hash": "03d4374c76478353"
     },
     "F13E2": {
-     "id": "XBjXJn",
-     "hash": "ed6ef05270e724e9"
+     "id": "YA2sac",
+     "hash": "2371c861ecaac58d"
     }
    },
    "campaigns": {
     "S2C1": "01M4DAFH82HG4PYB0YWXED7C66",
-    "S2C2": "01M4DAFJWKCRWD87EXYAM4R4PF",
     "S2C3": "01M4DAFMHQCRDRE21GWMR01495",
     "S2C4": "01M4DAFP9RA5V1YYEP16WBQVHB",
-    "S2C5": "01M4DAFQXXQBM0GHAG12AXD57N",
-    "S2C6": "01M4DAFSFK0VHC2J4EV3PY6RDP"
+    "S2C6": "01M4DAFSFK0VHC2J4EV3PY6RDP",
+    "S2C2": "01M4EMT36VFPFG2HRRMDR0B425",
+    "S2C7": "01M4EMT4KT35GF0CWM7M374Y08",
+    "S2C8": "01M4EMT63DQ2QDTYA4ABMDCYQQ",
+    "S2C5": "01M4EMT8XY2ZC3WAQWEWN9G6WM"
    },
    "forms": {
-    "pre": "WjS8nX",
-    "ea": "RqkZMm",
-    "bf": "W5YmkM",
-    "xmas": "R5PYpM",
-    "late": "UvreHX",
-    "post": "VAcPgr"
+    "pre": "SCVffm",
+    "ea": "XdVktp",
+    "bf": "QXJSh9",
+    "xmas": "RXTcud",
+    "late": "RbBDaN",
+    "post": "QVHS8C"
    },
    "form_assets": {
     "side": {
@@ -4530,11 +4571,68 @@
    },
    "campaign_hash": {
     "S2C1": "c1678ac82422eddd",
-    "S2C2": "3c55b7ebd1f8d749",
+    "S2C2": "f50180ff8084f10a",
     "S2C3": "6c1f40c7c0f606ab",
     "S2C4": "50be8e2dd37482a2",
-    "S2C5": "25632ed5f1019a22",
-    "S2C6": "45e66c7baae0c8ae"
+    "S2C5": "a21e8bb1845f0cf3",
+    "S2C6": "45e66c7baae0c8ae",
+    "S2C7": "0c03d81e06b4176b",
+    "S2C8": "f836c5209a3f7ce8"
+   },
+   "segment_hash": {
+    "lapsed": "5826c2c8b33e7467",
+    "second": "04bd9e802092f1da",
+    "unengaged": "004afb77d3c9989a",
+    "browsed": "577177aa27a9c7d5",
+    "sms": "6def5bdc38f21f1a",
+    "giftcard": "36676b6c717108f0",
+    "salelive_open": "c348c8a8cc7eb98d",
+    "gender_set": "2a0be7d9b813d8d4",
+    "big": "4400d26824b41b97"
+   },
+   "image_hash": {
+    "ic_fb": "a16ac5ab5ae70d9d",
+    "ic_ig": "0cbd7c26914999e9",
+    "ic_tt": "6610433dc246bc38",
+    "lf_m_3x_set": "eb5a3ff8e8d4c30a",
+    "lf_m_beach_arm": "63fe3a024f58393d",
+    "lf_m_bw_fist": "f6c1272b40615660",
+    "lf_m_hand_hair": "613fb0ebf08117e6",
+    "lf_m_hand_rock": "e1850ec52748a8ee",
+    "lf_m_linen_chest": "889dc7f3840a9f72",
+    "lf_m_linen_chin": "eaca1cf7330d7f56",
+    "lf_m_wrist_close": "1d09b46fe0d5bb71",
+    "lf_w_3x_set": "f33a19dded28ca56",
+    "lf_w_black_bracelet": "89e958425893df7f",
+    "lf_w_black_top": "2381285acc6c5ccd",
+    "lf_w_chair": "bcfa16d8b22e6e09",
+    "lf_w_crossed": "bc0f0ad5a4f84600",
+    "lf_w_face_wet": "47e755dceade57c3",
+    "lf_w_wet_swim": "cedfa0f2a8daf46b",
+    "logo": "05c22602f1c6ed87",
+    "p_braid_black": "4e22d8553584b5b4",
+    "p_braid_silver": "df525a7e617166b9",
+    "p_case": "0a25923f8255c9d3",
+    "p_case_open": "18d5ca719719bbb4",
+    "p_crystal_br": "95912ac3763dc173",
+    "p_crystal_neck_silver": "a2745cc6d8a2d35b",
+    "p_crystal_neck_worn": "c234278c9f85f616",
+    "p_cuban_neck": "4bae27c9a2d8c55d",
+    "p_cuban_neck_worn": "77f3de05318c6f8a",
+    "p_cube_br_m": "cb442a3960d4ac24",
+    "p_cube_br_w": "f9f137d7c01be023",
+    "p_cube_pend": "45b806ca310d0125",
+    "p_cube_pend_worn": "9e46a6168e39b2a2",
+    "p_cuff_black": "115a7e2e869fe478",
+    "p_cuff_worn": "3043ac568360fa80",
+    "p_giftcard": "49366ab98b7d2320",
+    "p_role_pend_worn": "11acaf96e3af201a",
+    "p_rope_neck_worn": "d4b5136be441b2dc",
+    "p_set_m": "46a926c854b8b80a",
+    "p_set_m_silver": "87ddcfff9e78b376",
+    "p_set_w": "ba12b7e68889be6e",
+    "p_set_w_gold": "8e487fcd1baa9b7e",
+    "p_stacked": "a6abc26f8aad2672"
    }
   }
  }
