@@ -239,6 +239,34 @@
    "w": 1080,
    "h": 1920,
    "title": "M Batch 474 - C2 · The duo behind every stack (black duo)"
+  },
+  "Refs-M445.dc.html": {
+   "h": 1920,
+   "w": 420,
+   "x": 19400,
+   "y": 0,
+   "title": "M Batch 445 · IM8 refs"
+  },
+  "M445-C1.dc.html": {
+   "h": 1920,
+   "w": 1080,
+   "x": 19900,
+   "y": 0,
+   "title": "M Batch 445 - C1 · The jewelry you never take off (gold duo)"
+  },
+  "M445-C2.dc.html": {
+   "h": 1920,
+   "w": 1080,
+   "x": 21060,
+   "y": 0,
+   "title": "M Batch 445 - C2 · The jewelry you never take off (black duo)"
+  },
+  "M445-C3.dc.html": {
+   "h": 1920,
+   "w": 1080,
+   "x": 22220,
+   "y": 0,
+   "title": "M Batch 445 - C3 · Never take it off"
   }
  },
  "createdOnFiles": {
@@ -437,7 +465,15 @@
    "w": 600,
    "x": 18680,
    "y": 0,
-   "text": "Evergreen · rules\n\nNormal, always-on ads. No Black Friday, no 30% off, no discount or deadline language.\nSame setup as Black Friday: one batch per row (C1, C2, C3), three IM8 references per batch, men and women in separate lanes, videos in the video lane beside the source batch.\nSame brand and claims: graphite monochrome, Figtree, red #A82C24 only as a small accent on light layouts. Facts: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · case included with sets · free shipping · Trustpilot 4.5, 3,000+ reviews.\nNo prices or currencies.\nBatch numbers continue from the last batch in either section.\nAsk for a batch with: \"run evergreen batch\" (men, women or both)."
+   "text": "Evergreen · rules\n\nNormal, always-on ads. No Black Friday, no 30% off, no discount or deadline language.\nSame setup as Black Friday: one batch per row (C1, C2, C3), three IM8 references per batch, men and women in separate lanes, videos in the video lane beside the source batch.\nSame brand and claims: graphite monochrome, Figtree, red #A82C24 only as a small accent on light layouts. Facts: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · case included with sets · free shipping · Trustpilot 4.5, 3,000+ reviews.\nNo prices or currencies.\nEvergreen batch numbers: men start at M Batch 445 and count up from there.\nAsk for a batch with: \"run evergreen batch\" (men, women or both)."
+  },
+  "copy-m445": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 23380,
+   "y": 0,
+   "text": "M Batch 445 · ad copy (evergreen)\n\nPRIMARY TEXT\nShower, gym, sea, sleep. Leave it on.\n\nThe 2x Duo Minimal Set: two chains worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (26 chars)\nJewelry You Never Take Off\n\nDESCRIPTION (26 chars)\nWaterproof. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nROAS CHECK\nEvergreen version of M474: same layouts and photos, no Black Friday or 30% anywhere. Text sits on the light upper part of the photo, contrast and safe zones unchanged from M474 (pass). C3: red WATERPROOF tag on a light layout only."
   }
  },
  "order": [
@@ -474,7 +510,11 @@
   "W417-C1.dc.html",
   "W417-C2.dc.html",
   "W417-C3.dc.html",
-  "M474-C2.dc.html"
+  "M474-C2.dc.html",
+  "Refs-M445.dc.html",
+  "M445-C1.dc.html",
+  "M445-C2.dc.html",
+  "M445-C3.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"
