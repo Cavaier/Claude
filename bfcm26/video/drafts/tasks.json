@@ -787,5 +787,22 @@
   "seed": 66384,
   "file": "M475-C3.mp4",
   "audio_codec": "aac"
+ },
+ "M475-C3-card": {
+  "task_id": "cgt-20261010015909-dz84w",
+  "model": "dreamina-seedance-2-5-260628",
+  "status": "succeeded",
+  "draft": true,
+  "resolution": "480p",
+  "duration": 5,
+  "generate_audio": true,
+  "width": 694,
+  "height": 606,
+  "size": "694x606",
+  "duration_actual_s": 5.056,
+  "audio": "yes",
+  "seed": 26708,
+  "file": "M475-C3-card.mp4",
+  "audio_codec": "aac"
  }
 }
