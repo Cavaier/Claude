@@ -47,6 +47,7 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
   - Men: `M Batch ### - C#`. Women: `W Batch ### - C#`.
   - Black Friday men started at 467 and women at 415. Evergreen men start at 445.
   - Video batches take the next free number.
+- **Photos:** pull fresh product photos for every new batch from the Cavaier Figma file (https://www.figma.com/design/dEEVzBXoylSdZoRs0gonHn/Cavaier?node-id=17-2, file key `dEEVzBXoylSdZoRs0gonHn`, node `17-2`). Photos already on the canvas may be reused, but never build a batch only from them: each new batch brings in new images that fit its IM8 reference (right product, finish and gender).
 - **Products:** 3x Minimal Stack Set and 2x Duo Minimal Set. A name with a dash ("3x Minimal - Stack Set") is the women's product, without a dash the men's. Men's ads use men's photos only, and men and women never mix.
 - **Brand:**
   - Graphite monochrome (black, white, light grey) in Figtree. Headings are uppercase 300/400, labels uppercase with 0.1em letter spacing.
