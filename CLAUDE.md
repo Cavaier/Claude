@@ -84,6 +84,13 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
   - No custom SOUND ON/OFF button on video artboards (Eli said no). Videos keep the native `controls`, whose speaker icon unmutes.
 - **Helper sessions:** new env vars only show up in new sessions. Run Seedance and Frame.io jobs in a fresh helper session (`create_session`, same env and branch) with the full task in its first prompt, then read the result with `list_events`.
 
+## Voice-over (ElevenLabs)
+- **Key:** env `ELEVENLABS_API_KEY` only, in a helper session. Never print, log or commit it. API `https://api.elevenlabs.io/v1`, header `xi-api-key`.
+- **Settings:** model `eleven_multilingual_v2`, stability 0.55, similarity 0.8, style 0.15, speaker boost, output `mp3_44100_128` (192 needs the Creator tier). The plan is pay-as-you-go.
+- **Voices tried (W418 C2 trial):** Arabella `Z3R5wn05IrDiVCyEkUrK` (gentle, the pick), Veda Sky `8quEMRkSpwEaWBzHvTLv`, Relaxing Rachel `ROMJ9yK1NAMuu1ggrjDW`. Use the one Eli picks for future VO ads.
+- **Mix:** tighten pauses (silenceremove, 0.28 s), voice starts at 0.3 s, loudnorm -16 LUFS, the clip's own sound stays underneath at about a third, and the last frame holds until the voice ends. Files go in `bfcm26/video/vo/`.
+- **Scripts:** keep them short enough to fit the clip (about 2.3 words a second), true claims only, English.
+
 ## Delivery ("push to clickup and frame")
 - **Frame.io:**
   - Exchange `FRAMEIO_TOKEN` (an Adobe refresh token) at `https://ims-na1.adobelogin.com/ims/token/v3`, with `FRAMEIO_OAUTH_CLIENT_ID` and `FRAMEIO_OAUTH_CLIENT_SECRET`.
