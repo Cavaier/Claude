@@ -49,7 +49,9 @@ for key, exp in plan:
     if not fid: print(key, 'NOT IN KLAVIYO'); bad += 1; continue
     got = call(f'flows/{fid}/?additional-fields[flow]=definition')['data']
     st, d = got['attributes']['status'], got['attributes']['definition']
-    errs = [] if st == 'draft' else [f'status {st}']
+    LIVE_OK = {'G1', 'G2'}  # switched live by Eli on Oct 9
+    errs = [] if st == 'draft' or (st == 'live' and key in LIVE_OK) else [f'status {st}']
+    if key in LIVE_OK: exp = json.loads(json.dumps(exp).replace('"status": "draft"', f'"status": "{st}"'))
     errs += sub(exp['triggers'], d['triggers'], 'trigger') + sub(exp.get('profile_filter'), d.get('profile_filter'), 'filter')
     ea, ga = walk(exp), walk(d)
     if [a['type'] for a in ea] != [a['type'] for a in ga]: errs.append(f'steps {[a["type"] for a in ea]} vs {[a["type"] for a in ga]}')

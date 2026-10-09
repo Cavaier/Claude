@@ -117,6 +117,10 @@ EU runs on Stockholm time, US on New York time. Reminders to this chat on Oct 18
 - Gender backfill from order history: done Oct 8–9 (approved). EU 10,966 + earlier run set (3,287 ordered profiles no longer exist), US 14,067 (76 gone). Profiles with Gender now EU 50,657, US 20,204 (were 9,793 / 6,029). `push.py EU|US backfill` can be rerun: it skips anyone who has a Gender. Browsing backfill (Oct 9, `push.py EU|US backfill_views`): 90 days of product views, same 2+ rule as G2, gift card / case / warranty views ignored, only empty profiles. EU 4,460 set (Men 2,268, Women 1,784, Both 408), US 55 (3,198 of 3,301 US browsers already had a Gender).
 - Pop-ups: `klaviyo/forms.py EU|US` built six draft forms per account (`Q4 Pop-up · Pre-sale` … `After Christmas`), built to the Figma design (two B/W photos as the side image, #F2F2F1 panel, logo, red kicker, light headline, black buttons, “Not now”, teaser tab), steps email → phone → who → done, shown after 5 s / exit intent / 2nd page, hidden from cart/checkout. `--replace` rebuilds them. Klaviyo limits: max 6 rows per column; the content column's styles must be null next to a side image; skip links must submit (they re-submit the email list). Publish the next one on each switch date and switch the previous one off.
 
+## Live flows
+
+G1 Gender from Orders and G2 Gender from Browsing: live in EU and US since Oct 9 (Eli). No messages; they only write Gender when it is empty. Everything else is a draft until the go-live.
+
 ## What stays manual
 
 Going live (needs Eli's go: F8 on Oct 19, the rest Oct 27 09:00, old flows to Manual in the same hour) · publishing the pop-up for each period (the forms API only makes drafts; each switch routine reminds with the link) · filling `[[EARLY_ACCESS_URL]]` before Nov 11 · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
