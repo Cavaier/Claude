@@ -415,6 +415,39 @@ def step_backfill():
             if i % 500 == 0: print('backfill', i, '/', len(todo), flush=True)
     B.update(done=not failed, updated=len(todo) - gone - failed, gone=gone, failed=failed, split=dict(Counter(todo.values()))); save(); print('backfill', B)
 
+ADDON = re.compile(r'gift ?card|jewel(le)?ry case|warranty', re.I)  # say nothing about who the shopper is
+def step_backfill_views():  # one-off: Gender from 90 days of product views, same 2+ rule as G2, only where Gender is empty
+    B = K.setdefault('backfill_views', {})
+    if B.get('done'): print('browsing backfill already done', B); return
+    import datetime
+    since = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=90)).strftime('%Y-%m-%dT%H:%M:%SZ')
+    f = urllib.parse.quote(f'equals(metric_id,"{M["viewed"]}"),greater-or-equal(datetime,{since})')
+    per, n = {}, 0
+    for ev in pages(f'events/?filter={f}&page[size]=200&fields[event]=event_properties&include=profile&fields[profile]=id'):
+        n += 1
+        if n % 20000 == 0: print('views read', n, 'profiles', len(per), flush=True)
+        pid = ((ev.get('relationships') or {}).get('profile', {}).get('data') or {}).get('id')
+        name = (ev['attributes']['event_properties'] or {}).get('Name') or ''
+        if not pid or not name or ADDON.search(name): continue
+        a = per.setdefault(pid, [0, 0]); a[0 if ' - ' in name else 1] += 1  # [women's, men's]
+    gset = set(p['id'] for p in pages(f'segments/{K["segments"]["gender_set"]}/profiles/?page[size]=100&fields[profile]=id'))
+    todo = {pid: ('Both' if w >= 2 and m >= 2 else 'Women' if w >= 2 and m == 0 else 'Men') for pid, (w, m) in per.items()
+            if pid not in gset and ((w >= 2 and m >= 2) or (w >= 2 and m == 0) or (m >= 2 and w == 0))}
+    print('views', n, 'profiles with views', len(per), 'already have Gender', len(gset & set(per)), 'to set', len(todo), flush=True)
+    from concurrent.futures import ThreadPoolExecutor
+    def one(item):
+        pid, gv = item
+        try: call(f'profiles/{pid}/', {'data': {'type': 'profile', 'id': pid, 'attributes': {'properties': {'Gender': gv, 'Gender source': 'browsing backfill'}}}}, 'PATCH'); return 0
+        except Exception as ex:
+            if str(ex).startswith('404'): return 1
+            print('skip', pid, str(ex)[:120], flush=True); return 2
+    gone = failed = 0
+    with ThreadPoolExecutor(8) as ex:
+        for i, g in enumerate(ex.map(one, todo.items())):
+            gone += g == 1; failed += g == 2
+            if i % 500 == 0: print('browsing backfill', i, '/', len(todo), flush=True)
+    B.update(done=not failed, since=since[:10], updated=len(todo) - gone - failed, gone=gone, failed=failed, split=dict(Counter(todo.values()))); save(); print('browsing backfill', B)
+
 def step_subjects(day=None):
     ph = phase_now(day); n = 0
     for f in Q.FLOWS:
