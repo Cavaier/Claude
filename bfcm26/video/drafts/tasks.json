@@ -421,5 +421,39 @@
     "duration_s": 5.06,
     "audio": true,
     "audio_codec": "aac"
+  },
+  "M473-C1-photo": {
+    "task_id": "cgt-20261009192700-8hs5j",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "resolution": "480p",
+    "ratio": "174:151",
+    "duration": 5,
+    "generate_audio": true,
+    "seed": 38608,
+    "draft": true,
+    "draft_task_id": "cgt-20261009192700-8hs5j",
+    "file": "M473-C1-photo.mp4",
+    "size": "696x604",
+    "duration_s": 5.06,
+    "audio": true,
+    "audio_codec": "aac"
+  },
+  "M473-C3-photo": {
+    "task_id": "cgt-20261009192702-rg8py",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "resolution": "480p",
+    "ratio": "281:374",
+    "duration": 5,
+    "generate_audio": true,
+    "seed": 60528,
+    "draft": true,
+    "draft_task_id": "cgt-20261009192702-rg8py",
+    "file": "M473-C3-photo.mp4",
+    "size": "562x748",
+    "duration_s": 5.06,
+    "audio": true,
+    "audio_codec": "aac"
   }
 }
