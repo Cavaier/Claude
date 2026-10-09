@@ -88,21 +88,21 @@
   },
   "R1-07-sticker.dc.html": {
    "h": 1920,
-   "title": "M Batch 468 - C1 · Full bleed + sticker",
+   "title": "M Batch 468 - C1 · Full bleed + sticker · FRAME ✓ · CLICKUP ✓",
    "w": 1080,
    "x": 500,
    "y": 4800
   },
   "R1-08-circle.dc.html": {
    "h": 1920,
-   "title": "M Batch 468 - C2 · 30% circle + icon row",
+   "title": "M Batch 468 - C2 · 30% circle + icon row · FRAME ✓ · CLICKUP ✓",
    "w": 1080,
    "x": 1660,
    "y": 4800
   },
   "R1-10-minimal-list.dc.html": {
    "h": 1920,
-   "title": "M Batch 468 - C3 · Minimal list",
+   "title": "M Batch 468 - C3 · Minimal list · FRAME ✓ · CLICKUP ✓",
    "w": 1080,
    "x": 2820,
    "y": 4800
@@ -322,14 +322,14 @@
    "w": 1080,
    "x": 5980,
    "y": 4800,
-   "title": "M Batch 472 - C2 · RENDERING 1080p · SOUND · from M 469 C2"
+   "title": "M Batch 472 - C2 · FINAL 1080p · SOUND · from M 469 C2"
   },
   "V-M472-C3.dc.html": {
    "h": 1920,
    "w": 1080,
    "x": 7140,
    "y": 4800,
-   "title": "M Batch 472 - C3 · RENDERING 1080p · SOUND · from M 469 C3"
+   "title": "M Batch 472 - C3 · FINAL 1080p · SOUND · from M 469 C3"
   }
  },
  "createdOnFiles": {
@@ -367,7 +367,7 @@
   "copy-m469": {
    "fill": "gray",
    "maxH": 1920,
-   "text": "M Batch 468 · ad copy (was M Batch 469)\n\nPRIMARY TEXT\nOne wrist. Three pieces. 30% off.\n\nThe 3x Minimal Stack Set stays on through shower, gym and sea. Recycled 316L stainless steel, adjustable to S, M or L.\n\n30% off sitewide this Black Friday. No code, taken off at checkout.\n\nHEADLINE (24 chars)\nOne Wrist. Three Pieces.\n\nDESCRIPTION (25 chars)\n30% off sitewide, no code\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC2: gold photo swapped from the women's listing to the men's. C1: red 30% sticker on the full-colour photo changed to graphite. C2: small labels enlarged for feed. C3 passes.",
+   "text": "M Batch 468 · ad copy (was M Batch 469)\n\nPRIMARY TEXT\nOne wrist. Three pieces. 30% off.\n\nThe 3x Minimal Stack Set stays on through shower, gym and sea. Recycled 316L stainless steel, adjustable to S, M or L.\n\n30% off sitewide this Black Friday. No code, taken off at checkout.\n\nHEADLINE (24 chars)\nOne Wrist. Three Pieces.\n\nDESCRIPTION (25 chars)\n30% off sitewide, no code\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC2: gold photo swapped from the women's listing to the men's. C1: red 30% sticker on the full-colour photo changed to graphite. C2: small labels enlarged for feed. C3 passes.\n\nDELIVERED\nFrame.io ✓ M Batch 468 → EN (3) + No Text (3), 08:10 · ClickUp ✓ BFCM26 → M Batch 468 (copy + C1–C3 rows)",
    "w": 600,
    "x": 3980,
    "y": 4800
@@ -391,7 +391,7 @@
   "copy-m472": {
    "fill": "gray",
    "maxH": 1920,
-   "text": "M Batch 472 · ad copy (video ad set)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.\n\nC2 + C3 (added 08:00): 480p drafts with sound from M469 C2 (30% circle) and C3 (minimal list). Only the wrist photo moves inside its frame; text, circle and list stay still. Comment 720p / 1080p to approve, or reject.",
+   "text": "M Batch 472 · ad copy (video ad set)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.\n\nC2 + C3 (added 08:00): 480p drafts with sound from M469 C2 (30% circle) and C3 (minimal list). Only the wrist photo moves inside its frame; text, circle and list stay still. Comment 720p / 1080p to approve, or reject.\nC2 + C3 FINAL 1080p with sound (08:14).",
    "w": 600,
    "x": 8300,
    "y": 4800
@@ -543,7 +543,7 @@
    "w": 600,
    "x": 18680,
    "y": -1700,
-   "text": "ACTIVITY & QUEUE · updated 08:06\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → RUNNING\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → RUNNING\n\nRUNNING\n◐ 08:06 Rename M469 → M Batch 468 (done) · ClickUp + Frame.io push\n◐ 08:03 Seedance 2.5 · M Batch 472 C2 + C3 → final 1080p with sound · ready ~08:10\n\nDONE\n✓ 08:01 Seedance 2.5 · M Batch 472 C2 + C3 drafts with sound on the canvas\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
+   "text": "ACTIVITY & QUEUE · updated 08:14\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n\nRUNNING\n(nothing right now)\n\nDONE\n✓ 08:14 Seedance 2.5 · M Batch 472 C2 + C3 → FINAL 1080p with sound\n✓ 08:10 Frame.io · M Batch 468 → EN (3) + No Text (3)\n✓ 08:05 ClickUp · M Batch 468: copy + URLs, C1–C3 rows + test comments\n✓ 08:04 Renamed M469 statics → M Batch 468\n✓ 08:01 Seedance 2.5 · M Batch 472 C2 + C3 drafts with sound on the canvas\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
   },
   "copy-m446": {
    "fill": "gray",
