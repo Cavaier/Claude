@@ -99,5 +99,5 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
     | EU URL | EU URL | `f2627d19` |
     | US URL | US URL | `5d08f6f8` |
 
-  - **C1–C3 rows:** set Creative Style `751230a2`, Angle `80f8a7e8`, Creative Origin `1971e67f` (Imitation for IM8-based work, video versions included), Funnel Stage `498a0712` and Offer `1ce1ec23`. Add one short, clean comment: the IM8 ad it imitates plus what it tests. No tool names (Seedance, Claude). No Frame links in the rows. Don't rename rows or change Editor/status unless asked.
+  - **C1–C3 rows:** set Creative Style `751230a2`, Angle `80f8a7e8`, Creative Origin `1971e67f` (Imitation for IM8-based work, video versions included), Funnel Stage `498a0712` and Offer `1ce1ec23`. For Black Friday (BFCM) work, Creative Style and Angle are always the "Black Friday" option (Style `904046e4`, Angle `64f25149`). Add one short, clean comment: the IM8 ad it imitates plus what it tests. No tool names (Seedance, Claude). No Frame links in the rows. Don't rename rows or change Editor/status unless asked.
   - **Batch task (mother) mirrors the rows:** for each of those five fields, if C1, C2 and C3 all have the same value, set that same value on the batch task too. If they differ, leave the batch task's field as it is.
