@@ -76,6 +76,7 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
 - **Draft:** text prompt + `first_frame` image (base64 data URL), `duration 5`, `draft true`, `resolution "480p"`, `generate_audio true` (always sound), `watermark false`. Never send `ratio`.
 - **Final:** `content:[{type:"draft_task", draft_task:{id}}]` with the resolution Eli writes. Do NOT add `generate_audio`, because the API rejects it on draft_task and the final inherits the draft's sound. A silent draft can't become a sound final. 720p was once refused for draft_task; if that happens, tell Eli.
 - **Motion:** gentle slow motion only, and the jewelry keeps its shape and count. No sparkles or flares.
+- **Motion feedback, step by step (saves credits):** when Eli says a video moves too much, only take the motion down one step, never to almost still. When he says it doesn't move, only take it up one step, never to twisting. The target is always in between: clearly visible, continuous movement (hand glides or settles, fabric and light move) with no wrist twist or rotation. Before choosing a take, compare its motion with the take he rejected and pick one that sits between it and the opposite extreme. Don't overcorrect.
 - **Pipeline:**
   - `split.js` makes `_bg.png` (the photo for Seedance) and `_ov.png` (the text layer). `compose.sh` lays the text over the clip at 1080×1920 and keeps the audio.
   - On card layouts, only the photo moves, inside its fixed frame (ffmpeg overlay at the photo box).
