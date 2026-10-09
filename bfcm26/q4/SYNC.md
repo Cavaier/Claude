@@ -49,6 +49,10 @@ Pre-sale Oct 27 – Nov 10 · early access Wed Nov 11 – Thu Nov 12, members on
 Campaign days on the campaigns page (Figma 310:2): Nov 11, 12, 13, 15, 17, 19, 22, 24, 26, 27, 28, 29, 30, Dec 2, 4, 6, 7, 8, 9, 10, 11, 24. F1E6/F1E7 were dropped: the campaigns send those days. US: same content in USD with AM/PM times (pop-ups and SMS included); the US campaigns are their own duplicates on the campaigns page.
 After a copy change, `push.py EU|US templates lists flows dated campaigns` rebuilds the affected draft flows (flow hashes include template HTML) and the SMS campaigns; `forms.py EU|US --replace` rebuilds the pop-ups.
 
+## Decisions from Figma (Oct 9)
+
+Figma had direct edits that were never in the specs. Adopted (Eli, Oct 9): the 30% is already on every price during the sale (no “at checkout” anywhere), F9 Selling Fast instead of Back in Stock, G2 sets Both on 2+ views of each side, gift cards from €10 / $10 to €1,000 / $1,000 at full price, free shipping, case with a Set or 2+ pieces, the SMS consent line “Opt out any time: reply STOP (US/CA) or tap the link in any text”, Rope Pendant Necklace, F3 Viewed Collection only, the Dec 1 pop-up badge “30% OFF EVERYTHING · UNTIL DEC 6” (manual edit, the Dec 1 routines remind). Not adopted because newer decisions replace them: Dec 7–13 / Dec 14 cut-off (now Dec 10), the nine-SMS plan (now eight, aligned with the campaigns page), the Shopify gender-tag rule (now the spaced hyphen). F9 copy keeps to true claims: pieces sell out in the sale, never “this one is running low”.
+
 ## Checks before any push or go-live
 
 - `klaviyo/datetest.py EU|US [dates]` renders every template through Klaviyo with the date pinned (Nov 1, 11, 18, 26, 27, Dec 1, 9, 15, 30 by default), women and men, and checks every line of the local preview is in Klaviyo's output and no raw tag or `[placeholder]` leaks. Oct 8: EU and US 538 renders each, 0 problems.
@@ -105,7 +109,7 @@ EU runs on Stockholm time, US on New York time. Reminders to this chat on Oct 18
 
 `klaviyo/push.py EU|US [images templates lists segments flows dated campaigns backfill subjects | release <EID>]`; ids in `sync_state.json['klaviyo']`.
 - 39 templates per account (`Q4 · F1E1 · …`), email-safe HTML from `klaviyo/emailer.py`; date phase + Gender logic inside; `klaviyo/rendertest.py` renders all through Klaviyo.
-- 17 flows per account as drafts (F1–F8, F10–F13, S1, G1, G2 + the 2 dated ones below). F9 Back in Stock: build by hand (no API trigger), templates `Q4 · F9E1/E2` are ready.
+- 18 flows per account as drafts (F1–F13, S1, G1, G2 + the 2 dated ones below). F9 is now “Selling Fast” (Viewed Product, wait 4 days, 1 email + 1 text 2 hours later, once per person), built by API like the rest.
 - Fixed-date emails F10E3 (Dec 5 09:00) and F13E2 (Jan 2 09:00) are their own one-email draft flows (`Q4 · F10E3 · … · date`), triggered by lists `Q4 · Send <EID> · <date>`. The flow API has no "wait until date", so on the send date (flow live first) a routine runs `push.py EU|US release <EID>`: it adds the segment (On Sale live no order in 7 days / gift card buyers) to the list and the flow sends at once. Each flow skips anyone who orders after entering. F1E6/F1E7 and their lists were deleted (Oct 8): the campaigns cover Nov 11 and 13.
 - The only Klaviyo campaigns are S2C1–C8, draft SMS campaigns. Email campaigns live on the Figma campaigns page and are built by hand.
 - Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
@@ -115,4 +119,4 @@ EU runs on Stockholm time, US on New York time. Reminders to this chat on Oct 18
 
 ## What stays manual
 
-Going live (needs Eli's go: F8 on Oct 19, the rest Oct 27 09:00, old flows to Manual in the same hour) · publishing the pop-up for each period (the forms API only makes drafts; each switch routine reminds with the link) · building F9 Back in Stock by hand · filling `[[EARLY_ACCESS_URL]]` before Nov 11 · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
+Going live (needs Eli's go: F8 on Oct 19, the rest Oct 27 09:00, old flows to Manual in the same hour) · publishing the pop-up for each period (the forms API only makes drafts; each switch routine reminds with the link) · filling `[[EARLY_ACCESS_URL]]` before Nov 11 · Shopify-side test events (view, cart, checkout, order on each store) · real back-in-stock restocks · the product-tracking fix on the themes.
