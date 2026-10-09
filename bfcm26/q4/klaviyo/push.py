@@ -406,14 +406,14 @@ def step_backfill():
         pid, gv = item
         try: call(f'profiles/{pid}/', {'data': {'type': 'profile', 'id': pid, 'attributes': {'properties': {'Gender': gv, 'Gender source': 'order backfill'}}}}, 'PATCH'); return 0
         except Exception as ex:
-            if not str(ex).startswith('404'): raise
-            return 1  # profile deleted or merged since it ordered
-    gone = 0
+            if str(ex).startswith('404'): return 1  # profile deleted or merged since it ordered
+            print('skip', pid, str(ex)[:120], flush=True); return 2  # still throttled after retries; a rerun picks it up
+    gone = failed = 0
     with ThreadPoolExecutor(8) as ex:  # Klaviyo allows ~700 profile updates a minute
         for i, g in enumerate(ex.map(one, todo.items())):
-            gone += g
+            gone += g == 1; failed += g == 2
             if i % 500 == 0: print('backfill', i, '/', len(todo), flush=True)
-    B.update(done=True, updated=len(todo) - gone, gone=gone, split=dict(Counter(todo.values()))); save(); print('backfill', B)
+    B.update(done=not failed, updated=len(todo) - gone - failed, gone=gone, failed=failed, split=dict(Counter(todo.values()))); save(); print('backfill', B)
 
 def step_subjects(day=None):
     ph = phase_now(day); n = 0
