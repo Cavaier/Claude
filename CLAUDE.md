@@ -50,6 +50,7 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
 - **Products:** 3x Minimal Stack Set and 2x Duo Minimal Set. A name with a dash ("3x Minimal - Stack Set") is the women's product, without a dash the men's. Men's ads use men's photos only, and men and women never mix.
 - **Brand:**
   - Graphite monochrome (black, white, light grey) in Figtree. Headings are uppercase 300/400, labels uppercase with 0.1em letter spacing.
+  - Keep backgrounds light. No large black or dark fields dominating the ad: black is for type, buttons and small accents.
   - Red `#A82C24` is only a small accent, only on light monochrome Black Friday layouts. Never red in Evergreen.
 - **Format:** 1080×1920. Key text stays out of the top 270 px and the bottom 384 px.
 - **True claims only:**
