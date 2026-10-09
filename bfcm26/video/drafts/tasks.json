@@ -880,6 +880,24 @@
    "seed": 39177,
    "file": "../finals/W415v2-C2-gold.mp4",
    "audio_codec": "aac"
+  },
+  "WNA-C3": {
+   "task_id": "cgt-20261010035726-dtif8",
+   "draft_task_id": "cgt-20261010034221-587gt",
+   "model": "dreamina-seedance-2-5-260628",
+   "status": "succeeded",
+   "draft": false,
+   "resolution": "1080p",
+   "duration": 5,
+   "generate_audio": true,
+   "width": 1080,
+   "height": 1920,
+   "size": "1080x1920",
+   "duration_actual_s": 5.056,
+   "audio": "yes",
+   "seed": 7824,
+   "file": "../finals/WNA-C3.mp4",
+   "audio_codec": "aac"
   }
  },
  "M475-C1-black": {
