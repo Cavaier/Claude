@@ -932,7 +932,7 @@ WOMEN_CATS = ['For Her', "Women's Sets", 'Women Necklace', 'You may also like - 
               'Completi da donna', 'Collana da donna', 'Voor haar', 'Damessets', 'Damesketting', 'Dla Niej', 'Zestawy damskie', 'För henne',
               'Damset', 'Halsband för kvinnor', 'For henne', 'Kvinnesmykke', 'Para Ela', 'Conjuntos de Mulher', 'בשבילה', 'סטים לנשים',
               'مجموعات النساء', '為她', '女裝套裝', '女士項鍊']
-G1 = dict(id='G1', name='Gender from Orders', trigger_short='Ordered Product', replaces='NEW',
+G1 = dict(id='G1', name='Gender from Orders', trigger_short='Ordered Product', replaces='only writes when Gender is empty',
   trigger='Ordered Product · profile filter: <code>Gender</code> is not set',
   filters='Never overwrites: anyone with a Gender (pop-up answer or an earlier match) is filtered out at the trigger',
   exits='—', live='Oct 27 → for good (keep it after Q4)', util=True,
@@ -943,7 +943,7 @@ G1 = dict(id='G1', name='Gender from Orders', trigger_short='Ordered Product', r
     STEP('G1b', 'Update profile', 'Write it down',
          [['Gender', 'Men · Women · Both'], ['Gender source', 'order'], ['Gender set on', 'today']]),
   ])
-G2 = dict(id='G2', name='Gender from Browsing', trigger_short='Viewed Product', replaces='NEW',
+G2 = dict(id='G2', name='Gender from Browsing', trigger_short='Viewed Product', replaces='only writes when Gender is empty',
   trigger='Viewed Product · profile filter: <code>Gender</code> is not set',
   filters='Never overwrites a pop-up answer or an order match · re-checks on every view until it can decide',
   exits='—', live='Oct 27 → for good', util=True,

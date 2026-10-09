@@ -1051,7 +1051,7 @@
    "S-S1T2": {
     "em": "639:301",
     "br": null,
-    "hash": "79f82bf277997ef5"
+    "hash": "force"
    },
    "T-S-S2": {
     "em": "639:317",
@@ -1066,7 +1066,7 @@
    "S-S2C1": {
     "em": "636:493",
     "br": null,
-    "hash": "b6b90f0147e2ac3a"
+    "hash": "force"
    },
    "S-S2C2": {
     "em": "636:509",
@@ -1081,42 +1081,42 @@
    "S-S2C4": {
     "em": "636:541",
     "br": null,
-    "hash": "958c4555040079fc"
+    "hash": "force"
    },
    "S-S2C5": {
     "em": "637:295",
     "br": null,
-    "hash": "d5d34d92606ad867"
+    "hash": "force"
    },
    "S-S2C6": {
     "em": "637:311",
     "br": null,
-    "hash": "9a3dbafc450b6df4"
+    "hash": "force"
    },
    "T-S-G1": {
     "em": "637:327",
     "br": null,
-    "hash": "8afc567e1c59225d"
+    "hash": "force"
    },
    "D-S-G1": {
     "em": "637:333",
     "br": null,
-    "hash": "a82a141dcbd64a82"
+    "hash": "force"
    },
    "T-S-G2": {
     "em": "637:390",
     "br": null,
-    "hash": "a617bd2efb41b609"
+    "hash": "force"
    },
    "D-S-G2": {
     "em": "637:396",
     "br": null,
-    "hash": "c9183b597618b9b7"
+    "hash": "force"
    },
    "W-F2T1": {
     "em": "638:267",
     "br": null,
-    "hash": "b1280131c3c32fd4"
+    "hash": "force"
    },
    "W-F4T1": {
     "em": "639:89",
@@ -1131,7 +1131,7 @@
    "W-F7T1": {
     "em": "637:212",
     "br": null,
-    "hash": "df804746c51bd1f6"
+    "hash": "force"
    },
    "W-F9T1": {
     "em": "638:364",
@@ -1141,7 +1141,7 @@
    "M-F2T1": {
     "em": "639:202",
     "br": null,
-    "hash": "f4ae58004eff812f"
+    "hash": "force"
    },
    "M-F4T1": {
     "em": "636:89",
@@ -1156,7 +1156,7 @@
    "M-F7T1": {
     "em": "638:89",
     "br": null,
-    "hash": "bc780179a5d86bf6"
+    "hash": "force"
    },
    "M-F9T1": {
     "em": "639:395",
