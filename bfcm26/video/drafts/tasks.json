@@ -257,6 +257,22 @@
       "audio": "yes",
       "file": "../finals/M473-C3-photo.mp4",
       "draft_task_id": "cgt-20261009192702-rg8py"
+    },
+    "R1-02-highlight-sound": {
+      "task_id": "cgt-20261009194422-uz4rg",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "width": 1080,
+      "height": 1920,
+      "size": "1080x1920",
+      "duration": 5,
+      "duration_actual_s": 5.056,
+      "generate_audio": true,
+      "audio": "yes",
+      "file": "../finals/R1-02-highlight-sound.mp4",
+      "draft_task_id": "cgt-20261009194324-xvxjm"
     }
   },
   "M445-C1": {
