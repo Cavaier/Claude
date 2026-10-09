@@ -336,21 +336,21 @@
    "y": 9600,
    "w": 1080,
    "h": 1920,
-   "title": "M Batch 472 - C1 · IN PROGRESS · video from M 471 C1"
+   "title": "M Batch 472 - C1 · DRAFT 480p · SOUND · from M 471 C1"
   },
   "V-B472-C2.dc.html": {
    "x": 5980,
    "y": 9600,
    "w": 1080,
    "h": 1920,
-   "title": "M Batch 472 - C2 · IN PROGRESS · video from M 471 C2"
+   "title": "M Batch 472 - C2 · DRAFT 480p · SOUND · from M 471 C2"
   },
   "V-B472-C3.dc.html": {
    "x": 7140,
    "y": 9600,
    "w": 1080,
    "h": 1920,
-   "title": "M Batch 472 - C3 · IN PROGRESS · video from M 471 C3"
+   "title": "M Batch 472 - C3 · DRAFT 480p · SOUND · from M 471 C3"
   }
  },
  "createdOnFiles": {
@@ -564,7 +564,7 @@
    "w": 600,
    "x": 18680,
    "y": -1700,
-   "text": "ACTIVITY & QUEUE · updated 08:57\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → RUNNING\n\nRUNNING\n◐ 08:56 Seedance 2.5 · M Batch 472 C1–C3 drafts 480p with sound (from M 471) · ready ~09:10\n\nDONE\n✓ 08:48 Frame.io · M Batch 471 → EN (3) + No Text (3)\n✓ 08:47 ClickUp · M Batch 471: copy + URLs, C1–C3 rows + test comments\n✓ 08:46 Renamed M474 statics → M Batch 471\n✓ 08:36 Frame.io · M Batch 470 → EN (3) + No Text (3)\n✓ 08:35 ClickUp · M Batch 470: copy + URLs, C1–C3 rows + test comments\n✓ 08:33 M Batch 470 C3 redone: new IM8 ref (set box + badge row), light grey, ROAS ok\n✓ 08:36 M473 statics renamed → M Batch 470 and rebuilt light\n✓ 08:24 ClickUp · batch tasks M445, M446, M468, M469 mirror the shared row values\n✓ 08:19 Frame.io · M Batch 469 videos → EN (3) + No Text (3)\n✓ 08:19 ClickUp · M Batch 469: copy + URLs, C1–C3 rows + test comments\n✓ 08:16 Renamed M472 videos → M Batch 469\n✓ 08:14 Seedance 2.5 · M Batch 472 C2 + C3 → FINAL 1080p with sound\n✓ 08:10 Frame.io · M Batch 468 → EN (3) + No Text (3)\n✓ 08:05 ClickUp · M Batch 468: copy + URLs, C1–C3 rows + test comments\n✓ 08:04 Renamed M469 statics → M Batch 468\n✓ 08:01 Seedance 2.5 · M Batch 472 C2 + C3 drafts with sound on the canvas\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
+   "text": "ACTIVITY & QUEUE · updated 09:12\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n\nRUNNING\n(nothing right now)\n\nDONE\n✓ 09:12 Seedance 2.5 · M Batch 472 C1–C3 drafts 480p with sound (from M 471) on the canvas\n✓ 08:48 Frame.io · M Batch 471 → EN (3) + No Text (3)\n✓ 08:47 ClickUp · M Batch 471: copy + URLs, C1–C3 rows + test comments\n✓ 08:46 Renamed M474 statics → M Batch 471\n✓ 08:36 Frame.io · M Batch 470 → EN (3) + No Text (3)\n✓ 08:35 ClickUp · M Batch 470: copy + URLs, C1–C3 rows + test comments\n✓ 08:33 M Batch 470 C3 redone: new IM8 ref (set box + badge row), light grey, ROAS ok\n✓ 08:36 M473 statics renamed → M Batch 470 and rebuilt light\n✓ 08:24 ClickUp · batch tasks M445, M446, M468, M469 mirror the shared row values\n✓ 08:19 Frame.io · M Batch 469 videos → EN (3) + No Text (3)\n✓ 08:19 ClickUp · M Batch 469: copy + URLs, C1–C3 rows + test comments\n✓ 08:16 Renamed M472 videos → M Batch 469\n✓ 08:14 Seedance 2.5 · M Batch 472 C2 + C3 → FINAL 1080p with sound\n✓ 08:10 Frame.io · M Batch 468 → EN (3) + No Text (3)\n✓ 08:05 ClickUp · M Batch 468: copy + URLs, C1–C3 rows + test comments\n✓ 08:04 Renamed M469 statics → M Batch 468\n✓ 08:01 Seedance 2.5 · M Batch 472 C2 + C3 drafts with sound on the canvas\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
   },
   "copy-m446": {
    "fill": "gray",
@@ -581,6 +581,14 @@
    "x": 23380,
    "y": 2400,
    "text": "M Batch 447 · ad copy (evergreen)\n\nPRIMARY TEXT\nPut it on once. Wear it everywhere.\n\nThe 3x Minimal Stack Set: three pieces worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (27 chars)\nPut It On Once. Leave It On\n\nDESCRIPTION (23 chars)\n316L steel. Waterproof.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nIM8 REFERENCES\nC1: lifestyle photo, headline in the lower third with a button (gold stack while driving).\nC2: 2x2 split grid, photo and text tiles (black stack).\nC3: big-number headline with a review bar (silver stack on a light background, \"316L STEEL\").\n\nROAS CHECK\nAll text passes contrast (lowest 5.0 on C2's small label). C1 block moved up 70 px to clear the bottom safe zone. No red, no offer, no prices.\nC2 and C3 rebuilt light (no dominant black backgrounds)."
+  },
+  "copy-b472": {
+   "x": 8300,
+   "y": 9600,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "M Batch 472 · ad copy (video ad set, from M Batch 471)\n\nPRIMARY TEXT\nTwo chains. One wrist. 30% off.\n\nThe 2x Duo Minimal Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (20 chars)\nThe Duo, Now 30% Off\n\nDESCRIPTION (25 chars)\nCase included. Free ship.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nSTATUS\n09:12 · 480p drafts with sound (5 s). C1 gold and C2 black: only the wrist photo moves, text and case card stay sharp and still. C3: only the silver photo box moves, the rest of the layout stays still. The statics stay live as their own ads. Comment 720p / 1080p to approve, or reject / redo."
   }
  },
  "order": [
