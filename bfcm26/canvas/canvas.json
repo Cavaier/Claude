@@ -1,675 +1,675 @@
 {
- "v": 3,
- "attachments": {},
- "boards": {
-  "M473-C1.dc.html": {
-   "h": 1920,
-   "title": "M Batch 470 - C1 · Yesterday / today (light) · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 500,
-   "y": 2400
-  },
-  "M473-C2.dc.html": {
-   "h": 1920,
-   "title": "M Batch 470 - C2 · Notes list (light) · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 1660,
-   "y": 2400
-  },
-  "M473-C3.dc.html": {
-   "h": 1920,
-   "title": "M Batch 470 - C3 · Set and case (light) · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 2820,
-   "y": 2400
-  },
-  "M474-C1.dc.html": {
-   "h": 1920,
-   "title": "M Batch 471 - C1 · The duo behind every stack · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 500,
-   "y": 4800
-  },
-  "M474-C3.dc.html": {
-   "h": 1920,
-   "title": "M Batch 471 - C3 · Black Friday in one box · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 2820,
-   "y": 4800
-  },
-  "Main.dc.html": {
-   "h": 1920,
-   "title": "M Batch 473 · IM8 refs",
-   "w": 420,
-   "x": 0,
-   "y": 7200
-  },
-  "R1-01-wear-anything.dc.html": {
-   "h": 1920,
-   "title": "M Batch 473 - C1 · They could wear anything · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 500,
-   "y": 7200
-  },
-  "R1-02-highlight.dc.html": {
-   "h": 1920,
-   "title": "M Batch 473 - C2 · Highlighted headline · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 1660,
-   "y": 7200
-  },
-  "R1-03-callouts.dc.html": {
-   "h": 1920,
-   "title": "M Batch 473 - C3 · Every piece called out · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 2820,
-   "y": 7200
-  },
-  "R1-04-lineup.dc.html": {
-   "h": 1920,
-   "title": "M Batch 475 - C1 · Big caps + finish lineup · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 500,
-   "y": 9600
-  },
-  "R1-05-whats-in.dc.html": {
-   "h": 1920,
-   "title": "M Batch 475 - C2 · What Black Friday gets you · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 1660,
-   "y": 9600
-  },
-  "R1-06-checklist.dc.html": {
-   "h": 1920,
-   "title": "M Batch 475 - C3 · Checklist on the photo · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 2820,
-   "y": 9600
-  },
-  "R1-07-sticker.dc.html": {
-   "h": 1920,
-   "title": "M Batch 468 - C1 · Full bleed + sticker · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 500,
-   "y": 0
-  },
-  "R1-08-circle.dc.html": {
-   "h": 1920,
-   "title": "M Batch 468 - C2 · 30% circle + icon row · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 1660,
-   "y": 0
-  },
-  "R1-10-minimal-list.dc.html": {
-   "h": 1920,
-   "title": "M Batch 468 - C3 · Minimal list · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 2820,
-   "y": 0
-  },
-  "Refs-M468.dc.html": {
-   "h": 1920,
-   "title": "M Batch 475 · IM8 refs",
-   "w": 420,
-   "x": 0,
-   "y": 9600
-  },
-  "Refs-M469.dc.html": {
-   "h": 1920,
-   "title": "M Batch 468 · IM8 refs",
-   "w": 420,
-   "x": 0,
-   "y": 0
-  },
-  "Refs-M473.dc.html": {
-   "h": 1920,
-   "title": "M Batch 470 · IM8 refs",
-   "w": 420,
-   "x": 0,
-   "y": 2400
-  },
-  "Refs-M474.dc.html": {
-   "h": 1920,
-   "title": "M Batch 471 · IM8 refs",
-   "w": 420,
-   "x": 0,
-   "y": 4800
-  },
-  "Refs-W415.dc.html": {
-   "h": 1920,
-   "title": "W Batch 415 · IM8 refs",
-   "w": 420,
-   "x": 9400,
-   "y": 0
-  },
-  "Refs-W417.dc.html": {
-   "h": 1920,
-   "title": "W Batch 417 · IM8 refs",
-   "w": 420,
-   "x": 9400,
-   "y": 2400
-  },
-  "V-M470-C1.dc.html": {
-   "h": 1920,
-   "title": "M Batch 474 - C2 · RENDERING redo 3 (subtle motion) · from M 473 C2",
-   "w": 1080,
-   "x": 5980,
-   "y": 7200,
-   "is_interactive": true
-  },
-  "V-M471-C1.dc.html": {
-   "h": 1920,
-   "title": "Old video draft (no batch) - C1 · DRAFT 480p · from M 475 C3",
-   "w": 1080,
-   "x": 4820,
-   "y": 9600
-  },
-  "V-M472-C1.dc.html": {
-   "h": 1920,
-   "title": "M Batch 469 - C1 · FINAL 1080p · from M 468 C1 · FRAME ✓ · CLICKUP ✓",
-   "w": 1080,
-   "x": 4820,
-   "y": 0
-  },
-  "V-W416-C1.dc.html": {
-   "h": 1920,
-   "title": "W Batch 416 - C1 · DRAFT 480p · from W 415 C3",
-   "w": 1080,
-   "x": 14220,
-   "y": 0
-  },
-  "V-W416-C2.dc.html": {
-   "h": 1920,
-   "title": "W Batch 416 - C2 · DRAFT 480p · from W 415 C1",
-   "w": 1080,
-   "x": 15380,
-   "y": 0
-  },
-  "V-W416-C3.dc.html": {
-   "h": 1920,
-   "title": "W Batch 416 - C3 · DRAFT 480p · from W 415 C2 · check: frames shift, right bracelet changes",
-   "w": 1080,
-   "x": 16540,
-   "y": 0
-  },
-  "W415-C1-red-deal.dc.html": {
-   "h": 1920,
-   "title": "W Batch 415 - C1 · 30% badge on graphite",
-   "w": 1080,
-   "x": 9900,
-   "y": 0
-  },
-  "W415-C2-stack-chart.dc.html": {
-   "h": 1920,
-   "title": "W Batch 415 - C2 · The 3x stack chart",
-   "w": 1080,
-   "x": 11060,
-   "y": 0
-  },
-  "W415-C3-night-hook.dc.html": {
-   "h": 1920,
-   "title": "W Batch 415 - C3 · One looked lonely",
-   "w": 1080,
-   "x": 12220,
-   "y": 0
-  },
-  "W417-C1.dc.html": {
-   "h": 1920,
-   "title": "W Batch 417 - C1 · The piece your outfit was missing",
-   "w": 1080,
-   "x": 9900,
-   "y": 2400
-  },
-  "W417-C2.dc.html": {
-   "h": 1920,
-   "title": "W Batch 417 - C2 · Save 30%",
-   "w": 1080,
-   "x": 11060,
-   "y": 2400
-  },
-  "W417-C3.dc.html": {
-   "h": 1920,
-   "title": "W Batch 417 - C3 · Her Black Friday stack",
-   "w": 1080,
-   "x": 12220,
-   "y": 2400
-  },
-  "M474-C2.dc.html": {
-   "x": 1660,
-   "y": 4800,
-   "w": 1080,
-   "h": 1920,
-   "title": "M Batch 471 - C2 · The duo behind every stack (black duo) · FRAME ✓ · CLICKUP ✓"
-  },
-  "Refs-M445.dc.html": {
-   "h": 1920,
-   "w": 420,
-   "x": 19400,
-   "y": 0,
-   "title": "M Batch 445 · IM8 refs"
-  },
-  "M445-C1.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 19900,
-   "y": 0,
-   "title": "M Batch 445 - C1 · The jewelry you never take off (gold duo) · FRAME ✓ · CLICKUP ✓"
-  },
-  "M445-C2.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 21060,
-   "y": 0,
-   "title": "M Batch 445 - C2 · The jewelry you never take off (black duo) · FRAME ✓ · CLICKUP ✓"
-  },
-  "M445-C3.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 22220,
-   "y": 0,
-   "title": "M Batch 445 - C3 · Never take it off · FRAME ✓ · CLICKUP ✓"
-  },
-  "V-M446-C1.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 24220,
-   "y": 0,
-   "title": "M Batch 446 - C1 · FINAL 1080p · SOUND · from M 445 C1 · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-M446-C2.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 25380,
-   "y": 0,
-   "title": "M Batch 446 - C2 · FINAL 1080p · SOUND · from M 445 C2 · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-M446-C3.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 26540,
-   "y": 0,
-   "title": "M Batch 446 - C3 · FINAL 1080p · SOUND · from M 445 C3 · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "M447-C1.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 19900,
-   "y": 2400,
-   "title": "M Batch 447 - C1 · Put it on once (gold stack, driving)"
-  },
-  "M447-C2.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 21060,
-   "y": 2400,
-   "title": "M Batch 447 - C2 · What's on his wrist (black stack, grid)"
-  },
-  "M447-C3.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 22220,
-   "y": 2400,
-   "title": "M Batch 447 - C3 · 316L steel (silver stack, light)"
-  },
-  "Refs-M447.dc.html": {
-   "h": 1920,
-   "w": 420,
-   "x": 19400,
-   "y": 2400,
-   "title": "M Batch 447 · IM8 refs"
-  },
-  "V-M472-C2.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 5980,
-   "y": 0,
-   "title": "M Batch 469 - C2 · FINAL 1080p · SOUND · from M 468 C2 · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-M472-C3.dc.html": {
-   "h": 1920,
-   "w": 1080,
-   "x": 7140,
-   "y": 0,
-   "title": "M Batch 469 - C3 · FINAL 1080p · SOUND · from M 468 C3 · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-B472-C1.dc.html": {
-   "x": 4820,
-   "y": 4800,
-   "w": 1080,
-   "h": 1920,
-   "title": "M Batch 472 - C1 · FINAL 1080p · SOUND · M 471 C1 layout + M 446 C1 clip · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-B472-C2.dc.html": {
-   "x": 5980,
-   "y": 4800,
-   "w": 1080,
-   "h": 1920,
-   "title": "M Batch 472 - C2 · FINAL 1080p · SOUND · M 471 C2 layout + M 446 C2 clip · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-B472-C3.dc.html": {
-   "x": 7140,
-   "y": 4800,
-   "w": 1080,
-   "h": 1920,
-   "title": "M Batch 472 - C3 · FINAL 1080p · SOUND · M 471 C3 layout + M 446 C3 clip · FRAME ✓ · CLICKUP ✓",
-   "is_interactive": true
-  },
-  "V-B475-C1.dc.html": {
-   "x": 4820,
-   "y": 7200,
-   "w": 1080,
-   "h": 1920,
-   "title": "M Batch 474 - C1 · FINAL 1080p · SOUND · from M 473 C1",
-   "is_interactive": true
-  },
-  "V-B475-C3.dc.html": {
-   "x": 7140,
-   "y": 7200,
-   "w": 1080,
-   "h": 1920,
-   "title": "M Batch 474 - C3 · FINAL 1080p · SOUND · from M 473 C3",
-   "is_interactive": true
-  }
- },
- "createdOnFiles": {
-  "at": "2026-10-08T21:05:00Z",
-  "v": 1
- },
- "designSystems": [],
- "launch": {
-  "view": "canvas"
- },
- "notes": {
-  "brief": {
-   "fill": "gray",
-   "text": "Brief\n\nLayout: one batch per row, 3 creatives (C1, C2, C3), with the IM8 references in the narrow column on the left.\nNaming: Men: M Batch 467 - C1, C2, C3, then 468, 469… Women: W Batch 415 - C1, C2, C3, then 416…\nA batch is men only or women only, never mixed (and no ad shows both).\nThree IM8 references per batch, one per creative: C1, C2 and C3 each copy their own IM8 ad closely, stacked in the narrow column on the left.\nProduct: 3x Minimal Stack Set (men's black / silver / gold, women's gold); the 2x Duo Minimal Set joins from Run 2. Photos come from the live Shopify listings and the clean (no text) frames in Figma, Static Ads 2.\nOffer: Black Friday, 30% off sitewide, no code, taken off at checkout.\nNo prices or currencies on any ad: the same ads run in the EUR and USD accounts, so the offer is always told as 30% off.\nFacts used: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · \"case included\" with sets (never \"free case\") · free shipping · Trustpilot 4.5, 3,000+ reviews.\nSafe zones: no key text in the top 270 px or bottom 384 px.\nEach ad copies the layout idea of an IM8 ad, rebuilt in Cavaier's look: graphite monochrome (black, white, light grey), Figtree, square black or white buttons. Keep backgrounds light: no large black or dark fields dominating the ad; black is for type, buttons and small accents. Red #A82C24 only as a small accent, and only on light monochrome layouts; never on dark or full-colour photo ads.\nLanes: men on the left, women on the right, never mixed. Videos (Seedance 2.5): a batch is an ad set. Videos made from a static batch form their own video batch (new number, new ad set), in the video lane right beside that batch's row, filling C1, C2, C3, then a new video batch. The statics stay live.\nEvery ad passes a ROAS check before it ships: text contrast, safe zones, offer readable at feed size, one clear hook. The copy sticky next to each batch says what changed.\nCopy: headline and description at most 27 characters so they don't cut off in feed.\nImitation: copy the reference's structure literally. Text and checklists sit straight on the photo the way IM8 does it, never in a box that hides the product.\nCommands: comment on an ad and send it to Claude (redo, video, 720p / 1080p, reject, mp4, push to clickup and frame), see the red COMMANDS note. A comment is the go-ahead; no extra confirmation.\nMen vs women photos: a product name with a dash is the women's version (\"3x Minimal - Stack Set\"), without a dash it's the men's (\"3x Minimal Stack Set\", \"2x Duo Minimal Set\"). Men's ads use only photos from the men's listings and men's Figma frames.\nFormat: every static, video draft and approved video is delivered at 1080x1920 (9:16). Approved videos are rendered by Seedance 2.5 from the exact draft at the resolution written in the comment (\"720p\" or \"1080p\"); the delivered file is always 1080x1920.\nWork in progress: the moment a redo or video starts, a blue IN PROGRESS box goes into the exact slot it will land in, and is replaced when it's done.\nFrame.io (approved batches): the batch folder and its EN and \"no text\" subfolders always exist already. Only find them, never create folders. Text version → EN, clean version → no text. The batch folder link is in the batch's ClickUp task (Creatives field).\nActivity: the blue ACTIVITY & QUEUE note above Evergreen lists running and finished jobs (Seedance, Frame.io, ClickUp) with times; updated when a job starts and when it ends. Delivered batches also get FRAME ✓ / CLICKUP ✓ in their titles.\nSound: every video is generated WITH SOUND (Seedance generate_audio true), drafts and finals, and the delivered MP4 keeps the audio.\nQueue: every comment command goes into the QUEUE list on the ACTIVITY & QUEUE note right away (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins; Seedance work arriving within ~2 min is sent as one job; a job already running is never restarted for a later command unless that command changes the same ad.\nLanguage: everything on the canvas, in replies and in deliverables is in English.\nSeedance sound: generate_audio true goes on the DRAFT request; the final (draft_task) request must not carry it and inherits the draft's sound. Old silent drafts can't become finals with sound, so they need a new draft with sound.\nStatus tags: every creative carries a tag stack top left (not part of the exported ad): DRAFT / RENDERING / FINAL for videos, then CLICKUP ✓ DONE and FRAME ✓ UPLOADED (blue while running) once delivered.\nClickUp: on the batch task fill the copy fields (Preview Text, Subject Line, Description, EU URL, US URL). On each C1–C3 row set Creative Style, Angle, Creative Origin, Funnel Stage and Offer, and leave a short, clean comment saying what that creative tests (name the IM8 ad it imitates; no tool names like Seedance or Claude). Creative Origin is Imitation for IM8-based creatives, including their video versions. Don't put Frame links in the rows.\nSections: BLACK FRIDAY on the left, EVERGREEN on the right (its own rules note). The full technical rulebook is CLAUDE.md in the Cavaier/Claude repo.\nClickUp batch task (mother): for Creative Style, Angle, Creative Origin, Funnel Stage and Offer, if C1–C3 all share the same value, set it on the batch task too; if they differ, leave it.\nPhotos: every new batch pulls fresh product photos from the Cavaier Figma file (node 17-2). Photos already on the canvas can be reused, but a batch is never built only from them.\nType: high-end and airy, never chunky (reference: M Batch 473 C1). Headline ~50 px, light weight, slight letter spacing; body ~27 px light, narrow column; small logo (~110 px); slim button; lots of white space.",
-   "w": 600,
-   "x": -720,
-   "y": 0
-  },
-  "copy-m467": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 473 · ad copy (was M Batch 467)\n\nPRIMARY TEXT\nThree pieces, one stack, and this week all of it is 30% off.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide. No code, it comes off at checkout. Case included and free shipping.\n\nHEADLINE (24 chars)\n30% Off the 3x Stack Set\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC3: silver photo swapped from the women's listing to the men's. C1: button moved up out of the bottom safe zone. C2: red '30% off' on the photo changed to graphite. C3: callout labels enlarged to read at feed size. All pass.\n\nDELIVERED\nFrame.io ✓ M Batch 473 → EN (3) + No Text (3), 12:17 · ClickUp ✓ BFCM26 → M Batch 473 (copy + C1–C3 rows)",
-   "w": 600,
-   "x": 3980,
-   "y": 7200
-  },
-  "copy-m468": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 475 · ad copy (was M Batch 474, before that M Batch 468 old)\n\nPRIMARY TEXT\nBlack Friday is the one week the whole stack costs less.\n\n3 pieces, a case to keep them together and free shipping. Pick black, silver or gold, 30% off, no code needed.\n\nRated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (21 chars)\nBlack Friday: 30% Off\n\nDESCRIPTION (26 chars)\nCase included with the set\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC1: black, silver and gold tiles swapped from the women's listing photos to the men's. C3: rebuilt to follow the IM8 checklist ad literally. Headline and checklist sit straight on the photo over a soft graphite shade, the bracelet stays in full view, white button. C1 and C2 pass as they were.\n\nDELIVERED\nFrame.io ✓ M Batch 475 → EN (3) + No Text (3), 13:29 · ClickUp ✓ BFCM26 → M Batch 475 (copy + C1–C3 rows)",
-   "w": 600,
-   "x": 3980,
-   "y": 9600
-  },
-  "copy-m469": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 468 · ad copy (was M Batch 469)\n\nPRIMARY TEXT\nOne wrist. Three pieces. 30% off.\n\nThe 3x Minimal Stack Set stays on through shower, gym and sea. Recycled 316L stainless steel, adjustable to S, M or L.\n\n30% off sitewide this Black Friday. No code, taken off at checkout.\n\nHEADLINE (24 chars)\nOne Wrist. Three Pieces.\n\nDESCRIPTION (25 chars)\n30% off sitewide, no code\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC2: gold photo swapped from the women's listing to the men's. C1: red 30% sticker on the full-colour photo changed to graphite. C2: small labels enlarged for feed. C3 passes.\n\nDELIVERED\nFrame.io ✓ M Batch 468 → EN (3) + No Text (3), 08:10 · ClickUp ✓ BFCM26 → M Batch 468 (copy + C1–C3 rows)",
-   "w": 600,
-   "x": 3980,
-   "y": 0
-  },
-  "copy-m470": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 474 · ad copy (video ad set, was M Batch 475) (video ad set)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n11:59 · FINAL 1080p with sound, all three. C1 and C3: only the wrist photo moves. C2: new version with sound (full-bleed photo, sea behind), text boxes stay sharp. The statics stay live as their own ads.",
-   "w": 600,
-   "x": 8300,
-   "y": 7200
-  },
-  "copy-m471": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "Old video draft (no batch number) · ad copy (video ad set)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.",
-   "w": 600,
-   "x": 8300,
-   "y": 9600
-  },
-  "copy-m472": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 469 · ad copy (video ad set, was M Batch 472)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.\n\nC2 + C3 (added 08:00): 480p drafts with sound from M469 C2 (30% circle) and C3 (minimal list). Only the wrist photo moves inside its frame; text, circle and list stay still. Comment 720p / 1080p to approve, or reject.\nC2 + C3 FINAL 1080p with sound (08:14).\n\nDELIVERED\nFrame.io ✓ M Batch 469 → EN (3) + No Text (3), 08:19 · ClickUp ✓ BFCM26 → M Batch 469 (copy + C1–C3 rows)",
-   "w": 600,
-   "x": 8300,
-   "y": 0
-  },
-  "copy-m473": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 470 · ad copy (was M Batch 473)\n\nPRIMARY TEXT\nYesterday: full price. Today: 30% off.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (24 chars)\nToday: 30% Off the Stack\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nAll three pass: contrast, safe zones, offer readable at feed size. C3 shows the set, the case and four badges (waterproof, 316L steel, S/M/L, case included), all listed claims.\n\nRebuilt light (08:35): white / very light grey backgrounds, dark type, black buttons. C1 silver stack on light, C2 notes in light mode with the black stack on white, C3 new splash photo on sand. All pass the ROAS check.\nC3 redone (08:33): new IM8 ref (set box + badge row). Gold stack on light grey, 4 outlined badges, case card with BLACK FRIDAY · 30% OFF.\n\nDELIVERED\nFrame.io ✓ M Batch 470 → EN (3) + No Text (3), 08:36 · ClickUp ✓ BFCM26 → M Batch 470 (copy + C1–C3 rows)",
-   "w": 600,
-   "x": 3980,
-   "y": 2400
-  },
-  "copy-m474": {
-   "x": 3980,
-   "y": 4800,
-   "w": 600,
-   "maxH": 1920,
-   "fill": "gray",
-   "text": "M Batch 471 · ad copy (was M Batch 474)\n\nPRIMARY TEXT\nTwo chains. One wrist. 30% off.\n\nThe 2x Duo Minimal Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (20 chars)\nThe Duo, Now 30% Off\n\nDESCRIPTION (25 chars)\nCase included. Free ship.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nROAS CHECK\nC1: 'case included' label enlarged for feed. C2: same design as C1, with the black 2x Duo photo. All pass. Duo finishes checked on both stores: black, silver, gold.\n\nDELIVERED\nFrame.io ✓ M Batch 471 → EN (3) + No Text (3), 08:48 · ClickUp ✓ BFCM26 → M Batch 471 (copy + C1–C3 rows)"
-  },
-  "copy-w415": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 415 · ad copy\n\nPRIMARY TEXT\nOne looked lonely. Three look finished.\n\nThe 3x Minimal Stack Set for her, in gold, silver or black. Waterproof, sweat and heat resistant, and adjustable to S, M or L.\n\nBlack Friday: 30% off sitewide, no code. Free shipping and a case with the set.\n\nHEADLINE (23 chars)\nThe 3x Set, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nROAS CHECK\nC1: red field changed to graphite, white 30% badge; icon row moved above the safe zone. C2: photos made black and white so red stays a small accent; offer enlarged to read at feed size. C3: red button changed to white.",
-   "w": 600,
-   "x": 13380,
-   "y": 0
-  },
-  "copy-w416": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 416 · ad copy (video ad set)\n\nPRIMARY TEXT\nThree pieces, moving as one. 30% off for Black Friday.\n\nThe 3x Minimal Stack Set for her, in gold, silver or black. Waterproof, sweat and heat resistant, adjustable S/M/L.\n\n30% off sitewide, no code. Free shipping and a case with the set.\n\nHEADLINE (23 chars)\nHer 3x Set, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nSTATUS\nC3 (from W 415 C2): the two photo frames shift a little and the right bracelet picks up dark details by the end. Suggest reject; the fix is animating each photo on its own inside fixed frames.\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.",
-   "w": 600,
-   "x": 17700,
-   "y": 0
-  },
-  "copy-w417": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 417 · ad copy\n\nPRIMARY TEXT\nThe piece your outfit was missing, now 30% off.\n\nThe 3x Minimal Stack Set for her, in gold, silver or black. Waterproof, sweat and heat resistant, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Free shipping and a case with the set.\n\nHEADLINE (21 chars)\nSave 30% on Her Stack\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nROAS CHECK\nC1: feature pills enlarged for feed. C2 keeps red only as a thin underline on a light layout. All pass.",
-   "w": 600,
-   "x": 13380,
-   "y": 2400
-  },
-  "menvid": {
-   "kind": "title1",
-   "maxW": 4080,
-   "text": "MEN · video ad sets",
-   "w": 240,
-   "x": 4820,
-   "y": -320
-  },
-  "redo": {
-   "fill": "red",
-   "text": "COMMANDS (comment to Claude)\n\nClick an ad, press C (or the comment icon), write a command and send it to Claude:\n\nredo: new IM8 reference (static) or new draft (video), rebuilt in the same slot.\nvideo: a Seedance 2.5 draft with sound in the video ad set next to it. The static stays live.\n720p / 1080p: the draft is rendered as a final at the resolution you write, with sound, delivered as 1080x1920, replacing the draft.\nreject: new prompt, new draft.\nmp4: Claude sends you the video file in the chat.\n\nAdd a few words on what was off or which motion you want.\n\nVideo labels: yellow DRAFT · 480p = draft, blue RENDERING = being rendered, green FINAL = approved final.\nBlue IN PROGRESS box = Claude is working on it, in the slot where it will land.\nSeveral comments at once are fine: they queue on the ACTIVITY & QUEUE note.",
-   "w": 600,
-   "x": -720,
-   "y": 1300
-  },
-  "run1": {
-   "kind": "title1",
-   "maxW": 4580,
-   "text": "MEN · statics",
-   "w": 240,
-   "x": 0,
-   "y": -320
-  },
-  "women": {
-   "kind": "title1",
-   "maxW": 4580,
-   "text": "WOMEN · statics",
-   "w": 240,
-   "x": 9400,
-   "y": -320
-  },
-  "womenvid": {
-   "kind": "title1",
-   "maxW": 4080,
-   "text": "WOMEN · video ad sets",
-   "w": 240,
-   "x": 14220,
-   "y": -320
-  },
-  "sec-bf": {
-   "kind": "title1",
-   "w": 240,
-   "maxW": 18300,
-   "x": 0,
-   "y": -720,
-   "text": "BLACK FRIDAY · 30% off sitewide"
-  },
-  "sec-ever": {
-   "kind": "title1",
-   "w": 240,
-   "maxW": 18300,
-   "x": 19400,
-   "y": -720,
-   "text": "EVERGREEN · no Black Friday"
-  },
-  "ev-men": {
-   "kind": "title1",
-   "w": 240,
-   "maxW": 4580,
-   "x": 19400,
-   "y": -320,
-   "text": "MEN · statics"
-  },
-  "ev-menvid": {
-   "kind": "title1",
-   "w": 240,
-   "maxW": 4080,
-   "x": 24220,
-   "y": -320,
-   "text": "MEN · video ad sets"
-  },
-  "ev-women": {
-   "kind": "title1",
-   "w": 240,
-   "maxW": 4580,
-   "x": 28800,
-   "y": -320,
-   "text": "WOMEN · statics"
-  },
-  "ev-womenvid": {
-   "kind": "title1",
-   "w": 240,
-   "maxW": 4080,
-   "x": 33620,
-   "y": -320,
-   "text": "WOMEN · video ad sets"
-  },
-  "ev-brief": {
-   "fill": "gray",
-   "w": 600,
-   "x": 18680,
-   "y": 0,
-   "text": "Evergreen · rules\n\nNormal, always-on ads. No Black Friday, no 30% off, no discount or deadline language.\nSame setup as Black Friday: one batch per row (C1, C2, C3), three IM8 references per batch, men and women in separate lanes, videos in the video lane beside the source batch.\nSame brand and claims: graphite monochrome, Figtree. NO red in Evergreen, not even as an accent. Facts: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · case included with sets · free shipping · Trustpilot 4.5, 3,000+ reviews.\nNo prices or currencies.\nEvergreen batch numbers: men start at M Batch 445 and count up from there.\nAsk for a batch with: \"run evergreen batch\" (men, women or both)."
-  },
-  "copy-m445": {
-   "fill": "gray",
-   "maxH": 1920,
-   "w": 600,
-   "x": 23380,
-   "y": 0,
-   "text": "M Batch 445 · ad copy (evergreen)\n\nPRIMARY TEXT\nShower, gym, sea, sleep. Leave it on.\n\nThe 2x Duo Minimal Set: two chains worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (26 chars)\nJewelry You Never Take Off\n\nDESCRIPTION (26 chars)\nWaterproof. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nROAS CHECK\nEvergreen version of M474: same layouts and photos, no Black Friday or 30% anywhere. Text sits on the light upper part of the photo, contrast and safe zones unchanged from M474 (pass). C3: WATERPROOF tag and \"included\" in graphite (no red in Evergreen).\n\nSTATUS\nFrame.io ✓ (EN + No Text, 23:09) · ClickUp ✓ (Week 40 → M Batch 445)"
-  },
-  "activity": {
-   "fill": "blue",
-   "w": 600,
-   "x": 18680,
-   "y": -1700,
-   "text": "ACTIVITY & QUEUE · updated 13:40\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n15. 09:11 M472 C1–C3 · \"replace these videos with the same ones from M Batch 445\" → DONE\n16. 09:14 M472 videos · \"push to frame and clickup\" → DONE\n17. 09:28 men BF rows · \"move the first 2 batches to the bottom, shift up, renumber\" → DONE\n18. 11:24 M473 C1+C3 · \"make the remaining videos c1 and c3\" → DONE\n19. 11:37 M475 C1 + M473 C1 · \"text too chunky / bulky\" → DONE\n20. 11:42 M475 videos · \"1080p, swap batch numbers (videos 474, statics 475)\" → DONE\n21. 12:03 M474 C2 · \"redo, the minimal cuff got a defect\" → DONE\n22. 12:14 M473 statics · \"push to clickup and frame\" → DONE\n23. 13:20 M474 C2 · \"the video has no movement\" → DONE\n24. 13:26 M475 statics · \"push clickup and frame\" → DONE\n25. 13:38 M474 C2 · \"movement too much, hallucinating\" → RUNNING\n\nRUNNING\n◐ 13:39 Seedance 2.5 · M Batch 474 C2 redo 3: three subtle takes (between too still and too much) · ready ~13:55\n\nDONE\n✓ 13:40 M Batch 474 C2 redo 2: clear slow hand movement, cuff intact (take A of 2)\n✓ 13:29 Frame.io · M Batch 475 → EN (3) + No Text (3)\n✓ 13:28 ClickUp · M Batch 475: copy + URLs, C1–C3 rows + test comments\n✓ 12:25 M Batch 474 C2 redone: new 1080p with sound, cuff intact\n✓ 12:17 Frame.io · M Batch 473 → EN (3) + No Text (3)\n✓ 12:16 ClickUp · M Batch 473: copy + URLs, C1–C3 rows + test comments\n✓ 11:59 Seedance 2.5 · M Batch 474 C1–C3 → FINAL 1080p with sound\n✓ 11:50 Videos with sound get a SOUND ON/OFF button (press Play on the artboard, then the button)\n✓ 11:45 Renamed: M473 video set → M Batch 474, old M Batch 474 statics → M Batch 475\n✓ 11:44 M473 C1 text lighter (smaller headline, light body, slimmer button) + M475 C1 video rebuilt\n✓ 11:38 Seedance 2.5 · M Batch 475 C1 + C3 drafts 480p with sound (from M 473) on the canvas\n✓ 09:24 Frame.io · M Batch 472 videos → EN (3) + No Text (3)\n✓ 09:33 Men BF rows reordered: M468, M469 video, M470, M471, M472 video now on top; old M467 → M Batch 473 and old M468 → M Batch 474 at the bottom\n✓ 09:17 ClickUp · M Batch 472: copy + URLs, C1–C3 rows + test comments\n✓ 09:20 M Batch 472 C1–C3 → M 445/446 clips in the M 471 layouts, FINAL 1080p with sound\n✓ 09:12 Seedance 2.5 · M Batch 472 C1–C3 drafts 480p with sound (from M 471) on the canvas\n✓ 08:48 Frame.io · M Batch 471 → EN (3) + No Text (3)\n✓ 08:47 ClickUp · M Batch 471: copy + URLs, C1–C3 rows + test comments\n✓ 08:46 Renamed M474 statics → M Batch 471\n✓ 08:36 Frame.io · M Batch 470 → EN (3) + No Text (3)\n✓ 08:35 ClickUp · M Batch 470: copy + URLs, C1–C3 rows + test comments\n✓ 08:33 M Batch 470 C3 redone: new IM8 ref (set box + badge row), light grey, ROAS ok\n✓ 08:36 M473 statics renamed → M Batch 470 and rebuilt light\n✓ 08:24 ClickUp · batch tasks M445, M446, M468, M469 mirror the shared row values\n✓ 08:19 Frame.io · M Batch 469 videos → EN (3) + No Text (3)\n✓ 08:19 ClickUp · M Batch 469: copy + URLs, C1–C3 rows + test comments\n✓ 08:16 Renamed M472 videos → M Batch 469\n✓ 08:14 Seedance 2.5 · M Batch 472 C2 + C3 → FINAL 1080p with sound\n✓ 08:10 Frame.io · M Batch 468 → EN (3) + No Text (3)\n✓ 08:05 ClickUp · M Batch 468: copy + URLs, C1–C3 rows + test comments\n✓ 08:04 Renamed M469 statics → M Batch 468\n✓ 08:01 Seedance 2.5 · M Batch 472 C2 + C3 drafts with sound on the canvas\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
-  },
-  "copy-m446": {
-   "fill": "gray",
-   "maxH": 1920,
-   "w": 600,
-   "x": 27700,
-   "y": 0,
-   "text": "M Batch 446 · ad copy (evergreen video ad set)\n\nPRIMARY TEXT\nWatch it move. It stays on.\n\nThe 2x Duo Minimal Set: two chains worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (26 chars)\nJewelry You Never Take Off\n\nDESCRIPTION (26 chars)\nWaterproof. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nSTATUS\nFINAL 1080p with sound (Seedance 2.5), 5 s, delivered 1080x1920 with the ad text. C1 is the redo (calmer, no sparkle). C3: only the wrist photo moves, inside its fixed frame. Play with the video controls to hear the sound. The M445 statics stay live.\nDelivered: Frame.io ✓ (EN + No Text, 23:46) · ClickUp ✓ (Week 40 → M Batch 446)"
-  },
-  "copy-m447": {
-   "fill": "gray",
-   "maxH": 1920,
-   "w": 600,
-   "x": 23380,
-   "y": 2400,
-   "text": "M Batch 447 · ad copy (evergreen)\n\nPRIMARY TEXT\nPut it on once. Wear it everywhere.\n\nThe 3x Minimal Stack Set: three pieces worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (27 chars)\nPut It On Once. Leave It On\n\nDESCRIPTION (23 chars)\n316L steel. Waterproof.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nIM8 REFERENCES\nC1: lifestyle photo, headline in the lower third with a button (gold stack while driving).\nC2: 2x2 split grid, photo and text tiles (black stack).\nC3: big-number headline with a review bar (silver stack on a light background, \"316L STEEL\").\n\nROAS CHECK\nAll text passes contrast (lowest 5.0 on C2's small label). C1 block moved up 70 px to clear the bottom safe zone. No red, no offer, no prices.\nC2 and C3 rebuilt light (no dominant black backgrounds)."
-  },
-  "copy-b472": {
-   "x": 8300,
-   "y": 4800,
-   "w": 600,
-   "maxH": 1920,
-   "fill": "gray",
-   "text": "M Batch 472 · ad copy (video ad set, from M Batch 471)\n\nPRIMARY TEXT\nTwo chains. One wrist. 30% off.\n\nThe 2x Duo Minimal Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (20 chars)\nThe Duo, Now 30% Off\n\nDESCRIPTION (25 chars)\nCase included. Free ship.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nSTATUS\n09:20 · FINAL 1080p with sound. The moving footage is the same as M Batch 446 (the M 445 clips: gold, black, silver duo), placed in the M 471 layouts. C1/C2: the clip fills the photo area under the text and case card. C3: the clip moves inside the photo box only. The 480p drafts from 09:12 are replaced. The statics stay live as their own ads.\n\nDELIVERED\nFrame.io ✓ M Batch 472 → EN (3) + No Text (3), 09:24 · ClickUp ✓ BFCM26 → M Batch 472 (copy + C1–C3 rows)"
-  }
- },
- "order": [
-  "Main.dc.html",
-  "R1-01-wear-anything.dc.html",
-  "R1-02-highlight.dc.html",
-  "R1-03-callouts.dc.html",
-  "Refs-M468.dc.html",
-  "R1-04-lineup.dc.html",
-  "R1-05-whats-in.dc.html",
-  "R1-06-checklist.dc.html",
-  "Refs-M469.dc.html",
-  "R1-07-sticker.dc.html",
-  "R1-08-circle.dc.html",
-  "R1-10-minimal-list.dc.html",
-  "Refs-W415.dc.html",
-  "W415-C1-red-deal.dc.html",
-  "W415-C2-stack-chart.dc.html",
-  "W415-C3-night-hook.dc.html",
-  "V-M470-C1.dc.html",
-  "V-W416-C1.dc.html",
-  "V-W416-C2.dc.html",
-  "V-M471-C1.dc.html",
-  "V-M472-C1.dc.html",
-  "V-W416-C3.dc.html",
-  "Refs-M473.dc.html",
-  "M473-C1.dc.html",
-  "M473-C2.dc.html",
-  "M473-C3.dc.html",
-  "Refs-M474.dc.html",
-  "M474-C1.dc.html",
-  "M474-C3.dc.html",
-  "Refs-W417.dc.html",
-  "W417-C1.dc.html",
-  "W417-C2.dc.html",
-  "W417-C3.dc.html",
-  "M474-C2.dc.html",
-  "Refs-M445.dc.html",
-  "M445-C1.dc.html",
-  "M445-C2.dc.html",
-  "M445-C3.dc.html",
-  "V-M446-C1.dc.html",
-  "V-M446-C2.dc.html",
-  "V-M446-C3.dc.html",
-  "M447-C1.dc.html",
-  "M447-C2.dc.html",
-  "M447-C3.dc.html",
-  "Refs-M447.dc.html",
-  "V-M472-C2.dc.html",
-  "V-M472-C3.dc.html",
-  "V-B472-C1.dc.html",
-  "V-B472-C2.dc.html",
-  "V-B472-C3.dc.html",
-  "V-B475-C1.dc.html",
-  "V-B475-C3.dc.html"
- ],
- "pages": [],
- "title": "Cavaier Static Ads Lab"
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "M473-C1.dc.html": {
+      "h": 1920,
+      "title": "M Batch 470 - C1 · Yesterday / today (light) · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 500,
+      "y": 2400
+    },
+    "M473-C2.dc.html": {
+      "h": 1920,
+      "title": "M Batch 470 - C2 · Notes list (light) · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 1660,
+      "y": 2400
+    },
+    "M473-C3.dc.html": {
+      "h": 1920,
+      "title": "M Batch 470 - C3 · Set and case (light) · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 2820,
+      "y": 2400
+    },
+    "M474-C1.dc.html": {
+      "h": 1920,
+      "title": "M Batch 471 - C1 · The duo behind every stack · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 500,
+      "y": 4800
+    },
+    "M474-C3.dc.html": {
+      "h": 1920,
+      "title": "M Batch 471 - C3 · Black Friday in one box · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 2820,
+      "y": 4800
+    },
+    "Main.dc.html": {
+      "h": 1920,
+      "title": "M Batch 473 · IM8 refs",
+      "w": 420,
+      "x": 0,
+      "y": 7200
+    },
+    "R1-01-wear-anything.dc.html": {
+      "h": 1920,
+      "title": "M Batch 473 - C1 · They could wear anything · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 500,
+      "y": 7200
+    },
+    "R1-02-highlight.dc.html": {
+      "h": 1920,
+      "title": "M Batch 473 - C2 · Highlighted headline · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 1660,
+      "y": 7200
+    },
+    "R1-03-callouts.dc.html": {
+      "h": 1920,
+      "title": "M Batch 473 - C3 · Every piece called out · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 2820,
+      "y": 7200
+    },
+    "R1-04-lineup.dc.html": {
+      "h": 1920,
+      "title": "M Batch 475 - C1 · Big caps + finish lineup · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 500,
+      "y": 9600
+    },
+    "R1-05-whats-in.dc.html": {
+      "h": 1920,
+      "title": "M Batch 475 - C2 · What Black Friday gets you · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 1660,
+      "y": 9600
+    },
+    "R1-06-checklist.dc.html": {
+      "h": 1920,
+      "title": "M Batch 475 - C3 · Checklist on the photo · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 2820,
+      "y": 9600
+    },
+    "R1-07-sticker.dc.html": {
+      "h": 1920,
+      "title": "M Batch 468 - C1 · Full bleed + sticker · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 500,
+      "y": 0
+    },
+    "R1-08-circle.dc.html": {
+      "h": 1920,
+      "title": "M Batch 468 - C2 · 30% circle + icon row · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 1660,
+      "y": 0
+    },
+    "R1-10-minimal-list.dc.html": {
+      "h": 1920,
+      "title": "M Batch 468 - C3 · Minimal list · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 2820,
+      "y": 0
+    },
+    "Refs-M468.dc.html": {
+      "h": 1920,
+      "title": "M Batch 475 · IM8 refs",
+      "w": 420,
+      "x": 0,
+      "y": 9600
+    },
+    "Refs-M469.dc.html": {
+      "h": 1920,
+      "title": "M Batch 468 · IM8 refs",
+      "w": 420,
+      "x": 0,
+      "y": 0
+    },
+    "Refs-M473.dc.html": {
+      "h": 1920,
+      "title": "M Batch 470 · IM8 refs",
+      "w": 420,
+      "x": 0,
+      "y": 2400
+    },
+    "Refs-M474.dc.html": {
+      "h": 1920,
+      "title": "M Batch 471 · IM8 refs",
+      "w": 420,
+      "x": 0,
+      "y": 4800
+    },
+    "Refs-W415.dc.html": {
+      "h": 1920,
+      "title": "W Batch 415 · IM8 refs",
+      "w": 420,
+      "x": 9400,
+      "y": 0
+    },
+    "Refs-W417.dc.html": {
+      "h": 1920,
+      "title": "W Batch 417 · IM8 refs",
+      "w": 420,
+      "x": 9400,
+      "y": 2400
+    },
+    "V-M470-C1.dc.html": {
+      "h": 1920,
+      "title": "M Batch 474 - C2 · FINAL 1080p · SOUND · from M 473 C2",
+      "w": 1080,
+      "x": 5980,
+      "y": 7200,
+      "is_interactive": true
+    },
+    "V-M471-C1.dc.html": {
+      "h": 1920,
+      "title": "Old video draft (no batch) - C1 · DRAFT 480p · from M 475 C3",
+      "w": 1080,
+      "x": 4820,
+      "y": 9600
+    },
+    "V-M472-C1.dc.html": {
+      "h": 1920,
+      "title": "M Batch 469 - C1 · FINAL 1080p · from M 468 C1 · FRAME ✓ · CLICKUP ✓",
+      "w": 1080,
+      "x": 4820,
+      "y": 0
+    },
+    "V-W416-C1.dc.html": {
+      "h": 1920,
+      "title": "W Batch 416 - C1 · DRAFT 480p · from W 415 C3",
+      "w": 1080,
+      "x": 14220,
+      "y": 0
+    },
+    "V-W416-C2.dc.html": {
+      "h": 1920,
+      "title": "W Batch 416 - C2 · DRAFT 480p · from W 415 C1",
+      "w": 1080,
+      "x": 15380,
+      "y": 0
+    },
+    "V-W416-C3.dc.html": {
+      "h": 1920,
+      "title": "W Batch 416 - C3 · DRAFT 480p · from W 415 C2 · check: frames shift, right bracelet changes",
+      "w": 1080,
+      "x": 16540,
+      "y": 0
+    },
+    "W415-C1-red-deal.dc.html": {
+      "h": 1920,
+      "title": "W Batch 415 - C1 · 30% badge on graphite",
+      "w": 1080,
+      "x": 9900,
+      "y": 0
+    },
+    "W415-C2-stack-chart.dc.html": {
+      "h": 1920,
+      "title": "W Batch 415 - C2 · The 3x stack chart",
+      "w": 1080,
+      "x": 11060,
+      "y": 0
+    },
+    "W415-C3-night-hook.dc.html": {
+      "h": 1920,
+      "title": "W Batch 415 - C3 · One looked lonely",
+      "w": 1080,
+      "x": 12220,
+      "y": 0
+    },
+    "W417-C1.dc.html": {
+      "h": 1920,
+      "title": "W Batch 417 - C1 · The piece your outfit was missing",
+      "w": 1080,
+      "x": 9900,
+      "y": 2400
+    },
+    "W417-C2.dc.html": {
+      "h": 1920,
+      "title": "W Batch 417 - C2 · Save 30%",
+      "w": 1080,
+      "x": 11060,
+      "y": 2400
+    },
+    "W417-C3.dc.html": {
+      "h": 1920,
+      "title": "W Batch 417 - C3 · Her Black Friday stack",
+      "w": 1080,
+      "x": 12220,
+      "y": 2400
+    },
+    "M474-C2.dc.html": {
+      "x": 1660,
+      "y": 4800,
+      "w": 1080,
+      "h": 1920,
+      "title": "M Batch 471 - C2 · The duo behind every stack (black duo) · FRAME ✓ · CLICKUP ✓"
+    },
+    "Refs-M445.dc.html": {
+      "h": 1920,
+      "w": 420,
+      "x": 19400,
+      "y": 0,
+      "title": "M Batch 445 · IM8 refs"
+    },
+    "M445-C1.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 19900,
+      "y": 0,
+      "title": "M Batch 445 - C1 · The jewelry you never take off (gold duo) · FRAME ✓ · CLICKUP ✓"
+    },
+    "M445-C2.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 21060,
+      "y": 0,
+      "title": "M Batch 445 - C2 · The jewelry you never take off (black duo) · FRAME ✓ · CLICKUP ✓"
+    },
+    "M445-C3.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 22220,
+      "y": 0,
+      "title": "M Batch 445 - C3 · Never take it off · FRAME ✓ · CLICKUP ✓"
+    },
+    "V-M446-C1.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 24220,
+      "y": 0,
+      "title": "M Batch 446 - C1 · FINAL 1080p · SOUND · from M 445 C1 · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-M446-C2.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 25380,
+      "y": 0,
+      "title": "M Batch 446 - C2 · FINAL 1080p · SOUND · from M 445 C2 · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-M446-C3.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 26540,
+      "y": 0,
+      "title": "M Batch 446 - C3 · FINAL 1080p · SOUND · from M 445 C3 · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "M447-C1.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 19900,
+      "y": 2400,
+      "title": "M Batch 447 - C1 · Put it on once (gold stack, driving)"
+    },
+    "M447-C2.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 21060,
+      "y": 2400,
+      "title": "M Batch 447 - C2 · What's on his wrist (black stack, grid)"
+    },
+    "M447-C3.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 22220,
+      "y": 2400,
+      "title": "M Batch 447 - C3 · 316L steel (silver stack, light)"
+    },
+    "Refs-M447.dc.html": {
+      "h": 1920,
+      "w": 420,
+      "x": 19400,
+      "y": 2400,
+      "title": "M Batch 447 · IM8 refs"
+    },
+    "V-M472-C2.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 5980,
+      "y": 0,
+      "title": "M Batch 469 - C2 · FINAL 1080p · SOUND · from M 468 C2 · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-M472-C3.dc.html": {
+      "h": 1920,
+      "w": 1080,
+      "x": 7140,
+      "y": 0,
+      "title": "M Batch 469 - C3 · FINAL 1080p · SOUND · from M 468 C3 · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-B472-C1.dc.html": {
+      "x": 4820,
+      "y": 4800,
+      "w": 1080,
+      "h": 1920,
+      "title": "M Batch 472 - C1 · FINAL 1080p · SOUND · M 471 C1 layout + M 446 C1 clip · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-B472-C2.dc.html": {
+      "x": 5980,
+      "y": 4800,
+      "w": 1080,
+      "h": 1920,
+      "title": "M Batch 472 - C2 · FINAL 1080p · SOUND · M 471 C2 layout + M 446 C2 clip · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-B472-C3.dc.html": {
+      "x": 7140,
+      "y": 4800,
+      "w": 1080,
+      "h": 1920,
+      "title": "M Batch 472 - C3 · FINAL 1080p · SOUND · M 471 C3 layout + M 446 C3 clip · FRAME ✓ · CLICKUP ✓",
+      "is_interactive": true
+    },
+    "V-B475-C1.dc.html": {
+      "x": 4820,
+      "y": 7200,
+      "w": 1080,
+      "h": 1920,
+      "title": "M Batch 474 - C1 · FINAL 1080p · SOUND · from M 473 C1",
+      "is_interactive": true
+    },
+    "V-B475-C3.dc.html": {
+      "x": 7140,
+      "y": 7200,
+      "w": 1080,
+      "h": 1920,
+      "title": "M Batch 474 - C3 · FINAL 1080p · SOUND · from M 473 C3",
+      "is_interactive": true
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-08T21:05:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "brief": {
+      "fill": "gray",
+      "text": "Brief\n\nLayout: one batch per row, 3 creatives (C1, C2, C3), with the IM8 references in the narrow column on the left.\nNaming: Men: M Batch 467 - C1, C2, C3, then 468, 469… Women: W Batch 415 - C1, C2, C3, then 416…\nA batch is men only or women only, never mixed (and no ad shows both).\nThree IM8 references per batch, one per creative: C1, C2 and C3 each copy their own IM8 ad closely, stacked in the narrow column on the left.\nProduct: 3x Minimal Stack Set (men's black / silver / gold, women's gold); the 2x Duo Minimal Set joins from Run 2. Photos come from the live Shopify listings and the clean (no text) frames in Figma, Static Ads 2.\nOffer: Black Friday, 30% off sitewide, no code, taken off at checkout.\nNo prices or currencies on any ad: the same ads run in the EUR and USD accounts, so the offer is always told as 30% off.\nFacts used: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · \"case included\" with sets (never \"free case\") · free shipping · Trustpilot 4.5, 3,000+ reviews.\nSafe zones: no key text in the top 270 px or bottom 384 px.\nEach ad copies the layout idea of an IM8 ad, rebuilt in Cavaier's look: graphite monochrome (black, white, light grey), Figtree, square black or white buttons. Keep backgrounds light: no large black or dark fields dominating the ad; black is for type, buttons and small accents. Red #A82C24 only as a small accent, and only on light monochrome layouts; never on dark or full-colour photo ads.\nLanes: men on the left, women on the right, never mixed. Videos (Seedance 2.5): a batch is an ad set. Videos made from a static batch form their own video batch (new number, new ad set), in the video lane right beside that batch's row, filling C1, C2, C3, then a new video batch. The statics stay live.\nEvery ad passes a ROAS check before it ships: text contrast, safe zones, offer readable at feed size, one clear hook. The copy sticky next to each batch says what changed.\nCopy: headline and description at most 27 characters so they don't cut off in feed.\nImitation: copy the reference's structure literally. Text and checklists sit straight on the photo the way IM8 does it, never in a box that hides the product.\nCommands: comment on an ad and send it to Claude (redo, video, 720p / 1080p, reject, mp4, push to clickup and frame), see the red COMMANDS note. A comment is the go-ahead; no extra confirmation.\nMen vs women photos: a product name with a dash is the women's version (\"3x Minimal - Stack Set\"), without a dash it's the men's (\"3x Minimal Stack Set\", \"2x Duo Minimal Set\"). Men's ads use only photos from the men's listings and men's Figma frames.\nFormat: every static, video draft and approved video is delivered at 1080x1920 (9:16). Approved videos are rendered by Seedance 2.5 from the exact draft at the resolution written in the comment (\"720p\" or \"1080p\"); the delivered file is always 1080x1920.\nWork in progress: the moment a redo or video starts, a blue IN PROGRESS box goes into the exact slot it will land in, and is replaced when it's done.\nFrame.io (approved batches): the batch folder and its EN and \"no text\" subfolders always exist already. Only find them, never create folders. Text version → EN, clean version → no text. The batch folder link is in the batch's ClickUp task (Creatives field).\nActivity: the blue ACTIVITY & QUEUE note above Evergreen lists running and finished jobs (Seedance, Frame.io, ClickUp) with times; updated when a job starts and when it ends. Delivered batches also get FRAME ✓ / CLICKUP ✓ in their titles.\nSound: every video is generated WITH SOUND (Seedance generate_audio true), drafts and finals, and the delivered MP4 keeps the audio.\nQueue: every comment command goes into the QUEUE list on the ACTIVITY & QUEUE note right away (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins; Seedance work arriving within ~2 min is sent as one job; a job already running is never restarted for a later command unless that command changes the same ad.\nLanguage: everything on the canvas, in replies and in deliverables is in English.\nSeedance sound: generate_audio true goes on the DRAFT request; the final (draft_task) request must not carry it and inherits the draft's sound. Old silent drafts can't become finals with sound, so they need a new draft with sound.\nStatus tags: every creative carries a tag stack top left (not part of the exported ad): DRAFT / RENDERING / FINAL for videos, then CLICKUP ✓ DONE and FRAME ✓ UPLOADED (blue while running) once delivered.\nClickUp: on the batch task fill the copy fields (Preview Text, Subject Line, Description, EU URL, US URL). On each C1–C3 row set Creative Style, Angle, Creative Origin, Funnel Stage and Offer, and leave a short, clean comment saying what that creative tests (name the IM8 ad it imitates; no tool names like Seedance or Claude). Creative Origin is Imitation for IM8-based creatives, including their video versions. Don't put Frame links in the rows.\nSections: BLACK FRIDAY on the left, EVERGREEN on the right (its own rules note). The full technical rulebook is CLAUDE.md in the Cavaier/Claude repo.\nClickUp batch task (mother): for Creative Style, Angle, Creative Origin, Funnel Stage and Offer, if C1–C3 all share the same value, set it on the batch task too; if they differ, leave it.\nPhotos: every new batch pulls fresh product photos from the Cavaier Figma file (node 17-2). Photos already on the canvas can be reused, but a batch is never built only from them.\nType: high-end and airy, never chunky (reference: M Batch 473 C1). Headline ~50 px, light weight, slight letter spacing; body ~27 px light, narrow column; small logo (~110 px); slim button; lots of white space.",
+      "w": 600,
+      "x": -720,
+      "y": 0
+    },
+    "copy-m467": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "M Batch 473 · ad copy (was M Batch 467)\n\nPRIMARY TEXT\nThree pieces, one stack, and this week all of it is 30% off.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide. No code, it comes off at checkout. Case included and free shipping.\n\nHEADLINE (24 chars)\n30% Off the 3x Stack Set\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC3: silver photo swapped from the women's listing to the men's. C1: button moved up out of the bottom safe zone. C2: red '30% off' on the photo changed to graphite. C3: callout labels enlarged to read at feed size. All pass.\n\nDELIVERED\nFrame.io ✓ M Batch 473 → EN (3) + No Text (3), 12:17 · ClickUp ✓ BFCM26 → M Batch 473 (copy + C1–C3 rows)",
+      "w": 600,
+      "x": 3980,
+      "y": 7200
+    },
+    "copy-m468": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "M Batch 475 · ad copy (was M Batch 474, before that M Batch 468 old)\n\nPRIMARY TEXT\nBlack Friday is the one week the whole stack costs less.\n\n3 pieces, a case to keep them together and free shipping. Pick black, silver or gold, 30% off, no code needed.\n\nRated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (21 chars)\nBlack Friday: 30% Off\n\nDESCRIPTION (26 chars)\nCase included with the set\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC1: black, silver and gold tiles swapped from the women's listing photos to the men's. C3: rebuilt to follow the IM8 checklist ad literally. Headline and checklist sit straight on the photo over a soft graphite shade, the bracelet stays in full view, white button. C1 and C2 pass as they were.\n\nDELIVERED\nFrame.io ✓ M Batch 475 → EN (3) + No Text (3), 13:29 · ClickUp ✓ BFCM26 → M Batch 475 (copy + C1–C3 rows)",
+      "w": 600,
+      "x": 3980,
+      "y": 9600
+    },
+    "copy-m469": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "M Batch 468 · ad copy (was M Batch 469)\n\nPRIMARY TEXT\nOne wrist. Three pieces. 30% off.\n\nThe 3x Minimal Stack Set stays on through shower, gym and sea. Recycled 316L stainless steel, adjustable to S, M or L.\n\n30% off sitewide this Black Friday. No code, taken off at checkout.\n\nHEADLINE (24 chars)\nOne Wrist. Three Pieces.\n\nDESCRIPTION (25 chars)\n30% off sitewide, no code\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nC2: gold photo swapped from the women's listing to the men's. C1: red 30% sticker on the full-colour photo changed to graphite. C2: small labels enlarged for feed. C3 passes.\n\nDELIVERED\nFrame.io ✓ M Batch 468 → EN (3) + No Text (3), 08:10 · ClickUp ✓ BFCM26 → M Batch 468 (copy + C1–C3 rows)",
+      "w": 600,
+      "x": 3980,
+      "y": 0
+    },
+    "copy-m470": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "M Batch 474 · ad copy (video ad set, was M Batch 475) (video ad set)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n11:59 · FINAL 1080p with sound, all three. C1 and C3: only the wrist photo moves. C2: new version with sound (full-bleed photo, sea behind), text boxes stay sharp. The statics stay live as their own ads.",
+      "w": 600,
+      "x": 8300,
+      "y": 7200
+    },
+    "copy-m471": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "Old video draft (no batch number) · ad copy (video ad set)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.",
+      "w": 600,
+      "x": 8300,
+      "y": 9600
+    },
+    "copy-m472": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "M Batch 469 · ad copy (video ad set, was M Batch 472)\n\nPRIMARY TEXT\nWatch the stack catch the light. 30% off this Black Friday.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\n30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (22 chars)\nThe Stack, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nSTATUS\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.\n\nC2 + C3 (added 08:00): 480p drafts with sound from M469 C2 (30% circle) and C3 (minimal list). Only the wrist photo moves inside its frame; text, circle and list stay still. Comment 720p / 1080p to approve, or reject.\nC2 + C3 FINAL 1080p with sound (08:14).\n\nDELIVERED\nFrame.io ✓ M Batch 469 → EN (3) + No Text (3), 08:19 · ClickUp ✓ BFCM26 → M Batch 469 (copy + C1–C3 rows)",
+      "w": 600,
+      "x": 8300,
+      "y": 0
+    },
+    "copy-m473": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "M Batch 470 · ad copy (was M Batch 473)\n\nPRIMARY TEXT\nYesterday: full price. Today: 30% off.\n\nThe 3x Minimal Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (24 chars)\nToday: 30% Off the Stack\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nROAS CHECK\nAll three pass: contrast, safe zones, offer readable at feed size. C3 shows the set, the case and four badges (waterproof, 316L steel, S/M/L, case included), all listed claims.\n\nRebuilt light (08:35): white / very light grey backgrounds, dark type, black buttons. C1 silver stack on light, C2 notes in light mode with the black stack on white, C3 new splash photo on sand. All pass the ROAS check.\nC3 redone (08:33): new IM8 ref (set box + badge row). Gold stack on light grey, 4 outlined badges, case card with BLACK FRIDAY · 30% OFF.\n\nDELIVERED\nFrame.io ✓ M Batch 470 → EN (3) + No Text (3), 08:36 · ClickUp ✓ BFCM26 → M Batch 470 (copy + C1–C3 rows)",
+      "w": 600,
+      "x": 3980,
+      "y": 2400
+    },
+    "copy-m474": {
+      "x": 3980,
+      "y": 4800,
+      "w": 600,
+      "maxH": 1920,
+      "fill": "gray",
+      "text": "M Batch 471 · ad copy (was M Batch 474)\n\nPRIMARY TEXT\nTwo chains. One wrist. 30% off.\n\nThe 2x Duo Minimal Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (20 chars)\nThe Duo, Now 30% Off\n\nDESCRIPTION (25 chars)\nCase included. Free ship.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nROAS CHECK\nC1: 'case included' label enlarged for feed. C2: same design as C1, with the black 2x Duo photo. All pass. Duo finishes checked on both stores: black, silver, gold.\n\nDELIVERED\nFrame.io ✓ M Batch 471 → EN (3) + No Text (3), 08:48 · ClickUp ✓ BFCM26 → M Batch 471 (copy + C1–C3 rows)"
+    },
+    "copy-w415": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "W Batch 415 · ad copy\n\nPRIMARY TEXT\nOne looked lonely. Three look finished.\n\nThe 3x Minimal Stack Set for her, in gold, silver or black. Waterproof, sweat and heat resistant, and adjustable to S, M or L.\n\nBlack Friday: 30% off sitewide, no code. Free shipping and a case with the set.\n\nHEADLINE (23 chars)\nThe 3x Set, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nROAS CHECK\nC1: red field changed to graphite, white 30% badge; icon row moved above the safe zone. C2: photos made black and white so red stays a small accent; offer enlarged to read at feed size. C3: red button changed to white.",
+      "w": 600,
+      "x": 13380,
+      "y": 0
+    },
+    "copy-w416": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "W Batch 416 · ad copy (video ad set)\n\nPRIMARY TEXT\nThree pieces, moving as one. 30% off for Black Friday.\n\nThe 3x Minimal Stack Set for her, in gold, silver or black. Waterproof, sweat and heat resistant, adjustable S/M/L.\n\n30% off sitewide, no code. Free shipping and a case with the set.\n\nHEADLINE (23 chars)\nHer 3x Set, Now 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nSTATUS\nC3 (from W 415 C2): the two photo frames shift a little and the right bracelet picks up dark details by the end. Suggest reject; the fix is animating each photo on its own inside fixed frames.\n480p Seedance 2.5 draft, 5 s, no audio. Approve 1080p or reject with the buttons under the video. Its static stays live in its own ad set.",
+      "w": 600,
+      "x": 17700,
+      "y": 0
+    },
+    "copy-w417": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "W Batch 417 · ad copy\n\nPRIMARY TEXT\nThe piece your outfit was missing, now 30% off.\n\nThe 3x Minimal Stack Set for her, in gold, silver or black. Waterproof, sweat and heat resistant, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Free shipping and a case with the set.\n\nHEADLINE (21 chars)\nSave 30% on Her Stack\n\nDESCRIPTION (23 chars)\nNo code. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nROAS CHECK\nC1: feature pills enlarged for feed. C2 keeps red only as a thin underline on a light layout. All pass.",
+      "w": 600,
+      "x": 13380,
+      "y": 2400
+    },
+    "menvid": {
+      "kind": "title1",
+      "maxW": 4080,
+      "text": "MEN · video ad sets",
+      "w": 240,
+      "x": 4820,
+      "y": -320
+    },
+    "redo": {
+      "fill": "red",
+      "text": "COMMANDS (comment to Claude)\n\nClick an ad, press C (or the comment icon), write a command and send it to Claude:\n\nredo: new IM8 reference (static) or new draft (video), rebuilt in the same slot.\nvideo: a Seedance 2.5 draft with sound in the video ad set next to it. The static stays live.\n720p / 1080p: the draft is rendered as a final at the resolution you write, with sound, delivered as 1080x1920, replacing the draft.\nreject: new prompt, new draft.\nmp4: Claude sends you the video file in the chat.\n\nAdd a few words on what was off or which motion you want.\n\nVideo labels: yellow DRAFT · 480p = draft, blue RENDERING = being rendered, green FINAL = approved final.\nBlue IN PROGRESS box = Claude is working on it, in the slot where it will land.\nSeveral comments at once are fine: they queue on the ACTIVITY & QUEUE note.",
+      "w": 600,
+      "x": -720,
+      "y": 1300
+    },
+    "run1": {
+      "kind": "title1",
+      "maxW": 4580,
+      "text": "MEN · statics",
+      "w": 240,
+      "x": 0,
+      "y": -320
+    },
+    "women": {
+      "kind": "title1",
+      "maxW": 4580,
+      "text": "WOMEN · statics",
+      "w": 240,
+      "x": 9400,
+      "y": -320
+    },
+    "womenvid": {
+      "kind": "title1",
+      "maxW": 4080,
+      "text": "WOMEN · video ad sets",
+      "w": 240,
+      "x": 14220,
+      "y": -320
+    },
+    "sec-bf": {
+      "kind": "title1",
+      "w": 240,
+      "maxW": 18300,
+      "x": 0,
+      "y": -720,
+      "text": "BLACK FRIDAY · 30% off sitewide"
+    },
+    "sec-ever": {
+      "kind": "title1",
+      "w": 240,
+      "maxW": 18300,
+      "x": 19400,
+      "y": -720,
+      "text": "EVERGREEN · no Black Friday"
+    },
+    "ev-men": {
+      "kind": "title1",
+      "w": 240,
+      "maxW": 4580,
+      "x": 19400,
+      "y": -320,
+      "text": "MEN · statics"
+    },
+    "ev-menvid": {
+      "kind": "title1",
+      "w": 240,
+      "maxW": 4080,
+      "x": 24220,
+      "y": -320,
+      "text": "MEN · video ad sets"
+    },
+    "ev-women": {
+      "kind": "title1",
+      "w": 240,
+      "maxW": 4580,
+      "x": 28800,
+      "y": -320,
+      "text": "WOMEN · statics"
+    },
+    "ev-womenvid": {
+      "kind": "title1",
+      "w": 240,
+      "maxW": 4080,
+      "x": 33620,
+      "y": -320,
+      "text": "WOMEN · video ad sets"
+    },
+    "ev-brief": {
+      "fill": "gray",
+      "w": 600,
+      "x": 18680,
+      "y": 0,
+      "text": "Evergreen · rules\n\nNormal, always-on ads. No Black Friday, no 30% off, no discount or deadline language.\nSame setup as Black Friday: one batch per row (C1, C2, C3), three IM8 references per batch, men and women in separate lanes, videos in the video lane beside the source batch.\nSame brand and claims: graphite monochrome, Figtree. NO red in Evergreen, not even as an accent. Facts: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · case included with sets · free shipping · Trustpilot 4.5, 3,000+ reviews.\nNo prices or currencies.\nEvergreen batch numbers: men start at M Batch 445 and count up from there.\nAsk for a batch with: \"run evergreen batch\" (men, women or both)."
+    },
+    "copy-m445": {
+      "fill": "gray",
+      "maxH": 1920,
+      "w": 600,
+      "x": 23380,
+      "y": 0,
+      "text": "M Batch 445 · ad copy (evergreen)\n\nPRIMARY TEXT\nShower, gym, sea, sleep. Leave it on.\n\nThe 2x Duo Minimal Set: two chains worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (26 chars)\nJewelry You Never Take Off\n\nDESCRIPTION (26 chars)\nWaterproof. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nROAS CHECK\nEvergreen version of M474: same layouts and photos, no Black Friday or 30% anywhere. Text sits on the light upper part of the photo, contrast and safe zones unchanged from M474 (pass). C3: WATERPROOF tag and \"included\" in graphite (no red in Evergreen).\n\nSTATUS\nFrame.io ✓ (EN + No Text, 23:09) · ClickUp ✓ (Week 40 → M Batch 445)"
+    },
+    "activity": {
+      "fill": "blue",
+      "w": 600,
+      "x": 18680,
+      "y": -1700,
+      "text": "ACTIVITY & QUEUE · updated 13:59\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n15. 09:11 M472 C1–C3 · \"replace these videos with the same ones from M Batch 445\" → DONE\n16. 09:14 M472 videos · \"push to frame and clickup\" → DONE\n17. 09:28 men BF rows · \"move the first 2 batches to the bottom, shift up, renumber\" → DONE\n18. 11:24 M473 C1+C3 · \"make the remaining videos c1 and c3\" → DONE\n19. 11:37 M475 C1 + M473 C1 · \"text too chunky / bulky\" → DONE\n20. 11:42 M475 videos · \"1080p, swap batch numbers (videos 474, statics 475)\" → DONE\n21. 12:03 M474 C2 · \"redo, the minimal cuff got a defect\" → DONE\n22. 12:14 M473 statics · \"push to clickup and frame\" → DONE\n23. 13:20 M474 C2 · \"the video has no movement\" → DONE\n24. 13:26 M475 statics · \"push clickup and frame\" → DONE\n25. 13:38 M474 C2 · \"movement too much, hallucinating\" → DONE 13:59\n\nRUNNING\n– nothing running\n\nDONE\n✓ 13:59 Seedance 2.5 · M Batch 474 C2 redo 3 → FINAL 1080p with sound: subtle wrist movement, cuff and chains intact\n✓ 13:40 M Batch 474 C2 redo 2: clear slow hand movement, cuff intact (take A of 2)\n✓ 13:29 Frame.io · M Batch 475 → EN (3) + No Text (3)\n✓ 13:28 ClickUp · M Batch 475: copy + URLs, C1–C3 rows + test comments\n✓ 12:25 M Batch 474 C2 redone: new 1080p with sound, cuff intact\n✓ 12:17 Frame.io · M Batch 473 → EN (3) + No Text (3)\n✓ 12:16 ClickUp · M Batch 473: copy + URLs, C1–C3 rows + test comments\n✓ 11:59 Seedance 2.5 · M Batch 474 C1–C3 → FINAL 1080p with sound\n✓ 11:50 Videos with sound get a SOUND ON/OFF button (press Play on the artboard, then the button)\n✓ 11:45 Renamed: M473 video set → M Batch 474, old M Batch 474 statics → M Batch 475\n✓ 11:44 M473 C1 text lighter (smaller headline, light body, slimmer button) + M475 C1 video rebuilt\n✓ 11:38 Seedance 2.5 · M Batch 475 C1 + C3 drafts 480p with sound (from M 473) on the canvas\n✓ 09:24 Frame.io · M Batch 472 videos → EN (3) + No Text (3)\n✓ 09:33 Men BF rows reordered: M468, M469 video, M470, M471, M472 video now on top; old M467 → M Batch 473 and old M468 → M Batch 474 at the bottom\n✓ 09:17 ClickUp · M Batch 472: copy + URLs, C1–C3 rows + test comments\n✓ 09:20 M Batch 472 C1–C3 → M 445/446 clips in the M 471 layouts, FINAL 1080p with sound\n✓ 09:12 Seedance 2.5 · M Batch 472 C1–C3 drafts 480p with sound (from M 471) on the canvas\n✓ 08:48 Frame.io · M Batch 471 → EN (3) + No Text (3)\n✓ 08:47 ClickUp · M Batch 471: copy + URLs, C1–C3 rows + test comments\n✓ 08:46 Renamed M474 statics → M Batch 471\n✓ 08:36 Frame.io · M Batch 470 → EN (3) + No Text (3)\n✓ 08:35 ClickUp · M Batch 470: copy + URLs, C1–C3 rows + test comments\n✓ 08:33 M Batch 470 C3 redone: new IM8 ref (set box + badge row), light grey, ROAS ok\n✓ 08:36 M473 statics renamed → M Batch 470 and rebuilt light\n✓ 08:24 ClickUp · batch tasks M445, M446, M468, M469 mirror the shared row values\n✓ 08:19 Frame.io · M Batch 469 videos → EN (3) + No Text (3)\n✓ 08:19 ClickUp · M Batch 469: copy + URLs, C1–C3 rows + test comments\n✓ 08:16 Renamed M472 videos → M Batch 469\n✓ 08:14 Seedance 2.5 · M Batch 472 C2 + C3 → FINAL 1080p with sound\n✓ 08:10 Frame.io · M Batch 468 → EN (3) + No Text (3)\n✓ 08:05 ClickUp · M Batch 468: copy + URLs, C1–C3 rows + test comments\n✓ 08:04 Renamed M469 statics → M Batch 468\n✓ 08:01 Seedance 2.5 · M Batch 472 C2 + C3 drafts with sound on the canvas\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
+    },
+    "copy-m446": {
+      "fill": "gray",
+      "maxH": 1920,
+      "w": 600,
+      "x": 27700,
+      "y": 0,
+      "text": "M Batch 446 · ad copy (evergreen video ad set)\n\nPRIMARY TEXT\nWatch it move. It stays on.\n\nThe 2x Duo Minimal Set: two chains worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (26 chars)\nJewelry You Never Take Off\n\nDESCRIPTION (26 chars)\nWaterproof. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nSTATUS\nFINAL 1080p with sound (Seedance 2.5), 5 s, delivered 1080x1920 with the ad text. C1 is the redo (calmer, no sparkle). C3: only the wrist photo moves, inside its fixed frame. Play with the video controls to hear the sound. The M445 statics stay live.\nDelivered: Frame.io ✓ (EN + No Text, 23:46) · ClickUp ✓ (Week 40 → M Batch 446)"
+    },
+    "copy-m447": {
+      "fill": "gray",
+      "maxH": 1920,
+      "w": 600,
+      "x": 23380,
+      "y": 2400,
+      "text": "M Batch 447 · ad copy (evergreen)\n\nPRIMARY TEXT\nPut it on once. Wear it everywhere.\n\nThe 3x Minimal Stack Set: three pieces worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (27 chars)\nPut It On Once. Leave It On\n\nDESCRIPTION (23 chars)\n316L steel. Waterproof.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nIM8 REFERENCES\nC1: lifestyle photo, headline in the lower third with a button (gold stack while driving).\nC2: 2x2 split grid, photo and text tiles (black stack).\nC3: big-number headline with a review bar (silver stack on a light background, \"316L STEEL\").\n\nROAS CHECK\nAll text passes contrast (lowest 5.0 on C2's small label). C1 block moved up 70 px to clear the bottom safe zone. No red, no offer, no prices.\nC2 and C3 rebuilt light (no dominant black backgrounds)."
+    },
+    "copy-b472": {
+      "x": 8300,
+      "y": 4800,
+      "w": 600,
+      "maxH": 1920,
+      "fill": "gray",
+      "text": "M Batch 472 · ad copy (video ad set, from M Batch 471)\n\nPRIMARY TEXT\nTwo chains. One wrist. 30% off.\n\nThe 2x Duo Minimal Set in black, silver or gold. Waterproof, recycled 316L stainless steel, adjustable S/M/L.\n\nBlack Friday: 30% off sitewide, no code. Case included and free shipping.\n\nHEADLINE (20 chars)\nThe Duo, Now 30% Off\n\nDESCRIPTION (25 chars)\nCase included. Free ship.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nSTATUS\n09:20 · FINAL 1080p with sound. The moving footage is the same as M Batch 446 (the M 445 clips: gold, black, silver duo), placed in the M 471 layouts. C1/C2: the clip fills the photo area under the text and case card. C3: the clip moves inside the photo box only. The 480p drafts from 09:12 are replaced. The statics stay live as their own ads.\n\nDELIVERED\nFrame.io ✓ M Batch 472 → EN (3) + No Text (3), 09:24 · ClickUp ✓ BFCM26 → M Batch 472 (copy + C1–C3 rows)"
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "R1-01-wear-anything.dc.html",
+    "R1-02-highlight.dc.html",
+    "R1-03-callouts.dc.html",
+    "Refs-M468.dc.html",
+    "R1-04-lineup.dc.html",
+    "R1-05-whats-in.dc.html",
+    "R1-06-checklist.dc.html",
+    "Refs-M469.dc.html",
+    "R1-07-sticker.dc.html",
+    "R1-08-circle.dc.html",
+    "R1-10-minimal-list.dc.html",
+    "Refs-W415.dc.html",
+    "W415-C1-red-deal.dc.html",
+    "W415-C2-stack-chart.dc.html",
+    "W415-C3-night-hook.dc.html",
+    "V-M470-C1.dc.html",
+    "V-W416-C1.dc.html",
+    "V-W416-C2.dc.html",
+    "V-M471-C1.dc.html",
+    "V-M472-C1.dc.html",
+    "V-W416-C3.dc.html",
+    "Refs-M473.dc.html",
+    "M473-C1.dc.html",
+    "M473-C2.dc.html",
+    "M473-C3.dc.html",
+    "Refs-M474.dc.html",
+    "M474-C1.dc.html",
+    "M474-C3.dc.html",
+    "Refs-W417.dc.html",
+    "W417-C1.dc.html",
+    "W417-C2.dc.html",
+    "W417-C3.dc.html",
+    "M474-C2.dc.html",
+    "Refs-M445.dc.html",
+    "M445-C1.dc.html",
+    "M445-C2.dc.html",
+    "M445-C3.dc.html",
+    "V-M446-C1.dc.html",
+    "V-M446-C2.dc.html",
+    "V-M446-C3.dc.html",
+    "M447-C1.dc.html",
+    "M447-C2.dc.html",
+    "M447-C3.dc.html",
+    "Refs-M447.dc.html",
+    "V-M472-C2.dc.html",
+    "V-M472-C3.dc.html",
+    "V-B472-C1.dc.html",
+    "V-B472-C2.dc.html",
+    "V-B472-C3.dc.html",
+    "V-B475-C1.dc.html",
+    "V-B475-C3.dc.html"
+  ],
+  "pages": [],
+  "title": "Cavaier Static Ads Lab"
 }
