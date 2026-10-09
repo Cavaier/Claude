@@ -288,6 +288,34 @@
    "x": 26540,
    "y": 0,
    "title": "M Batch 446 - C3 · FINAL 1080p · SOUND · from M 445 C3 · FRAME ✓ · CLICKUP ✓"
+  },
+  "M447-C1.dc.html": {
+   "h": 1920,
+   "w": 1080,
+   "x": 19900,
+   "y": 2400,
+   "title": "M Batch 447 - C1 · Put it on once (gold stack, driving)"
+  },
+  "M447-C2.dc.html": {
+   "h": 1920,
+   "w": 1080,
+   "x": 21060,
+   "y": 2400,
+   "title": "M Batch 447 - C2 · What's on his wrist (black stack, grid)"
+  },
+  "M447-C3.dc.html": {
+   "h": 1920,
+   "w": 1080,
+   "x": 22220,
+   "y": 2400,
+   "title": "M Batch 447 - C3 · 316L steel (silver stack)"
+  },
+  "Refs-M447.dc.html": {
+   "h": 1920,
+   "w": 420,
+   "x": 19400,
+   "y": 2400,
+   "title": "M Batch 447 · IM8 refs"
   }
  },
  "createdOnFiles": {
@@ -501,7 +529,7 @@
    "w": 600,
    "x": 18680,
    "y": -1700,
-   "text": "ACTIVITY & QUEUE · updated 23:53\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n\nRUNNING\n(nothing right now)\n\nDONE\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
+   "text": "ACTIVITY & QUEUE · updated 00:20\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n\nRUNNING\n(nothing right now)\n\nDONE\n✓ 00:20 M Batch 447 · Evergreen men statics C1–C3 + copy + ROAS check\n✓ 23:58 ClickUp · M445 + M446 C1–C3 rows: style, angle, origin, funnel, offer + test comments\n✓ 23:46 Frame.io · M Batch 446 C1–C3 → EN (3) + No Text (3), with sound\n✓ 23:45 ClickUp · M Batch 446: copy + EU/US URL\n✓ 23:41 Seedance 2.5 · M Batch 446 C1–C3 → FINAL 1080p WITH SOUND on the canvas\n✓ 23:22 Seedance 2.5 · M Batch 446 C1–C3 video drafts (480p)\n✓ 23:15 ClickUp · M Batch 445 C1–C3: Frame links in Creatives\n✓ 23:09 Frame.io · M Batch 445 C1–C3 → EN (3) + No Text (3)\n✓ 23:07 M Batch 445 C3: red removed (Evergreen)\n✓ 22:51 ClickUp · M Batch 445: copy + EU/US URL\n\nHow the queue works: every comment shows up here right away with time and status (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins. Seedance work arriving within ~2 min is sent as one job."
   },
   "copy-m446": {
    "fill": "gray",
@@ -510,6 +538,14 @@
    "x": 27700,
    "y": 0,
    "text": "M Batch 446 · ad copy (evergreen video ad set)\n\nPRIMARY TEXT\nWatch it move. It stays on.\n\nThe 2x Duo Minimal Set: two chains worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (26 chars)\nJewelry You Never Take Off\n\nDESCRIPTION (26 chars)\nWaterproof. Free shipping.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nSTATUS\nFINAL 1080p with sound (Seedance 2.5), 5 s, delivered 1080x1920 with the ad text. C1 is the redo (calmer, no sparkle). C3: only the wrist photo moves, inside its fixed frame. Play with the video controls to hear the sound. The M445 statics stay live.\nDelivered: Frame.io ✓ (EN + No Text, 23:46) · ClickUp ✓ (Week 40 → M Batch 446)"
+  },
+  "copy-m447": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 23380,
+   "y": 2400,
+   "text": "M Batch 447 · ad copy (evergreen)\n\nPRIMARY TEXT\nPut it on once. Wear it everywhere.\n\nThe 3x Minimal Stack Set: three pieces worn as one, in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L.\n\nCase included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHEADLINE (27 chars)\nPut It On Once. Leave It On\n\nDESCRIPTION (23 chars)\n316L steel. Waterproof.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-him\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-him\n\nIM8 REFERENCES\nC1: lifestyle photo, headline in the lower third with a button (gold stack while driving).\nC2: 2x2 split grid, photo and text tiles (black stack).\nC3: big-number headline with a review bar (silver stack, \"316L STEEL\").\n\nROAS CHECK\nAll text passes contrast (lowest 8.9 on C2's label). C1 block moved up 70 px to clear the bottom safe zone. No red, no offer, no prices."
   }
  },
  "order": [
@@ -553,7 +589,11 @@
   "M445-C3.dc.html",
   "V-M446-C1.dc.html",
   "V-M446-C2.dc.html",
-  "V-M446-C3.dc.html"
+  "V-M446-C3.dc.html",
+  "M447-C1.dc.html",
+  "M447-C2.dc.html",
+  "M447-C3.dc.html",
+  "Refs-M447.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"
