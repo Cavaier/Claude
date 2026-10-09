@@ -181,13 +181,13 @@ class FB:
 def since_start(*mids): return [{'conditions': [pm(x, 'equals', 0, {'type': 'date', 'operator': 'flow-start'})]} for x in mids]
 def not_in_flow(days): return [{'conditions': [{'type': 'profile-not-in-flow', 'timeframe_filter': LAST(days)}]}]
 SMS_SPLIT = {'condition_groups': [{'conditions': [{'type': 'profile-marketing-consent', 'consent': {'channel': 'sms', 'can_receive_marketing': True, 'consent_status': {'subscription': 'subscribed', 'filters': None}}}]}]}
-NO_SS = {'F1E1', 'F4E1', 'F5E1', 'F6E1', 'F9E1'}  # cart and checkout reminders always send, even on campaign days
+NO_SS = {'F1E1', 'F4E1', 'F5E1', 'F6E1'}  # cart and checkout reminders always send, even on campaign days
 # fixed-date emails: the flow API has no "wait until date", so each is its own one-email flow triggered by a list,
 # and on the send date its segment is bulk-added to that list (`push.py EU release F1E6`)
 DATED = {'F10E3': ('salelive_open', '2026-12-05T09:00'), 'F13E2': ('giftcard', '2027-01-02T09:00')}
 SKIP_IN_FLOW = set(DATED)
 def sms_body(f, e, r):
-    prod = {'F2': '{{ event.Name }}', 'F4': "{{ event|lookup:'Product Name' }}", 'F9': '{{ event.ProductName }}'}.get(f['id'], '')
+    prod = {'F2': '{{ event.Name }}', 'F4': "{{ event|lookup:'Product Name' }}", 'F9': '{{ event.Name }}'}.get(f['id'], '')
     link = {'F2': '{{ event.URL }}', 'F4': BASE + '/cart', 'F5': '{{ event.extra.checkout_url }}', 'F9': '{{ event.URL }}'}.get(f['id'])
     one = lambda txt, ph: txt.replace('{product}', prod).replace('{link}', link or (BASE + '/products/cavaier-gift-card' if ph == 'late' else r.shop()))
     tx = e['text']
@@ -218,12 +218,12 @@ def build_flow(f):
         'F6': {'type': 'metric', 'id': M['order'], 'trigger_filter': None}, 'F7': {'type': 'list', 'id': L['winback']}, 'F8': {'type': 'list', 'id': L['sunset']},
         'F10': {'type': 'list', 'id': L['salelive']}, 'F11': {'type': 'list', 'id': L['second']}, 'F12': {'type': 'metric', 'id': M['active'], 'trigger_filter': None},
         'F13': {'type': 'metric', 'id': M['ordered'], 'trigger_filter': {'condition_groups': [{'conditions': [{'type': 'metric-property', 'metric_id': M['ordered'], 'field': 'Name', 'filter': {'type': 'string', 'operator': 'contains', 'value': 'Gift Card'}}]}]}},
+        'F9': {'type': 'metric', 'id': M['viewed'], 'trigger_filter': None},
         'S1': {'type': 'list', 'id': M['sms_list']}}.get(fid)
-    if trig is None: return None  # F9: the Back in Stock trigger can't be created through the API
     pf = {'F2': since_start(M['cart'], M['checkout'], M['order']) + not_in_flow(3), 'F3': since_start(M['viewed'], M['cart'], M['checkout'], M['order']) + not_in_flow(7),
           'F4': since_start(M['checkout'], M['order']) + not_in_flow(3), 'F5': since_start(M['order']) + not_in_flow(1), 'F6': not_in_flow(14),
           'F7': since_start(M['order']), 'F8': since_start(M['clicked']), 'F10': since_start(M['order']), 'F11': since_start(M['order']),
-          'F12': since_start(M['viewed'], M['cart'], M['order']) + not_in_flow(7), 'S1': not_in_flow(3650)}.get(fid, [])
+          'F12': since_start(M['viewed'], M['cart'], M['order']) + not_in_flow(7), 'F9': since_start(M['order']) + not_in_flow(3650), 'S1': not_in_flow(3650)}.get(fid, [])
     for e in f['emails']:
         if e['id'] in SKIP_IN_FLOW: continue
         fb.delay(e['delay_short'])
@@ -261,7 +261,7 @@ def build_gender(kind):
         fb.add('time-delay', {'unit': 'hours', 'value': 1, 'secondary_value': None, 'timezone': 'profile'})
     has = lambda f: pm(mid, 'greater-than', need, tf, f)
     none = lambda f: pm(mid, 'equals', 0, tf, f)
-    branches = [('Men', [[has(men)], [none(women)]]), ('Women', [[has(women)], [none(men)]])] + ([('Both', [[has(men)], [has(women)]])] if kind == 'G1' else [])
+    branches = [('Men', [[has(men)], [none(women)]]), ('Women', [[has(women)], [none(men)]])] + [('Both', [[has(men)], [has(women)]])]
     split = fb.add('multi-branch-split', {'name': 'Which side', 'branches': [
         {'branch_id': f'b{i}', 'branch_filter': {'condition_groups': [{'conditions': c} for c in conds]}, 'links': {}, 'order': i, 'name': f'Gender = {gv}'} for i, (gv, conds) in enumerate(branches)]
         + [{'branch_id': 'else', 'branch_filter': None, 'links': None, 'is_else': True}]}, ())

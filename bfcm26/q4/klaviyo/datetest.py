@@ -23,7 +23,7 @@ LI = [{'title': 'Braid Bracelet', 'variant_title': 'Black / Medium', 'quantity':
 EV = {'F2': {'Name': '3x Minimal Set', 'ImageURL': 'https://cavaier.com/x.png', 'URL': 'https://cavaier.com/p', 'Price': '94.90'},
       'F4': {'Product Name': 'Crystal Necklace', 'ImageURL': 'https://cavaier.com/x.png', 'Variant Name': 'Black / 55 cm', 'URL': 'https://cavaier.com/p', 'Price': 89.9, '$currency': 'EUR'},
       'F5': {'extra': {'checkout_url': 'https://cavaier.com/c', 'line_items': LI, 'presentment_currency': 'EUR'}, 'Total Discounts': '10.00', '$value': '29.90'},
-      'F9': {'ProductName': 'Cuban Necklace', 'ImageURL': 'https://cavaier.com/x.png', 'URL': 'https://cavaier.com/p'}}
+      'F9': {'Name': '3x Minimal Set', 'ImageURL': 'https://cavaier.com/x.png', 'URL': 'https://cavaier.com/p', 'Price': '94.90'}}
 def day_row(d):
     for x in Q.DAYS:
         if x['id'] == d: return x

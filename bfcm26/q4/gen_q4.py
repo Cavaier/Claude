@@ -187,7 +187,7 @@ DYN = {
 }
 def m_dynamic_product(m):
     im, nm, var, pr, note = DYN[m['source']]
-    under = {'pre post': '', 'ea': '<span class="red">Members save 30%</span>', 'bf cw': '<span class="red">30% off at checkout</span>',
+    under = {'pre post': '', 'ea': '<span class="red">Members save 30%</span>', 'bf cw': '<span class="red">Now 30% off</span>',
              'xmas': '<span class="red">Order by Dec 10 for Christmas</span>', 'late': '<span class="red">Or send a gift card</span>'}
     o = f'<div class="m-dyn{" side" if m.get("size") == "side" else ""}"><a href="#">{img(im, "")}</a><div class="dt"><h4>{t(nm)}</h4>'
     if var: o += f'<span class="small mute">{t(var)}</span>'
@@ -214,13 +214,13 @@ def m_order_table(m):
     case = row('p_case', 'Jewelry Case', 'Black', 'Included')
     w = row('p_crystal_neck', 'Crystal Necklace', 'Black / 55 cm', '€89.90') + row('p_braid_silver', 'Braid Bracelet', 'Silver / Medium', '€39.90') + case
     mm = row('p_set_m', '3x Minimal Set', 'Black / Medium', '€94.90') + row('p_braid_black', 'Braid Bracelet', 'Black / Medium', '€39.90') + case
-    disc = {'bf cw': ('30% off + jewelry case', {'W': '−€58.84', 'M': '−€60.34'}, {'W': '€90.86', 'M': '€94.36'}),
-            'pre ea xmas late post': ('Jewelry case (2+ pieces)', {'W': '−€19.90', 'M': '−€19.90'}, {'W': '€129.80', 'M': '€134.80'})}
+    disc = {'bf cw': ('30% off', {'W': '−€38.94', 'M': '−€40.44'}, {'W': '€90.86', 'M': '€94.36'}),
+            'pre ea xmas late post': ('Subtotal', {'W': '€129.80', 'M': '€134.80'}, {'W': '€129.80', 'M': '€134.80'})}
     tot = ''
     for k, (lab, d, tt) in disc.items():
         cls = ' '.join(PC[x] for x in k.split())
-        tot += (f'<div class="st {cls}"><div class="ot"><span>{lab}</span><span class="red">{t(d)}</span></div>'
-                f'<div class="ot"><span>Shipping</span><span>{"Free" if k == "bf cw" else "[shipping offer to confirm]"}</span></div>'
+        tot += (f'<div class="st {cls}"><div class="ot"><span>{lab}</span><span{' class="red"' if k == "bf cw" else ""}>{t(d)}</span></div>'
+                f'<div class="ot"><span>Shipping</span><span>Free</span></div>'
                 f'<div class="ot tt"><span>Total</span><b>{t(tt)}</b></div></div>')
     return (f'<div class="m-order{" c" if m.get("compact") else ""}"><div class="oh"><span>Your order</span><span class="lab">Saved</span></div>'
             f'<div class="gW">{w}</div><div class="gM">{mm}</div>{tot}'
@@ -237,7 +237,7 @@ def m_gift_box(m):
     return f'<div class="m-gift">{img(m.get("img", "p_case"), "")}<div><span class="lab red">{t(m["kicker"])}</span><h4>{t(m["title"])}</h4><p>{t(m["text"])}</p></div></div>'
 
 def m_gift_card(m):
-    return (f'<div class="m-gc"><div class="card">{img("logo", "Cavaier", "width:84px;height:14px", "logo")}<span class="amt">Gift card · any amount</span></div>'
+    return (f'<div class="m-gc"><div class="card">{img("logo", "Cavaier", "width:84px;height:14px", "logo")}<span class="amt">Gift card · €10 to €1,000</span></div>'
             f'<h4>{t(m["title"])}</h4><p>{t(m["text"])}</p><a class="solid" href="#">{t(m["cta"])}</a></div>')
 
 def m_steps(m): return '<div class="m-steps">' + ''.join(f'<div><b>0{i+1}</b><p>{t(x)}</p></div>' for i, x in enumerate(m['items'])) + '</div>'

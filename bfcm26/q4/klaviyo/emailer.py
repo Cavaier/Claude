@@ -61,6 +61,7 @@ class R:
         if isinstance(v, str):
             if getattr(self, '_plain', False): v = re.sub(r'<[^>]+>', '', v).replace('&nbsp;', ' ')
             s = re.sub(r'«(\w+)»', lambda m: self.tok(m.group(1)), v)
+            if self.acct == 'US': s = s.replace('€10', '$10').replace('€1,000', '$1,000')  # gift card amounts
             return s.replace('class="red"', f'style="color:{RED}"')
         if set(v) <= {'W', 'M'}: return self.gender(self.t(v.get('W', '')), self.t(v.get('M', '')))
         if self.ctx:
@@ -205,7 +206,7 @@ class R:
            'bis': ("{{ event.ImageURL }}", "{{ event.ProductName|find_replace:'Stack Set|Set' }}", None, None)}
     def m_dynamic_product(self, m):
         im, nm, var, pr = self.DYN[m['source']]
-        under = {'ea': 'Members save 30%', 'bf cw': '30% off at checkout', 'xmas': 'Order by Dec 10 for Christmas', 'late': 'Or send a gift card'}
+        under = {'ea': 'Members save 30%', 'bf cw': 'Now 30% off', 'xmas': 'Order by Dec 10 for Christmas', 'late': 'Or send a gift card'}
         href = '{{ event.URL }}'
         if self.ctx:  # preview stand-ins
             im = self.IMG.get('p_set_w' if self.ctx['g'] == 'W' else 'p_set_m'); nm = '3x Minimal Set'; var = var and 'Black / Medium'; pr = pr and '€94.90'
@@ -251,7 +252,7 @@ class R:
                         f'<td valign="middle" style="padding:16px 16px 16px 2px">{self.lab(m["kicker"])}<div style="margin:6px 0;font:400 12px/1.3 {FONT};letter-spacing:1.4px;text-transform:uppercase">{self.t(m["title"])}</div><div style="font:300 13px/1.5 {FONT};color:{INK2}">{self.t(m["text"])}</div></td></tr></table>', '36px 24px 0')
     def m_gift_card(self, m):
         card = (f'<table role="presentation" width="280" cellpadding="0" cellspacing="0" align="center" style="background:{WHITE};border:1px solid {LINE}"><tr><td style="padding:18px;height:139px" valign="top">'
-                f'<img src="{self.IMG["logo"]}" width="84" alt="Cavaier" style="display:block;border:0"><div style="height:80px"></div><div style="font:300 13px/1 {FONT};color:{GREY}">Gift card &middot; any amount</div></td></tr></table>')
+                f'<img src="{self.IMG["logo"]}" width="84" alt="Cavaier" style="display:block;border:0"><div style="height:80px"></div><div style="font:300 13px/1 {FONT};color:{GREY}">Gift card &middot; {"$10 to $1,000" if self.acct == "US" else "€10 to €1,000"}</div></td></tr></table>')
         o = card + f'<h3 style="margin:18px 0 0;font:300 24px/1.1 {FONT};color:{BLACK}">{self.t(m["title"])}</h3><p style="margin:12px 0 18px;font:300 13.5px/1.55 {FONT};color:{INK2}">{self.t(m["text"])}</p>' + self.btn(m['cta'], f'{self.base}/products/cavaier-gift-card')
         return self.row(f'<div style="background:{FOG};padding:26px 24px 28px;text-align:center">{o}</div>', '36px 24px 0')
     def m_steps(self, m):

@@ -24,8 +24,8 @@ def emspec(k,name):
 X0,Y0=6000,0
 # ---------- pop-up: one row per period
 ROWH0=844+420
-PERIOD={'pre':'Oct 27 – Nov 10','ea':'Nov 11 – 12 · code BF26 · publish Nov 11, 09:00','bf':'Nov 13 – Dec 6 · Black Friday + Cyber Week · publish Nov 13, 08:00',
-        'xmas':'Dec 7 – Christmas cut-off · publish Dec 7','late':'Cut-off – Dec 24 · publish on the cut-off day','post':'Dec 26 → · publish Dec 26'}
+PERIOD={'pre':'Oct 27 – Nov 10','ea':'Nov 11 – 12 · code BF26 · publish Nov 11, 09:00','bf':'Nov 13 – Dec 6 · Black Friday + Cyber Week · publish Nov 13, 08:00 · Dec 1: badge → “30% OFF EVERYTHING · UNTIL DEC 6”',
+        'xmas':'Dec 7 – 10 · cut-off Thu Dec 10 · publish Dec 7','late':'Dec 11 – 24 · publish Dec 11','post':'Dec 25 → · publish Dec 25'}
 LABW,GAP,ROWH=1500,120,844+420
 y=200
 for ph in ['pre','ea','bf','xmas','late','post']:
@@ -49,7 +49,7 @@ def mc(f):
     p=([f"{ne} email"+('s' if ne!=1 else '')] if ne else [])+([f"{ns} text"+('s' if ns!=1 else '')] if ns else [])
     return ' + '.join(p) or 'no messages, sets a profile property'
 NE=sum(1 for f in Q.FLOWS for e in f['emails'] if not e.get('kind'))
-SUB={'S':'S1 SMS welcome · S2 the six SMS campaigns · G1–G2 fill in Gender from orders and browsing',
+SUB={'S':'S1 SMS welcome (+ every period) · S2 the eight SMS campaigns · G1–G2 Gender · Rules · Flow texts every period (far right)',
      'W':f"{len(Q.FLOWS)} flows · {NE} emails + their texts · profile property Gender = “Women”, “Both” or empty",
      'M':f"{len(Q.FLOWS)} flows · {NE} emails + their texts · profile property Gender = “Men”"}
 BANDTOP={};BANDY={}
@@ -81,7 +81,7 @@ for G,GN,FL in (('S','SMS + profile',Q.SFLOWS),('W','Women',Q.FLOWS),('M','Men',
 # ---------- by period: next to each gender band, one section per flow, a row per email and a column per sale period
 PHS=['pre','ea','bf','cw','xmas','late','post']
 PDATE={'pre':'Oct 27 – Nov 10','ea':'Nov 11 – 12 · code BF26','bf':'Nov 13 – 30 · shown: Nov 14 – 26','cw':'Dec 1 – 6',
-       'xmas':'Dec 7 – [cut-off]','late':'[Cut-off] – Dec 24','post':'Dec 26 – Jan 10'}
+       'xmas':'Dec 7 – 10','late':'Dec 11 – 24','post':'Dec 25 – Jan 10'}
 COLW,CG,LW=600,220,1000
 GW=LW+len(PHS)*(COLW+CG)+PAD;LIM=16000;VG=1800  # VG: room for the section name between stacked sections
 px0=max(s_['x']+s_['w'] for s_ in secs)+1500;pbottom=0
