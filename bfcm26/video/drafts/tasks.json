@@ -296,5 +296,40 @@
     "audio": true,
     "audio_codec": "aac",
     "note": "First sound draft cgt-20261009072800-o67rt failed: OutputAudioSensitiveContentDetected.PolicyViolation (audio copyright); retried."
+  },
+  "R1-08-circle-photo": {
+    "task_id": "cgt-20261009155036-b6nlc",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "resolution": "480p",
+    "ratio": "281:374",
+    "duration": 5,
+    "generate_audio": true,
+    "seed": 32178,
+    "draft": true,
+    "draft_task_id": "cgt-20261009155036-b6nlc",
+    "file": "R1-08-circle-photo.mp4",
+    "size": "562x748",
+    "duration_s": 5.06,
+    "audio": true,
+    "audio_codec": "aac",
+    "note": "First sound draft cgt-20261009154920-fi5h8 failed: OutputAudioSensitiveContentDetected.PolicyViolation (audio copyright); retried."
+  },
+  "R1-10-minimal-list-photo": {
+    "task_id": "cgt-20261009154923-j9zzz",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "resolution": "480p",
+    "ratio": "281:374",
+    "duration": 5,
+    "generate_audio": true,
+    "seed": 58449,
+    "draft": true,
+    "draft_task_id": "cgt-20261009154923-j9zzz",
+    "file": "R1-10-minimal-list-photo.mp4",
+    "size": "562x748",
+    "duration_s": 5.06,
+    "audio": true,
+    "audio_codec": "aac"
   }
 }
