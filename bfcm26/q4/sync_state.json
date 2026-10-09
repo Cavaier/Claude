@@ -1051,7 +1051,7 @@
    "S-S1T2": {
     "em": "639:301",
     "br": null,
-    "hash": "force"
+    "hash": "79f82bf277997ef5"
    },
    "T-S-S2": {
     "em": "639:317",
@@ -1066,7 +1066,7 @@
    "S-S2C1": {
     "em": "636:493",
     "br": null,
-    "hash": "force"
+    "hash": "b6b90f0147e2ac3a"
    },
    "S-S2C2": {
     "em": "636:509",
@@ -1081,42 +1081,42 @@
    "S-S2C4": {
     "em": "636:541",
     "br": null,
-    "hash": "force"
+    "hash": "958c4555040079fc"
    },
    "S-S2C5": {
     "em": "637:295",
     "br": null,
-    "hash": "force"
+    "hash": "d5d34d92606ad867"
    },
    "S-S2C6": {
     "em": "637:311",
     "br": null,
-    "hash": "force"
+    "hash": "9a3dbafc450b6df4"
    },
    "T-S-G1": {
     "em": "637:327",
     "br": null,
-    "hash": "force"
+    "hash": "92af9c81b5b409de"
    },
    "D-S-G1": {
     "em": "637:333",
     "br": null,
-    "hash": "force"
+    "hash": "f48cf5d05852bcd6"
    },
    "T-S-G2": {
     "em": "637:390",
     "br": null,
-    "hash": "force"
+    "hash": "db53678eae96ca73"
    },
    "D-S-G2": {
     "em": "637:396",
     "br": null,
-    "hash": "force"
+    "hash": "acf17e95688ce618"
    },
    "W-F2T1": {
     "em": "638:267",
     "br": null,
-    "hash": "force"
+    "hash": "b1280131c3c32fd4"
    },
    "W-F4T1": {
     "em": "639:89",
@@ -1131,7 +1131,7 @@
    "W-F7T1": {
     "em": "637:212",
     "br": null,
-    "hash": "force"
+    "hash": "df804746c51bd1f6"
    },
    "W-F9T1": {
     "em": "638:364",
@@ -1141,7 +1141,7 @@
    "M-F2T1": {
     "em": "639:202",
     "br": null,
-    "hash": "force"
+    "hash": "f4ae58004eff812f"
    },
    "M-F4T1": {
     "em": "636:89",
@@ -1156,7 +1156,7 @@
    "M-F7T1": {
     "em": "638:89",
     "br": null,
-    "hash": "force"
+    "hash": "bc780179a5d86bf6"
    },
    "M-F9T1": {
     "em": "639:395",
@@ -3634,12 +3634,12 @@
     "hash": "033b824a33c193ff"
    },
    "S-S2C7": {
-    "em": "636:541",
+    "em": "952:2",
     "br": null,
     "hash": "cf0144f2a85c3bab"
    },
    "S-S2C8": {
-    "em": "637:295",
+    "em": "952:18",
     "br": null,
     "hash": "28e9aa311dc90aaf"
    }
