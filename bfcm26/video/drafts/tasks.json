@@ -1085,5 +1085,43 @@
   "seed": 7824,
   "file": "WNA-C3.mp4",
   "audio_codec": "aac"
+ },
+ "WNA-C1-v2a": {
+  "task_id": "cgt-20261010034827-gyclu",
+  "model": "dreamina-seedance-2-5-260628",
+  "status": "succeeded",
+  "draft": true,
+  "resolution": "480p",
+  "duration": 5,
+  "generate_audio": true,
+  "width": 480,
+  "height": 854,
+  "size": "480x854",
+  "duration_actual_s": 5.056,
+  "audio": "yes",
+  "seed": 54445,
+  "file": "WNA-C1-v2a.mp4",
+  "audio_codec": "aac",
+  "prompt_key": "WNA-C1-v2",
+  "input": "inputs/WNA-C1.jpg"
+ },
+ "WNA-C1-v2b": {
+  "task_id": "cgt-20261010034829-jka0u",
+  "model": "dreamina-seedance-2-5-260628",
+  "status": "succeeded",
+  "draft": true,
+  "resolution": "480p",
+  "duration": 5,
+  "generate_audio": true,
+  "width": 480,
+  "height": 854,
+  "size": "480x854",
+  "duration_actual_s": 5.056,
+  "audio": "yes",
+  "seed": 26368,
+  "file": "WNA-C1-v2b.mp4",
+  "audio_codec": "aac",
+  "prompt_key": "WNA-C1-v2",
+  "input": "inputs/WNA-C1.jpg"
  }
 }
