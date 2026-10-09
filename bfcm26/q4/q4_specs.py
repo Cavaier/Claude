@@ -268,7 +268,7 @@ F3 = dict(id='F3', name='Q4 Collection Browse', trigger_short='Viewed Collection
   emails=[])
 
 GUIDE = M('gift_guide', tiles=[dict(img='lf_w_crossed', label='For her'), dict(img='lf_m_linen_chest', label='For him'),
-                                dict(img='p_set_m_silver', label='The Sets', sub='3 pieces'), dict(img='p_giftcard', label='Gift card', sub='Instant · full price')])
+                                dict(img={'W': 'p_set_w', 'M': 'p_set_m_silver'}, label='The Sets', sub='3 pieces'), dict(img='p_giftcard', label='Gift card', sub='Instant · full price')])
 F3['emails'].append(dict(id='F3E1', name='The gift guide', delay='3 hours after', delay_short='3h', phases=ALL, bg='white', banner=B_REC,
   subject={'pre post': 'Find their piece.', 'ea': 'Your 30% gift guide.', 'bf cw': 'Gift guide: 30% off.', 'xmas': 'The Christmas gift guide.', 'late': 'Gifts that arrive instantly.'},
   preview={'pre post': 'For her, him, or you.', 'ea': 'Members shop first, 30% off.', 'bf cw': 'Every piece, no code needed.',
