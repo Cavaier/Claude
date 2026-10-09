@@ -4072,6 +4072,18 @@
      "Women": 9765,
      "Both": 992
     }
+   },
+   "backfill_views": {
+    "done": true,
+    "since": "2026-07-11",
+    "updated": 4460,
+    "gone": 0,
+    "failed": 0,
+    "split": {
+     "Men": 2268,
+     "Women": 1784,
+     "Both": 408
+    }
    }
   },
   "US": {
@@ -4497,6 +4509,18 @@
      "Men": 4433,
      "Women": 8565,
      "Both": 1145
+    }
+   },
+   "backfill_views": {
+    "done": true,
+    "since": "2026-07-11",
+    "updated": 55,
+    "gone": 0,
+    "failed": 0,
+    "split": {
+     "Men": 27,
+     "Both": 5,
+     "Women": 23
     }
    }
   }
