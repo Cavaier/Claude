@@ -225,6 +225,38 @@
       "audio": true,
       "audio_codec": "aac",
       "note": "Final from a sound draft; request omitted generate_audio and ratio, audio inherited. Output is 3:4 photo crop (1248x1664), composited into 1080x1920 later."
+    },
+    "M473-C1-photo": {
+      "task_id": "cgt-20261009194322-yyqyz",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "width": 1544,
+      "height": 1344,
+      "size": "1544x1344",
+      "duration": 5,
+      "duration_actual_s": 5.056,
+      "generate_audio": true,
+      "audio": "yes",
+      "file": "../finals/M473-C1-photo.mp4",
+      "draft_task_id": "cgt-20261009192700-8hs5j"
+    },
+    "M473-C3-photo": {
+      "task_id": "cgt-20261009194323-et1p9",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "width": 1248,
+      "height": 1664,
+      "size": "1248x1664",
+      "duration": 5,
+      "duration_actual_s": 5.056,
+      "generate_audio": true,
+      "audio": "yes",
+      "file": "../finals/M473-C3-photo.mp4",
+      "draft_task_id": "cgt-20261009192702-rg8py"
     }
   },
   "M445-C1": {
@@ -455,5 +487,20 @@
     "duration_s": 5.06,
     "audio": true,
     "audio_codec": "aac"
+  },
+  "R1-02-highlight-sound": {
+    "task_id": "cgt-20261009194324-xvxjm",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "width": 480,
+    "height": 854,
+    "size": "480x854",
+    "duration": 5,
+    "duration_actual_s": 5.056,
+    "generate_audio": true,
+    "audio": "yes",
+    "file": "R1-02-highlight-sound.mp4"
   }
 }
