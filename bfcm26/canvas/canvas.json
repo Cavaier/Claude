@@ -467,6 +467,30 @@
       "w": 1080,
       "x": 12220,
       "y": 4800
+    },
+    "V-WNB-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 420 - C1 · RENDERING DRAFT 480p",
+      "w": 1080,
+      "x": 14220,
+      "y": 4800
+    },
+    "V-WNB-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 420 - C2 · RENDERING DRAFT 480p",
+      "w": 1080,
+      "x": 15380,
+      "y": 4800
+    },
+    "V-WNB-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 420 - C3 · RENDERING DRAFT 480p",
+      "w": 1080,
+      "x": 16540,
+      "y": 4800
     }
   },
   "createdOnFiles": {
@@ -480,7 +504,7 @@
   "notes": {
     "activity": {
       "fill": "blue",
-      "text": "ACTIVITY & QUEUE · updated 20:08\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n15. 09:11 M472 C1–C3 · \"replace these videos with the same ones from M Batch 445\" → DONE\n16. 09:14 M472 videos · \"push to frame and clickup\" → DONE\n17. 09:28 men BF rows · \"move the first 2 batches to the bottom, shift up, renumber\" → DONE\n18. 11:24 M473 C1+C3 · \"make the remaining videos c1 and c3\" → DONE\n19. 11:37 M475 C1 + M473 C1 · \"text too chunky / bulky\" → DONE\n20. 11:42 M475 videos · \"1080p, swap batch numbers (videos 474, statics 475)\" → DONE\n21. 12:03 M474 C2 · \"redo, the minimal cuff got a defect\" → DONE\n22. 12:14 M473 statics · \"push to clickup and frame\" → DONE\n23. 13:20 M474 C2 · \"the video has no movement\" → DONE\n24. 13:26 M475 statics · \"push clickup and frame\" → DONE\n25. 13:38 M474 C2 · \"movement too much, hallucinating\" → DONE 13:59\n26. 14:01 M474 videos C1–C3 · \"push to clickup and frame\" → DONE 14:07\n27. 14:36 M475 C1–C2 · \"make to draft video\" → DONE 17:49\n28. 17:59 M476 C3 · \"redo, it should be like the static C1\" → DONE 18:01\n29. 18:03 M476 C3 · \"wrong design, should be like M Batch 475 - C3 as video\" → DONE 18:03\n30. 18:07 M476 C1–C3 · \"all 3 1080p then clickup + frame\" → DONE 18:43\n31. 18:43 M476 · \"clickup frame url ready\" → DONE 18:43\n32. 18:59 \"create me 1 batch W Batch 415 BFCM\" → DONE 18:59\n33. 19:09 W415 · \"re run them they were boring\" → DONE 19:09\n34. 19:15 W415 · \"push to clickup + frame + create video drafts\" → DONE 19:18\n35. 19:21 W416 C2 · \"nothing happens on this video\" → DONE 19:21\n36. 19:23 W416 C1–C3 · \"1080p\" → DONE 19:26\n37. 19:30 W416 C1–C3 · \"push clickup + frame\" → DONE 19:30\n38. 19:37 \"run 3 batches Women BFCM, no batch number yet\" → DONE 19:37\n39. 19:40 new A C3 · \"change image pick\" → DONE 19:40\n40. 19:44 new A · \"make to video draft, C2 typing the note + ticking the checklist\" → DONE 19:46\n41. 19:48 video of new A C1 · \"redo, twisting the wrist too far\" → DONE 19:52\n42. 19:52 chat · \"keep the CTA buttons like the male ones\" → DONE 19:52 (rule added)\n43. 19:53 video of new A C1 · \"still gets confused as an image\" → DONE 19:56\n44. 19:57 video of new A C3 · \"1080p\" → DONE 19:58\n45. 20:03 video of new A C1 · \"now twisting too much\" → DONE 20:03\n46. 20:03 video of new A C2 · \"consider this as final, it is 1080p already\" → DONE 20:03\n47. 20:04 video of new A C1 · \"make to 1080p\" → DONE 20:08\n48. 20:05 new A + B · \"give the batch numbers now\" → DONE 20:05\n\nRUNNING\n\nDONE\n✓ 20:05 Numbers given (matching ClickUp): new A → W Batch 417, its video set → W Batch 418, new B → W Batch 419 (video set will be W 420)\n✓ 20:03 Video of new A C1 redo 3: steadiest take, wrist holds still, soft light and sleeve move\n✓ 20:08 Video of W Batch 418 C1 (new A) → FINAL 1080p with sound on the canvas\n✓ 20:03 Video of new A C2 marked FINAL 1080p with sound\n✓ 19:58 Video of new A C3 → FINAL 1080p with sound on the canvas\n✓ 19:56 Video of new A C1 redo 2: silk sways and warm light glides across, wrist breathes but never turns\n✓ 19:52 Video of new A C1 redo: calmer take, wrist stays still (only silk + light move)\n✓ 19:52 Women new A/B/C + new A videos: CTA buttons square like the men’s (rule in CLAUDE.md)\n✓ 19:46 Video of new A: C1 + C3 Seedance drafts with sound, C2 animated note (types + ticks, typing sounds)\n✓ 19:40 W new A C3: new photo (woman resting on her arm, silver set, from Figma)\n✓ 19:37 3 new women BFCM batches (new A, B, C; numbers later): 9 statics + IM8 refs + copy notes + ROAS check\n✓ 19:30 Frame.io · W Batch 416 videos → EN (3) + No Text (3), with sound · ClickUp ✓ copy + rows + comments · mother → ads for review\n✓ 19:26 Seedance 2.5 · W Batch 416 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 19:21 W Batch 416 C2 fixed: the text layer was covering the moving strips; recomposed, all three finishes move\n✓ 19:18 Seedance 2.5 · W Batch 416 C1–C3 drafts 480p with sound on the canvas (from W415)\n✓ 19:18 Frame.io · W Batch 415 C1–C3 → EN (3) + No Text (3) · ClickUp mother → ads for review\n✓ 19:15 ClickUp · W Batch 415: copy + EU/US URL + C1–C3 rows (Black Friday · Imitation · BOF · 30% Off) + test comments\n✓ 19:09 W Batch 415 redo: bolder close-ups (C1 \"She’ll never take it off\", C2 finish triptych, C3 giant 30%) + new IM8 refs\n✓ 18:59 W Batch 415 (Black Friday, women) C1–C3 + IM8 refs + copy note + ROAS check\n✓ 18:43 Frame.io · M Batch 476 videos C1–C3 → EN (3) + No Text (3), with sound · ClickUp ✓ redone on the new M Batch 476 task",
+      "text": "ACTIVITY & QUEUE · updated 20:17\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n15. 09:11 M472 C1–C3 · \"replace these videos with the same ones from M Batch 445\" → DONE\n16. 09:14 M472 videos · \"push to frame and clickup\" → DONE\n17. 09:28 men BF rows · \"move the first 2 batches to the bottom, shift up, renumber\" → DONE\n18. 11:24 M473 C1+C3 · \"make the remaining videos c1 and c3\" → DONE\n19. 11:37 M475 C1 + M473 C1 · \"text too chunky / bulky\" → DONE\n20. 11:42 M475 videos · \"1080p, swap batch numbers (videos 474, statics 475)\" → DONE\n21. 12:03 M474 C2 · \"redo, the minimal cuff got a defect\" → DONE\n22. 12:14 M473 statics · \"push to clickup and frame\" → DONE\n23. 13:20 M474 C2 · \"the video has no movement\" → DONE\n24. 13:26 M475 statics · \"push clickup and frame\" → DONE\n25. 13:38 M474 C2 · \"movement too much, hallucinating\" → DONE 13:59\n26. 14:01 M474 videos C1–C3 · \"push to clickup and frame\" → DONE 14:07\n27. 14:36 M475 C1–C2 · \"make to draft video\" → DONE 17:49\n28. 17:59 M476 C3 · \"redo, it should be like the static C1\" → DONE 18:01\n29. 18:03 M476 C3 · \"wrong design, should be like M Batch 475 - C3 as video\" → DONE 18:03\n30. 18:07 M476 C1–C3 · \"all 3 1080p then clickup + frame\" → DONE 18:43\n31. 18:43 M476 · \"clickup frame url ready\" → DONE 18:43\n32. 18:59 \"create me 1 batch W Batch 415 BFCM\" → DONE 18:59\n33. 19:09 W415 · \"re run them they were boring\" → DONE 19:09\n34. 19:15 W415 · \"push to clickup + frame + create video drafts\" → DONE 19:18\n35. 19:21 W416 C2 · \"nothing happens on this video\" → DONE 19:21\n36. 19:23 W416 C1–C3 · \"1080p\" → DONE 19:26\n37. 19:30 W416 C1–C3 · \"push clickup + frame\" → DONE 19:30\n38. 19:37 \"run 3 batches Women BFCM, no batch number yet\" → DONE 19:37\n39. 19:40 new A C3 · \"change image pick\" → DONE 19:40\n40. 19:44 new A · \"make to video draft, C2 typing the note + ticking the checklist\" → DONE 19:46\n41. 19:48 video of new A C1 · \"redo, twisting the wrist too far\" → DONE 19:52\n42. 19:52 chat · \"keep the CTA buttons like the male ones\" → DONE 19:52 (rule added)\n43. 19:53 video of new A C1 · \"still gets confused as an image\" → DONE 19:56\n44. 19:57 video of new A C3 · \"1080p\" → DONE 19:58\n45. 20:03 video of new A C1 · \"now twisting too much\" → DONE 20:03\n46. 20:03 video of new A C2 · \"consider this as final, it is 1080p already\" → DONE 20:03\n47. 20:04 video of new A C1 · \"make to 1080p\" → DONE 20:08\n48. 20:05 new A + B · \"give the batch numbers now\" → DONE 20:05\n49. 20:08 W Batch 417 + 418 + 419 · \"push to clickup + frame\" → RUNNING\n50. 20:15 W Batch 419 · \"make draft videos\" → RUNNING\n\nRUNNING\n◐ 20:17 Seedance 2.5 · W Batch 420 (video set from W Batch 419) → drafts 480p with sound\n◐ 20:12 W Batch 417, 418, 419 → exports, Frame.io (EN + No Text), ClickUp fields + comments\n\nDONE\n✓ 20:05 Numbers given (matching ClickUp): new A → W Batch 417, its video set → W Batch 418, new B → W Batch 419 (video set will be W 420)\n✓ 20:03 Video of new A C1 redo 3: steadiest take, wrist holds still, soft light and sleeve move\n✓ 20:08 Video of W Batch 418 C1 (new A) → FINAL 1080p with sound on the canvas\n✓ 20:03 Video of new A C2 marked FINAL 1080p with sound\n✓ 19:58 Video of new A C3 → FINAL 1080p with sound on the canvas\n✓ 19:56 Video of new A C1 redo 2: silk sways and warm light glides across, wrist breathes but never turns\n✓ 19:52 Video of new A C1 redo: calmer take, wrist stays still (only silk + light move)\n✓ 19:52 Women new A/B/C + new A videos: CTA buttons square like the men’s (rule in CLAUDE.md)\n✓ 19:46 Video of new A: C1 + C3 Seedance drafts with sound, C2 animated note (types + ticks, typing sounds)\n✓ 19:40 W new A C3: new photo (woman resting on her arm, silver set, from Figma)\n✓ 19:37 3 new women BFCM batches (new A, B, C; numbers later): 9 statics + IM8 refs + copy notes + ROAS check\n✓ 19:30 Frame.io · W Batch 416 videos → EN (3) + No Text (3), with sound · ClickUp ✓ copy + rows + comments · mother → ads for review\n✓ 19:26 Seedance 2.5 · W Batch 416 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 19:21 W Batch 416 C2 fixed: the text layer was covering the moving strips; recomposed, all three finishes move\n✓ 19:18 Seedance 2.5 · W Batch 416 C1–C3 drafts 480p with sound on the canvas (from W415)\n✓ 19:18 Frame.io · W Batch 415 C1–C3 → EN (3) + No Text (3) · ClickUp mother → ads for review\n✓ 19:15 ClickUp · W Batch 415: copy + EU/US URL + C1–C3 rows (Black Friday · Imitation · BOF · 30% Off) + test comments\n✓ 19:09 W Batch 415 redo: bolder close-ups (C1 \"She’ll never take it off\", C2 finish triptych, C3 giant 30%) + new IM8 refs\n✓ 18:59 W Batch 415 (Black Friday, women) C1–C3 + IM8 refs + copy note + ROAS check\n✓ 18:43 Frame.io · M Batch 476 videos C1–C3 → EN (3) + No Text (3), with sound · ClickUp ✓ redone on the new M Batch 476 task",
       "w": 600,
       "x": 18680,
       "y": -1700
@@ -721,6 +745,14 @@
       "w": 240,
       "x": 14220,
       "y": -320
+    },
+    "copy-wnbv": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "W Batch 420 · ad copy (video ad set from W Batch 419)\n\nPRIMARY TEXT\nBubbles, sweat, sea: the stack stays on and keeps shining. This Black Friday, it's 30% off.\n\nThe 3x Minimal - Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included.\n\n30% off sitewide, no code, taken off at checkout. Free shipping.\n\nHEADLINE (25 chars)\nWaterproof Stack, 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Case included.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nSTATUS\n20:17 · Drafts 480p with sound rendering. Only the photos move inside their frames; text and layout stay as in the statics. Statics stay live as their own ads.",
+      "w": 600,
+      "x": 17700,
+      "y": 4800
     }
   },
   "order": [
@@ -785,7 +817,10 @@
     "WNB-C3.dc.html",
     "V-WNA-C1.dc.html",
     "V-WNA-C2.dc.html",
-    "V-WNA-C3.dc.html"
+    "V-WNA-C3.dc.html",
+    "V-WNB-C1.dc.html",
+    "V-WNB-C2.dc.html",
+    "V-WNB-C3.dc.html"
   ],
   "pages": [],
   "title": "Cavaier Static Ads Lab"
