@@ -80,6 +80,7 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
   - `split.js` makes `_bg.png` (the photo for Seedance) and `_ov.png` (the text layer). `compose.sh` lays the text over the clip at 1080×1920 and keeps the audio.
   - On card layouts, only the photo moves, inside its fixed frame (ffmpeg overlay at the photo box).
   - The static stays live as its own ad.
+  - Every video artboard with sound gets the SOUND ON/OFF button (`bfcm26/tools/soundbtn.py file …`) and `"is_interactive": true` in canvas.json; Eli presses Play on the artboard, then the button.
 - **Helper sessions:** new env vars only show up in new sessions. Run Seedance and Frame.io jobs in a fresh helper session (`create_session`, same env and branch) with the full task in its first prompt, then read the result with `list_events`.
 
 ## Delivery ("push to clickup and frame")
