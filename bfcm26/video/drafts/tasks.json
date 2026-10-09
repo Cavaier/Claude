@@ -273,6 +273,25 @@
       "audio": "yes",
       "file": "../finals/R1-02-highlight-sound.mp4",
       "draft_task_id": "cgt-20261009194324-xvxjm"
+    },
+    "R1-02-highlight-sound-v2": {
+      "task_id": "cgt-20261009200551-1y29k",
+      "draft_task_id": "cgt-20261009200440-c7m0k",
+      "model": "dreamina-seedance-2-5-260628",
+      "status": "succeeded",
+      "draft": false,
+      "resolution": "1080p",
+      "ratio": "9:16",
+      "width": 1080,
+      "height": 1920,
+      "size": "1080x1920",
+      "duration": 5,
+      "duration_actual_s": 5.056,
+      "fps": 24,
+      "generate_audio": true,
+      "audio": "yes",
+      "seed": 2723,
+      "file": "../finals/R1-02-highlight-sound-v2.mp4"
     }
   },
   "M445-C1": {
@@ -518,5 +537,22 @@
     "generate_audio": true,
     "audio": "yes",
     "file": "R1-02-highlight-sound.mp4"
+  },
+  "R1-02-highlight-sound-v2": {
+    "task_id": "cgt-20261009200440-c7m0k",
+    "model": "dreamina-seedance-2-5-260628",
+    "status": "succeeded",
+    "draft": true,
+    "resolution": "480p",
+    "width": 480,
+    "height": 854,
+    "size": "480x854",
+    "duration": 5,
+    "duration_actual_s": 5.056,
+    "fps": 24,
+    "generate_audio": true,
+    "audio": "yes",
+    "seed": 2723,
+    "file": "R1-02-highlight-sound-v2.mp4"
   }
 }
