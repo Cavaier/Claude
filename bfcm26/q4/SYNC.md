@@ -91,6 +91,7 @@ EU runs on Stockholm time, US on New York time. Reminders to this chat on Oct 18
 | Lapsed 120+ days | 15,720 | 4,713 | F7 |
 | One order 30–119 days ago | 5,658 | 2,719 | F11 |
 | Can receive SMS | 29,637 | 2,806 | S2 |
+| On the Sunset list, no click in 14 days | 0 until Oct 19 | 0 | Nov 2 suppression |
 
 ## SMS and Gender (on push)
 
@@ -109,7 +110,7 @@ EU runs on Stockholm time, US on New York time. Reminders to this chat on Oct 18
 - The only Klaviyo campaigns are S2C1–C8, draft SMS campaigns. Email campaigns live on the Figma campaigns page and are built by hand.
 - Lists `Q4 · Winback / Second purchase / Sunset / Sale live` + segments for the bulk adds.
 - Subject/preview: Klaviyo caps them at ~250 characters incl. logic. Where the date logic doesn't fit, the flow carries the current period's text; the routines run `push.py EU|US subjects` on Nov 11, Nov 13, Dec 1, Dec 7, Dec 11 and Dec 25.
-- Gender backfill from order history: run Oct 8 (approved), both accounts.
+- Gender backfill from order history: done Oct 8–9 (approved). EU 10,966 + earlier run set (3,287 ordered profiles no longer exist), US 14,067 (76 gone). Profiles with Gender now EU 50,657, US 20,204 (were 9,793 / 6,029). `push.py EU|US backfill` can be rerun: it skips anyone who has a Gender.
 - Pop-ups: `klaviyo/forms.py EU|US` built six draft forms per account (`Q4 Pop-up · Pre-sale` … `After Christmas`), built to the Figma design (two B/W photos as the side image, #F2F2F1 panel, logo, red kicker, light headline, black buttons, “Not now”, teaser tab), steps email → phone → who → done, shown after 5 s / exit intent / 2nd page, hidden from cart/checkout. `--replace` rebuilds them. Klaviyo limits: max 6 rows per column; the content column's styles must be null next to a side image; skip links must submit (they re-submit the email list). Publish the next one on each switch date and switch the previous one off.
 
 ## What stays manual
