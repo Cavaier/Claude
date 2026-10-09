@@ -1,0 +1,60 @@
+{
+  "script": "Her Black Friday wishlist. The three-piece stack, in black, silver or gold. Waterproof, so it never comes off. Case included, free shipping. Thirty percent off, sitewide. No code.",
+  "output_format": "mp3_44100_128",
+  "voices": [
+    {
+      "name": "Veda Sky",
+      "voice_id": "8quEMRkSpwEaWBzHvTLv",
+      "model": "eleven_multilingual_v2",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.15,
+        "use_speaker_boost": true,
+        "speed": 1.08
+      },
+      "duration": 16.12,
+      "file": "bfcm26/video/vo/W418-C2-vo-vedasky.mp3",
+      "kept": "speed 1.08",
+      "duration_speed_1.0": 18.65,
+      "duration_speed_1.08": 16.12
+    },
+    {
+      "name": "Relaxing Rachel",
+      "voice_id": "ROMJ9yK1NAMuu1ggrjDW",
+      "model": "eleven_multilingual_v2",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.15,
+        "use_speaker_boost": true
+      },
+      "duration": 19.41,
+      "file": "bfcm26/video/vo/W418-C2-vo-relaxingrachel.mp3",
+      "kept": "speed 1.0",
+      "duration_speed_1.0": 19.41,
+      "duration_speed_1.08": 19.46
+    },
+    {
+      "name": "Arabella",
+      "voice_id": "Z3R5wn05IrDiVCyEkUrK",
+      "model": "eleven_multilingual_v2",
+      "settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.8,
+        "style": 0.15,
+        "use_speaker_boost": true,
+        "speed": 1.08
+      },
+      "duration": 15.07,
+      "file": "bfcm26/video/vo/W418-C2-vo-arabella.mp3",
+      "kept": "speed 1.08",
+      "duration_speed_1.0": 15.54,
+      "duration_speed_1.08": 15.07
+    }
+  ],
+  "notes": [
+    "mp3_44100_192 was refused (403 output_format_not_allowed: only on Creator tier and above; account is pay-as-you-go), so mp3_44100_128 was used.",
+    "No voice fits 11.8 s, even at speed 1.08. The shorter version was kept for each voice. Durations are from natural pauses between sentences (0.4-0.8 s each), not silence padding at the ends."
+  ]
+}
