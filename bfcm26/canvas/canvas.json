@@ -471,7 +471,7 @@
     "V-WNB-C1.dc.html": {
       "h": 1920,
       "is_interactive": true,
-      "title": "W Batch 420 - C1 · RENDERING DRAFT 480p",
+      "title": "W Batch 420 - C1 · DRAFT 480p · SOUND",
       "w": 1080,
       "x": 14220,
       "y": 4800
@@ -479,7 +479,7 @@
     "V-WNB-C2.dc.html": {
       "h": 1920,
       "is_interactive": true,
-      "title": "W Batch 420 - C2 · RENDERING DRAFT 480p",
+      "title": "W Batch 420 - C2 · DRAFT 480p · SOUND",
       "w": 1080,
       "x": 15380,
       "y": 4800
@@ -487,7 +487,7 @@
     "V-WNB-C3.dc.html": {
       "h": 1920,
       "is_interactive": true,
-      "title": "W Batch 420 - C3 · RENDERING DRAFT 480p",
+      "title": "W Batch 420 - C3 · DRAFT 480p · SOUND",
       "w": 1080,
       "x": 16540,
       "y": 4800
@@ -749,7 +749,7 @@
     "copy-wnbv": {
       "fill": "gray",
       "maxH": 1920,
-      "text": "W Batch 420 · ad copy (video ad set from W Batch 419)\n\nPRIMARY TEXT\nBubbles, sweat, sea: the stack stays on and keeps shining. This Black Friday, it's 30% off.\n\nThe 3x Minimal - Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included.\n\n30% off sitewide, no code, taken off at checkout. Free shipping.\n\nHEADLINE (25 chars)\nWaterproof Stack, 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Case included.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nSTATUS\n20:17 · Drafts 480p with sound rendering. Only the photos move inside their frames; text and layout stay as in the statics. Statics stay live as their own ads.",
+      "text": "W Batch 420 · ad copy (video ad set from W Batch 419)\n\nPRIMARY TEXT\nBubbles, sweat, sea: the stack stays on and keeps shining. This Black Friday, it's 30% off.\n\nThe 3x Minimal - Stack Set in black, silver or gold. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included.\n\n30% off sitewide, no code, taken off at checkout. Free shipping.\n\nHEADLINE (25 chars)\nWaterproof Stack, 30% Off\n\nDESCRIPTION (23 chars)\nNo code. Case included.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nSTATUS\n20:24 · Drafts 480p with sound on the canvas. Only the photos move inside their frames (C2: gold and silver each move); text and layout as in the statics. Statics stay live as their own ads.",
       "w": 600,
       "x": 17700,
       "y": 4800
