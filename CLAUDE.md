@@ -48,12 +48,20 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
   - Black Friday men started at 467 and women at 415. Evergreen men start at 445.
   - Video batches take the next free number.
 - **Photos:** pull fresh product photos for every new batch from the Cavaier Figma file (https://www.figma.com/design/dEEVzBXoylSdZoRs0gonHn/Cavaier?node-id=17-2, file key `dEEVzBXoylSdZoRs0gonHn`, node `17-2`). Photos already on the canvas may be reused, but never build a batch only from them: each new batch brings in new images that fit its IM8 reference (right product, finish and gender).
-- **Products:** 3x Minimal Stack Set and 2x Duo Minimal Set. A name with a dash ("3x Minimal - Stack Set") is the women's product, without a dash the men's. Men's ads use men's photos only, and men and women never mix.
+- **Products:** 3x Minimal Stack Set and 2x Duo Minimal Set. The 3x stack is three separate pieces: one flat polished cuff bangle, one box chain and one square chain (never call it a snake chain). A name with a dash ("3x Minimal - Stack Set") is the women's product, without a dash the men's. Men's ads use men's photos only, and men and women never mix.
 - **Brand:**
   - Graphite monochrome (black, white, light grey) in Figtree. Headings are uppercase 300/400, labels uppercase with 0.1em letter spacing.
   - Keep it high-end and airy, never chunky (Eli approved M473 C1 as the reference): headline about 50 px, weight 300/400, letter spacing 0.04em; body about 27 px, weight 300, line height 1.6, narrow column (about 720 px); logo small (about 110 px wide); slim button (80 px tall, 22 px label); CTA buttons are square black blocks with no rounded corners, the same on women's and men's ads (no pill buttons); generous white space.
   - Keep backgrounds light. No large black or dark fields dominating the ad: black is for type, buttons and small accents.
   - Red `#A82C24` is only a small accent, only on light monochrome Black Friday layouts. Never red in Evergreen.
+- **Ideation images (generated, OpenAI `gpt-image-2.5-sunburst` via `OPENAI_API_KEY`, real product photo as reference):** must look like the nailed Cavaier look Eli showed:
+  - Look reference: `bfcm26/ideation/style/cavaier-look.jpg` (Eli's "nailed" example). Send it as a second reference image for the look only.
+  - 100% realistic, nothing CGI or stock-glossy.
+  - Close macro framing, shallow depth of field.
+  - Muted, slightly icy colors: cool neutral white balance, soft diffuse overcast light, low saturation.
+  - Very detailed skin (pores, fine lines, individual arm hairs).
+  - Jewelry rendered exactly: real metal reflections, every box-chain and square-chain link crisp.
+  - Check each image at full size before using it. Regenerate if the product shape, count or links are off.
 - **Format:** 1080×1920. Key text stays out of the top 270 px and the bottom 384 px.
 - **True claims only:**
   - Waterproof; sweat and heat resistant.
