@@ -44,3 +44,10 @@
 - The Shopify MCP connects to one store at a time (`switch-shop`, then Eli re-authorizes in claude.ai connector settings).
 - Oct 2026: same product types, gender, SEO and offer/adjustable cleanup applied as on the main store. Backup: `shopify-backups/us-products-before-2026-10-11.json`.
 - Open: us.cavaier.com can't be claimed in MC 5087698947 because MC 747874697 claims cavaier.com (all US products disapproved). Older US texts contain outdated "Free Shipping" lines (necklaces list Germany/Europe times).
+
+## Google Ads Desk (working log)
+
+- Dashboard: https://claude.ai/artifact/BEmCjut8iisbsUQsezpmNa ("Cavaier Google Ads Desk"), Dashboard type, data as attached JSON files.
+- Every change to the account, feed or tracking gets an entry in the change log (`changes.json`): id (C-### applied, P-### proposed), level, entity, change, why, expected, judged-by metric + guardrail, baseline numbers, eval date, then result, verdict and decision.
+- Verdict rules live on the "How we judge changes" tab: equal before/after windows (≥14 days, 28 for bidding/budget), ±10% threshold, ≥20 purchases a side, hygiene changes are "Not measurable".
+- To refresh: re-pull with the Google Ads API (scripts in session scratchpad were ad hoc), upload new JSON with Artifact `asset: true`, then `update` the dataset's `source.url`, `name`, `updated`.
