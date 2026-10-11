@@ -198,6 +198,27 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   new-customer goal, P-013 hold on Vacier. Shopping/PMax (after feed fix) is the main Google
   route to cold buyers for a visual product.
 
+### Non-brand deep dive (Oct 11, 2026; Google history, Meta, Trendtrack, store)
+- Google non-brand by country (all time, excl. Brand Search): UK 68.6k SEK ROAS 0.64; Norway 28.9k
+  0.84; Greece, Romania, Bulgaria, Portugal, Poland, Ireland, Spain, Czechia etc. 2–6k SEK each at
+  ~0 (PMax/Display spill-over). Never let cold campaigns run "worldwide/Europe".
+- Shopping/PMax all time 62.9k SEK, 79 purch, ROAS 0.60; but men's rope bracelet 1.49 (5.9% CR),
+  men's cuban 1.2–2.2, women's rope 2.09; sets, women's gold, cuff, cube ≈ 0. Google cold order
+  value ~480 SEK vs store ~820 SEK → push the 3x set (€94.90) to lift it.
+- Meta 90d (account "Cavaier - EU" 2839236759622727, ~3.0M SEK): UK 340k SEK ROAS 1.26 (491 purch,
+  692 SEK each), AU 219k 1.25, CA 201k 1.21, DE 201k 0.99, MX 1.36, IL 1.22, NL 1.12, FR 1.28,
+  JP 1.27. Men ~62% of spend. → Google target = Meta level, ROAS ≥ 1.3.
+- Competitors (Trendtrack): Vacier (Ivercia AB) 77 Google ads, mostly Shopping, one running since
+  2023 (black men's cuff). Craftd London 575 Google ads: UK/US search "#1 Men's Jewelry Brand –
+  Free Shipping", sitelinks Men's Bracelets / Make Your Own Set; plus YouTube/display. Similar
+  shops: Ana Luisa, Caitlyn Minimalist, Linjer, Craftd, Lost Gen Club, Jaxxon, Unode50.
+- Store prices (EUR): bracelets 29.90, cuff 34.90, braid/crystal 39.90, necklaces 34.90/39.90,
+  2x set 59.90, 4x set 89.90, 3x Minimal Stack Set 94.90, jewelry case 19.90.
+- Missing: keyword volumes (Keyword Planner blocked by API access; no SEO tool connected) →
+  asked Eli for a Keyword Planner export. Triple Whale MCP exposes only help pages here.
+- Plan: P-011 Search | Men | UK, P-014 Gifts for Him (Nov–Dec), P-015 Shopping after feed,
+  P-016 AU+CA, P-017 DE/NL/FR later.
+
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
   Purchase"), but the app one recorded 0 in 30 days, so no real double counting happened
@@ -245,6 +266,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Non-brand deep dive (section 3); plan P-011, P-014–P-017 proposed.
 - **2026-10-11** P-010 applied (4 English misspelling keywords in all 13 ad groups + 30 local "caviar + product word" variants per language, exact, as a test). P-012: Customer Match list
   9486387439 created + marked PURCHASERS; 28,576 consenting buyers hashed in
   cavaier-customer-match-hashed.csv (gitignored); Eli uploaded it in the UI Oct 11 (job 66031455519). The Ads API refuses
