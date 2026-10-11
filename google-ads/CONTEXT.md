@@ -177,6 +177,27 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   ads came back → most brand-ad sales would have come through the organic result anyway.
   Caveats: not randomized, seasonality, Meta mix; still the cleanest signal available.
 
+### Non-brand / new-customer analysis (Oct 11, 2026)
+- Every non-brand campaign since 2024 lost money: ~160,000 SEK total. Demand Gen Women 34k SEK
+  ROAS 0.12; P-Max Women UK 22k 0.41; P-Max Norway 19k 1.23; PMax retargeting UK 17.7k 1.44;
+  Demand Gen Men 10.7k 0.75; Shopping bracelets 10k 0.82; generic search men UK (Jan 2025)
+  4.8k SEK / 2 purchases; generic search women UK 2.5k / 0; DSA 2.8k 0.48.
+- Non-brand search terms all time: 11,099 SEK, 17.5 purchases; 12 of them from "caviar bracelet"
+  (186 clicks, 694 SEK) = people mishearing "Cavaier" → treat as brand misspelling.
+- Keyword Planner is not available via API (developer token has explorer access only).
+- Shopify 90d: 5,457 orders, €393k, AOV €72.8; 4,419 new vs 955 returning customers. 3x Minimal
+  Stack Set (men + women) = ~2,670 orders / €242k (~60% of sales, AOV ~€91). Then Cube, Rope,
+  Minimal Cuff, Role bracelets (~€20–35).
+- Customer Match list "817 Buyers" is too small to use (search size 0). Remarketing lists: product
+  viewers 180d ~73k (search).
+- Vacier (vacier.com): Swedish, "Timeless Versatile Jewelry from Sweden", near-identical offer
+  (bracelets, necklaces, rings, sets; adjustable; free shipping over €35; lifetime warranty; 4.96/5
+  from 14k reviews; Trustpilot 4.9 from 3.4k). "vacier" searches in our account: ~80 impressions
+  all time, 1 purchase. Bidding on "vacier" risks Vacier bidding on "cavaier".
+- Proposals: P-010 misspellings, P-011 UK non-brand search test, P-012 Customer Match +
+  new-customer goal, P-013 hold on Vacier. Shopping/PMax (after feed fix) is the main Google
+  route to cold buyers for a visual product.
+
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
   Purchase"), but the app one recorded 0 in 30 days, so no real double counting happened
@@ -224,6 +245,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Non-brand / new-customer analysis (section 3); proposed P-010 to P-013.
 - **2026-10-11** Brand budget analysis + account history (section 3): Dec–Feb natural experiment shows
   little extra from brand ads; proposed P-008 (150 SEK/day, CPC cap 4) and P-009 (holdout test).
 - **2026-10-11** Executed Brand Search makeover (C-009, P-004, P-006, P-007): renamed, English
