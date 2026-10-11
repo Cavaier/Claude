@@ -44,7 +44,17 @@ Not available: absolute search volumes and CPCs. → Run `search-keywords.csv` t
 ## 5. Bidding and budget
 - **Phase 1 (weeks 1–3): Maximise clicks with a max CPC cap of €2.00**. Without conversion history, Smart Bidding has nothing to optimise from. Budget **~€80/day** total (€28 Earrings, €28 Tennis, €24 Rings).
 - **Phase 2 (from ~15 purchases): Maximise conversion value.** Begin checkout may be used temporarily as an extra conversion signal if purchases are too few.
-- **Phase 3 (≥30 purchases in 30 days): target ROAS.** Set the target from your gross margin; break-even ROAS = 1 / margin. At a 50% margin, break-even is 200%, so start at ~400% and adjust.
+- **Phase 3 (≥30 purchases in 30 days): target ROAS.** Based on buy-in prices (SEK, 786 variants: earrings + tennis bracelets; rings missing):
+
+  | Category | Median price incl. VAT | Median buy-in | Margin excl. VAT | Break-even ROAS* |
+  |---|---|---|---|---|
+  | Earrings, lab-grown | 18,599 kr | 4,541 kr | 71% | ~180% |
+  | Earrings, natural | 49,099 kr | 23,071 kr | 41% | ~300% |
+  | Tennis, lab-grown | 54,199 kr | 17,282 kr | 60% | ~210% |
+  | Tennis, natural | 174,699 kr | 57,266 kr | 60% | ~210% |
+
+  *ROAS on order value incl. 25% VAT, before payment fees, shipping/insurance and returns. Start target **350%** (buffer for fees and returns), then lower towards 250% if volume is too low.
+  - Lab-grown earrings have the best margin, so they get priority in budget and ads.
 - Estimate (verify with Keyword Planner): CPC €0.80–2.00, conversion rate 0.5–1.5%, order value ~€1,500 → about €100–400 per sale.
 - "New customers only" needs a customer list of ≥1,000. Until then, every sale is a new customer anyway.
 
