@@ -864,5 +864,63 @@
  "SP": [
   "cavaier",
   "cavaierofficial"
- ]
+ ],
+ "misspell_local": {
+  "German": [
+   "caviar armband",
+   "caviar schmuck",
+   "caviar kette"
+  ],
+  "Dutch": [
+   "caviar armband",
+   "caviar sieraden",
+   "caviar ketting"
+  ],
+  "Spanish": [
+   "caviar pulsera",
+   "caviar joyas"
+  ],
+  "French": [
+   "caviar bijoux",
+   "bracelet caviar"
+  ],
+  "Italian": [
+   "caviar bracciale",
+   "caviar gioielli",
+   "bracciale caviar"
+  ],
+  "Swedish": [
+   "caviar armband",
+   "caviar smycken"
+  ],
+  "Polish": [
+   "caviar bransoletka",
+   "caviar biżuteria"
+  ],
+  "Norwegian": [
+   "caviar armbånd",
+   "caviar smykker"
+  ],
+  "Danish": [
+   "caviar armbånd",
+   "caviar smykker"
+  ],
+  "Hebrew": [
+   "caviar צמיד",
+   "caviar תכשיטים"
+  ],
+  "Japanese": [
+   "caviar ブレスレット",
+   "caviar アクセサリー"
+  ],
+  "Chinese": [
+   "caviar 手鏈",
+   "caviar 首飾"
+  ],
+  "English": [
+   "caviar jewelry",
+   "caviar jewellery",
+   "caviar necklace"
+  ]
+ }
 }

@@ -245,7 +245,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
-- **2026-10-11** P-010 applied (4 misspelling keywords in all 13 ad groups). P-012: Customer Match list
+- **2026-10-11** P-010 applied (4 English misspelling keywords in all 13 ad groups + 30 local "caviar + product word" variants per language, exact, as a test). P-012: Customer Match list
   9486387439 created + marked PURCHASERS; 28,576 consenting buyers hashed in
   cavaier-customer-match-hashed.csv (gitignored) for Eli to upload in the UI. The Ads API refuses
   Customer Match uploads (use Data Manager API, needs the datamanager OAuth scope we don't have).
