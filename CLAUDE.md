@@ -48,6 +48,6 @@
 ## Google Ads Desk (working log)
 
 - Dashboard: https://claude.ai/artifact/BEmCjut8iisbsUQsezpmNa ("Cavaier Google Ads Desk"), Dashboard type, data as attached JSON files.
-- Every change to the account, feed or tracking gets an entry in the change log (`changes.json`): id (C-### applied, P-### proposed), level, entity, change, why, expected, judged-by metric + guardrail, baseline numbers, eval date, then result, verdict and decision.
+- Every change to the account, feed or tracking gets an entry in the change log (`changes.json`): id (permanent: C-### for changes logged as already done, P-### for changes first proposed; the status field shows Proposed/Applied/Reverted), level, entity, change, why, expected, judged-by metric + guardrail, baseline numbers, eval date, then result, verdict and decision.
 - Verdict rules live on the "How we judge changes" tab: equal before/after windows (≥14 days, 28 for bidding/budget), ±10% threshold, ≥20 purchases a side, hygiene changes are "Not measurable".
 - To refresh: re-pull with the Google Ads API (scripts in session scratchpad were ad hoc), upload new JSON with Artifact `asset: true`, then `update` the dataset's `source.url`, `name`, `updated`.
