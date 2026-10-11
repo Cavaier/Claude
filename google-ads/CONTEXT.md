@@ -127,8 +127,11 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   Shopify orders, not Google Ads data. Each country sits in exactly one campaign; multi-language
   countries get one main language: Belgium → Dutch, Switzerland → German, Canada → English.
 - Eli will translate the English country stores in Shopify (T Lab – AI Language Translate is
-  installed). A language's ads launch once its store language is live, so ad and page match.
-  Order: German + Dutch (stores exist) → Spanish + French → Hebrew, Japanese, Italian → smaller.
+  installed).
+- Pick local brand campaigns by data (Shopify orders per language), not by whether the store is
+  translated yet (Eli, Oct 11). First wave: every language with ~150+ orders in 90 days:
+  German, Dutch, Spanish, French, Hebrew, Japanese, Italian, Chinese (HK). Smaller languages
+  stay in Brand Search | WW until their volume justifies a campaign.
 - Working method: one change at a time per campaign, logged on the Desk with baseline,
   judged by the rules on its "How we judge changes" tab.
 
