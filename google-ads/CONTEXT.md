@@ -245,6 +245,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** P-010 applied (4 misspelling keywords in all 13 ad groups). P-012: Customer Match list
+  9486387439 created + marked PURCHASERS; 28,576 consenting buyers hashed in
+  cavaier-customer-match-hashed.csv (gitignored) for Eli to upload in the UI. The Ads API refuses
+  Customer Match uploads (use Data Manager API, needs the datamanager OAuth scope we don't have).
+  Only marketing-consented customers may be uploaded (privacy policy: partners only with consent);
+  Eli asked to upload everyone as opted in – declined (GDPR / Google policy).
 - **2026-10-11** Non-brand / new-customer analysis (section 3); proposed P-010 to P-013.
 - **2026-10-11** Brand budget analysis + account history (section 3): Dec–Feb natural experiment shows
   little extra from brand ads; proposed P-008 (150 SEK/day, CPC cap 4) and P-009 (holdout test).
