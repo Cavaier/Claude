@@ -47,8 +47,13 @@
 
 ## Google Ads Desk (working log)
 
-- **Context book: `google-ads/CONTEXT.md`** — read it before any Google Ads work and add to it
-  whenever something is looked at, decided or learned (facts, findings, decisions, proposals, log).
+- **Before any Google Ads work, read both:**
+  1. the context book `google-ads/CONTEXT.md` (facts, findings, decisions, proposals, log), and
+  2. the Desk change log — every entry, whatever its status: Proposed, Applied, Evaluated
+     (has a verdict) and Reverted. Read it with `ArtifactData` `get` on `datasets/changes`, then
+     fetch the file its `source.url` names (Artifact `read` with that `/_blob/…` id as `path`).
+- After any work, add to both: the change log for changes, the context book for what was
+  looked at, decided or learned. Due evaluations (eval date passed, verdict Pending) come first.
 
 - Dashboard: https://claude.ai/artifact/BEmCjut8iisbsUQsezpmNa ("Cavaier Google Ads Desk"), Dashboard type, data as attached JSON files.
 - Every change to the account, feed or tracking gets an entry in the change log (`changes.json`): id (permanent: C-### for changes logged as already done, P-### for changes first proposed; the status field shows Proposed/Applied/Reverted), level, entity, change, why, expected, judged-by metric + guardrail, baseline numbers, eval date, then result, verdict and decision.

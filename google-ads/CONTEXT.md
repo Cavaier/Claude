@@ -121,6 +121,8 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 - Do the work myself where tools allow; destructive changes need Eli's OK.
 - Old paused campaigns: removed. Don't build new campaigns until Eli says so.
 - Sitelinks on brand: only Men's / Women's collection (no Sets sitelink).
+- "cavaierofficial" is Cavaier's Instagram handle: a real brand search. Cover it with
+  [exact] and [phrase], never broad.
 - Localized brand campaigns: yes in principle for markets with a local-language store,
   sized by Shopify demand (not Google Ads data).
 - Working method: one change at a time per campaign, logged on the Desk with baseline,
@@ -130,9 +132,6 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 5. Proposals and open questions
 
-- **P-001** Pause broad "cavaierofficial", add [exact] — waiting for OK. Urgent: frees ~63%
-  lost brand impression share.
-- **P-003** All languages on the English brand campaign (ads stay English) — waiting for OK.
 - **P-004** Rewrite brand RSA (12–15 headlines, 4 descriptions, no "adjustable", confirm
   shipping offer) — needs Eli's current offer.
 - **P-006** Brand Search | DE: DE+AT+CH, German, German ads → cavaier.de; exclude those
@@ -149,6 +148,9 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Applied P-001 (paused "cavaierofficial" [broad]; added [exact] + [phrase] —
+  it's the Instagram handle) and P-003 (all languages; ads stay English). Evaluate Oct 25:
+  expect brand impression share up from ~35% and spend down.
 - **2026-10-11** Shopify market analysis (above). Localization plan revised: DE first, NL next.
 - **2026-10-11** Applied P-002 (exclude US from Brand Search) and P-005 (sitelinks: only
   Men's/Women's with clean URLs; removed Bracelets/Necklaces sitelinks and 5 account
