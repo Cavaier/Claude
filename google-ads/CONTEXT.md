@@ -147,6 +147,24 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   RSA still says "Lifetime Warranty" → replace via P-004. Shopify product texts checked: no
   warranty or old review claims.
 
+### Brand budget analysis (Oct 11, 2026)
+- Brand keywords only, 30 days to Oct 10: 1,132 impr at ~33% IS, 606 clicks, 2,276 SEK, 50.5 purchases,
+  31,260 SEK (ROAS 13.7; 45 SEK/purchase; CPC 3.76; conv. rate ~8%; order ~620 SEK). The broad
+  "cavaierofficial" took 6,762 SEK of the 9,039 SEK in the same period (5.5 purchases).
+- Full brand coverage estimate: ~3,400 impr, ~1,800 clicks, ~6,800 SEK/month (~230 SEK/day).
+- Lost IS to rank on exact brand ~1–2%, CPC ~3 SEK → little or no competition on "cavaier".
+  Auction insights are not available through the API (UI only). Trendtrack shows no other
+  advertiser using "cavaier" in ad text.
+- Shopify last click (utm_campaign 21651817099): Jul 38, Aug 28, Sep 38 orders; 75% new customers.
+  Google-referred orders (organic + paid) ~250/month (Sept 142) → paid brand is ~15% of Google orders.
+- Research: eBay (Blake/Nosko/Tadelis) brand ads ~0 extra sales (strong brand, top organic, no
+  rivals); Edmunds lost ~50% of paid traffic when off; Bing 824-firm study: bigger effect for
+  lesser-known brands; vendor holdout tests 20–50% incremental. Competitor bidding raises it.
+- Break-even: a brand click earns ~52 SEK revenue. Brand pays off if extra share × margin × 52 >
+  CPC. At 60% margin and 20% extra: ~6 SEK per click; at 50% extra: ~15 SEK.
+- Proposed P-008 (budget 250 ceiling now, CPC cap 7 after Nov 1) and P-009 (country holdout test
+  in January). Need Eli's gross margin to fix the CPC cap.
+
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
   Purchase"), but the app one recorded 0 in 30 days, so no real double counting happened
@@ -194,6 +212,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Brand budget analysis (section 3); proposed P-008, P-009.
 - **2026-10-11** Executed Brand Search makeover (C-009, P-004, P-006, P-007): renamed, English
   ad group merged, 12 language ad groups with ads/keywords/sitelinks/callouts/snippets, 32 auto
   assets removed, old English ad paused after new one approved. All verified against the spec
