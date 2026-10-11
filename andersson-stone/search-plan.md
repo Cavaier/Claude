@@ -1,57 +1,73 @@
-# Andersson Stone – Search campaign plan (new customers)
+# Andersson Stone – Search plan: first sales from new customers
 
-Google Ads account 842-044-6950 · drafted 2026-10-11 · nothing has been changed in the account.
+Google Ads 842-044-6950 · 2026-10-11 · **nothing has been changed in the account yet**
 
-## Starting point
-- Catalogue (97 products, prices in SEK, ~11.2 SEK = €1):
-  - Diamond stud earrings (31): lab-grown from ~€500 (0.25 ct) up to ~€3,300 (3 ct); natural from ~€700 up to ~€26,000.
-  - Tennis bracelets (13): lab-grown ~€1,800–€11,000; natural ~€6,100–€38,000.
-  - Ring settings (51) from ~€510–€3,100, plus the centre diamond (build your own ring).
-- The site is in 8 languages (en, sv, da, de, fr, it, nl, es), with insured DHL Express from Sweden and 30-day returns.
-- Shopify (Admin API, read-only): **0 orders so far**, no cost prices entered, so margin is unknown. Inventory isn't tracked (made to order). Markets: Sweden (SEK), Denmark (DKK), Norway (NOK), Switzerland (CHF), International/EU (EUR), Rest of world (EUR excl. VAT). EUR prices from: earrings €499 (median €1,549), tennis bracelets €1,799 (median €3,399), ring settings €510 (median €750) plus the diamond.
-- Account history: 0 conversions. The Purchase action ("Google Shopping App Purchase") is the only goal Google bids on.
-- Keyword Planner can't be used through the API with "Explorer" access. Search volumes and CPCs need either a Keyword Planner export from the UI or Basic API access.
+## 1. What the plan is based on
+| Source | What it gave us |
+|---|---|
+| Shopify Admin API (read-only) | 97 products, EUR prices, markets. **0 orders so far**, no cost prices (margin unknown), inventory not tracked (made to order). |
+| Google autocomplete, 1,458 lookups | **9,604 real search queries** in Sweden (sv+en), Denmark, Germany and the Netherlands (nl+en), ranked by how prominently Google suggests them. |
+| Google Ads API | Account, goals and conversion setup. Keyword Planner volumes are **not** available with Explorer access. |
 
-## Prerequisites before launch
-1. Test purchase recorded in Google Ads.
-2. Site fixes live: one address, contact page, About page, production and delivery times.
-3. Search ads do **not** depend on the Merchant Center suspension, so Search can launch before Merchant Center is approved.
+Not available: absolute search volumes and CPCs. → Run `search-keywords.csv` through Keyword Planner in the UI ("Get search volume and forecasts") or apply for Basic API access. The structure and keywords stay the same; only the budget split and bids get adjusted.
 
-## Campaign structure
-| Campaign | Share of budget | Why |
-|---|---|---|
-| S-Earrings | 35% | Lowest entry price (~€500), the largest gift market, Christmas demand from November |
-| S-Tennis | 35% | Highest order value relative to CPC, lab-grown gives a clear price advantage |
-| S-Rings | 25% | Highest CPCs and competition; only precise terms (lab grown, shape, style) |
-| S-Brand | 5% | Cheap, protects brand traffic, kept separate so it doesn't inflate non-brand results |
+## 2. Products and prices (EUR)
+| Category | From | Median | Comment |
+|---|---|---|---|
+| Diamond studs (31) | €499 (0.25 ct lab) | €1,549 | Cheapest way in, gift item |
+| Tennis bracelets (13) | €1,799 (3 ct lab) | €3,399 | Highest order value, lengths 15–21.6 cm, so men's sizes too |
+| Ring settings (51) | €510 | €750 + diamond | Engagement rings, build your own |
 
-- One campaign per product group and **one language per ad group**. Each ad group sends people to the matching language version of the collection (/sv, /de, /nl, /da).
-- Match types: exact + phrase. Broad match only once Smart Bidding has 30+ conversions.
-- Networks: Search only. Search partners and Display off.
-- Locations: "presence" only (not "presence or interest"). Markets phase 1: **Sweden, Denmark, Germany, Netherlands** (EU, no customs, site language available). Phase 2: Norway, Finland, Austria, Belgium, UK, depending on results.
-- Brand keywords are excluded as negatives in all non-brand campaigns.
-- Shared negative keyword list: see `negative-keywords.txt` (cheap, silver, moissanite, jobs, competitor brand names, etc.).
+## 3. What the search data shows
+1. **25–40% of all searches are not buyers for us.** Silver/zirconia (7–14%), competitor brands (5–19%), second hand, children, informational questions. → A large negative list is essential (`negative-keywords.txt`).
+2. **Swedes search for lab-grown in English.** In Swedish, lab-grown is only 5–7% of queries; in English in Sweden it's 35–68%. → Separate English lab-grown ad groups targeting Sweden.
+3. **Germany is the strongest lab-grown ring market.** 36% of German ring queries are about lab-grown ("labordiamant verlobungsring" and similar). Denmark 27%, Netherlands 26%.
+4. **Gold terms are 15–19% of searches** (guld, weißgold, 585, hvidguld). Everything we sell is gold or platinum, so these are perfect high-intent terms.
+5. **Men's tennis bracelets: 6–10%** in DE/DK/NL. Our 19.1–21.6 cm lengths fit men, so a separate ad group with lower bids.
+6. Strongest competitors in searches: Christ (DE), Guldfynd (SE), Georg Jensen/Pandora (DK), Lucardi (NL), Tiffany/Cartier everywhere. People searching for those brands get excluded. Our angle against them: **lab-grown at a lower price, made to order, certified, delivered within 10 days.**
+7. Drop earrings, men's earrings and men's rings, wedding bands and loose diamonds are not in the range, so they're excluded.
 
-## Bidding and budget (estimate, check against the Keyword Planner export)
-- Assumption: CPC €0.80–2.50 for non-brand jewellery searches in Northern Europe, conversion rate 0.5–1.5% for high-ticket items, average order ~€1,000–2,000.
-- That gives a cost per sale of about €100–400, and a return on ad spend (ROAS) of roughly 4–15x.
-- Phase 1 (weeks 1–3): **Maximise clicks with a max CPC cap of €2.50**, or Manual CPC. Budget about **€80/day** total (~SEK 900).
-- Phase 2: from ~15 purchases, **Maximise conversion value**. Begin checkout may be used temporarily as an extra signal.
-- Phase 3: from ~30 purchases in 30 days, a **tROAS target of 500–600%**, then raise budget in 20% steps.
-- "New customers only" (customer acquisition) needs an audience list of ≥1,000 customers. Until then, nearly every purchase is a new customer anyway.
+## 4. Campaigns (3 non-brand, no brand campaign)
+| Campaign | Budget | Ad groups per market and language | Landing page |
+|---|---|---|---|
+| **S-Earrings** | 35% | Diamond earrings · Gold · Lab grown · Carat/shape | /{lang}/collections/earrings |
+| **S-Tennis** | 35% | Tennis bracelet · Gold · Lab grown · Men | /{lang}/collections/tennis-bracelets |
+| **S-Rings** | 30% | Engagement ring · Diamond/solitaire ring · Lab grown | /{lang}/collections/rings |
 
-## Ads (RSA per ad group, keyword in headline 1)
-Examples, English (translate for sv/de/nl/da):
-- Headlines: "Lab-Grown Diamond Tennis Bracelets" · "From €1,800 – Made to Order" · "IGI-Certified Diamonds" · "Free Insured DHL Express" · "30-Day Free Returns" · "9K, 14K & 18K Gold or Platinum" · "Natural or Lab-Grown – You Choose" · "Swedish Fine Jewellery"
-- Descriptions: "Every piece made to order in your choice of gold and diamond. Delivered insured within 10 business days." · "Conflict-free natural or lab-grown diamonds with independent certificates. 30-day returns."
-- Assets: sitelinks (Earrings, Tennis bracelets, Rings, Conflict-free diamonds), callouts, structured snippets (Shapes: Round, Oval, Pear, Princess, Emerald), price assets.
-- Don't promise anything the site doesn't deliver, because that hurts the misrepresentation review.
+- **258 keywords** (`search-keywords.csv`), 251 of them confirmed directly in Google autocomplete. Each ad group is one market + one language and sends people to the matching language version of the site.
+- Match types: **exact + phrase**. No broad match until there are 30+ conversions.
+- Markets: **Sweden, Denmark, Germany, Netherlands**. Location: "presence" only. Language targeting: the market's language + English.
+- Networks: Google Search only (no Search partners, no Display).
+- Ad schedule: all hours at first. Evaluate per hour after 2–3 weeks.
+- Devices: all. Check mobile vs desktop after 2 weeks (high-ticket items often convert better on desktop).
 
-## Timing
-- Launch in late October, so the campaigns learn before Black Friday/Christmas (earrings and tennis bracelets as gifts).
-- Engagement season Dec–Feb (Christmas/New Year's/Valentine's proposals), so increase the Rings budget from December.
+## 5. Bidding and budget
+- **Phase 1 (weeks 1–3): Maximise clicks with a max CPC cap of €2.00**. Without conversion history, Smart Bidding has nothing to optimise from. Budget **~€80/day** total (€28 Earrings, €28 Tennis, €24 Rings).
+- **Phase 2 (from ~15 purchases): Maximise conversion value.** Begin checkout may be used temporarily as an extra conversion signal if purchases are too few.
+- **Phase 3 (≥30 purchases in 30 days): target ROAS.** Set the target from your gross margin; break-even ROAS = 1 / margin. At a 50% margin, break-even is 200%, so start at ~400% and adjust.
+- Estimate (verify with Keyword Planner): CPC €0.80–2.00, conversion rate 0.5–1.5%, order value ~€1,500 → about €100–400 per sale.
+- "New customers only" needs a customer list of ≥1,000. Until then, every sale is a new customer anyway.
 
-## Follow-up
-- Day 2, 7 and 14: search terms → negatives, CPCs, impression share, conversions.
-- Check whether the purchase tag fires correctly in every language version.
-- Once Merchant Center is approved: PMax/Shopping alongside Search, with brand terms excluded.
+## 6. Ads
+One RSA per ad group (8–15 headlines, 4 descriptions) in the ad group's language, with the keyword theme in headlines 1–2. Messages ranked by importance:
+1. Product + keyword: "Lab-Grown Diamond Tennis Bracelets" / "Tennisarmband i guld med diamanter" / "Diamant-Ohrstecker in Gold"
+2. Price anchor: "From €499" (earrings), "From €1,799" (tennis), in local currency where the site shows it
+3. Proof: "IGI-certified diamonds" · "Conflict-free – Kimberley Process" · "9K/14K/18K gold or platinum"
+4. Risk reducers: "Insured DHL Express – delivered within 10 days" · "30-day free returns" · "Klarna"
+5. Made to order: "Made to order in your choice of gold and diamond"
+- Assets: sitelinks (Earrings, Tennis bracelets, Rings, Conflict-free diamonds), callouts (Insured delivery, 30-day returns, IGI-certified, Klarna), structured snippet (Shapes: Round, Oval, Pear, Princess, Emerald), price assets, image assets.
+- Never promise anything that isn't on the site (because of the Merchant Center misrepresentation review).
+
+## 7. Before launch (checklist)
+- [ ] Test purchase recorded in Google Ads (Purchase is the only goal Google bids on)
+- [ ] Site fixes live: one address, contact page, About page, shipping/delivery time
+- [ ] Gross margin known (sets the ROAS target)
+- [ ] Keyword Planner export (adjusts budget split and bids)
+- [ ] Old PMAX campaign stays paused (avoids overlap while Search learns)
+
+## 8. Follow-up
+- Day 2–3: search terms report, add negatives (expected to be the biggest early win).
+- Week 1–2: keywords with clicks but 0 add-to-carts → lower bids or pause. Check per market which one converts.
+- Week 3: switch bidding (phase 2) and shift budget to the best market/category.
+- Once Merchant Center is approved: Shopping/PMax alongside Search. Compare results per category before moving budget.
+- December: increase the Rings budget (Christmas/New Year's proposals).

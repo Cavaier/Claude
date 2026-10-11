@@ -1,65 +1,286 @@
-aliexpress
-amazon
-appraisal
-begagnad
-billig
-brugt
-buy back
-career
-cartier
-cheap
-children
-clipart
-cubic zirconia
-cz
-definition
-diy
-drawing
-ebay
-emoji
-etsy
-fake
-free
-gebraucht
-goedkoop
-gratis
-günstig
-how to make
-insurance
-job
-jobs
-kids
-manufacturer
-meaning
-moissanite
-pandora
-pawn
-plated
-png
-pre owned
-rental
-repair
-replica
-resize
-salary
-second hand
-sell my
-shein
-silber
+# Negative keywords – built from 9,604 Google autocomplete queries (SE/DK/DE/NL, Oct 2026)
+# Add as phrase match (default). [CAMPAIGN] = only in that campaign.
+
+## SHARED LIST – all 3 campaigns
+# Cheap / wrong material
 silver
-stainless steel
-sterling
-supplier
+silber
 sølv
-tattoo
-temu
-tiffany
-toy
-tungsten
-tweedehands
-used
-vermeil
-what is
-wholesale
-wiki
 zilver
+sterling
+zirkonia
+zirconia
+zirkon
+zirkoner
+cubic
+moissanite
+moissanit
+fake
+nep
+uægte
+imitation
+billig
+billiga
+günstig
+goedkoop
+plated
+vergoldet
+forgyldt
+förgyllt
+rostfritt
+edelstahl
+stainless
+titan
+elastisch
+elastik
+elastic
+glitter
+# Second hand / selling
+begagnad
+begagnat
+gebraucht
+brugt
+tweedehands
+occasion
+second hand
+pre owned
+pantbank
+pantelån
+auktion
+auction
+dba
+blocket
+tradera
+bares für rares
+dorotheum
+verkaufen
+sælge
+sälja
+verkopen
+ankauf
+# Information / not buying
+was ist
+what is
+wat is
+hvad er
+vad är
+unterschied
+difference
+verschil
+forskel
+skillnad
+bedeutung
+meaning
+betydning
+wikipedia
+history
+geschichte
+herkunft
+ursprung
+reinigen
+schoonmaken
+rengøre
+clean
+reddit
+review
+quiz
+lyrics
+liedje
+tegning
+drawing
+tattoo
+emoji
+jellycat
+xenosaga
+co to je
+chris evert
+# Children
+baby
+babies
+kinder
+kids
+børn
+barn
+girls
+pigen
+# Marketplaces / mass market
+amazon
+ebay
+etsy
+temu
+shein
+aliexpress
+wish
+zalando
+qvc
+hse
+bol com
+bijenkorf
+costco
+macys
+jcpenney
+# Competitors / other jewellers (from the queries)
+pandora
+swarovski
+tiffany
+cartier
+christ
+wempe
+bucherer
+chopard
+chanel
+van cleef
+bulgari
+messika
+guldfynd
+kaplans
+mockberg
+edblad
+jarl sandin
+ur och penn
+nk
+juvelia
+albrekts
+wiwen nilsson
+efva attling
+georg jensen
+ole lynggaard
+vibholm
+pilgrim
+sif jakobs
+mads z
+aveny
+nuran
+chanti
+camilla krøyer
+aagaard
+hartmann
+plaza
+lucardi
+my jewellery
+diamond point
+oro jewels
+ti sento
+joop
+fossil
+xenox
+icrush
+apollo
+thomas sabo
+brilliant earth
+blue nile
+vrai
+mejuri
+quince
+zales
+kay jewelers
+jared
+tanishq
+joyalukkas
+malabar
+caratlane
+habib
+hatton garden
+# Other countries / cities (we target SE, DK, DE, NL)
+india
+canada
+australia
+dubai
+uae
+qatar
+kuwait
+egypt
+japan
+usa
+toronto
+london
+ireland
+uk
+hk
+antwerpen
+# Wrong product
+necklace
+kette
+halskæde
+halsband
+ketting
+pendant
+anhänger
+vedhæng
+hänge
+uhr
+watch
+apple watch
+piercing
+nase
+yellow diamond
+blauwe
+rainbow
+regenbogen
+aquamarin
+aquamarijn
+
+## [S-Earrings] only
+herren
+herr
+herre
+heren
+männer
+mænd
+mannen
+men
+mens
+kille
+jungs
+drenge
+jongens
+boys
+hängend
+hängande
+hængende
+hangers
+drop
+dangle
+lange
+creoler
+creolen
+
+## [S-Rings] only (we don't sell men's rings or wedding bands)
+herren
+herr
+herre
+heren
+männer
+mann
+man
+mænd
+mannen
+men
+kille
+paar
+par
+set
+ehering
+vigselring
+vielsesring
+trouwring
+wedding band
+allians
+attrapp
+box
+etui
+hand
+finger
+welche hand
+welke hand
+links oder rechts
+left or right
+insurance
+holder
+engraving
+gravur
+größe
+storlek
+størrelse
+maat
+size

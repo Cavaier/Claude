@@ -1,201 +1,259 @@
-campaign,ad_group,language,match_type,keyword,final_url
-S-Tennis,Lab grown tennis,en,EXACT,lab grown diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,PHRASE,lab grown diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,EXACT,lab diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,PHRASE,lab diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,EXACT,lab grown tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,PHRASE,lab grown tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,EXACT,lab created diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Lab grown tennis,en,PHRASE,lab created diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,EXACT,diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,PHRASE,diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,EXACT,gold diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,PHRASE,gold diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,EXACT,white gold tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,PHRASE,white gold tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,EXACT,tennis bracelet diamond 14k,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,PHRASE,tennis bracelet diamond 14k,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,EXACT,real diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Diamond tennis,en,PHRASE,real diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,oval diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,oval diamond tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,emerald cut tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,emerald cut tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,pear tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,pear tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,princess cut tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,princess cut tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,3 carat tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,3 carat tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,5 carat tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,5 carat tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,EXACT,7 carat tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,Shape/carat,en,PHRASE,7 carat tennis bracelet,https://anderssonstone.com/collections/tennis-bracelets
-S-Tennis,SV,sv,EXACT,tennisarmband diamant,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,PHRASE,tennisarmband diamant,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,EXACT,tennisarmband diamanter,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,PHRASE,tennisarmband diamanter,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,EXACT,tennisarmband labbodlade diamanter,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,PHRASE,tennisarmband labbodlade diamanter,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,EXACT,tennisarmband guld diamant,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,PHRASE,tennisarmband guld diamant,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,EXACT,diamantarmband,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,SV,sv,PHRASE,diamantarmband,https://anderssonstone.com/sv/collections/tennis-bracelets
-S-Tennis,DE,de,EXACT,tennisarmband diamant,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,PHRASE,tennisarmband diamant,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,EXACT,tennisarmband labordiamant,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,PHRASE,tennisarmband labordiamant,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,EXACT,tennisarmband lab grown,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,PHRASE,tennisarmband lab grown,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,EXACT,diamant tennisarmband gold,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,PHRASE,diamant tennisarmband gold,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,EXACT,diamantarmband,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,DE,de,PHRASE,diamantarmband,https://anderssonstone.com/de/collections/tennis-bracelets
-S-Tennis,NL,nl,EXACT,tennisarmband diamant,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,PHRASE,tennisarmband diamant,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,EXACT,lab grown diamant tennisarmband,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,PHRASE,lab grown diamant tennisarmband,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,EXACT,diamanten tennisarmband,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,PHRASE,diamanten tennisarmband,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,EXACT,tennisarmband goud diamant,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,NL,nl,PHRASE,tennisarmband goud diamant,https://anderssonstone.com/nl/collections/tennis-bracelets
-S-Tennis,DA,da,EXACT,tennisarmbånd diamant,https://anderssonstone.com/da/collections/tennis-bracelets
-S-Tennis,DA,da,PHRASE,tennisarmbånd diamant,https://anderssonstone.com/da/collections/tennis-bracelets
-S-Tennis,DA,da,EXACT,tennisarmbånd lab grown diamant,https://anderssonstone.com/da/collections/tennis-bracelets
-S-Tennis,DA,da,PHRASE,tennisarmbånd lab grown diamant,https://anderssonstone.com/da/collections/tennis-bracelets
-S-Tennis,DA,da,EXACT,diamant armbånd guld,https://anderssonstone.com/da/collections/tennis-bracelets
-S-Tennis,DA,da,PHRASE,diamant armbånd guld,https://anderssonstone.com/da/collections/tennis-bracelets
-S-Earrings,Lab grown studs,en,EXACT,lab grown diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,PHRASE,lab grown diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,EXACT,lab grown diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,PHRASE,lab grown diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,EXACT,lab diamond stud earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,PHRASE,lab diamond stud earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,EXACT,lab created diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Lab grown studs,en,PHRASE,lab created diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,diamond stud earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,diamond stud earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,1 carat diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,1 carat diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,2 carat diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,2 carat diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,gold diamond stud earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,gold diamond stud earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,real diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,real diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,oval diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,oval diamond studs,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,princess cut diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,princess cut diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,emerald cut diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,emerald cut diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,pear diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,pear diamond earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,EXACT,diamond hoop earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,Diamond studs,en,PHRASE,diamond hoop earrings,https://anderssonstone.com/collections/earrings
-S-Earrings,SV,sv,EXACT,diamantörhängen,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,PHRASE,diamantörhängen,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,EXACT,örhängen diamant,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,PHRASE,örhängen diamant,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,EXACT,diamantörhängen guld,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,PHRASE,diamantörhängen guld,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,EXACT,labbodlade diamantörhängen,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,PHRASE,labbodlade diamantörhängen,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,EXACT,diamantstift örhängen,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,SV,sv,PHRASE,diamantstift örhängen,https://anderssonstone.com/sv/collections/earrings
-S-Earrings,DE,de,EXACT,diamant ohrstecker,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,PHRASE,diamant ohrstecker,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,EXACT,ohrstecker diamant gold,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,PHRASE,ohrstecker diamant gold,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,EXACT,labordiamant ohrstecker,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,PHRASE,labordiamant ohrstecker,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,EXACT,lab grown diamant ohrringe,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,PHRASE,lab grown diamant ohrringe,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,EXACT,diamant ohrringe,https://anderssonstone.com/de/collections/earrings
-S-Earrings,DE,de,PHRASE,diamant ohrringe,https://anderssonstone.com/de/collections/earrings
-S-Earrings,NL,nl,EXACT,diamanten oorbellen,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,PHRASE,diamanten oorbellen,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,EXACT,diamanten oorknopjes,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,PHRASE,diamanten oorknopjes,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,EXACT,lab grown diamant oorbellen,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,PHRASE,lab grown diamant oorbellen,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,EXACT,gouden oorbellen diamant,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,NL,nl,PHRASE,gouden oorbellen diamant,https://anderssonstone.com/nl/collections/earrings
-S-Earrings,DA,da,EXACT,diamantøreringe,https://anderssonstone.com/da/collections/earrings
-S-Earrings,DA,da,PHRASE,diamantøreringe,https://anderssonstone.com/da/collections/earrings
-S-Earrings,DA,da,EXACT,diamant ørestikker,https://anderssonstone.com/da/collections/earrings
-S-Earrings,DA,da,PHRASE,diamant ørestikker,https://anderssonstone.com/da/collections/earrings
-S-Earrings,DA,da,EXACT,lab grown diamant øreringe,https://anderssonstone.com/da/collections/earrings
-S-Earrings,DA,da,PHRASE,lab grown diamant øreringe,https://anderssonstone.com/da/collections/earrings
-S-Rings,Lab grown engagement,en,EXACT,lab grown engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,PHRASE,lab grown engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,EXACT,lab grown diamond engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,PHRASE,lab grown diamond engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,EXACT,lab diamond engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,PHRASE,lab diamond engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,EXACT,lab created engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Lab grown engagement,en,PHRASE,lab created engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,oval engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,oval engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,emerald cut engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,emerald cut engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,pear engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,pear engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,solitaire engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,solitaire engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,three stone engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,three stone engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,pave engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,pave engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,hidden halo engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,hidden halo engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,bezel set engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,bezel set engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,design your own engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,design your own engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,EXACT,custom engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,Style,en,PHRASE,custom engagement ring,https://anderssonstone.com/collections/rings
-S-Rings,SV,sv,EXACT,förlovningsring,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,PHRASE,förlovningsring,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,EXACT,förlovningsring diamant,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,PHRASE,förlovningsring diamant,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,EXACT,förlovningsring labbodlad diamant,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,PHRASE,förlovningsring labbodlad diamant,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,EXACT,solitärring,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,PHRASE,solitärring,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,EXACT,förlovningsring guld,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,PHRASE,förlovningsring guld,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,EXACT,designa egen förlovningsring,https://anderssonstone.com/sv/collections/rings
-S-Rings,SV,sv,PHRASE,designa egen förlovningsring,https://anderssonstone.com/sv/collections/rings
-S-Rings,DE,de,EXACT,verlobungsring labordiamant,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,PHRASE,verlobungsring labordiamant,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,EXACT,verlobungsring lab grown,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,PHRASE,verlobungsring lab grown,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,EXACT,verlobungsring diamant,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,PHRASE,verlobungsring diamant,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,EXACT,solitär verlobungsring,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,PHRASE,solitär verlobungsring,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,EXACT,verlobungsring oval,https://anderssonstone.com/de/collections/rings
-S-Rings,DE,de,PHRASE,verlobungsring oval,https://anderssonstone.com/de/collections/rings
-S-Rings,NL,nl,EXACT,verlovingsring lab grown diamant,https://anderssonstone.com/nl/collections/rings
-S-Rings,NL,nl,PHRASE,verlovingsring lab grown diamant,https://anderssonstone.com/nl/collections/rings
-S-Rings,NL,nl,EXACT,verlovingsring diamant,https://anderssonstone.com/nl/collections/rings
-S-Rings,NL,nl,PHRASE,verlovingsring diamant,https://anderssonstone.com/nl/collections/rings
-S-Rings,NL,nl,EXACT,solitair verlovingsring,https://anderssonstone.com/nl/collections/rings
-S-Rings,NL,nl,PHRASE,solitair verlovingsring,https://anderssonstone.com/nl/collections/rings
-S-Rings,DA,da,EXACT,forlovelsesring,https://anderssonstone.com/da/collections/rings
-S-Rings,DA,da,PHRASE,forlovelsesring,https://anderssonstone.com/da/collections/rings
-S-Rings,DA,da,EXACT,forlovelsesring diamant,https://anderssonstone.com/da/collections/rings
-S-Rings,DA,da,PHRASE,forlovelsesring diamant,https://anderssonstone.com/da/collections/rings
-S-Rings,DA,da,EXACT,forlovelsesring lab grown diamant,https://anderssonstone.com/da/collections/rings
-S-Rings,DA,da,PHRASE,forlovelsesring lab grown diamant,https://anderssonstone.com/da/collections/rings
-S-Brand,Brand,en,EXACT,andersson stone,https://anderssonstone.com
-S-Brand,Brand,en,PHRASE,andersson stone,https://anderssonstone.com
-S-Brand,Brand,en,EXACT,anderssonstone,https://anderssonstone.com
-S-Brand,Brand,en,PHRASE,anderssonstone,https://anderssonstone.com
-S-Brand,Brand,en,EXACT,andersson stone jewellery,https://anderssonstone.com
-S-Brand,Brand,en,PHRASE,andersson stone jewellery,https://anderssonstone.com
-S-Brand,Brand,en,EXACT,andersson stone ring,https://anderssonstone.com
-S-Brand,Brand,en,PHRASE,andersson stone ring,https://anderssonstone.com
+campaign,ad_group,country,language,keyword,autocomplete_score,seen_in_autocomplete,final_url
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,tennisarmband,20.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,tennisarmband diamant,24.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,tennisarmband dam,9.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,diamantarmband,20.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,diamantarmband dam,38.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,diamantarmband tennis,23.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Tennis bracelet,Sweden,sv,tennisarmband äkta diamanter,0.0,core term,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Gold,Sweden,sv,tennisarmband guld,45.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Gold,Sweden,sv,tennisarmband vitguld,21.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Gold,Sweden,sv,tennisarmband guld diamant,0.0,core term,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Gold,Sweden,sv,diamantarmband guld,0.0,core term,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Gold,Sweden,sv,diamantarmband vitguld,18.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Lab grown,Sweden,sv,tennisarmband labbodlade diamanter,20.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Lab grown,Sweden,sv,labbodlade diamanter armband,30.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Lab grown,Sweden,sv,armband med labbodlade diamanter,10.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Lab grown,Sweden,sv,diamant armband lab grown,10.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Men,Sweden,sv,tennisarmband herr,18.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Tennis,Sweden | SV | Men,Sweden,sv,diamantarmband herr,26.0,yes,https://anderssonstone.com/sv/collections/tennis-bracelets
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,diamantörhängen,20.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,diamant örhängen,30.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,örhängen diamant,30.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,diamantörhängen dam,13.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,diamant örhängen dam,47.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,diamantörhängen äkta,17.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Diamond earrings,Sweden,sv,diamantörhängen studs,15.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Gold,Sweden,sv,diamantörhängen guld,38.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Gold,Sweden,sv,diamantörhängen vitguld,39.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Gold,Sweden,sv,diamant örhängen guld,34.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Gold,Sweden,sv,örhängen diamant guld,37.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Lab grown,Sweden,sv,labbodlade diamanter örhängen,30.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Lab grown,Sweden,sv,diamantörhängen labbodlad,10.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Earrings,Sweden | SV | Lab grown,Sweden,sv,örhängen med labbodlade diamanter,10.0,yes,https://anderssonstone.com/sv/collections/earrings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsring,0.0,core term,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsringar,40.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsring dam,28.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsringar dam,24.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,diamantring förlovning,39.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsring diamant,6.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsring guld,10.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Engagement ring,Sweden,sv,förlovningsring vitguld,16.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,solitärring,21.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,solitärring diamant,17.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,solitärring förlovning,16.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,solitärring med sidostenar,22.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,diamantring,77.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,diamantring dam,16.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,diamantring tre stenar,15.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Solitaire / diamond ring,Sweden,sv,diamantring guld,39.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,labbodlad diamant ring,36.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,förlovningsring labbodlad diamant,10.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,ring med labbodlad diamant,10.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,diamantring labbodlad,15.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,solitärring labbodlad diamant,10.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,labbodlad diamant ring oval,28.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Rings,Sweden | SV | Lab grown,Sweden,sv,labbodlad diamant ring 1 carat,23.0,yes,https://anderssonstone.com/sv/collections/rings
+S-Tennis,Sweden | EN | Lab grown,Sweden,en,lab grown diamond tennis bracelet,30.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Lab grown,Sweden,en,tennis bracelet lab grown diamond,12.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Lab grown,Sweden,en,lab created diamond tennis bracelet gold,9.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Lab grown,Sweden,en,lab grown diamond tennis bracelet oval,9.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Tennis bracelet,Sweden,en,diamond tennis bracelet,0.0,core term,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Tennis bracelet,Sweden,en,tennis bracelet diamond,28.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Tennis bracelet,Sweden,en,tennis bracelet real diamonds,10.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Sweden | EN | Tennis bracelet,Sweden,en,tennis bracelet for women,9.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings,38.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings studs,36.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings 1 carat,15.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings 2 carat,18.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings white gold,11.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings yellow gold,10.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond earrings oval,10.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Lab grown,Sweden,en,diamond studs lab grown,14.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Diamond studs,Sweden,en,diamond stud earrings,0.0,core term,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Diamond studs,Sweden,en,diamond studs for women,25.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Sweden | EN | Diamond studs,Sweden,en,diamond studs earrings,24.0,yes,https://anderssonstone.com/collections/earrings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown engagement rings,20.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond engagement rings,15.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown engagement ring oval,10.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown engagement ring emerald cut,10.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown engagement ring gold,10.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown diamond ring,28.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Lab grown,Sweden,en,lab grown engagement rings for women,16.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Engagement ring,Sweden,en,engagement rings sweden,18.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Sweden | EN | Engagement ring,Sweden,en,engagement ring sweden,10.0,yes,https://anderssonstone.com/collections/rings
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,tennisarmbånd,20.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,tennisarmbånd diamanter,26.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,tennisarmbånd med diamanter,9.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,diamant armbånd,20.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,diamant armbånd til kvinder,22.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,diamant armbånd tennis,17.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Tennis bracelet,Denmark,da,tennisarmbånd naturlige diamanter,10.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Gold,Denmark,da,tennisarmbånd guld,28.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Gold,Denmark,da,tennisarmbånd hvidguld,22.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Gold,Denmark,da,tennisarmbånd guld med diamanter,19.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Gold,Denmark,da,diamant armbånd guld,24.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Gold,Denmark,da,diamant armbånd hvidguld,26.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Lab grown,Denmark,da,tennisarmbånd lab grown,10.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Lab grown,Denmark,da,tennisarmbånd med lab diamanter,10.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Lab grown,Denmark,da,tennisarmbånd lab diamant,9.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Lab grown,Denmark,da,lab diamant armbånd,10.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Men,Denmark,da,tennisarmbånd mænd,18.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Men,Denmark,da,diamant armbånd mænd,28.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Tennis,Denmark | DA | Men,Denmark,da,diamant tennis armbånd mænd,13.0,yes,https://anderssonstone.com/da/collections/tennis-bracelets
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,diamant øreringe,20.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,diamantøreringe,20.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,diamant ørestikker,20.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,diamant øreringe kvinder,34.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,diamant øreringe dame,17.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,naturlig diamant øreringe,18.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Diamond earrings,Denmark,da,diamant øreringe studs,14.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Gold,Denmark,da,diamant øreringe hvidguld,48.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Gold,Denmark,da,diamant ørestikker hvidguld,28.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Gold,Denmark,da,diamant øreringe guld,26.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Gold,Denmark,da,diamant ørestikker guld,26.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Lab grown,Denmark,da,diamant øreringe lab grown,33.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Lab grown,Denmark,da,diamant ørestikker lab grown,28.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Lab grown,Denmark,da,lab diamant ørestikker,9.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Lab grown,Denmark,da,laboratorie diamant øreringe,12.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Carat / shape,Denmark,da,diamant ørestikker 1 carat,30.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Carat / shape,Denmark,da,diamant øreringe oval,20.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Earrings,Denmark | DA | Carat / shape,Denmark,da,diamant øreringe firkantet,20.0,yes,https://anderssonstone.com/da/collections/earrings
+S-Rings,Denmark | DA | Engagement ring,Denmark,da,forlovelsesring,20.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Engagement ring,Denmark,da,forlovelsesringe,20.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Engagement ring,Denmark,da,forlovelsesring diamant,16.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Engagement ring,Denmark,da,forlovelsesring guld,28.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Engagement ring,Denmark,da,forlovelsesring hvidguld,20.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Diamond ring,Denmark,da,diamantring,20.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Diamond ring,Denmark,da,diamantringe,16.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Diamond ring,Denmark,da,diamantring dame,10.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Diamond ring,Denmark,da,diamantring med 3 diamanter,10.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Lab grown,Denmark,da,lab grown diamant ring,28.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Lab grown,Denmark,da,diamantring lab grown,10.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Lab grown,Denmark,da,lab grown diamant ring oval,12.0,yes,https://anderssonstone.com/da/collections/rings
+S-Rings,Denmark | DA | Lab grown,Denmark,da,forlovelsesring lab grown diamant,8.0,yes,https://anderssonstone.com/da/collections/rings
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,tennisarmband diamanten,46.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,tennisarmband diamant,0.0,core term,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,tennisarmband echte diamanten,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,diamant armband damen,26.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,tennisarmband damen,9.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,tennisarmband kaufen,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,diamant armband echt,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Tennis bracelet,Germany,de,tennisarmband mit diamanten,9.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,tennisarmband gold,28.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,tennisarmband diamanten gold,23.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,tennisarmband weißgold,14.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,tennisarmband gold 585,15.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,diamant armband gold,24.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,diamant armband damen weißgold,22.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,diamant armband damen gold,19.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Gold,Germany,de,tennis armband diamant weißgold,15.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Lab grown,Germany,de,tennisarmband labordiamanten,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Lab grown,Germany,de,tennisarmband lab grown,9.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Lab grown,Germany,de,lab diamant tennisarmband,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Lab grown,Germany,de,diamant armband lab grown,13.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Men,Germany,de,tennisarmband herren,20.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Men,Germany,de,diamant armband herren,28.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Men,Germany,de,tennisarmband diamanten herren,17.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Men,Germany,de,diamant tennis armband herren,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Tennis,Germany | DE | Men,Germany,de,tennisarmband männer,10.0,yes,https://anderssonstone.com/de/collections/tennis-bracelets
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrstecker,20.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,ohrstecker diamant,20.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrstecker damen,16.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrringe damen,26.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrringe stecker,22.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrstecker kaufen,18.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrringe echt,18.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrstecker krappenfassung,16.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Diamond studs,Germany,de,diamant ohrstecker zargenfassung,20.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,diamant ohrstecker gold,28.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,ohrstecker diamant gold,28.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,diamant ohrstecker weißgold,22.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,ohrstecker diamant weißgold,22.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,ohrstecker diamant gelbgold,19.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,diamant ohrstecker weißgold 585,15.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Gold,Germany,de,diamant ohrstecker damen gold,18.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Lab grown,Germany,de,diamant ohrstecker lab grown,19.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Lab grown,Germany,de,lab grown diamant ohrringe,24.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Lab grown,Germany,de,ohrstecker diamant labor,10.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Lab grown,Germany,de,diamant ohrringe lab grown,10.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Carat / shape,Germany,de,diamant ohrstecker 1 karat,19.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Carat / shape,Germany,de,ohrstecker diamant 1 karat,17.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Earrings,Germany | DE | Carat / shape,Germany,de,diamant ohrstecker princess cut,28.0,yes,https://anderssonstone.com/de/collections/earrings
+S-Rings,Germany | DE | Lab grown,Germany,de,labordiamant verlobungsring,22.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,lab grown diamant verlobungsring,22.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,verlobungsring labordiamant,9.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,verlobungsringe labordiamant,10.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,verlobungsringe lab grown,9.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,labordiamant ring,26.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,lab grown diamant ring,28.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,diamantring labordiamant,15.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,lab grown diamant ring oval,11.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Lab grown,Germany,de,labordiamant ring kaufen,9.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring,18.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsringe,40.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring gold,26.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsringe gold,28.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring weißgold,22.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring diamant,10.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsringe diamant,10.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring kaufen,10.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring oval,14.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Engagement ring,Germany,de,verlobungsring platin,10.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Diamond ring,Germany,de,diamantring,20.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Diamond ring,Germany,de,diamantring damen,22.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Diamond ring,Germany,de,diamantring gold,26.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Diamond ring,Germany,de,diamantring weißgold,20.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Diamond ring,Germany,de,diamantring 1 karat,18.0,yes,https://anderssonstone.com/de/collections/rings
+S-Rings,Germany | DE | Diamond ring,Germany,de,diamantring kaufen,16.0,yes,https://anderssonstone.com/de/collections/rings
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,tennisarmband diamant,26.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,tennisarmband,20.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,diamanten armband,20.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,diamanten armband dames,26.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,diamanten armband tennis,16.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,tennisarmband echte diamanten,9.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Tennis bracelet,Netherlands,nl,diamanten armband kopen,10.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Gold,Netherlands,nl,tennisarmband goud,28.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Gold,Netherlands,nl,tennisarmband witgoud,16.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Gold,Netherlands,nl,diamanten armband goud,24.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Lab grown,Netherlands,nl,tennisarmband lab grown diamonds,9.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Lab grown,Netherlands,nl,lab diamanten armband,9.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Men,Netherlands,nl,tennisarmband heren,14.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Men,Netherlands,nl,diamanten armband heren,28.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Tennis,Netherlands | NL | Men,Netherlands,nl,tennisarmband heren diamant,9.0,yes,https://anderssonstone.com/nl/collections/tennis-bracelets
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,diamanten oorbellen,36.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,diamanten oorknopjes,20.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,oorbellen diamant,20.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,diamanten oorbellen dames,42.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,diamanten oorknopjes dames,10.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,echte diamanten oorknopjes,10.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Diamond earrings,Netherlands,nl,diamanten oorbellen echt,10.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Gold,Netherlands,nl,diamanten oorbellen goud,30.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Gold,Netherlands,nl,diamanten oorknopjes goud,28.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Gold,Netherlands,nl,diamanten oorbellen witgoud,36.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Lab grown,Netherlands,nl,diamanten oorbellen lab grown,14.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Carat / shape,Netherlands,nl,diamanten oorbellen 1 karaat,16.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Earrings,Netherlands | NL | Carat / shape,Netherlands,nl,diamanten oorbellen ovaal,10.0,yes,https://anderssonstone.com/nl/collections/earrings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsring,20.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsringen,34.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsring diamant,18.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsring echte diamant,14.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsring kopen,10.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsring ovaal,12.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Engagement ring,Netherlands,nl,verlovingsring goud,28.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Diamond ring,Netherlands,nl,diamanten ring,20.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Diamond ring,Netherlands,nl,diamanten ring ovaal,12.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Lab grown,Netherlands,nl,lab grown diamant verlovingsring,13.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Lab grown,Netherlands,nl,lab grown diamant ring,28.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Lab grown,Netherlands,nl,verlovingsringen lab diamant,9.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Rings,Netherlands | NL | Lab grown,Netherlands,nl,lab grown diamant gouden ring,9.0,yes,https://anderssonstone.com/nl/collections/rings
+S-Earrings,Netherlands | EN | Lab grown,Netherlands,en,lab grown diamond earrings,46.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Netherlands | EN | Lab grown,Netherlands,en,lab grown diamond earrings studs,36.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Netherlands | EN | Lab grown,Netherlands,en,diamond studs lab grown,14.0,yes,https://anderssonstone.com/collections/earrings
+S-Earrings,Netherlands | EN | Lab grown,Netherlands,en,lab grown diamond earrings 1 carat,15.0,yes,https://anderssonstone.com/collections/earrings
+S-Rings,Netherlands | EN | Lab grown,Netherlands,en,lab grown diamond engagement rings,11.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Netherlands | EN | Lab grown,Netherlands,en,engagement ring lab grown diamond,10.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Netherlands | EN | Lab grown,Netherlands,en,lab grown diamond ring,28.0,yes,https://anderssonstone.com/collections/rings
+S-Rings,Netherlands | EN | Lab grown,Netherlands,en,lab grown diamond oval ring,10.0,yes,https://anderssonstone.com/collections/rings
+S-Tennis,Netherlands | EN | Lab grown,Netherlands,en,tennis bracelet lab grown diamond,9.0,yes,https://anderssonstone.com/collections/tennis-bracelets
+S-Tennis,Netherlands | EN | Lab grown,Netherlands,en,tennis bracelet lab diamonds,14.0,yes,https://anderssonstone.com/collections/tennis-bracelets
