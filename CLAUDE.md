@@ -28,3 +28,12 @@
 - Shopify: cavaierwatch.myshopify.com, via the Shopify MCP tools (products, themes, publications).
 - Product feed: only the Google & YouTube app. Simprosys is uninstalled and its feeds were deleted
   (Oct 2026). Don't recreate third-party feeds.
+
+## Product facts (from Eli, Oct 2026)
+
+- `-for-him` handles are the men's versions, `-for-her` (titles with " - ") the women's. They are not duplicates.
+- Necklaces are not adjustable. "Pendant" in the name = pendant + chain; otherwise it is a plain chain.
+- Gold colour is gold-plated (write "gold-plated"). Material: recycled 316L stainless steel.
+- The free jewelry case offer applies only to the sets, not single products.
+- Google gender metafield: `mm-google-shopping.gender` (male/female), `age_group` adult.
+- Original product descriptions before the Oct 2026 edit: `shopify-backups/product-descriptions-before-2026-10-11.json`.
