@@ -162,8 +162,20 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   lesser-known brands; vendor holdout tests 20–50% incremental. Competitor bidding raises it.
 - Break-even: a brand click earns ~52 SEK revenue. Brand pays off if extra share × margin × 52 >
   CPC. At 60% margin and 20% extra: ~6 SEK per click; at 50% extra: ~15 SEK.
-- Proposed P-008 (budget 250 ceiling now, CPC cap 7 after Nov 1) and P-009 (country holdout test
-  in January). Need Eli's gross margin to fix the CPC cap.
+- Revised after the account history: P-008 = budget 150 SEK/day + CPC cap 4 SEK; P-009 country
+  holdout in January to confirm.
+
+### Brand Search history and natural experiment (Oct 11, 2026; Google Ads + Shopify)
+- Brand terms by month: 2025 ~1,000–2,100 clicks/month at CPC ~1.7–2.5 SEK, 1,000–4,500 SEK/month.
+  2026 CPC rose to 3.3–4.0 SEK and clicks fell to ~600–800/month (Jul–Sep), budget eaten by broad.
+- Non-brand (broad) spend Jul 2025 – Oct 2026: ~58,000 SEK for ~6.5 purchases.
+- Brand Search fully off Apr 12 – May 20, 2025 (39 days; Shopify has no referrer data then).
+- **Brand keywords off Dec 12, 2025 – Feb 9, 2026** (all budget to broad). Shopify Google-referred
+  orders (paid + organic; brand-ad orders are counted as referrer google) as share of all orders:
+  Nov 17 – Dec 14 (ads on, peak season) 14.0% (446/3,184); Dec 15 – Feb 8 (off) 12.0% (654/5,450);
+  Feb 9 – Mar 15 (on again) 11.3% (294/2,591), while ads claimed ~40 purchases/week. No rise when
+  ads came back → most brand-ad sales would have come through the organic result anyway.
+  Caveats: not randomized, seasonality, Meta mix; still the cleanest signal available.
 
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
@@ -212,7 +224,8 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
-- **2026-10-11** Brand budget analysis (section 3); proposed P-008, P-009.
+- **2026-10-11** Brand budget analysis + account history (section 3): Dec–Feb natural experiment shows
+  little extra from brand ads; proposed P-008 (150 SEK/day, CPC cap 4) and P-009 (holdout test).
 - **2026-10-11** Executed Brand Search makeover (C-009, P-004, P-006, P-007): renamed, English
   ad group merged, 12 language ad groups with ads/keywords/sitelinks/callouts/snippets, 32 auto
   assets removed, old English ad paused after new one approved. All verified against the spec
