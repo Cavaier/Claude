@@ -266,6 +266,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** P-011 live: Search | Men | UK (campaign 24342448007), 10 ad groups, 250 SEK/day,
+  portfolio Max conversion value with 8 SEK CPC cap, bid higher for new customers, shared negative list
+  'Non-brand | Negatives' (65; sterling silver / 925 / silver deliberately NOT negative – Eli: silver
+  buyers may buy steel). Spec: google-ads/search-men-uk-spec.json. Keyword Planner stats UK/AU/CA in
+  google-ads/keyword-planner/ (volumes banded; forecast file ignored – unrealistic 0.50 SEK CPC).
+  Review each ad group at 1,500 SEK; full evaluation Nov 8.
 - **2026-10-11** Non-brand deep dive (section 3); plan P-011, P-014–P-017 proposed.
 - **2026-10-11** P-010 applied (4 English misspelling keywords in all 13 ad groups + 30 local "caviar + product word" variants per language, exact, as a test). P-012: Customer Match list
   9486387439 created + marked PURCHASERS; 28,576 consenting buyers hashed in
