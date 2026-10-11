@@ -130,8 +130,9 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   installed).
 - Pick local brand campaigns by data (Shopify orders per language), not by whether the store is
   translated yet (Eli, Oct 11). First wave: every language with ~150+ orders in 90 days:
-  German, Dutch, Spanish, French, Hebrew, Japanese, Italian, Chinese (HK). Smaller languages
-  stay in Brand Search | WW until their volume justifies a campaign.
+  German, Dutch, Spanish, French, Hebrew, Japanese, Italian, Chinese (HK). Eli added Polish,
+  Swedish, Norwegian, Danish (Oct 11) → 12 local brand campaigns. Thai, Vietnamese, Korean,
+  Portuguese and English markets stay in Brand Search | WW.
 - Working method: one change at a time per campaign, logged on the Desk with baseline,
   judged by the rules on its "How we judge changes" tab.
 
@@ -155,6 +156,8 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Local brand campaign list set: DE, NL, ES, FR, IL, JP, IT, HK + PL, SE, NO, DK
+  (Eli added the last four). Plan: build paused, launch in waves, Eli reviews ads first.
 - **2026-10-11** Markets regrouped by language (Shopify, 90 days): English 1,797 orders (~€131k),
   German 613 (€43.4k), Dutch 410 (€25.3k), Spanish 348 (€26.5k: MX 176, ES 125, PE 24, CO 23),
   French 231 (€14.0k), Hebrew 193 (€15.7k), Japanese 162, Italian 158, Chinese (HK) 148,
