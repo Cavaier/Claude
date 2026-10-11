@@ -123,8 +123,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 - Sitelinks on brand: only Men's / Women's collection (no Sets sitelink).
 - "cavaierofficial" is Cavaier's Instagram handle: a real brand search. Cover it with
   [exact] and [phrase], never broad.
-- Localized brand campaigns: yes in principle for markets with a local-language store,
-  sized by Shopify demand (not Google Ads data).
+- Localized brand campaigns: every market gets ads in its own language (Eli, Oct 11), sized by
+  Shopify orders, not Google Ads data. Each country sits in exactly one campaign; multi-language
+  countries get one main language: Belgium → Dutch, Switzerland → German, Canada → English.
+- Eli will translate the English country stores in Shopify (T Lab – AI Language Translate is
+  installed). A language's ads launch once its store language is live, so ad and page match.
+  Order: German + Dutch (stores exist) → Spanish + French → Hebrew, Japanese, Italian → smaller.
 - Working method: one change at a time per campaign, logged on the Desk with baseline,
   judged by the rules on its "How we judge changes" tab.
 
@@ -148,6 +152,11 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Markets regrouped by language (Shopify, 90 days): English 1,797 orders (~€131k),
+  German 613 (€43.4k), Dutch 410 (€25.3k), Spanish 348 (€26.5k: MX 176, ES 125, PE 24, CO 23),
+  French 231 (€14.0k), Hebrew 193 (€15.7k), Japanese 162, Italian 158, Chinese (HK) 148,
+  Swedish 89, Polish 81, Thai/Vietnamese/Korean ~200, Norwegian 69, Portuguese 55, Danish 48.
+  German and Dutch ads drafted (P-006, P-007; formal Sie / u as on the stores).
 - **2026-10-11** Applied P-001 (paused "cavaierofficial" [broad]; added [exact] + [phrase] —
   it's the Instagram handle) and P-003 (all languages; ads stay English). Evaluate Oct 25:
   expect brand impression share up from ~35% and spend down.
