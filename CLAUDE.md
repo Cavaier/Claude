@@ -37,3 +37,10 @@
 - The free jewelry case offer applies only to the sets, not single products.
 - Google gender metafield: `mm-google-shopping.gender` (male/female), `age_group` adult.
 - Original product descriptions before the Oct 2026 edit: `shopify-backups/product-descriptions-before-2026-10-11.json`.
+
+## US store (us.cavaier.com)
+
+- Separate Shopify store `d3d79e.myshopify.com`, Merchant Center 5087698947, Google Ads 6721676260 (not active). No Google Ads setup for the US yet.
+- The Shopify MCP connects to one store at a time (`switch-shop`, then Eli re-authorizes in claude.ai connector settings).
+- Oct 2026: same product types, gender, SEO and offer/adjustable cleanup applied as on the main store. Backup: `shopify-backups/us-products-before-2026-10-11.json`.
+- Open: us.cavaier.com can't be claimed in MC 5087698947 because MC 747874697 claims cavaier.com (all US products disapproved). Older US texts contain outdated "Free Shipping" lines (necklaces list Germany/Europe times).
