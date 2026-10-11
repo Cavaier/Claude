@@ -20,8 +20,11 @@
 - Merchant Center: 747874697. GCP project `cavaier-ads` (415497972272) is registered as its
   Merchant API developer. Use the Merchant API v1 with an access token minted from the
   `GOOGLE_ADS_*` env vars (scopes: adwords + content).
-- No Google Ads developer token is set in this environment, so the Google Ads API can't be
-  called from here yet.
+- Google Ads API works from here: the agent proxy adds the developer token. Call
+  `https://googleads.googleapis.com/v22/customers/3104616697/...` with the OAuth token and
+  header `login-customer-id: 9574419833`.
+- No Google Analytics and no extra Google tags (Eli's decision, Oct 2026). Keep the Google &
+  YouTube app's Conversion measurement on: it is what sends purchases to Google Ads.
 - Shopify: cavaierwatch.myshopify.com, via the Shopify MCP tools (products, themes, publications).
 - Product feed: only the Google & YouTube app. Simprosys is uninstalled and its feeds were deleted
   (Oct 2026). Don't recreate third-party feeds.
