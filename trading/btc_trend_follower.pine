@@ -1,0 +1,56 @@
+//@version=6
+// BTC Trend Follower: long-only, spot, no leverage.
+// Use on a BTCUSD daily chart (e.g. BITSTAMP:BTCUSD or COINBASE:BTCUSD for the longest history).
+//
+// Rules:
+//   Entry: daily close breaks above the highest high of the last 55 days
+//          AND price is above the 200-day EMA (only trade with the long-term trend).
+//   Size:  risk 1% of the account between the entry and the initial stop,
+//          capped so the position never exceeds the account (no leverage).
+//   Stop:  starts 3 x ATR below the entry, then trails up to the lowest low of the
+//          last 20 days. It only ever moves up, never down.
+//   Costs: 0.1% commission per side plus slippage, so results are not flattered.
+strategy("BTC Trend Follower", overlay = true,
+     initial_capital = 10000, currency = currency.USD,
+     commission_type = strategy.commission.percent, commission_value = 0.1,
+     slippage = 2, pyramiding = 0,
+     default_qty_type = strategy.fixed, default_qty_value = 1)
+
+entryLen = input.int(55, "Breakout lookback (bars)", minval = 2)
+exitLen  = input.int(20, "Trailing exit lookback (bars)", minval = 2)
+trendLen = input.int(200, "Trend filter EMA length", minval = 2)
+atrLen   = input.int(20, "ATR length", minval = 1)
+atrMult  = input.float(3.0, "Initial stop distance (x ATR)", minval = 0.5, step = 0.5)
+riskPct  = input.float(1.0, "Risk per trade (% of equity)", minval = 0.1, maxval = 5.0, step = 0.1)
+
+upper = ta.highest(high, entryLen)[1]
+lower = ta.lowest(low, exitLen)[1]
+trend = ta.ema(close, trendLen)
+atr   = ta.atr(atrLen)
+
+longSignal = strategy.position_size == 0 and close > upper and close > trend
+
+var float stopPrice = na
+
+if longSignal
+    stopDist  = atrMult * atr
+    riskCash  = strategy.equity * riskPct / 100
+    maxQty    = strategy.equity * 0.99 / close   // never more than the account: no leverage
+    qty       = math.min(riskCash / stopDist, maxQty)
+    stopPrice := close - stopDist
+    strategy.entry("Long", strategy.long, qty = qty)
+
+// Trail the stop up to the 20-day low, never lower it.
+if strategy.position_size > 0
+    stopPrice := math.max(stopPrice, lower)
+
+if not na(stopPrice)
+    strategy.exit("Stop", "Long", stop = stopPrice)
+
+if strategy.position_size == 0 and not longSignal
+    stopPrice := na
+
+plot(upper, "Breakout level", color = color.new(color.green, 40))
+plot(lower, "20-day low", color = color.new(color.red, 60))
+plot(trend, "200 EMA", color = color.new(color.orange, 0), linewidth = 2)
+plot(strategy.position_size > 0 ? stopPrice : na, "Active stop", color = color.red, style = plot.style_linebr, linewidth = 2)
