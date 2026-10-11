@@ -1,0 +1,564 @@
+{
+ "campaign": [
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "status": "ENABLED",
+    "targetImpressionShare": {
+     "location": "ABSOLUTE_TOP_OF_PAGE",
+     "locationFractionMicros": "950000",
+     "cpcBidCeilingMicros": "10000000"
+    },
+    "name": "Brand Search | WW",
+    "id": "21651817099"
+   },
+   "campaignBudget": {
+    "resourceName": "customers/3104616697/campaignBudgets/13878063753",
+    "amountMicros": "300000000"
+   }
+  }
+ ],
+ "ad_groups": [
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/165369688223",
+    "status": "ENABLED",
+    "id": "165369688223",
+    "name": "Phrase Keywords"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "status": "ENABLED",
+    "id": "169729176627",
+    "name": "Exact Keywords"
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/165369688223",
+    "name": "Phrase Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/165369688223~301191170803",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "PHRASE",
+     "text": "cavaier"
+    },
+    "criterionId": "301191170803"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/165369688223~301191170803"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~303657553908",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "EXACT",
+     "text": "cavaier"
+    },
+    "criterionId": "303657553908"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~303657553908"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~912794277818",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "EXACT",
+     "text": "cavaier.com"
+    },
+    "criterionId": "912794277818"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~912794277818"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~1423038746844",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "EXACT",
+     "text": "cavaier jewellery"
+    },
+    "criterionId": "1423038746844"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~1423038746844"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~2179494631337",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "EXACT",
+     "text": "cavaier jewelry"
+    },
+    "criterionId": "2179494631337"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~2179494631337"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~2318661181178",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "EXACT",
+     "text": "cavaier bracelet"
+    },
+    "criterionId": "2318661181178"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~2318661181178"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/165369688223",
+    "name": "Phrase Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/165369688223~2345557872162",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "PHRASE",
+     "text": "cavaier.com"
+    },
+    "criterionId": "2345557872162"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/165369688223~2345557872162"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/165369688223",
+    "name": "Phrase Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/165369688223~2349779497398",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "PHRASE",
+     "text": "cavaier bracelet"
+    },
+    "criterionId": "2349779497398"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/165369688223~2349779497398"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~2388680788538",
+    "status": "PAUSED",
+    "keyword": {
+     "matchType": "BROAD",
+     "text": "cavaierofficial"
+    },
+    "criterionId": "2388680788538"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~2388680788538"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/165369688223",
+    "name": "Phrase Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/165369688223~2389894410165",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "PHRASE",
+     "text": "cavaierofficial"
+    },
+    "criterionId": "2389894410165"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/165369688223~2389894410165"
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupCriterion": {
+    "resourceName": "customers/3104616697/adGroupCriteria/169729176627~2432204263417",
+    "status": "ENABLED",
+    "keyword": {
+     "matchType": "EXACT",
+     "text": "cavaierofficial"
+    },
+    "criterionId": "2432204263417"
+   },
+   "keywordView": {
+    "resourceName": "customers/3104616697/keywordViews/169729176627~2432204263417"
+   }
+  }
+ ],
+ "ads": [
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/165369688223",
+    "name": "Phrase Keywords"
+   },
+   "adGroupAd": {
+    "resourceName": "customers/3104616697/adGroupAds/165369688223~711722283305",
+    "status": "ENABLED",
+    "ad": {
+     "responsiveSearchAd": {
+      "headlines": [
+       {
+        "text": "Minimal Versatile Jewelry",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Timeless and Minimal Jewelry",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Official Store",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Minimal & Versatile Jewelry",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Minimal & Durable Jewelry",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "pinnedField": "HEADLINE_1",
+        "text": "Cavaier",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       }
+      ],
+      "descriptions": [
+       {
+        "text": "Buy 2 Get Free Shipping | 5-Star Reviews - Lifetime Warranty.",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Adjustable and Minimalistic Jewelry from Sweden. Shipping worldwide.",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Timeless jewelry made for any occasion | Swedish Designs",
+        "assetPerformanceLabel": "PENDING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       }
+      ]
+     },
+     "resourceName": "customers/3104616697/ads/711722283305",
+     "id": "711722283305",
+     "finalUrls": [
+      "https://cavaier.com/"
+     ]
+    }
+   }
+  },
+  {
+   "adGroup": {
+    "resourceName": "customers/3104616697/adGroups/169729176627",
+    "name": "Exact Keywords"
+   },
+   "adGroupAd": {
+    "resourceName": "customers/3104616697/adGroupAds/169729176627~711608246118",
+    "status": "ENABLED",
+    "ad": {
+     "responsiveSearchAd": {
+      "headlines": [
+       {
+        "text": "Minimal Versatile Jewelry",
+        "assetPerformanceLabel": "LEARNING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Timeless and Minimal Jewelry",
+        "assetPerformanceLabel": "GOOD",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Official Store",
+        "assetPerformanceLabel": "GOOD",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Minimal & Versatile Jewelry",
+        "assetPerformanceLabel": "LEARNING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Minimal & Durable Jewelry",
+        "assetPerformanceLabel": "GOOD",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "pinnedField": "HEADLINE_1",
+        "text": "Cavaier",
+        "assetPerformanceLabel": "GOOD",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       }
+      ],
+      "descriptions": [
+       {
+        "text": "Buy 2 Get Free Shipping | 5-Star Reviews - Lifetime Warranty.",
+        "assetPerformanceLabel": "GOOD",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Adjustable and Minimalistic Jewelry from Sweden. Shipping worldwide.",
+        "assetPerformanceLabel": "GOOD",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       },
+       {
+        "text": "Timeless jewelry made for any occasion | Swedish Designs",
+        "assetPerformanceLabel": "LEARNING",
+        "policySummaryInfo": {
+         "reviewStatus": "REVIEWED",
+         "approvalStatus": "APPROVED"
+        }
+       }
+      ]
+     },
+     "resourceName": "customers/3104616697/ads/711608246118",
+     "id": "711608246118",
+     "finalUrls": [
+      "https://cavaier.com/"
+     ]
+    }
+   }
+  }
+ ],
+ "campaign_assets": [
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/167471526962",
+    "id": "167471526962",
+    "finalUrls": [
+     "https://cavaier.com/collections/for-her"
+    ],
+    "sitelinkAsset": {
+     "linkText": "Women's Collection"
+    }
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~167471526962~SITELINK",
+    "fieldType": "SITELINK",
+    "status": "ENABLED"
+   }
+  },
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/167471526965",
+    "id": "167471526965",
+    "finalUrls": [
+     "https://cavaier.com/collections/for-him"
+    ],
+    "sitelinkAsset": {
+     "linkText": "Men's Collection"
+    }
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~167471526965~SITELINK",
+    "fieldType": "SITELINK",
+    "status": "ENABLED"
+   }
+  },
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/167471526968",
+    "id": "167471526968",
+    "finalUrls": [
+     "https://cavaier.com/products/cube-bracelet-1"
+    ],
+    "sitelinkAsset": {
+     "linkText": "Bracelets"
+    }
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~167471526968~SITELINK",
+    "fieldType": "SITELINK",
+    "status": "REMOVED"
+   }
+  },
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/167471526971",
+    "id": "167471526971",
+    "finalUrls": [
+     "https://cavaier.com/products/rope-necklace-1"
+    ],
+    "sitelinkAsset": {
+     "linkText": "Necklaces"
+    }
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~167471526971~SITELINK",
+    "fieldType": "SITELINK",
+    "status": "REMOVED"
+   }
+  },
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/131256300932",
+    "id": "131256300932"
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~131256300932~BUSINESS_NAME",
+    "fieldType": "BUSINESS_NAME",
+    "status": "ENABLED"
+   }
+  },
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/135068638014",
+    "id": "135068638014"
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~135068638014~BUSINESS_LOGO",
+    "fieldType": "BUSINESS_LOGO",
+    "status": "ENABLED"
+   }
+  },
+  {
+   "campaign": {
+    "resourceName": "customers/3104616697/campaigns/21651817099",
+    "id": "21651817099"
+   },
+   "asset": {
+    "resourceName": "customers/3104616697/assets/168459849443",
+    "id": "168459849443"
+   },
+   "campaignAsset": {
+    "resourceName": "customers/3104616697/campaignAssets/21651817099~168459849443~BUSINESS_LOGO",
+    "fieldType": "BUSINESS_LOGO",
+    "status": "ENABLED"
+   }
+  }
+ ]
+}

@@ -59,9 +59,24 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 ## 2. Account setup (state as of Oct 11, 2026)
 
 - Google Ads 3104616697 "Cavaier" under MCC 9574419833 (MCC also holds Andersson Stone 8420446950).
-- Only campaign: **Brand Search | WW** (Search, target impression share 95% absolute top,
-  max CPC 10 SEK, budget 300 SEK/day, English only, worldwide). Ad groups "Exact Keywords"
-  and "Phrase Keywords". All other 28 campaigns removed Oct 11.
+- Only campaign: **Brand Search** (renamed from "Brand Search | WW" Oct 11; Search, target
+  impression share 95% absolute top, max CPC 10 SEK, budget 300 SEK/day shared by all languages,
+  worldwide except US). Since Oct 11 one ad group per language: English, German, Dutch, Spanish,
+  French, Hebrew, Japanese, Italian, Chinese, Swedish, Polish, Norwegian, Danish. Each has the
+  same brand keywords (exact: cavaier, cavaier jewelry, cavaier jewellery, cavaier bracelet,
+  cavaier.com, cavaierofficial; phrase: cavaier, cavaierofficial) + local exact keywords, one RSA
+  in its language (15 headlines, 4 descriptions, "Cavaier – Official Store" pinned first), 4 callouts,
+  1 "Types" snippet, and 2 local Women/Men sitelinks (English uses the campaign-level ones).
+  Landing pages: cavaier.com, cavaier.de, cavaier.nl, cavaier.com/es, cavaier.fr/fr, cavaier.com/he,
+  cavaier.com (Japanese), cavaier.it/it, cavaier.com/zh, cavaier.se/sv, cavaier.pl, cavaier.no,
+  cavaier.dk. Ad texts: scratchpad brand_spec.py (copy in google-ads/brand-search-ads.json).
+- Store languages (Shopify, Oct 11): translated pages exist for de, nl, es, fr, he, it, zh-TW (/zh),
+  sv, pl, nb, ar, id, pt-PT, th. Note cavaier.fr, .it, .es, .se default to English; the local
+  language is at /fr, /it, /es, /sv. **No Japanese or Danish** on any domain yet (ja is published
+  but not on a domain; no da locale) → those ads link to English pages until Eli adds them.
+- Automatically created ad-group assets (sitelinks to login/contact/FAQ, old callouts) were
+  overriding the clean sitelinks; 32 removed Oct 11. Text asset automation is opted out. Check
+  at every evaluation that none come back.
 - Conversion tracking: one primary action **"Purchase"** (7678303151, label T6oUCK-3ps0c…),
   fired by the Google & YouTube app pixel; real order values; every purchase counted;
   data-driven attribution; 7-day click / 1-day view. Six "Google Shopping App …" actions
@@ -166,12 +181,9 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 5. Proposals and open questions
 
-- **P-004** Rewrite brand RSA (12–15 headlines, 4 descriptions, no "adjustable", confirm
-  shipping offer) — needs Eli's current offer.
-- **P-006** Brand Search | DE: DE+AT+CH, German, German ads → cavaier.de; exclude those
-  countries from WW. Judge on brand impression share (target 90%+), CTR, CPC; guardrail ROAS.
-- **P-007** Brand Search | NL: NL+BE, Dutch ads → cavaier.nl. Launch ~1 week after DE.
-- Later: Norway, Poland local brand campaigns if worthwhile.
+- Ask Eli: add Japanese to cavaier.com and a Danish language to cavaier.dk in Shopify (then
+  point those ad groups to the local pages); consider making /fr, /it, /es, /sv the default
+  language on cavaier.fr/.it/.es/.se.
 - Open questions to Eli: target (min ROAS / max CPA), monthly budget and ceiling,
   weekly review day; current shipping offer for ad copy; Minimal Cuff "adjustable"
   wording; correct US shipping terms for US product texts.
@@ -182,6 +194,11 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Executed Brand Search makeover (C-009, P-004, P-006, P-007): renamed, English
+  ad group merged, 12 language ad groups with ads/keywords/sitelinks/callouts/snippets, 32 auto
+  assets removed, old English ad paused after new one approved. All verified against the spec
+  (0 differences). Snapshot before: google-ads/snapshots/brand-search-before-2026-10-11.json.
+  Evaluate P-004 Oct 25, P-006 Nov 1 (local ad's share of impressions in its countries ≥70%).
 - **2026-10-11** Researched structure (section 3): proposed one brand campaign with an ad group
   per language instead of 12 country campaigns; awaiting Eli.
 - **2026-10-11** Local brand campaign list set: DE, NL, ES, FR, IL, JP, IT, HK + PL, SE, NO, DK
