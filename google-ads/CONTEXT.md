@@ -106,6 +106,19 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 - Brand Search last 28 days to Oct 10: 8,406 SEK, 53 purchases, 34,129 SEK revenue, ROAS 4.06;
   71% of search-term spend on non-brand terms.
 
+### Research: campaign structure for local languages (Oct 11, 2026)
+- Google removed the campaign language setting from Search (announced Aug 14, 2026, live from
+  late Sept 2026). Ads are now matched by the language of the ad + landing page. For searches
+  with no clear language (brand names like "cavaier"), Google shows the ad in the user's most
+  preferred language. If several campaigns/ad groups in different languages are eligible,
+  Google picks the one in the user's language. Google does not translate ads. No language
+  exclusions. Source: support.google.com/google-ads/answer/1722078, ppc.land, SERoundtable.
+- So P-003 (all languages) is moot now: the setting no longer exists.
+- Consequence for per-country campaigns: a German-only campaign in Germany may show no ad to
+  an English-preferring searcher there. Per-language ad groups in one campaign avoid that.
+- Agency guides (Go Fish, Search Engine Land, Meticulosity) still default to one campaign per
+  country/language for control; trade-off is more budgets and management.
+
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
   Purchase"), but the app one recorded 0 in 30 days, so no real double counting happened
@@ -156,6 +169,8 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-11** Researched structure (section 3): proposed one brand campaign with an ad group
+  per language instead of 12 country campaigns; awaiting Eli.
 - **2026-10-11** Local brand campaign list set: DE, NL, ES, FR, IL, JP, IT, HK + PL, SE, NO, DK
   (Eli added the last four). Plan: build paused, launch in waves, Eli reviews ads first.
 - **2026-10-11** Markets regrouped by language (Shopify, 90 days): English 1,797 orders (~€131k),
