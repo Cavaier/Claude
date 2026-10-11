@@ -119,6 +119,16 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 - Agency guides (Go Fish, Search Engine Land, Meticulosity) still default to one campaign per
   country/language for control; trade-off is more budgets and management.
 
+### Brand search terms (12 months to Oct 10, 2026, Google Ads)
+- Top: cavaier 13.6k impr / 536 purchases · cavaier jewelry 5.5k / 352 · cavaier bracelet 1.6k / 77 ·
+  cavaier (jewelry) reviews ~2.2k / 48 · cavaier official 411 / 20 · cavaierofficial 254 / 20.
+- Local-language brand searches seen: armband 175 (12 purch.), bijoux 118 (11), gioielli 71 (9),
+  schmuck 59 (9), erfahrungen 64 (6), armbånd 26, opinie 29, recensioni 8; Chinese 香港 82 (3.5),
+  評價 86, hk 28; Japanese アクセサリー 40, 日本 9, 口コミ 2. No Hebrew terms (ads were English-only).
+- Phrase "cavaier" already reaches all of these; exact local keywords help Google route the
+  search to the ad group in the matching language.
+- Shipping: free standard shipping on all orders (shipping policy, confirmed by Eli Oct 11).
+
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
   Purchase"), but the app one recorded 0 in 30 days, so no real double counting happened
