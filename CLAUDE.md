@@ -47,6 +47,9 @@
 
 ## Google Ads Desk (working log)
 
+- **Context book: `google-ads/CONTEXT.md`** — read it before any Google Ads work and add to it
+  whenever something is looked at, decided or learned (facts, findings, decisions, proposals, log).
+
 - Dashboard: https://claude.ai/artifact/BEmCjut8iisbsUQsezpmNa ("Cavaier Google Ads Desk"), Dashboard type, data as attached JSON files.
 - Every change to the account, feed or tracking gets an entry in the change log (`changes.json`): id (permanent: C-### for changes logged as already done, P-### for changes first proposed; the status field shows Proposed/Applied/Reverted), level, entity, change, why, expected, judged-by metric + guardrail, baseline numbers, eval date, then result, verdict and decision.
 - Verdict rules live on the "How we judge changes" tab: equal before/after windows (≥14 days, 28 for bidding/budget), ±10% threshold, ≥20 purchases a side, hygiene changes are "Not measurable".
