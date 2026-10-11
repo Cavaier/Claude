@@ -266,7 +266,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
-- **2026-10-11** P-011 live: Search | Men | UK (campaign 24342448007), 10 ad groups, 250 SEK/day,
+- **2026-10-11** P-011 live: Search | Men | UK (campaign 24342448007), 10 ad groups, 500 SEK/day (raised from 250 on launch day, Eli),
   portfolio Max conversion value with 8 SEK CPC cap, bid higher for new customers, shared negative list
   'Non-brand | Negatives' (65; sterling silver / 925 / silver deliberately NOT negative – Eli: silver
   buyers may buy steel). Spec: google-ads/search-men-uk-spec.json. Keyword Planner stats UK/AU/CA in
