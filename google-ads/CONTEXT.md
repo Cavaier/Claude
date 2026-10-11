@@ -128,6 +128,9 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 - Phrase "cavaier" already reaches all of these; exact local keywords help Google route the
   search to the ad group in the matching language.
 - Shipping: free standard shipping on all orders (shipping policy, confirmed by Eli Oct 11).
+- Reviews: 4.5/5 from 3,000+ reviews (Eli, Oct 11). No lifetime warranty anymore: the live brand
+  RSA still says "Lifetime Warranty" → replace via P-004. Shopify product texts checked: no
+  warranty or old review claims.
 
 ### Tracking history
 - Before Oct 11 two primary purchase actions existed ("Purchase" + "Google Shopping App
