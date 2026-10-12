@@ -266,6 +266,11 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-12 (15:00 UTC)** First day Search | Men | UK on Maximize clicks: 170 impr, 13 clicks,
+  102 SEK, CPC 7.9 (at the 8 SEK cap), CTR 7.6%, 0 purchases yet. Impression share <10%, 90% lost to
+  rank → the 8 SEK cap limits reach. Silver group most traffic (55 impr). Added negatives: solid silver,
+  pure silver, identity, lacoste, cord, wristband(s). Brand Search Oct 11–12: English 312 impr, 87
+  clicks, 374 SEK, 7 purchases (ROAS ~12); local-language ad groups no impressions yet.
 - **2026-10-12** Search | Men | UK had 0 impressions for ~15 h after approval: portfolio Maximize
   conversion value bids too low on keywords with no purchase history. Switched to Maximize clicks,
   8 SEK cap. Lesson: new non-brand campaigns start on clicks, move to target ROAS after ~30 purchases.
