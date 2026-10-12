@@ -266,6 +266,13 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-12** Keyword history (all campaigns, all time): non-brand keywords/search terms brought
+  ~10 real purchases in total. Only repeat signals: brand misspellings (caviar … ~14, done in P-010),
+  "black rope bracelet" 2.2 + "black bracelet" 1 (Shopping), "box chain bracelet men's" 1, plus Shopping
+  product data (men's rope / cuban). "All conversions" on many odd terms are secondary actions, not
+  sales. Past non-brand search tests paid 22–32 SEK/click (Dec 2024–Jan 2025, no cap) vs 7.9 now.
+  Added exact "black rope bracelet", "black rope bracelet men", "rope bracelet black" (Rope) and
+  "black bracelet", "black bracelet for men" (Black) to Search | Men | UK.
 - **2026-10-12 (15:00 UTC)** First day Search | Men | UK on Maximize clicks: 170 impr, 13 clicks,
   102 SEK, CPC 7.9 (at the 8 SEK cap), CTR 7.6%, 0 purchases yet. Impression share <10%, 90% lost to
   rank → the 8 SEK cap limits reach. Silver group most traffic (55 impr). Added negatives: solid silver,
