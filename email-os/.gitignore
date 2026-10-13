@@ -3,3 +3,6 @@ campaigns/*/out/
 campaigns/*/lint.json
 reports/
 data/img/
+campaigns/*/staged.json
+campaigns/*/files.json
+campaigns/*/klaviyo/
