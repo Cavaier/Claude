@@ -11,3 +11,13 @@ Steps (paths inside the scripts point at the session scratchpad; adjust):
 1. `browse.js` lists a share folder; `dl.js` downloads clips via the player's Download → MP4 1080 proxy.
 2. `cards.js` renders the transparent text cards (needs Figtree-300/400/500.ttf and logo_white.png).
 3. `build.sh` cuts the shots, overlays the cards, adds the music, exports the MP4.
+
+## v2: minimal macro style (after Vacier's top video ads)
+
+12 s, slow motion (120 fps source played 3x slower), muted warm-neutral grade, small CAVAIER wordmark
+with one tracked line per shot placed on empty skin or fabric. Footage: `Men/Session 1 | Men/VIDEO`
+(silver duo chains on beige linen): C1133, C1070, C1176, C1132. Music: calm ElevenLabs ambient (13 s).
+
+- `walk.js` steps through a folder in the player and records every clip's preview link (fast way to review 100+ clips).
+- `dl2.js` downloads 1080 proxies by opening each clip's view page directly.
+- `cards2.js` + `build2.sh` render the text and the edit.
