@@ -1,0 +1,11 @@
+campaign: 2026-11-11-early-access-1
+markets:
+  eu:
+    klaviyo_campaign_id: 01M4VF532AGT37ZKVAH4GPFHJM
+    message_id: 01M4VF532K88MBWS16SCMBM2D6
+    template_id: VFW9Q2
+    final_hash: 3e8ff297e242a65b
+    verified: true
+    test: true
+    problems: []
+    verified_at: 1791923509

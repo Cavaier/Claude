@@ -1,22 +1,31 @@
 """Check that what is in Klaviyo is exactly what was approved, and record the build.
 
     python3 tools/verify_build.py <campaign-id> <market> <template.json> <message.json>
+    python3 tools/verify_build.py <campaign-id> <market> --fetch <campaign-message-id>
+        (reads Klaviyo directly with KLAVIYO_API_KEY: no agent retypes anything)
 
 The builder saves two raw connector responses after building the draft:
   template.json  get_email_template(id) with fields html, text, name
   message.json   get_campaign_message(id, include campaign) with subject, preview, the
                  campaign's name, audiences, send_strategy and status
 
-Checks: template HTML and text equal out/<market>.html/.txt; subject and preview equal the
-rendered ones; campaign name, audiences and send time equal the calendar row; status Draft.
+Klaviyo rewrites HTML when it saves a template (inlines CSS, sorts attributes, turns
+entities into characters, drops <link> tags), so the HTML is compared by what a reader gets:
+the visible text, every link and every image (src and alt), in order.
+
+Checks: template content and text part equal out/<market>.html/.txt; the template read back
+is the one assigned to the message; subject and preview equal the rendered ones; campaign name, audiences and send time equal the calendar row; status Draft.
 Writes campaigns/<id>/build.yaml with verified: true/false. The send gate only lets a
 campaign through when verified is true for the version that got final approval.
 """
 import datetime as dt
 import json
+import os
 import re
 import sys
 import time
+import urllib.request
+from html.parser import HTMLParser
 from pathlib import Path
 
 import yaml
@@ -29,8 +38,56 @@ from common import CAMPAIGNS, calendar_rows, config, gate_hash, load
 TEST_PREFIX = "EOS TEST · "
 
 
-def norm(html):
-    return re.sub(r"\s+", " ", re.sub(r">\s+<", "><", html or "")).strip()
+INVISIBLE = dict.fromkeys(map(ord, "\u034f\u200c\u200b\ufeff"), None)
+
+
+class Fingerprint(HTMLParser):
+    """What a reader gets from an email: text, links and images, in order."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.text, self.links, self.images, self.skip = [], [], [], 0
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag in ("style", "script", "head"):
+            self.skip += tag != "head"
+        if tag == "a" and a.get("href"):
+            self.links.append(a["href"])
+        if tag == "img":
+            self.images.append((a.get("src"), a.get("alt")))
+
+    def handle_endtag(self, tag):
+        if tag in ("style", "script"):
+            self.skip -= 1
+
+    def handle_data(self, data):
+        if not self.skip:
+            self.text.append(data)
+
+    @classmethod
+    def of(cls, html):
+        fp = cls()
+        fp.feed(html or "")
+        words = " ".join(fp.text).translate(INVISIBLE).replace("\xa0", " ")
+        return {"text": re.sub(r"\s+", " ", words).strip(), "links": fp.links, "images": fp.images}
+
+
+def norm(text):
+    return re.sub(r"\s+", " ", (text or "").translate(INVISIBLE).replace("\xa0", " ")).strip()
+
+
+def first_diff(a, b):
+    i = next((n for n in range(min(len(a), len(b))) if a[n] != b[n]), min(len(a), len(b)))
+    return f"…{a[max(0, i - 50):i + 50]!r}… vs approved …{b[max(0, i - 50):i + 50]!r}…"
+
+
+def fetch(path):
+    req = urllib.request.Request(f"https://a.klaviyo.com/api/{path}", headers={
+        "Authorization": f"Klaviyo-API-Key {os.environ['KLAVIYO_API_KEY']}",
+        "revision": "2024-10-15", "accept": "application/vnd.api+json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)
 
 
 def first(obj, *keys):
@@ -60,6 +117,15 @@ def expected_send(row, market_cfg):
     return f"{row['date']}T{row.get('time', '10:00')}", True
 
 
+def campaign_of(msg):
+    """The campaign resource, wherever this response shape puts it."""
+    inc = next((i for i in msg.get("included", []) if i.get("type") == "campaign"), None)
+    if inc:
+        return inc
+    rel = first(msg, "data.relationships.campaign.data") or {}
+    return rel if rel.get("attributes") else {}
+
+
 def verify(campaign_id, market, template_json, message_json):
     cfg = config()
     row = calendar_rows()[campaign_id]
@@ -67,13 +133,18 @@ def verify(campaign_id, market, template_json, message_json):
     out_html = (d / "out" / f"{market}.html").read_text()
     out_txt_path = d / "out" / f"{market}.txt"
     meta = load(d / "out" / f"{market}.meta.json")
-    tpl = unwrap(json.loads(Path(template_json).read_text()))
-    msg = unwrap(json.loads(Path(message_json).read_text()))
+    if template_json == "--fetch":  # direct read, no transcription
+        msg = fetch(f"campaign-messages/{message_json}?include=campaign,template")
+        tid = first(msg, "data.relationships.template.data.id")
+        tpl = fetch(f"templates/{tid}")
+    else:
+        tpl = unwrap(json.loads(Path(template_json).read_text()))
+        msg = unwrap(json.loads(Path(message_json).read_text()))
 
     tdata = tpl.get("data", tpl)
     t_attr = tdata.get("attributes", {})
     m_attr = msg.get("data", {}).get("attributes", {})
-    campaign = next((i for i in msg.get("included", []) if i.get("type") == "campaign"), {})
+    campaign = campaign_of(msg)
     c_attr = campaign.get("attributes", {})
     content = first(m_attr, "definition.content") or {}
 
@@ -83,13 +154,26 @@ def verify(campaign_id, market, template_json, message_json):
         if got != want:
             problems.append(f"{name}: Klaviyo has {got!r}, approved is {want!r}")
 
-    if norm(t_attr.get("html")) != norm(out_html):
-        a, b = norm(t_attr.get("html")), norm(out_html)
-        i = next((n for n in range(min(len(a), len(b))) if a[n] != b[n]), min(len(a), len(b)))
-        problems.append(f"template HTML differs from out/{market}.html at char {i}: "
-                        f"Klaviyo …{a[max(0, i - 40):i + 40]!r}… vs approved …{b[max(0, i - 40):i + 40]!r}…")
-    if out_txt_path.exists() and t_attr.get("text") is not None and norm(t_attr["text"]) != norm(out_txt_path.read_text()):
-        problems.append("template plain-text part differs from out/<market>.txt")
+    assigned = first(msg, "data.relationships.template.data.id")
+    if assigned and tdata.get("id") and assigned != tdata.get("id"):
+        problems.append(f"read back template {tdata.get('id')}, but the message uses {assigned} "
+                        "(Klaviyo clones a template when it's assigned: read the assigned one)")
+    got, want = Fingerprint.of(t_attr.get("html")), Fingerprint.of(out_html)
+    if got["text"] != want["text"]:
+        problems.append(f"text in Klaviyo's template differs: {first_diff(got['text'], want['text'])}")
+    if got["links"] != want["links"]:
+        bad = next((f"{a} ≠ {b}" for a, b in zip(got["links"], want["links"]) if a != b),
+                   f"{len(got['links'])} links vs {len(want['links'])}")
+        problems.append(f"links in Klaviyo's template differ: {bad}")
+    if got["images"] != want["images"]:
+        bad = next((f"{a} ≠ {b}" for a, b in zip(got["images"], want["images"]) if a != b),
+                   f"{len(got['images'])} images vs {len(want['images'])}")
+        problems.append(f"images in Klaviyo's template differ: {bad}")
+    if out_txt_path.exists():
+        if t_attr.get("text") is None:
+            problems.append("Klaviyo's template has no plain-text part")
+        elif norm(t_attr["text"]) != norm(out_txt_path.read_text()):
+            problems.append(f"plain-text part differs: {first_diff(norm(t_attr['text']), norm(out_txt_path.read_text()))}")
     check("subject", content.get("subject"), meta["subject"])
     check("preview", content.get("preview_text"), meta["preview"])
     want_name = per_market(row.get("klaviyo_name"), market)

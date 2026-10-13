@@ -4,7 +4,7 @@
 """
 import sys
 
-from common import CAMPAIGNS, GATES, approval_state, calendar_rows, config, load
+from common import CAMPAIGNS, GATES, approval_state, calendar_rows, config, gate_hash, load
 
 MARK = {"approved": "✓", "stale": "~", "none": "·"}
 
@@ -18,6 +18,9 @@ def stage(cid, cfg):
     done = [name for name, p in steps if p.exists()]
     if "built" in done:
         markets = (load(d / "build.yaml") or {}).get("markets") or {}
+        current = gate_hash(cid, "final", cfg)
+        if any(b.get("final_hash") != current for b in markets.values()):
+            return "built (outdated)"
         ok = [m for m, b in markets.items() if b.get("verified")]
         return f"verified:{','.join(ok)}" if ok and len(ok) == len(markets) else "built (unverified)"
     return done[-1] if done else "planned"

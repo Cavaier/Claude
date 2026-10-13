@@ -3,6 +3,7 @@
     python3 email-os/tests/test_system.py      (or pytest)
 """
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -326,9 +327,39 @@ def test_verify_build_catches_klaviyo_drift():
     for bad, word in ((dict(subject="Black Friday: 30% off"), "subject"),
                       (dict(audiences=["SxyYP7"]), "audiences"),
                       (dict(datetime="2026-11-27T09:00:00+00:00"), "send time"),
-                      (dict(html=(s.root / f"campaigns/{CID}/out/eu.html").read_text().replace("€66.43", "€66.47")), "HTML")):
+                      (dict(html=(s.root / f"campaigns/{CID}/out/eu.html").read_text().replace("€66.43", "€66.47")), "text in Klaviyo")):
         r = s.run("verify_build.py", CID, "eu", *s.klaviyo_dumps(**bad))
         assert r.returncode == 1 and word in r.stdout, (word, r.stdout)
+
+
+def klaviyo_rewrite(html):
+    """What Klaviyo does on save: doctype case, self-closing tags, entities to characters,
+    <link> dropped, attributes reordered."""
+    import html as h
+    html = html.replace("<!doctype html>", "<!DOCTYPE html>\n").replace("&nbsp;", "\xa0").replace("&#847;", "\u034f")
+    html = re.sub(r"<link [^>]*>", "", html)
+    html = re.sub(r"<(meta|br|img)([^>]*?)>", r"<\1\2/>", html)
+    html = re.sub(r'<td class="px" style="([^"]*)">', r'<td style="\1" class="px">', html)
+    return html
+
+
+def test_verify_tolerates_klaviyo_rewrites_and_its_response_shape():
+    s = Sandbox()
+    s.host_images()
+    s.lint("--final")
+    html = (s.root / f"campaigns/{CID}/out/eu.html").read_text()
+    tp, mp = s.klaviyo_dumps(html=klaviyo_rewrite(html))
+    # the connector nests the campaign under the message's relationships, not in "included"
+    msg = json.loads(Path(mp).read_text())
+    camp = msg.pop("included")[0]
+    msg["data"]["relationships"] = {"campaign": {"data": camp}, "template": {"data": {"type": "template", "id": "T1"}}}
+    Path(mp).write_text(json.dumps({"result": msg}))
+    r = s.run("verify_build.py", CID, "eu", tp, mp)
+    assert r.returncode == 0, r.stdout
+    # a cloned template that wasn't read back is caught
+    msg["data"]["relationships"]["template"]["data"]["id"] = "CLONE"
+    Path(mp).write_text(json.dumps({"result": msg}))
+    assert "clones a template" in s.run("verify_build.py", CID, "eu", tp, mp).stdout
 
 
 def test_send_gate_end_to_end():

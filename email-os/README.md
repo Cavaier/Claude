@@ -136,8 +136,12 @@ refuses it permanently. Use it to try the system next to a real draft.
   before the builder and reconcile can work for US.
 - Tested in Chromium at 640 and 375px, not in real Gmail/Outlook/Apple Mail inboxes. A
   Litmus or Email on Acid check (or test sends to real accounts, when asked) is still needed.
-- The builder re-types the HTML into Klaviyo; long templates can pick up transcription
-  errors. verify_build catches them, but it may take a second pass.
+- The builder re-types the HTML into Klaviyo and the read-back into files; verify_build
+  catches transcription errors, but an agent could in principle save a wrong read-back.
+  With `KLAVIYO_API_KEY` in the environment, `verify_build.py … --fetch <message id>` reads
+  Klaviyo directly instead (written to the documented API, not yet run against it).
+- Klaviyo rewrites HTML on save and drops `<link>` tags; fonts load through `@import`
+  instead, and verification compares text, links and images rather than bytes.
 - `data/reviews.yaml` is empty: Trustpilot blocks automated reads, so real reviews have to be
   added by hand with their source URL.
 - The hooks stop mistakes and well-meaning agents. They aren't a security boundary against a
