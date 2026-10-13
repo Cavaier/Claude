@@ -1,7 +1,7 @@
 {
   "market": "eu",
   "currency": "EUR",
-  "fetched_at": 1791922771,
+  "fetched_at": 1791922990,
   "products": {
     "3x-minimal-stack-set-for-him": {
       "title": "3x Minimal Stack Set",
@@ -201,7 +201,7 @@
       "min_price": "34.90",
       "min_handle": "rope-necklace-for-her",
       "products": 9,
-      "path": "/collections/for-her"
+      "path": "/collections/women-necklace"
     },
     "all": {
       "min_price": "19.90",

@@ -13,7 +13,7 @@ import json
 import re
 import sys
 from decimal import ROUND_HALF_UP, Decimal
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from markupsafe import Markup
@@ -66,6 +66,7 @@ class Market:
         self.lock = (load(self.dir / "images.lock.yaml") or {}).get("images", {})
         self.base = f"https://{self.m['domain']}{self.m.get('path_prefix', '')}"
         self.utm = urlencode({"utm_source": "klaviyo", "utm_medium": "email", "utm_campaign": campaign_id})
+        self.apply_code = False
         self.meta = {"market": market_id, "locale": self.m["locale"], "buttons": [], "images": [],
                      "products": [], "reviews": [], "strings_used": [], "tokens": [],
                      "facts_fetched_at": self.facts["fetched_at"]}
@@ -126,7 +127,7 @@ class Market:
 
     # -- links, buttons, images ---------------------------------------------
     def product_href(self, handle):
-        return f"{self.base}/products/{handle}?{self.utm}"
+        return self.store_link(f"{self.m.get('path_prefix', '')}/products/{handle}")
 
     def link(self, spec):
         spec = spec or {"path": "/"}
@@ -135,13 +136,20 @@ class Market:
         if "product" in spec:
             return self.product_href(spec["product"])
         if "collection" in spec:
-            path = self.cfg["collections"][spec["collection"]]["path"]
-            return f"{self.base}{path}?{self.utm}"
-        if "path" in spec:
-            path = spec["path"]
-            sep = "&" if "?" in path else "?"
-            return f"{self.base}{path}{sep}{self.utm}"
-        raise RenderError(f"link needs url, product, collection or path: {spec}")
+            path = f"{self.m.get('path_prefix', '')}{self.cfg['collections'][spec['collection']]['path']}"
+        elif "path" in spec:
+            path = f"{self.m.get('path_prefix', '')}{spec['path']}"
+        else:
+            raise RenderError(f"link needs url, product, collection or path: {spec}")
+        return self.store_link(path)
+
+    def store_link(self, path):
+        sep = "&" if "?" in path else "?"
+        target = f"{path}{sep}{self.utm}"
+        if self.apply_code:
+            # Shopify's /discount/<code> puts the code in the cart, then redirects.
+            return f"https://{self.m['domain']}/discount/{quote(self.offer['code'])}?redirect={quote(target, safe='')}"
+        return f"https://{self.m['domain']}{target}"
 
     def button(self, spec, product=None, style="solid"):
         product = spec.get("product", product)
@@ -256,6 +264,9 @@ class Market:
         return b
 
     def render(self, layout):
+        self.apply_code = bool(layout.get("apply_code") and self.offer.get("code"))
+        if layout.get("apply_code") and not self.offer.get("code"):
+            raise RenderError("layout has apply_code: true but the calendar offer has no code")
         self.meta["subject"] = self.fill(self.copy.get("subject"))
         self.meta["preview"] = self.fill(self.copy.get("preview"))
         blocks = [self.block(raw) for raw in layout["blocks"]]
@@ -268,10 +279,10 @@ class Market:
         hrefs = {b["href"] for b in self.meta["buttons"]} | {b["href"] for b in blocks if b.get("href")}
         self.meta["links"] = sorted(hrefs)
         self.meta["html_bytes"] = len(html.encode())
-        return html, plain_text(blocks, self.meta)
+        return html, plain_text(blocks, self.meta, self.cfg["brand"])
 
 
-def plain_text(blocks, meta):
+def plain_text(blocks, meta, brand=None):
     """The text/plain part: same words and links, no layout."""
     out = []
 
@@ -291,8 +302,15 @@ def plain_text(blocks, meta):
             add(f"{b['name']}  {b['now']}" + (f" (was {b['was']})" if b.get("was") else ""))
         if b.get("button"):
             add(f"{b['button']['label']}: {b['button']['href']}")
-    text = "\n\n".join(htmllib.unescape(x) for x in out)
-    return text + "\n\n{% unsubscribe_url %}\n"
+        if b["type"] == "trust" and brand:
+            add(brand["trust_line"])
+        if b["type"] == "footer":
+            for l in b.get("links") or []:
+                add(f"{l['label']}: {l['href']}")
+            if b.get("preferences"):
+                add(f"{b['preferences']}: {{% manage_preferences_url %}}")
+            add(f"{b['unsubscribe']}: {{% unsubscribe_url %}}")
+    return "\n\n".join(htmllib.unescape(x) for x in out) + "\n"
 
 
 def render(campaign_id):

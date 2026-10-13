@@ -6,6 +6,6 @@ him-sets:      {collection: sets-for-him, path: /collections/sets-for-him}
 him-necklaces: {collection: for-him, path: /collections/for-him, types: ["Jewelry > Necklaces", "Jewelry > Necklaces > Pendant Necklaces"]}
 her-bracelets: {collection: for-her, path: /collections/for-her, types: ["Jewelry > Bracelets", "Jewelry > Bracelets > Cuffs"]}
 her-sets:      {collection: sets-for-her, path: /collections/sets-for-her}
-her-necklaces: {collection: for-her, path: /collections/for-her, types: ["Jewelry > Necklaces", "Jewelry > Necklaces > Pendant Necklaces"]}
+her-necklaces: {collection: women-necklace, path: /collections/women-necklace}
 all:           {collection: all-products, path: /collections/all-products}
 necklaces:     {collection: necklace, path: /collections/necklace}

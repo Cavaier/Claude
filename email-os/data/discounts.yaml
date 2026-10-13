@@ -1,0 +1,10 @@
+# Discount codes as they exist in Shopify, recorded by an agent with the Shopify connector
+# (codeDiscountNodeByCode). Rule R18 checks every offer code against this: it must exist, give
+# the offer's percentage, and be valid for the whole window the email promises.
+BF26:
+  percentage: 30
+  status: SCHEDULED
+  starts_at: '2026-11-10T23:00:00Z'   # Wed Nov 11 00:00 Stockholm
+  ends_at: '2026-11-12T22:59:00Z'     # Thu Nov 12 23:59 Stockholm
+  shopify_id: gid://shopify/DiscountCodeNode/1874485281114
+  checked_at: '2026-10-13'

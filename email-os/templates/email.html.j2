@@ -44,9 +44,8 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
 .tc{display:block!important;width:100%!important;box-sizing:border-box!important;border-left:0!important;border-top:1px dashed {{ N[6] }}!important}
 .tc:first-child{border-top:0!important}
 .tl{padding-left:4px!important;padding-right:4px!important}
-.tl:first-child{padding-left:0!important}.tl:last-child{padding-right:0!important}
 .tlab{font-size:10px!important;letter-spacing:0.1em!important}
-.tw{font-size:9px!important;letter-spacing:0.06em!important}
+.tw{font-size:10px!important;letter-spacing:0.05em!important}
 }
 </style>
 </head>
@@ -93,21 +92,21 @@ a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important
 </tr></table></td></tr>
 {%- elif b.type == "timeline" %}
 <tr><td class="px" style="padding:4px 40px 20px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td class="tw" style="white-space:nowrap;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[3] }};padding-right:10px;">{{ b.left }}</td>
+<td class="tw" style="white-space:nowrap;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[3] }};padding-right:10px;">{{ b.left }}</td>
 <td width="100%" style="min-width:24px;border-bottom:1px solid {{ N[2] }};font-size:1px;line-height:1px;">&nbsp;</td>
 <td style="padding:0 8px;font-size:14px;line-height:1;color:{{ A }};">&#9679;</td>
-<td class="tw" align="right" style="white-space:nowrap;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[6] }};">{{ b.right }}</td>
+<td class="tw" align="right" style="white-space:nowrap;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[5] }};">{{ b.right }}</td>
 </tr></table></td></tr>
 {%- elif b.type == "section_header" %}
 <tr><td class="px" style="padding:30px 40px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid {{ N[3] }};"><tr>
 <td style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[3] }};padding-bottom:8px;">{{ b.title }}</td>
-<td align="right" style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:{{ N[6] }};padding-bottom:8px;">{{ b.note or "" }}</td>
+<td align="right" style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:{{ N[5] }};padding-bottom:8px;">{{ b.note or "" }}</td>
 </tr></table></td></tr>
 {%- elif b.type == "tiles" %}
 {%- set n = b.tiles|length %}{% set w = 176 if n > 2 else 268 %}
-<tr><td class="px" style="padding:16px 40px 8px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<tr><td class="px" style="padding:16px 34px 8px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;"><tr>
 {%- for t in b.tiles %}
-<td class="tl" valign="top" width="{{ (100 / n)|int }}%" style="padding:0 {{ 0 if loop.last else 6 }}px 0 {{ 0 if loop.first else 6 }}px;">
+<td class="tl" valign="top" width="{{ (100 / n)|round(3) }}%" style="padding:0 6px;">
 <a href="{{ t.href }}" style="text-decoration:none;color:{{ N[3] }};">{{ img(t.image, w, "fl") }}
 <div class="tlab" style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;padding-top:10px;color:{{ N[3] }};">{{ t.label }}</div>
 {%- if t.sub %}<div style="font-size:13px;padding-top:4px;color:{{ A }};">{{ t.sub }}</div>{% endif %}</a>

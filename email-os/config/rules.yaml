@@ -19,6 +19,7 @@ rules:
   R15: {check: auto, severity: warn,  text: "No double discount: a product already on compare-at price gets the offer applied on top only if the brief says so."}
   R16: {check: auto, severity: error, text: "Weight: HTML under 90 KB (Gmail clips at 102 KB); every image hosted as an optimised JPEG under 300 KB (final)."}
   R17: {check: auto, severity: error, text: "What is in Klaviyo is what was approved: template HTML, subject, preview, name, audiences and send time verified (tools/verify_build.py)."}
+  R18: {check: auto, severity: error, text: "An offer code exists in Shopify (data/discounts.yaml), gives the offer's percentage, and is valid from the send until the end the email promises."}
   H01: {check: human, text: "Every lifestyle image looks like the real product (sole, clasp, finish, link size). Wrong detail = rejected."}
   H02: {check: human, text: "Backup before any destructive edit (Klaviyo template overwrite, Figma frame replace)."}
 

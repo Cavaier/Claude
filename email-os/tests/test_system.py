@@ -245,6 +245,47 @@ def test_html_stays_under_gmail_clip():
     assert s.meta()["html_bytes"] < 90_000
 
 
+def test_code_links_and_discount_checks():
+    s = Sandbox()
+    s.edit_yaml("calendar/2026-11.yaml", lambda cal: cal["rows"][0]["offer"].update(
+        {"code": "BF26", "valid": {"from": "2026-11-27", "to": "2026-11-29"}}))
+    s.edit_yaml(COPY, lambda c: c["strings"].update({"hero.body": "Use code {code} at checkout."}))
+    s.edit_yaml(LAYOUT, lambda l: l.update({"apply_code": True}))
+    disc = s.root / "data/discounts.yaml"
+    disc.write_text("{}\n")
+    assert any(f["rule"] == "R18" and "isn't recorded" in f["msg"] for f in s.findings())
+    assert "R18" in s.errors("--final")
+    disc.write_text(yaml.safe_dump({"BF26": {"percentage": 25, "starts_at": "2026-11-28T09:00:00Z",
+                                             "ends_at": "2026-11-28T22:59:00Z", "status": "SCHEDULED"}}))
+    msgs = [f["msg"] for f in s.findings() if f["rule"] == "R18"]
+    assert any("gives 25%" in m for m in msgs) and any("after the send" in m for m in msgs) \
+        and any("promises until" in m for m in msgs)
+    disc.write_text(yaml.safe_dump({"BF26": {"percentage": 30, "starts_at": "2026-11-26T23:00:00Z",
+                                             "ends_at": "2026-11-29T22:59:00Z", "status": "SCHEDULED"}}))
+    assert "R18" not in s.errors() and "R10" not in s.errors()  # code links still pass the domain/UTM rule
+    hrefs = s.meta()["links"]
+    assert all(h.startswith("https://cavaier.com/discount/BF26?redirect=%2F") for h in hrefs if "cavaier.com" in h)
+
+
+def test_from_price_on_a_one_product_collection_is_flagged():
+    s = Sandbox()
+    facts = s.root / "data/facts/eu.json"
+    f = json.loads(facts.read_text())
+    f["collections"]["her-sets"]["products"] = 1
+    facts.write_text(json.dumps(f))
+    s.edit_yaml(COPY, lambda c: c["strings"].update({"tiles.sets.sub": "From {from_offer_price:her-sets}"}))
+    assert any(x["rule"] == "R05" and "one product" in x["msg"] for x in s.findings())
+
+
+def test_plain_text_part_is_complete():
+    s = Sandbox()
+    s.lint()
+    txt = (s.root / f"campaigns/{CID}/out/eu.txt").read_text()
+    for part in ("Rated 4.5 on Trustpilot", "Manage preferences: {% manage_preferences_url %}",
+                 "Unsubscribe: {% unsubscribe_url %}", "Shop the 3x Set: https://cavaier.com/"):
+        assert part in txt, part
+
+
 # -- gates --------------------------------------------------------------------------
 
 def test_gates_in_order_and_only_from_human_prompt():

@@ -11,6 +11,7 @@ import json
 import re
 import sys
 import time
+from urllib.parse import unquote
 
 from common import CAMPAIGNS, DATA, calendar_rows, campaign_markets, config, load
 from render import TOKEN, RenderError, render
@@ -147,6 +148,15 @@ class Linter:
                 for m in PERCENT.findall(v):
                     if float(m.replace(",", ".")) not in allowed_pct:
                         self.add("R05", f"{loc}:{k}: '{m}%' doesn't match the offer ({allowed_pct or 'no offer'})", market=loc)
+                for group in re.findall(r"\{from_(?:offer_)?price:([^}]+)\}", raw):
+                    if re.search(r"\b(from|ab|fr[åa]n|vanaf)\b", raw, re.I):
+                        for m_id in campaign_markets(self.row, self.cfg):
+                            facts = load(DATA / "facts" / f"{m_id}.json") or {}
+                            n = ((facts.get("collections") or {}).get(group) or {}).get("products")
+                            if n == 1:
+                                self.add("R05", f"{loc}:{k}: says 'from' but {group} has one product in {m_id}: "
+                                                "use {offer_price:<handle>} without 'from'", market=loc, severity="warn")
+                                break
                 if PRICE.search(v):
                     self.add("R05", f"{loc}:{k}: typed price or currency in '{raw}'. Use a token: "
                                     "{offer_price:<handle>}, {from_offer_price:<group>} or {money:25}", market=loc)
@@ -160,6 +170,32 @@ class Linter:
                 self.add("R05", f"{loc}: the offer needs code {offer['code']} but the copy never gives it "
                                 "(use {code})", market=loc)
 
+
+    def r18_discount_code(self):
+        offer = (self.row or {}).get("offer") or {}
+        code = offer.get("code")
+        if not code:
+            return
+        known = (load(DATA / "discounts.yaml") or {}).get(code)
+        sev = "error" if self.final else "warn"
+        if not known:
+            self.add("R18", f"code {code} isn't recorded in data/discounts.yaml: look it up in Shopify "
+                            "(codeDiscountNodeByCode) and record it", severity=sev)
+            return
+        if float(known.get("percentage", 0)) != float(offer.get("discount_pct", -1)):
+            self.add("R18", f"{code} gives {known.get('percentage')}% in Shopify, the email promises {offer.get('discount_pct')}%")
+        valid = offer.get("valid") or {}
+        tz = self.cfg["markets"]["markets"][self.row["markets"][0]]["timezone"]
+        from zoneinfo import ZoneInfo
+        import datetime as dt
+        local = lambda s: dt.datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(ZoneInfo(tz))
+        send = dt.datetime.fromisoformat(f"{self.row['date']}T{self.row.get('time', '10:00')}").replace(tzinfo=ZoneInfo(tz))
+        if local(known["starts_at"]) > send:
+            self.add("R18", f"{code} starts {local(known['starts_at']):%a %d %b %H:%M}, after the send at {send:%a %d %b %H:%M}")
+        if valid.get("to") and str(local(known["ends_at"]).date()) < str(valid["to"]):
+            self.add("R18", f"{code} ends {local(known['ends_at']):%a %d %b %H:%M}, the email promises until {valid['to']}")
+        if known.get("status") in ("EXPIRED",):
+            self.add("R18", f"{code} is {known['status']} in Shopify")
 
     def r13_generated_images(self):
         images = (load(self.dir / "images.yaml") or {}).get("images", {})
@@ -234,7 +270,7 @@ class Linter:
                 continue
             if not href.startswith(domain):
                 self.add("R10", f"link to another domain: {href}", market=m)
-            if f"utm_campaign={self.id}" not in href:
+            if f"utm_campaign={self.id}" not in unquote(href):
                 self.add("R10", f"link without utm_campaign={self.id}: {href}", market=m)
 
         for p in meta["products"]:
@@ -258,6 +294,7 @@ class Linter:
         self.r07_locales()
         self.copy_rules()
         self.r13_generated_images()
+        self.r18_discount_code()
         try:
             render(self.id)
         except RenderError as e:

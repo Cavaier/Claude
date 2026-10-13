@@ -1,3 +1,4 @@
+apply_code: true   # every store link puts BF26 in the cart (Shopify /discount/BF26?redirect=…)
 # Layout for 2026-11-11-early-access-1 (designer). Structure from plan s01 (BFCM26 master, send 1).
 # Every string is a key in copy/en.yaml; prices, code and % are filled live per market.
 style: designed
@@ -39,4 +40,5 @@ blocks:
       - {label: footer.bracelets, collection: him-bracelets}
       - {label: footer.necklaces, collection: necklaces}
     preferences: footer.preferences
+    text: footer.text
     unsubscribe: footer.unsubscribe

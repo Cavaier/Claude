@@ -25,6 +25,7 @@ rows:
     discount_pct: 30
     scope: sitewide
     code: BF26
+    valid: {from: '2026-11-11', to: '2026-11-12'}
   why:
     ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s01
     note: 'BFCM26 master, send 1: Early access, BIG send · code'
@@ -44,6 +45,7 @@ rows:
     discount_pct: 30
     scope: sitewide
     code: BF26
+    valid: {from: '2026-11-11', to: '2026-11-12'}
   why:
     ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s02
     note: 'BFCM26 master, send 2: Early access, Engaged 30 · code'
