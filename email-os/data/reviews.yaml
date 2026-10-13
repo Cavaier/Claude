@@ -1,0 +1,12 @@
+# Real reviews only. Copied word for word, never edited or translated, source logged.
+# Add with the source URL you copied it from; the linter refuses any review block whose
+# text differs from the entry here by a single character.
+#
+# - id: rv-001
+#   text: "<exact text>"
+#   author: "<display name as shown>"
+#   rating: 5
+#   platform: Trustpilot
+#   source_url: https://www.trustpilot.com/reviews/<id>
+#   captured_at: 2026-10-13
+reviews: []

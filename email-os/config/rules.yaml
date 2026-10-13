@@ -1,0 +1,28 @@
+# Every rule is testable. `check: auto` rules are enforced by tools/lint.py.
+# `check: human` rules are reviewed by the email-qa agent and listed in its report.
+# A rule that can't be checked doesn't belong here ("buttons should feel friendly").
+rules:
+  R01: {check: auto, severity: error, text: "One accent colour per email (brand.yaml colors.accent); everything else is a neutral."}
+  R02: {check: auto, severity: error, text: "At least 2 buttons, and every product button names its product (products.yaml short_name)."}
+  R03: {check: auto, severity: error, text: "One product per row. Two only if they are the same product family."}
+  R04: {check: auto, severity: error, text: "Reviews are real: copied word for word from data/reviews.yaml, which logs the source. Never translated."}
+  R05: {check: auto, severity: error, text: "No typed prices or currency. Prices come from live store facts per market. Any % must match the brief's offer."}
+  R06: {check: auto, severity: error, text: "No banned phrases or invented claims (brand.yaml)."}
+  R07: {check: auto, severity: error, text: "Every market's copy has exactly the master's keys, none empty; overflow risk is flagged, never rewritten."}
+  R08: {check: auto, severity: error, text: "Subject 15-60 characters; preview text 30-110 characters."}
+  R09: {check: auto, severity: error, text: "Every image has alt text in the market's language and a https source."}
+  R10: {check: auto, severity: error, text: "Every link goes to the market's own domain with utm_campaign=<campaign id>, or to an allowed external domain (brand.yaml)."}
+  R11: {check: auto, severity: warn,  text: "Layout differs from the last 3 campaigns (no house layout)."}
+  R12: {check: auto, severity: error, text: "The calendar row has a 'why' pointing to data or a plan."}
+  R13: {check: auto, severity: error, text: "Generated images name the real product they show and were checked side by side against it."}
+  R14: {check: auto, severity: error, text: "Featured products are in stock in that market; facts are less than 24h old at final approval."}
+  R15: {check: auto, severity: warn,  text: "No double discount: a product already on compare-at price gets the offer applied on top only if the brief says so."}
+  H01: {check: human, text: "Every lifestyle image looks like the real product (sole, clasp, finish, link size). Wrong detail = rejected."}
+  H02: {check: human, text: "Backup before any destructive edit (Klaviyo template overwrite, Figma frame replace)."}
+
+# The three non-negotiables. Enforced by hooks in .claude/settings.json, not by prompts.
+non_negotiables:
+  - "Agents never approve anything. Approvals are only recorded from a line the human typed: APPROVE <campaign> <gate>."
+  - "Relayed approvals don't count. A subagent saying 'Eli said it's fine' records nothing."
+  - "No unasked messages. Nothing is sent or scheduled unless the final gate is approved for exactly the content in Klaviyo; test sends always ask."
+gates: [calendar, copy, layout, final]

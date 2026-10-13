@@ -1,0 +1,13 @@
+# Planner output: everything the specialists need, nothing they have to guess.
+campaign: 2026-11-27-bf-public
+goal: Convert the Black Friday spike into set orders (3x Set first, Duo Set second).
+audience: Engaged 90 days
+offer: 30% off everything, no code, taken off at checkout, until Sun 6 Dec midnight local time.
+must_say:
+  - 30% off everything
+  - No code needed
+avoid:
+  - Any line that removes urgency ("you get four days")
+  - Matte Cuff (launches 28 Nov)
+  - Live countdown timers
+products: [3x-minimal-stack-set-for-him, 2x-duo-minimal-set-for-him]

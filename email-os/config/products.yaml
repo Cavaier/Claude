@@ -1,0 +1,6 @@
+# Catalogue the system may feature. short_name is what a button must say (rule R02).
+# family groups variants of one product (two finishes of the same product may share a row, R03).
+3x-minimal-stack-set-for-him: {family: 3x-minimal-stack-set, short_name: {en: "3x Set", de: "3er-Set"}}
+3x-minimal-stack-set-for-her: {family: 3x-minimal-stack-set, short_name: {en: "3x Set", de: "3er-Set"}}
+2x-duo-minimal-set-for-him: {family: 2x-duo-minimal-set, short_name: {en: "Duo Set", de: "Duo-Set"}}
+jewelry-case: {family: jewelry-case, short_name: {en: "Jewelry Case", de: "Schmuckkästchen"}}

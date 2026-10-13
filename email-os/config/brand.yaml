@@ -1,0 +1,35 @@
+# Brand tokens. The renderer reads these; the linter checks emails against them.
+name: Cavaier
+wordmark: CAVAIER            # rendered in the serif stack below until a hosted logo URL is set
+logo_url: null               # set to a hosted PNG to use the logo image instead of the wordmark
+fonts:
+  body: "Figtree, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  wordmark: "'Bodoni Moda', Bodoni, Didot, 'Times New Roman', serif"
+colors:
+  # Anything not listed here counts as an accent colour (rule R01).
+  neutrals: ["#FFFFFF", "#F2F2F1", "#DCDCDA", "#000000", "#111111", "#6B6B6B", "#9A9A9A"]
+  accent: "#C2371A"          # the one accent: labels, sale prices, a dot
+max_accents: 1
+allowed_external_domains: [www.trustpilot.com]   # links allowed besides the market's own store (R10)
+trust_line: "★★★★★ Rated 4.5 on Trustpilot · 3,000+ reviews"
+
+# True claims the copywriter may use. Anything else is an invented claim.
+approved_claims:
+  - Waterproof, sweat and heat resistant
+  - Recycled 316L stainless steel
+  - Adjustable S/M/L
+  - Black, silver or gold
+  - Jewelry case included with sets
+  - Free shipping
+  - Rated 4.5 on Trustpilot, 3,000+ reviews
+
+# Phrases that must never appear (case-insensitive substring match), with the reason.
+banned_phrases:
+  "free case": "say 'case included'"
+  "solid gold": "not true: steel with a finish"
+  "real gold": "not true: steel with a finish"
+  "lifetime warranty": "no such warranty"
+  "last chance ever": "false urgency"
+  "you get four days": "removed urgency, people waited (BFCM26 learning)"
+  "lorem": "placeholder"
+  "todo": "placeholder"

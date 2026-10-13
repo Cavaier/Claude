@@ -1,0 +1,37 @@
+# One entry per market. A market = one store + one Klaviyo account + one language.
+# `country` pins Shopify's presentment pricing: without it the store prices by the
+# visitor's location (a US server sees USD on cavaier.com).
+master_locale: en
+markets:
+  eu:
+    locale: en
+    domain: cavaier.com
+    country: DE
+    currency: EUR
+    price_format: "€{amount}"
+    decimal: "."
+    timezone: Europe/Stockholm
+    klaviyo_account: KCTpHb        # Cavaier AB, connected to this workspace
+    active: true
+  us:
+    locale: en
+    domain: us.cavaier.com
+    country: US
+    currency: USD
+    price_format: "${amount}"
+    decimal: "."
+    timezone: America/New_York
+    klaviyo_account: null          # US Klaviyo account is not connected yet
+    active: true
+  # Example of a translated market. Turn on when emails go out in German.
+  de:
+    locale: de
+    domain: cavaier.com
+    path_prefix: /de
+    country: DE
+    currency: EUR
+    price_format: "{amount} €"
+    decimal: ","
+    timezone: Europe/Berlin
+    klaviyo_account: KCTpHb
+    active: false

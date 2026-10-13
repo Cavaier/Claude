@@ -1,0 +1,28 @@
+# Source of truth for what sends when. One row per send. The planner writes rows,
+# the human approves each row (APPROVE <id> calendar). Nothing moves before that.
+#
+# why.ref: perf:<month>#<row id> (data/performance/<month>.yaml) or plan:<url>
+# klaviyo_name: the campaign name in Klaviyo, per market, matched by tools/reconcile.py
+month: 2026-11
+rows:
+  - id: 2026-11-23-members-early-access
+    date: 2026-11-23
+    time: "09:00"
+    markets: [eu, us]
+    klaviyo_name: {eu: KA_W48_Nov23_T01, us: KA_W48_Nov23_T01}
+    audience: Members (VIP segment)
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: Members get Black Friday four days early.
+    offer: {discount_pct: 30, scope: sitewide, code: null}
+    why: {ref: "plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S", note: "BFCM26 sequence, send 1"}
+
+  - id: 2026-11-27-bf-public
+    date: 2026-11-27
+    time: "09:00"
+    markets: [eu, us]
+    klaviyo_name: {eu: KA_W48_Nov27_T01, us: KA_W48_Nov27_T01}
+    audience: Engaged 90 days
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: Black Friday opens to everyone. 30% off everything, no code.
+    offer: {discount_pct: 30, scope: sitewide, code: null, apply_on_compare_at: false}
+    why: {ref: "plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S", note: "BFCM26 sequence: public launch on Black Friday"}

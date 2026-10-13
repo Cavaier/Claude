@@ -1,0 +1,61 @@
+{
+  "market": "us",
+  "currency": "USD",
+  "fetched_at": 1791920491,
+  "products": {
+    "3x-minimal-stack-set-for-him": {
+      "title": "3x Minimal Stack Set",
+      "price": "94.90",
+      "compare_at": null,
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-511.png?v=1791296943&width=1200",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-511.png?v=1791296943",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/image2.png?v=1789418503",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-51_kopia_1.png?v=1791297831",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/image3.png?v=1789418504",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-512.png?v=1791298285",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/image4.png?v=1789419140"
+      ],
+      "url": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+    },
+    "3x-minimal-stack-set-for-her": {
+      "title": "3x Minimal - Stack Set",
+      "price": "94.90",
+      "compare_at": null,
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/ad-image-17817299893691.png?v=1781730430&width=1200",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/ad-image-17817299893691.png?v=1781730430",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/ad-image-17817300810931.png?v=1781730433",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-41.png?v=1781730431"
+      ],
+      "url": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+    },
+    "2x-duo-minimal-set-for-him": {
+      "title": "2x Duo Minimal Set",
+      "price": "59.90",
+      "compare_at": null,
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-203_2.png?v=1791288970&width=1200",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/12616-203_2.png?v=1791288970",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/ad2_matched_1_1.png?v=1791288986",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/ad-image-17912895281901_b82fb0b1-8eaa-4d81-8742-841f4c2c2341.png?v=1791290062"
+      ],
+      "url": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+    },
+    "jewelry-case": {
+      "title": "Jewelry Case",
+      "price": "19.95",
+      "compare_at": null,
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/jbag3_kopia.jpg?v=1762549886&width=1200",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/jbag3_kopia.jpg?v=1762549886",
+        "https://cdn.shopify.com/s/files/1/0824/8944/2617/files/Final2_5_8509e71f-31b1-4c99-8cfd-aacac404d54e.jpg?v=1746711020"
+      ],
+      "url": "https://us.cavaier.com/products/jewelry-case"
+    }
+  }
+}
