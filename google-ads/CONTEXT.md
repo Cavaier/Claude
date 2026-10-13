@@ -266,6 +266,8 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-13** Customer Match upload done: job SUCCESS, match rate 91–100%, list 9486387439 = 11,000
+  (Search) / 9,000 (Display), eligible. Refresh the upload every ~3 months.
 - **2026-10-12** Keyword history (all campaigns, all time): non-brand keywords/search terms brought
   ~10 real purchases in total. Only repeat signals: brand misspellings (caviar … ~14, done in P-010),
   "black rope bracelet" 2.2 + "black bracelet" 1 (Shopping), "box chain bracelet men's" 1, plus Shopping
