@@ -51,7 +51,22 @@ def used_images(campaign_id):
     return found
 
 
-def optimise(data, width):
+# Slots whose images sit side by side get one shape, so labels under them line up.
+SLOT_ASPECT = {"tile": 4 / 5, "tile2": 4 / 5, "product": 1.0}
+
+
+def crop_to(im, aspect):
+    w, h = im.size
+    if abs(w / h - aspect) < 0.01:
+        return im
+    if w / h > aspect:  # too wide: trim the sides
+        nw = round(h * aspect)
+        return im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
+    nh = round(w / aspect)  # too tall: trim top and bottom equally
+    return im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
+
+
+def optimise(data, width, aspect=None):
     im = Image.open(io.BytesIO(data))
     if im.mode in ("RGBA", "LA", "P"):
         im = im.convert("RGBA")
@@ -60,6 +75,8 @@ def optimise(data, width):
         im = bg
     else:
         im = im.convert("RGB")
+    if aspect:
+        im = crop_to(im, aspect)
     if im.width > width:
         im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
     for quality in (82, 76, 70, 64):
@@ -84,7 +101,7 @@ def prepare(campaign_id):
     pending = []
     for img_id, (src, slot) in sorted(used_images(campaign_id).items()):
         width = SLOT_WIDTH[slot] * 2
-        data, (w, h) = optimise(fetch(src), width)
+        data, (w, h) = optimise(fetch(src), width, SLOT_ASPECT.get(slot))
         digest = hashlib.sha256(data).hexdigest()[:16]
         name = f"eos-{digest}.jpg"
         (IMG / name).write_bytes(data)

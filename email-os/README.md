@@ -8,8 +8,9 @@ my email marketing agency with 10 AI agents", Oct 2026), with its weak spots fix
 
 ```
 analyst ─► planner ─► [APPROVE calendar] ─► researcher ─► copywriter ─► [APPROVE copy]
-   ─► designer + image director ─► [APPROVE layout] ─► localizer ─► facts ─► builder (drafts)
-   ─► QA ─► [APPROVE final] ─► schedule (send gate) ─► daily reconcile ─► analyst …
+   ─► designer + image director ─► [APPROVE layout] ─► localizer ─► facts + hosted images
+   ─► QA ─► [APPROVE final] ─► builder (drafts) ─► verify_build ─► schedule (send gate)
+   ─► daily reconcile ─► analyst …
 ```
 
 - **Manager:** the main Claude session with the `email-os` skill (`.claude/skills/email-os/SKILL.md`).
@@ -30,10 +31,12 @@ analyst ─► planner ─► [APPROVE calendar] ─► researcher ─► copywr
 | Brief | `campaigns/<id>/brief.yaml` | planner |
 | Copy | `campaigns/<id>/copy/<locale>.yaml` | copywriter, localizer |
 | Design | `campaigns/<id>/layout.yaml`, `images.yaml` | designer, image director |
-| Prices, stock, photos | `data/facts/<market>.json` (live from the store) | `tools/facts.py` |
+| Prices, stock, photos, "from" prices | `data/facts/<market>.json` (live from the store) | `tools/facts.py` |
+| Collection groups | `config/collections.yaml` | owner |
+| Optimised images | `campaigns/<id>/images.lock.yaml`, `data/hosted.yaml` | `tools/images.py` |
 | Reviews | `data/reviews.yaml` (verbatim, source logged) | owner / analyst |
 | Rendered emails | `campaigns/<id>/out/<market>.html` | `tools/render.py` |
-| Klaviyo drafts | `campaigns/<id>/build.yaml` | builder via `tools/record_build.py` |
+| Klaviyo drafts | `campaigns/<id>/build.yaml` | builder via `tools/verify_build.py` |
 | Approvals | `approvals/ledger.jsonl` | **only** the hook, from your typed message |
 
 Git is the backup: every change to every stage is a commit you can diff or roll back.
@@ -41,13 +44,35 @@ Git is the backup: every change to every stage is a commit you can diff or roll 
 ## Tools
 
 ```bash
-python3 tools/facts.py                 # live prices/stock/photos per market
-python3 tools/render.py <id>           # one HTML email per market
+python3 tools/facts.py                 # live prices, stock, photos, collection "from" prices
+python3 tools/render.py <id>           # HTML + plain text per market
+python3 tools/images.py prepare <id>   # optimise images; then host them via the Shopify connector
 python3 tools/lint.py <id> [--final]   # every auto rule; writes lint.json
+python3 tools/verify_build.py <id> <market> <template.json> <message.json>   # Klaviyo = approved?
 python3 tools/status.py [2026-11]      # pipeline board with gates
 python3 tools/reconcile.py <klaviyo-export.json> --market eu   # calendar vs Klaviyo
-python3 tests/test_system.py           # 16 end-to-end tests
+python3 tests/test_system.py           # 25 end-to-end tests on a fixture campaign
 ```
+
+## Copy tokens
+
+Copy never contains a price, currency or discount code. It uses tokens, filled per market
+from live store data at render time:
+
+| Token | Becomes (EU) |
+|---|---|
+| `{offer_price:3x-minimal-stack-set-for-him}` | €66.43 (94.90 − 30%) |
+| `{price:3x-minimal-stack-set-for-him}` | €94.90 |
+| `{from_offer_price:him-bracelets}` | €20.93 (cheapest in-stock bracelet − 30%) |
+| `{money:25}` | €25 (US: $25) |
+| `{code}` / `{pct}` | the calendar offer's code / 30% |
+
+## Blocks
+
+`strip, logo, hero, image, heading, text, ticket, timeline, section_header, tiles,
+offer_card, product, review, button, note, trust, divider, spacer, footer` in
+`templates/email.html.j2`, and `style: plain` for text-only sends (`para, link, footer`).
+Tables and inline styles, Outlook-safe buttons, rows that stack on phones, under 90 KB.
 
 ## What's different from the HappyFlops setup
 
@@ -85,10 +110,22 @@ What's changed:
    when you ask for them.
 6. **Independent QA.** Their manager both routes work and checks it. Here `email-qa` didn't
    make the email, checks it fresh, and can't approve.
-7. **Deterministic reconcile.** Their daily Slack bot is an agent's reading. Here
+7. **What's in Klaviyo is checked, not assumed.** After the builder makes a draft, it reads
+   it back and `verify_build.py` compares template HTML, text, subject, preview, name,
+   audiences and send time with what you approved. The send gate needs that match. If
+   someone edits the draft in Klaviyo afterwards, it must be verified again.
+8. **Images built for email.** Store photos are up to 7 MB PNGs; Shopify only shrinks them
+   for WebP clients. `images.py` makes 2x progressive JPEGs under 300 KB, crops side-by-side
+   images to one shape, and hosts them on the store's own Shopify CDN.
+9. **Deterministic reconcile.** Their daily Slack bot is an agent's reading. Here
    `tools/reconcile.py` checks: missing from Klaviyo, wrong date or time, no recipients,
    scheduled without final approval, approved but never scheduled, subject changed, cancelled
    sends, and Klaviyo sends that aren't on the calendar.
+
+## Trial builds
+
+A draft named `EOS TEST · <calendar name>` is verified like any build but the send gate
+refuses it permanently. Use it to try the system next to a real draft.
 
 ## Limits
 
@@ -97,6 +134,10 @@ What's changed:
   range; for big creative swings, design on the master page and use `bfcm26/figma-sync/`.
 - Only the EU Klaviyo account (Cavaier AB) is connected. The US account needs connecting
   before the builder and reconcile can work for US.
+- Tested in Chromium at 640 and 375px, not in real Gmail/Outlook/Apple Mail inboxes. A
+  Litmus or Email on Acid check (or test sends to real accounts, when asked) is still needed.
+- The builder re-types the HTML into Klaviyo; long templates can pick up transcription
+  errors. verify_build catches them, but it may take a second pass.
 - `data/reviews.yaml` is empty: Trustpilot blocks automated reads, so real reviews have to be
   added by hand with their source URL.
 - The hooks stop mistakes and well-meaning agents. They aren't a security boundary against a

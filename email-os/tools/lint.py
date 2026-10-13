@@ -159,11 +159,7 @@ class Linter:
             if offer.get("code") and not uses_code:
                 self.add("R05", f"{loc}: the offer needs code {offer['code']} but the copy never gives it "
                                 "(use {code})", market=loc)
-            subj, prev = TOKEN.sub("00", copy.get("subject") or ""), TOKEN.sub("00", copy.get("preview") or "")
-            if not 15 <= len(subj) <= 60:
-                self.add("R08", f"{loc}: subject is {len(subj)} chars (15-60)", market=loc)
-            if not 30 <= len(prev) <= 110:
-                self.add("R08", f"{loc}: preview is {len(prev)} chars (30-110)", market=loc)
+
 
     def r13_generated_images(self):
         images = (load(self.dir / "images.yaml") or {}).get("images", {})
@@ -200,6 +196,12 @@ class Linter:
         need = 1 if self.plain else 2
         if len(ctas) < need:
             self.add("R02", f"{len(ctas)} calls to action, need at least {need}", market=m)
+
+        subj, prev = meta.get("subject") or "", meta.get("preview") or ""  # as rendered, tokens filled
+        if not 15 <= len(subj) <= 60:
+            self.add("R08", f"subject is {len(subj)} chars (15-60): {subj!r}", market=m)
+        if not 30 <= len(prev) <= 110:
+            self.add("R08", f"preview is {len(prev)} chars (30-110): {prev!r}", market=m)
 
         size = meta.get("html_bytes", len(html.encode()))
         if size > MAX_HTML:

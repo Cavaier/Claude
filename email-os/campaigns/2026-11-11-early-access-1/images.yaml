@@ -1,0 +1,23 @@
+# Image director picks for 2026-11-11-early-access-1 (live listing photos, data/facts/eu.json, viewed 2026-10-13).
+# Each tile shows a worn photo of a product in the collection it links to, on a man's wrist/neck for
+# the him tiles and a woman's for the her tiles. No finish names in alt text. No Matte Cuff.
+images:
+  # Man's wrist, two Cuban bracelets stacked, dark shirt cuff.
+  tile.him.bracelets: {source: shopify, product: cuban-bracelet-for-him, index: 9, alt: alt.tile.him.bracelets}
+  # Close-up of a man's wrist wearing the Duo Set (two box chains). October's best seller.
+  tile.him.sets:      {source: shopify, product: 2x-duo-minimal-set-for-him, index: 0, alt: alt.tile.him.sets}
+  # Man in an open linen shirt holding the Cuban Necklace at his collarbone.
+  tile.him.necklaces: {source: shopify, product: cuban-necklace-for-him, index: 3, alt: alt.tile.him.necklaces}
+  # Woman's hand on a stone ledge, two Cuban bracelets on her wrist.
+  tile.her.bracelets: {source: shopify, product: cuban-bracelet-for-her, index: 9, alt: alt.tile.her.bracelets}
+  # The listing's own three photos all show the same broad, hairy arm (reads as a man's). This store
+  # file (Shopify Files, not attached to the listing) shows the same three pieces as listing photo 1
+  # (two plain bangles + box chain, same finish as sold) on a slimmer, smoother wrist.
+  # Compared side by side with listing photos 0 and 1 on 2026-10-13: piece count 3, box-chain link, open bangle ends match.
+  tile.her.sets:
+    source: store_file
+    shows: 3x-minimal-stack-set-for-her
+    src: https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17816436251601.png?v=1781710445
+    alt: alt.tile.her.sets
+  # Woman holding the Cuban Necklace at her collarbone, sea behind.
+  tile.her.necklaces: {source: shopify, product: cuban-necklace-for-her, index: 9, alt: alt.tile.her.necklaces}

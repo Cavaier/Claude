@@ -155,6 +155,8 @@ def on_pretool(event):
                 return decision("deny", f"{cid}: gate '{gate}' is {state}. The human must type "
                                         f"'APPROVE {cid} {gate}' after reviewing the current version.")
         build = ((load(CAMPAIGNS / cid / "build.yaml") or {}).get("markets") or {}).get(market) or {}
+        if build.get("test"):
+            return decision("deny", f"{cid} [{market}]: this is an 'EOS TEST' trial draft. Test builds are never sent.")
         if not build.get("verified"):
             return decision("deny", f"{cid} [{market}]: the Klaviyo draft isn't verified against the approved "
                                     f"version (tools/verify_build.py). {'; '.join(build.get('problems') or [])}")

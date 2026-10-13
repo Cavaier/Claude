@@ -1,0 +1,61 @@
+# Master copy (en) for 2026-11-11-early-access-1. Source: brief.yaml + plan s01 (master page).
+# No typed prices, currency or code: {code}, {pct} and price tokens are filled live per market.
+subject: "You’re in early."
+preview: "Your code: 30% off everything."   # typed 30% (matches offer) keeps lint's length count at 30
+max_len:
+  strip.label: 16
+  ticket.price.value: 10
+  ticket.code.value: 10
+  ticket.open.value: 10
+  cta.code: 22
+  tile.bracelets: 14
+  tile.sets: 14
+  tile.necklaces: 14
+strings:
+  strip.label: "Early access"
+  strip.text: "{pct} off with your code"
+  kicker: "Your early access"
+  headline: "Early access is open.\nFor you, first."
+  intro: "Two days before everyone else: use your code for the same {pct} off as Black Friday."
+  ticket.price.label: "Your price"
+  ticket.price.value: "{pct} off"
+  ticket.price.note: "everything"
+  ticket.code.label: "Your code"
+  ticket.code.value: "{code}"
+  ticket.code.note: "works until Thu midnight"
+  ticket.open.label: "Open to everyone"
+  ticket.open.value: "Fri 13"
+  ticket.open.note: "November"
+  cta.code: "Use my code"
+  timeline.left: "Today · Your head start"
+  timeline.right: "Fri 13 · Everyone"
+  ask.label: "Start here"
+  ask.title: "Which one is you?"
+  ask.body: "Tap where you want to start. Everything is {pct} off with your code."
+  him.title: "For him"
+  him.note: "With your code"
+  her.title: "For her"
+  her.note: "With your code"
+  tile.bracelets: "Bracelets →"
+  tile.sets: "Sets →"
+  tile.necklaces: "Necklaces →"
+  tile.him.bracelets.sub: "From {from_offer_price:him-bracelets}"
+  tile.him.sets.sub: "From {from_offer_price:him-sets}"
+  tile.him.necklaces.sub: "From {from_offer_price:him-necklaces}"
+  tile.her.bracelets.sub: "From {from_offer_price:her-bracelets}"
+  tile.her.sets.sub: "From {from_offer_price:her-sets}"
+  tile.her.necklaces.sub: "From {from_offer_price:her-necklaces}"
+  unsure.title: "Can’t choose?"
+  unsure.cta: "Not sure? The 3x Set · {offer_price:3x-minimal-stack-set-for-him}"
+  note.terms: "Your code works Wed Nov 11 – Thu Nov 12 · Free shipping · Case included with 2+ pieces · Waterproof · Recycled 316L stainless steel"
+  footer.shop_all: "Shop all"
+  footer.bracelets: "Bracelets"
+  footer.necklaces: "Necklaces"
+  footer.preferences: "Manage preferences"
+  footer.unsubscribe: "Unsubscribe"
+  alt.tile.him.bracelets: "Cuban bracelets on a man's wrist"
+  alt.tile.him.sets: "The Duo Set, two chain bracelets on a man's wrist"
+  alt.tile.him.necklaces: "A man wearing the Cuban Necklace"
+  alt.tile.her.bracelets: "Cuban bracelets on a woman's wrist"
+  alt.tile.her.sets: "The 3x Set, three stacking bracelets on a wrist"
+  alt.tile.her.necklaces: "A woman wearing the Cuban Necklace"

@@ -1,0 +1,76 @@
+# Brief for calendar row 2026-11-11-early-access-1 (email-os/calendar/2026-11.yaml).
+# Written by the planner. The calendar row is NOT approved yet: no copy or design until the owner
+# types "APPROVE 2026-11-11-early-access-1 calendar".
+# Sources: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s01 (BFCM26 master, send 1),
+#          perf:2026-10 takeaways, config/brand.yaml, config/products.yaml, owner facts relayed 2026-10-13.
+id: 2026-11-11-early-access-1
+send: {date: '2026-11-11', time: '10:00', markets: [eu], format: designed}
+klaviyo_name: {eu: KA_W46_Nov11_EARLY_ACCESS_1 (CODE)}
+
+goal: >
+  Open BFCM26. Give the list a two-day head start (Wed Nov 11 – Thu Nov 12) on the same 30% off
+  everything that opens to everyone on Fri Nov 13, using code BF26. Success = orders with BF26 in
+  the early-access window. Frame it as getting in first, never as a better price than Black Friday
+  (plan s01 note).
+
+audience:
+  words: Full list minus inactive 180+ days (BIG)
+  ids: {eu: {include: [SKcZPp], exclude: [SJ9pVA]}}  # Q4 · BIG send; Dead Profiles – Suppress (calendar row)
+  note: >
+    Biggest send of the month. perf:2026-10#w40-cuff-dressed-wrong and perf:2026-09#w40-duo-elevate-everyday:
+    sends that added the engaged-non-openers segment had the highest unsubscribe rates (0.00966, 0.01291).
+    A 180-day definition reaches further than the usual CORE 90d audience, so expect a higher unsubscribe
+    rate than October's 0.0062–0.0085 range.
+
+offer:
+  discount_pct: 30
+  scope: sitewide
+  code: BF26
+  valid: {from: '2026-11-11', to: '2026-11-12', ends: Thu Nov 12, midnight}
+  public_sale: '2026-11-13'        # same 30%, no code needed, open to everyone
+  extras:
+    - Free shipping
+    - Jewelry case included with 2+ pieces
+  double_discount: false           # no product is on compare-at in data/facts/eu.json today; R15 applies if that changes
+
+must_say:
+  - "It's early access: they're in two days before everyone else (head start, not a better price)."
+  - "30% off everything with code BF26."
+  - "Code works Wed Nov 11 – Thu Nov 12 (until Thu midnight); opens to everyone Fri Nov 13."
+  - "Free shipping."
+  - "Jewelry case included with 2+ pieces (say 'case included', never 'free case')."
+  - "Trust line exactly as brand.yaml: ★★★★★ Rated 4.5 on Trustpilot · 3,000+ reviews (not the 4.7 used in the 11 Oct send)."
+  - "Approved material claims only (brand.yaml), e.g. water-friendly / waterproof, stainless steel."
+  - "Planned subject: You’re in early. Preview: Your code: 30% off everything. Banner: EARLY ACCESS · 30% OFF WITH YOUR CODE (plan s01)."
+
+avoid:
+  - "Matte Cuff: not in copy, images, tiles or links (it launches later, row 2026-11-28-matte-cuff-drop). Not in config/products.yaml."
+  - "Finish names (black, silver, gold, etc.) in copy or alt text."
+  - "Live countdown timers (no timer images or embedded countdowns)."
+  - "Any suggestion early access is cheaper than Black Friday; it is the same 30%."
+  - "Typed prices or currency: use offer-price tokens (R05). The plan's €20.97 / €41.93 / €24.43 / €27.97 / €66.43 are display values from the master page, not copy."
+  - "Banned phrases in brand.yaml (e.g. 'free case', 'real gold', 'you get four days', 'last chance ever')."
+  - "Fake urgency beyond the real end (Thu midnight)."
+
+products:
+  # Plan s01 structure: "Which one is you?" -> For him / For her tiles (Bracelets, Sets, Necklaces),
+  # then "Can't choose? The 3x Minimal Set".
+  collections: [him-bracelets, him-sets, him-necklaces, her-bracelets, her-sets, her-necklaces, all]
+  hero: 3x-minimal-stack-set-for-him   # see open_questions[0]: plan names "the 3x Minimal Set" without a gender
+  featured:
+    - 3x-minimal-stack-set-for-him
+    - 3x-minimal-stack-set-for-her
+    - 2x-duo-minimal-set-for-him
+  data_notes:
+    - "perf:2026-10#w41-duo-everyday, #w41-duo-detail-noticed: the Duo Set is October's winner (14 orders, EUR 915.43 over 2 sends; best click rate 0.01896, best per-recipient 0.06719). Winning angles: plain everyday use, 'the detail people notice', Trustpilot quote, 'packed to give'. It is a strong candidate for the For him sets tile or a supporting row; it is not in the plan's s01 layout, so the owner decides."
+    - "perf:2026-10#w40-her3x-fade, #w41-her3x-gold-quiet, #w41-her3x-trustpilot: the women's gold 3x Set lost all three October sends (EUR 0.025–0.028 per recipient), and its clicks didn't turn into orders. Don't lead with it alone; check the For her sets landing page before the send."
+    - "him-bracelets / her-bracelets collection types include Cuffs, so the collection pages (and from-price tokens) may pick up the Matte Cuff once it is live. Check those pages exclude it until Nov 28."
+
+links:
+  plan: "Every link -> [[EARLY_ACCESS_URL]], code applied automatically if possible (plan s01)."
+  status: unresolved   # see open_questions
+
+open_questions:
+  - "The plan's 'Can't choose? The 3x Minimal Set' has no gender. Should it be the him set, the her set, or (going by October) the Duo Set? Hero left as 3x-minimal-stack-set-for-him until you decide."
+  - "[[EARLY_ACCESS_URL]] is a placeholder. What is the URL, and can BF26 be applied automatically (e.g. /discount/BF26?redirect=...)? If not, copy must show the code clearly."
+  - "Should the Duo Set (October winner) get a place in this send, or follow the plan's layout as-is?"

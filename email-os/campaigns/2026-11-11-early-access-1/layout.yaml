@@ -1,0 +1,42 @@
+# Layout for 2026-11-11-early-access-1 (designer). Structure from plan s01 (BFCM26 master, send 1).
+# Every string is a key in copy/en.yaml; prices, code and % are filled live per market.
+style: designed
+blocks:
+  - {type: strip, label: strip.label, text: strip.text}
+  - {type: logo}
+  - {type: heading, align: center, label: kicker, title: headline, body: intro}
+  - type: ticket
+    cells:
+      - {label: ticket.price.label, value: ticket.price.value, note: ticket.price.note, accent: true}
+      - {label: ticket.code.label, value: ticket.code.value, note: ticket.code.note}
+      - {label: ticket.open.label, value: ticket.open.value, note: ticket.open.note}
+  - type: button
+    align: center
+    button: {label: cta.code, collection: all, style: solid}
+  - {type: timeline, left: timeline.left, right: timeline.right}
+  - {type: heading, align: center, label: ask.label, title: ask.title, body: ask.body}
+  - {type: section_header, title: him.title, note: him.note}
+  - type: tiles
+    tiles:
+      - {image: tile.him.bracelets, label: tile.bracelets, sub: tile.him.bracelets.sub, link: {collection: him-bracelets}}
+      - {image: tile.him.sets, label: tile.sets, sub: tile.him.sets.sub, link: {collection: him-sets}}
+      - {image: tile.him.necklaces, label: tile.necklaces, sub: tile.him.necklaces.sub, link: {collection: him-necklaces}}
+  - {type: section_header, title: her.title, note: her.note}
+  - type: tiles
+    tiles:
+      - {image: tile.her.bracelets, label: tile.bracelets, sub: tile.her.bracelets.sub, link: {collection: her-bracelets}}
+      - {image: tile.her.sets, label: tile.sets, sub: tile.her.sets.sub, link: {collection: her-sets}}
+      - {image: tile.her.necklaces, label: tile.necklaces, sub: tile.her.necklaces.sub, link: {collection: her-necklaces}}
+  - {type: heading, align: center, title: unsure.title}
+  - type: button
+    align: center
+    button: {label: unsure.cta, product: 3x-minimal-stack-set-for-him, style: outline}
+  - {type: note, text: note.terms}
+  - {type: trust}
+  - type: footer
+    links:
+      - {label: footer.shop_all, collection: all}
+      - {label: footer.bracelets, collection: him-bracelets}
+      - {label: footer.necklaces, collection: necklaces}
+    preferences: footer.preferences
+    unsubscribe: footer.unsubscribe

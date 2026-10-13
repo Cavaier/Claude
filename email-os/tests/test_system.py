@@ -319,6 +319,20 @@ def test_send_gate_end_to_end():
     assert "edited or removed" in send("K1")["permissionDecisionReason"]
 
 
+def test_trial_builds_are_never_sent():
+    s = Sandbox()
+    s.host_images()
+    s.lint("--final")
+    tp, mp = s.klaviyo_dumps()
+    msg = json.loads(Path(mp).read_text())
+    msg["included"][0]["attributes"]["name"] = "EOS TEST · KA_W48_Nov27_T01"
+    Path(mp).write_text(json.dumps(msg))
+    assert s.run("verify_build.py", CID, "eu", tp, mp).returncode == 0
+    s.prompt(f"APPROVE {CID} calendar,copy,layout,final")
+    d = s.pretool("mcp__Klaviyo__send_campaign", {"body": {"data": {"type": "campaign-send-job", "id": "K1"}}})
+    assert d["permissionDecision"] == "deny" and "never sent" in d["permissionDecisionReason"]
+
+
 def test_test_sends_ask():
     s = Sandbox()
     assert s.pretool("mcp__Klaviyo__create_template_preview_send_job", {})["permissionDecision"] == "ask"

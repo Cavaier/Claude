@@ -24,6 +24,11 @@ import yaml
 from common import CAMPAIGNS, calendar_rows, config, gate_hash, load
 
 
+# A trial build next to the real one: "EOS TEST · <calendar name>". Verified like any build,
+# but the send gate refuses it, always.
+TEST_PREFIX = "EOS TEST · "
+
+
 def norm(html):
     return re.sub(r"\s+", " ", re.sub(r">\s+<", "><", html or "")).strip()
 
@@ -87,7 +92,9 @@ def verify(campaign_id, market, template_json, message_json):
         problems.append("template plain-text part differs from out/<market>.txt")
     check("subject", content.get("subject"), meta["subject"])
     check("preview", content.get("preview_text"), meta["preview"])
-    check("campaign name", c_attr.get("name"), per_market(row.get("klaviyo_name"), market))
+    want_name = per_market(row.get("klaviyo_name"), market)
+    is_test = (c_attr.get("name") or "").startswith(TEST_PREFIX)
+    check("campaign name", c_attr.get("name"), (TEST_PREFIX + want_name) if is_test else want_name)
     want_aud = per_market(row.get("audience_ids") or {}, market) or {}
     got_aud = c_attr.get("audiences") or {}
     check("audiences included", sorted(got_aud.get("included") or []), sorted(want_aud.get("include") or []))
@@ -117,6 +124,7 @@ def verify(campaign_id, market, template_json, message_json):
         "template_id": tdata.get("id"),
         "final_hash": final,
         "verified": not problems,
+        "test": is_test,
         "problems": problems,
         "verified_at": int(time.time()),
     }

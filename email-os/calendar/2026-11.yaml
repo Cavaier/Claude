@@ -16,6 +16,8 @@ rows:
   klaviyo_name:
     eu: KA_W46_Nov11_EARLY_ACCESS_1 (CODE)
   audience: Full list minus inactive 180+ days (BIG)
+  audience_ids:
+    eu: {include: [SKcZPp], exclude: [SJ9pVA]}  # Q4 · BIG send (engaged 180d, or clicked/ordered 2y); Dead Profiles – Suppress
   angle: Head start, by code
   subject_plan: You’re in early.
   format: designed
