@@ -25,12 +25,15 @@ calendar → `calendar/*.yaml` · copy → `campaigns/<id>/copy/*.yaml` · desig
 | 2 Calendar | email-planner | row + brief.yaml, `why` cites data | **owner: calendar** |
 | 3 Research | email-researcher (optional) | research/<id>.md | – |
 | 4 Copy | email-copywriter | copy/en.yaml, lint has no copy errors | **owner: copy** |
-| 5 Design | email-designer (+ email-image-director in parallel) | layout + images, screenshot shown | **owner: layout** |
+| 5 Design | email-designer (+ email-image-director in parallel) | layout + images, screenshots at 600 and 375px shown | **owner: layout** |
 | 6 Localize | email-localizer | every market's copy, overflow listed | – |
-| 7 Facts | you: `python3 email-os/tools/facts.py` | facts < 24h old | – |
-| 8 Build | email-builder | Klaviyo drafts + build.yaml | – |
-| 9 QA | email-qa | report, nothing open | **owner: final** |
+| 7 Facts + images | you: `tools/facts.py`; image director hosts images | facts < 24h old, `lint --final` clean | – |
+| 8 QA | email-qa | report, nothing open | **owner: final** |
+| 9 Build | email-builder | Klaviyo drafts, `verify_build.py` verified per market | – |
 | 10 Schedule | you, only after final is ✓ | send gate lets it through | – |
+
+The send gate needs both: final approval of the rendered version AND a Klaviyo draft verified
+against that same version. If someone edits the draft in Klaviyo, verify again before scheduling.
 
 Rules for routing:
 - Brief each agent with the campaign id and the exact files to read; never paste one agent's
@@ -51,11 +54,15 @@ one. If refused, report why; never work around it.
 
 ## Daily check (the loop closes)
 1. For each market with a connected Klaviyo account: get_campaigns (filter
-   `equals(messages.channel,'email')`, include campaign-messages, fields name, status,
-   scheduled_at, send_time, audiences, send_strategy; subject in campaign-message fields),
-   all pages, saved to `email-os/reports/klaviyo-<market>-<date>.json`.
+   `and(equals(messages.channel,'email'),greater-or-equal(created_at,<30 days ago>))`, include
+   campaign-messages, fields name, status, scheduled_at, send_time, audiences, send_strategy;
+   definition.content.subject in campaign-message fields), all pages, saved to
+   `email-os/reports/klaviyo-<market>-<date>.json`.
 2. `python3 email-os/tools/reconcile.py email-os/reports/klaviyo-<market>-<date>.json --market <market>`
 3. Post the printed report (Slack if connected, else here). Red items first, each with the fix.
+
+Sends built outside Email OS (`managed: false` on the calendar) are still checked for date,
+time, audience, recipients and subject-vs-plan, but not for approvals.
 
 ## Rules
 `email-os/config/rules.yaml` is the rulebook. Auto rules are checked by `tools/lint.py`;

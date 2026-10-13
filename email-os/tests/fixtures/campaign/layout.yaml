@@ -1,6 +1,3 @@
-# Designer output: blocks from the block library (templates/email.html.j2), each text slot
-# a key in copy/<locale>.yaml. Localization only ever swaps strings, never the layout.
-campaign: 2026-11-27-bf-public
 blocks:
   - {type: logo}
   - type: hero
@@ -13,7 +10,10 @@ blocks:
   - {type: section_header, title: section.title, note: section.note}
   - {type: product, product: 3x-minimal-stack-set-for-him, image: p1, body: p1.body, button: {label: p1.cta}}
   - {type: product, product: 2x-duo-minimal-set-for-him, image: p2, body: p2.body, button: {label: p2.cta}}
-  - {type: offer_card, label: offer.label, title: offer.title, body: offer.body}
-  - {type: button, button: {label: cta_all, path: /collections/all}}
+  - type: tiles
+    tiles:
+      - {product: cuban-bracelet-for-him, label: tiles.him, sub: tiles.him.sub, link: {collection: him-bracelets}}
+      - {product: 2x-duo-minimal-set-for-him, label: tiles.sets, sub: tiles.sets.sub, link: {collection: him-sets}}
+  - {type: button, align: center, button: {label: cta_all, collection: all}}
   - {type: trust}
-  - {type: footer, text: footer.text, unsubscribe: footer.unsubscribe}
+  - {type: footer, text: footer.text, unsubscribe: footer.unsubscribe, preferences: footer.preferences}

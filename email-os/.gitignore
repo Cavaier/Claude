@@ -2,3 +2,4 @@ __pycache__/
 campaigns/*/out/
 campaigns/*/lint.json
 reports/
+data/img/

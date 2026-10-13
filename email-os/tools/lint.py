@@ -6,18 +6,21 @@ Renders first, then checks every active market. Writes campaigns/<id>/lint.json.
 Exit 0 = no errors (warnings allowed), 1 = errors. --final adds the checks that only
 apply right before the final approval (fresh facts, generated images checked).
 """
+import difflib
 import json
 import re
 import sys
 import time
 
 from common import CAMPAIGNS, DATA, calendar_rows, campaign_markets, config, load
-from render import RenderError, render
+from render import TOKEN, RenderError, render
 
-HEX = re.compile(r"#[0-9a-fA-F]{6}\b|#[0-9a-fA-F]{3}\b")
+HEX = re.compile(r"(?<![&\w])#(?:[0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b")  # not &#847; entities
 PERCENT = re.compile(r"(\d+(?:[.,]\d+)?)\s?%")
 PRICE = re.compile(r"[€$£]\s?\d|\d\s?[€$£]|\b\d+[.,]\d{2}\b|\b(?:EUR|USD|SEK|GBP)\b")
 PLACEHOLDER = re.compile(r"\[[^\]]*\]|\bXX+\b|\{\{|\}\}|TBD|TK\b")
+CODE = re.compile(r"\b[A-Z]{2,}[0-9]{2,}\b")
+MAX_HTML = 90_000
 
 
 def norm_hex(h):
@@ -69,11 +72,13 @@ class Linter:
         others = []
         for cid, row in calendar_rows().items():
             other = load(CAMPAIGNS / cid / "layout.yaml")
-            if cid != self.id and other and str(row["date"]) < str(self.row["date"]):
+            same_style = other and other.get("style", "designed") == layout.get("style", "designed")
+            if cid != self.id and same_style and str(row["date"]) < str(self.row["date"]):
                 others.append((str(row["date"]), cid, [b["type"] for b in other["blocks"]]))
         for _, cid, other_seq in sorted(others)[-3:]:
-            if other_seq == seq:
-                self.add("R11", f"same block sequence as {cid}: pick a different structure")
+            ratio = difflib.SequenceMatcher(None, seq, other_seq).ratio()
+            if ratio >= 0.8:
+                self.add("R11", f"block sequence is {ratio:.0%} the same as {cid}: change the structure, not just the copy")
 
     def r03_one_product_per_row(self):
         layout = load(self.dir / "layout.yaml") or {"blocks": []}
@@ -131,19 +136,30 @@ class Linter:
         for f in sorted((self.dir / "copy").glob("*.yaml")):
             loc = f.stem
             copy = load(f) or {}
-            for k, v in flatten_copy(copy):
+            uses_code = False
+            for k, raw in flatten_copy(copy):
+                uses_code |= "{code}" in raw or bool(offer.get("code") and offer["code"] in raw)
+                v = TOKEN.sub("", raw)  # tokens are filled from live facts; check what's typed
+                for code in CODE.findall(v):
+                    if code != offer.get("code"):
+                        self.add("R05", f"{loc}:{k}: '{code}' looks like a discount code but the offer's code is "
+                                        f"{offer.get('code') or 'none'}", market=loc)
                 for m in PERCENT.findall(v):
                     if float(m.replace(",", ".")) not in allowed_pct:
                         self.add("R05", f"{loc}:{k}: '{m}%' doesn't match the offer ({allowed_pct or 'no offer'})", market=loc)
                 if PRICE.search(v):
-                    self.add("R05", f"{loc}:{k}: looks like a typed price/currency: '{v}'. Prices come from facts", market=loc)
+                    self.add("R05", f"{loc}:{k}: typed price or currency in '{raw}'. Use a token: "
+                                    "{offer_price:<handle>}, {from_offer_price:<group>} or {money:25}", market=loc)
                 low = v.lower()
                 for phrase, why in banned.items():
                     if phrase in low:
                         self.add("R06", f"{loc}:{k}: banned phrase '{phrase}' ({why})", market=loc)
                 if PLACEHOLDER.search(v):
                     self.add("R06", f"{loc}:{k}: unresolved placeholder in '{v}'", market=loc)
-            subj, prev = copy.get("subject") or "", copy.get("preview") or ""
+            if offer.get("code") and not uses_code:
+                self.add("R05", f"{loc}: the offer needs code {offer['code']} but the copy never gives it "
+                                "(use {code})", market=loc)
+            subj, prev = TOKEN.sub("00", copy.get("subject") or ""), TOKEN.sub("00", copy.get("preview") or "")
             if not 15 <= len(subj) <= 60:
                 self.add("R08", f"{loc}: subject is {len(subj)} chars (15-60)", market=loc)
             if not 30 <= len(prev) <= 110:
@@ -175,16 +191,25 @@ class Linter:
             self.add("R01", f"{len(accents)} accent colours {sorted(accents)}", market=m)
 
         products = self.cfg["products"]
-        named = 0
-        for b in meta["buttons"]:
-            if b.get("product"):
+        ctas = [b for b in meta["buttons"] if b.get("style") != "footer"]
+        for b in ctas:
+            if b.get("product") and b.get("style") != "tile":
                 short = (products.get(b["product"], {}).get("short_name") or {}).get(market["locale"], "")
-                if short and short.lower() in b["label"].lower():
-                    named += 1
-                else:
+                if not short or short.lower() not in b["label"].lower():
                     self.add("R02", f"button '{b['label']}' links {b['product']} but doesn't say '{short}'", market=m)
-        if len(meta["buttons"]) < 2 or named < 2:
-            self.add("R02", f"{len(meta['buttons'])} buttons, {named} named after a product (need 2+)", market=m)
+        need = 1 if self.plain else 2
+        if len(ctas) < need:
+            self.add("R02", f"{len(ctas)} calls to action, need at least {need}", market=m)
+
+        size = meta.get("html_bytes", len(html.encode()))
+        if size > MAX_HTML:
+            self.add("R16", f"HTML is {size // 1024} KB; Gmail clips at 102 KB (limit 90 KB)", market=m)
+        for img in meta["images"]:
+            if not img.get("hosted"):
+                self.add("R16", f"image {img['id']} isn't optimised and hosted yet (tools/images.py prepare)",
+                         market=m, severity="error" if self.final else "warn")
+            elif (img.get("bytes") or 0) > 300_000:
+                self.add("R16", f"image {img['id']} is {img['bytes'] // 1024} KB (max 300 KB)", market=m)
 
         ledger = {r["id"]: r for r in (load(DATA / "reviews.yaml") or {}).get("reviews", [])}
         for r in meta["reviews"]:
@@ -224,6 +249,7 @@ class Linter:
         if self.row is None:
             self.add("R12", f"{self.id} is not on the calendar")
             return self.report()
+        self.plain = (load(self.dir / "layout.yaml") or {}).get("style") == "plain"
         self.r12_why()
         self.r11_novelty()
         self.r03_one_product_per_row()

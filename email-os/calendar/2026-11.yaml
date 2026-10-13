@@ -1,28 +1,333 @@
-# Source of truth for what sends when. One row per send. The planner writes rows,
-# the human approves each row (APPROVE <id> calendar). Nothing moves before that.
+# Source of truth for what sends when. One row per send; the planner writes rows and the
+# owner approves each (APPROVE <id> calendar). Imported from the BFCM26 master page.
 #
-# why.ref: perf:<month>#<row id> (data/performance/<month>.yaml) or plan:<url>
-# klaviyo_name: the campaign name in Klaviyo, per market, matched by tools/reconcile.py
+# klaviyo_name:  the campaign name per market (reconcile matches on it, then on date+time)
+# audience:      what the plan says in words; audience_ids: the Klaviyo segment ids it means,
+#                per market {include: [...], exclude: [...]} (planner fills these, owner approves)
+# managed:false  built outside Email OS (by hand or an earlier chat): reconcile still checks
+#                date, time, audience and recipients, but not approvals
 month: 2026-11
 rows:
-  - id: 2026-11-23-members-early-access
-    date: 2026-11-23
-    time: "09:00"
-    markets: [eu, us]
-    klaviyo_name: {eu: KA_W48_Nov23_T01, us: KA_W48_Nov23_T01}
-    audience: Members (VIP segment)
-    hero_product: 3x-minimal-stack-set-for-him
-    angle: Members get Black Friday four days early.
-    offer: {discount_pct: 30, scope: sitewide, code: null}
-    why: {ref: "plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S", note: "BFCM26 sequence, send 1"}
-
-  - id: 2026-11-27-bf-public
-    date: 2026-11-27
-    time: "09:00"
-    markets: [eu, us]
-    klaviyo_name: {eu: KA_W48_Nov27_T01, us: KA_W48_Nov27_T01}
-    audience: Engaged 90 days
-    hero_product: 3x-minimal-stack-set-for-him
-    angle: Black Friday opens to everyone. 30% off everything, no code.
-    offer: {discount_pct: 30, scope: sitewide, code: null, apply_on_compare_at: false}
-    why: {ref: "plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S", note: "BFCM26 sequence: public launch on Black Friday"}
+- id: 2026-11-11-early-access-1
+  date: '2026-11-11'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov11_EARLY_ACCESS_1 (CODE)
+  audience: Full list minus inactive 180+ days (BIG)
+  angle: Head start, by code
+  subject_plan: You’re in early.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: BF26
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s01
+    note: 'BFCM26 master, send 1: Early access, BIG send · code'
+  managed: false
+- id: 2026-11-12-early-access-2
+  date: '2026-11-12'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov12_EARLY_ACCESS_2 (CODE)
+  audience: Engaged last 30 days
+  angle: Last day of the code
+  subject_plan: Your code ends tonight.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: BF26
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s02
+    note: 'BFCM26 master, send 2: Early access, Engaged 30 · code'
+  managed: false
+- id: 2026-11-13-sale-live
+  date: '2026-11-13'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov13_BFCM_SALE_LIVE
+  audience: Full list minus inactive 180+ days, excl. BFCM purchasers (BIG)
+  angle: 'Limited time: the sale opens'
+  subject_plan: It’s open to everyone.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s03
+    note: 'BFCM26 master, send 3: Sale live, BIG send'
+  managed: false
+- id: 2026-11-15-bestsellers
+  date: '2026-11-15'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov15_BFCM_SALE_BESTSELLERS
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Best sellers
+  subject_plan: What’s selling first.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s04
+    note: 'BFCM26 master, send 4: Sale live, Engaged 30'
+  managed: false
+- id: 2026-11-17-shower-gym-sleep
+  date: '2026-11-17'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov17_BFCM_SALE_1
+  audience: Engaged 30 + 31–90 days, excl. BFCM purchasers
+  angle: Lifestyle / real-world wear
+  subject_plan: Shower, gym, sleep, repeat.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s05
+    note: 'BFCM26 master, send 5: Sale live, Engaged 30 + 90'
+  managed: false
+- id: 2026-11-19-gift-list
+  date: '2026-11-19'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: EXTRA_KA_W46_Nov19_BFCM_SALE_2_TEXT ONLY
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Gifting
+  subject_plan: Gift list, sorted early.
+  format: plain
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s06
+    note: 'BFCM26 master, send 6: Sale live, Engaged 30 · text'
+  managed: false
+- id: 2026-11-22-goes-with-everything
+  date: '2026-11-22'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W48_Nov22_BFCM_SALE_3
+  audience: Engaged 30 + 31–90 days, excl. BFCM purchasers
+  angle: Versatile
+  subject_plan: Goes with everything.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s07
+    note: 'BFCM26 master, send 7: Sale live, Engaged 30 + 90'
+  managed: false
+- id: 2026-11-24-about-the-case
+  date: '2026-11-24'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: EXTRA_KA_W48_Nov24_BFCM_SALE_4_TEXT ONLY
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: 'Bonus: the case'
+  subject_plan: About the case.
+  format: plain
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s08
+    note: 'BFCM26 master, send 8: Sale live, Engaged 30 · text'
+  managed: false
+- id: 2026-11-26-bf-tomorrow
+  date: '2026-11-26'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W48_Nov26_BFCM_SALE_5
+  audience: Engaged 30 + 31–90 days, excl. BFCM purchasers
+  angle: Anticipation
+  subject_plan: Black Friday is tomorrow.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s09
+    note: 'BFCM26 master, send 9: Sale live, Engaged 30 + 90'
+  managed: false
+- id: 2026-11-27-black-friday-1
+  date: '2026-11-27'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov27_BFCM_V1
+  audience: Full list minus inactive 180+ days, excl. BFCM purchasers (BIG)
+  angle: 'Limited time: Black Friday'
+  subject_plan: Black Friday is here.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s10
+    note: 'BFCM26 master, send 10: Black Friday, BIG send · 1 of 3'
+  managed: false
+- id: 2026-11-27-black-friday-2
+  date: '2026-11-27'
+  time: '14:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov27_BFCM_V2
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Best sellers + reviews
+  subject_plan: Rated 4.5 by 3,000+
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s11
+    note: 'BFCM26 master, send 11: Black Friday, Engaged 30 · 2 of 3'
+  managed: false
+- id: 2026-11-27-black-friday-3
+  date: '2026-11-27'
+  time: '19:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W46_Nov27_BFCM_V3
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Gifting
+  subject_plan: Gifts under €25
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s12
+    note: 'BFCM26 master, send 12: Black Friday, Engaged 30 · 3 of 3'
+  managed: false
+- id: 2026-11-28-matte-cuff-drop
+  date: '2026-11-28'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W47_Nov28_BF WEEKEND + MATTE CUFF DROP
+  audience: Engaged 30 + 31–90 days, not purchased
+  angle: 'Product spotlight: Matte Cuff'
+  subject_plan: We made it matte.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s13
+    note: 'BFCM26 master, send 13: BF weekend + drop, Engaged 30 + 90 · buyers'
+  managed: false
+- id: 2026-11-29-note-from-eli
+  date: '2026-11-29'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: EXTRA_KA_W47_Nov29_BF WEEKEND_TEXT ONLY
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Curiosity
+  subject_plan: A note from Eli
+  format: plain
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s14
+    note: 'BFCM26 master, send 14: BF weekend, Engaged 30'
+  managed: false
+- id: 2026-11-30-cyber-monday-1
+  date: '2026-11-30'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W47_Nov30_CYBERMONDAY_V1
+  audience: Full list minus inactive 180+ days, excl. BFCM purchasers (BIG)
+  angle: 'Limited time: Cyber Monday'
+  subject_plan: Cyber Week is open.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s15
+    note: 'BFCM26 master, send 15: Cyber Monday, BIG send · 1 of 3'
+  managed: false
+- id: 2026-11-30-cyber-monday-2
+  date: '2026-11-30'
+  time: '14:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: EXTRA_KA_W47_Nov30_CYBERMONDAY_V2_TEXT ONLY
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Materials & craft
+  subject_plan: Won’t turn you green.
+  format: plain
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s16
+    note: 'BFCM26 master, send 16: Cyber Monday, Engaged 30 · text · 2 of 3'
+  managed: false
+- id: 2026-11-30-cyber-monday-3
+  date: '2026-11-30'
+  time: '19:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: EXTRA_KA_W47_Nov30_CYBERMONDAY_V3_TEXT ONLY
+  audience: Engaged last 30 days, excl. BFCM purchasers
+  angle: Water-friendly
+  subject_plan: Still wearing yours?
+  format: plain
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s17
+    note: 'BFCM26 master, send 17: Cyber Monday, Engaged 30 · text · 3 of 3'
+  managed: false

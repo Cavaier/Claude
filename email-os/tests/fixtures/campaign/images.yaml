@@ -1,5 +1,3 @@
-# Image director output. source: shopify (live listing photo by index), figma, or generated.
-# Generated images must name reference_product and pass a side-by-side check (qa) before final.
 images:
   hero: {source: shopify, product: 3x-minimal-stack-set-for-him, index: 1, alt: hero.alt}
   p1:   {source: shopify, product: 3x-minimal-stack-set-for-him, index: 0, alt: p1.alt}

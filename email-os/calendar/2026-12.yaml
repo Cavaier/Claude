@@ -1,0 +1,67 @@
+# Source of truth for what sends when. One row per send; the planner writes rows and the
+# owner approves each (APPROVE <id> calendar). Imported from the BFCM26 master page.
+#
+# klaviyo_name:  the campaign name per market (reconcile matches on it, then on date+time)
+# audience:      what the plan says in words; audience_ids: the Klaviyo segment ids it means,
+#                per market {include: [...], exclude: [...]} (planner fills these, owner approves)
+# managed:false  built outside Email OS (by hand or an earlier chat): reconcile still checks
+#                date, time, audience and recipients, but not approvals
+month: 2026-12
+rows:
+- id: 2026-12-02-three-for-price
+  date: '2026-12-02'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W47_Dec02_CYBERWEEK_3
+  audience: Engaged 30 + 31–90 days, excl. BFCM purchasers
+  angle: 'Versatile: Sets'
+  subject_plan: €66.43 for three
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s18
+    note: 'BFCM26 master, send 18: Cyber Week, Engaged 30 + 90'
+  managed: false
+- id: 2026-12-04-worn-by-3000
+  date: '2026-12-04'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W47_Dec04_CYBERWEEK_5
+  audience: Engaged 30 + 31–90 days, excl. BFCM purchasers
+  angle: Customer stories
+  subject_plan: Worn by 3,000+
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s19
+    note: 'BFCM26 master, send 19: Cyber Week, Engaged 30 + 90'
+  managed: false
+- id: 2026-12-06-last-day
+  date: '2026-12-06'
+  time: '10:00'
+  markets:
+  - eu
+  klaviyo_name:
+    eu: KA_W47_Dec06_LAST CHANCE
+  audience: Full list minus inactive 180+ days, excl. BFCM purchasers (BIG)
+  angle: 'Limited time: last day'
+  subject_plan: Today’s the last day.
+  format: designed
+  offer:
+    discount_pct: 30
+    scope: sitewide
+    code: null
+  why:
+    ref: plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S#s20
+    note: 'BFCM26 master, send 20: Last call, BIG send · last email'
+  managed: false

@@ -1,0 +1,11 @@
+# Named shopping destinations. Tiles and buttons link to `path`; "from" price tokens
+# ({from_offer_price:<name>}) use the cheapest in-stock item whose product_type is in `types`
+# (all types if omitted), read live per market by tools/facts.py.
+him-bracelets: {collection: for-him, path: /collections/for-him, types: ["Jewelry > Bracelets", "Jewelry > Bracelets > Cuffs"]}
+him-sets:      {collection: sets-for-him, path: /collections/sets-for-him}
+him-necklaces: {collection: for-him, path: /collections/for-him, types: ["Jewelry > Necklaces", "Jewelry > Necklaces > Pendant Necklaces"]}
+her-bracelets: {collection: for-her, path: /collections/for-her, types: ["Jewelry > Bracelets", "Jewelry > Bracelets > Cuffs"]}
+her-sets:      {collection: sets-for-her, path: /collections/sets-for-her}
+her-necklaces: {collection: for-her, path: /collections/for-her, types: ["Jewelry > Necklaces", "Jewelry > Necklaces > Pendant Necklaces"]}
+all:           {collection: all-products, path: /collections/all-products}
+necklaces:     {collection: necklace, path: /collections/necklace}

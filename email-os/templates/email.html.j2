@@ -1,88 +1,159 @@
-{#- Email-safe, table-based, inline styles. Colours come only from brand tokens. -#}
+{#- Email-safe: tables, inline styles, bulletproof buttons, Outlook (MSO) fallbacks, stacks on
+    phones. Colours come only from brand tokens (rule R01 checks the output). -#}
 {%- set B = brand -%}
 {%- set N = B.colors.neutrals -%}
-{%- macro button(btn) -%}
-<a href="{{ btn.href }}" style="display:inline-block;background:{{ N[3] }};color:{{ N[0] }};font-size:13px;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;padding:15px 28px;">{{ btn.label }}</a>
+{%- set A = B.colors.accent -%}
+{%- set F = B.fonts.body -%}
+{%- macro button(btn, align="left") -%}
+{%- if btn.style == "outline" -%}
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="{{ align }}" style="margin:0 {{ 'auto' if align == 'center' else '0' }};"><tr><td style="border:1px solid {{ N[3] }};"><a href="{{ btn.href }}" style="display:inline-block;padding:13px 22px;font-family:{{ F }};font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:{{ N[3] }};text-decoration:none;">{{ btn.label }}</a></td></tr></table>
+{%- elif btn.style == "link" -%}
+<a href="{{ btn.href }}" style="font-family:{{ F }};font-size:14px;color:{{ N[3] }};text-decoration:underline;">{{ btn.label }}</a>
+{%- else -%}
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="{{ align }}" style="margin:0 {{ 'auto' if align == 'center' else '0' }};"><tr><td bgcolor="{{ N[3] }}" style="background:{{ N[3] }};"><a href="{{ btn.href }}" style="display:inline-block;padding:16px 30px;font-family:{{ F }};font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:{{ N[0] }};text-decoration:none;">{{ btn.label }}</a></td></tr></table>
+{%- endif -%}
+{%- endmacro -%}
+{%- macro img(i, w, cls="") -%}
+<img src="{{ i.src }}" alt="{{ i.alt }}" width="{{ w }}" class="{{ cls }}" style="display:block;width:{{ w }}px;max-width:100%;height:auto;border:0;outline:none;text-decoration:none;background:{{ N[1] }};font-family:{{ F }};font-size:12px;color:{{ N[5] }};">
 {%- endmacro -%}
 <!doctype html>
-<html lang="{{ locale }}">
+<html lang="{{ locale }}" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
 <title>{{ subject }}</title>
+<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><style>*{font-family:Arial,sans-serif!important}</style><![endif]-->
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;supported-color-schemes:light}
+body{margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+table{border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0}
+img{-ms-interpolation-mode:bicubic}
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important}
+@media only screen and (max-width:620px){
+.w{width:100%!important}
+.px{padding-left:20px!important;padding-right:20px!important}
+.st{display:block!important;width:100%!important;max-width:100%!important;padding-left:0!important;padding-right:0!important}
+.st+.st{padding-top:16px!important}
+.fl{width:100%!important;height:auto!important}
+.h1{font-size:28px!important;line-height:1.15!important}
+.tc{display:block!important;width:100%!important;border-left:0!important;border-top:1px solid {{ N[2] }}!important}
+.tc:first-child{border-top:0!important}
+}
+</style>
 </head>
 <body style="margin:0;padding:0;background:{{ N[1] }};">
-<div style="display:none;max-height:0;overflow:hidden;">{{ preview }}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{{ N[1] }};">
-<tr><td align="center" style="padding:0;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:100%;background:{{ N[0] }};font-family:{{ B.fonts.body }};color:{{ N[4] }};">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{ preview }}&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="{{ N[1] }}" style="background:{{ N[1] }};"><tr><td align="center">
+<!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table role="presentation" class="w" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="{{ N[0] }}" style="width:600px;max-width:600px;background:{{ N[0] }};font-family:{{ F }};color:{{ N[4] }};">
 {%- for b in blocks %}
-{%- if b.type == "logo" %}
-<tr><td align="center" style="padding:28px 24px 20px;border-bottom:1px solid {{ N[2] }};">
-  {%- if B.logo_url %}<img src="{{ B.logo_url }}" alt="{{ B.name }}" width="140" style="display:block;border:0;">
-  {%- else %}<span style="font-family:{{ B.fonts.wordmark }};font-size:26px;letter-spacing:0.18em;color:{{ N[3] }};">{{ B.wordmark }}</span>{% endif %}
+{%- set bg = N[1] if b.bg == "fog" else N[0] %}
+{%- if b.type == "strip" %}
+<tr><td align="center" bgcolor="{{ N[3] }}" style="background:{{ N[3] }};padding:10px 16px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:{{ N[0] }};font-weight:500;">{% if b.label %}<span style="color:{{ N[0] }};font-weight:600;">{{ b.label }}</span> · {% endif %}{{ b.text }}</td></tr>
+{%- elif b.type == "logo" %}
+<tr><td align="center" style="padding:26px 24px 22px;border-bottom:1px solid {{ N[2] }};">
+{%- if B.logo_url %}<img src="{{ B.logo_url }}" alt="{{ B.name }}" width="96" style="display:block;border:0;">{% else %}<span style="font-family:{{ B.fonts.wordmark }};font-size:24px;letter-spacing:0.18em;color:{{ N[3] }};">{{ B.wordmark }}</span>{% endif %}
 </td></tr>
 {%- elif b.type == "hero" %}
-<tr><td style="padding:0;"><a href="{{ b.href }}"><img src="{{ b.image.src }}" alt="{{ b.image.alt }}" width="600" style="display:block;width:100%;height:auto;border:0;"></a></td></tr>
-<tr><td style="padding:32px 40px 8px;">
-  {%- if b.label %}<div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:{{ B.colors.accent }};font-weight:600;padding-bottom:12px;">{{ b.label }}</div>{% endif %}
-  <div style="font-size:34px;line-height:1.15;font-weight:300;color:{{ N[3] }};">{{ b.headline }}</div>
-  {%- if b.body %}<div style="font-size:15px;line-height:1.6;color:{{ N[5] }};padding-top:14px;">{{ b.body }}</div>{% endif %}
+<tr><td style="padding:0;"><a href="{{ b.href }}">{{ img(b.image, 600, "fl") }}</a></td></tr>
+<tr><td class="px" align="{{ b.align }}" style="padding:32px 40px 8px;">
+{%- if b.label %}<div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:{{ A }};font-weight:600;padding-bottom:12px;">{{ b.label }}</div>{% endif %}
+<div class="h1" style="font-size:34px;line-height:1.12;font-weight:300;color:{{ N[3] }};">{{ b.headline }}</div>
+{%- if b.body %}<div style="font-size:15px;line-height:1.6;color:{{ N[5] }};padding-top:14px;">{{ b.body }}</div>{% endif %}
 </td></tr>
-{%- if b.button %}<tr><td style="padding:20px 40px 36px;">{{ button(b.button) }}</td></tr>{% endif %}
-{%- elif b.type == "text" %}
-<tr><td style="padding:28px 40px;">
-  {%- if b.title %}<div style="font-size:20px;line-height:1.3;font-weight:400;color:{{ N[3] }};padding-bottom:10px;">{{ b.title }}</div>{% endif %}
-  <div style="font-size:15px;line-height:1.6;color:{{ N[5] }};">{{ b.body }}</div>
+{%- if b.button %}<tr><td class="px" align="{{ b.align }}" style="padding:20px 40px 36px;">{{ button(b.button, b.align) }}</td></tr>{% endif %}
+{%- elif b.type == "image" %}
+<tr><td style="padding:0;"><a href="{{ b.href }}">{{ img(b.image, 600, "fl") }}</a></td></tr>
+{%- elif b.type in ("text", "heading") %}
+<tr><td class="px" align="{{ b.align }}" bgcolor="{{ bg }}" style="background:{{ bg }};padding:{{ '40px 40px 12px' if b.type == 'heading' else '24px 40px' }};">
+{%- if b.label %}<div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:{{ N[5] }};font-weight:500;padding-bottom:10px;">{{ b.label }}</div>{% endif %}
+{%- if b.title %}<div class="{{ 'h1' if b.type == 'heading' else '' }}" style="font-size:{{ '32px' if b.type == 'heading' else '20px' }};line-height:1.15;font-weight:300;color:{{ N[3] }};padding-bottom:12px;">{{ b.title }}</div>{% endif %}
+{%- if b.body %}<div style="font-size:15px;line-height:1.6;color:{{ N[5] }};">{{ b.body }}</div>{% endif %}
+{%- if b.button %}<div style="padding-top:22px;">{{ button(b.button, b.align) }}</div>{% endif %}
 </td></tr>
-{%- elif b.type == "offer_card" %}
-<tr><td style="padding:12px 40px 28px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{{ N[1] }};border:1px solid {{ N[2] }};">
-<tr><td style="padding:24px 28px;">
-  <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:{{ B.colors.accent }};font-weight:600;">{{ b.label }}</div>
-  <div style="font-size:28px;line-height:1.2;font-weight:300;color:{{ N[3] }};padding-top:8px;">{{ b.title }}</div>
-  {%- if b.body %}<div style="font-size:14px;line-height:1.6;color:{{ N[5] }};padding-top:8px;">{{ b.body }}</div>{% endif %}
-</td></tr></table>
-</td></tr>
+{%- elif b.type == "ticket" %}
+<tr><td class="px" style="padding:8px 40px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid {{ N[3] }};"><tr>
+{%- for c in b.cells %}
+<td class="tc" align="center" valign="top" width="{{ (100 / b.cells|length)|int }}%" style="padding:18px 8px;{% if not loop.first %}border-left:1px dashed {{ N[6] }};{% endif %}">
+<div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:{{ N[5] }};font-weight:500;">{{ c.label }}</div>
+<div style="font-size:24px;line-height:1.2;font-weight:300;padding-top:8px;color:{{ A if c.accent else N[3] }};">{{ c.value }}</div>
+{%- if c.note %}<div style="font-size:12px;line-height:1.4;color:{{ N[5] }};padding-top:4px;">{{ c.note }}</div>{% endif %}
+</td>
+{%- endfor %}
+</tr></table></td></tr>
+{%- elif b.type == "timeline" %}
+<tr><td class="px" style="padding:4px 40px 20px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td style="white-space:nowrap;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[3] }};padding-right:10px;">{{ b.left }}</td>
+<td width="100%" style="border-bottom:1px solid {{ N[2] }};font-size:1px;line-height:1px;">&nbsp;</td>
+<td style="padding:0 8px;font-size:14px;line-height:1;color:{{ A }};">&#9679;</td>
+<td style="white-space:nowrap;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[6] }};">{{ b.right }}</td>
+</tr></table></td></tr>
 {%- elif b.type == "section_header" %}
-<tr><td style="padding:28px 40px 0;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid {{ N[3] }};"><tr>
-  <td style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:{{ N[3] }};padding-bottom:8px;">{{ b.title }}</td>
-  <td align="right" style="font-size:12px;color:{{ N[6] }};padding-bottom:8px;">{{ b.note or "" }}</td>
+<tr><td class="px" style="padding:30px 40px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid {{ N[3] }};"><tr>
+<td style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:{{ N[3] }};padding-bottom:8px;">{{ b.title }}</td>
+<td align="right" style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:{{ N[6] }};padding-bottom:8px;">{{ b.note or "" }}</td>
 </tr></table></td></tr>
+{%- elif b.type == "tiles" %}
+{%- set n = b.tiles|length %}{% set w = 176 if n > 2 else 268 %}
+<tr><td class="px" style="padding:16px 40px 8px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+{%- for t in b.tiles %}
+<td class="st" valign="top" width="{{ (100 / n)|int }}%" style="padding:0 {{ 0 if loop.last else 6 }}px 0 {{ 0 if loop.first else 6 }}px;">
+<a href="{{ t.href }}" style="text-decoration:none;color:{{ N[3] }};">{{ img(t.image, w, "fl") }}
+<div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;padding-top:10px;color:{{ N[3] }};">{{ t.label }} &rarr;</div>
+{%- if t.sub %}<div style="font-size:13px;padding-top:4px;color:{{ A }};">{{ t.sub }}</div>{% endif %}</a>
+</td>
+{%- endfor %}
+</tr></table></td></tr>
+{%- elif b.type == "offer_card" %}
+<tr><td class="px" style="padding:12px 40px 28px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="{{ N[1] }}" style="background:{{ N[1] }};border:1px solid {{ N[2] }};"><tr><td style="padding:24px 28px;">
+<div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:{{ A }};font-weight:600;">{{ b.label }}</div>
+<div style="font-size:26px;line-height:1.2;font-weight:300;color:{{ N[3] }};padding-top:8px;">{{ b.title }}</div>
+{%- if b.body %}<div style="font-size:14px;line-height:1.6;color:{{ N[5] }};padding-top:8px;">{{ b.body }}</div>{% endif %}
+</td></tr></table></td></tr>
 {%- elif b.type == "product" %}
-<tr><td style="padding:24px 40px;border-bottom:1px solid {{ N[2] }};">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-  <td width="240" valign="top"><a href="{{ b.href }}"><img src="{{ b.image.src }}" alt="{{ b.image.alt }}" width="240" style="display:block;width:240px;height:auto;border:0;background:{{ N[1] }};"></a></td>
-  <td valign="middle" style="padding-left:24px;">
-    <div style="font-size:18px;font-weight:400;color:{{ N[3] }};">{{ b.name }}</div>
-    {%- if b.body %}<div style="font-size:14px;line-height:1.5;color:{{ N[5] }};padding-top:6px;">{{ b.body }}</div>{% endif %}
-    <div style="font-size:15px;padding-top:10px;">
-      {%- if b.was %}<span style="color:{{ N[6] }};text-decoration:line-through;">{{ b.was }}</span>&nbsp; <span style="color:{{ B.colors.accent }};font-weight:500;">{{ b.now }}</span>
-      {%- else %}<span style="color:{{ N[3] }};font-weight:500;">{{ b.now }}</span>{% endif %}
-    </div>
-    <div style="padding-top:16px;">{{ button(b.button) }}</div>
-  </td>
-</tr></table></td></tr>
+<tr><td class="px" style="padding:22px 40px;border-bottom:1px solid {{ N[2] }};"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td class="st" width="240" valign="top"><a href="{{ b.href }}">{{ img(b.image, 240, "fl") }}</a></td>
+<td class="st" valign="middle" style="padding-left:24px;">
+<div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:{{ N[3] }};">{{ b.name }}</div>
+{%- if b.body %}<div style="font-size:14px;line-height:1.5;color:{{ N[5] }};padding-top:8px;">{{ b.body }}</div>{% endif %}
+<div style="font-size:15px;padding-top:10px;">{% if b.was %}<span style="color:{{ N[6] }};text-decoration:line-through;">{{ b.was }}</span>&nbsp; <span style="color:{{ A }};font-weight:500;">{{ b.now }}</span>{% else %}<span style="color:{{ N[3] }};font-weight:500;">{{ b.now }}</span>{% endif %}</div>
+<div style="padding-top:16px;">{{ button(b.button) }}</div>
+</td></tr></table></td></tr>
 {%- elif b.type == "review" %}
-<tr><td style="padding:32px 40px;" align="center">
-  <div style="font-size:14px;color:{{ N[3] }};letter-spacing:0.1em;">{{ "★" * b.rating }}</div>
-  <div style="font-size:17px;line-height:1.5;font-weight:300;color:{{ N[3] }};padding-top:10px;">&ldquo;{{ b.text }}&rdquo;</div>
-  <div style="font-size:12px;color:{{ N[6] }};padding-top:10px;">{{ b.author }} · {{ b.platform }}</div>
+<tr><td class="px" align="center" style="padding:32px 40px;">
+<div style="font-size:14px;color:{{ N[3] }};letter-spacing:0.1em;">{{ "★" * b.rating }}</div>
+<div style="font-size:17px;line-height:1.5;font-weight:300;color:{{ N[3] }};padding-top:10px;">&ldquo;{{ b.text }}&rdquo;</div>
+<div style="font-size:12px;color:{{ N[6] }};padding-top:10px;">{{ b.author }} · {{ b.platform }}</div>
 </td></tr>
 {%- elif b.type == "button" %}
-<tr><td align="center" style="padding:24px 40px 32px;">{{ button(b.button) }}</td></tr>
+<tr><td class="px" align="{{ b.align }}" style="padding:20px 40px 28px;">{{ button(b.button, b.align) }}</td></tr>
+{%- elif b.type == "note" %}
+<tr><td class="px" align="center" style="padding:16px 40px 28px;font-size:12px;line-height:1.7;letter-spacing:0.04em;color:{{ N[5] }};">{{ b.text }}</td></tr>
 {%- elif b.type == "trust" %}
-<tr><td align="center" style="padding:20px 40px;font-size:13px;color:{{ N[5] }};border-top:1px solid {{ N[2] }};">{{ B.trust_line }}</td></tr>
+<tr><td class="px" align="center" style="padding:18px 40px;font-size:12px;letter-spacing:0.04em;color:{{ N[5] }};border-top:1px solid {{ N[2] }};">{{ B.trust_line }}</td></tr>
+{%- elif b.type == "divider" %}
+<tr><td class="px" style="padding:0 40px;"><div style="border-top:1px solid {{ N[2] }};font-size:1px;line-height:1px;">&nbsp;</div></td></tr>
+{%- elif b.type == "spacer" %}
+<tr><td style="font-size:1px;line-height:{{ b.size }}px;height:{{ b.size }}px;">&nbsp;</td></tr>
 {%- elif b.type == "footer" %}
-<tr><td align="center" style="padding:28px 40px 40px;background:{{ N[1] }};font-size:11px;line-height:1.6;color:{{ N[6] }};">
-  {{ b.text }}<br>{% raw %}{{ organization.name }} · {{ organization.full_address }}{% endraw %}<br><a href="{% raw %}{% unsubscribe_url %}{% endraw %}" style="color:{{ N[6] }};">{{ b.unsubscribe }}</a>
+<tr><td align="center" bgcolor="{{ N[1] }}" style="background:{{ N[1] }};padding:32px 30px 36px;">
+{%- if b.links %}<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr>
+{%- for l in b.links %}<td style="padding:0 4px 8px;"><a href="{{ l.href }}" style="display:inline-block;padding:11px 16px;border:1px solid {{ N[2] }};background:{{ N[0] }};font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:{{ N[3] }};text-decoration:none;">{{ l.label }}</a></td>{% endfor %}
+</tr></table>{% endif %}
+<div style="font-family:{{ B.fonts.wordmark }};font-size:18px;letter-spacing:0.16em;color:{{ N[3] }};padding:18px 0 14px;">{{ B.wordmark }}</div>
+<div style="font-size:11px;line-height:1.7;color:{{ N[5] }};">{% if b.text %}{{ b.text }}<br>{% endif %}{% raw %}{{ organization.name }} · {{ organization.full_address }}{% endraw %}</div>
+<div style="font-size:11px;line-height:1.7;color:{{ N[5] }};padding-top:8px;">{% if b.preferences %}<a href="{% raw %}{% manage_preferences_url %}{% endraw %}" style="color:{{ N[5] }};">{{ b.preferences }}</a> &nbsp;·&nbsp; {% endif %}<a href="{% raw %}{% unsubscribe_url %}{% endraw %}" style="color:{{ N[5] }};">{{ b.unsubscribe }}</a></div>
 </td></tr>
 {%- endif %}
 {%- endfor %}
 </table>
+<!--[if mso]></td></tr></table><![endif]-->
 </td></tr></table>
 </body>
 </html>

@@ -1,0 +1,30 @@
+{#- Text-only send: looks like a personal email (system font, no images, no buttons).
+    Blocks: para, link, footer. -#}
+{%- set N = brand.colors.neutrals -%}
+<!doctype html>
+<html lang="{{ locale }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>{{ subject }}</title>
+</head>
+<body style="margin:0;padding:0;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{ preview }}&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:24px 20px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;">
+{%- for b in blocks %}
+{%- if b.type == "para" %}
+<tr><td style="padding:0 0 14px;">{{ b.text }}</td></tr>
+{%- elif b.type == "link" %}
+<tr><td style="padding:0 0 14px;"><a href="{{ b.button.href }}" style="text-decoration:underline;">{{ b.button.label }}</a></td></tr>
+{%- elif b.type == "footer" %}
+<tr><td style="padding:18px 0 0;font-size:12px;line-height:1.6;color:{{ N[5] }};">{% if b.text %}{{ b.text }}<br>{% endif %}{% raw %}{{ organization.name }} · {{ organization.full_address }}{% endraw %}<br>{% if b.preferences %}<a href="{% raw %}{% manage_preferences_url %}{% endraw %}" style="color:{{ N[5] }};">{{ b.preferences }}</a> · {% endif %}<a href="{% raw %}{% unsubscribe_url %}{% endraw %}" style="color:{{ N[5] }};">{{ b.unsubscribe }}</a></td></tr>
+{%- endif %}
+{%- endfor %}
+</table>
+</td></tr></table>
+</body>
+</html>

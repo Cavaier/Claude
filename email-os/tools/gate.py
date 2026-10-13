@@ -154,11 +154,13 @@ def on_pretool(event):
             if state != "approved":
                 return decision("deny", f"{cid}: gate '{gate}' is {state}. The human must type "
                                         f"'APPROVE {cid} {gate}' after reviewing the current version.")
-        build = load(CAMPAIGNS / cid / "build.yaml")
-        built_hash = ((build.get("markets") or {}).get(market) or {}).get("final_hash")
-        if built_hash != approval_state(cid, "final")[1]["hash"]:
-            return decision("deny", f"{cid} [{market}]: the Klaviyo draft was built from a different "
-                                    "version than the one approved. Rebuild, then get final approval again.")
+        build = ((load(CAMPAIGNS / cid / "build.yaml") or {}).get("markets") or {}).get(market) or {}
+        if not build.get("verified"):
+            return decision("deny", f"{cid} [{market}]: the Klaviyo draft isn't verified against the approved "
+                                    f"version (tools/verify_build.py). {'; '.join(build.get('problems') or [])}")
+        if build.get("final_hash") != approval_state(cid, "final")[1]["hash"]:
+            return decision("deny", f"{cid} [{market}]: the Klaviyo draft was verified against a different "
+                                    "version than the one approved. Rebuild and verify, or get final approval again.")
         return None  # approved: fall through to the normal permission prompt
     elif tool.endswith("__create_template_preview_send_job"):
         return decision("ask", "Test send. Only if someone asked for it (no unasked messages).")

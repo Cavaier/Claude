@@ -1,0 +1,267 @@
+month: 2026-09
+source: [klaviyo:get_campaigns, klaviyo:get_campaign_report, klaviyo:get_email_template]
+# How the numbers were pulled (2026-10-13):
+#   account: Cavaier AB (KCTpHb), market eu, EUR, Europe/Stockholm. Only connected Klaviyo account;
+#   the us market has no Klaviyo account connected, so it has no rows.
+#   campaigns: get_campaigns filter equals(messages.channel,'email'), status Sent. 15 sent 1-30 Sep.
+#   results: get_campaign_report, conversion metric "Placed Order" (M8VZY5, Shopify integration),
+#     timeframe 2026-08-31T00:00+02:00 .. 2026-10-13T00:00+02:00, Klaviyo's default attribution.
+#     (A second "Placed Order" metric, Yhx3GT from the API integration, exists and was NOT used.)
+#   field mapping: recipients=recipients, open_rate=open_rate, click_rate=click_rate,
+#     orders=conversions, revenue=conversion_value, revenue_per_recipient=revenue_per_recipient,
+#     unsubscribe_rate=unsubscribe_rate. Values copied as returned, not rounded.
+#   hero_product: the product the first image of the template links to (get_email_template html),
+#     mapped to config/products.yaml ids. angle: subject / preview text, shortened.
+#   Triple Whale: not used. Only its knowledge-base tools are exposed in this session
+#     (no get-shop-info, run-sql or pixel-attribution), so there is no TW-attributed revenue.
+#   sent: date of send_time in Europe/Stockholm.
+rows:
+  - id: w36-her3x-detail-10s
+    klaviyo_name: KA_W36_Sept01_T03
+    market: eu
+    sent: 2026-09-01
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "The perfect detail in 10 seconds / you've been getting dressed wrong"
+    subject: "The Perfect Detail in 10 Seconds"
+    recipients: 6962
+    open_rate: 0.44381
+    click_rate: 0.01265
+    orders: 8
+    revenue: 339.51
+    revenue_per_recipient: 0.04879
+    unsubscribe_rate: 0.00834
+    currency: EUR
+  - id: w36-him3x-one-detail
+    klaviyo_name: KA_W36_Sept03_T04
+    market: eu
+    sent: 2026-09-03
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: "One detail changed everything; one piece lifts the look"
+    subject: "One detail changed everything"
+    recipients: 7190
+    open_rate: 0.4375
+    click_rate: 0.01197
+    orders: 7
+    revenue: 458.18
+    revenue_per_recipient: 0.06378
+    unsubscribe_rate: 0.00682
+    currency: EUR
+  - id: w36-her3x-closes-gap
+    klaviyo_name: KA_W36_Sept05_T05
+    market: eu
+    sent: 2026-09-05
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "One set closes the gap: most women own zero, here's the fix"
+    subject: "One set closes the gap"
+    recipients: 7293
+    open_rate: 0.42728
+    click_rate: 0.01209
+    orders: 12
+    revenue: 886.34002
+    revenue_per_recipient: 0.12173
+    unsubscribe_rate: 0.00563
+    currency: EUR
+  - id: w37-him3x-detail-skipping
+    klaviyo_name: KA_W37_Sept07_T01
+    market: eu
+    sent: 2026-09-07
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: "The detail you've been skipping; 10 seconds to finish the look"
+    subject: "The Detail You've Been Skipping"
+    note: "Message label is 'KA_W37_Sept07_T01 Variation A'; the report returned one row for the campaign, no per-variation split was pulled."
+    recipients: 7261
+    open_rate: 0.42591
+    click_rate: 0.01214
+    orders: 6
+    revenue: 310.01
+    revenue_per_recipient: 0.04277
+    unsubscribe_rate: 0.00648
+    currency: EUR
+  - id: w37-her3x-effortless-cost
+    klaviyo_name: KA_W37_Sept09_T02
+    market: eu
+    sent: 2026-09-09
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "What 'effortless' actually costs (less than you think)"
+    subject: "What 'effortless' actually costs (less than you think)."
+    recipients: 7213
+    open_rate: 0.4067
+    click_rate: 0.01251
+    orders: 8
+    revenue: 593.42
+    revenue_per_recipient: 0.08245
+    unsubscribe_rate: 0.00625
+    currency: EUR
+  - id: w37-him3x-put-together
+    klaviyo_name: KA_W37_Sept11_T03
+    market: eu
+    sent: 2026-09-11
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: "Why do some guys always look put-together? Most men own zero"
+    subject: "Why do some guys always look put-together?"
+    recipients: 7183
+    open_rate: 0.41625
+    click_rate: 0.01061
+    orders: 6
+    revenue: 599.75002
+    revenue_per_recipient: 0.08372
+    unsubscribe_rate: 0.006
+    currency: EUR
+  - id: w37-her3x-88pct-fact
+    klaviyo_name: KA_W37_Sept13_T03
+    market: eu
+    sent: 2026-09-13
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "Statistic hook: 88% of women didn't know this; built for every day"
+    subject: "88% of women didn't know this about their jewelry."
+    recipients: 7119
+    open_rate: 0.40645
+    click_rate: 0.01226
+    orders: 2
+    revenue: 157.87
+    revenue_per_recipient: 0.02224
+    unsubscribe_rate: 0.00648
+    currency: EUR
+  - id: w38-him3x-detail-changes
+    klaviyo_name: KA_W38_Sept15_T04
+    market: eu
+    sent: 2026-09-15
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: "This detail changes everything (second image: 2x Duo Set)"
+    subject: "This Detail Changes Everything"
+    recipients: 6118
+    open_rate: 0.42441
+    click_rate: 0.01571
+    orders: 5
+    revenue: 236.88
+    revenue_per_recipient: 0.03876
+    unsubscribe_rate: 0.00818
+    currency: EUR
+  - id: w38-her3x-less-is-more
+    klaviyo_name: KA_W38_Sept17_T05
+    market: eu
+    sent: 2026-09-17
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "Less is more: meet your daily set"
+    subject: "Less is more — meet your daily set"
+    recipients: 6114
+    open_rate: 0.41496
+    click_rate: 0.01375
+    orders: 4
+    revenue: 274.73
+    revenue_per_recipient: 0.04497
+    unsubscribe_rate: 0.00688
+    currency: EUR
+  - id: w38-duo-dressing-game
+    klaviyo_name: KA_W38_Sept19_T01
+    market: eu
+    sent: 2026-09-19
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 2x-duo-minimal-set-for-him
+    angle: "Elevate your dressing game; it's not the shirt, not the shoes"
+    subject: "Elevate Your Dressing Game"
+    recipients: 6143
+    open_rate: 0.40652
+    click_rate: 0.01304
+    orders: 2
+    revenue: 129.69
+    revenue_per_recipient: 0.02114
+    unsubscribe_rate: 0.00619
+    currency: EUR
+  - id: w39-her-collection-missing
+    klaviyo_name: KA_W39_Sept21_T02
+    market: eu
+    sent: 2026-09-21
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: null   # hero image links to the collection /collections/for-her-1, not a single product
+    angle: "What's missing in your outfits? It's not the shirt, not the shoes"
+    subject: "What's Missing in Your Outfits?"
+    recipients: 6102
+    open_rate: 0.41875
+    click_rate: 0.01379
+    orders: 4
+    revenue: 219.47
+    revenue_per_recipient: 0.03603
+    unsubscribe_rate: 0.0064
+    currency: EUR
+  - id: w39-him3x-transforms
+    klaviyo_name: KA_W39_Sept23_T03
+    market: eu
+    sent: 2026-09-23
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: "The set that transforms everything; one piece lifts the look"
+    subject: "The Set That Transforms Everything"
+    recipients: 6071
+    open_rate: 0.41325
+    click_rate: 0.01322
+    orders: 6
+    revenue: 374.83001
+    revenue_per_recipient: 0.06193
+    unsubscribe_rate: 0.00611
+    currency: EUR
+  - id: w39-her3x-minimalism
+    klaviyo_name: KA_W39_Sept25_T04
+    market: eu
+    sent: 2026-09-25
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "Elevate your look with minimalism; one small fixable thing"
+    subject: "Elevate Your Look with Minimalism"
+    recipients: 6001
+    open_rate: 0.40624
+    click_rate: 0.01219
+    orders: 4
+    revenue: 300.55001
+    revenue_per_recipient: 0.05018
+    unsubscribe_rate: 0.00451
+    currency: EUR
+  - id: w39-him3x-jewelry-facts
+    klaviyo_name: KA_W39_Sept27_T05
+    market: eu
+    sent: 2026-09-27
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-him
+    angle: "Jewelry facts every woman should know; built for every day"
+    subject: "Jewelry Facts Every Woman Should Know"
+    note: "Subject addresses women but the hero image links to the men's 3x set (/collections/mens-sets/products/3x-minimal-stack-set)."
+    recipients: 5938
+    open_rate: 0.40803
+    click_rate: 0.01232
+    orders: 3
+    revenue: 154.78
+    revenue_per_recipient: 0.02612
+    unsubscribe_rate: 0.00574
+    currency: EUR
+  - id: w40-duo-elevate-everyday
+    klaviyo_name: KA_W40_Sept29_T01
+    market: eu
+    sent: 2026-09-29
+    audience: "CORE – Active 90d — weekly workhorse + [Engaged non-openers] KA_W33_Aug14_T04"
+    hero_product: 2x-duo-minimal-set-for-him
+    angle: "Elevate your everyday look with ease; two pieces lift the look"
+    subject: "Elevate Your Everyday Look with Ease"
+    recipients: 8225
+    open_rate: 0.42909
+    click_rate: 0.0145
+    orders: 7
+    revenue: 395.46
+    revenue_per_recipient: 0.04818
+    unsubscribe_rate: 0.01291
+    currency: EUR
+takeaways:
+  - "Best send of the month was the women's 3x Set on a gap/fix angle ('One set closes the gap', 'Most women own zero. Here's the fix'): 12 orders, EUR 886.34, EUR 0.12173 per recipient. The next best was EUR 0.08372 (w36-her3x-closes-gap vs w37-him3x-put-together)."
+  - "The same women's 3x Set lost on a statistic/education angle: '88% of women didn't know this' brought 2 orders, EUR 157.87 (w37-her3x-88pct-fact). The other send with the same 'Most jewelry isn't built to be worn every day' preview also came near the bottom: 3 orders, EUR 154.78 (w39-him3x-jewelry-facts). That one had a women's subject but linked to the men's set."
+  - "Men's 3x Set: the identity angles earned the most ('Why do some guys always look put-together?' EUR 599.75 from 6 orders; 'One detail changed everything' EUR 458.18), while the 'detail' rewrites earned less ('The Detail You've Been Skipping' EUR 310.01; 'This Detail Changes Everything' EUR 236.88) (w37-him3x-put-together, w36-him3x-one-detail, w37-him3x-detail-skipping, w38-him3x-detail-changes)."
+  - "The Duo Set was weak in September. 'Elevate Your Dressing Game' was the lowest-earning send of the month: 2 orders, EUR 129.69, EUR 0.02114 per recipient. The 29 Sep Duo send made EUR 395.46 to a larger audience that added the engaged-non-openers segment, and it had the month's highest unsubscribe rate, 0.01291 (w38-duo-dressing-game, w40-duo-elevate-everyday)."
+  - "Open and click rates barely moved (opens 0.40624-0.44381, clicks 0.01061-0.01571) and did not track revenue. The highest-open send made EUR 339.51 (w36-her3x-detail-10s), while the lowest-click send (0.01061) made EUR 599.75 (w37-him3x-put-together). Judge Black Friday angles on orders and revenue per recipient, not on opens."
+  - "Generic 'Elevate…/Less is more' subjects stayed mid-to-low: EUR 300.55, EUR 274.73 and EUR 129.69. The send that linked only to the for-her collection, with no hero product, made EUR 219.47 from 4 orders (w39-her3x-minimalism, w38-her3x-less-is-more, w38-duo-dressing-game, w39-her-collection-missing)."

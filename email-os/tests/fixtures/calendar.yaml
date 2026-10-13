@@ -1,0 +1,11 @@
+month: 2026-11
+rows:
+  - id: 2026-11-27-bf-public
+    date: 2026-11-27
+    time: "10:00"
+    markets: [eu, us]
+    klaviyo_name: {eu: KA_W48_Nov27_T01, us: KA_W48_Nov27_T01}
+    audience: Engaged 90 days
+    audience_ids: {eu: {include: [VSrsMu], exclude: []}, us: {include: [VSrsMu], exclude: []}}
+    offer: {discount_pct: 30, scope: sitewide, code: null}
+    why: {ref: "plan:https://claude.ai/artifact/21hL1pG8bndjPaBr8p8G6S", note: "fixture"}

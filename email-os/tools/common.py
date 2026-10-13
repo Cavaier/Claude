@@ -27,6 +27,7 @@ def config():
         "brand": load(CONFIG / "brand.yaml"),
         "markets": load(CONFIG / "markets.yaml"),
         "products": load(CONFIG / "products.yaml"),
+        "collections": load(CONFIG / "collections.yaml") or {},
         "rules": load(CONFIG / "rules.yaml"),
     }
 
@@ -76,10 +77,18 @@ def gate_hash(campaign_id, gate, cfg=None):
             return None
         return sha(b"".join(f.read_bytes() for f in files if f.exists()))
     if gate == "final":
+        # Everything a recipient gets: HTML, plain text, subject and preview, per market.
+        # (Not the facts timestamp: refreshing identical prices doesn't unapprove anything.)
         outs = sorted((d / "out").glob("*.html"))
         if not outs:
             return None
-        return sha(b"".join(f.name.encode() + f.read_bytes() for f in outs))
+        parts = []
+        for f in outs:
+            meta = load(f.with_suffix(".meta.json")) or {}
+            txt = f.with_suffix(".txt")
+            parts += [f.name.encode(), f.read_bytes(), txt.read_bytes() if txt.exists() else b"",
+                      canonical([meta.get("subject"), meta.get("preview")])]
+        return sha(b"".join(parts))
     raise ValueError(f"unknown gate {gate}")
 
 

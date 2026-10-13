@@ -1,0 +1,126 @@
+month: 2026-10
+partial: true
+through: 2026-10-12
+source: [klaviyo:get_campaigns, klaviyo:get_campaign_report, klaviyo:get_email_template]
+# How the numbers were pulled (2026-10-13):
+#   account: Cavaier AB (KCTpHb), market eu, EUR, Europe/Stockholm. Only connected Klaviyo account;
+#   the us market has no Klaviyo account connected, so it has no rows.
+#   campaigns: get_campaigns filter equals(messages.channel,'email'), status Sent. 6 sent 1-12 Oct
+#     (none on 12 Oct; the last send in range is 11 Oct).
+#   results: get_campaign_report, conversion metric "Placed Order" (M8VZY5, Shopify integration),
+#     timeframe 2026-08-31T00:00+02:00 .. 2026-10-13T00:00+02:00, Klaviyo's default attribution.
+#     (A second "Placed Order" metric, Yhx3GT from the API integration, exists and was NOT used.)
+#     Late sends (9 and 11 Oct) can still pick up attributed orders after this pull; re-pull before
+#     treating them as final.
+#   field mapping: recipients=recipients, open_rate=open_rate, click_rate=click_rate,
+#     orders=conversions, revenue=conversion_value, revenue_per_recipient=revenue_per_recipient,
+#     unsubscribe_rate=unsubscribe_rate. Values copied as returned, not rounded.
+#   hero_product: the product the first image of the template links to (get_email_template html),
+#     mapped to config/products.yaml ids. angle: subject / preview / image alt text, shortened.
+#   Triple Whale: not used. Only its knowledge-base tools are exposed in this session
+#     (no get-shop-info, run-sql or pixel-attribution), so there is no TW-attributed revenue.
+#   sent: date of send_time in Europe/Stockholm.
+rows:
+  - id: w40-cuff-dressed-wrong
+    klaviyo_name: KA_W40_Oct01_T02
+    market: eu
+    sent: 2026-10-01
+    audience: "CORE – Active 90d — weekly workhorse + [Engaged non-openers] KA_W33_Aug14_T04"
+    hero_product: minimal-cuff   # Shopify handle (/collections/for-him-1/products/minimal-cuff); not in config/products.yaml
+    angle: "You've been getting dressed wrong; it's not the shirt, not the shoes"
+    subject: "You've been getting dressed wrong this whole time."
+    recipients: 8201
+    open_rate: 0.41988
+    click_rate: 0.01381
+    orders: 5
+    revenue: 363.35
+    revenue_per_recipient: 0.04441
+    unsubscribe_rate: 0.00966
+    currency: EUR
+  - id: w40-her3x-fade
+    klaviyo_name: KA_W40_Oct03_T03
+    market: eu
+    sent: 2026-10-03
+    audience: "CORE – Active 90d — weekly workhorse + [Engaged non-openers] KA_W33_Aug14_T04"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "Durability: the reason your jewelry fades (and ours doesn't)"
+    subject: "The reason your jewelry fades (and ours doesn't)."
+    recipients: 8230
+    open_rate: 0.41201
+    click_rate: 0.01425
+    orders: 5
+    revenue: 229.45
+    revenue_per_recipient: 0.02794
+    unsubscribe_rate: 0.00816
+    currency: EUR
+  - id: w41-duo-everyday
+    klaviyo_name: KA_W41_Oct05_T04
+    market: eu
+    sent: 2026-10-05
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 2x-duo-minimal-set-for-him
+    angle: "Two bracelets. Every day. Black duo for office, gym, shower"
+    subject: "Two bracelets. Every day. Nothing to think about."
+    recipients: 7445
+    open_rate: 0.43076
+    click_rate: 0.01896
+    orders: 9
+    revenue: 420.36
+    revenue_per_recipient: 0.05652
+    unsubscribe_rate: 0.00847
+    currency: EUR
+  - id: w41-her3x-gold-quiet
+    klaviyo_name: KA_W41_Oct07_T05
+    market: eu
+    sent: 2026-10-07
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "Craft/quiet gold; offer: buy 2, jewelry case included"
+    subject: "What makes gold look quiet."
+    recipients: 7443
+    open_rate: 0.40995
+    click_rate: 0.01748
+    orders: 4
+    revenue: 193.41
+    revenue_per_recipient: 0.02601
+    unsubscribe_rate: 0.00619
+    currency: EUR
+  - id: w41-duo-detail-noticed
+    klaviyo_name: KA_W41_Oct09_T01
+    market: eu
+    sent: 2026-10-09
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 2x-duo-minimal-set-for-him
+    angle: "The detail people notice but can't name; Trustpilot testimonial; packed to give"
+    subject: "The detail people notice but can't name."
+    recipients: 7378
+    open_rate: 0.41002
+    click_rate: 0.01561
+    orders: 5
+    revenue: 495.07001
+    revenue_per_recipient: 0.06719
+    unsubscribe_rate: 0.00651
+    currency: EUR
+  - id: w41-her3x-trustpilot
+    klaviyo_name: KA_W41_Oct11_T02
+    market: eu
+    sent: 2026-10-11
+    audience: "CORE – Active 90d — weekly workhorse"
+    hero_product: 3x-minimal-stack-set-for-her
+    angle: "Social proof: the sets everyone comes back for, 4.7/5 Trustpilot; case on a second piece"
+    subject: "The sets everyone comes back for."
+    recipients: 7266
+    open_rate: 0.39573
+    click_rate: 0.01764
+    orders: 2
+    revenue: 181.35
+    revenue_per_recipient: 0.025
+    unsubscribe_rate: 0.00634
+    currency: EUR
+takeaways:
+  - "By product, 1-12 Oct (summed from the rows below, EUR): Duo Set 2 sends, 14 orders, EUR 915.43; women's 3x Set 3 sends, 11 orders, EUR 604.21; Minimal Cuff 1 send, 5 orders, EUR 363.35. In September the women's 3x Set led with 6 sends, 38 orders and EUR 2552.42, against 2 Duo sends with 9 orders and EUR 525.15 (w41-duo-everyday, w41-duo-detail-noticed, w40-her3x-fade, w41-her3x-gold-quiet, w41-her3x-trustpilot, w40-cuff-dressed-wrong)."
+  - "The Duo Set is October's winner so far. Its two sends have the most orders (9, EUR 420.36), the highest click rate (0.01896) and the most revenue (EUR 495.07). The winning angles were the plain everyday-use pitch ('Two bracelets. Every day.') and the 'detail people notice', with a Trustpilot testimonial and 'packed to give' (w41-duo-everyday, w41-duo-detail-noticed)."
+  - "The women's gold 3x Set lost all three times in October, at EUR 0.02794, 0.02601 and 0.025 per recipient, whether the angle was durability ('why your jewelry fades'), craft plus the buy-2 case offer, or Trustpilot social proof (w40-her3x-fade, w41-her3x-gold-quiet, w41-her3x-trustpilot). This is the reverse of its September high (perf:2026-09#w36-her3x-closes-gap)."
+  - "The two gold 3x sends on 7 and 11 Oct had high click rates (0.01748, 0.01764), but clicks did not turn into orders: 4 and 2 orders (w41-her3x-gold-quiet, w41-her3x-trustpilot). The 11 Oct send also had the lowest open rate in either month (0.39573). The data doesn't say why. Check the landing page or offer before reusing these for Black Friday."
+  - "The Minimal Cuff's one hero send made 5 orders and EUR 363.35, mid-pack. It isn't in config/products.yaml, so it can't be planned until it's added (w40-cuff-dressed-wrong)."
+  - "Sends that added the engaged-non-openers segment had the highest unsubscribe rates: 0.00966 on 1 Oct, the highest in October, and 0.01291 on 29 Sep, the highest across both months. The 3 Oct send (0.00816) was inside the CORE-only range of 0.00619-0.00847. Weigh this before widening Black Friday sends to that segment (w40-cuff-dressed-wrong, w40-her3x-fade, perf:2026-09#w40-duo-elevate-everyday)."

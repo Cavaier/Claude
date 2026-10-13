@@ -1,14 +1,14 @@
 {
   "market": "eu",
   "currency": "EUR",
-  "fetched_at": 1791920490,
+  "fetched_at": 1791921674,
   "products": {
     "3x-minimal-stack-set-for-him": {
       "title": "3x Minimal Stack Set",
+      "type": "Jewelry > Bracelets > Bracelet Sets",
       "price": "94.90",
       "compare_at": null,
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-511.png?v=1791296904&width=1200",
       "images": [
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-511.png?v=1791296904",
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/image2.png?v=1789418529",
@@ -21,10 +21,10 @@
     },
     "3x-minimal-stack-set-for-her": {
       "title": "3x Minimal - Stack Set",
+      "type": "Jewelry > Bracelets > Bracelet Sets",
       "price": "94.90",
       "compare_at": null,
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17817299893691.png?v=1781730371&width=1200",
       "images": [
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17817299893691.png?v=1781730371",
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17817300810931.png?v=1781730371",
@@ -34,10 +34,10 @@
     },
     "2x-duo-minimal-set-for-him": {
       "title": "2x Duo Minimal Set",
+      "type": "Jewelry > Bracelets > Bracelet Sets",
       "price": "59.90",
       "compare_at": null,
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-203_1.png?v=1791288390&width=1200",
       "images": [
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-203_1.png?v=1791288390",
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad2_matched_1.png?v=1791288712",
@@ -45,17 +45,175 @@
       ],
       "url": "https://cavaier.com/products/2x-duo-minimal-set-for-him"
     },
+    "cuban-bracelet-for-him": {
+      "title": "Cuban Bracelet",
+      "type": "Jewelry > Bracelets",
+      "price": "29.90",
+      "compare_at": null,
+      "available": true,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/pp.png?v=1746574506",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17642561962131_1.png?v=1764452244",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/Cubanlinkssa.png?v=1764452244",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17642577878632_1.png?v=1764452244",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/pok.png?v=1764285295",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ElevenLabs_image_google-nano-banana-pro_makemeave..._2025-11-27T16_17_061_1.png?v=1764285295",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/hgk_mgnm.png?v=1764285295",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/0das1_1.png?v=1764285295",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/okk.png?v=1764285295",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643649434321.png?v=1764365375",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/Cubanlinkssai.png?v=1764365375",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643650498861.png?v=1764365370"
+      ],
+      "url": "https://cavaier.com/products/cuban-bracelet-for-him"
+    },
+    "cuban-bracelet-for-her": {
+      "title": "Cuban - Bracelet",
+      "type": "Jewelry > Bracelets",
+      "price": "29.90",
+      "compare_at": null,
+      "available": true,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/pp_bdfb6270-e3b4-4760-8f09-54977ffe7db8.png?v=1746574432",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17645477432491.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/Cubanlinkssa_310b3cc5-d72d-4e44-8075-c83ca09dec19.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17645475005921.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/pok_c606099c-3bb1-495b-b6a9-2dd4148a2289.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17645483706291.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/hgk_mgnm_ef0145e8-18a9-4b0c-892a-2e1a847229e8.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17645478888021.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/okk_8c8a9db7-8ce0-4837-9e64-b46d234a8189.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17645470202461.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/Cubanlinkssai_2642bf45-9b42-4635-bec8-2c0fb6b1f77e.png?v=1765106469",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17645470590871.png?v=1765106469"
+      ],
+      "url": "https://cavaier.com/products/cuban-bracelet-for-her"
+    },
+    "cuban-necklace-for-him": {
+      "title": "Cuban Necklace",
+      "type": "Jewelry > Necklaces",
+      "price": "34.90",
+      "compare_at": null,
+      "available": true,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubenecklace2_66678450-5d3b-428e-8ee3-7d0903fd9228_2_-2.png?v=1746573851",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17647153171251_1.png?v=1764717071",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubannecklace_1_kopia2.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17647588324201.png?v=1764759232",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubenecklace2_66678450-5d3b-428e-8ee3-7d0903fd9228.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17647585695211.png?v=1764759232",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubannecklace.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17647587184751.png?v=1764759232",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubannecklace_1_kopia.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17647590186181.png?v=1764759232",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17647589802861.png?v=1764759232"
+      ],
+      "url": "https://cavaier.com/products/cuban-necklace-for-him"
+    },
+    "cuban-necklace-for-her": {
+      "title": "Cuban - Necklace",
+      "type": "Jewelry > Necklaces",
+      "price": "34.90",
+      "compare_at": null,
+      "available": true,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubenecklace2_66678450-5d3b-428e-8ee3-7d0903fd9228_2_-2.png?v=1746573851",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17648747180941.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubannecklace_1_kopia2.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17648747559121.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubenecklace2_66678450-5d3b-428e-8ee3-7d0903fd9228.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/Frame122_1.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubannecklace.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17648758289991.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cubannecklace_1_kopia.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17648744233591.png?v=1764881739",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17648738935841.png?v=1764881739"
+      ],
+      "url": "https://cavaier.com/products/cuban-necklace-for-her"
+    },
+    "minimal-cuff-for-him": {
+      "title": "Minimal Cuff",
+      "type": "Jewelry > Bracelets > Cuffs",
+      "price": "34.90",
+      "compare_at": null,
+      "available": true,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cuff10.114-2.jpg?v=1756563085",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643664317201.png?v=1764367629",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/minimalcuffligg3.0.jpg?v=1764367629",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643660155131.png?v=1764367629",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/fewfewUntitled-11_39a748a0-f4f4-4305-839a-b4d3f8243ef2.png?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643666290231.png?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/fsdUntitled-11_ba7461eb-84a8-4ba5-8964-f5ec6bc40956.png?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643671337021.png?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/cuff10.114-2_f023aa5a-b967-450a-94cd-a5782f191987.jpg?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643657681941.png?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/minimalcuffligg-silver-FINAL_49bb8f0d-b302-48a9-aa36-d5b3053bf234.jpg?v=1764703924",
+        "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/ad-image-17643656255481.png?v=1764703924"
+      ],
+      "url": "https://cavaier.com/products/minimal-cuff-for-him"
+    },
     "jewelry-case": {
       "title": "Jewelry Case",
+      "type": "Jewelry > Accessories > Jewelry Cases",
       "price": "19.90",
       "compare_at": null,
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/jbag3_kopia.jpg?v=1739033059&width=1200",
       "images": [
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/jbag3_kopia.jpg?v=1739033059",
         "https://cdn.shopify.com/s/files/1/0112/3631/1106/files/Final2_5.jpg?v=1739033059"
       ],
       "url": "https://cavaier.com/products/jewelry-case"
+    }
+  },
+  "collections": {
+    "him-bracelets": {
+      "min_price": "29.90",
+      "min_handle": "rope-bracelet-for-him",
+      "products": 6,
+      "path": "/collections/for-him"
+    },
+    "him-sets": {
+      "min_price": "59.90",
+      "min_handle": "2x-duo-minimal-set-for-him",
+      "products": 3,
+      "path": "/collections/sets-for-him"
+    },
+    "him-necklaces": {
+      "min_price": "34.90",
+      "min_handle": "cube-necklace-for-him",
+      "products": 8,
+      "path": "/collections/for-him"
+    },
+    "her-bracelets": {
+      "min_price": "29.90",
+      "min_handle": "rope-bracelet-for-her",
+      "products": 7,
+      "path": "/collections/for-her"
+    },
+    "her-sets": {
+      "min_price": "94.90",
+      "min_handle": "3x-minimal-stack-set-for-her",
+      "products": 1,
+      "path": "/collections/sets-for-her"
+    },
+    "her-necklaces": {
+      "min_price": "34.90",
+      "min_handle": "rope-necklace-for-her",
+      "products": 9,
+      "path": "/collections/for-her"
+    },
+    "all": {
+      "min_price": "19.90",
+      "min_handle": "jewelry-case",
+      "products": 35,
+      "path": "/collections/all-products"
+    },
+    "necklaces": {
+      "min_price": "34.90",
+      "min_handle": "cube-necklace-for-her",
+      "products": 12,
+      "path": "/collections/necklace"
     }
   }
 }
