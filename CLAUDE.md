@@ -48,13 +48,15 @@ Before making any new batch, always ask Eli which method to use, with one short 
   2. Score every frame in a window of about ±0.5 s for sharpness and take the sharpest one, with no motion blur on the links.
   3. Export it as a 16-bit PNG and apply the same grade as the video (tan rule).
   4. Upscale with an AI upscaler only if the crop is smaller than its slot.
-  5. Finish like a macro photo (Eli, W421):
-     - Cropping is free, with no fixed rule (Eli): mix wide shots with context (hands, face, setting) and tight macro crops, so a batch has variety. Never upscale past the 4K source.
-     - Skin stays 100% natural: no smoothing or noise removal, pores and hairs kept (`RETOUCH_SKIN=0 RETOUCH_NR=0 retouch.py`, jewelry precision pass on).
-     - Natural warm skin colour, not the yellow tan (`finish.py`, Lab a≈10 / b≈17).
-     - Light falloff toward the jewelry.
-     - Keep key text clear of the jewelry.
-     - Real pro photos still beat video stills; tell Eli when a batch needs them.
+  5. Grade and finish (Eli, W421 v2, matching his pro reference):
+     - Run `stillrun.sh CLIP TIME BOX grabcut|global`. It picks the sharpest frame, grades it straight from the 4K original with `pro_grade.py`, then runs `retouch.py` with natural skin and the jewelry pass.
+     - Then `finish.py` adds light falloff and does the crop.
+     - The look: muted golden sun-kissed tan (Lab a≈7 / b≈13.5, deeper), never pink or yellow.
+     - Skin colour is even but keeps its natural variation, and pores are never smoothed.
+     - Whites and greys are neutral and blacks are true; everything else stays quiet graphite.
+     - Use `global` when the frame is nearly all skin, `grabcut` when there's bouclé or a wall.
+     - Cropping is free (variety). Never upscale.
+     - Keep the copy clear of the jewelry; move the text block if needed.
   6. Check it at 100%: links crisp with no halos, skin texture real (not plastic), no invented detail. Tune the pass if anything is overdone.
 - For the delivery upload, use the Frame.io API flow under **Delivery**. The RAW footage is read through the public share in a headless browser (FRAME_METHOD.md §4).
 
