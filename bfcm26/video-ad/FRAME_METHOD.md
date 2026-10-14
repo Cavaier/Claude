@@ -41,7 +41,8 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
 
 ## 3. Copy, offer and claims
 
-- Offer: **Black Friday, 30% off sitewide, no code needed (taken off at checkout).** Say it in different ways.
+- **The angle is decided batch by batch.** Black Friday is one angle, not the default. Ask Eli for each new batch (Black Friday, Evergreen with no offer, or another angle). The Black Friday offer, scene pairs and closing lines below apply only to Black Friday batches. For other angles, keep the same two-line system and true claims, and drop the offer lines.
+- Offer (Black Friday batches only): **Black Friday, 30% off sitewide, no code needed (taken off at checkout).** Say it in different ways.
 - **No prices or currency symbols** (the same ads run in the EUR and USD accounts).
 - **Only true claims:** waterproof · sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L ·
   black, silver or gold · jewelry case included with sets ("case included", never "free case") ·

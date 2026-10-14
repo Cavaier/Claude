@@ -33,8 +33,9 @@ Before making any new batch, always ask Eli which method to use, with one short 
 |---|---|---|
 | **Imitation** (current default) | C1–C3 each closely copy their own IM8 Health ad, using real Cavaier photos from Figma. | **Statics** below. ClickUp Creative Origin: Imitation. |
 | **Ideation** | Our own concepts with our own generated images (OpenAI image model, real product photo + look reference). | **Ideation images** below. Creative Origin: Ideation. |
-| **Frame Method** | Video ads cut from the real RAW footage on Frame.io, in the Vacier-style macro look: graded, slow motion, white Figtree lockups, ElevenLabs music. | `bfcm26/video-ad/FRAME_METHOD.md` (full rules) and the tools in `bfcm26/video-ad/`. Creative Origin: ask Eli the first time, then add it here. |
+| **Frame Method** | Video ads cut from the real RAW footage on Frame.io, in the Vacier-style macro look: graded, slow motion, white Figtree lockups, ElevenLabs music. | `bfcm26/video-ad/FRAME_METHOD.md` (full rules) and the tools in `bfcm26/video-ad/`. Creative Origin: Ideation. |
 
+- **Ask the angle too, batch by batch.** Black Friday is one angle, not the default. Each new batch gets its angle and offer from Eli (Black Friday 30% off, Evergreen with no offer, or another angle). The copy, labels, red accent and ClickUp Style/Angle/Offer follow that answer. The Black Friday examples in FRAME_METHOD.md apply only when the batch is Black Friday.
 - A comment on an existing ad (redo, video, 1080p, push…) never needs this question. Only new batches do.
 - Whatever the method, the batch still goes through our system:
   - Canvas slot, ACTIVITY & QUEUE, IN PROGRESS box and status tags.
