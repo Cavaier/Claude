@@ -1,28 +1,5 @@
-{
- "a1": {
-  "top": 1460,
-  "head": "Black Friday",
-  "sub": "30% off sitewide"
- },
- "a2": {
-  "top": 1460,
-  "head": "Waterproof",
-  "sub": "Sweat and heat resistant"
- },
- "a3": {
-  "top": 330,
-  "head": "Stainless steel",
-  "sub": "Recycled 316L"
- },
- "a4": {
-  "top": 1460,
-  "head": "Adjustable",
-  "sub": "Sizes S, M, L"
- },
- "a5": {
-  "top": 1480,
-  "logo": true,
-  "head": "30% off sitewide",
-  "sub": "No code needed"
- }
-}
+{"a1":{"top":330,"head":"Black Friday","sub":"30% off sitewide"},
+ "a2":{"top":1460,"head":"Waterproof","sub":"Sweat and heat resistant"},
+ "a3":{"top":1460,"head":"Stainless steel","sub":"Recycled 316L"},
+ "a4":{"top":1460,"head":"Adjustable","sub":"Sizes S, M, L"},
+ "a5":{"top":300,"logo":true,"head":"30% off sitewide","sub":"No code needed"}}
