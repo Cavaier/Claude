@@ -43,21 +43,10 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Backup and push.
   - Delivery via "push to clickup and frame".
 - Frame Method ads go in the video lanes (MEN +4820, WOMEN +14220) as their own row, one video per C slot, with the copy note at +8300. They're finished videos (no Seedance draft/final step).
-- **Stills cut from video (standard):** never grab stills from the share preview or a finished ad (those are about 1080p at 3 Mbps and look soft). Do this instead (full steps in FRAME_METHOD.md §Stills):
-  1. Pull the original camera file (2160×3840): the public share download menu has it (`bfcm26/video-ad/dlorig.js`), or use the Frame.io API.
-  2. Score every frame in a window of about ±0.5 s for sharpness and take the sharpest one, with no motion blur on the links.
-  3. Export it as a 16-bit PNG and apply the same grade as the video (tan rule).
-  4. Upscale with an AI upscaler only if the crop is smaller than its slot.
-  5. Grade and finish (Eli, W421 v2, matching his pro reference):
-     - Run `stillrun.sh CLIP TIME BOX grabcut|global`. It picks the sharpest frame, grades it straight from the 4K original with `pro_grade.py`, then runs `retouch.py` with natural skin and the jewelry pass.
-     - Then `finish.py` adds light falloff and does the crop.
-     - The look: muted golden sun-kissed tan (Lab a≈7 / b≈13.5, deeper), never pink or yellow.
-     - Skin colour is even but keeps its natural variation, and pores are never smoothed.
-     - Whites and greys are neutral and blacks are true; everything else stays quiet graphite.
-     - Use `global` when the frame is nearly all skin, `grabcut` when there's bouclé or a wall.
-     - Cropping is free (variety). Never upscale.
-     - Keep the copy clear of the jewelry; move the text block if needed.
-  6. Check it at 100%: links crisp with no halos, skin texture real (not plastic), no invented detail. Tune the pass if anything is overdone.
+- **Stills cut from video (Eli, W421):**
+  - Keep it simple: grab the still from the graded video, the same look as the Frame Method ad (`grade.py` on the frame), and build the static on it.
+  - No extra grading pipeline. Eli rejected the pro_grade / retouch / finish passes on W421; the scripts stay in `bfcm26/video-ad/` but are not the standard.
+  - Cropping is free, for variety.
 - For the delivery upload, use the Frame.io API flow under **Delivery**. The RAW footage is read through the public share in a headless browser (FRAME_METHOD.md §4).
 
 ## Workflow
