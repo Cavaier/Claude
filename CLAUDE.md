@@ -26,6 +26,24 @@ Eli (Cavaier) makes Meta static and video ads on a canvas and drives the work wi
 
 - **Notes:** Brief (x -720), red COMMANDS note (x -720, y 1300), Evergreen rules (x 18680, y 0) and the blue ACTIVITY & QUEUE note (x 18680, y -1700).
 
+## Choose the method first (every new batch)
+Before making any new batch, always ask Eli which method to use, with one short question:
+
+| Method | What it is | Rules |
+|---|---|---|
+| **Imitation** (current default) | C1–C3 each closely copy their own IM8 Health ad, using real Cavaier photos from Figma. | **Statics** below. ClickUp Creative Origin: Imitation. |
+| **Ideation** | Our own concepts with our own generated images (OpenAI image model, real product photo + look reference). | **Ideation images** below. Creative Origin: Ideation. |
+| **Frame Method** | Video ads cut from the real RAW footage on Frame.io, in the Vacier-style macro look: graded, slow motion, white Figtree lockups, ElevenLabs music. | `bfcm26/video-ad/FRAME_METHOD.md` (full rules) and the tools in `bfcm26/video-ad/`. Creative Origin: ask Eli the first time, then add it here. |
+
+- A comment on an existing ad (redo, video, 1080p, push…) never needs this question. Only new batches do.
+- Whatever the method, the batch still goes through our system:
+  - Canvas slot, ACTIVITY & QUEUE, IN PROGRESS box and status tags.
+  - `M/W Batch ###` naming, copy note and ROAS/safe-zone check.
+  - Backup and push.
+  - Delivery via "push to clickup and frame".
+- Frame Method ads go in the video lanes (MEN +4820, WOMEN +14220) as their own row, one video per C slot, with the copy note at +8300. They're finished videos (no Seedance draft/final step).
+- For the delivery upload, use the Frame.io API flow under **Delivery**. The RAW footage is read through the public share in a headless browser (FRAME_METHOD.md §4).
+
 ## Workflow
 1. **Commands:** Eli comments on an ad (C key) and sends it to Claude. A comment is the approval, so never ask again. Commands are redo, video, 720p/1080p, reject, mp4, "push to clickup and frame", or free text.
 2. **Queue:** every comment goes onto ACTIVITY & QUEUE right away (QUEUED → RUNNING → DONE, with times).
