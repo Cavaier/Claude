@@ -12,8 +12,9 @@ SHOTS=(
   "C1176 0.5 1.0 s3"
   "C1132 0.2 1.0 s4"
 )
-# muted, warm-neutral grade: lower saturation, soft contrast, slightly lifted blacks, cool the blue sea
-GRADE="eq=saturation=0.78:contrast=0.96:brightness=0.01:gamma=1.02,colorbalance=rs=0.02:bs=-0.03:rm=0.02:bm=-0.02,hue=s=1,curves=all='0/0.04 0.5/0.52 1/0.97'"
+# matched to the brand reference: cooler white balance, tan pulled from orange to peach-beige,
+# neutral whites, soft contrast, light sharpening for skin texture
+GRADE="colortemperature=temperature=5600:mix=0.5:pl=1,selectivecolor=reds='0 0 -0.06 0':yellows='0 0 -0.15 0':whites='0 0 -0.05 0',colorbalance=bm=0.01:bh=0.015,eq=saturation=0.84:contrast=0.97:brightness=0.02,curves=all='0/0.03 0.5/0.53 1/0.98',unsharp=5:5:0.45"
 : > $O/list.txt
 i=0
 for s in "${SHOTS[@]}"; do
