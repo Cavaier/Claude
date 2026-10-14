@@ -8,12 +8,16 @@ const fs = require('fs');
   const p = await b.newPage({ viewport: { width: 1600, height: 1200 } });
   await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
   await p.waitForTimeout(3000);
-  for (const f of folder.split('/')) {
+  for (const f of (folder ? folder.split('/') : [])) {
     await p.getByText(f, { exact: true }).last().dblclick();
     await p.waitForLoadState('networkidle');
     await p.waitForTimeout(2500);
   }
-  const bb = await p.getByText(first, { exact: true }).first().boundingBox();
+  await p.waitForTimeout(4000);
+  await p.mouse.move(800, 700); await p.mouse.wheel(0, 400); await p.waitForTimeout(1500);
+  const t0 = p.getByText(first, { exact: true }).first();
+  await t0.scrollIntoViewIfNeeded(); await p.waitForTimeout(800);
+  const bb = await t0.boundingBox();
   await p.mouse.dblclick(bb.x + 80, bb.y - 320);
   const res = [];
   for (let i = 0; i < 400; i++) {

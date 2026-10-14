@@ -21,3 +21,10 @@ with one tracked line per shot placed on empty skin or fabric. Footage: `Men/Ses
 - `walk.js` steps through a folder in the player and records every clip's preview link (fast way to review 100+ clips).
 - `dl2.js` downloads 1080 proxies by opening each clip's view page directly.
 - `cards2.js` + `build2.sh` render the text and the edit.
+
+## v4: women, black stack (Session 11, the newest)
+
+13 s, footage from `Women/Session 11 | Women/Video/Black` (flat camera footage, 25 fps):
+C2287, C2384, C2386, C2360, C2382. Graded to the brand reference (expanded levels, soft S-curve,
+neutral bright whites, deep blacks, peach skin). Dark charcoal wordmark and text, because the
+backgrounds are bright white. `cards3.js` + `build3.sh`.
