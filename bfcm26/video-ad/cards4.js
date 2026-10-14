@@ -21,7 +21,7 @@ html,body{margin:0;width:1080px;height:1920px;background:transparent;font-family
 .head{font-weight:300;font-size:${HEAD}px;line-height:1.15;letter-spacing:.18em;padding-left:.18em;text-transform:uppercase}
 .sub{font-weight:400;font-size:${SUB}px;letter-spacing:.32em;padding-left:.32em;text-transform:uppercase;margin-top:14px;opacity:.92}
 `;
-// Every scene uses the same two sizes: one headline + an optional sub-line. The logo appears only on the closing scene.
+// Every scene uses the same two sizes: a headline + a sub-line (always both). The logo appears only on the closing scene.
 const html = s => `${s.logo ? `<img class="logo" src="${logo}">` : ''}<div class="head">${s.head}</div>${s.sub ? `<div class="sub">${s.sub}</div>` : ''}`;
 (async () => {
   const b = await chromium.launch({ args: ['--no-sandbox'] });

@@ -1,5 +1,28 @@
-{"s1":{"top":1400,"head":"Black Friday"},
- "s2":{"top":360,"head":"30% off sitewide"},
- "s3":{"top":440,"head":"Waterproof","sub":"Sweat and heat resistant"},
- "s4":{"top":440,"head":"No code needed","sub":"Taken off at checkout"},
- "s5":{"top":1290,"logo":true,"head":"30% off sitewide","sub":"Black Friday"}}
+{
+ "s1": {
+  "top": 1400,
+  "head": "Black Friday",
+  "sub": "Limited time"
+ },
+ "s2": {
+  "top": 360,
+  "head": "30% off sitewide",
+  "sub": "Every piece, every set"
+ },
+ "s3": {
+  "top": 440,
+  "head": "Waterproof",
+  "sub": "Sweat and heat resistant"
+ },
+ "s4": {
+  "top": 440,
+  "head": "No code needed",
+  "sub": "Taken off at checkout"
+ },
+ "s5": {
+  "top": 1290,
+  "logo": true,
+  "head": "30% off sitewide",
+  "sub": "Black Friday"
+ }
+}

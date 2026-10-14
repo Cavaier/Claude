@@ -11,8 +11,10 @@ Set by Eli. Apply to every video ad unless he says otherwise. `cards4.js` alread
   move the text onto skin, fabric or a darker area. Don't switch the text colour.
 - **One consistent type system in every scene** (Figtree), never a one-off size:
   - headline: 38px, weight 300, uppercase, letter-spacing 0.18em (e.g. "BLACK FRIDAY", "30% OFF SITEWIDE", "WATERPROOF")
-  - sub-line (optional, under the headline): 17px, weight 400, uppercase, letter-spacing 0.32em
+  - sub-line (always, under the headline): 17px, weight 400, uppercase, letter-spacing 0.32em
   - closing scene: wordmark, then the same headline + sub-line sizes
+- **Every scene is two lines: headline + sub-line.** Never a headline on its own.
+  Example: BLACK FRIDAY / LIMITED TIME · 30% OFF SITEWIDE / EVERY PIECE, EVERY SET.
 - One headline per scene. Lockups fade in (0.9s) with a 16px ease-out rise. Never put text on the jewellery.
 - Key text stays between y=270 and y=1536 (Meta safe zone).
 
