@@ -24,11 +24,11 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
 - **White text only.** Never dark or charcoal text. If a background is too bright, choose another shot or move the
   text onto skin, fabric or a darker area. Don't change the colour.
 - **Logo:** the CAVAIER Bodoni wordmark (`assets/logo_white.png`). **Only once, on the closing scene.**
-  **28 px tall** on the 1080×1920 canvas, so its letters equal the headline's capital height. Never bigger than the
+  **28 px tall** on the 1080×1920 canvas (Eli: text slightly bigger, logo unchanged). Never bigger than the
   headline. No logo on the other scenes.
 - **One type system in every scene (Figtree), never a one-off size:**
-  - headline: **38 px**, weight 300, uppercase, letter-spacing 0.18em
-  - sub-line: **17 px**, weight 400, uppercase, letter-spacing 0.32em, 14 px under the headline
+  - headline: **42 px**, weight 300, uppercase, letter-spacing 0.18em
+  - sub-line: **19 px**, weight 400, uppercase, letter-spacing 0.32em, 14 px under the headline
 - **Every scene is two lines: headline + sub-line.** Never a headline alone. One headline per scene.
 - Closing scene: wordmark, then the same headline + sub-line.
 - Lockups fade in over 0.9 s (starting 0.35 s into the shot) with a 16 px ease-out rise.
@@ -119,7 +119,7 @@ Run with `PW=$(npm root -g)/playwright node <script> ...`.
 
 ## 7. Colour (professional, every ad)
 
-**Skin rule (Eli): skin must look sun-kissed / tanned, never pale.** `grade.py` warms and deepens the skin tones in every look (selectivecolor on reds and yellows, slightly more saturation). The neutral white target keeps walls, bouclé and white tops clean. Check the before/after sheet: skin golden-tan, whites still neutral. Reference: `specs/tan-before-after.png`.
+**Skin rule (Eli): skin must look sun-kissed / tanned, never pale, in every scene.** `grade.py` measures each shot's graded skin and adds warmth and depth until it hits one tan target (bright, washed-out clips get more), and warms the skin tones in every look (selectivecolor on reds and yellows, slightly more saturation). The neutral white target keeps walls, bouclé and white tops clean. Check the before/after sheet: skin golden-tan, whites still neutral. Reference: `specs/tan-before-after.png`.
 
 Use `grade.py`, never one blanket filter for all clips:
 1. **Normalise** flat camera footage: levels 0.06-0.80, then a soft S-curve.

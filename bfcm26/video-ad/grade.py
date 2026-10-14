@@ -37,7 +37,49 @@ def shot_filter(clip, t, look):
     white = a[neutral].mean(axis=0)
     gains = np.clip(np.array(L['white']) / white, 0.7, 1.5)
     mix = f"colorchannelmixer=rr={gains[0]:.4f}:gg={gains[1]:.4f}:bb={gains[2]:.4f}"
-    return f"{pre},{mix},eq=saturation={L['sat']},selectivecolor={L['sel']},unsharp=5:5:0.35"
+    # Skin rule (Eli): sun-kissed / tanned, never pale. Measure the graded skin and add warmth + depth per shot
+    # until it reaches the same tan target, so bright, washed-out clips land on the same skin as the rest.
+    best = None
+    for k in (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6):
+        sel = _boost(L['sel'], min(k, 2))
+        # beyond the selective boost: more saturation and a touch of depth on red/yellow hues only (skin).
+        # Neutral tones (charcoal dress, white walls, bouclé) carry no hue, so they stay neutral.
+        w = max(0, k - 1)
+        w2 = min(w, 2)   # a capped midtone warm balance, with the opposite shift in the shadows (dress stays neutral)
+        bal = (f"huesaturation=saturation={0.09*w:.3f}:intensity={-0.012*w:.3f}:colors=r+y:strength=6,"
+               f"colorbalance=rm={0.035*w2:.3f}:gm={0.008*w2:.3f}:bm={-0.05*w2:.3f}"
+               f":rs={-0.035*w2:.3f}:gs={-0.004*w2:.3f}:bs={0.045*w2:.3f}")
+        f = f"{pre},{mix},{bal},eq=saturation={L['sat']},selectivecolor={sel}"
+        sk = skin(frame(clip, t, f))
+        if sk is None:
+            if k == 0:
+                return f"{f},unsharp=5:5:0.35"   # no skin in the shot: base look only
+            continue
+        rb, lum = sk[0] - sk[2], sk @ [0.2126, 0.7152, 0.0722]
+        err = abs(rb - SKIN_RB)
+        if best is None or err < best[0]:
+            best = (err, f)
+    return f"{best[1]},unsharp=5:5:0.35"
+
+SKIN_RB, SKIN_LUM = 60, 168   # target: warm golden tan (red minus blue) and not over-bright
+
+def skin(a):
+    r, g, b = a[..., 0], a[..., 1], a[..., 2]
+    l = a @ [0.2126, 0.7152, 0.0722]
+    m = (r > g + 6) & (g > b + 4) & (r - b > 22) & (l > 90) & (l < 232)
+    return a[m].mean(axis=0) if m.mean() > 0.04 else None
+
+def _boost(sel, k):
+    # extra warmth (less cyan, more yellow) and depth (black) on reds and yellows only: whites stay neutral
+    add = {'reds': (-0.05, 0.015, 0.08, 0.06), 'yellows': (-0.03, 0.01, 0.06, 0.05)}
+    out = []
+    for part in sel.split(':'):
+        name, vals = part.split('=')
+        v = [float(x) for x in vals.strip("'").split()]
+        d = add.get(name, (0, 0, 0, 0))
+        v = [max(-1, min(1, a + k * b)) for a, b in zip(v, d)]
+        out.append(f"{name}='{' '.join(f'{x:.3f}' for x in v)}'")
+    return ':'.join(out)
 
 if __name__ == '__main__':
     print(shot_filter(sys.argv[1], float(sys.argv[2]), sys.argv[3]))

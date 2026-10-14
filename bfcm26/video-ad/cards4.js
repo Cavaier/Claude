@@ -9,8 +9,8 @@ const b64 = f => fs.readFileSync(`${A}/${f}`).toString('base64');
 const font = w => `@font-face{font-family:F;font-weight:${w};src:url(data:font/ttf;base64,${b64(`Figtree-${w}.ttf`)})}`;
 // House rules (Eli): white text only, logo once (closing scene), one consistent type size set.
 const LOGO_H = 28;   // wordmark letters = headline cap height (38px Figtree caps are ~27px)
-const HEAD = 38;     // headline size, identical in every scene
-const SUB = 17;      // sub-line size, identical in every scene
+const HEAD = 42;     // headline size, identical in every scene
+const SUB = 19;      // sub-line size, identical in every scene
 const ink = '#ffffff';
 const logo = `data:image/png;base64,${b64('logo_white.png')}`;
 const glow = 'drop-shadow(0 2px 14px rgba(0,0,0,.28))';
