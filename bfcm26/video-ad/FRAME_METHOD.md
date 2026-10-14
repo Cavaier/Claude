@@ -109,6 +109,7 @@ Run with `PW=$(npm root -g)/playwright node <script> ...`.
   Black "Editorial" (charcoal dress, hair, attitude, slightly moodier grade).
 - Men's and women's footage are never mixed in one ad.
 - **No full faces (Eli, W423):** pick scenes where the model's face is not fully visible (cropped at the lips/chin, turned away, hidden by a hand or hair).
+- **No black t-shirt scenes (Eli, W423):** skip the Session 10 shots with the black t-shirt; use sky, sand, rock and sea shots instead.
 - **The jewelry must look good in every scene (Eli, W423):** gold has to catch the light and shine. Skip shots where it reads dark, brown or dull (shade, backlight on gold); check every graded frame before choosing.
 
 ## 6. Slow motion

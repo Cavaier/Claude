@@ -1,28 +1,5 @@
-{
- "b1": {
-  "top": 1420,
-  "head": "Black Friday",
-  "sub": "Limited time"
- },
- "b2": {
-  "top": 1420,
-  "head": "Stainless steel",
-  "sub": "Recycled 316L"
- },
- "b3": {
-  "top": 330,
-  "head": "No code needed",
-  "sub": "Taken off at checkout"
- },
- "b4": {
-  "top": 1460,
-  "head": "30% off sitewide",
-  "sub": "Every piece, every set"
- },
- "b5": {
-  "top": 300,
-  "logo": true,
-  "head": "30% off sitewide",
-  "sub": "Black Friday"
- }
-}
+{"b1":{"top":1460,"head":"Black Friday","sub":"Limited time"},
+ "b2":{"top":1460,"head":"Stainless steel","sub":"Recycled 316L"},
+ "b3":{"top":1460,"head":"No code needed","sub":"Taken off at checkout"},
+ "b4":{"top":1460,"head":"30% off sitewide","sub":"Every piece, every set"},
+ "b5":{"top":300,"logo":true,"head":"30% off sitewide","sub":"Black Friday"}}
