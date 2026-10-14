@@ -532,6 +532,30 @@
       "w": 1080,
       "x": 12220,
       "y": 4800
+    },
+    "V-W423-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 423 - C1 · Golden hour · FINAL 1080p · MUSIC",
+      "w": 1080,
+      "x": 14220,
+      "y": 9600
+    },
+    "V-W423-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 423 - C2 · Backlit · FINAL 1080p · MUSIC",
+      "w": 1080,
+      "x": 15380,
+      "y": 9600
+    },
+    "V-W423-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 423 - C3 · Sea breeze · FINAL 1080p · MUSIC",
+      "w": 1080,
+      "x": 16540,
+      "y": 9600
     }
   },
   "createdOnFiles": {
@@ -545,7 +569,7 @@
   "notes": {
     "activity": {
       "fill": "blue",
-      "text": "ACTIVITY & QUEUE · updated 14:28\n\nQUEUE (comments in the order they arrived)\n1–56. Oct 12–13 · M446–M476, W415–W420 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n57. Oct 14 W Batch 422 · Frame Method, Session 11 Black → DONE\n58. Oct 14 W Batch 421 · image set from the W422 video stills → DONE\n59. Oct 14 W421 + W422 · \"push to clickup and frame\" → DONE (W422 mother → ads for review)\n60. 13:12 W421 · \"redo the stills in high quality\" → tried (4K + retouch), not kept\n61. 13:50 W421 · \"redo the statics from the start\" → tried (v1 + v2 new grades), not kept\n62. 14:20 W421 · \"go back to the original way\" + \"push to frame and clickup\" → original stills restored · Frame ✓ newest version · ClickUp ✓ ads for review → DONE 14:28\nRUNNING\n–\n\nDONE\n✓ 14:28 W Batch 421 back to the original stills (graded W422 frames) on canvas, Frame.io and ClickUp\n✓ 13:58 Frame.io login now permanent (token broker on Cloudflare, renews daily)\n✓ Oct 14 W Batch 421 (image set of W422): 3 statics from graded video stills, Touch / Editorial / Close, ROAS check passed\n✓ Oct 14 W Batch 422: C2 back to the preferred grade (bigger text kept) · C3 full new run \"Close\" (new shots, new music)\n✓ Oct 14 W Batch 422 C2 + C3 new version: every scene sun-kissed (per-shot tan), text slightly bigger on C1–C3 (42/19 px, logo unchanged)\n✓ Oct 14 W Batch 422 regraded: sun-kissed / tanned skin (new Frame Method rule) and no black fade-out at the end\n✓ Oct 14 W Batch 422 (Frame Method, Session 11 Black): C1 Touch, C2 Editorial, C3 Quiet light · 15.4 s each, slow motion, graded, white text, ElevenLabs music\n✓ 20:40 W Batch 420 delivered: 6 videos on Frame.io (EN + No Text, all clean), ClickUp copy + fields + row comments, batch task → ads for review\n✓ 20:36 W Batch 420 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 20:34 Voice-over trial: W Batch 418 C2 in 3 ElevenLabs voices (Arabella, Veda Sky, Relaxing Rachel) in a new row belo",
+      "text": "ACTIVITY & QUEUE · updated 15:16\n\nQUEUE (comments in the order they arrived)\n1–56. Oct 12–13 · M446–M476, W415–W420 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n57. Oct 14 W Batch 422 · Frame Method, Session 11 Black → DONE\n58. Oct 14 W Batch 421 · image set from the W422 video stills → DONE\n59. Oct 14 W421 + W422 · \"push to clickup and frame\" → DONE (W422 mother → ads for review)\n60. 13:12 W421 · \"redo the stills in high quality\" → tried (4K + retouch), not kept\n61. 13:50 W421 · \"redo the statics from the start\" → tried (v1 + v2 new grades), not kept\n62. 14:20 W421 · \"go back to the original way\" + \"push to frame and clickup\" → original stills restored · Frame ✓ newest version · ClickUp ✓ ads for review → DONE 14:28\n63. 14:30 chat · \"run another batch W Black Friday, Frame Session 10, women\" → DONE 15:16: W Batch 423 C1 Golden hour · C2 Backlit · C3 Sea breeze (Session 10, 16.4 s, music)\nRUNNING\n–\n\nDONE\n✓ 15:16 W Batch 423 (Frame Method, Session 10 beach): 3 videos on the canvas, copy note ready\n✓ 14:28 W Batch 421 back to the original stills (graded W422 frames) on canvas, Frame.io and ClickUp\n✓ 13:58 Frame.io login now permanent (token broker on Cloudflare, renews daily)\n✓ Oct 14 W Batch 421 (image set of W422): 3 statics from graded video stills, Touch / Editorial / Close, ROAS check passed\n✓ Oct 14 W Batch 422: C2 back to the preferred grade (bigger text kept) · C3 full new run \"Close\" (new shots, new music)\n✓ Oct 14 W Batch 422 C2 + C3 new version: every scene sun-kissed (per-shot tan), text slightly bigger on C1–C3 (42/19 px, logo unchanged)\n✓ Oct 14 W Batch 422 regraded: sun-kissed / tanned skin (new Frame Method rule) and no black fade-out at the end\n✓ Oct 14 W Batch 422 (Frame Method, Session 11 Black): C1 Touch, C2 Editorial, C3 Quiet light · 15.4 s each, slow motion, graded, white text, ElevenLabs music\n✓ 20:40 W Batch 420 delivered: 6 videos on Frame.io (EN + No Text, all clean), ClickUp copy + fields + row comments, batch task → ads for review\n✓ 20:36 W Batch 420 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 20:34 Voice-over trial: W Batch 418 C2 in 3 ElevenLabs voices (Arabella, Veda Sky, Relaxing Rachel) in a new row belo",
       "w": 600,
       "x": 18680,
       "y": -1700
@@ -810,6 +834,14 @@
       "w": 240,
       "x": 14220,
       "y": -320
+    },
+    "copy-w423": {
+      "fill": "gray",
+      "maxH": 1920,
+      "w": 600,
+      "x": 17700,
+      "y": 9600,
+      "text": "W Batch 423 · ad copy (Black Friday, women · Frame Method, Session 10 beach)\n\nPRIMARY TEXT\nSun, sea and the stack you never take off. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nC1 (gold stack): EU https://cavaier.com/products/3x-minimal-stack-set-for-her · US https://us.cavaier.com/products/3x-minimal-stack-set-for-her\nC2 + C3 (black chains, no cuff): product to confirm with Eli before delivery\n\nCREATIVES\nC1 Golden hour: gold stack, white dress, sand + sea · waterproof / adjustable / case included · nylon guitar + strings\nC2 Backlit: black chains in sunset backlight, black top · offer + material claims · ambient piano + cello\nC3 Sea breeze: black chains, blue sky, wind · waterproof / Trustpilot / adjustable · airy soft pulse\n\nSTATUS\nFINAL 1080p with music (16.4 s each) on the canvas. Footage: Session 10 (50 fps, every real frame played 2x slower), light grade for sunny footage (sun-kissed, never orange), white Figtree lockups, wordmark on the closing scene only, no fade-out. Not yet on ClickUp / Frame."
     }
   },
   "order": [
@@ -882,7 +914,10 @@
     "V-W422-C3.dc.html",
     "W421-C1.dc.html",
     "W421-C2.dc.html",
-    "W421-C3.dc.html"
+    "W421-C3.dc.html",
+    "V-W423-C1.dc.html",
+    "V-W423-C2.dc.html",
+    "V-W423-C3.dc.html"
   ],
   "pages": [],
   "title": "Cavaier Static Ads Lab"

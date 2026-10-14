@@ -1,0 +1,5 @@
+black s10 C0765 1.0 1.6 s1
+black s10 C0786 3.2 1.6 s2
+black s10 C0861 1.8 1.6 s3
+black s10 C0792 2.2 1.6 s4
+black s10 C0789 0.6 1.8 s5

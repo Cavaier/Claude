@@ -1,0 +1,28 @@
+{
+ "g1": {
+  "top": 330,
+  "head": "Black Friday",
+  "sub": "30% off sitewide"
+ },
+ "g2": {
+  "top": 330,
+  "head": "Waterproof",
+  "sub": "Sweat and heat resistant"
+ },
+ "g3": {
+  "top": 330,
+  "head": "Adjustable",
+  "sub": "Sizes S, M, L"
+ },
+ "g4": {
+  "top": 1420,
+  "head": "Jewelry case included",
+  "sub": "With every set"
+ },
+ "g5": {
+  "top": 300,
+  "logo": true,
+  "head": "30% off sitewide",
+  "sub": "No code needed"
+ }
+}

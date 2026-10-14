@@ -73,7 +73,7 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
   |---|---|---|
   | Women / Session 11 / Video / **Black** (141) | black chains + black cuff, white boucle, white wall, charcoal dress; studio, flat camera footage | 25 |
   | Women / Session 11 / Video / **Gold** (73) | gold chains + gold cuff, white top, boucle; studio, flat | 25 |
-  | Women / Session 10 / Video (334) | | 50 |
+  | Women / Session 10 / Video (331, folder 848d2d86-d18d-43c9-90e0-8cf1578f8784) | sunny beach, 1080×1920 already contrasty: gold stack + white dress (C0573–C0752), black chains + black top (C0753–C0904) | 50 → `build6.sh` (real frames 2x slower) + `GRADE_SRC=graded` |
   | Women / Session 9, 8 | | 30 |
   | Women / Session **7** / VIDEO (82) | black duo chains + black bar necklace (and gold), black top, black-sand beach, sea foam | **120** |
   | Women / Session 6, 5 | | **120** |

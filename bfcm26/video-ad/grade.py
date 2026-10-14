@@ -9,6 +9,11 @@ import numpy as np
 from PIL import Image
 
 BASE = "colorlevels=rimin=0.06:gimin=0.06:bimin=0.06:rimax=0.80:gimax=0.80:bimax=0.80"
+# GRADE_SRC=graded: footage that already has contrast (e.g. Session 10 beach, 50 fps): only a light black/white
+# point, a softer curve, and the white-balance gains capped tighter (sky and sand are not white references)
+if os.environ.get('GRADE_SRC') == 'graded':
+    BASE = "colorlevels=rimin=0.02:gimin=0.02:bimin=0.02:rimax=0.97:gimax=0.97:bimax=0.97"
+GAIN_LO, GAIN_HI = (0.9, 1.12) if os.environ.get('GRADE_SRC') == 'graded' else (0.7, 1.5)
 LOOKS = {
     # white target (RGB 0-255), S-curve, saturation, skin tweak: sun-kissed / tanned skin (Eli), whites stay neutral
     'gold':  dict(white=(234, 229, 220), curve="0/0 0.25/0.22 0.5/0.53 0.75/0.81 1/1", sat=1.10,
@@ -27,7 +32,8 @@ def frame(clip, t, vf):
 
 def shot_filter(clip, t, look):
     L = LOOKS[look]
-    pre = f"{BASE},curves=all='{L['curve']}'"
+    curve = L['curve'] if os.environ.get('GRADE_SRC') != 'graded' else "0/0 0.25/0.24 0.5/0.51 0.75/0.77 1/1"
+    pre = f"{BASE},curves=all='{curve}'"
     a = frame(clip, t, pre)
     luma = a @ [0.2126, 0.7152, 0.0722]
     chroma = a.max(axis=2) - a.min(axis=2)
@@ -35,10 +41,13 @@ def shot_filter(clip, t, look):
     # neutral candidates: bright AND the least coloured half of those (wall, boucle, white top; not nails or skin)
     neutral = bright & (chroma <= np.percentile(chroma[bright], 40))
     white = a[neutral].mean(axis=0)
-    gains = np.clip(np.array(L['white']) / white, 0.7, 1.5)
+    gains = np.clip(np.array(L['white']) / white, GAIN_LO, GAIN_HI)
     mix = f"colorchannelmixer=rr={gains[0]:.4f}:gg={gains[1]:.4f}:bb={gains[2]:.4f}"
     # Skin rule (Eli): sun-kissed / tanned, never pale. Measure the graded skin and add warmth + depth per shot
     # until it reaches the same tan target, so bright, washed-out clips land on the same skin as the rest.
+    if os.environ.get('GRADE_SRC') == 'graded':     # sunny footage is already sun-kissed: light touch, never orange
+        sel = ':'.join(f"{n}='" + ' '.join(f'{float(x)*0.4:.3f}' for x in v.strip("'").split()) + "'" for n, v in (q.split('=') for q in L['sel'].split(':')))
+        return f"{pre},{mix},eq=saturation={min(L['sat'], 1.0) * 0.96:.3f},selectivecolor={sel},unsharp=5:5:0.3"
     if os.environ.get('GRADE_ADAPT', '1') == '0':   # fixed tan only (the look Eli preferred on W422 C2)
         return f"{pre},{mix},eq=saturation={L['sat']},selectivecolor={L['sel']},unsharp=5:5:0.35"
     best = None
