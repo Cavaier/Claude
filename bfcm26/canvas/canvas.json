@@ -588,6 +588,86 @@
       "w": 420,
       "x": 9400,
       "y": 9600
+    },
+    "Refs-M462.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 462 · IM8 refs",
+      "w": 420,
+      "x": 0,
+      "y": 12000
+    },
+    "M462-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 462 - C1 · His everyday stack. Now 30% off. (IM8 highlighted headline)",
+      "w": 1080,
+      "x": 500,
+      "y": 12000
+    },
+    "M462-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 462 - C2 · What's in your 3x Minimal Stack Set (IM8 what's included)",
+      "w": 1080,
+      "x": 1660,
+      "y": 12000
+    },
+    "M462-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 462 - C3 · Every piece. 30% off. (IM8 checklist)",
+      "w": 1080,
+      "x": 2820,
+      "y": 12000
+    },
+    "V-M464-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 464 - C1 · IN PROGRESS",
+      "w": 1080,
+      "x": 4820,
+      "y": 14400
+    },
+    "V-M464-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 464 - C2 · IN PROGRESS",
+      "w": 1080,
+      "x": 5980,
+      "y": 14400
+    },
+    "V-M464-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 464 - C3 · IN PROGRESS",
+      "w": 1080,
+      "x": 7140,
+      "y": 14400
+    },
+    "M466-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 466 - C1 · IN PROGRESS",
+      "w": 1080,
+      "x": 500,
+      "y": 14400
+    },
+    "M466-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 466 - C2 · IN PROGRESS",
+      "w": 1080,
+      "x": 1660,
+      "y": 14400
+    },
+    "M466-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "M Batch 466 - C3 · IN PROGRESS",
+      "w": 1080,
+      "x": 2820,
+      "y": 14400
     }
   },
   "createdOnFiles": {
@@ -601,7 +681,7 @@
   "notes": {
     "activity": {
       "fill": "blue",
-      "text": "ACTIVITY & QUEUE · updated 18:20\n\nQUEUE (comments in the order they arrived)\n1–56. Oct 12–13 · M446–M476, W415–W420 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n57. Oct 14 W Batch 422 · Frame Method, Session 11 Black → DONE\n58. Oct 14 W Batch 421 · image set from the W422 video stills → DONE\n59. Oct 14 W421 + W422 · \"push to clickup and frame\" → DONE (W422 mother → ads for review)\n60. 13:12 W421 · \"redo the stills in high quality\" → tried (4K + retouch), not kept\n61. 13:50 W421 · \"redo the statics from the start\" → tried (v1 + v2 new grades), not kept\n62. 14:20 W421 · \"go back to the original way\" + \"push to frame and clickup\" → original stills restored · Frame ✓ newest version · ClickUp ✓ ads for review → DONE 14:28\n63. 14:30 chat · \"run another batch W Black Friday, Frame Session 10, women\" → DONE 15:16: W Batch 423 C1 Golden hour · C2 Backlit · C3 Sea breeze (Session 10, 16.4 s, music)\n64. 15:30 W Batch 423 · chat: \"pick scenes where the face is not fully visible and the jewelry looks good (gold was dark/dull)\" → DONE 15:45: C1 re-cut with shining gold (C0671, C0620, C0716, C0673, C0732), C2 face shot swapped (C0809)\n65. 15:50 W Batch 423 C2 + C3 · chat: \"I don't like the t-shirt scenes\" → DONE 16:05: all black t-shirt shots replaced (C2 now Sun and stone: C0889, C0894, C0811, C0888, C0898 · C3: C0890 + closing C0758)\n66. 17:35 W Batch 423 · chat: \"do the static versions\" → DONE 17:55: W Batch 424 C1 Golden stack · C2 Sea air · C3 Blue sky (stills from the W423 videos), ROAS ok\n67. 18:05 W Batch 424 · chat: \"use references like the IM8 flow for the statics\" → DONE 18:25: C1–C3 redesigned, each imitating its own IM8 static (refs board added), ROAS ok\n68. 18:10 W Batch 423 + 424 · chat: \"push all 6 to clickup and frame\" → DONE 18:20: ClickUp fields + copy + row comments, Frame 12/12 clean, both mothers → ads for review\nRUNNING\n–\n\nDONE\n✓ 15:16 W Batch 423 (Frame Method, Session 10 beach): 3 videos on the canvas, copy note ready\n✓ 14:28 W Batch 421 back to the original stills (graded W422 frames) on canvas, Frame.io and ClickUp\n✓ 13:58 Frame.io login now permanent (token broker on Cloudflare, renews daily)\n✓ Oct 14 W Batch 421 (image set of W422): 3 statics from graded video stills, Touch / Editorial / Close, ROAS check passed\n✓ Oct 14 W Batch 422: C2 back to the preferred grade (bigger text kept) · C3 full new run \"Close\" (new shots, new music)\n✓ Oct 14 W Batch 422 C2 + C3 new version: every scene sun-kissed (per-shot tan), text slightly bigger on C1–C3 (42/19 px, logo unchanged)\n✓ Oct 14 W Batch 422 regraded: sun-kissed / tanned skin (new Frame Method rule) and no black fade-out at the end\n✓ Oct 14 W Batch 422 (Frame Method, Session 11 Black): C1 Touch, C2 Editorial, C3 Quiet light · 15.4 s each, slow motion, graded, white text, ElevenLabs music\n✓ 20:40 W Batch 420 delivered: 6 videos on Frame.io (EN + No Text, all clean), ClickUp copy + fields + row comments, batch task → ads for review\n✓ 20:36 W Batch 420 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 20:34 Voice-over trial: W Batch 418 C2 in 3 ElevenLabs voices (Arabella, Veda Sky, Relaxing Rachel) in a new row belo",
+      "text": "ACTIVITY & QUEUE · updated 19:05\n\nQUEUE (comments in the order they arrived)\n1–56. Oct 12–13 · M446–M476, W415–W420 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n57. Oct 14 W Batch 422 · Frame Method, Session 11 Black → DONE\n58. Oct 14 W Batch 421 · image set from the W422 video stills → DONE\n59. Oct 14 W421 + W422 · \"push to clickup and frame\" → DONE (W422 mother → ads for review)\n60. 13:12 W421 · \"redo the stills in high quality\" → tried (4K + retouch), not kept\n61. 13:50 W421 · \"redo the statics from the start\" → tried (v1 + v2 new grades), not kept\n62. 14:20 W421 · \"go back to the original way\" + \"push to frame and clickup\" → original stills restored · Frame ✓ newest version · ClickUp ✓ ads for review → DONE 14:28\n63. 14:30 chat · \"run another batch W Black Friday, Frame Session 10, women\" → DONE 15:16: W Batch 423 C1 Golden hour · C2 Backlit · C3 Sea breeze (Session 10, 16.4 s, music)\n64. 15:30 W Batch 423 · chat: \"pick scenes where the face is not fully visible and the jewelry looks good (gold was dark/dull)\" → DONE 15:45: C1 re-cut with shining gold (C0671, C0620, C0716, C0673, C0732), C2 face shot swapped (C0809)\n65. 15:50 W Batch 423 C2 + C3 · chat: \"I don't like the t-shirt scenes\" → DONE 16:05: all black t-shirt shots replaced (C2 now Sun and stone: C0889, C0894, C0811, C0888, C0898 · C3: C0890 + closing C0758)\n66. 17:35 W Batch 423 · chat: \"do the static versions\" → DONE 17:55: W Batch 424 C1 Golden stack · C2 Sea air · C3 Blue sky (stills from the W423 videos), ROAS ok\n67. 18:05 W Batch 424 · chat: \"use references like the IM8 flow for the statics\" → DONE 18:25: C1–C3 redesigned, each imitating its own IM8 static (refs board added), ROAS ok\n68. 18:10 W Batch 423 + 424 · chat: \"push all 6 to clickup and frame\" → DONE 18:20: ClickUp fields + copy + row comments, Frame 12/12 clean, both mothers → ads for review\n69. 18:40 chat · \"M Batch 462 (image imitation), 463 (video of 462 after approval), 464 (Frame Method video, men) + 466 (statics from 464 frames, IM8 refs), Black Friday\" → M462 DONE 19:05 · M463 waits for approval · M464 + M466 RUNNING\nRUNNING\n–\n\nDONE\n✓ 15:16 W Batch 423 (Frame Method, Session 10 beach): 3 videos on the canvas, copy note ready\n✓ 14:28 W Batch 421 back to the original stills (graded W422 frames) on canvas, Frame.io and ClickUp\n✓ 13:58 Frame.io login now permanent (token broker on Cloudflare, renews daily)\n✓ Oct 14 W Batch 421 (image set of W422): 3 statics from graded video stills, Touch / Editorial / Close, ROAS check passed\n✓ Oct 14 W Batch 422: C2 back to the preferred grade (bigger text kept) · C3 full new run \"Close\" (new shots, new music)\n✓ Oct 14 W Batch 422 C2 + C3 new version: every scene sun-kissed (per-shot tan), text slightly bigger on C1–C3 (42/19 px, logo unchanged)\n✓ Oct 14 W Batch 422 regraded: sun-kissed / tanned skin (new Frame Method rule) and no black fade-out at the end\n✓ Oct 14 W Batch 422 (Frame Method, Session 11 Black): C1 Touch, C2 Editorial, C3 Quiet light · 15.4 s each, slow motion, graded, white text, ElevenLabs music\n✓ 20:40 W Batch 420 delivered: 6 videos on Frame.io (EN + No Text, all clean), ClickUp copy + fields + row comments, batch task → ads for review\n✓ 20:36 W Batch 420 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 20:34 Voice-over trial: W Batch 418 C2 in 3 ElevenLabs voices (Arabella, Veda Sky, Relaxing Rachel) in a new row belo",
       "w": 600,
       "x": 18680,
       "y": -1700
@@ -882,6 +962,14 @@
       "x": 13380,
       "y": 9600,
       "text": "W Batch 424 · ad copy (Black Friday, women · statics from the W423 Session 10 footage)\n\nPRIMARY TEXT\nSun, sea and the stack you never take off. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nC1 (gold stack): EU https://cavaier.com/products/3x-minimal-stack-set-for-her · US https://us.cavaier.com/products/3x-minimal-stack-set-for-her\nC2 + C3 (black finish): same 3x Minimal - Stack Set page\n\nCREATIVES (each copies its own IM8 Health static, refs board on the left)\nC1 Sun, salt and sea: IM8 \"They could drink anything\" layout · photo top with logo, light panel, two-weight headline, body, CTA · gold stack on sand\nC2 Waterproof list: IM8 \"One scoop. 92 ingredients\" layout · photo left, stacked 3-line headline + claim list · black chains over the sea\nC3 Made to stay on: IM8 \"One drink\" + 30% badge layout · full bleed sky, centred headline, round black 30% badge · arm against the sky\n\nSTATUS\nOn the canvas, ROAS check passed. Stills from the graded W423 videos (no extra grading), layouts imitate IM8 Health top statics. ClickUp ✓ (fields, copy, row comments, ads for review) · Frame ✓ (EN + No Text, all 6 clean)."
+    },
+    "copy-m462": {
+      "fill": "gray",
+      "maxH": 1920,
+      "w": 600,
+      "x": 3980,
+      "y": 12000,
+      "text": "M Batch 462 · ad copy (Black Friday, men · Imitation)\n\nPRIMARY TEXT\nHis everyday stack: a flat polished cuff, a box chain and a square chain. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set\nUS: https://us.cavaier.com/products/3x-minimal-stack-set\n\nCREATIVES (each copies its own IM8 Health static, refs board on the left)\nC1 Everyday stack: IM8 \"Inter Miami's Premium Daily Ritual\" layout · full bleed, white highlighted headline blocks · black stack, sea and rocks\nC2 What's in the set: IM8 \"What's included in your kit\" layout · numbered items on the photo + list · silver stack\nC3 Every piece: IM8 \"Every nutrient\" checklist layout · headline + checklist + product · gold stack\n\nPHOTOS\nFresh men's product photos from the Cavaier store (Figma not connected this session).\n\nSTATUS\nOn the canvas, ROAS check passed. M Batch 463 = videos of these statics, after approval."
     }
   },
   "order": [
@@ -961,7 +1049,17 @@
     "W424-C1.dc.html",
     "W424-C2.dc.html",
     "W424-C3.dc.html",
-    "Refs-W424.dc.html"
+    "Refs-W424.dc.html",
+    "Refs-M462.dc.html",
+    "M462-C1.dc.html",
+    "M462-C2.dc.html",
+    "M462-C3.dc.html",
+    "V-M464-C1.dc.html",
+    "V-M464-C2.dc.html",
+    "V-M464-C3.dc.html",
+    "M466-C1.dc.html",
+    "M466-C2.dc.html",
+    "M466-C3.dc.html"
   ],
   "pages": [],
   "title": "Cavaier Static Ads Lab"
