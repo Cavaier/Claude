@@ -266,6 +266,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-14** Performance review Oct 11–14. Brand Search: 880 SEK, 18 purchases, 14.4k SEK value
+  (ROAS ~16), impression share 16% → 90–96% after the broad keyword was paused (P-001 working), CPC 3–5.
+  Local-language ad groups barely serve: English ad wins most impressions in DE/NL/ES/MX/SE/HK (see P-006).
+  UK non-brand: Shopify shows 157 sessions, 0 add-to-carts, bounce 80%, 132 landed on /collections/for-him
+  (Meta men prospecting lands on 2x Duo / 3x Stack set pages, ~2.9% add-to-cart). Moved 6 UK ad groups to
+  /products/2x-duo-minimal-set-for-him. Shopify sessions can be filtered with utm_campaign (campaign id).
 - **2026-10-14** Day-3 Search | Men | UK: 165 clicks, 1,285 SEK, CPC 7.8, CTR 5.4%, IS 21–29%, 0 purchases
   (Google + Shopify). Men's Bracelets 445 SEK / 57 clicks, Silver 331 / 43, Chain 235 / 30. 0 sales in
   165 clicks suggests conversion rate under ~1.5%. Added negatives 18ct, 9 carat, real silver, with name,
