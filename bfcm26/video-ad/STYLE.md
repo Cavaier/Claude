@@ -5,7 +5,8 @@ Set by Eli. Apply to every video ad unless he says otherwise. `cards4.js` alread
 
 ## Text and logo
 - **Logo:** the CAVAIER Bodoni wordmark (`logo_white.png`), used **once only, on the closing scene**.
-  Size: **47px tall** on the 1080×1920 canvas (= 17pt as seen on a phone screen). Not on the other scenes.
+  Size: **28px tall** on the 1080×1920 canvas, so its letters match the headline's capital height. It must never
+  look bigger than the headline. Not on the other scenes.
 - **White text only.** No dark/charcoal text. If a background is too bright for white, pick a different shot or
   move the text onto skin, fabric or a darker area. Don't switch the text colour.
 - **One consistent type system in every scene** (Figtree), never a one-off size:
