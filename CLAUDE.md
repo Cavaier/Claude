@@ -47,6 +47,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Keep it simple: grab the still from the graded video, the same look as the Frame Method ad (`grade.py` on the frame), and build the static on it.
   - No extra grading pipeline. Eli rejected the pro_grade / retouch / finish passes on W421; the scripts stay in `bfcm26/video-ad/` but are not the standard.
   - Cropping is free, for variety.
+  - The layout still follows the IM8 flow (Eli, W424): each C copies its own IM8 Health static from Trendtrack, and an IM8 refs board goes in the row. A plain text-on-photo layout is not enough.
 - For the delivery upload, use the Frame.io API flow under **Delivery**. The RAW footage is read through the public share in a headless browser (FRAME_METHOD.md §4).
 
 ## Workflow
