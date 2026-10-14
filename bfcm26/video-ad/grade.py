@@ -10,13 +10,13 @@ from PIL import Image
 
 BASE = "colorlevels=rimin=0.06:gimin=0.06:bimin=0.06:rimax=0.80:gimax=0.80:bimax=0.80"
 LOOKS = {
-    # white target (RGB 0-255), S-curve, saturation, skin/gold tweak
-    'gold':  dict(white=(234, 229, 220), curve="0/0 0.25/0.22 0.5/0.53 0.75/0.81 1/1", sat=1.02,
-                  sel="reds='-0.05 0.02 0.04 0':yellows='-0.02 0 0.03 0'"),
-    'black': dict(white=(232, 231, 228), curve="0/0 0.25/0.22 0.5/0.53 0.75/0.81 1/1", sat=1.12,
-                  sel="reds='-0.07 0.02 0.06 0':yellows='-0.03 0 -0.02 0'"),
-    'edit':  dict(white=(222, 222, 221), curve="0/0 0.22/0.16 0.5/0.51 0.78/0.84 1/0.99", sat=1.02,
-                  sel="reds='-0.06 0.02 0.05 0':yellows='-0.02 0 -0.03 0'"),
+    # white target (RGB 0-255), S-curve, saturation, skin tweak: sun-kissed / tanned skin (Eli), whites stay neutral
+    'gold':  dict(white=(234, 229, 220), curve="0/0 0.25/0.22 0.5/0.53 0.75/0.81 1/1", sat=1.10,
+                  sel="reds='-0.14 0.04 0.20 0.22':yellows='-0.08 0.03 0.14 0.14'"),
+    'black': dict(white=(232, 231, 228), curve="0/0 0.25/0.22 0.5/0.53 0.75/0.81 1/1", sat=1.22,
+                  sel="reds='-0.16 0.04 0.24 0.24':yellows='-0.10 0.03 0.16 0.16'"),
+    'edit':  dict(white=(222, 222, 221), curve="0/0 0.22/0.16 0.5/0.51 0.78/0.84 1/0.99", sat=1.12,
+                  sel="reds='-0.15 0.04 0.22 0.24':yellows='-0.09 0.03 0.15 0.16'"),
 }
 
 def frame(clip, t, vf):

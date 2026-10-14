@@ -15,7 +15,7 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
 - **Reference style: Vacier's top video ads** (Meta page 106321194484973, vacier.com). Macro close-ups of jewellery on
   skin, slow, intimate, minimal, almost no text, 10-16 s, one gesture per shot.
 - **Brand tones: Eli's reference photo**, a macro of black box/snake chains on skin against soft white. Clean neutral
-  whites, peach-beige skin (never orange tan), deep true blacks, soft diffused light, crisp skin texture.
+  whites, **sun-kissed, lightly tanned golden skin (never pale or washed out, never orange)**, deep true blacks, soft diffused light, crisp skin texture.
 - **Luxury slow motion.** Real high frame rate footage played slower, every frame used. No jerky real-time movement.
 - Format: 9:16, 1080×1920, H.264 MP4 with AAC music, about 13-17 s, 5 shots of about 3 s, the last one the closing scene.
 
@@ -119,6 +119,8 @@ Run with `PW=$(npm root -g)/playwright node <script> ...`.
 
 ## 7. Colour (professional, every ad)
 
+**Skin rule (Eli): skin must look sun-kissed / tanned, never pale.** `grade.py` warms and deepens the skin tones in every look (selectivecolor on reds and yellows, slightly more saturation). The neutral white target keeps walls, bouclé and white tops clean. Check the before/after sheet: skin golden-tan, whites still neutral. Reference: `specs/tan-before-after.png`.
+
 Use `grade.py`, never one blanket filter for all clips:
 1. **Normalise** flat camera footage: levels 0.06-0.80, then a soft S-curve.
 2. **Shot matching:** measure each shot's neutral areas: bright pixels that are the least coloured (wall, boucle, white
@@ -129,7 +131,7 @@ Use `grade.py`, never one blanket filter for all clips:
    - `black`: white (232,231,228) clean neutral, saturation 1.12, deep blacks
    - `edit`: white (222,222,221), slightly cooler and deeper contrast, saturation 1.02
 4. Light sharpening (`unsharp=5:5:0.35`) for skin texture.
-5. **Always make a before/after sheet of every shot** and look at it: whites neutral, skin peach (not orange, not grey,
+5. **Always make a before/after sheet of every shot** and look at it: whites neutral, skin sun-kissed and tanned (not pale, not orange, not grey,
    not pink), blacks black, no blue walls. Measure RGB of white areas and skin if unsure.
 - Sunny 120 fps beach footage (Session 7) uses `specs/v5-grade.txt`: cooler temperature, yellows pulled from the tan,
   saturation 0.86, near-zero black lift, light sharpening.
