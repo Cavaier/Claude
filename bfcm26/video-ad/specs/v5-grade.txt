@@ -1,0 +1,1 @@
+colortemperature=temperature=5800:mix=0.45:pl=1,selectivecolor=reds='0 0 -0.06 0':yellows='0 0 -0.14 0':whites='0 0 -0.04 0',eq=saturation=0.86:contrast=0.98:brightness=0.025,curves=all='0/0.012 0.5/0.53 1/0.98',unsharp=5:5:0.4

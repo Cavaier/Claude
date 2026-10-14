@@ -28,3 +28,14 @@ with one tracked line per shot placed on empty skin or fabric. Footage: `Men/Ses
 C2287, C2384, C2386, C2360, C2382. Graded to the brand reference (expanded levels, soft S-curve,
 neutral bright whites, deep blacks, peach skin). Dark charcoal wordmark and text, because the
 backgrounds are bright white. `cards3.js` + `build3.sh`.
+
+## v5: luxury slow-mo, women's black set (Session 7, 120 fps)
+
+Frame rates per women's session (first clip of each folder; `fps.js`): 11 = 25 fps, 10 = 50 fps,
+9 and 8 = 30 fps, 7 / 6 / 5 = 120 fps. Session 7 is the newest true slow-mo footage (all 82 clips 120 fps).
+
+16.2 s, every source frame used (4x slower, 29.97 fps output, no duplicated frames).
+Shots: C0709, C0715, C0769 (sea foam), C0758, C0718. Grade in `specs/v5-grade.txt`.
+Lockups (`cards4.js`, specs in `specs/`): Bodoni wordmark at logo size, thin large "30% OFF"
+(Figtree 300) under a small tracked "BLACK FRIDAY" label, hairline rule on the end card; each
+fades in with a 16 px ease-out rise. White on skin and fabric, charcoal over the white foam.
