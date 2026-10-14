@@ -1,0 +1,5 @@
+black w11 C2306 3.2 1.5 c1
+black w11 C2362 0.9 1.5 c2
+black w11 C2392 1.6 1.5 c3
+black w11 C2365 4.0 1.5 c4
+black w11 C2390 1.8 1.7 c5

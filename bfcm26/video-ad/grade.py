@@ -4,7 +4,7 @@ Usage: python3 grade.py <clip> <time> <look>   -> prints the ffmpeg filter strin
 The white patch is the bright, least-coloured pixels (studio wall, boucle, white top; nails and skin excluded); its mean is matched to
 the look's white target, so every cut in an ad lands on the same white balance and exposure.
 """
-import subprocess, sys, io
+import subprocess, sys, io, os
 import numpy as np
 from PIL import Image
 
@@ -39,6 +39,8 @@ def shot_filter(clip, t, look):
     mix = f"colorchannelmixer=rr={gains[0]:.4f}:gg={gains[1]:.4f}:bb={gains[2]:.4f}"
     # Skin rule (Eli): sun-kissed / tanned, never pale. Measure the graded skin and add warmth + depth per shot
     # until it reaches the same tan target, so bright, washed-out clips land on the same skin as the rest.
+    if os.environ.get('GRADE_ADAPT', '1') == '0':   # fixed tan only (the look Eli preferred on W422 C2)
+        return f"{pre},{mix},eq=saturation={L['sat']},selectivecolor={L['sel']},unsharp=5:5:0.35"
     best = None
     for k in (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6):
         sel = _boost(L['sel'], min(k, 2))
