@@ -42,7 +42,7 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
 ## 3. Copy, offer and claims
 
 - **The angle is decided batch by batch.** Black Friday is one angle, not the default. Ask Eli for each new batch (Black Friday, Evergreen with no offer, or another angle). The Black Friday offer, scene pairs and closing lines below apply only to Black Friday batches. For other angles, keep the same two-line system and true claims, and drop the offer lines.
-- Offer (Black Friday batches only): **Black Friday, 30% off sitewide, no code needed (taken off at checkout).** Say it in different ways.
+- Offer (Black Friday batches only): **Black Friday, 30% off sitewide, no code needed.** The website prices are already discounted: never say "taken off at checkout" (Eli, M464). Say it in different ways.
 - **No prices or currency symbols** (the same ads run in the EUR and USD accounts).
 - **Only true claims:** waterproof · sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L ·
   black, silver or gold · jewelry case included with sets ("case included", never "free case") ·
@@ -56,7 +56,7 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
   - ADJUSTABLE / SIZES S, M, L
   - BLACK, SILVER OR GOLD / ADJUSTABLE S, M, L
   - JEWELRY CASE INCLUDED / WITH EVERY SET
-  - NO CODE NEEDED / TAKEN OFF AT CHECKOUT
+  - NO CODE NEEDED / PRICES ALREADY REDUCED
   - closing: CAVAIER + 30% OFF SITEWIDE / NO CODE NEEDED (or / BLACK FRIDAY)
 - Don't name a specific product unless you're sure which one is in the footage.
 
@@ -109,6 +109,9 @@ Run with `PW=$(npm root -g)/playwright node <script> ...`.
   Black "Editorial" (charcoal dress, hair, attitude, slightly moodier grade).
 - Men's and women's footage are never mixed in one ad.
 - **No full faces (Eli, W423):** pick scenes where the model's face is not fully visible (cropped at the lips/chin, turned away, hidden by a hand or hair).
+- **No set tricks (Eli, M464):** never use a scene where the white foam piece used on set to fit the bracelet is visible (it sits at the clasp). Check the clasp area frame by frame.
+- **Strong colour in every scene (Eli, M464):** drop a scene whose colours look flat or washed out next to the rest of the ad.
+- **Men: slim and minimal (Eli, M464):** frame wrists and hands so they read slim and elegant; no wide, heavy forearm shots that look chunky.
 - **No black t-shirt scenes (Eli, W423):** skip the Session 10 shots with the black t-shirt; use sky, sand, rock and sea shots instead.
 - **The jewelry must look good in every scene (Eli, W423):** gold has to catch the light and shine. Skip shots where it reads dark, brown or dull (shade, backlight on gold); check every graded frame before choosing.
 
