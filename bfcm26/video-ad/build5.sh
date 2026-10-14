@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Build one ad from a shot list: per-shot matched grade (grade.py), 2x motion-compensated slow motion
-# for 25 fps footage, lockup overlay with fade + rise, music bed.
+# for 25 fps footage, lockup overlay with fade + rise, music bed. No black fade-out at the end (Eli): the video just stops on the closing scene.
 # Usage: build5.sh <shots file> <lockup dir> <music mp3> <output mp4>
 # shots file lines: <look> <raw subdir> <clip> <in> <source dur> <lockup name>
 set -euo pipefail
@@ -32,7 +32,7 @@ while read -r look dir clip in sdur card <&3; do
   i=$((i+1))
 done 3< "$SHOTS"
 ffmpeg -nostdin -v error -y -f concat -safe 0 -i $W/list.txt -i "$MUSIC" \
-  -filter_complex "[0:v]fade=in:st=0:d=0.5,fade=out:st=$(python3 -c "print($TOTAL-0.7)"):d=0.7[v];[1:a]atrim=0:$TOTAL,afade=t=in:d=0.4,afade=t=out:st=$(python3 -c "print($TOTAL-1.6)"):d=1.6,loudnorm=I=-16:TP=-1.5:LRA=11[a]" \
+  -filter_complex "[0:v]fade=in:st=0:d=0.5[v];[1:a]atrim=0:$TOTAL,afade=t=in:d=0.4,afade=t=out:st=$(python3 -c "print($TOTAL-1.6)"):d=1.6,loudnorm=I=-16:TP=-1.5:LRA=11[a]" \
   -map "[v]" -map "[a]" -c:v libx264 -preset slow -crf 17 -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart -shortest "$OUT"
 rm -rf $W
 ffprobe -v error -show_entries format=duration,size -of default=nw=1 "$OUT"

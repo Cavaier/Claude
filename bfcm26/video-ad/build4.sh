@@ -30,6 +30,6 @@ done
 OUT=$O/cavaier-black-friday-30off-slowmo-9x16.mp4
 T=$(python3 -c "print(round(sum(float(l.split()[2]) for l in '''$(printf '%s\n' "${SHOTS[@]}")'''.splitlines())*$SLOW,2))")
 ffmpeg -v error -y -f concat -safe 0 -i $O/list.txt -i $S/assets/music3.mp3 \
-  -filter_complex "[0:v]fade=in:st=0:d=0.5,fade=out:st=$(python3 -c "print($T-0.7)"):d=0.7[v];[1:a]atrim=0:$T,afade=t=in:d=0.4,afade=t=out:st=$(python3 -c "print($T-1.6)"):d=1.6,loudnorm=I=-16:TP=-1.5:LRA=11[a]" \
+  -filter_complex "[0:v]fade=in:st=0:d=0.5[v];[1:a]atrim=0:$T,afade=t=in:d=0.4,afade=t=out:st=$(python3 -c "print($T-1.6)"):d=1.6,loudnorm=I=-16:TP=-1.5:LRA=11[a]" \
   -map "[v]" -map "[a]" -c:v libx264 -preset slow -crf 17 -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart -shortest "$OUT"
 ffprobe -v error -show_entries format=duration,size -of default=nw=1 "$OUT"

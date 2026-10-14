@@ -145,7 +145,7 @@ Use `grade.py`, never one blanket filter for all clips:
 3. **Preview text placement on graded frames before rendering** (overlay each lockup PNG on a graded frame at about 75% of
    the shot). Move any lockup that touches the jewellery.
 4. `build5.sh <shots> <lockup dir> <music.mp3> <out.mp4>`: per-shot grade, slow motion, cached graded shots (text
-   changes don't redo the interpolation), lockup overlay with fade + rise, 0.5 s fade in, 0.7 s fade out, music trimmed
+   changes don't redo the interpolation), lockup overlay with fade + rise, 0.5 s fade in, **no fade out: the video just stops on the closing scene, never a black fade (Eli)**, music trimmed
    with fades, loudness -16 LUFS. `build4.sh` is the 120 fps version.
 5. Music: ElevenLabs `POST /v1/music` (`ELEVENLABS_API_KEY`), instrumental, 17 s, a different mood per ad (felt piano
    and strings; warm harp and piano; deep minimal pulse). It returns 429 "system_busy" at times: wait 30 s and retry.
