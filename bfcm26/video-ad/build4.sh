@@ -11,7 +11,7 @@ GRADE=$(cat $S/grade7/grade.txt)
 SHOTS=(
   "C0709 10.8 0.80 $S/cards4l/s1.png"
   "C0715 0.40 0.75 $S/cards4l/s2.png"
-  "C0769 3.90 0.75 $S/cards4d/s3.png"
+  "C0766 1.50 0.75 $S/cards4l/s3.png"
   "C0758 13.5 0.75 $S/cards4l/s4.png"
   "C0718 0.50 1.00 $S/cards4l/s5.png"
 )
