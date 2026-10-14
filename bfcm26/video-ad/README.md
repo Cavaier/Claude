@@ -45,3 +45,12 @@ fades in with a 16 px ease-out rise. White on skin and fabric, charcoal over the
 (the CAVAIER wordmark from cavaier.com, recoloured white). Run `node cards4.js bfcm26/video-ad/assets <out dir> <spec.json>`
 with `PW` pointing at the global Playwright install. The `build*.sh` scripts point at a session scratchpad; set `S` and
 the raw/out folders before reusing them.
+
+## Black Friday set of three (Women Session 11, gold + black)
+
+Footage: `Women/Session 11 | Women/Video/Gold` and `.../Black` (25 fps, flat camera footage).
+Built with `build5.sh` (2x motion-compensated slow motion, per-shot matched grade from `grade.py`, cached graded shots
+in the scratchpad so text changes don't redo the interpolation). Shot lists and lockups: `specs/bf3/`.
+- Gold "Quiet light": C2440, C2493, C2486, C2517, C2491 (look `gold`), warm harp/piano bed.
+- Black "Touch": C2287, C2384, C2370, C2386, C2382 (look `black`), luxury piano/strings bed.
+- Black "Editorial": C2328, C2338, C2413, C2396, C2398 (look `edit`), deep minimal pulse bed.
