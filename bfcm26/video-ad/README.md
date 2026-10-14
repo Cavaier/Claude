@@ -39,3 +39,9 @@ Shots: C0709, C0715, C0769 (sea foam), C0758, C0718. Grade in `specs/v5-grade.tx
 Lockups (`cards4.js`, specs in `specs/`): Bodoni wordmark at logo size, thin large "30% OFF"
 (Figtree 300) under a small tracked "BLACK FRIDAY" label, hairline rule on the end card; each
 fades in with a 16 px ease-out rise. White on skin and fabric, charcoal over the white foam.
+
+## Assets
+`assets/` holds what `cards4.js` needs: Figtree 300 and 400 (OFL, from Google Fonts) and `logo_white.png`
+(the CAVAIER wordmark from cavaier.com, recoloured white). Run `node cards4.js bfcm26/video-ad/assets <out dir> <spec.json>`
+with `PW` pointing at the global Playwright install. The `build*.sh` scripts point at a session scratchpad; set `S` and
+the raw/out folders before reusing them.
