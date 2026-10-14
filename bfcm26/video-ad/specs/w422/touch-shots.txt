@@ -1,0 +1,5 @@
+black w11 C2288 2.0 1.5 t1
+black w11 C2292 3.0 1.5 t2
+black w11 C2383 2.4 1.5 t3
+black w11 C2375 3.4 1.5 t4
+black w11 C2385 3.0 1.7 t5

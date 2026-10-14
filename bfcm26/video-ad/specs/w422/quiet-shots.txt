@@ -1,0 +1,5 @@
+black w11 C2416 1.0 1.5 q1
+black w11 C2387 3.3 1.5 q2
+black w11 C2401 2.0 1.5 q3
+black w11 C2409 4.8 1.5 q4
+black w11 C2424 1.5 1.7 q5

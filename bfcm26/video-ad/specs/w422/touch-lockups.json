@@ -1,0 +1,28 @@
+{
+ "t1": {
+  "top": 1400,
+  "head": "Black Friday",
+  "sub": "30% off sitewide"
+ },
+ "t2": {
+  "top": 1420,
+  "head": "Stainless steel",
+  "sub": "Recycled 316L"
+ },
+ "t3": {
+  "top": 1460,
+  "head": "Waterproof",
+  "sub": "Sweat and heat resistant"
+ },
+ "t4": {
+  "top": 330,
+  "head": "Adjustable",
+  "sub": "Sizes S, M, L"
+ },
+ "t5": {
+  "top": 300,
+  "logo": true,
+  "head": "30% off sitewide",
+  "sub": "No code needed"
+ }
+}

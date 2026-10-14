@@ -88,7 +88,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Adjustable S/M/L.
   - Black, silver or gold.
   - "Case included" (never "free case").
-  - Free shipping.
+  - Free shipping (both stores, confirmed by Eli).
   - Trustpilot 4.5, 3,000+ reviews.
   - No prices or currencies.
 - **Offers:** Black Friday is 30% off sitewide, no code, taken off at checkout. Evergreen has no offer and no deadline.

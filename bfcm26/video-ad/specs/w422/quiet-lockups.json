@@ -1,0 +1,28 @@
+{
+ "q1": {
+  "top": 1420,
+  "head": "30% off sitewide",
+  "sub": "Every piece, every set"
+ },
+ "q2": {
+  "top": 1460,
+  "head": "No code needed",
+  "sub": "Taken off at checkout"
+ },
+ "q3": {
+  "top": 1340,
+  "head": "Black, silver or gold",
+  "sub": "Adjustable S, M, L"
+ },
+ "q4": {
+  "top": 1400,
+  "head": "Rated 4.5 on Trustpilot",
+  "sub": "3,000+ reviews"
+ },
+ "q5": {
+  "top": 320,
+  "logo": true,
+  "head": "Black Friday",
+  "sub": "30% off sitewide"
+ }
+}

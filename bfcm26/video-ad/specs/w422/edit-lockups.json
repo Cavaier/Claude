@@ -1,0 +1,28 @@
+{
+ "e1": {
+  "top": 1420,
+  "head": "Black Friday",
+  "sub": "Limited time"
+ },
+ "e2": {
+  "top": 1400,
+  "head": "Made to stay on",
+  "sub": "Waterproof, day and night"
+ },
+ "e3": {
+  "top": 820,
+  "head": "In black",
+  "sub": "Also silver or gold"
+ },
+ "e4": {
+  "top": 980,
+  "head": "Jewelry case included",
+  "sub": "With every set"
+ },
+ "e5": {
+  "top": 1360,
+  "logo": true,
+  "head": "30% off sitewide",
+  "sub": "Black Friday"
+ }
+}

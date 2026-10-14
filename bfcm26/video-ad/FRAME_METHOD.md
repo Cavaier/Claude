@@ -46,7 +46,7 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
 - **No prices or currency symbols** (the same ads run in the EUR and USD accounts).
 - **Only true claims:** waterproof · sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L ·
   black, silver or gold · jewelry case included with sets ("case included", never "free case") ·
-  Trustpilot 4.5, 3,000+ reviews · free shipping only if checked for both stores. Nothing invented.
+  Trustpilot 4.5, 3,000+ reviews · free shipping (confirmed by Eli for both stores). Nothing invented.
 - Proven scene pairs (headline / sub-line):
   - BLACK FRIDAY / LIMITED TIME
   - BLACK FRIDAY / 30% OFF SITEWIDE
