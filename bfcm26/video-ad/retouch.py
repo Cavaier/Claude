@@ -19,15 +19,18 @@ def save_mask(name, m):
     if dbg: cv2.imwrite(f'{dbg}_{name}.png', (np.clip(cv2.resize(m, (540, 960)), 0, 1) * 255).astype(np.uint8))
 
 im = rd(src)
+import os
+SKIN = os.environ.get('RETOUCH_SKIN', '1') == '1'      # 0 = keep skin 100% natural (macro look)
+NR = os.environ.get('RETOUCH_NR', '1') == '1'
 H, W = im.shape[:2]
 
 # ---------- LIGHTROOM: develop ----------
 # 1. Noise reduction: kill video chroma noise / blocking, keep luminance detail.
 lab = cv2.cvtColor(im, cv2.COLOR_RGB2Lab)           # L 0..100, a/b ~ -127..127
 for c in (1, 2):
-    lab[..., c] = cv2.bilateralFilter(lab[..., c], 9, 4, 6)
+    if NR: lab[..., c] = cv2.bilateralFilter(lab[..., c], 9, 4, 6)
 L = lab[..., 0]
-L = 0.7 * L + 0.3 * cv2.bilateralFilter(L, 5, 2.0, 3)  # light luminance NR
+if NR: L = 0.7 * L + 0.3 * cv2.bilateralFilter(L, 5, 2.0, 3)  # light luminance NR
 # 2. Highlights -12, shadows +10 (on a soft base so edges keep their contrast)
 base = blur(L, 25)
 hl = np.clip((base - 70) / 30, 0, 1); sh = np.clip((40 - base) / 40, 0, 1)
@@ -78,7 +81,7 @@ if keep.any():
         fill = cv2.inpaint(u8, keep, 9, cv2.INPAINT_TELEA).astype(np.float32) / 255 * (hi_ - lo_) + lo_
         arr[...] = arr + km * (fill - arr)
 save_mask('skin', skin); save_mask('spots', keep.astype(np.float32))
-lab[..., 0] = low2 + high; lab[..., 1] = a; lab[..., 2] = b
+if SKIN: lab[..., 0] = low2 + high; lab[..., 1] = a; lab[..., 2] = b
 
 # ---------- PHOTOSHOP: jewelry precision pass ----------
 Lj = lab[..., 0]; cj = np.hypot(lab[..., 1], lab[..., 2])
