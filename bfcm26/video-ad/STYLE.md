@@ -1,18 +1,18 @@
 # Cavaier video ad style rules
 
-Set by Eli. Apply to every video ad unless he says otherwise. `cards4.js` already uses these values.
+Set by Eli. Apply to every video ad unless he says otherwise. `cards4.js` already uses these values
+(`LOGO_H`, `HEAD`, `SUB`).
 
 ## Text and logo
-- **Logo:** the CAVAIER Bodoni wordmark (`logo_white.png`), always **17px tall** on the 1080×1920 canvas.
+- **Logo:** the CAVAIER Bodoni wordmark (`logo_white.png`), used **once only, on the closing scene**.
+  Size: **47px tall** on the 1080×1920 canvas (= 17pt as seen on a phone screen). Not on the other scenes.
 - **White text only.** No dark/charcoal text. If a background is too bright for white, pick a different shot or
   move the text onto skin, fabric or a darker area. Don't switch the text colour.
-- **Font:** Figtree. Text is small and minimal: these are the reduced sizes (30% below the first lockup draft):
-  - small label (e.g. "BLACK FRIDAY"): 20px, weight 400, uppercase, letter-spacing 0.34em
-  - offer numerals (e.g. "30% OFF"): 92px, weight 300, uppercase, letter-spacing 0.02em
-  - supporting line (e.g. "SITEWIDE", "WATERPROOF"): 32px, weight 300, uppercase, letter-spacing 0.16em
-  - sub-line under a supporting line / end card: 15px, uppercase, tracked
-  - end card: wordmark, 40px hairline rule, label, line, sub-line
-- Lockups fade in (0.9s) with a 16px ease-out rise. Never put text on the jewellery.
+- **One consistent type system in every scene** (Figtree), never a one-off size:
+  - headline: 38px, weight 300, uppercase, letter-spacing 0.18em (e.g. "BLACK FRIDAY", "30% OFF SITEWIDE", "WATERPROOF")
+  - sub-line (optional, under the headline): 17px, weight 400, uppercase, letter-spacing 0.32em
+  - closing scene: wordmark, then the same headline + sub-line sizes
+- One headline per scene. Lockups fade in (0.9s) with a 16px ease-out rise. Never put text on the jewellery.
 - Key text stays between y=270 and y=1536 (Meta safe zone).
 
 ## Look

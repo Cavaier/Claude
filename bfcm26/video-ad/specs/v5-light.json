@@ -1,1 +1,5 @@
-{"s1": {"kind": "logo", "top": 1440}, "s2": {"kind": "offer", "top": 350}, "s4": {"kind": "line", "top": 440, "text": "Sitewide", "sub": "No code needed"}, "s5": {"kind": "end", "top": 1300, "sub": "No code needed"}, "s3": {"kind": "line", "top": 440, "text": "Waterproof", "sub": "Sweat and heat resistant"}}
+{"s1":{"top":1400,"head":"Black Friday"},
+ "s2":{"top":360,"head":"30% off sitewide"},
+ "s3":{"top":440,"head":"Waterproof","sub":"Sweat and heat resistant"},
+ "s4":{"top":440,"head":"No code needed","sub":"Taken off at checkout"},
+ "s5":{"top":1290,"logo":true,"head":"30% off sitewide","sub":"Black Friday"}}
