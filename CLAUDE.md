@@ -49,7 +49,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   3. Export it as a 16-bit PNG and apply the same grade as the video (tan rule).
   4. Upscale with an AI upscaler only if the crop is smaller than its slot.
   5. Finish like a macro photo (Eli, W421):
-     - Crop tight on the jewelry at 1:1 (never upscale).
+     - Cropping is free, with no fixed rule (Eli): mix wide shots with context (hands, face, setting) and tight macro crops, so a batch has variety. Never upscale past the 4K source.
      - Skin stays 100% natural: no smoothing or noise removal, pores and hairs kept (`RETOUCH_SKIN=0 RETOUCH_NR=0 retouch.py`, jewelry precision pass on).
      - Natural warm skin colour, not the yellow tan (`finish.py`, Lab a≈10 / b≈17).
      - Light falloff toward the jewelry.
