@@ -133,7 +133,11 @@ Before making any new batch, always ask Eli which method to use, with one short 
 
 ## Delivery ("push to clickup and frame")
 - **Frame.io:**
-  - Exchange `FRAMEIO_TOKEN` (an Adobe refresh token) at `https://ims-na1.adobelogin.com/ims/token/v3`, with `FRAMEIO_OAUTH_CLIENT_ID` and `FRAMEIO_OAUTH_CLIENT_SECRET`.
+  - **Login:** the token broker on Eli's Cloudflare (`https://frameio-broker.eli-054.workers.dev`, code in `bfcm26/tools/frameio-broker/`) holds the Adobe login and renews it daily, so no codes are needed.
+    - Helpers get an access token with `client.token()`. It authenticates via an HMAC of `FRAMEIO_OAUTH_CLIENT_SECRET`, so run it in a fresh helper session that has the Brilanc keys.
+    - `client.status()` shows the health.
+    - If it ever says it's not connected, Eli opens `/login` once.
+    - Never print tokens.
   - Then use the V4 API `https://api.frame.io/v4` with a custom User-Agent (the default Python UA gets 403). Project `9db7c232-de65-4e59-99e7-4fd3c3155ac7`.
   - The batch folder link is the Creatives field on the ClickUp batch task. Inside it, the version with text goes to the existing `EN` folder and the clean version to `No Text`. Never create folders.
 - **ClickUp (Cavaier → Ads → Ads, under the week task, e.g. "Week 40"):**
