@@ -48,10 +48,13 @@ Before making any new batch, always ask Eli which method to use, with one short 
   2. Score every frame in a window of about ±0.5 s for sharpness and take the sharpest one, with no motion blur on the links.
   3. Export it as a 16-bit PNG and apply the same grade as the video (tan rule).
   4. Upscale with an AI upscaler only if the crop is smaller than its slot.
-  5. Pro retouch, always (`bfcm26/video-ad/retouch.py`, jewelry box per image):
-     - Lightroom develop: chroma noise reduction, highlights/shadows, texture and clarity, a gentle S-curve, a subtle vignette and fine grain.
-     - Photoshop skin: hue unify, frequency separation (pores kept), dodge & burn of blotches, blemish and mole inpaint.
-     - Jewelry precision pass: neutral black metal, polished cuff cleaned (scratches, dust and fingerprints inpainted), every chain link sharpened without halos, deeper blacks and real speculars, a thin contact shadow.
+  5. Finish like a macro photo (Eli, W421):
+     - Crop tight on the jewelry at 1:1 (never upscale).
+     - Skin stays 100% natural: no smoothing or noise removal, pores and hairs kept (`RETOUCH_SKIN=0 RETOUCH_NR=0 retouch.py`, jewelry precision pass on).
+     - Natural warm skin colour, not the yellow tan (`finish.py`, Lab a≈10 / b≈17).
+     - Light falloff toward the jewelry.
+     - Keep key text clear of the jewelry.
+     - Real pro photos still beat video stills; tell Eli when a batch needs them.
   6. Check it at 100%: links crisp with no halos, skin texture real (not plastic), no invented detail. Tune the pass if anything is overdone.
 - For the delivery upload, use the Frame.io API flow under **Delivery**. The RAW footage is read through the public share in a headless browser (FRAME_METHOD.md §4).
 
