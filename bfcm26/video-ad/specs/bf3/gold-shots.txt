@@ -1,0 +1,5 @@
+gold w11g C2440 2.8 1.6 g1
+gold w11g C2493 1.6 1.5 g2
+gold w11g C2486 3.0 1.6 g3
+gold w11g C2517 1.2 1.5 g4
+gold w11g C2491 2.4 1.7 g5

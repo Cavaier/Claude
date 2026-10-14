@@ -16,6 +16,7 @@ const logo = `data:image/png;base64,${b64('logo_white.png')}`;
 const glow = 'drop-shadow(0 2px 14px rgba(0,0,0,.28))';
 const css = `${font(300)}${font(400)}
 html,body{margin:0;width:1080px;height:1920px;background:transparent;font-family:F;color:${ink}}
+.veil{position:absolute;left:0;right:0;height:520px;background:radial-gradient(ellipse 62% 56% at 50% 50%,rgba(0,0,0,.15),rgba(0,0,0,.06) 45%,rgba(0,0,0,0) 78%)}
 .lock{position:absolute;left:0;right:0;display:flex;flex-direction:column;align-items:center;text-align:center;filter:${glow}}
 .logo{display:block;height:${LOGO_H}px;margin-bottom:26px}
 .head{font-weight:300;font-size:${HEAD}px;line-height:1.15;letter-spacing:.18em;padding-left:.18em;text-transform:uppercase}
@@ -27,7 +28,7 @@ const html = s => `${s.logo ? `<img class="logo" src="${logo}">` : ''}<div class
   const b = await chromium.launch({ args: ['--no-sandbox'] });
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   for (const [k, s] of Object.entries(spec)) {
-    await p.setContent(`<style>${css}</style><div class="lock" style="top:${s.top}px">${html(s)}</div>`, { waitUntil: 'load' });
+    await p.setContent(`<style>${css}</style>${s.veil === false ? '' : `<div class="veil" style="top:${s.top - 230 + (s.logo ? 30 : 0)}px"></div>`}<div class="lock" style="top:${s.top}px">${html(s)}</div>`, { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
     await p.waitForTimeout(200);
     await p.screenshot({ path: `${OUT}/${k}.png`, omitBackground: true });
