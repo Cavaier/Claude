@@ -365,6 +365,30 @@
       "x": 16540,
       "y": 0
     },
+    "V-W422-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 422 - C1 · Touch · FINAL 1080p · MUSIC",
+      "w": 1080,
+      "x": 14220,
+      "y": 9600
+    },
+    "V-W422-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 422 - C2 · Editorial · FINAL 1080p · MUSIC",
+      "w": 1080,
+      "x": 15380,
+      "y": 9600
+    },
+    "V-W422-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 422 - C3 · Close · FINAL 1080p · MUSIC",
+      "w": 1080,
+      "x": 16540,
+      "y": 9600
+    },
     "V-WNA-C1.dc.html": {
       "h": 1920,
       "is_interactive": true,
@@ -437,6 +461,30 @@
       "x": 12220,
       "y": 0
     },
+    "W421-C1.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 421 - C1 · Touch · The black stack. 30% off. (stills from W422 footage)",
+      "w": 1080,
+      "x": 9900,
+      "y": 9600
+    },
+    "W421-C2.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 421 - C2 · Editorial · Made to stay on. (stills from W422 footage)",
+      "w": 1080,
+      "x": 11060,
+      "y": 9600
+    },
+    "W421-C3.dc.html": {
+      "h": 1920,
+      "is_interactive": true,
+      "title": "W Batch 421 - C3 · Close · No code needed. Just 30% off. (stills from W422 footage)",
+      "w": 1080,
+      "x": 12220,
+      "y": 9600
+    },
     "WNA-C1.dc.html": {
       "h": 1920,
       "is_interactive": true,
@@ -484,54 +532,6 @@
       "w": 1080,
       "x": 12220,
       "y": 4800
-    },
-    "V-W422-C1.dc.html": {
-      "h": 1920,
-      "is_interactive": true,
-      "title": "W Batch 422 - C1 · Touch · FINAL 1080p · MUSIC",
-      "w": 1080,
-      "x": 14220,
-      "y": 9600
-    },
-    "V-W422-C2.dc.html": {
-      "h": 1920,
-      "is_interactive": true,
-      "title": "W Batch 422 - C2 · Editorial · FINAL 1080p · MUSIC",
-      "w": 1080,
-      "x": 15380,
-      "y": 9600
-    },
-    "V-W422-C3.dc.html": {
-      "h": 1920,
-      "is_interactive": true,
-      "title": "W Batch 422 - C3 · Close · FINAL 1080p · MUSIC",
-      "w": 1080,
-      "x": 16540,
-      "y": 9600
-    },
-    "W421-C1.dc.html": {
-      "h": 1920,
-      "is_interactive": true,
-      "title": "W Batch 421 - C1 · Touch · The black stack. 30% off. (stills from W422 footage)",
-      "w": 1080,
-      "x": 9900,
-      "y": 9600
-    },
-    "W421-C2.dc.html": {
-      "h": 1920,
-      "is_interactive": true,
-      "title": "W Batch 421 - C2 · Editorial · Made to stay on. (stills from W422 footage)",
-      "w": 1080,
-      "x": 11060,
-      "y": 9600
-    },
-    "W421-C3.dc.html": {
-      "h": 1920,
-      "is_interactive": true,
-      "title": "W Batch 421 - C3 · Close · No code needed. Just 30% off. (stills from W422 footage)",
-      "w": 1080,
-      "x": 12220,
-      "y": 9600
     }
   },
   "createdOnFiles": {
@@ -545,14 +545,14 @@
   "notes": {
     "activity": {
       "fill": "blue",
-      "text": "ACTIVITY & QUEUE · updated 20:40\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n15. 09:11 M472 C1–C3 · \"replace these videos with the same ones from M Batch 445\" → DONE\n16. 09:14 M472 videos · \"push to frame and clickup\" → DONE\n17. 09:28 men BF rows · \"move the first 2 batches to the bottom, shift up, renumber\" → DONE\n18. 11:24 M473 C1+C3 · \"make the remaining videos c1 and c3\" → DONE\n19. 11:37 M475 C1 + M473 C1 · \"text too chunky / bulky\" → DONE\n20. 11:42 M475 videos · \"1080p, swap batch numbers (videos 474, statics 475)\" → DONE\n21. 12:03 M474 C2 · \"redo, the minimal cuff got a defect\" → DONE\n22. 12:14 M473 statics · \"push to clickup and frame\" → DONE\n23. 13:20 M474 C2 · \"the video has no movement\" → DONE\n24. 13:26 M475 statics · \"push clickup and frame\" → DONE\n25. 13:38 M474 C2 · \"movement too much, hallucinating\" → DONE 13:59\n26. 14:01 M474 videos C1–C3 · \"push to clickup and frame\" → DONE 14:07\n27. 14:36 M475 C1–C2 · \"make to draft video\" → DONE 17:49\n28. 17:59 M476 C3 · \"redo, it should be like the static C1\" → DONE 18:01\n29. 18:03 M476 C3 · \"wrong design, should be like M Batch 475 - C3 as video\" → DONE 18:03\n30. 18:07 M476 C1–C3 · \"all 3 1080p then clickup + frame\" → DONE 18:43\n31. 18:43 M476 · \"clickup frame url ready\" → DONE 18:43\n32. 18:59 \"create me 1 batch W Batch 415 BFCM\" → DONE 18:59\n33. 19:09 W415 · \"re run them they were boring\" → DONE 19:09\n34. 19:15 W415 · \"push to clickup + frame + create video drafts\" → DONE 19:18\n35. 19:21 W416 C2 · \"nothing happens on this video\" → DONE 19:21\n36. 19:23 W416 C1–C3 · \"1080p\" → DONE 19:26\n37. 19:30 W416 C1–C3 · \"push clickup + frame\" → DONE 19:30\n38. 19:37 \"run 3 batches Women BFCM, no batch number yet\" → DONE 19:37\n39. 19:40 new A C3 · \"change image pick\" → DONE 19:40\n40. 19:44 new A · \"make to video draft, C2 typing the note + ticking the checklist\" → DONE 19:46\n41. 19:48 video of new A C1 · \"redo, twisting the wrist too far\" → DONE 19:52\n42. 19:52 chat · \"keep the CTA buttons like the male ones\" → DONE 19:52 (rule added)\n43. 19:53 video of new A C1 · \"still gets confused as an image\" → DONE 19:56\n44. 19:57 video of new A C3 · \"1080p\" → DONE 19:58\n45. 20:03 video of new A C1 · \"now twisting too much\" → DONE 20:03\n46. 20:03 video of new A C2 · \"consider this as final, it is 1080p already\" → DONE 20:03\n47. 20:04 video of new A C1 · \"make to 1080p\" → DONE 20:08\n48. 20:05 new A + B · \"give the batch numbers now\" → DONE 20:05\n49. 20:08 W Batch 417 + 418 + 419 · \"push to clickup + frame\" → DONE 20:19\n50. 20:15 W Batch 419 · \"make draft videos\" → DONE 20:24\n51. 20:21 W Batch 420 C2 · \"gold video is not moving, fix it\" → DONE 20:29\n52. 20:30 W Batch 420 C2 gold · \"its twisting too much\" → DONE 20:33\n53. 20:29 W Batch 420 C2 gold · \"not moving now, almost like an image\" → DONE 20:32\n54. 20:31 W Batch 418 C2 · chat: \"run a voice-over ad trial\" → DONE 20:34\n55. 20:33 W Batch 420 C1–C3 · \"1080p\" → DONE 20:36\n56. 20:37 W Batch 420 C1–C3 · \"push to clickup + frame\" → DONE 20:40\n57. Oct 14 W Batch 422 · chat: \"1 batch of women Black Friday ads from Frame RAW Session 11 Black\" (Frame Method) → DONE Oct 14\n58. Oct 14 W Batch 421 · chat: \"image versions of the same batch from the video stills\" → DONE Oct 14\n\nRUNNING\n\nDONE\n✓ Oct 14 W Batch 421 (image set of W422): 3 statics from graded video stills, Touch / Editorial / Close, ROAS check passed\n✓ Oct 14 W Batch 422: C2 back to the preferred grade (bigger text kept) · C3 full new run \"Close\" (new shots, new music)\n✓ Oct 14 W Batch 422 C2 + C3 new version: every scene sun-kissed (per-shot tan), text slightly bigger on C1–C3 (42/19 px, logo unchanged)\n✓ Oct 14 W Batch 422 regraded: sun-kissed / tanned skin (new Frame Method rule) and no black fade-out at the end\n✓ Oct 14 W Batch 422 (Frame Method, Session 11 Black): C1 Touch, C2 Editorial, C3 Quiet light · 15.4 s each, slow motion, graded, white text, ElevenLabs music\n✓ 20:40 W Batch 420 delivered: 6 videos on Frame.io (EN + No Text, all clean), ClickUp copy + fields + row comments, batch task → ads for review\n✓ 20:36 W Batch 420 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 20:34 Voice-over trial: W Batch 418 C2 in 3 ElevenLabs voices (Arabella, Veda Sky, Relaxing Rachel) in a new row below W Batch 420\n✓ 20:32 W Batch 420 C2: middle-ground gold take, hand glides slowly over the fabric, wrist never twists, light moves (between the twisting and the still take)\n✓ 20:33 W Batch 420 C2: calmer gold take, wrist holds still, only a band of warm light glides across the gold\n✓ 20:29 W Batch 420 C2: new gold take with steady visible motion (wrist and fabric move, light glides), recomposed next to silver\n✓ 20:24 W Batch 420 (video set from W Batch 419) → drafts 480p with sound on the canvas\n✓ 20:19 W Batch 417, 418, 419 delivered: 18 files on Frame.io (EN + No Text, all clean), ClickUp fields + comments on batch tasks and C1–C3 rows, batch tasks → ads for review\n✓ 20:05 Numbers given (matching ClickUp): new A → W Batch 417, its video set → W Batch 418, new B → W Batch 419 (video set will be W 420)\n✓ 20:03 Video of new A C1 redo 3: steadiest take, wrist holds still, s",
+      "text": "ACTIVITY & QUEUE · updated 20:40\n\nQUEUE (comments in the order they arrived)\n1. 23:24 M446 C1 · \"redo\" → DONE (in #3)\n2. 23:24 M446 C2+C3 · \"1080p\" → DONE (in #3)\n3. 23:27 all M446 · \"1080p with sound\" → DONE\n4. 23:44 M446 C1–C3 · \"push to clickup and frame\" → DONE\n5. 00:05 \"run 1 new batch\" (Evergreen, men) → DONE\n6. 07:47 M469 C2+C3 · \"make draft video\" → DONE\n7. 07:59 M472 C2+C3 · \"make 1080p\" → DONE\n8. 08:02 M469 statics · \"rename to M Batch 468 and push to clickup and frame\" → DONE\n9. 08:15 M472 videos · \"rename to 469, push to clickup and frame\" → DONE\n10. 08:27 M473 statics · \"this is 470, make it white / very light grey\" → DONE\n11. 08:30 M470 C3 · \"redo new one, this was bad\" → DONE\n12. 08:33 M470 C1–C3 · \"push to clickup and frame\" → DONE\n13. 08:45 M474 statics · \"rename to 471, push to frame and clickup\" → DONE\n14. 08:54 M471 C1–C3 · \"make to video\" → DONE\n15. 09:11 M472 C1–C3 · \"replace these videos with the same ones from M Batch 445\" → DONE\n16. 09:14 M472 videos · \"push to frame and clickup\" → DONE\n17. 09:28 men BF rows · \"move the first 2 batches to the bottom, shift up, renumber\" → DONE\n18. 11:24 M473 C1+C3 · \"make the remaining videos c1 and c3\" → DONE\n19. 11:37 M475 C1 + M473 C1 · \"text too chunky / bulky\" → DONE\n20. 11:42 M475 videos · \"1080p, swap batch numbers (videos 474, statics 475)\" → DONE\n21. 12:03 M474 C2 · \"redo, the minimal cuff got a defect\" → DONE\n22. 12:14 M473 statics · \"push to clickup and frame\" → DONE\n23. 13:20 M474 C2 · \"the video has no movement\" → DONE\n24. 13:26 M475 statics · \"push clickup and frame\" → DONE\n25. 13:38 M474 C2 · \"movement too much, hallucinating\" → DONE 13:59\n26. 14:01 M474 videos C1–C3 · \"push to clickup and frame\" → DONE 14:07\n27. 14:36 M475 C1–C2 · \"make to draft video\" → DONE 17:49\n28. 17:59 M476 C3 · \"redo, it should be like the static C1\" → DONE 18:01\n29. 18:03 M476 C3 · \"wrong design, should be like M Batch 475 - C3 as video\" → DONE 18:03\n30. 18:07 M476 C1–C3 · \"all 3 1080p then clickup + frame\" → DONE 18:43\n31. 18:43 M476 · \"clickup frame url ready\" → DONE 18:43\n32. 18:59 \"create me 1 batch W Batch 415 BFCM\" → DONE 18:59\n33. 19:09 W415 · \"re run them they were boring\" → DONE 19:09\n34. 19:15 W415 · \"push to clickup + frame + create video drafts\" → DONE 19:18\n35. 19:21 W416 C2 · \"nothing happens on this video\" → DONE 19:21\n36. 19:23 W416 C1–C3 · \"1080p\" → DONE 19:26\n37. 19:30 W416 C1–C3 · \"push clickup + frame\" → DONE 19:30\n38. 19:37 \"run 3 batches Women BFCM, no batch number yet\" → DONE 19:37\n39. 19:40 new A C3 · \"change image pick\" → DONE 19:40\n40. 19:44 new A · \"make to video draft, C2 typing the note + ticking the checklist\" → DONE 19:46\n41. 19:48 video of new A C1 · \"redo, twisting the wrist too far\" → DONE 19:52\n42. 19:52 chat · \"keep the CTA buttons like the male ones\" → DONE 19:52 (rule added)\n43. 19:53 video of new A C1 · \"still gets confused as an image\" → DONE 19:56\n44. 19:57 video of new A C3 · \"1080p\" → DONE 19:58\n45. 20:03 video of new A C1 · \"now twisting too much\" → DONE 20:03\n46. 20:03 video of new A C2 · \"consider this as final, it is 1080p already\" → DONE 20:03\n47. 20:04 video of new A C1 · \"make to 1080p\" → DONE 20:08\n48. 20:05 new A + B · \"give the batch numbers now\" → DONE 20:05\n49. 20:08 W Batch 417 + 418 + 419 · \"push to clickup + frame\" → DONE 20:19\n50. 20:15 W Batch 419 · \"make draft videos\" → DONE 20:24\n51. 20:21 W Batch 420 C2 · \"gold video is not moving, fix it\" → DONE 20:29\n52. 20:30 W Batch 420 C2 gold · \"its twisting too much\" → DONE 20:33\n53. 20:29 W Batch 420 C2 gold · \"not moving now, almost like an image\" → DONE 20:32\n54. 20:31 W Batch 418 C2 · chat: \"run a voice-over ad trial\" → DONE 20:34\n55. 20:33 W Batch 420 C1–C3 · \"1080p\" → DONE 20:36\n56. 20:37 W Batch 420 C1–C3 · \"push to clickup + frame\" → DONE 20:40\n57. Oct 14 W Batch 422 · chat: \"1 batch of women Black Friday ads from Frame RAW Session 11 Black\" (Frame Method) → DONE Oct 14\n58. Oct 14 W Batch 421 · chat: \"image versions of the same batch from the video stills\" → DONE Oct 14\n59. Oct 14 W Batch 421 + 422 · chat: \"push them to clickup and frame\" → ClickUp DONE · Frame WAITING (token)\n\nRUNNING\n⏸ Oct 14 W Batch 421 + 422 → Frame.io WAITING: the Frame.io sign-in token expired (Adobe access_denied). Needs a new FRAMEIO_TOKEN; 12 files ready, nothing uploaded\n\nDONE\n✓ Oct 14 W Batch 421 (image set of W422): 3 statics from graded video stills, Touch / Editorial / Close, ROAS check passed\n✓ Oct 14 W Batch 422: C2 back to the preferred grade (bigger text kept) · C3 full new run \"Close\" (new shots, new music)\n✓ Oct 14 W Batch 422 C2 + C3 new version: every scene sun-kissed (per-shot tan), text slightly bigger on C1–C3 (42/19 px, logo unchanged)\n✓ Oct 14 W Batch 422 regraded: sun-kissed / tanned skin (new Frame Method rule) and no black fade-out at the end\n✓ Oct 14 W Batch 422 (Frame Method, Session 11 Black): C1 Touch, C2 Editorial, C3 Quiet light · 15.4 s each, slow motion, graded, white text, ElevenLabs music\n✓ 20:40 W Batch 420 delivered: 6 videos on Frame.io (EN + No Text, all clean), ClickUp copy + fields + row comments, batch task → ads for review\n✓ 20:36 W Batch 420 C1–C3 → FINAL 1080p with sound on the canvas\n✓ 20:34 Voice-over trial: W Batch 418 C2 in 3 ElevenLabs voices (Arabella, Veda Sky, Relaxing Rachel) in a new row belo",
       "w": 600,
       "x": 18680,
       "y": -1700
     },
     "brief": {
       "fill": "gray",
-      "text": "Brief\n\nMethod (asked before every new batch): Imitation = copy IM8 ads with real Cavaier photos (default) · Ideation = our own concepts with generated images in the Cavaier look · Frame Method = video ads cut from the RAW footage on Frame.io (macro, slow motion, white Figtree text, music). Every method still lands on this canvas with the same queue, tags, naming, ROAS check and ClickUp + Frame delivery.\nLayout: one batch per row, 3 creatives (C1, C2, C3), with the IM8 references in the narrow column on the left.\nNaming: Men: M Batch 467 - C1, C2, C3, then 468, 469… Women: W Batch 415 - C1, C2, C3, then 416…\nA batch is men only or women only, never mixed (and no ad shows both).\nThree IM8 references per batch, one per creative: C1, C2 and C3 each copy their own IM8 ad closely, stacked in the narrow column on the left.\nProduct: 3x Minimal Stack Set (men's black / silver / gold, women's gold); the 2x Duo Minimal Set joins from Run 2. Photos come from the live Shopify listings and the clean (no text) frames in Figma, Static Ads 2.\nOffer: Black Friday, 30% off sitewide, no code, taken off at checkout.\nNo prices or currencies on any ad: the same ads run in the EUR and USD accounts, so the offer is always told as 30% off.\nFacts used: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · \"case included\" with sets (never \"free case\") · free shipping · Trustpilot 4.5, 3,000+ reviews.\nSafe zones: no key text in the top 270 px or bottom 384 px.\nEach ad copies the layout idea of an IM8 ad, rebuilt in Cavaier's look: graphite monochrome (black, white, light grey), Figtree, square black or white buttons. Keep backgrounds light: no large black or dark fields dominating the ad; black is for type, buttons and small accents. Red #A82C24 only as a small accent, and only on light monochrome layouts; never on dark or full-colour photo ads.\nLanes: men on the left, women on the right, never mixed. Videos (Seedance 2.5): a batch is an ad set. Videos made from a static batch form their own video batch (new number, new ad set), in the video lane right beside that batch's row, filling C1, C2, C3, then a new video batch. The statics stay live.\nEvery ad passes a ROAS check before it ships: text contrast, safe zones, offer readable at feed size, one clear hook. The copy sticky next to each batch says what changed.\nCopy: headline and description at most 27 characters so they don't cut off in feed.\nImitation: copy the reference's structure literally. Text and checklists sit straight on the photo the way IM8 does it, never in a box that hides the product.\nCommands: comment on an ad and send it to Claude (redo, video, 720p / 1080p, reject, mp4, push to clickup and frame), see the red COMMANDS note. A comment is the go-ahead; no extra confirmation.\nMen vs women photos: a product name with a dash is the women's version (\"3x Minimal - Stack Set\"), without a dash it's the men's (\"3x Minimal Stack Set\", \"2x Duo Minimal Set\"). Men's ads use only photos from the men's listings and men's Figma frames.\nFormat: every static, video draft and approved video is delivered at 1080x1920 (9:16). Approved videos are rendered by Seedance 2.5 from the exact draft at the resolution written in the comment (\"720p\" or \"1080p\"); the delivered file is always 1080x1920.\nWork in progress: the moment a redo or video starts, a blue IN PROGRESS box goes into the exact slot it will land in, and is replaced when it's done.\nFrame.io (approved batches): the batch folder and its EN and \"no text\" subfolders always exist already. Only find them, never create folders. Text version → EN, clean version → no text. The batch folder link is in the batch's ClickUp task (Creatives field).\nActivity: the blue ACTIVITY & QUEUE note above Evergreen lists running and finished jobs (Seedance, Frame.io, ClickUp) with times; updated when a job starts and when it ends. Delivered batches also get FRAME ✓ / CLICKUP ✓ in their titles.\nSound: every video is generated WITH SOUND (Seedance generate_audio true), drafts and finals, and the delivered MP4 keeps the audio.\nQueue: every comment command goes into the QUEUE list on the ACTIVITY & QUEUE note right away (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins; Seedance work arriving within ~2 min is sent as one job; a job already running is never restarted for a later command unless that command changes the same ad.\nLanguage: everything on the canvas, in replies and in deliverables is in English.\nSeedance sound: generate_audio true goes on the DRAFT request; the final (draft_task) request must not carry it and inherits the draft's sound. Old silent drafts can't become finals with sound, so they need a new draft with sound.\nStatus tags: every creative carries a tag stack top left (not part of the exported ad): DRAFT / RENDERING / FINAL for videos, then CLICKUP ✓ DONE and FRAME ✓ UPLOADED (blue while running) once delivered.\nClickUp: on the batch task fill the copy fields (Preview Text, Subject Line, Description, EU URL, US URL). On each C1–C3 row set Creative Style, Angle, Creative Origin, Funnel Stage and Offer, and leave a short, clean comment saying what that creative tests (name the IM8 ad it imitates; no tool names like Seedance or Claude). Creative Origin is Imitation for IM8-based creatives, including their video versions. Don't put Frame links in the rows.\nSections: BLAC",
+      "text": "Brief\n\nMethod (asked before every new batch): Imitation = copy IM8 ads with real Cavaier photos (default) · Ideation = our own concepts with generated images in the Cavaier look · Frame Method = video ads cut from the RAW footage on Frame.io (macro, slow motion, white Figtree text, music). Every method still lands on this canvas with the same queue, tags, naming, ROAS check and ClickUp + Frame delivery.\nLayout: one batch per row, 3 creatives (C1, C2, C3), with the IM8 references in the narrow column on the left.\nNaming: Men: M Batch 467 - C1, C2, C3, then 468, 469… Women: W Batch 415 - C1, C2, C3, then 416…\nA batch is men only or women only, never mixed (and no ad shows both).\nThree IM8 references per batch, one per creative: C1, C2 and C3 each copy their own IM8 ad closely, stacked in the narrow column on the left.\nProduct: 3x Minimal Stack Set (men's black / silver / gold, women's gold); the 2x Duo Minimal Set joins from Run 2. Photos come from the live Shopify listings and the clean (no text) frames in Figma, Static Ads 2.\nOffer: Black Friday, 30% off sitewide, no code, taken off at checkout.\nNo prices or currencies on any ad: the same ads run in the EUR and USD accounts, so the offer is always told as 30% off.\nFacts used: waterproof, sweat and heat resistant · recycled 316L stainless steel · adjustable S/M/L · \"case included\" with sets (never \"free case\") · free shipping · Trustpilot 4.5, 3,000+ reviews.\nSafe zones: no key text in the top 270 px or bottom 384 px.\nEach ad copies the layout idea of an IM8 ad, rebuilt in Cavaier's look: graphite monochrome (black, white, light grey), Figtree, square black or white buttons. Keep backgrounds light: no large black or dark fields dominating the ad; black is for type, buttons and small accents. Red #A82C24 only as a small accent, and only on light monochrome layouts; never on dark or full-colour photo ads.\nLanes: men on the left, women on the right, never mixed. Videos (Seedance 2.5): a batch is an ad set. Videos made from a static batch form their own video batch (new number, new ad set), in the video lane right beside that batch's row, filling C1, C2, C3, then a new video batch. The statics stay live.\nEvery ad passes a ROAS check before it ships: text contrast, safe zones, offer readable at feed size, one clear hook. The copy sticky next to each batch says what changed.\nCopy: headline and description at most 27 characters so they don't cut off in feed.\nImitation: copy the reference's structure literally. Text and checklists sit straight on the photo the way IM8 does it, never in a box that hides the product.\nCommands: comment on an ad and send it to Claude (redo, video, 720p / 1080p, reject, mp4, push to clickup and frame), see the red COMMANDS note. A comment is the go-ahead; no extra confirmation.\nMen vs women photos: a product name with a dash is the women's version (\"3x Minimal - Stack Set\"), without a dash it's the men's (\"3x Minimal Stack Set\", \"2x Duo Minimal Set\"). Men's ads use only photos from the men's listings and men's Figma frames.\nFormat: every static, video draft and approved video is delivered at 1080x1920 (9:16). Approved videos are rendered by Seedance 2.5 from the exact draft at the resolution written in the comment (\"720p\" or \"1080p\"); the delivered file is always 1080x1920.\nWork in progress: the moment a redo or video starts, a blue IN PROGRESS box goes into the exact slot it will land in, and is replaced when it's done.\nFrame.io (approved batches): the batch folder and its EN and \"no text\" subfolders always exist already. Only find them, never create folders. Text version → EN, clean version → no text. The batch folder link is in the batch's ClickUp task (Creatives field).\nActivity: the blue ACTIVITY & QUEUE note above Evergreen lists running and finished jobs (Seedance, Frame.io, ClickUp) with times; updated when a job starts and when it ends. Delivered batches also get FRAME ✓ / CLICKUP ✓ in their titles.\nSound: every video is generated WITH SOUND (Seedance generate_audio true), drafts and finals, and the delivered MP4 keeps the audio.\nQueue: every comment command goes into the QUEUE list on the ACTIVITY & QUEUE note right away (QUEUED → RUNNING → DONE). Commands on the same ad are merged and the latest wins; Seedance work arriving within ~2 min is sent as one job; a job already running is never restarted for a later command unless that command changes the same ad.\nLanguage: everything on the canvas, in replies and in deliverables is in English.\nSeedance sound: generate_audio true goes on the DRAFT request; the final (draft_task) request must not carry it and inherits the draft's sound. Old silent drafts can't become finals with sound, so they need a new draft with sound.\nStatus tags: every creative carries a tag stack top left (not part of the exported ad): DRAFT / RENDERING / FINAL for videos, then CLICKUP ✓ DONE and FRAME ✓ UPLOADED (blue while running) once delivered.\nClickUp: on the batch task fill the copy fields (Preview Text, ",
       "w": 600,
       "x": -720,
       "y": 0
@@ -669,6 +669,22 @@
       "x": 17700,
       "y": 0
     },
+    "copy-w421": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "W Batch 421 · ad copy (Black Friday, women · image set from W Batch 422 footage, Session 11 Black)\n\nPRIMARY TEXT\nThe black stack, made to stay on. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nCREATIVES (freestyle, no IM8 reference; Creative Origin: Ideation)\nC1 Touch: still C2383 (fingertips on the stack, bouclé), photo top + light panel\nC2 Editorial: still C2335 (profile, arm across the face), full-bleed\nC3 Close: still C2362 (fingers on the wrist), full-bleed, text on skin\nSame sun-kissed grade as the W422 videos.\n\nROAS CHECK\nC1–C3 pass: contrast, text inside y 270–1536, readable at feed size.",
+      "w": 600,
+      "x": 13380,
+      "y": 9600
+    },
+    "copy-w422": {
+      "fill": "gray",
+      "maxH": 1920,
+      "text": "W Batch 422 · ad copy (Black Friday, women · Frame Method, Session 11 Black)\n\nPRIMARY TEXT\nThe black stack, made to stay on. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n(checked against the footage before delivery)\n\nCREATIVES\nC1 Touch: fingertip on the chains, bouclé · material claims · felt piano + strings\nC2 Editorial: charcoal dress, hair, attitude · deep minimal pulse\nC3 Close: hands settle on the wrist, black top + black leather chair · offer-led · piano + cello\n\nSTATUS\nFINAL 1080p with music (15.4 s each) on the canvas. Footage: Session 11 Black, C1 C2288/C2292/C2383/C2375/C2385 · C2 C2335/C2343/C2314/C2325/C2336 · C3 C2306/C2362/C2392/C2365/C2390. 2x motion-compensated slow motion, matched grade with sun-kissed skin, no black fade-out, white Figtree lockups, wordmark on the closing scene only.",
+      "w": 600,
+      "x": 17700,
+      "y": 9600
+    },
     "copy-wna": {
       "fill": "gray",
       "maxH": 1920,
@@ -779,14 +795,6 @@
       "x": 19400,
       "y": -720
     },
-    "vo-trial-w418": {
-      "fill": "gray",
-      "maxH": 1920,
-      "text": "VO TRIAL · W Batch 418 - C2 (ElevenLabs)\n\nSCRIPT\nHer Black Friday wishlist. The three-piece stack, in black, silver or gold. Waterproof, so it never comes off. Case included, free shipping. Thirty percent off, sitewide. No code.\n\nVOICES (left to right)\n1. Arabella (gentle): 13 s. Pick: warm, not salesy, closest fit.\n2. Veda Sky (cozy storyteller): 15 s.\n3. Relaxing Rachel (calm, soothing): 16 s.\n\nHOW IT'S MIXED\nModel eleven_multilingual_v2. Pauses tightened, voice starts at 0.3 s, typing sounds kept underneath at about a third. The last frame holds until the voice ends.\n\nNEXT\nComment on the one you like (or say \"shorter script\" or another voice) and I'll use that voice for future VO ads.",
-      "w": 600,
-      "x": 17700,
-      "y": 7200
-    },
     "women": {
       "kind": "title1",
       "maxW": 4580,
@@ -802,22 +810,6 @@
       "w": 240,
       "x": 14220,
       "y": -320
-    },
-    "copy-w422": {
-      "fill": "gray",
-      "maxH": 1920,
-      "text": "W Batch 422 · ad copy (Black Friday, women · Frame Method, Session 11 Black)\n\nPRIMARY TEXT\nThe black stack, made to stay on. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n(checked against the footage before delivery)\n\nCREATIVES\nC1 Touch: fingertip on the chains, bouclé · material claims · felt piano + strings\nC2 Editorial: charcoal dress, hair, attitude · deep minimal pulse\nC3 Close: hands settle on the wrist, black top + black leather chair · offer-led · piano + cello\n\nSTATUS\nFINAL 1080p with music (15.4 s each) on the canvas. Footage: Session 11 Black, C1 C2288/C2292/C2383/C2375/C2385 · C2 C2335/C2343/C2314/C2325/C2336 · C3 C2306/C2362/C2392/C2365/C2390. 2x motion-compensated slow motion, matched grade with sun-kissed skin, no black fade-out, white Figtree lockups, wordmark on the closing scene only.",
-      "w": 600,
-      "x": 17700,
-      "y": 9600
-    },
-    "copy-w421": {
-      "fill": "gray",
-      "maxH": 1920,
-      "text": "W Batch 421 · ad copy (Black Friday, women · image set from W Batch 422 footage, Session 11 Black)\n\nPRIMARY TEXT\nThe black stack, made to stay on. Waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed, taken off at checkout. Jewelry case included and free shipping.\n\nHEADLINE (16 chars)\n30% Off Sitewide\n\nDESCRIPTION (15 chars)\nNo code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nCREATIVES (freestyle, no IM8 reference; Creative Origin: Ideation)\nC1 Touch: still C2383 (fingertips on the stack, bouclé), photo top + light panel\nC2 Editorial: still C2335 (profile, arm across the face), full-bleed\nC3 Close: still C2362 (fingers on the wrist), full-bleed, text on skin\nSame sun-kissed grade as the W422 videos.\n\nROAS CHECK\nC1–C3 pass: contrast, text inside y 270–1536, readable at feed size.",
-      "w": 600,
-      "x": 13380,
-      "y": 9600
     }
   },
   "order": [
