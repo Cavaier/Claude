@@ -43,6 +43,12 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Backup and push.
   - Delivery via "push to clickup and frame".
 - Frame Method ads go in the video lanes (MEN +4820, WOMEN +14220) as their own row, one video per C slot, with the copy note at +8300. They're finished videos (no Seedance draft/final step).
+- **Stills cut from video (standard):** never grab stills from the share preview or a finished ad (those are about 1080p at 3 Mbps and look soft). Do this instead (full steps in FRAME_METHOD.md §Stills):
+  1. Pull the original camera file through the Frame.io API.
+  2. Score every frame in a window of about ±0.5 s for sharpness and take the sharpest one, with no motion blur on the links.
+  3. Export it as a 16-bit PNG and apply the same grade as the video (tan rule).
+  4. Upscale with an AI upscaler only if the crop is smaller than its slot.
+  5. Check it at 100%: chain links, skin texture, no smoothing or invented detail.
 - For the delivery upload, use the Frame.io API flow under **Delivery**. The RAW footage is read through the public share in a headless browser (FRAME_METHOD.md §4).
 
 ## Workflow

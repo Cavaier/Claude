@@ -168,3 +168,12 @@ Use `grade.py`, never one blanket filter for all clips:
 - The Download menu text uses a plain `x` (`MP4 H264 1080x1920`), not `×`.
 - A direct folder URL lists clips in a different order than the parent view; check the first filename with `peek.js`.
 - White text on white foam or bright walls disappears: change the shot or move the text.
+
+
+## Stills cut from video (standard for static ads made from Frame footage)
+1. **Source:** download the ORIGINAL camera file (C####.MP4, usually 4K) through the Frame.io V4 API: `GET /files/<id>?include=media_links.original`. Never use the share's web preview or a finished ad export, which are about 1080×1920 at 3 Mbps and look soft and blocky.
+2. **Frame pick:** extract every frame in a window of about ±0.5 s around the chosen moment as lossless PNG (`ffmpeg -ss t-0.5 -t 1 -i src -vsync 0 f_%03d.png`). Score each one for sharpness (variance of Laplacian on the jewelry/wrist crop) and keep the sharpest one with no motion blur on the box-chain and square-chain links.
+3. **Grade:** use the same look as the video, applied to the still (grade.py filter chain on the single frame, GRADE_ADAPT as in the video), so the skin follows the tan rule. Save as 16-bit PNG and keep the JPEG step until the very end.
+4. **Crop/scale:** crop for the slot first. Upscale with an AI upscaler (Real-ESRGAN class) only if the crop is smaller than its slot in the ad, at most 2×. Otherwise downscale with Lanczos.
+5. **QC at 100%:** links crisp and countable, skin pores and fine hairs real, no plastic smoothing or invented detail, no banding in the background. Redo with another frame if any of these fail.
+6. Then build the static as usual (ROAS check, safe zones) and deliver.
