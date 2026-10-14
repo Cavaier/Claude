@@ -175,5 +175,11 @@ Use `grade.py`, never one blanket filter for all clips:
 2. **Frame pick:** extract every frame in a window of about ±0.5 s around the chosen moment as lossless PNG (`ffmpeg -ss t-0.5 -t 1 -i src -vsync 0 f_%03d.png`). Score each one for sharpness (variance of Laplacian on the jewelry/wrist crop) and keep the sharpest one with no motion blur on the box-chain and square-chain links.
 3. **Grade:** originals are full-range, so grade.py's filter does not land the same look on them. Instead, match the original frame to the approved graded still or video frame with `stillmatch.py` (per-channel quantile match learned on the same moment, applied in 16-bit). Otherwise use the same look as the video, applied to the still (grade.py filter chain on the single frame, GRADE_ADAPT as in the video), so the skin follows the tan rule. Save as 16-bit PNG and keep the JPEG step until the very end.
 4. **Crop/scale:** crop for the slot first. Upscale with an AI upscaler (Real-ESRGAN class) only if the crop is smaller than its slot in the ad, at most 2×. Otherwise downscale with Lanczos.
-5. **QC at 100%:** links crisp and countable, skin pores and fine hairs real, no plastic smoothing or invented detail, no banding in the background. Redo with another frame if any of these fail.
-6. Then build the static as usual (ROAS check, safe zones) and deliver.
+5. **Pro retouch (always):** run `retouch.py in16.png out16.png x0,y0,x1,y1 [debug]` with the box around the jewelry. It does three things:
+   - Lightroom develop: chroma NR, highlights -/shadows +, texture and clarity, an S-curve, a subtle vignette and grain.
+   - Photoshop skin: hue unify toward the median skin tone, frequency separation (low layer evened, high layer = pores untouched), blemish/mole inpaint.
+   - Jewelry precision: metal neutralised to a clean black, polished cuff smoothed with scratches, dust and fingerprints inpainted, chain links sharpened with overshoot clamped (no halos), blacks deepened and speculars lifted, a contact shadow.
+
+   Check the debug masks if something looks off. Skin is hue 50–95 with chroma >11 in Lab, which keeps bouclé and walls out.
+6. **QC at 100%:** links crisp and countable, skin pores and fine hairs real, no plastic smoothing or invented detail, no banding in the background. Redo with another frame if any of these fail.
+7. Then build the static as usual (ROAS check, safe zones) and deliver.
