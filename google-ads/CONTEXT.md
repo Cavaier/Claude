@@ -266,6 +266,10 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-14** Day-3 Search | Men | UK: 165 clicks, 1,285 SEK, CPC 7.8, CTR 5.4%, IS 21–29%, 0 purchases
+  (Google + Shopify). Men's Bracelets 445 SEK / 57 clicks, Silver 331 / 43, Chain 235 / 30. 0 sales in
+  165 clicks suggests conversion rate under ~1.5%. Added negatives 18ct, 9 carat, real silver, with name,
+  infinity. Rule stays: pause an ad group at 1,500 SEK with ROAS < 0.8; review with Eli at ~10,000 SEK.
 - **2026-10-13** Customer Match upload done: job SUCCESS, match rate 91–100%, list 9486387439 = 11,000
   (Search) / 9,000 (Display), eligible. Refresh the upload every ~3 months.
 - **2026-10-12** Keyword history (all campaigns, all time): non-brand keywords/search terms brought
