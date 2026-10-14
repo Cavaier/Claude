@@ -1,0 +1,28 @@
+{
+ "t1": {
+  "top": 1440,
+  "head": "Black Friday",
+  "sub": "30% off sitewide"
+ },
+ "t2": {
+  "top": 1440,
+  "head": "Waterproof",
+  "sub": "Wear it in the sea"
+ },
+ "t3": {
+  "top": 1440,
+  "head": "Trustpilot 4.5",
+  "sub": "3,000+ reviews"
+ },
+ "t4": {
+  "top": 330,
+  "head": "30% off sitewide",
+  "sub": "Every piece, every set"
+ },
+ "t5": {
+  "top": 1300,
+  "logo": true,
+  "head": "30% off sitewide",
+  "sub": "No code needed"
+ }
+}

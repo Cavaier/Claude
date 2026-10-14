@@ -1,0 +1,28 @@
+{
+ "l1": {
+  "top": 900,
+  "head": "Black Friday",
+  "sub": "Limited time"
+ },
+ "l2": {
+  "top": 330,
+  "head": "Black, silver or gold",
+  "sub": "Adjustable S, M, L"
+ },
+ "l3": {
+  "top": 330,
+  "head": "Jewelry case included",
+  "sub": "With every set"
+ },
+ "l4": {
+  "top": 330,
+  "head": "No code needed",
+  "sub": "Taken off at checkout"
+ },
+ "l5": {
+  "top": 1200,
+  "logo": true,
+  "head": "30% off sitewide",
+  "sub": "Black Friday"
+ }
+}
