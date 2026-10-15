@@ -1,0 +1,20 @@
+W-IMIT3 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (black)
+
+Primary text:
+Black Friday is here: everything at Cavaier is 30% off, already reduced on the site, so there is no code to enter. The 2x Duo Minimal Set in black pairs a box chain with a square chain and a small tag, in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, case included. Free shipping.
+
+Headline (≤27): The black duo, 30% off   (22 chars)
+Description (≤27): Sitewide. No code to enter.   (27 chars)
+
+Landing pages (row level, black, size Medium):
+EU: https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
+US: https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+
+C1 · Something you wear daily — copies IM8 "INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT." (694K reach, ad 1341394771214267): light top block, logo top left, two-line caps statement in a light weight, one larger caps line, CTA at the left with a small red "no code needed", wide photo filling the lower half. Tests: the offer stated plainly as the bigger line under a daily-wear statement. Photo: Figma "Batch 83 - C5 (No Text) 1" (node 1586:1240, black duo on a sun-warmed wrist resting on sandy rock).
+C2 · Black, made to last — copies IM8 "We're Committed to Better" (544K, ad 1776610703008574): soft glow background, centred caps headline over a short claim body, three products standing side by side with the centre one taller, centred CTA (logo added under the CTA). Tests: material and durability claims (recycled 316L, waterproof, sweat and heat resistant) on three looks of the same duo. Photos (tight crops): "Batch 83 - C4 (No Text) 1" (node 1586:1239, wrist in sun, face cropped out), DSC08723 (node 312:16, wrist against pale plaster), "Batch 83 - C3 (No Text) 1" (node 1586:1238, wrist against the sky).
+C3 · Worn every day — copies IM8 "INTER MIAMI CF / They Take It Daily. So Can You." (474K): big caps line over the top of the photo, product mid-frame, light card with logo, two-line headline, body and CTA. Tests: daily-wear habit + offer card. Photo: Figma "Batch 83 - C3 (No Text) 1" (node 1586:1238, raised wrist against a soft blue sky, face blurred behind the hand).
+
+IM8 REF MEDIA
+ref1 https://medias.trendtrack.io/facebook/image/d7c597079343e4c03e7977ef717155ecbbdc04c237251181747c32e8ae2ebdfe.jpg   (ad facebook_1341394771214267, "INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.", 693,648 reach)
+ref2 https://medias.trendtrack.io/facebook/image/64a9973a0df15f2981c90ccf0bdf9b18b2986864924852c0c30b9081e1352488.jpg   (ad facebook_1776610703008574, "We're Committed to Better", 543,921 reach)
+ref3 https://medias.trendtrack.io/facebook/image/979eb8143b4471d8f5fa4ea463d949d3a0ccb24bad9c74cddc30e9ecfc2623b0.jpg   (ad facebook_1328555355850206, "INTER MIAMI CF · They Take It Daily. So Can You.", 474,407 reach)

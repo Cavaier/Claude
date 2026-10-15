@@ -980,6 +980,102 @@
    "w": 1080,
    "x": 16540,
    "y": 16800
+  },
+  "Refs-W429.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 16800
+  },
+  "W429-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 - C1 · She chose silver (IM8 Inter Miami CF chose IM8)",
+   "w": 1080,
+   "x": 9900,
+   "y": 16800
+  },
+  "W429-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 - C2 · Black Friday, in silver (IM8 Limited-time 2026 deals)",
+   "w": 1080,
+   "x": 11060,
+   "y": 16800
+  },
+  "W429-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 - C3 · Built for every day (IM8 If it didn't work)",
+   "w": 1080,
+   "x": 12220,
+   "y": 16800
+  },
+  "Refs-W430.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 19200
+  },
+  "W430-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 - C1 · Something you wear daily (IM8 Demands excellence)",
+   "w": 1080,
+   "x": 9900,
+   "y": 19200
+  },
+  "W430-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 - C2 · Black, made to last (IM8 Committed to better)",
+   "w": 1080,
+   "x": 11060,
+   "y": 19200
+  },
+  "W430-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 - C3 · Worn every day (IM8 They take it daily)",
+   "w": 1080,
+   "x": 12220,
+   "y": 19200
+  },
+  "Refs-W431.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 21600
+  },
+  "W431-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 - C1 · All three, now 30% off (IM8 The team chose IM8)",
+   "w": 1080,
+   "x": 9900,
+   "y": 21600
+  },
+  "W431-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 - C2 · One stack, three pieces (IM8 The bloat dissolving)",
+   "w": 1080,
+   "x": 11060,
+   "y": 21600
+  },
+  "W431-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 - C3 · Wear them together (IM8 Pair it with Essentials)",
+   "w": 1080,
+   "x": 12220,
+   "y": 21600
   }
  },
  "createdOnFiles": {
@@ -993,7 +1089,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 19:30\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\n81. chat: \"batch names ready in ClickUp\" → DONE: W425 imitation statics · W426 Seedance video · W427 Frame Method · W428 ideation statics · M478 imitation statics · M479 ideation statics · M480 Frame Method · M481 W409-style video\n82. chat: \"push frame and clickup W425, W426, M481, M478, W427, W414\" → DONE 19:58: Frame.io 36/36 clean (EN + No Text) · ClickUp copy, fields, row comments (M478 C1 comment not posted) · mothers to \"ads for review\" (W414 stays \"ready for edit\")\n83. chat: \"URLs in the ad rows with the ad's color variant, not on the mother\" → DONE: 18 rows got variant links (W425/426/414 gold duo, W427 black duo, M478/481 silver duo), mother URL fields cleared; W414 corrected from stack to duo (rule)\nRUNNING\n–\n\nDONE\n✓ 19:58 W425, W426, W427, W414, M478, M481 delivered (ClickUp + Frame.io 36/36)\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 19:30\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\n81. chat: \"batch names ready in ClickUp\" → DONE: W425 imitation statics · W426 Seedance video · W427 Frame Method · W428 ideation statics · M478 imitation statics · M479 ideation statics · M480 Frame Method · M481 W409-style video\n82. chat: \"push frame and clickup W425, W426, M481, M478, W427, W414\" → DONE 19:58: Frame.io 36/36 clean (EN + No Text) · ClickUp copy, fields, row comments (M478 C1 comment not posted) · mothers to \"ads for review\" (W414 stays \"ready for edit\")\n83. chat: \"URLs in the ad rows with the ad's color variant, not on the mother\" → DONE: 18 rows got variant links (W425/426/414 gold duo, W427 black duo, M478/481 silver duo), mother URL fields cleared; W414 corrected from stack to duo (rule)\n84. chat: \"3 new batches same as W425, Black Friday\" → DONE: W429 silver duo (y16800), W430 black duo (y19200), W431 gold 3x stack (y21600), ROAS ✓; 3 ClickUp \"W Batch\" tasks created (Editor Eli, IMAGE)\nRUNNING\n–\n\nDONE\n✓ W429, W430, W431 women's imitation statics on the canvas\n✓ 19:58 W425, W426, W427, W414, M478, M481 delivered (ClickUp + Frame.io 36/36)\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1394,6 +1490,30 @@
    "w": 600,
    "x": 17700,
    "y": 16800
+  },
+  "copy-w429": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 429 · ad copy (Black Friday, women · Imitation)\n\nW Batch 429 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)\n\nPrimary text:\nBlack Friday is on: everything at Cavaier is 30% off, the silver duo included. A box chain and a square chain with a small tag, made from recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, with the case included. The reduced prices are already on the site, so there is no code to enter. Free shipping.\n\nHeadline (≤27): Silver duo, now 30% off   (23 chars)\nDescription (≤27): Already reduced. No code.   (25 chars)\n\nEU (C1–C3 rows, silver Medium): https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776990554\nUS (C1–C3 rows, silver Medium): https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698420025\n\nC1 · She chose silver — copies IM8 \"INTER MIAMI CF CHOSE IM8.\" (ad facebook_1500947051491931, 2.2M reach): flat light panel on top with a centred logo, a giant two-line statement and one small square CTA (\"SEE WHY →\"), the photo filling the lower half. Tests: a short \"choice\" statement with the offer only in the small label. Photo: Figma _DSC9909 (Static Ads 1 > Women, node 306:115), tight macro crop of the two silver chains on a forearm.\nC2 · Black Friday, in silver — copies IM8 \"Limited-Time 2026 Deals\" (ad facebook_1269344155273308, 1.1M reach; 9:16 version facebook_2078803486280161): centred two-line title + one-line subline, the product in the middle with a round black \"NOW 30% OFF\" badge overlapping it, a row of four benefit icons underneath (waterproof, recycled 316L, adjustable S/M/L, case included). Tests: offer badge + claims icon row. Photo: Figma _DSC9909 (node 306:115), wide crop of the forearm (same shot as C1, different crop).\nC3 · Built for every day — copies IM8 \"IF IT DIDN'T WORK, THE SQUAD WOULDN'T TAKE IT.\" (ad facebook_1504282788010848, 919K reach): centred logo, three-line statement, short body, CTA, the product filling the lower half. Tests: an everyday-wear argument paired with the Black Friday price. Photo: Shopify listing image 12616-532.png (Silver variant featured image, https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-532.png), box chain and square chain crossing on a bare wrist, light grey background.\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/2cd09cd43287db4b2806ecf07a0acb1888cae143c0d06ad05cc24594012b8bbe.jpg\nref2 https://medias.trendtrack.io/facebook/image/1a7db95f122e188741e5c45103d68b32583fa7ae44046ffc2e2e9207f95b4a73.jpg  (9:16 of the square b7a1bcfd4c857e776b036591ffeedb4d9ed85dc2bfbbe91951ae141fa95cc8ab)\nref3 https://medias.trendtrack.io/facebook/image/3265cd1053ceaa84f4a397e69078fd1f94f7a4eb38797ffa2a5802f5d39634ae.jpg\n\nPHOTO NOTE: only two genuine colour photos of the women's SILVER 2x duo exist (Figma _DSC9909; Shopify 12616-532). Static Ads 2 silver women's frames all show the 3x stack (cuff + two chains). C1 and C2 share _DSC9909 in different crops; C2 and C3 use different shots.",
+   "w": 600,
+   "x": 13380,
+   "y": 16800
+  },
+  "copy-w430": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 430 · ad copy (Black Friday, women · Imitation)\n\nW Batch 430 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (black)\n\nPrimary text:\nBlack Friday is here: everything at Cavaier is 30% off, already reduced on the site, so there is no code to enter. The 2x Duo Minimal Set in black pairs a box chain with a square chain and a small tag, in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, case included. Free shipping.\n\nHeadline (≤27): The black duo, 30% off   (22 chars)\nDescription (≤27): Sitewide. No code to enter.   (27 chars)\n\nLanding pages (row level, black, size Medium):\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\n\nC1 · Something you wear daily — copies IM8 \"INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.\" (694K reach, ad 1341394771214267): light top block, logo top left, two-line caps statement in a light weight, one larger caps line, CTA at the left with a small red \"no code needed\", wide photo filling the lower half. Tests: the offer stated plainly as the bigger line under a daily-wear statement. Photo: Figma \"Batch 83 - C5 (No Text) 1\" (node 1586:1240, black duo on a sun-warmed wrist resting on sandy rock).\nC2 · Black, made to last — copies IM8 \"We're Committed to Better\" (544K, ad 1776610703008574): soft glow background, centred caps headline over a short claim body, three products standing side by side with the centre one taller, centred CTA (logo added under the CTA). Tests: material and durability claims (recycled 316L, waterproof, sweat and heat resistant) on three looks of the same duo. Photos (tight crops): \"Batch 83 - C4 (No Text) 1\" (node 1586:1239, wrist in sun, face cropped out), DSC08723 (node 312:16, wrist against pale plaster), \"Batch 83 - C3 (No Text) 1\" (node 1586:1238, wrist against the sky).\nC3 · Worn every day — copies IM8 \"INTER MIAMI CF / They Take It Daily. So Can You.\" (474K): big caps line over the top of the photo, product mid-frame, light card with logo, two-line headline, body and CTA. Tests: daily-wear habit + offer card. Photo: Figma \"Batch 83 - C3 (No Text) 1\" (node 1586:1238, raised wrist against a soft blue sky, face blurred behind the hand).\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/d7c597079343e4c03e7977ef717155ecbbdc04c237251181747c32e8ae2ebdfe.jpg   (ad facebook_1341394771214267, \"INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.\", 693,648 reach)\nref2 https://medias.trendtrack.io/facebook/image/64a9973a0df15f2981c90ccf0bdf9b18b2986864924852c0c30b9081e1352488.jpg   (ad facebook_1776610703008574, \"We're Committed to Better\", 543,921 reach)\nref3 https://medias.trendtrack.io/facebook/image/979eb8143b4471d8f5fa4ea463d949d3a0ccb24bad9c74cddc30e9ecfc2623b0.jpg   (ad facebook_1328555355850206, \"INTER MIAMI CF · They Take It Daily. So Can You.\", 474,407 reach)",
+   "w": 600,
+   "x": 13380,
+   "y": 19200
+  },
+  "copy-w431": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 431 · ad copy (Black Friday, women · Imitation)\n\nW Batch 431 · Women · Black Friday · Imitation (IM8 Health) · 3x Minimal - Stack Set (gold)\n\nPrimary text:\nBlack Friday is here, and the gold 3x Minimal Stack is 30% off. A flat polished cuff bangle, a box chain and a square chain: three separate pieces, made to be worn together or on their own. Recycled 316L stainless steel, waterproof, sweat and heat resistant, adjustable S/M/L, case included. The prices on the site are already reduced, so no code is needed. Free shipping.\n\nHeadline (≤27): Three gold pieces, 30% off   (26 chars)\nDescription (≤27): Rated 4.5 on Trustpilot   (23 chars)\n\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\n(Row-level URLs, gold, size Medium, same for C1–C3.)\n\nC1 · All three, now 30% off — copies IM8 \"The team chose IM8\" (facebook_26685521724440232, 515K reach; https://medias.trendtrack.io/facebook/image/6d093eacee1c51031d29a0c36c11b86174a0dadbbb2d7b7b4abdebe5bee0c646.jpg): logo centred on top, oversized two-line headline with the second line pushed right, full-bleed photo, small label + single CTA low in the frame. Tests: the offer as a short, confident statement over a quiet lifestyle shot. Photo: Figma 3152:126 (gold stack on a wrist resting on white linen).\nC2 · One stack, three pieces — copies IM8 \"The bloat dissolving\" (facebook_2088802291738767, 499K reach; https://medias.trendtrack.io/facebook/image/907bddcfa384b4ca7d39878c75f3c83e54c903dca9b44cc7ddd7e010b8aecade.png): headline + subline top left, a row of three panels with chevron labels (before / ritual / reset becomes the cuff / + square chain / + box chain), CTA, rating band, product hero. Tests: explaining the 3-piece build step by step + social proof. Photos: Figma 3446:490 (wet wrist, cropped into the three panels) and 3446:362 (hero, fingers under the stack).\nC3 · Wear them together — copies IM8 \"Pair it with Essentials\" (facebook_1365191991880821, 487K reach; https://medias.trendtrack.io/facebook/image/cc969c1aab4a483f835c57dbd1a95e534aef5ced5b02e530eaa1cdda8020eb9a.jpg): centred headline + caps subline, a tall product image in the middle, two feature columns either side (title, tag, divided lines), CTA. Tests: a clean spec/benefit layout split into the cuff and the chains. Photo: Figma 3603:65 (forearm in soft window light).",
+   "w": 600,
+   "x": 13380,
+   "y": 21600
   }
  },
  "order": [
@@ -1522,7 +1642,19 @@
   "M-IMIT-C3.dc.html",
   "V-WIMIT-C1.dc.html",
   "V-WIMIT-C2.dc.html",
-  "V-WIMIT-C3.dc.html"
+  "V-WIMIT-C3.dc.html",
+  "Refs-W429.dc.html",
+  "W429-C1.dc.html",
+  "W429-C2.dc.html",
+  "W429-C3.dc.html",
+  "Refs-W430.dc.html",
+  "W430-C1.dc.html",
+  "W430-C2.dc.html",
+  "W430-C3.dc.html",
+  "Refs-W431.dc.html",
+  "W431-C1.dc.html",
+  "W431-C2.dc.html",
+  "W431-C3.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"

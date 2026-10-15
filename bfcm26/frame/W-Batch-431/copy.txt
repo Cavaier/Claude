@@ -1,0 +1,15 @@
+W-IMIT4 · Women · Black Friday · Imitation (IM8 Health) · 3x Minimal - Stack Set (gold)
+
+Primary text:
+Black Friday is here, and the gold 3x Minimal Stack is 30% off. A flat polished cuff bangle, a box chain and a square chain: three separate pieces, made to be worn together or on their own. Recycled 316L stainless steel, waterproof, sweat and heat resistant, adjustable S/M/L, case included. The prices on the site are already reduced, so no code is needed. Free shipping.
+
+Headline (≤27): Three gold pieces, 30% off   (26 chars)
+Description (≤27): Rated 4.5 on Trustpilot   (23 chars)
+
+EU: https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714
+US: https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+(Row-level URLs, gold, size Medium, same for C1–C3.)
+
+C1 · All three, now 30% off — copies IM8 "The team chose IM8" (facebook_26685521724440232, 515K reach; https://medias.trendtrack.io/facebook/image/6d093eacee1c51031d29a0c36c11b86174a0dadbbb2d7b7b4abdebe5bee0c646.jpg): logo centred on top, oversized two-line headline with the second line pushed right, full-bleed photo, small label + single CTA low in the frame. Tests: the offer as a short, confident statement over a quiet lifestyle shot. Photo: Figma 3152:126 (gold stack on a wrist resting on white linen).
+C2 · One stack, three pieces — copies IM8 "The bloat dissolving" (facebook_2088802291738767, 499K reach; https://medias.trendtrack.io/facebook/image/907bddcfa384b4ca7d39878c75f3c83e54c903dca9b44cc7ddd7e010b8aecade.png): headline + subline top left, a row of three panels with chevron labels (before / ritual / reset becomes the cuff / + square chain / + box chain), CTA, rating band, product hero. Tests: explaining the 3-piece build step by step + social proof. Photos: Figma 3446:490 (wet wrist, cropped into the three panels) and 3446:362 (hero, fingers under the stack).
+C3 · Wear them together — copies IM8 "Pair it with Essentials" (facebook_1365191991880821, 487K reach; https://medias.trendtrack.io/facebook/image/cc969c1aab4a483f835c57dbd1a95e534aef5ced5b02e530eaa1cdda8020eb9a.jpg): centred headline + caps subline, a tall product image in the middle, two feature columns either side (title, tag, divided lines), CTA. Tests: a clean spec/benefit layout split into the cuff and the chains. Photo: Figma 3603:65 (forearm in soft window light).

@@ -1,0 +1,21 @@
+W-IMIT2 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)
+
+Primary text:
+Black Friday is on: everything at Cavaier is 30% off, the silver duo included. A box chain and a square chain with a small tag, made from recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, with the case included. The reduced prices are already on the site, so there is no code to enter. Free shipping.
+
+Headline (≤27): Silver duo, now 30% off   (23 chars)
+Description (≤27): Already reduced. No code.   (25 chars)
+
+EU (C1–C3 rows, silver Medium): https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776990554
+US (C1–C3 rows, silver Medium): https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698420025
+
+C1 · She chose silver — copies IM8 "INTER MIAMI CF CHOSE IM8." (ad facebook_1500947051491931, 2.2M reach): flat light panel on top with a centred logo, a giant two-line statement and one small square CTA ("SEE WHY →"), the photo filling the lower half. Tests: a short "choice" statement with the offer only in the small label. Photo: Figma _DSC9909 (Static Ads 1 > Women, node 306:115), tight macro crop of the two silver chains on a forearm.
+C2 · Black Friday, in silver — copies IM8 "Limited-Time 2026 Deals" (ad facebook_1269344155273308, 1.1M reach; 9:16 version facebook_2078803486280161): centred two-line title + one-line subline, the product in the middle with a round black "NOW 30% OFF" badge overlapping it, a row of four benefit icons underneath (waterproof, recycled 316L, adjustable S/M/L, case included). Tests: offer badge + claims icon row. Photo: Figma _DSC9909 (node 306:115), wide crop of the forearm (same shot as C1, different crop).
+C3 · Built for every day — copies IM8 "IF IT DIDN'T WORK, THE SQUAD WOULDN'T TAKE IT." (ad facebook_1504282788010848, 919K reach): centred logo, three-line statement, short body, CTA, the product filling the lower half. Tests: an everyday-wear argument paired with the Black Friday price. Photo: Shopify listing image 12616-532.png (Silver variant featured image, https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-532.png), box chain and square chain crossing on a bare wrist, light grey background.
+
+IM8 REF MEDIA
+ref1 https://medias.trendtrack.io/facebook/image/2cd09cd43287db4b2806ecf07a0acb1888cae143c0d06ad05cc24594012b8bbe.jpg
+ref2 https://medias.trendtrack.io/facebook/image/1a7db95f122e188741e5c45103d68b32583fa7ae44046ffc2e2e9207f95b4a73.jpg  (9:16 of the square b7a1bcfd4c857e776b036591ffeedb4d9ed85dc2bfbbe91951ae141fa95cc8ab)
+ref3 https://medias.trendtrack.io/facebook/image/3265cd1053ceaa84f4a397e69078fd1f94f7a4eb38797ffa2a5802f5d39634ae.jpg
+
+PHOTO NOTE: only two genuine colour photos of the women's SILVER 2x duo exist (Figma _DSC9909; Shopify 12616-532). Static Ads 2 silver women's frames all show the 3x stack (cuff + two chains). C1 and C2 share _DSC9909 in different crops; C2 and C3 use different shots.
