@@ -1,0 +1,8 @@
+{
+ "items": {
+  "s1": "<div style=\"position:absolute;left:0;right:0;top:330px;text-align:center;font-weight:300;font-size:50px;letter-spacing:.06em;text-transform:uppercase;line-height:1.2;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.35)\">Black Friday<br>is finally here</div>",
+  "s2": "<div style=\"position:absolute;left:0;right:0;top:330px;text-align:center;font-weight:300;font-size:50px;letter-spacing:.06em;text-transform:uppercase;line-height:1.2;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.35)\">30% off sitewide</div>",
+  "s3": "<div style=\"position:absolute;left:0;right:0;top:330px;text-align:center;font-weight:300;font-size:50px;letter-spacing:.06em;text-transform:uppercase;line-height:1.2;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.35)\">Every piece.<br>Every set.</div>",
+  "close": "<div style=\"position:absolute;left:0;right:0;top:300px;display:flex;flex-direction:column;align-items:center;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.35)\"><img src=\"{{LOGO}}\" style=\"height:40px\"><div style=\"font-weight:300;font-size:50px;letter-spacing:.06em;margin-top:34px;text-transform:uppercase\">30% off sitewide</div><div style=\"font-size:22px;letter-spacing:.2em;margin-top:14px\">NO CODE NEEDED</div></div><div style=\"position:absolute;left:0;right:0;top:1330px;display:flex;justify-content:center\"><span style=\"background:#fff;color:#141414;height:80px;padding:0 64px;display:flex;align-items:center;font-size:22px;letter-spacing:.12em\">GEAR UP</span></div>"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "items": {
+  "k1": "<div style=\"position:absolute;left:0;right:0;top:1120px;text-align:center;font-weight:400;font-size:44px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45)\">The one sale</div>",
+  "k2": "<div style=\"position:absolute;left:0;right:0;top:1120px;text-align:center;font-weight:400;font-size:44px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45)\">worth waiting for.</div>",
+  "k3": "<div style=\"position:absolute;left:0;right:0;top:1120px;text-align:center;font-weight:400;font-size:44px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45)\">30% off everything,</div>",
+  "k4": "<div style=\"position:absolute;left:0;right:0;top:1120px;text-align:center;font-weight:400;font-size:44px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45)\">sitewide. No exceptions.</div>",
+  "lower": "<div style=\"position:absolute;left:110px;top:1240px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.4)\"><div style=\"font-size:30px;letter-spacing:.08em\">BLACK FRIDAY</div><div style=\"width:240px;height:2px;background:#fff;margin:10px 0\"></div><div style=\"font-size:22px;font-weight:300;letter-spacing:.06em\">The 2x Duo Minimal Set \u00b7 30% off</div></div>",
+  "tagline": "<div style=\"position:absolute;left:0;right:0;top:800px;display:flex;flex-direction:column;align-items:center;color:#141414;text-align:center\"><img src=\"{{LOGO}}\" class=\"logo-dark\" style=\"height:44px\"><div style=\"font-weight:300;font-size:40px;line-height:1.3;margin-top:36px\">The one sale<br>worth waiting for.</div><span style=\"margin-top:44px;background:#141414;color:#fff;height:80px;padding:0 54px;display:flex;align-items:center;font-size:22px;letter-spacing:.1em\">SHOP THE SALE</span><div style=\"margin-top:24px;font-size:20px;letter-spacing:.14em\">30% OFF SITEWIDE \u00b7 NO CODE NEEDED</div></div>"
+ }
+}
