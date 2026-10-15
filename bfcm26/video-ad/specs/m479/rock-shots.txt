@@ -1,0 +1,5 @@
+edit m1 C1172 4.0 0.8 r1
+edit m1 C1174 0.4 0.8 r2
+edit m1 C1188 2.0 0.8 r3
+edit m1 C1190 5.0 0.8 r4
+edit m1 C1192 3.0 0.9 r5

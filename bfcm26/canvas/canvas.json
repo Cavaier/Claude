@@ -724,6 +724,126 @@
    "w": 1080,
    "x": 12220,
    "y": 4800
+  },
+  "V-W414-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 414 - C1 · Imitation of Katrina ref (gold only) · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 14220,
+   "y": 12000
+  },
+  "V-W414-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 414 - C2 · Imitation of Katrina ref (gold only) · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 15380,
+   "y": 12000
+  },
+  "V-W414-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 414 - C3 · Imitation of Katrina ref (gold only) · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 16540,
+   "y": 12000
+  },
+  "V-W-FM-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, FM) - C1 · Frame Method, Session 10 gold · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 14220,
+   "y": 14400
+  },
+  "V-W-FM-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, FM) - C2 · Frame Method, Session 10 gold · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 15380,
+   "y": 14400
+  },
+  "V-W-FM-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, FM) - C3 · Frame Method, Session 10 gold · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 16540,
+   "y": 14400
+  },
+  "V-M465-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 465 - C1 · Imitation of Katrina ref (ICON montage) · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 4820,
+   "y": 19200
+  },
+  "V-M465-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 465 - C2 · Imitation of Katrina ref (ICON montage) · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 5980,
+   "y": 19200
+  },
+  "V-M465-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 465 - C3 · Imitation of Katrina ref (ICON montage) · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 7140,
+   "y": 19200
+  },
+  "V-M-FM-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, FM) - C1 · Frame Method, Men Session 1 · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 4820,
+   "y": 21600
+  },
+  "V-M-FM-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, FM) - C2 · Frame Method, Men Session 1 · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 5980,
+   "y": 21600
+  },
+  "V-M-FM-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, FM) - C3 · Frame Method, Men Session 1 · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 7140,
+   "y": 21600
+  },
+  "V-M-W409-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, W409) - C1 · Imitation W409 style · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 4820,
+   "y": 24000
+  },
+  "V-M-W409-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, W409) - C2 · Imitation W409 style · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 5980,
+   "y": 24000
+  },
+  "V-M-W409-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, W409) - C3 · Imitation W409 style · FINAL 1080p · MUSIC",
+   "w": 1080,
+   "x": 7140,
+   "y": 24000
   }
  },
  "createdOnFiles": {
@@ -737,7 +857,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 09:35\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\nRUNNING\n–\n\nDONE\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 14:45\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\nRUNNING\n–\n\nDONE\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1058,6 +1178,46 @@
    "x": 8300,
    "y": 16800,
    "text": "M Batch 463 · video ad copy (Black Friday, men · Imitation)\n\nREFERENCE\nKatrina's ClickUp ref: Black Friday montage (fast cuts, stacked \"Black Friday / up to 50% off / everything\" lockup that stays on screen), as W Batch 409, with our own branding, men's model.\n\nPRIMARY TEXT\nDon't miss the biggest sale of the year. Black Friday is here: 30% off everything, sitewide. Now's the time.\n\nHEADLINE\nThe biggest sale this year\n\nDESCRIPTION\nBLACK FRIDAY IS NOW LIVE\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCREATIVES (on-screen text = ClickUp captions)\nC1 Biggest sale: \"The biggest sale of the year is on\" → BLACK FRIDAY / 30% OFF / EVERYTHING → SHOP NOW · dark electronic beat\nC2 Once a year: \"This deal only comes once a year\" → BLACK FRIDAY / 30% OFF / SITEWIDE → SHOP BLACK FRIDAY · cinematic trap beat\nC3 Everything: \"Everything's on sale. Yes, everything.\" → 30% OFF / SITEWIDE / THIS BLACK FRIDAY → SEE THE SALE · minimal techno pulse\n18 cuts of 0.7 s each + a closing texture, lockup top left with the wordmark under it.\n\nFOOTAGE\nMen Session 2 (silver duo), 120 fps at 2x slow, foam checked on every shot, light grade.\n\nSTATUS\nFINAL 1080p with music (14.6 s each).\n\nDELIVERED\nFrame.io ✓ EN (3) + No Text (3) · ClickUp ✓ (rows Imitation + comments)"
+  },
+  "copy-w414": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 17700,
+   "y": 12000,
+   "text": "W Batch 414 · video ad copy (Black Friday, women · Imitation of Katrina's ClickUp ref, gold only)\n\nPRIMARY TEXT (ClickUp)\nThis only comes once a year. Black Friday: 30% off everything, sitewide. Treat yourself before it's gone.\nHEADLINE: Biggest sale, once a year\nDESCRIPTION: BLACK FRIDAY IS NOW LIVE\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set\nUS: https://us.cavaier.com/products/3x-minimal-stack-set\n\nCREATIVES (ref: sunny real-time product showcase, small centred captions)\nC1 \"Treat yourself this Black Friday\" → \"30% off everything, sitewide\" → logo + SHOP THE SALE\nC2 \"The biggest sale of the year\" → \"Black Friday: 30% off sitewide\" → SHOP NOW\nC3 \"Don't miss out this year\" → \"30% off everything for Black Friday\" → GRAB YOURS\nSession 10 gold only (Eli: no black and gold in one video), no faces, 10.6 s, music."
+  },
+  "copy-wfm": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 17700,
+   "y": 14400,
+   "text": "W Batch (new, Frame Method) · ClickUp number pending\n\nPRIMARY TEXT\nGolden hour, all year. The stack in gold: waterproof, recycled 316L steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, no code needed. Case included and free shipping.\nHEADLINE: 30% Off Sitewide\nDESCRIPTION: No code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/3x-minimal-stack-set\nUS: https://us.cavaier.com/products/3x-minimal-stack-set\n\nCREATIVES (Frame Method, Session 10 gold, 50 fps slow motion, white Figtree lockups)\nC1 Sun: Black Friday / Golden hour / Never take it off / logo + 30% off · felt piano + strings\nC2 Sand: Black Friday / Recycled 316L / Adjustable / logo + prices already reduced · ambient pop\nC3 Sea: Black Friday / Rated 4.5 / Case included / logo + no code · coastal chillwave\n13.2 s each."
+  },
+  "copy-m465": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 8300,
+   "y": 19200,
+   "text": "M Batch 465 · video ad copy (Black Friday, men · Imitation of Katrina's ClickUp ref)\n\nPRIMARY TEXT (ClickUp)\nThe year's biggest sale is finally here. Everything's 30% off for Black Friday, sitewide, no exceptions. Grab yours.\nHEADLINE: Everything's 30% off\nDESCRIPTION: BLACK FRIDAY IS NOW LIVE\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCREATIVES (ref: ICON sneaker montage, 17 fast real-time cuts, small caption, black logo end card)\nC1 \"The wait is over.\" → \"Black Friday: 30% off everything, sitewide.\" → SHOP BLACK FRIDAY · deep house\nC2 \"Once a year. This is it.\" → \"30% off sitewide, everything included.\" → GEAR UP · nu-disco\nC3 \"Everything you wanted, 30% off.\" → \"Black Friday sale. Sitewide.\" → SHOP NOW · afro house\nMen Sessions 1 + 2, foam checked, 13.3 s."
+  },
+  "copy-mfm": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 8300,
+   "y": 21600,
+   "text": "M Batch (new, Frame Method) · ClickUp number pending\n\nPRIMARY TEXT\nSea, rock and sun: the duo stays on. A box chain and a square chain in recycled 316L steel, waterproof and adjustable S/M/L. Black Friday: 30% off sitewide, no code needed. Case included and free shipping.\nHEADLINE: 30% Off Sitewide\nDESCRIPTION: No code needed.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCREATIVES (Frame Method, Men Session 1, 120 fps 4x slow)\nC1 Sky: hand to the sky over the surf · waterproof / 316L / adjustable · airy electronic\nC2 Rock: volcanic rock and tide pools · made to stay on / box + square chain / case included · cello drone\nC3 Shore: linen shirt by the sea · Trustpilot 4.5 / 316L / black, silver or gold · warm house\n16.4 s each."
+  },
+  "copy-mw409": {
+   "fill": "gray",
+   "maxH": 1920,
+   "w": 600,
+   "x": 8300,
+   "y": 24000,
+   "text": "M Batch (new, Imitation of W Batch 409 style) · ClickUp number pending\n\nPRIMARY TEXT\nBlack Friday is here. The duo in recycled 316L steel, 30% off sitewide, no code needed. Waterproof, adjustable, case included.\nHEADLINE: Black Friday Starts Now\nDESCRIPTION: 30% off sitewide.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCREATIVES (our W409 structure for men: 3–4 slow shots, opening block right with logo, text-free middle, light-leak into the closing block, lounge beat)\nC1 \"Black Friday sale / 30% off everything\" → \"Black Friday / 30% off sitewide / Starts now\" · 12.6 s\nC2 same opening → \"… / No code needed\" · 9.6 s\nC3 same opening → \"… / Starts now\" · 9.6 s\nMen Session 2."
   }
  },
  "order": [

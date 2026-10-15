@@ -68,6 +68,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - A batch is one ad set: C1, C2 and C3, each copying its own IM8 Health ad closely.
   - Find them with Trendtrack `search_ads` (query "IM8 Health", brand, image, all statuses, sort by reach).
   - Text sits on the photo, never in a box over the product.
+- **New batch tasks in ClickUp (Eli):** create the batch task as a subtask of the current parent (e.g. BF26), named only `M Batch` or `W Batch` with no number. A ClickUp automation assigns the next batch number (numeric order of the whole ClickUp) and creates its Frame.io folders about 5 minutes later. Read the number back from ClickUp before naming the canvas boards, then fill the fields and C1–C3 rows.
 - **Naming:**
   - Men: `M Batch ### - C#`. Women: `W Batch ### - C#`.
   - Black Friday men started at 467 and women at 415. Evergreen men start at 445.

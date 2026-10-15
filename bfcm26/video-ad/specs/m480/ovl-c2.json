@@ -1,0 +1,11 @@
+{
+ "items": {
+  "o0": "<div style=\"position:absolute;left:0;right:0;top:200px;height:520px;background:radial-gradient(ellipse 70% 45% at 72% 50%,rgba(0,0,0,.30),rgba(0,0,0,0) 75%)\"></div><div style=\"position:absolute;right:86px;top:380px;text-align:right;font-weight:400;font-size:58px;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.4)\"><img src=\"{{LOGO}}\" style=\"height:34px\"></div>",
+  "o1": "<div style=\"position:absolute;right:86px;top:440px;text-align:right;font-weight:400;font-size:58px;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.4)\">Black Friday sale</div>",
+  "o2": "<div style=\"position:absolute;right:86px;top:512px;text-align:right;font-weight:300;font-size:58px;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.4)\">30% off everything</div>",
+  "e1": "<div style=\"position:absolute;left:0;right:0;top:240px;height:520px;background:radial-gradient(ellipse 70% 45% at 72% 50%,rgba(0,0,0,.30),rgba(0,0,0,0) 75%)\"></div><div style=\"position:absolute;right:86px;top:420px;text-align:right;font-weight:400;font-size:58px;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.4)\">Black Friday</div>",
+  "e2": "<div style=\"position:absolute;right:86px;top:495px;text-align:right;font-weight:300;font-size:58px;letter-spacing:.05em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.4)\">30% off sitewide</div>",
+  "e3": "<div style=\"position:absolute;right:86px;top:580px;text-align:right;font-weight:400;font-size:24px;letter-spacing:.22em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.4)\">No code needed</div>",
+  "leak": "<div style=\"position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 30%,rgba(255,244,214,.95),rgba(255,226,170,.65) 45%,rgba(255,210,150,.0) 85%)\"></div>"
+ }
+}

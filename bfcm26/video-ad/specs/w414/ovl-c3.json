@@ -1,0 +1,7 @@
+{
+ "items": {
+  "f1": "<div style=\"position:absolute;left:0;right:0;top:1120px;height:620px;background:linear-gradient(to bottom,rgba(20,16,12,0),rgba(20,16,12,.42) 35%,rgba(20,16,12,.42) 65%,rgba(20,16,12,0))\"></div><div style=\"position:absolute;left:100px;right:100px;top:1330px;text-align:center;font-weight:400;font-size:44px;line-height:1.25;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)\">Don't miss out<br>this year</div>",
+  "f2": "<div style=\"position:absolute;left:0;right:0;top:1120px;height:620px;background:linear-gradient(to bottom,rgba(20,16,12,0),rgba(20,16,12,.42) 35%,rgba(20,16,12,.42) 65%,rgba(20,16,12,0))\"></div><div style=\"position:absolute;left:100px;right:100px;top:1330px;text-align:center;font-weight:400;font-size:44px;line-height:1.25;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)\">30% off everything<br>for Black Friday</div>",
+  "end": "<div style=\"position:absolute;left:0;right:0;top:1120px;height:620px;background:linear-gradient(to bottom,rgba(20,16,12,0),rgba(20,16,12,.42) 35%,rgba(20,16,12,.42) 65%,rgba(20,16,12,0))\"></div><div style=\"position:absolute;left:0;right:0;top:1250px;display:flex;flex-direction:column;align-items:center;gap:26px;text-shadow:0 2px 14px rgba(0,0,0,.35)\"><img src=\"{{LOGO}}\" style=\"height:38px\"><span style=\"background:#fff;color:#141414;height:76px;padding:0 48px;display:inline-flex;align-items:center;font-size:21px;letter-spacing:.12em;text-shadow:none\">GRAB YOURS</span></div>"
+ }
+}

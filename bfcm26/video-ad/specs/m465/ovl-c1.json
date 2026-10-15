@@ -1,0 +1,8 @@
+{
+ "items": {
+  "f1": "<div style=\"position:absolute;left:90px;right:90px;top:1360px;text-align:center;font-weight:300;font-size:46px;line-height:1.25;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.45)\">The wait is over.</div>",
+  "f2": "<div style=\"position:absolute;left:90px;right:90px;top:1360px;text-align:center;font-weight:300;font-size:46px;line-height:1.25;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.45)\">Black Friday: 30% off everything, sitewide.</div>",
+  "f3": "<div style=\"position:absolute;left:90px;right:90px;top:1360px;text-align:center;font-weight:300;font-size:46px;line-height:1.25;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.45)\">Black Friday: 30% off everything, sitewide.</div><div style=\"position:absolute;left:0;right:0;top:1450px;display:flex;justify-content:center\"><span style=\"background:#fff;color:#141414;height:76px;padding:0 48px;display:inline-flex;align-items:center;font-size:21px;letter-spacing:.12em\">SHOP BLACK FRIDAY</span></div>",
+  "close": "<div style=\"position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px\"><img src=\"{{LOGO}}\" style=\"height:46px\"><div style=\"font-size:20px;letter-spacing:.24em;color:#cfcfcc\">BLACK FRIDAY \u00b7 30% OFF SITEWIDE</div></div>"
+ }
+}

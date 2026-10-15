@@ -1,0 +1,5 @@
+edit m1 C1143 2.0 0.8 k1
+edit m1 C1145 0.6 0.8 k2
+edit m1 C1147 0.4 0.8 k3
+edit m1 C1139 1.5 0.8 k4
+edit m1 C1141 7.8 0.9 k5
