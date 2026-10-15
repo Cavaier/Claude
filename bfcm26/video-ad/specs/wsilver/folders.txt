@@ -1,0 +1,16 @@
+Women RAW share folder ids (share 6eb9d8a6-060e-4b96-a2d8-3f37804d0c13), checked for SILVER 2x Duo (W429), 2026-10-15
+Women 3b7f212d-3aeb-43c7-b0f7-8120da6d9cc5
+S1  cbfb614e  IMAGE 0e3a7bc9 (769)  VIDEO bb8e1a0c (117)  -> silver CUFFS (two flat cuffs) + silver bar necklace, then black duo/necklace. No silver chains.
+S2  52d116c8  IMAGE 97e6c38f (466)  VIDEO 7f7bde09 (110)  -> gold
+S3  407534eb  IMAGE b28ab05b (1364) VIDEO 39a728de (103)  -> gold
+S4  05c3d8de  IMAGE 6465f018 (713)  VIDEO b5308f84 (100)  -> gold
+S5  5be603c9  IMAGE b5f5478a (697)  VIDEO c0e3b747 (101)  -> black duo
+S6  0f95ad90  IMAGE d156f166 (426)  VIDEO d1214fc9 (117)  -> black duo
+S7  99cc4b5e  IMAGE 912ed399 (234)  VIDEO a0b2065a (82)   -> black + gold (a few B&W edits of gold)
+S8  95c089e0  IMAGE 12a1a4c2 (1096) VIDEO ea24b4d5 (217)  -> gold + black
+S9  b8966965  Photo cebd631f (285)  Video aee4b3ae (61)   -> black duo
+S10 8ee1febf  Video 848d2d86 (334) -> gold / black
+S11 78bee79b  Video 83c4bd84: Gold 50e930b9 (73), Black 0714d83b (141)
+Iphone 5d6a2d1d (21) -> gold
+Result: no women's SILVER 2x Duo (box + square chain) anywhere on the RAW share.
+Tools: gql.js (lists a folder tree through the share GraphQL API incl. signed thumbnails), sample.py (contact sheets). Sheets: sheet_*.jpg
