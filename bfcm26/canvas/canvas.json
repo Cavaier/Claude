@@ -844,6 +844,86 @@
    "w": 1080,
    "x": 12220,
    "y": 4800
+  },
+  "Refs-W-IMIT.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, imitation statics) · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 14400
+  },
+  "W-IMIT-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, imitation statics) - C1 · Imagine your everyday gold (IM8 GLP-1 journey)",
+   "w": 1080,
+   "x": 9900,
+   "y": 14400
+  },
+  "W-IMIT-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, imitation statics) - C2 · 30% OFF hero word (IM8 Inter Miami)",
+   "w": 1080,
+   "x": 11060,
+   "y": 14400
+  },
+  "W-IMIT-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, imitation statics) - C3 · The gold you keep on (IM8 Starter Kit)",
+   "w": 1080,
+   "x": 12220,
+   "y": 14400
+  },
+  "W-IDEA-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, ideation statics) - C1 · Gift in the case (gold)",
+   "w": 1080,
+   "x": 9900,
+   "y": 12000
+  },
+  "W-IDEA-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, ideation statics) - C2 · Gift yourself first (silver)",
+   "w": 1080,
+   "x": 11060,
+   "y": 12000
+  },
+  "W-IDEA-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, ideation statics) - C3 · Three pieces. 30% off. (black macro)",
+   "w": 1080,
+   "x": 12220,
+   "y": 12000
+  },
+  "M-IDEA-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, ideation statics) - C1 · Two chains. One click. (fastening macro)",
+   "w": 1080,
+   "x": 500,
+   "y": 16800
+  },
+  "M-IDEA-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, ideation statics) - C2 · Unbox the duo (flat lay)",
+   "w": 1080,
+   "x": 1660,
+   "y": 16800
+  },
+  "M-IDEA-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, ideation statics) - C3 · Wear it daily. Pay 30% less. (macro)",
+   "w": 1080,
+   "x": 2820,
+   "y": 16800
   }
  },
  "createdOnFiles": {
@@ -857,7 +937,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 14:45\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\nRUNNING\n–\n\nDONE\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 16:10\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation + W Seedance video (from the W imitation statics) RUNNING\nRUNNING\n–\n\nDONE\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1218,6 +1298,30 @@
    "w": 240,
    "x": 14220,
    "y": -320
+  },
+  "copy-w-imit": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch (new, imitation statics) · ClickUp number pending\n\nW-IMIT · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (gold)\n\nPrimary text:\nThe gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.\n\nHeadline (≤27): Your everyday gold, 30% off   (27 chars)\nDescription (≤27): No code. Prices reduced.   (24 chars)\n\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her\n\nC1 · Imagine your everyday gold — copies IM8 \"Imagine Your GLP-1 Journey, Without the Side Effects\" (1.4M reach): wrist reaching in from one side, right-aligned stepped headline (last line lighter), row of claim chips, short body, CTA. Tests: benefit chips + \"for 30% less\" framing. Photo: Figma DSC00455 (gold, grey plaster wall).\nC2 · 30% off, one big word — copies IM8 \"Official Health Supplements Partner of INTER MIAMI.\" (640K): logo, two-line caps label, one giant word, CTA, big photo underneath. Tests: the offer as the hero word. Photo: Figma DSC00655 (gold, forearm over long hair), in its own rectangle y 760–1920.\nC3 · The gold you keep on — copies IM8 \"Claim Your FREE I·M·8 Starter Kit\" (811K): centred two-line headline with an italic second line over a full-bleed photo, product as the hero. Tests: minimal emotional line, no claims. Photo: Figma DSC00568 (gold, forearm shading her eyes, face partly hidden).",
+   "w": 600,
+   "x": 13380,
+   "y": 14400
+  },
+  "copy-w-idea": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch (new, ideation statics) · ClickUp number pending\n\nW-IDEA - women's Black Friday IDEATION batch (3x Minimal - Stack Set)\nCreative Origin: Ideation. Angle/Style: Black Friday. Offer: 30% off sitewide, no code needed (prices already reduced).\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code needed. The 3x Minimal - Stack Set is three separate pieces, a flat polished cuff bangle, a box chain and a square chain, in recycled 316L stainless steel. Waterproof, adjustable S/M/L, in black, silver or gold. Case included and free shipping, so it's ready to give, or to keep for yourself.\n\nHeadline (27 max): Black Friday: 30% off all   (25)\nDescription (27 max): Case included, ships free   (26)\n\nEU URL: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS URL: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nC1 - Gift in the case (gold): hands opening the black case with the gold stack inside, linen, ribbon and blank card. Text panel on top: \"A gift she can wear every day.\" Tests: gifting angle + \"case included\". Image prompt key: C1.\nC2 - Cosy self-gift (silver): wrist in an oatmeal knit sweater holding a mug, silver stack. Text below: \"This year, gift yourself first.\" Tests: self-gift angle. Image prompt key: C2b.\nC3 - Crisp macro, one line (black): side macro of the black stack on a bare wrist, bright white blur. One strong line: \"Three pieces. 30% off.\" Tests: product-first macro with a single offer line. Image prompt key: C3b.",
+   "w": 600,
+   "x": 13380,
+   "y": 12000
+  },
+  "copy-m-idea": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "M Batch (new, ideation statics) · ClickUp number pending\n\nM-IDEA (men's Black Friday IDEATION batch) - 2x Duo Minimal Set (silver)\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code needed. The prices are already reduced.\nThe 2x Duo Minimal Set pairs a box chain with a square chain in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included, free shipping.\n\nHeadline (16): The Duo, now 30% off\nDescription (24): No code needed. Ships free\n\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nC1 - Fastening moment: macro of fingers closing the box chain's clasp (tag hanging) next to the square chain; light top panel with \"Two chains. One click. Now 30% off.\" Tests a product-in-use / put-it-on moment.\nC2 - Black Friday unboxing: top-down flat lay of the two bracelets on pale linen with the open case in the corner; \"Unbox the duo for 30% less\" + \"Case included · Free shipping\". Tests a gift/unboxing angle.\nC3 - One line macro: extreme close-up of the duo on the wrist, light bottom panel with one strong line \"Wear it daily. Pay 30% less.\" Tests minimal macro + single-line offer.",
+   "w": 600,
+   "x": 3980,
+   "y": 16800
   }
  },
  "order": [
@@ -1329,7 +1433,17 @@
   "V-M-FM-C3.dc.html",
   "V-M-W409-C1.dc.html",
   "V-M-W409-C2.dc.html",
-  "V-M-W409-C3.dc.html"
+  "V-M-W409-C3.dc.html",
+  "Refs-W-IMIT.dc.html",
+  "W-IMIT-C1.dc.html",
+  "W-IMIT-C2.dc.html",
+  "W-IMIT-C3.dc.html",
+  "W-IDEA-C1.dc.html",
+  "W-IDEA-C2.dc.html",
+  "W-IDEA-C3.dc.html",
+  "M-IDEA-C1.dc.html",
+  "M-IDEA-C2.dc.html",
+  "M-IDEA-C3.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"

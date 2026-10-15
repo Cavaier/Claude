@@ -1,0 +1,15 @@
+W-IDEA - women's Black Friday IDEATION batch (3x Minimal - Stack Set)
+Creative Origin: Ideation. Angle/Style: Black Friday. Offer: 30% off sitewide, no code needed (prices already reduced).
+
+Primary text:
+Black Friday is here: 30% off sitewide, no code needed. The 3x Minimal - Stack Set is three separate pieces, a flat polished cuff bangle, a box chain and a square chain, in recycled 316L stainless steel. Waterproof, adjustable S/M/L, in black, silver or gold. Case included and free shipping, so it's ready to give, or to keep for yourself.
+
+Headline (27 max): Black Friday: 30% off all   (25)
+Description (27 max): Case included, ships free   (26)
+
+EU URL: https://cavaier.com/products/3x-minimal-stack-set-for-her
+US URL: https://us.cavaier.com/products/3x-minimal-stack-set-for-her
+
+C1 - Gift in the case (gold): hands opening the black case with the gold stack inside, linen, ribbon and blank card. Text panel on top: "A gift she can wear every day." Tests: gifting angle + "case included". Image prompt key: C1.
+C2 - Cosy self-gift (silver): wrist in an oatmeal knit sweater holding a mug, silver stack. Text below: "This year, gift yourself first." Tests: self-gift angle. Image prompt key: C2b.
+C3 - Crisp macro, one line (black): side macro of the black stack on a bare wrist, bright white blur. One strong line: "Three pieces. 30% off." Tests: product-first macro with a single offer line. Image prompt key: C3b.

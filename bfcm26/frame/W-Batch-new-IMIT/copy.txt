@@ -1,0 +1,14 @@
+W-IMIT · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (gold)
+
+Primary text:
+The gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.
+
+Headline (≤27): Your everyday gold, 30% off   (27 chars)
+Description (≤27): No code. Prices reduced.   (24 chars)
+
+EU: https://cavaier.com/products/2x-duo-minimal-set-for-her
+US: https://us.cavaier.com/products/2x-duo-minimal-set-for-her
+
+C1 · Imagine your everyday gold — copies IM8 "Imagine Your GLP-1 Journey, Without the Side Effects" (1.4M reach): wrist reaching in from one side, right-aligned stepped headline (last line lighter), row of claim chips, short body, CTA. Tests: benefit chips + "for 30% less" framing. Photo: Figma DSC00455 (gold, grey plaster wall).
+C2 · 30% off, one big word — copies IM8 "Official Health Supplements Partner of INTER MIAMI." (640K): logo, two-line caps label, one giant word, CTA, big photo underneath. Tests: the offer as the hero word. Photo: Figma DSC00655 (gold, forearm over long hair), in its own rectangle y 760–1920.
+C3 · The gold you keep on — copies IM8 "Claim Your FREE I·M·8 Starter Kit" (811K): centred two-line headline with an italic second line over a full-bleed photo, product as the hero. Tests: minimal emotional line, no claims. Photo: Figma DSC00568 (gold, forearm shading her eyes, face partly hidden).
