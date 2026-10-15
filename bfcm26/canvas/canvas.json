@@ -2,6 +2,54 @@
  "v": 3,
  "attachments": {},
  "boards": {
+  "M-IDEA-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 479 - C1 · Two chains. One click. (fastening macro)",
+   "w": 1080,
+   "x": 500,
+   "y": 16800
+  },
+  "M-IDEA-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 479 - C2 · Unbox the duo (flat lay)",
+   "w": 1080,
+   "x": 1660,
+   "y": 16800
+  },
+  "M-IDEA-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 479 - C3 · Wear it daily. Pay 30% less. (macro)",
+   "w": 1080,
+   "x": 2820,
+   "y": 16800
+  },
+  "M-IMIT-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 478 - C1 · Two chains. One wrist. (IM8 GLP-1 split photo)",
+   "w": 1080,
+   "x": 500,
+   "y": 19200
+  },
+  "M-IMIT-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 478 - C2 · The duo you never take off (IM8 GLP-1 journey chips)",
+   "w": 1080,
+   "x": 1660,
+   "y": 19200
+  },
+  "M-IMIT-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 478 - C3 · The silver duo is 30% OFF. (IM8 Inter Miami)",
+   "w": 1080,
+   "x": 2820,
+   "y": 19200
+  },
   "M445-C1.dc.html": {
    "h": 1920,
    "title": "M Batch 445 - C1 · The jewelry you never take off (gold duo) · FRAME ✓ · CLICKUP ✓",
@@ -204,6 +252,14 @@
    "x": 2820,
    "y": 0
   },
+  "Refs-M-IMIT.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 478 · IM8 refs",
+   "w": 420,
+   "x": 0,
+   "y": 19200
+  },
   "Refs-M445.dc.html": {
    "h": 1920,
    "title": "M Batch 445 · IM8 refs",
@@ -262,6 +318,14 @@
    "x": 0,
    "y": 4800
   },
+  "Refs-W-IMIT.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 425 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 14400
+  },
   "Refs-W415.dc.html": {
    "h": 1920,
    "is_interactive": true,
@@ -277,6 +341,30 @@
    "w": 420,
    "x": 9400,
    "y": 9600
+  },
+  "Refs-W429.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 16800
+  },
+  "Refs-W430.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 19200
+  },
+  "Refs-W431.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 · IM8 refs",
+   "w": 420,
+   "x": 9400,
+   "y": 21600
   },
   "Refs-WNA.dc.html": {
    "h": 1920,
@@ -677,6 +765,30 @@
    "x": 16540,
    "y": 9600
   },
+  "V-WIMIT-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 426 - C1 · from W Batch 425 C1 · FINAL 1080p · SOUND",
+   "w": 1080,
+   "x": 14220,
+   "y": 16800
+  },
+  "V-WIMIT-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 426 - C2 · from W Batch 425 C2 · FINAL 1080p · SOUND",
+   "w": 1080,
+   "x": 15380,
+   "y": 16800
+  },
+  "V-WIMIT-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 426 - C3 · from W Batch 425 C3 · FINAL 1080p · SOUND",
+   "w": 1080,
+   "x": 16540,
+   "y": 16800
+  },
   "V-WNA-C1.dc.html": {
    "h": 1920,
    "is_interactive": true,
@@ -724,6 +836,54 @@
    "w": 1080,
    "x": 16540,
    "y": 4800
+  },
+  "W-IDEA-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 428 - C1 · Gift in the case (gold)",
+   "w": 1080,
+   "x": 9900,
+   "y": 12000
+  },
+  "W-IDEA-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 428 - C2 · Gift yourself first (silver)",
+   "w": 1080,
+   "x": 11060,
+   "y": 12000
+  },
+  "W-IDEA-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 428 - C3 · Three pieces. 30% off. (black macro)",
+   "w": 1080,
+   "x": 12220,
+   "y": 12000
+  },
+  "W-IMIT-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 425 - C1 · Imagine your everyday gold (IM8 GLP-1 journey)",
+   "w": 1080,
+   "x": 9900,
+   "y": 14400
+  },
+  "W-IMIT-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 425 - C2 · 30% OFF hero word (IM8 Inter Miami)",
+   "w": 1080,
+   "x": 11060,
+   "y": 14400
+  },
+  "W-IMIT-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 425 - C3 · The gold you keep on (IM8 Starter Kit)",
+   "w": 1080,
+   "x": 12220,
+   "y": 14400
   },
   "W415-C1.dc.html": {
    "h": 1920,
@@ -797,6 +957,70 @@
    "x": 12220,
    "y": 9600
   },
+  "W429-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 - C1 · She chose silver (IM8 Inter Miami CF chose IM8)",
+   "w": 1080,
+   "x": 9900,
+   "y": 16800
+  },
+  "W429-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 - C2 · Black Friday, in silver (IM8 Limited-time 2026 deals)",
+   "w": 1080,
+   "x": 11060,
+   "y": 16800
+  },
+  "W429-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 429 - C3 · Built for every day (IM8 If it didn't work)",
+   "w": 1080,
+   "x": 12220,
+   "y": 16800
+  },
+  "W430-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 - C1 · Something you wear daily (IM8 Demands excellence)",
+   "w": 1080,
+   "x": 9900,
+   "y": 19200
+  },
+  "W430-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 - C2 · Black, made to last (IM8 Committed to better)",
+   "w": 1080,
+   "x": 11060,
+   "y": 19200
+  },
+  "W430-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 430 - C3 · Worn every day (IM8 They take it daily)",
+   "w": 1080,
+   "x": 12220,
+   "y": 19200
+  },
+  "W431-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 - C1 · All three, now 30% off (IM8 The team chose IM8)",
+   "w": 1080,
+   "x": 9900,
+   "y": 21600
+  },
+  "W431-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 431 - C3 · Wear them together (IM8 Pair it with Essentials)",
+   "w": 1080,
+   "x": 12220,
+   "y": 21600
+  },
   "WNA-C1.dc.html": {
    "h": 1920,
    "is_interactive": true,
@@ -844,238 +1068,6 @@
    "w": 1080,
    "x": 12220,
    "y": 4800
-  },
-  "Refs-W-IMIT.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 425 · IM8 refs",
-   "w": 420,
-   "x": 9400,
-   "y": 14400
-  },
-  "W-IMIT-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 425 - C1 · Imagine your everyday gold (IM8 GLP-1 journey)",
-   "w": 1080,
-   "x": 9900,
-   "y": 14400
-  },
-  "W-IMIT-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 425 - C2 · 30% OFF hero word (IM8 Inter Miami)",
-   "w": 1080,
-   "x": 11060,
-   "y": 14400
-  },
-  "W-IMIT-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 425 - C3 · The gold you keep on (IM8 Starter Kit)",
-   "w": 1080,
-   "x": 12220,
-   "y": 14400
-  },
-  "W-IDEA-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 428 - C1 · Gift in the case (gold)",
-   "w": 1080,
-   "x": 9900,
-   "y": 12000
-  },
-  "W-IDEA-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 428 - C2 · Gift yourself first (silver)",
-   "w": 1080,
-   "x": 11060,
-   "y": 12000
-  },
-  "W-IDEA-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 428 - C3 · Three pieces. 30% off. (black macro)",
-   "w": 1080,
-   "x": 12220,
-   "y": 12000
-  },
-  "M-IDEA-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 479 - C1 · Two chains. One click. (fastening macro)",
-   "w": 1080,
-   "x": 500,
-   "y": 16800
-  },
-  "M-IDEA-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 479 - C2 · Unbox the duo (flat lay)",
-   "w": 1080,
-   "x": 1660,
-   "y": 16800
-  },
-  "M-IDEA-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 479 - C3 · Wear it daily. Pay 30% less. (macro)",
-   "w": 1080,
-   "x": 2820,
-   "y": 16800
-  },
-  "Refs-M-IMIT.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 478 · IM8 refs",
-   "w": 420,
-   "x": 0,
-   "y": 19200
-  },
-  "M-IMIT-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 478 - C1 · Two chains. One wrist. (IM8 GLP-1 split photo)",
-   "w": 1080,
-   "x": 500,
-   "y": 19200
-  },
-  "M-IMIT-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 478 - C2 · The duo you never take off (IM8 GLP-1 journey chips)",
-   "w": 1080,
-   "x": 1660,
-   "y": 19200
-  },
-  "M-IMIT-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "M Batch 478 - C3 · The silver duo is 30% OFF. (IM8 Inter Miami)",
-   "w": 1080,
-   "x": 2820,
-   "y": 19200
-  },
-  "V-WIMIT-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 426 - C1 · from W Batch 425 C1 · FINAL 1080p · SOUND",
-   "w": 1080,
-   "x": 14220,
-   "y": 16800
-  },
-  "V-WIMIT-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 426 - C2 · from W Batch 425 C2 · FINAL 1080p · SOUND",
-   "w": 1080,
-   "x": 15380,
-   "y": 16800
-  },
-  "V-WIMIT-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 426 - C3 · from W Batch 425 C3 · FINAL 1080p · SOUND",
-   "w": 1080,
-   "x": 16540,
-   "y": 16800
-  },
-  "Refs-W429.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 429 · IM8 refs",
-   "w": 420,
-   "x": 9400,
-   "y": 16800
-  },
-  "W429-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 429 - C1 · She chose silver (IM8 Inter Miami CF chose IM8)",
-   "w": 1080,
-   "x": 9900,
-   "y": 16800
-  },
-  "W429-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 429 - C2 · Black Friday, in silver (IM8 Limited-time 2026 deals)",
-   "w": 1080,
-   "x": 11060,
-   "y": 16800
-  },
-  "W429-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 429 - C3 · Built for every day (IM8 If it didn't work)",
-   "w": 1080,
-   "x": 12220,
-   "y": 16800
-  },
-  "Refs-W430.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 430 · IM8 refs",
-   "w": 420,
-   "x": 9400,
-   "y": 19200
-  },
-  "W430-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 430 - C1 · Something you wear daily (IM8 Demands excellence)",
-   "w": 1080,
-   "x": 9900,
-   "y": 19200
-  },
-  "W430-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 430 - C2 · Black, made to last (IM8 Committed to better)",
-   "w": 1080,
-   "x": 11060,
-   "y": 19200
-  },
-  "W430-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 430 - C3 · Worn every day (IM8 They take it daily)",
-   "w": 1080,
-   "x": 12220,
-   "y": 19200
-  },
-  "Refs-W431.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 431 · IM8 refs",
-   "w": 420,
-   "x": 9400,
-   "y": 21600
-  },
-  "W431-C1.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 431 - C1 · All three, now 30% off (IM8 The team chose IM8)",
-   "w": 1080,
-   "x": 9900,
-   "y": 21600
-  },
-  "W431-C2.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 431 - C2 · One stack, three pieces (IM8 The bloat dissolving)",
-   "w": 1080,
-   "x": 11060,
-   "y": 21600
-  },
-  "W431-C3.dc.html": {
-   "h": 1920,
-   "is_interactive": true,
-   "title": "W Batch 431 - C3 · Wear them together (IM8 Pair it with Essentials)",
-   "w": 1080,
-   "x": 12220,
-   "y": 21600
   }
  },
  "createdOnFiles": {
@@ -1089,7 +1081,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 19:30\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\n81. chat: \"batch names ready in ClickUp\" → DONE: W425 imitation statics · W426 Seedance video · W427 Frame Method · W428 ideation statics · M478 imitation statics · M479 ideation statics · M480 Frame Method · M481 W409-style video\n82. chat: \"push frame and clickup W425, W426, M481, M478, W427, W414\" → DONE 19:58: Frame.io 36/36 clean (EN + No Text) · ClickUp copy, fields, row comments (M478 C1 comment not posted) · mothers to \"ads for review\" (W414 stays \"ready for edit\")\n83. chat: \"URLs in the ad rows with the ad's color variant, not on the mother\" → DONE: 18 rows got variant links (W425/426/414 gold duo, W427 black duo, M478/481 silver duo), mother URL fields cleared; W414 corrected from stack to duo (rule)\n84. chat: \"3 new batches same as W425, Black Friday\" → DONE: W429 silver duo (y16800), W430 black duo (y19200), W431 gold 3x stack (y21600), ROAS ✓; 3 ClickUp \"W Batch\" tasks created (Editor Eli, IMAGE)\nRUNNING\n–\n\nDONE\n✓ W429, W430, W431 women's imitation statics on the canvas\n✓ 19:58 W425, W426, W427, W414, M478, M481 delivered (ClickUp + Frame.io 36/36)\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 19:30\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\n81. chat: \"batch names ready in ClickUp\" → DONE: W425 imitation statics · W426 Seedance video · W427 Frame Method · W428 ideation statics · M478 imitation statics · M479 ideation statics · M480 Frame Method · M481 W409-style video\n82. chat: \"push frame and clickup W425, W426, M481, M478, W427, W414\" → DONE 19:58: Frame.io 36/36 clean (EN + No Text) · ClickUp copy, fields, row comments (M478 C1 comment not posted) · mothers to \"ads for review\" (W414 stays \"ready for edit\")\n83. chat: \"URLs in the ad rows with the ad's color variant, not on the mother\" → DONE: 18 rows got variant links (W425/426/414 gold duo, W427 black duo, M478/481 silver duo), mother URL fields cleared; W414 corrected from stack to duo (rule)\n84. chat: \"3 new batches same as W425, Black Friday\" → DONE: W429 silver duo (y16800), W430 black duo (y19200), W431 gold 3x stack (y21600), ROAS ✓; 3 ClickUp \"W Batch\" tasks created (Editor Eli, IMAGE)\n85. chat: \"W429 C1+C2 images not good · W431 C2 deleted, need better · video versions of W430\" → RUNNING: W429 C1+C2 new silver images DONE ✓ · W431 new C2 (new IM8 ref + photo) · W430 videos (drafts with sound → 1080p), new ClickUp \"W Batch\" VIDEO task\nRUNNING\n–\n\nDONE\n✓ W429, W430, W431 women's imitation statics on the canvas\n✓ 19:58 W425, W426, W427, W414, M478, M481 delivered (ClickUp + Frame.io 36/36)\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1108,6 +1100,22 @@
    "w": 600,
    "x": 8300,
    "y": 4800
+  },
+  "copy-m-idea": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "M Batch 479\n\nM Batch 479 (men's Black Friday IDEATION batch) - 2x Duo Minimal Set (silver)\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code needed. The prices are already reduced.\nThe 2x Duo Minimal Set pairs a box chain with a square chain in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included, free shipping.\n\nHeadline (16): The Duo, now 30% off\nDescription (24): No code needed. Ships free\n\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nC1 - Fastening moment: macro of fingers closing the box chain's clasp (tag hanging) next to the square chain; light top panel with \"Two chains. One click. Now 30% off.\" Tests a product-in-use / put-it-on moment.\nC2 - Black Friday unboxing: top-down flat lay of the two bracelets on pale linen with the open case in the corner; \"Unbox the duo for 30% less\" + \"Case included · Free shipping\". Tests a gift/unboxing angle.\nC3 - One line macro: extreme close-up of the duo on the wrist, light bottom panel with one strong line \"Wear it daily. Pay 30% less.\" Tests minimal macro + single-line offer.",
+   "w": 600,
+   "x": 3980,
+   "y": 16800
+  },
+  "copy-m-imit": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "M Batch 478\n\nM Batch 478 · Men · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)\n\nPRIMARY TEXT\nTwo chains, one wrist: a box chain and a square chain with a small tag, made to be worn together every day.\nThis Black Friday, everything on the site is 30% off. The prices are already reduced, no code needed.\nRecycled 316L stainless steel. Waterproof, sweat and heat resistant. Adjustable S/M/L, case included, free shipping.\n\nHEADLINE (27 max)\nThe duo, 30% lighter        (20 chars)\n\nDESCRIPTION (27 max)\nAlready reduced. No code.   (25 chars)\n\nLANDING PAGES\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCONCEPTS\nC1 · Two chains, one wrist. Imitates the IM8 split-photo ad (\"He Lost 40 Pounds on His GLP-1\", ad 029b851e): two photos side by side, centred two-weight headline, boxed statement line, body + CTA at the bottom. Tests the split two-photo comparison layout for the duo. Photos: DSC02557 (beach wrist) + DSC02516 (forearm over linen).\nC2 · The duo you never take off, now 30% lighter on price. Imitates the IM8 \"Imagine Your GLP-1 Journey\" ad (399c6846): photo on top, right-aligned two-tone headline, benefit chips, one body line, CTA block. Tests a claims-led layout (waterproof, 316L, S/M/L, case, free shipping). Photo: DSC02610 (wrist at linen shorts).\nC3 · The silver duo for every day is 30% off. Imitates the IM8 \"Official health supplements partner of Inter Miami\" ad (d7c9ae41): logo lockup top left, left-aligned headline with an oversized last line, CTA, full-width photo below. Tests a big-number offer headline. Photo: DSC02724 (hand on shoulder, sea and sky).\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/029b851e7a03c489597a297c321c1f5efb355f168932a1605f90210ec63cf64b.jpg\nref2 https://medias.trendtrack.io/facebook/image/399c68464bd551764a05156dc0a8c9824b96c03fd0e523784897264a680c3125.jpg\nref3 https://medias.trendtrack.io/facebook/image/d7c9ae41ec476d260272f93bf4ee18ac87db0306ccbe1f3957e38be25b9e36d1.jpg",
+   "w": 600,
+   "x": 3980,
+   "y": 19200
   },
   "copy-m445": {
    "fill": "gray",
@@ -1261,6 +1269,22 @@
    "x": 8300,
    "y": 12000
   },
+  "copy-w-idea": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 428\n\nW Batch 428 · women's Black Friday IDEATION batch (3x Minimal - Stack Set)\nCreative Origin: Ideation. Angle/Style: Black Friday. Offer: 30% off sitewide, no code needed (prices already reduced).\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code needed. The 3x Minimal - Stack Set is three separate pieces, a flat polished cuff bangle, a box chain and a square chain, in recycled 316L stainless steel. Waterproof, adjustable S/M/L, in black, silver or gold. Case included and free shipping, so it's ready to give, or to keep for yourself.\n\nHeadline (27 max): Black Friday: 30% off all   (25)\nDescription (27 max): Case included, ships free   (26)\n\nEU URL: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS URL: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nC1 - Gift in the case (gold): hands opening the black case with the gold stack inside, linen, ribbon and blank card. Text panel on top: \"A gift she can wear every day.\" Tests: gifting angle + \"case included\". Image prompt key: C1.\nC2 - Cosy self-gift (silver): wrist in an oatmeal knit sweater holding a mug, silver stack. Text below: \"This year, gift yourself first.\" Tests: self-gift angle. Image prompt key: C2b.\nC3 - Crisp macro, one line (black): side macro of the black stack on a bare wrist, bright white blur. One strong line: \"Three pieces. 30% off.\" Tests: product-first macro with a single offer line. Image prompt key: C3b.",
+   "w": 600,
+   "x": 13380,
+   "y": 12000
+  },
+  "copy-w-imit": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 425\n\nW Batch 425 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (gold)\n\nPrimary text:\nThe gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.\n\nHeadline (≤27): Your everyday gold, 30% off   (27 chars)\nDescription (≤27): No code. Prices reduced.   (24 chars)\n\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her\n\nC1 · Imagine your everyday gold — copies IM8 \"Imagine Your GLP-1 Journey, Without the Side Effects\" (1.4M reach): wrist reaching in from one side, right-aligned stepped headline (last line lighter), row of claim chips, short body, CTA. Tests: benefit chips + \"for 30% less\" framing. Photo: Figma DSC00455 (gold, grey plaster wall).\nC2 · 30% off, one big word — copies IM8 \"Official Health Supplements Partner of INTER MIAMI.\" (640K): logo, two-line caps label, one giant word, CTA, big photo underneath. Tests: the offer as the hero word. Photo: Figma DSC00655 (gold, forearm over long hair), in its own rectangle y 760–1920.\nC3 · The gold you keep on — copies IM8 \"Claim Your FREE I·M·8 Starter Kit\" (811K): centred two-line headline with an italic second line over a full-bleed photo, product as the hero. Tests: minimal emotional line, no claims. Photo: Figma DSC00568 (gold, forearm shading her eyes, face partly hidden).",
+   "w": 600,
+   "x": 13380,
+   "y": 14400
+  },
   "copy-w414": {
    "fill": "gray",
    "maxH": 1920,
@@ -1317,6 +1341,30 @@
    "x": 13380,
    "y": 9600
   },
+  "copy-w429": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 429 · ad copy (Black Friday, women · Imitation)\n\nW Batch 429 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)\n\nPrimary text:\nBlack Friday is on: everything at Cavaier is 30% off, the silver duo included. A box chain and a square chain with a small tag, made from recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, with the case included. The reduced prices are already on the site, so there is no code to enter. Free shipping.\n\nHeadline (≤27): Silver duo, now 30% off   (23 chars)\nDescription (≤27): Already reduced. No code.   (25 chars)\n\nEU (C1–C3 rows, silver Medium): https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776990554\nUS (C1–C3 rows, silver Medium): https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698420025\n\nC1 · She chose silver — copies IM8 \"INTER MIAMI CF CHOSE IM8.\" (ad facebook_1500947051491931, 2.2M reach): flat light panel on top with a centred logo, a giant two-line statement and one small square CTA (\"SEE WHY →\"), the photo filling the lower half. Tests: a short \"choice\" statement with the offer only in the small label. Photo: photos/w_silver_duo_linen_gen_c1.jpg, generated (OpenAI gpt-image-2.5-sunburst) from the real silver product photo (Shopify 12616-532) plus the Cavaier look reference: slim wrist resting on pale linen, box chain and square chain crossing, cool overcast macro. Replaces the rejected _DSC9909 crop.\nC2 · Black Friday, in silver — copies IM8 \"Limited-Time 2026 Deals\" (ad facebook_1269344155273308, 1.1M reach; 9:16 version facebook_2078803486280161): centred two-line title + one-line subline, the product in the middle with a round black \"NOW 30% OFF\" badge overlapping it, a row of four benefit icons underneath (waterproof, recycled 316L, adjustable S/M/L, case included). Tests: offer badge + claims icon row. Photo: photos/w_silver_duo_plaster_gen_c2.jpg, generated (OpenAI gpt-image-2.5-sunburst) from the real silver product photo (Shopify 12616-532) plus the Cavaier look reference: wrist against a soft light plaster wall, the two chains side by side, cool overcast macro. Replaces the rejected _DSC9909 crop.\nC3 · Built for every day — copies IM8 \"IF IT DIDN'T WORK, THE SQUAD WOULDN'T TAKE IT.\" (ad facebook_1504282788010848, 919K reach): centred logo, three-line statement, short body, CTA, the product filling the lower half. Tests: an everyday-wear argument paired with the Black Friday price. Photo: Shopify listing image 12616-532.png (Silver variant featured image, https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-532.png), box chain and square chain crossing on a bare wrist, light grey background.\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/2cd09cd43287db4b2806ecf07a0acb1888cae143c0d06ad05cc24594012b8bbe.jpg\nref2 https://medias.trendtrack.io/facebook/image/1a7db95f122e188741e5c45103d68b32583fa7ae44046ffc2e2e9207f95b4a73.jpg  (9:16 of the square b7a1bcfd4c857e776b036591ffeedb4d9ed85dc2bfbbe91951ae141fa95cc8ab)\nref3 https://medias.trendtrack.io/facebook/image/3265cd1053ceaa84f4a397e69078fd1f94f7a4eb38797ffa2a5802f5d39634ae.jpg\n\nPHOTO NOTE: Figma has no further usable women's SILVER 2x duo photos, so C1 and C2 use images generated from the real product photo (Shopify 12616-532, exact chains) with the Cavaier look reference (look only). Each image was checked at full size: exactly two chains, one box chain and one square chain. C3 keeps the real Shopify photo 12616-532. The three Cs show three different scenes. Prompts: work/prompts.json (c1a for C1, c2a for C2), script: work/gen.py.",
+   "w": 600,
+   "x": 13380,
+   "y": 16800
+  },
+  "copy-w430": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 430 · ad copy (Black Friday, women · Imitation)\n\nW Batch 430 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (black)\n\nPrimary text:\nBlack Friday is here: everything at Cavaier is 30% off, already reduced on the site, so there is no code to enter. The 2x Duo Minimal Set in black pairs a box chain with a square chain and a small tag, in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, case included. Free shipping.\n\nHeadline (≤27): The black duo, 30% off   (22 chars)\nDescription (≤27): Sitewide. No code to enter.   (27 chars)\n\nLanding pages (row level, black, size Medium):\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\n\nC1 · Something you wear daily — copies IM8 \"INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.\" (694K reach, ad 1341394771214267): light top block, logo top left, two-line caps statement in a light weight, one larger caps line, CTA at the left with a small red \"no code needed\", wide photo filling the lower half. Tests: the offer stated plainly as the bigger line under a daily-wear statement. Photo: Figma \"Batch 83 - C5 (No Text) 1\" (node 1586:1240, black duo on a sun-warmed wrist resting on sandy rock).\nC2 · Black, made to last — copies IM8 \"We're Committed to Better\" (544K, ad 1776610703008574): soft glow background, centred caps headline over a short claim body, three products standing side by side with the centre one taller, centred CTA (logo added under the CTA). Tests: material and durability claims (recycled 316L, waterproof, sweat and heat resistant) on three looks of the same duo. Photos (tight crops): \"Batch 83 - C4 (No Text) 1\" (node 1586:1239, wrist in sun, face cropped out), DSC08723 (node 312:16, wrist against pale plaster), \"Batch 83 - C3 (No Text) 1\" (node 1586:1238, wrist against the sky).\nC3 · Worn every day — copies IM8 \"INTER MIAMI CF / They Take It Daily. So Can You.\" (474K): big caps line over the top of the photo, product mid-frame, light card with logo, two-line headline, body and CTA. Tests: daily-wear habit + offer card. Photo: Figma \"Batch 83 - C3 (No Text) 1\" (node 1586:1238, raised wrist against a soft blue sky, face blurred behind the hand).\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/d7c597079343e4c03e7977ef717155ecbbdc04c237251181747c32e8ae2ebdfe.jpg   (ad facebook_1341394771214267, \"INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.\", 693,648 reach)\nref2 https://medias.trendtrack.io/facebook/image/64a9973a0df15f2981c90ccf0bdf9b18b2986864924852c0c30b9081e1352488.jpg   (ad facebook_1776610703008574, \"We're Committed to Better\", 543,921 reach)\nref3 https://medias.trendtrack.io/facebook/image/979eb8143b4471d8f5fa4ea463d949d3a0ccb24bad9c74cddc30e9ecfc2623b0.jpg   (ad facebook_1328555355850206, \"INTER MIAMI CF · They Take It Daily. So Can You.\", 474,407 reach)",
+   "w": 600,
+   "x": 13380,
+   "y": 19200
+  },
+  "copy-w431": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 431 · ad copy (Black Friday, women · Imitation)\n\nW Batch 431 · Women · Black Friday · Imitation (IM8 Health) · 3x Minimal - Stack Set (gold)\n\nPrimary text:\nBlack Friday is here, and the gold 3x Minimal Stack is 30% off. A flat polished cuff bangle, a box chain and a square chain: three separate pieces, made to be worn together or on their own. Recycled 316L stainless steel, waterproof, sweat and heat resistant, adjustable S/M/L, case included. The prices on the site are already reduced, so no code is needed. Free shipping.\n\nHeadline (≤27): Three gold pieces, 30% off   (26 chars)\nDescription (≤27): Rated 4.5 on Trustpilot   (23 chars)\n\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\n(Row-level URLs, gold, size Medium, same for C1–C3.)\n\nC1 · All three, now 30% off — copies IM8 \"The team chose IM8\" (facebook_26685521724440232, 515K reach; https://medias.trendtrack.io/facebook/image/6d093eacee1c51031d29a0c36c11b86174a0dadbbb2d7b7b4abdebe5bee0c646.jpg): logo centred on top, oversized two-line headline with the second line pushed right, full-bleed photo, small label + single CTA low in the frame. Tests: the offer as a short, confident statement over a quiet lifestyle shot. Photo: Figma 3152:126 (gold stack on a wrist resting on white linen).\nC2 · One stack, three pieces — copies IM8 \"The bloat dissolving\" (facebook_2088802291738767, 499K reach; https://medias.trendtrack.io/facebook/image/907bddcfa384b4ca7d39878c75f3c83e54c903dca9b44cc7ddd7e010b8aecade.png): headline + subline top left, a row of three panels with chevron labels (before / ritual / reset becomes the cuff / + square chain / + box chain), CTA, rating band, product hero. Tests: explaining the 3-piece build step by step + social proof. Photos: Figma 3446:490 (wet wrist, cropped into the three panels) and 3446:362 (hero, fingers under the stack).\nC3 · Wear them together — copies IM8 \"Pair it with Essentials\" (facebook_1365191991880821, 487K reach; https://medias.trendtrack.io/facebook/image/cc969c1aab4a483f835c57dbd1a95e534aef5ced5b02e530eaa1cdda8020eb9a.jpg): centred headline + caps subline, a tall product image in the middle, two feature columns either side (title, tag, divided lines), CTA. Tests: a clean spec/benefit layout split into the cuff and the chains. Photo: Figma 3603:65 (forearm in soft window light).",
+   "w": 600,
+   "x": 13380,
+   "y": 21600
+  },
   "copy-wfm": {
    "fill": "gray",
    "maxH": 1920,
@@ -1324,6 +1372,14 @@
    "w": 600,
    "x": 17700,
    "y": 14400
+  },
+  "copy-wimit-video": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch 426\n\nVideos of the W Batch 425 statics: each static animated with gentle slow motion, 5 s, 1080p, with sound. On C2 only the photo moves inside its frame; the 30% OFF panel stays still. The statics stay live as their own ads.\n\nPRIMARY TEXT\nThe gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.\nHEADLINE: Your everyday gold, 30% off\nDESCRIPTION: No code. Prices reduced.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her\n\nCREATIVES\nC1 Imagine your everyday gold (IM8 GLP-1 journey layout)\nC2 Black Friday on the gold duo: 30% OFF. (IM8 Inter Miami layout)\nC3 The gold you keep on is now 30% off (IM8 Starter Kit layout)",
+   "w": 600,
+   "x": 17700,
+   "y": 16800
   },
   "copy-wna": {
    "fill": "gray",
@@ -1451,69 +1507,19 @@
    "x": 14220,
    "y": -320
   },
-  "copy-w-imit": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 425\n\nW Batch 425 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (gold)\n\nPrimary text:\nThe gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.\n\nHeadline (≤27): Your everyday gold, 30% off   (27 chars)\nDescription (≤27): No code. Prices reduced.   (24 chars)\n\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her\n\nC1 · Imagine your everyday gold — copies IM8 \"Imagine Your GLP-1 Journey, Without the Side Effects\" (1.4M reach): wrist reaching in from one side, right-aligned stepped headline (last line lighter), row of claim chips, short body, CTA. Tests: benefit chips + \"for 30% less\" framing. Photo: Figma DSC00455 (gold, grey plaster wall).\nC2 · 30% off, one big word — copies IM8 \"Official Health Supplements Partner of INTER MIAMI.\" (640K): logo, two-line caps label, one giant word, CTA, big photo underneath. Tests: the offer as the hero word. Photo: Figma DSC00655 (gold, forearm over long hair), in its own rectangle y 760–1920.\nC3 · The gold you keep on — copies IM8 \"Claim Your FREE I·M·8 Starter Kit\" (811K): centred two-line headline with an italic second line over a full-bleed photo, product as the hero. Tests: minimal emotional line, no claims. Photo: Figma DSC00568 (gold, forearm shading her eyes, face partly hidden).",
-   "w": 600,
-   "x": 13380,
-   "y": 14400
-  },
-  "copy-w-idea": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 428\n\nW Batch 428 · women's Black Friday IDEATION batch (3x Minimal - Stack Set)\nCreative Origin: Ideation. Angle/Style: Black Friday. Offer: 30% off sitewide, no code needed (prices already reduced).\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code needed. The 3x Minimal - Stack Set is three separate pieces, a flat polished cuff bangle, a box chain and a square chain, in recycled 316L stainless steel. Waterproof, adjustable S/M/L, in black, silver or gold. Case included and free shipping, so it's ready to give, or to keep for yourself.\n\nHeadline (27 max): Black Friday: 30% off all   (25)\nDescription (27 max): Case included, ships free   (26)\n\nEU URL: https://cavaier.com/products/3x-minimal-stack-set-for-her\nUS URL: https://us.cavaier.com/products/3x-minimal-stack-set-for-her\n\nC1 - Gift in the case (gold): hands opening the black case with the gold stack inside, linen, ribbon and blank card. Text panel on top: \"A gift she can wear every day.\" Tests: gifting angle + \"case included\". Image prompt key: C1.\nC2 - Cosy self-gift (silver): wrist in an oatmeal knit sweater holding a mug, silver stack. Text below: \"This year, gift yourself first.\" Tests: self-gift angle. Image prompt key: C2b.\nC3 - Crisp macro, one line (black): side macro of the black stack on a bare wrist, bright white blur. One strong line: \"Three pieces. 30% off.\" Tests: product-first macro with a single offer line. Image prompt key: C3b.",
-   "w": 600,
-   "x": 13380,
-   "y": 12000
-  },
-  "copy-m-idea": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 479\n\nM Batch 479 (men's Black Friday IDEATION batch) - 2x Duo Minimal Set (silver)\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code needed. The prices are already reduced.\nThe 2x Duo Minimal Set pairs a box chain with a square chain in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included, free shipping.\n\nHeadline (16): The Duo, now 30% off\nDescription (24): No code needed. Ships free\n\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nC1 - Fastening moment: macro of fingers closing the box chain's clasp (tag hanging) next to the square chain; light top panel with \"Two chains. One click. Now 30% off.\" Tests a product-in-use / put-it-on moment.\nC2 - Black Friday unboxing: top-down flat lay of the two bracelets on pale linen with the open case in the corner; \"Unbox the duo for 30% less\" + \"Case included · Free shipping\". Tests a gift/unboxing angle.\nC3 - One line macro: extreme close-up of the duo on the wrist, light bottom panel with one strong line \"Wear it daily. Pay 30% less.\" Tests minimal macro + single-line offer.",
-   "w": 600,
-   "x": 3980,
-   "y": 16800
-  },
-  "copy-m-imit": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "M Batch 478\n\nM Batch 478 · Men · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)\n\nPRIMARY TEXT\nTwo chains, one wrist: a box chain and a square chain with a small tag, made to be worn together every day.\nThis Black Friday, everything on the site is 30% off. The prices are already reduced, no code needed.\nRecycled 316L stainless steel. Waterproof, sweat and heat resistant. Adjustable S/M/L, case included, free shipping.\n\nHEADLINE (27 max)\nThe duo, 30% lighter        (20 chars)\n\nDESCRIPTION (27 max)\nAlready reduced. No code.   (25 chars)\n\nLANDING PAGES\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCONCEPTS\nC1 · Two chains, one wrist. Imitates the IM8 split-photo ad (\"He Lost 40 Pounds on His GLP-1\", ad 029b851e): two photos side by side, centred two-weight headline, boxed statement line, body + CTA at the bottom. Tests the split two-photo comparison layout for the duo. Photos: DSC02557 (beach wrist) + DSC02516 (forearm over linen).\nC2 · The duo you never take off, now 30% lighter on price. Imitates the IM8 \"Imagine Your GLP-1 Journey\" ad (399c6846): photo on top, right-aligned two-tone headline, benefit chips, one body line, CTA block. Tests a claims-led layout (waterproof, 316L, S/M/L, case, free shipping). Photo: DSC02610 (wrist at linen shorts).\nC3 · The silver duo for every day is 30% off. Imitates the IM8 \"Official health supplements partner of Inter Miami\" ad (d7c9ae41): logo lockup top left, left-aligned headline with an oversized last line, CTA, full-width photo below. Tests a big-number offer headline. Photo: DSC02724 (hand on shoulder, sea and sky).\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/029b851e7a03c489597a297c321c1f5efb355f168932a1605f90210ec63cf64b.jpg\nref2 https://medias.trendtrack.io/facebook/image/399c68464bd551764a05156dc0a8c9824b96c03fd0e523784897264a680c3125.jpg\nref3 https://medias.trendtrack.io/facebook/image/d7c9ae41ec476d260272f93bf4ee18ac87db0306ccbe1f3957e38be25b9e36d1.jpg",
-   "w": 600,
-   "x": 3980,
-   "y": 19200
-  },
-  "copy-wimit-video": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 426\n\nVideos of the W Batch 425 statics: each static animated with gentle slow motion, 5 s, 1080p, with sound. On C2 only the photo moves inside its frame; the 30% OFF panel stays still. The statics stay live as their own ads.\n\nPRIMARY TEXT\nThe gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.\nHEADLINE: Your everyday gold, 30% off\nDESCRIPTION: No code. Prices reduced.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her\n\nCREATIVES\nC1 Imagine your everyday gold (IM8 GLP-1 journey layout)\nC2 Black Friday on the gold duo: 30% OFF. (IM8 Inter Miami layout)\nC3 The gold you keep on is now 30% off (IM8 Starter Kit layout)",
-   "w": 600,
-   "x": 17700,
-   "y": 16800
-  },
-  "copy-w429": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 429 · ad copy (Black Friday, women · Imitation)\n\nW Batch 429 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)\n\nPrimary text:\nBlack Friday is on: everything at Cavaier is 30% off, the silver duo included. A box chain and a square chain with a small tag, made from recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, with the case included. The reduced prices are already on the site, so there is no code to enter. Free shipping.\n\nHeadline (≤27): Silver duo, now 30% off   (23 chars)\nDescription (≤27): Already reduced. No code.   (25 chars)\n\nEU (C1–C3 rows, silver Medium): https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776990554\nUS (C1–C3 rows, silver Medium): https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698420025\n\nC1 · She chose silver — copies IM8 \"INTER MIAMI CF CHOSE IM8.\" (ad facebook_1500947051491931, 2.2M reach): flat light panel on top with a centred logo, a giant two-line statement and one small square CTA (\"SEE WHY →\"), the photo filling the lower half. Tests: a short \"choice\" statement with the offer only in the small label. Photo: Figma _DSC9909 (Static Ads 1 > Women, node 306:115), tight macro crop of the two silver chains on a forearm.\nC2 · Black Friday, in silver — copies IM8 \"Limited-Time 2026 Deals\" (ad facebook_1269344155273308, 1.1M reach; 9:16 version facebook_2078803486280161): centred two-line title + one-line subline, the product in the middle with a round black \"NOW 30% OFF\" badge overlapping it, a row of four benefit icons underneath (waterproof, recycled 316L, adjustable S/M/L, case included). Tests: offer badge + claims icon row. Photo: Figma _DSC9909 (node 306:115), wide crop of the forearm (same shot as C1, different crop).\nC3 · Built for every day — copies IM8 \"IF IT DIDN'T WORK, THE SQUAD WOULDN'T TAKE IT.\" (ad facebook_1504282788010848, 919K reach): centred logo, three-line statement, short body, CTA, the product filling the lower half. Tests: an everyday-wear argument paired with the Black Friday price. Photo: Shopify listing image 12616-532.png (Silver variant featured image, https://cdn.shopify.com/s/files/1/0112/3631/1106/files/12616-532.png), box chain and square chain crossing on a bare wrist, light grey background.\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/2cd09cd43287db4b2806ecf07a0acb1888cae143c0d06ad05cc24594012b8bbe.jpg\nref2 https://medias.trendtrack.io/facebook/image/1a7db95f122e188741e5c45103d68b32583fa7ae44046ffc2e2e9207f95b4a73.jpg  (9:16 of the square b7a1bcfd4c857e776b036591ffeedb4d9ed85dc2bfbbe91951ae141fa95cc8ab)\nref3 https://medias.trendtrack.io/facebook/image/3265cd1053ceaa84f4a397e69078fd1f94f7a4eb38797ffa2a5802f5d39634ae.jpg\n\nPHOTO NOTE: only two genuine colour photos of the women's SILVER 2x duo exist (Figma _DSC9909; Shopify 12616-532). Static Ads 2 silver women's frames all show the 3x stack (cuff + two chains). C1 and C2 share _DSC9909 in different crops; C2 and C3 use different shots.",
-   "w": 600,
-   "x": 13380,
-   "y": 16800
-  },
-  "copy-w430": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 430 · ad copy (Black Friday, women · Imitation)\n\nW Batch 430 · Women · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (black)\n\nPrimary text:\nBlack Friday is here: everything at Cavaier is 30% off, already reduced on the site, so there is no code to enter. The 2x Duo Minimal Set in black pairs a box chain with a square chain and a small tag, in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, case included. Free shipping.\n\nHeadline (≤27): The black duo, 30% off   (22 chars)\nDescription (≤27): Sitewide. No code to enter.   (27 chars)\n\nLanding pages (row level, black, size Medium):\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\n\nC1 · Something you wear daily — copies IM8 \"INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.\" (694K reach, ad 1341394771214267): light top block, logo top left, two-line caps statement in a light weight, one larger caps line, CTA at the left with a small red \"no code needed\", wide photo filling the lower half. Tests: the offer stated plainly as the bigger line under a daily-wear statement. Photo: Figma \"Batch 83 - C5 (No Text) 1\" (node 1586:1240, black duo on a sun-warmed wrist resting on sandy rock).\nC2 · Black, made to last — copies IM8 \"We're Committed to Better\" (544K, ad 1776610703008574): soft glow background, centred caps headline over a short claim body, three products standing side by side with the centre one taller, centred CTA (logo added under the CTA). Tests: material and durability claims (recycled 316L, waterproof, sweat and heat resistant) on three looks of the same duo. Photos (tight crops): \"Batch 83 - C4 (No Text) 1\" (node 1586:1239, wrist in sun, face cropped out), DSC08723 (node 312:16, wrist against pale plaster), \"Batch 83 - C3 (No Text) 1\" (node 1586:1238, wrist against the sky).\nC3 · Worn every day — copies IM8 \"INTER MIAMI CF / They Take It Daily. So Can You.\" (474K): big caps line over the top of the photo, product mid-frame, light card with logo, two-line headline, body and CTA. Tests: daily-wear habit + offer card. Photo: Figma \"Batch 83 - C3 (No Text) 1\" (node 1586:1238, raised wrist against a soft blue sky, face blurred behind the hand).\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/d7c597079343e4c03e7977ef717155ecbbdc04c237251181747c32e8ae2ebdfe.jpg   (ad facebook_1341394771214267, \"INTER MIAMI CF DEMANDS EXCELLENCE. IM8 MATCHES IT.\", 693,648 reach)\nref2 https://medias.trendtrack.io/facebook/image/64a9973a0df15f2981c90ccf0bdf9b18b2986864924852c0c30b9081e1352488.jpg   (ad facebook_1776610703008574, \"We're Committed to Better\", 543,921 reach)\nref3 https://medias.trendtrack.io/facebook/image/979eb8143b4471d8f5fa4ea463d949d3a0ccb24bad9c74cddc30e9ecfc2623b0.jpg   (ad facebook_1328555355850206, \"INTER MIAMI CF · They Take It Daily. So Can You.\", 474,407 reach)",
-   "w": 600,
-   "x": 13380,
-   "y": 19200
-  },
-  "copy-w431": {
-   "fill": "gray",
-   "maxH": 1920,
-   "text": "W Batch 431 · ad copy (Black Friday, women · Imitation)\n\nW Batch 431 · Women · Black Friday · Imitation (IM8 Health) · 3x Minimal - Stack Set (gold)\n\nPrimary text:\nBlack Friday is here, and the gold 3x Minimal Stack is 30% off. A flat polished cuff bangle, a box chain and a square chain: three separate pieces, made to be worn together or on their own. Recycled 316L stainless steel, waterproof, sweat and heat resistant, adjustable S/M/L, case included. The prices on the site are already reduced, so no code is needed. Free shipping.\n\nHeadline (≤27): Three gold pieces, 30% off   (26 chars)\nDescription (≤27): Rated 4.5 on Trustpilot   (23 chars)\n\nEU: https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS: https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\n(Row-level URLs, gold, size Medium, same for C1–C3.)\n\nC1 · All three, now 30% off — copies IM8 \"The team chose IM8\" (facebook_26685521724440232, 515K reach; https://medias.trendtrack.io/facebook/image/6d093eacee1c51031d29a0c36c11b86174a0dadbbb2d7b7b4abdebe5bee0c646.jpg): logo centred on top, oversized two-line headline with the second line pushed right, full-bleed photo, small label + single CTA low in the frame. Tests: the offer as a short, confident statement over a quiet lifestyle shot. Photo: Figma 3152:126 (gold stack on a wrist resting on white linen).\nC2 · One stack, three pieces — copies IM8 \"The bloat dissolving\" (facebook_2088802291738767, 499K reach; https://medias.trendtrack.io/facebook/image/907bddcfa384b4ca7d39878c75f3c83e54c903dca9b44cc7ddd7e010b8aecade.png): headline + subline top left, a row of three panels with chevron labels (before / ritual / reset becomes the cuff / + square chain / + box chain), CTA, rating band, product hero. Tests: explaining the 3-piece build step by step + social proof. Photos: Figma 3446:490 (wet wrist, cropped into the three panels) and 3446:362 (hero, fingers under the stack).\nC3 · Wear them together — copies IM8 \"Pair it with Essentials\" (facebook_1365191991880821, 487K reach; https://medias.trendtrack.io/facebook/image/cc969c1aab4a483f835c57dbd1a95e534aef5ced5b02e530eaa1cdda8020eb9a.jpg): centred headline + caps subline, a tall product image in the middle, two feature columns either side (title, tag, divided lines), CTA. Tests: a clean spec/benefit layout split into the cuff and the chains. Photo: Figma 3603:65 (forearm in soft window light).",
-   "w": 600,
-   "x": 13380,
+  "ip-w431-c2": {
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 431 - C2 · new IM8 ref + new gold stack photo",
+   "w": 1080,
+   "x": 11060,
    "y": 21600
+  },
+  "ip-w430v": {
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch (ClickUp number pending) · video versions of W Batch 430 C1–C3 · drafts with sound → 1080p finals",
+   "w": 3400,
+   "x": 14220,
+   "y": 19200
   }
  },
  "order": [
@@ -1653,7 +1659,6 @@
   "W430-C3.dc.html",
   "Refs-W431.dc.html",
   "W431-C1.dc.html",
-  "W431-C2.dc.html",
   "W431-C3.dc.html"
  ],
  "pages": [],
