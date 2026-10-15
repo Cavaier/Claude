@@ -956,6 +956,30 @@
    "w": 1080,
    "x": 2820,
    "y": 19200
+  },
+  "V-WIMIT-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, Seedance from W imitation) - C1 · from W imitation C1 · FINAL 1080p · SOUND",
+   "w": 1080,
+   "x": 14220,
+   "y": 16800
+  },
+  "V-WIMIT-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, Seedance from W imitation) - C2 · from W imitation C2 · FINAL 1080p · SOUND",
+   "w": 1080,
+   "x": 15380,
+   "y": 16800
+  },
+  "V-WIMIT-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch (new, Seedance from W imitation) - C3 · from W imitation C3 · FINAL 1080p · SOUND",
+   "w": 1080,
+   "x": 16540,
+   "y": 16800
   }
  },
  "createdOnFiles": {
@@ -969,7 +993,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 16:35\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video (from the W imitation statics) RUNNING\nRUNNING\n–\n\nDONE\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 19:30\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\nRUNNING\n–\n\nDONE\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1362,6 +1386,14 @@
    "w": 600,
    "x": 3980,
    "y": 19200
+  },
+  "copy-wimit-video": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "W Batch (new, Seedance from W imitation) · ClickUp number pending\n\nVideos of the W imitation statics (W lane y14400): each static animated with gentle slow motion, 5 s, 1080p, with sound. On C2 only the photo moves inside its frame; the 30% OFF panel stays still. The statics stay live as their own ads.\n\nPRIMARY TEXT\nThe gold duo you never take off is 30% off for Black Friday. A box chain and a square chain in recycled 316L stainless steel: waterproof, sweat and heat resistant, adjustable S/M/L, case included. Prices on the site are already reduced, no code needed. Free shipping.\nHEADLINE: Your everyday gold, 30% off\nDESCRIPTION: No code. Prices reduced.\n\nLANDING PAGE\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-her\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-her\n\nCREATIVES\nC1 Imagine your everyday gold (IM8 GLP-1 journey layout)\nC2 Black Friday on the gold duo: 30% OFF. (IM8 Inter Miami layout)\nC3 The gold you keep on is now 30% off (IM8 Starter Kit layout)",
+   "w": 600,
+   "x": 17700,
+   "y": 16800
   }
  },
  "order": [
@@ -1487,7 +1519,10 @@
   "Refs-M-IMIT.dc.html",
   "M-IMIT-C1.dc.html",
   "M-IMIT-C2.dc.html",
-  "M-IMIT-C3.dc.html"
+  "M-IMIT-C3.dc.html",
+  "V-WIMIT-C1.dc.html",
+  "V-WIMIT-C2.dc.html",
+  "V-WIMIT-C3.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"
