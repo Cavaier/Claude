@@ -266,6 +266,10 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-15** Review: Brand Search Oct 11–15 1,164 SEK, 26 purchases, ~21k SEK value (ROAS ~18), IS 74–91%.
+  UK non-brand Oct 12–15: 197 clicks, 2,013 SEK, 0 purchases, 0 add-to-carts in ~177 Shopify sessions.
+  New 2x Duo landing (Oct 15): 15 sessions, bounce 60% (was 80%), avg 103 s (was 20 s), still 0 add-to-cart.
+  Impression share fell to 10% on Oct 15 (ads re-reviewed after URL change). Decision at ~3,000 SEK.
 - **2026-10-14** Performance review Oct 11–14. Brand Search: 880 SEK, 18 purchases, 14.4k SEK value
   (ROAS ~16), impression share 16% → 90–96% after the broad keyword was paused (P-001 working), CPC 3–5.
   Local-language ad groups barely serve: English ad wins most impressions in DE/NL/ES/MX/SE/HK (see P-006).
