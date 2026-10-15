@@ -7,7 +7,7 @@ const [A, OUT, specFile] = process.argv.slice(2);
 const spec = JSON.parse(fs.readFileSync(specFile));
 const b64 = f => fs.readFileSync(`${A}/${f}`).toString('base64');
 const font = w => `@font-face{font-family:F;font-weight:${w};src:url(data:font/ttf;base64,${b64(`Figtree-${w}.ttf`)})}`;
-// House rules (Eli): white text only, logo once (closing scene), one consistent type size set.
+// House rules (Eli): no dark veil / smudge behind text (Eli, Oct 15), white text only, logo once (closing scene), one consistent type size set.
 const LOGO_H = 28;   // wordmark letters = headline cap height (38px Figtree caps are ~27px)
 const HEAD = 42;     // headline size, identical in every scene
 const SUB = 19;      // sub-line size, identical in every scene
@@ -28,7 +28,7 @@ const html = s => `${s.logo ? `<img class="logo" src="${logo}">` : ''}<div class
   const b = await chromium.launch({ args: ['--no-sandbox'] });
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   for (const [k, s] of Object.entries(spec)) {
-    await p.setContent(`<style>${css}</style>${s.veil === false ? '' : `<div class="veil" style="top:${s.top - 230 + (s.logo ? 30 : 0)}px"></div>`}<div class="lock" style="top:${s.top}px">${html(s)}</div>`, { waitUntil: 'load' });
+    await p.setContent(`<style>${css}</style><div class="lock" style="top:${s.top}px">${html(s)}</div>`, { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
     await p.waitForTimeout(200);
     await p.screenshot({ path: `${OUT}/${k}.png`, omitBackground: true });

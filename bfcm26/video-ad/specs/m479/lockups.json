@@ -1,15 +1,80 @@
-{"k1":{"top":330,"head":"Black Friday","sub":"30% off sitewide"},
- "k2":{"top":330,"head":"Waterproof","sub":"Salt water, sweat and heat"},
- "k3":{"top":330,"head":"Recycled 316L","sub":"Stainless steel"},
- "k4":{"top":330,"head":"Adjustable","sub":"Sizes S, M, L"},
- "k5":{"top":300,"logo":true,"head":"30% off sitewide","sub":"No code needed"},
- "r1":{"top":330,"head":"Black Friday","sub":"The duo, 30% off"},
- "r2":{"top":330,"head":"Made to stay on","sub":"Waterproof"},
- "r3":{"top":330,"head":"Box chain","sub":"Square chain"},
- "r4":{"top":330,"head":"Case included","sub":"Free shipping"},
- "r5":{"top":300,"logo":true,"head":"30% off sitewide","sub":"Prices already reduced"},
- "h1":{"top":330,"head":"Black Friday","sub":"30% off everything"},
- "h2":{"top":330,"head":"Rated 4.5","sub":"3,000+ reviews on Trustpilot"},
- "h3":{"top":330,"head":"Recycled 316L","sub":"Waterproof steel"},
- "h4":{"top":330,"head":"Black, silver or gold","sub":"Adjustable S, M, L"},
- "h5":{"top":300,"logo":true,"head":"30% off sitewide","sub":"No code needed"}}
+{
+ "k1": {
+  "top": 330,
+  "head": "The year's sale",
+  "sub": "Black Friday has landed"
+ },
+ "k2": {
+  "top": 330,
+  "head": "Into the surf",
+  "sub": "Waterproof and salt-proof"
+ },
+ "k3": {
+  "top": 330,
+  "head": "Built from steel",
+  "sub": "Recycled 316L"
+ },
+ "k4": {
+  "top": 330,
+  "head": "Fits every wrist",
+  "sub": "Adjustable S, M, L"
+ },
+ "k5": {
+  "top": 300,
+  "logo": true,
+  "head": "30% off the duo",
+  "sub": "Shipping is free"
+ },
+ "r1": {
+  "top": 330,
+  "head": "Made for the elements",
+  "sub": "Black Friday edition"
+ },
+ "r2": {
+  "top": 330,
+  "head": "Sweat. Heat. Rock.",
+  "sub": "It stays on"
+ },
+ "r3": {
+  "top": 330,
+  "head": "Two chains",
+  "sub": "Box and square"
+ },
+ "r4": {
+  "top": 330,
+  "head": "Ready to give",
+  "sub": "Case included"
+ },
+ "r5": {
+  "top": 300,
+  "logo": true,
+  "head": "Black Friday, 30% off",
+  "sub": "Prices already reduced"
+ },
+ "h1": {
+  "top": 330,
+  "head": "Quiet confidence",
+  "sub": "Now 30% off"
+ },
+ "h2": {
+  "top": 330,
+  "head": "Trusted by 3,000+",
+  "sub": "Rated 4.5 on Trustpilot"
+ },
+ "h3": {
+  "top": 330,
+  "head": "Black, silver or gold",
+  "sub": "Pick your finish"
+ },
+ "h4": {
+  "top": 1460,
+  "head": "Wear it daily",
+  "sub": "Never take it off"
+ },
+ "h5": {
+  "top": 300,
+  "logo": true,
+  "head": "Black Friday",
+  "sub": "30% off sitewide, no code"
+ }
+}

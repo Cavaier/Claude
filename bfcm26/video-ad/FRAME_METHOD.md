@@ -34,8 +34,8 @@ the Speed Ads branch): `STYLE.md` (short rules), `cards4.js` (text), `grade.py` 
 - Lockups fade in over 0.9 s (starting 0.35 s into the shot) with a 16 px ease-out rise.
 - **Never put text on the jewellery** (chains, cuff, clasp, tag). Check every scene.
 - Key text between y=270 and y=1536 (Meta safe zone).
-- On bright, high-key frames, a very soft, wide shadow sits behind the lockup (`.veil` in `cards4.js`, max ~15% black)
-  so the white reads. It must look like natural falloff, never a grey patch.
+- **No shadow, veil, gradient band or box behind the text (Eli, Oct 15).** On bright, high-key frames, keep the white
+  readable by placing the lockup over a calmer, darker part of the shot or by picking another shot.
 - What did NOT work (don't repeat): big "30% OFF" numerals, red pills, dark text, the logo on several scenes, a 47 px
   logo (too big), a 17 px logo (too small), sizes changing per scene, single-line scenes.
 

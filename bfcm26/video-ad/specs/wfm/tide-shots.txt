@@ -1,0 +1,4 @@
+black w6 C0495 2.9 0.8 t1
+black w6 C0496 2.3 0.8 t2
+black w6 C0485 1.1 0.8 t3
+black w6 C0482 1.2 0.9 t4

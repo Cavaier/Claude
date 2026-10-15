@@ -1,0 +1,4 @@
+black w6 C0490 0.4 0.8 f1
+black w6 C0500 3.0 0.8 f2
+black w6 C0499 1.4 0.8 f3
+black w6 C0498 2.0 0.9 f4

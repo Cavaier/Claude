@@ -1,0 +1,4 @@
+black w6 C0505 1.1 0.8 s1
+black w6 C0502 1.0 0.8 s2
+black w6 C0508 2.5 0.8 s3
+black w6 C0517 0.5 0.9 s4
