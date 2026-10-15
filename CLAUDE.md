@@ -102,7 +102,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Trustpilot 4.5, 3,000+ reviews.
   - No prices or currencies.
 - **Offers:** Black Friday is 30% off sitewide, no code needed. The prices on the website are already discounted, so NEVER say "taken off at checkout" (Eli: not true). Evergreen has no offer and no deadline.
-- **Copy note per batch:** primary text, a headline and a description of 27 characters or less each, plus landing pages: EU `https://cavaier.com/products/<handle>`, US `https://us.cavaier.com/products/<handle>`. Duo for men: `2x-duo-minimal-set-for-him`.
+- **Copy note per batch:** primary text, a headline and a description of 27 characters or less each, plus landing pages: EU `https://cavaier.com/products/<handle>`, US `https://us.cavaier.com/products/<handle>`. Handles: men's duo `2x-duo-minimal-set-for-him`, women's duo `2x-duo-minimal-set-for-her`, men's stack `3x-minimal-stack-set-for-him`, women's stack `3x-minimal-stack-set-for-her`.
 - **ROAS check per ad** (roas.js + roas.py):
   - Contrast p10 ≥ 4.5, or ≥ 3 for text of 24 px and up.
   - Text inside y 270–1536.
