@@ -83,6 +83,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Keep it high-end and airy, never chunky (Eli approved M473 C1 as the reference): headline about 50 px, weight 300/400, letter spacing 0.04em; body about 27 px, weight 300, line height 1.6, narrow column (about 720 px); logo small (about 110 px wide); slim button (80 px tall, 22 px label); CTA buttons are square black blocks with no rounded corners, the same on women's and men's ads (no pill buttons); generous white space.
   - Keep backgrounds light. No large black or dark fields dominating the ad: black is for type, buttons and small accents.
   - Red `#A82C24` is only a small accent, only on light monochrome Black Friday layouts. Never red in Evergreen.
+- **No generated images unless Eli asks (Eli, Oct 15):** the generated images kept failing, so every ad uses real photos (Figma, Shopify listing, or stills from the RAW footage). If a product or finish has no usable real photos left, tell Eli and offer another finish instead of generating one.
 - **Ideation images (generated, OpenAI `gpt-image-2.5-sunburst` via `OPENAI_API_KEY`, real product photo as reference):** must look like the nailed Cavaier look Eli showed:
   - Look reference: `bfcm26/ideation/style/cavaier-look.jpg` (Eli's "nailed" example). Send it as a second reference image for the look only.
   - 100% realistic, nothing CGI or stock-glossy.
