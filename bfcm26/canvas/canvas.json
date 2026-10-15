@@ -924,6 +924,38 @@
    "w": 1080,
    "x": 2820,
    "y": 16800
+  },
+  "Refs-M-IMIT.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, imitation statics) · IM8 refs",
+   "w": 420,
+   "x": 0,
+   "y": 19200
+  },
+  "M-IMIT-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, imitation statics) - C1 · Two chains. One wrist. (IM8 GLP-1 split photo)",
+   "w": 1080,
+   "x": 500,
+   "y": 19200
+  },
+  "M-IMIT-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, imitation statics) - C2 · The duo you never take off (IM8 GLP-1 journey chips)",
+   "w": 1080,
+   "x": 1660,
+   "y": 19200
+  },
+  "M-IMIT-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch (new, imitation statics) - C3 · The silver duo is 30% OFF. (IM8 Inter Miami)",
+   "w": 1080,
+   "x": 2820,
+   "y": 19200
   }
  },
  "createdOnFiles": {
@@ -937,7 +969,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 16:10\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation + W Seedance video (from the W imitation statics) RUNNING\nRUNNING\n–\n\nDONE\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 16:35\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video (from the W imitation statics) RUNNING\nRUNNING\n–\n\nDONE\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1322,6 +1354,14 @@
    "w": 600,
    "x": 3980,
    "y": 16800
+  },
+  "copy-m-imit": {
+   "fill": "gray",
+   "maxH": 1920,
+   "text": "M Batch (new, imitation statics) · ClickUp number pending\n\nM-IMIT · Men · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)\n\nPRIMARY TEXT\nTwo chains, one wrist: a box chain and a square chain with a small tag, made to be worn together every day.\nThis Black Friday, everything on the site is 30% off. The prices are already reduced, no code needed.\nRecycled 316L stainless steel. Waterproof, sweat and heat resistant. Adjustable S/M/L, case included, free shipping.\n\nHEADLINE (27 max)\nThe duo, 30% lighter        (20 chars)\n\nDESCRIPTION (27 max)\nAlready reduced. No code.   (25 chars)\n\nLANDING PAGES\nEU: https://cavaier.com/products/2x-duo-minimal-set-for-him\nUS: https://us.cavaier.com/products/2x-duo-minimal-set-for-him\n\nCONCEPTS\nC1 · Two chains, one wrist. Imitates the IM8 split-photo ad (\"He Lost 40 Pounds on His GLP-1\", ad 029b851e): two photos side by side, centred two-weight headline, boxed statement line, body + CTA at the bottom. Tests the split two-photo comparison layout for the duo. Photos: DSC02557 (beach wrist) + DSC02516 (forearm over linen).\nC2 · The duo you never take off, now 30% lighter on price. Imitates the IM8 \"Imagine Your GLP-1 Journey\" ad (399c6846): photo on top, right-aligned two-tone headline, benefit chips, one body line, CTA block. Tests a claims-led layout (waterproof, 316L, S/M/L, case, free shipping). Photo: DSC02610 (wrist at linen shorts).\nC3 · The silver duo for every day is 30% off. Imitates the IM8 \"Official health supplements partner of Inter Miami\" ad (d7c9ae41): logo lockup top left, left-aligned headline with an oversized last line, CTA, full-width photo below. Tests a big-number offer headline. Photo: DSC02724 (hand on shoulder, sea and sky).\n\nIM8 REF MEDIA\nref1 https://medias.trendtrack.io/facebook/image/029b851e7a03c489597a297c321c1f5efb355f168932a1605f90210ec63cf64b.jpg\nref2 https://medias.trendtrack.io/facebook/image/399c68464bd551764a05156dc0a8c9824b96c03fd0e523784897264a680c3125.jpg\nref3 https://medias.trendtrack.io/facebook/image/d7c9ae41ec476d260272f93bf4ee18ac87db0306ccbe1f3957e38be25b9e36d1.jpg",
+   "w": 600,
+   "x": 3980,
+   "y": 19200
   }
  },
  "order": [
@@ -1443,7 +1483,11 @@
   "W-IDEA-C3.dc.html",
   "M-IDEA-C1.dc.html",
   "M-IDEA-C2.dc.html",
-  "M-IDEA-C3.dc.html"
+  "M-IDEA-C3.dc.html",
+  "Refs-M-IMIT.dc.html",
+  "M-IMIT-C1.dc.html",
+  "M-IMIT-C2.dc.html",
+  "M-IMIT-C3.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"

@@ -1,0 +1,26 @@
+M-IMIT · Men · Black Friday · Imitation (IM8 Health) · 2x Duo Minimal Set (silver)
+
+PRIMARY TEXT
+Two chains, one wrist: a box chain and a square chain with a small tag, made to be worn together every day.
+This Black Friday, everything on the site is 30% off. The prices are already reduced, no code needed.
+Recycled 316L stainless steel. Waterproof, sweat and heat resistant. Adjustable S/M/L, case included, free shipping.
+
+HEADLINE (27 max)
+The duo, 30% lighter        (20 chars)
+
+DESCRIPTION (27 max)
+Already reduced. No code.   (25 chars)
+
+LANDING PAGES
+EU: https://cavaier.com/products/2x-duo-minimal-set-for-him
+US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him
+
+CONCEPTS
+C1 · Two chains, one wrist. Imitates the IM8 split-photo ad ("He Lost 40 Pounds on His GLP-1", ad 029b851e): two photos side by side, centred two-weight headline, boxed statement line, body + CTA at the bottom. Tests the split two-photo comparison layout for the duo. Photos: DSC02557 (beach wrist) + DSC02516 (forearm over linen).
+C2 · The duo you never take off, now 30% lighter on price. Imitates the IM8 "Imagine Your GLP-1 Journey" ad (399c6846): photo on top, right-aligned two-tone headline, benefit chips, one body line, CTA block. Tests a claims-led layout (waterproof, 316L, S/M/L, case, free shipping). Photo: DSC02610 (wrist at linen shorts).
+C3 · The silver duo for every day is 30% off. Imitates the IM8 "Official health supplements partner of Inter Miami" ad (d7c9ae41): logo lockup top left, left-aligned headline with an oversized last line, CTA, full-width photo below. Tests a big-number offer headline. Photo: DSC02724 (hand on shoulder, sea and sky).
+
+IM8 REF MEDIA
+ref1 https://medias.trendtrack.io/facebook/image/029b851e7a03c489597a297c321c1f5efb355f168932a1605f90210ec63cf64b.jpg
+ref2 https://medias.trendtrack.io/facebook/image/399c68464bd551764a05156dc0a8c9824b96c03fd0e523784897264a680c3125.jpg
+ref3 https://medias.trendtrack.io/facebook/image/d7c9ae41ec476d260272f93bf4ee18ac87db0306ccbe1f3957e38be25b9e36d1.jpg
