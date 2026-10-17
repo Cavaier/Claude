@@ -1,0 +1,118 @@
+{
+ "job": "W436 C3 voice note v3",
+ "text": "Okay so you know the gold bracelet I wear every day? I literally shower in it, I swim in it... it's waterproof. And it's thirty percent off for Black Friday right now, so honestly, just get it.",
+ "output_format": "mp3_44100_128",
+ "settings_by_model": {
+  "eleven_v4": {
+   "stability": 0.3,
+   "similarity_boost": 0.75
+  },
+  "eleven_v3_conversational": {
+   "stability": 0.3,
+   "similarity_boost": 0.75,
+   "use_speaker_boost": true
+  }
+ },
+ "note": "eleven_v4 reports can_use_style=false and can_use_speaker_boost=false; v3_conversational allows speaker boost, not style. No audio tags.",
+ "voices": [
+  {
+   "short": "kristen",
+   "name": "Kristen - Friendly and Casual BFF",
+   "voice_id": "Awx8TeMHHpDzbm42nIB6",
+   "public_owner_id": "dacc8793ba3baf7688b46891fd27b8f71b355e5d4e61c07e9706b7e0b1ab79b2",
+   "cloned_by_count": 36107,
+   "accent": "american",
+   "use_case": "conversational",
+   "descriptive": "casual",
+   "description": "Warm, natural, and approachable female voice with a relaxed, down-to-earth, and easy-going style. Genuine, clear, and engaging with smooth, soft-tone delivery and relatable, mid-tempo pacing for a real-person, one-on-one feel. Inviting, personal, and trustworthy\u2014perfect for storytelling, lifestyle content, chatbots, and tutorials."
+  },
+  {
+   "short": "lyan",
+   "name": "Lyan - Female Genuine Casual Ads",
+   "voice_id": "PStJ2DzQnh8zxG5PDf1s",
+   "public_owner_id": "0a2b6902206ee5c247450ff82caa110406aedfb7173a54281db01ffe36abe033",
+   "cloned_by_count": 33652,
+   "accent": "american",
+   "use_case": "advertisement",
+   "descriptive": "casual",
+   "description": "warm, conversational tone and natural vocal fry. Sounds like a friend. Casual, upbeat, and approachable. Perfect for digital ads, social media spots, DTC brand reads, podcast ad reads, and explainer videos that want energy without sounding overly polished or corporate."
+  },
+  {
+   "short": "hope",
+   "name": "Hope - Bubbly, Gossipy and Girly",
+   "voice_id": "uYXf8XasLslADfZ2MB4u",
+   "public_owner_id": "7d272ea0221fbc9ce382a3eaf4d7f907179558360d93b351ec7d344d30023cf9",
+   "cloned_by_count": 267744,
+   "accent": "american",
+   "use_case": "conversational",
+   "descriptive": "casual",
+   "description": "A voice that sounds like a genuine conversation \u2014 natural mmms, ahhs, chuckles, and pauses make her perfectly imperfect, like chatting with a close friend or thoughtful AI therapist. Perfect for any AI assistant, best friend, therapist, audiobook or podcast!"
+  },
+  {
+   "short": "jessa",
+   "name": "Jessa - Easygoing and Effortless",
+   "voice_id": "yj30vwTGJxSHezdAGsv9",
+   "public_owner_id": "f995f689648bc413c1b7fb9ec8524f634e4d32f5030ee172ef6d847ba9dc5ee9",
+   "cloned_by_count": 438796,
+   "accent": "american",
+   "use_case": "narrative_story",
+   "descriptive": "casual",
+   "description": "A natural, effortless, and relatable female voice with a casual, off-the-cuff style that feels genuinely real."
+  },
+  {
+   "short": "lyanugc",
+   "name": "Lyan - Friendly Female Authentic UGC",
+   "voice_id": "OHbs18UsFunlwffsTLNn",
+   "public_owner_id": "0a2b6902206ee5c247450ff82caa110406aedfb7173a54281db01ffe36abe033",
+   "cloned_by_count": 15777,
+   "accent": "american",
+   "use_case": "social_media",
+   "descriptive": "pleasant",
+   "description": "Upbeat American accent with a natural girl-next-door charm. Approachable, sweet, and never overly polished. Her tone sits comfortably between casual and confident\u2014an authentic fit for UGC ads, product reviews, and storytime reels where authenticity matters. \n\nBest use cases: UGC ad scripts, Reels voiceovers, explainer videos, product demos, relatable storytelling content, and social captions read aloud. "
+  }
+ ],
+ "takes": [
+  {
+   "voice": "kristen",
+   "model_id": "eleven_v4",
+   "file": "bfcm26/video/vo/W436-C3-vo3-kristen-v4.mp3",
+   "duration_s": 13.01
+  },
+  {
+   "voice": "lyan",
+   "model_id": "eleven_v4",
+   "file": "bfcm26/video/vo/W436-C3-vo3-lyan-v4.mp3",
+   "duration_s": 13.01
+  },
+  {
+   "voice": "hope",
+   "model_id": "eleven_v4",
+   "file": "bfcm26/video/vo/W436-C3-vo3-hope-v4.mp3",
+   "duration_s": 13.32
+  },
+  {
+   "voice": "jessa",
+   "model_id": "eleven_v4",
+   "file": "bfcm26/video/vo/W436-C3-vo3-jessa-v4.mp3",
+   "duration_s": 13.09
+  },
+  {
+   "voice": "lyanugc",
+   "model_id": "eleven_v4",
+   "file": "bfcm26/video/vo/W436-C3-vo3-lyanugc-v4.mp3",
+   "duration_s": 12.51
+  },
+  {
+   "voice": "hope",
+   "model_id": "eleven_v3_conversational",
+   "file": "bfcm26/video/vo/W436-C3-vo3-hope-v3conv.mp3",
+   "duration_s": 10.61
+  },
+  {
+   "voice": "jessa",
+   "model_id": "eleven_v3_conversational",
+   "file": "bfcm26/video/vo/W436-C3-vo3-jessa-v3conv.mp3",
+   "duration_s": 11.96
+  }
+ ]
+}
