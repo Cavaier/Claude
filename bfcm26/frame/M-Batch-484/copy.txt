@@ -1,0 +1,21 @@
+MC-B - men's Black Friday creative-swing statics ("Editorial") - 2x Duo Minimal Set for him, silver in all three ads
+Photos: Cavaier Figma file dEEVzBXoylSdZoRs0gonHn, Men photo section 300:1482 (no RAW stills, no generated images)
+
+Primary text:
+Front-page news for your wrist: the 2x Duo Minimal Set is 30% off this Black Friday, and so is everything else on the site. Prices are already reduced, no code needed.
+A box chain and a square chain in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
+
+Headline (26): Read all about it: 30% off
+Description (24): No code. Prices reduced.
+
+Landing pages (silver, Medium):
+C1 EU: https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+C1 US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C2 EU: https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+C2 US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C3 EU: https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+C3 US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+
+C1 - Newspaper front page: made-up masthead "THE DAILY WRIST", headline "Black Friday: the duo drops 30%", italic deck, black-and-white lead photo with caption, "At a glance" fact column (waterproof, recycled 316L, S/M/L, ships free + case, Trustpilot 4.5 / 3,000+), READ ON: SHOP THE DUO. Tests an editorial/news format that reads as content, not an ad. Photo: Figma Men DSC02396 (300:1483), cropped, converted to B&W.
+C2 - Product anatomy / spec sheet: "Anatomy of the duo" with thin leader lines on a macro of the silver duo labelling box chain (recycled 316L), square chain (sweat and heat resistant), extender (adjustable S/M/L), bar tag (engraved Cavaier) and clasp (waterproof), plus a red "30% OFF · BLACK FRIDAY" stamp and SHOP THE DUO. Tests a detail/quality-first format for considered buyers. Photo: Figma Men DSC05005 (377:259), macro crop.
+C3 - Search-results page: neutral search bar "best minimalist bracelet for men", generic tabs, a "Top result" card for the 2x Duo Minimal Set for him (stars, "4.5 · 3,000+ reviews", red "30% off · Black Friday", true specs, Free shipping / Case included / No code needed chips) above faded placeholder results; "Search over. 30% off, no code." + SHOP THE DUO. No search-engine branding. Tests a native "answer to the search" format. Photo: Figma Men DSC02736 (300:1490), crop.
