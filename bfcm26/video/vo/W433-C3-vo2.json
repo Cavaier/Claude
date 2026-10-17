@@ -1,0 +1,70 @@
+{
+ "job": "W433 C3 voice note v2",
+ "model_id": "eleven_v3",
+ "output_format": "mp3_44100_128",
+ "text": "[excited] Okay so I literally just bought the gold duo... it's thirty percent off! [laughs softly] And it's waterproof, so I never take it off.",
+ "voice_settings": {
+  "stability": 0.3,
+  "similarity_boost": 0.75,
+  "style": 0.5,
+  "use_speaker_boost": true
+ },
+ "voices": [
+  {
+   "name": "Alexandra - Conversational and Natural",
+   "short": "alexandra",
+   "library_voice_id": "kdmDKE6EkgrWrrykO9Qt",
+   "voice_id": "kdmDKE6EkgrWrrykO9Qt",
+   "public_owner_id": "f995f689648bc413c1b7fb9ec8524f634e4d32f5030ee172ef6d847ba9dc5ee9",
+   "cloned_by_count": 305105,
+   "description": "Youthful and authentic, with a conversational tone that's relatable and down-to-earth. ",
+   "accent": "american",
+   "age": "young",
+   "use_case": "conversational",
+   "file": "bfcm26/video/vo/W433-C3-vo2-alexandra.mp3",
+   "duration_s": 8.2
+  },
+  {
+   "name": "Siren - Natural realistic conversational voice",
+   "short": "siren",
+   "library_voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+   "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+   "public_owner_id": "ed3ea42f4eb1cfab34c8560d6ee55ef69a190a638cc33094a90d7d3f5ef77cda",
+   "cloned_by_count": 190455,
+   "description": "This voice is perfect for podcasts, videos, social media, commercials...really ANYTHING where you need a hyper-realistic voice that sounds so chill and natural, no one would guess it's not a human.",
+   "accent": "american",
+   "age": "young",
+   "use_case": "social_media",
+   "file": "bfcm26/video/vo/W433-C3-vo2-siren.mp3",
+   "duration_s": 8.52
+  },
+  {
+   "name": "Brielle - Podcast girl extremely natural",
+   "short": "brielle",
+   "library_voice_id": "6u6JbqKdaQy89ENzLSju",
+   "voice_id": "6u6JbqKdaQy89ENzLSju",
+   "public_owner_id": "fe639c9a5594c8a388f3ddfe83cefb1944619a3e40301a9811219658c6ad399d",
+   "cloned_by_count": 138058,
+   "description": "Looking for a gen Z voice for social media, that is completely natural and real sounding? Nothing that is gonna have people saying \"that sounds like AI\" but is instead un-clockable?? Give Brielle a chance and you will not be disappointed.",
+   "accent": "american",
+   "age": "young",
+   "use_case": "social_media",
+   "file": "bfcm26/video/vo/W433-C3-vo2-brielle.mp3",
+   "duration_s": 8.44
+  },
+  {
+   "name": "Bella -  Chatty Social Media Influencer",
+   "short": "bella",
+   "library_voice_id": "4RZ84U1b4WCqpu57LvIq",
+   "voice_id": "4RZ84U1b4WCqpu57LvIq",
+   "public_owner_id": "e33eb547f8af39719b57253a6230915455d19c17d3f7781cabe273337a2e5df2",
+   "cloned_by_count": 162057,
+   "description": "A younger sounding, american female voice, Bella E has a high-quality sound, and her voice is currently one of the top social media voices used.",
+   "accent": "american",
+   "age": "young",
+   "use_case": "narrative_story",
+   "file": "bfcm26/video/vo/W433-C3-vo2-bella.mp3",
+   "duration_s": 8.59
+  }
+ ]
+}
