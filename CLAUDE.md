@@ -126,6 +126,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
 - **Key:** env `ELEVENLABS_API_KEY` only, in a helper session. Never print, log or commit it. API `https://api.elevenlabs.io/v1`, header `xi-api-key`.
 - **Settings:** model `eleven_multilingual_v2`, stability 0.55, similarity 0.8, style 0.15, speaker boost, output `mp3_44100_128` (192 needs the Creator tier). The plan is pay-as-you-go.
 - **Voices tried (W418 C2 trial):** Arabella `Z3R5wn05IrDiVCyEkUrK` (gentle, the pick), Veda Sky `8quEMRkSpwEaWBzHvTLv`, Relaxing Rachel `ROMJ9yK1NAMuu1ggrjDW`. Use the one Eli picks for future VO ads.
+- **Voice notes / UGC (Eli, W436 C3):** a friend's WhatsApp-style voice message must sound real, never like a narrator. Arabella and the eleven_v3 takes sounded fake and robotic. Eli's pick: **Jessa** `yj30vwTGJxSHezdAGsv9` on `eleven_v3_conversational` (stability 0.3, similarity 0.75, speaker boost; no style, no audio tags). Keep natural pauses (cap at 0.6 s), light phone EQ. Scripts must make sense as a real message (no "just bought it" + "never take it off"; no pushy "just get it"; an ending like "I'll send you the link" works).
 - **Mix:** tighten pauses (silenceremove, 0.28 s), voice starts at 0.3 s, loudnorm -16 LUFS, the clip's own sound stays underneath at about a third, and the last frame holds until the voice ends. Files go in `bfcm26/video/vo/`.
 - **Scripts:** keep them short enough to fit the clip (about 2.3 words a second), true claims only, English.
 
