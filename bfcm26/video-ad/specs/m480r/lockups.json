@@ -1,12 +1,54 @@
 {
- "t1": {"top": 330, "head": "Set in silver", "sub": "The Black Friday edit"},
- "t2": {"top": 330, "head": "Let the tide in", "sub": "It's waterproof"},
- "t3": {"top": 330, "head": "Salt, sweat, sun", "sub": "Heat resistant steel"},
- "t4": {"top": 330, "head": "Box chain, square chain", "sub": "One slim duo"},
- "t5": {"top": 300, "logo": true, "head": "All of it, 30% off", "sub": "Prices are already lower"},
- "u1": {"top": 330, "head": "Black Friday is on", "sub": "The whole site, 30% off"},
- "u2": {"top": 330, "head": "Feel every link", "sub": "Recycled stainless steel"},
- "u3": {"top": 330, "head": "One duo, any wrist", "sub": "Adjusts from S to L"},
- "u4": {"top": 330, "head": "Arrives gift-ready", "sub": "In its own case"},
- "u5": {"top": 300, "logo": true, "head": "30% less, sitewide", "sub": "No code to remember"}
+ "t1": {
+  "top": 330,
+  "head": "Set in silver",
+  "sub": "The Black Friday edit"
+ },
+ "t2": {
+  "top": 330,
+  "head": "Box chain, square chain",
+  "sub": "One slim duo"
+ },
+ "t3": {
+  "top": 330,
+  "head": "Let the tide in",
+  "sub": "It's waterproof"
+ },
+ "t4": {
+  "top": 330,
+  "head": "Salt, sweat, sun",
+  "sub": "Heat resistant steel"
+ },
+ "t5": {
+  "top": 300,
+  "logo": true,
+  "head": "All of it, 30% off",
+  "sub": "Prices are already lower"
+ },
+ "u1": {
+  "top": 330,
+  "head": "Black Friday is on",
+  "sub": "The whole site, 30% off"
+ },
+ "u2": {
+  "top": 330,
+  "head": "Feel every link",
+  "sub": "Recycled stainless steel"
+ },
+ "u3": {
+  "top": 330,
+  "head": "One duo, any wrist",
+  "sub": "Adjusts from S to L"
+ },
+ "u4": {
+  "top": 330,
+  "head": "Arrives gift-ready",
+  "sub": "In its own case"
+ },
+ "u5": {
+  "top": 300,
+  "logo": true,
+  "head": "30% less, sitewide",
+  "sub": "No code to remember"
+ }
 }

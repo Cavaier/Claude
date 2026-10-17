@@ -1,15 +1,20 @@
-M-IDEA (men's Black Friday IDEATION batch) - 2x Duo Minimal Set (silver)
+M Batch 479 (redo) - men's Black Friday statics - 2x Duo Minimal Set for him (silver), real RAW stills (Men Session 1)
 
 Primary text:
-Black Friday is here: 30% off sitewide, no code needed. The prices are already reduced.
-The 2x Duo Minimal Set pairs a box chain with a square chain in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included, free shipping.
+Black Friday at Cavaier: 30% off sitewide. The prices are already reduced, so there is no code to remember.
+The 2x Duo Minimal Set: a box chain and a square chain in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
 
-Headline (16): The Duo, now 30% off
-Description (24): No code needed. Ships free
+Headline (23): 30% off the Duo for him
+Description (22): Prices already reduced
 
-EU: https://cavaier.com/products/2x-duo-minimal-set-for-him
-US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him
+Landing pages (silver, Medium) - same for C1, C2 and C3 (all three ads show the silver duo):
+C1 EU: https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+C1 US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C2 EU: https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+C2 US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C3 EU: https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+C3 US: https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
 
-C1 - Fastening moment: macro of fingers closing the box chain's clasp (tag hanging) next to the square chain; light top panel with "Two chains. One click. Now 30% off." Tests a product-in-use / put-it-on moment.
-C2 - Black Friday unboxing: top-down flat lay of the two bracelets on pale linen with the open case in the corner; "Unbox the duo for 30% less" + "Case included · Free shipping". Tests a gift/unboxing angle.
-C3 - One line macro: extreme close-up of the duo on the wrist, light bottom panel with one strong line "Wear it daily. Pay 30% less." Tests minimal macro + single-line offer.
+C1 - Offer hero: one huge thin "30% OFF" with "Sitewide, prices already reduced. No code needed." and SHOP THE DUO, over a graded still of a slim wrist wearing the silver duo against white sea foam (RAW Men Session 1, C1116 @ 10.0 s). Tests a pure, single-message offer.
+C2 - Gift for him: full-width still of fingers adjusting the duo over a linen shirt, tag in view (C1109 @ 15.4 s); "The gift he keeps on. 30% off." + "A box chain and a square chain. Case included, ships free." + SHOP HIS GIFT. Tests the Black Friday gift angle (buying for him).
+C3 - Reasons + proof: "Four reasons it stays on" list (waterproof, sweat and heat resistant / recycled 316L / adjustable S/M/L / case included, free shipping), "4.5 on Trustpilot | 3,000+ reviews", GET 30% OFF; still of the arm across a linen shirt below (C1100 @ 5.4 s). Tests a reasons-to-believe / social-proof structure.
