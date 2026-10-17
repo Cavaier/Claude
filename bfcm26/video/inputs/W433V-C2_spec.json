@@ -1,9 +1,1 @@
-{"photoAlt":"white stone wall","total":6.6,"fps":15,"steps":[
-{"css":":scope > div:nth-child(3)","t":0.3},
-{"css":":scope > div:nth-child(4)","t":0.6},
-{"css":":scope > div:nth-child(5)","t":0.9},
-{"css":":scope > div:nth-child(6)","t":1.2},
-{"css":":scope > div:nth-child(7)","t":1.5},
-{"css":":scope > div:nth-child(8)","t":1.8},
-{"text":"30% OFF","t":2.7,"pop":true},
-{"css":"a","t":3.4}]}
+{"photoAlt": "white stone wall", "total": 6.6, "fps": 15, "steps": [{"css": ":scope > div:nth-child(3)", "t": 0.3}, {"css": ":scope > div:nth-child(4)", "t": 0.6}, {"css": ":scope > div:nth-child(5)", "t": 0.9}, {"css": ":scope > div:nth-child(6)", "t": 1.2}, {"css": ":scope > div:nth-child(7)", "t": 1.5}, {"css": ":scope > div:nth-child(8)", "t": 1.8}, {"text": "30% OFF", "t": 0.3}, {"css": "a", "t": 3.4}]}
