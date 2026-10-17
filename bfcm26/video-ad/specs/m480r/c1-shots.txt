@@ -1,0 +1,5 @@
+edit m2 C0199 0.6 0.8 t1
+edit m2 C0226 2.0 0.8 t2
+edit m2 C0241 9.6 0.8 t3
+edit m2 C0242 9.0 0.8 t4
+edit m2 C0233 5.4 0.9 t5

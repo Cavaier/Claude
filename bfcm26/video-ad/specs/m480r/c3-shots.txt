@@ -1,0 +1,5 @@
+edit m2 C0081 1.6 0.8 u1
+edit m2 C0186 2.0 0.8 u2
+edit m2 C0091 3.0 0.8 u3
+edit m2 C0188 2.8 0.8 u4
+edit m2 C0082 0.4 0.9 u5

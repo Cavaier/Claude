@@ -1,15 +1,20 @@
-W-IDEA - women's Black Friday IDEATION batch (3x Minimal - Stack Set)
-Creative Origin: Ideation. Angle/Style: Black Friday. Offer: 30% off sitewide, no code needed (prices already reduced).
+W Batch 428 (redo) · Women · Black Friday · 3x Minimal - Stack Set · real Figma photos only (no generated images)
+Creative Origin: Ideation (proven Black Friday DTC structures). Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced.
 
 Primary text:
-Black Friday is here: 30% off sitewide, no code needed. The 3x Minimal - Stack Set is three separate pieces, a flat polished cuff bangle, a box chain and a square chain, in recycled 316L stainless steel. Waterproof, adjustable S/M/L, in black, silver or gold. Case included and free shipping, so it's ready to give, or to keep for yourself.
+Black Friday at Cavaier: 30% off sitewide, and the prices on the site are already reduced, so there's no code to enter. The 3x Minimal - Stack Set is three separate pieces, a flat polished cuff bangle, a box chain and a square chain, in recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L, in black, silver or gold. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
 
-Headline (27 max): Black Friday: 30% off all   (25)
-Description (27 max): Case included, ships free   (26)
+Headline (≤27): All three pieces, 30% off   (25 chars)
+Description (≤27): No code needed. Ships free.   (27 chars)
 
-EU URL: https://cavaier.com/products/3x-minimal-stack-set-for-her
-US URL: https://us.cavaier.com/products/3x-minimal-stack-set-for-her
+Row links (Medium, finish shown in each ad; CTA href = the EU link):
+C1 (silver) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825629018
+            US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346681657
+C2 (gold)   EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714
+            US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C3 (black)  EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418
+            US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049
 
-C1 - Gift in the case (gold): hands opening the black case with the gold stack inside, linen, ribbon and blank card. Text panel on top: "A gift she can wear every day." Tests: gifting angle + "case included". Image prompt key: C1.
-C2 - Cosy self-gift (silver): wrist in an oatmeal knit sweater holding a mug, silver stack. Text below: "This year, gift yourself first." Tests: self-gift angle. Image prompt key: C2b.
-C3 - Crisp macro, one line (black): side macro of the black stack on a bare wrist, bright white blur. One strong line: "Three pieces. 30% off." Tests: product-first macro with a single offer line. Image prompt key: C3b.
+C1 · 30% off, the number first (silver): offer-hero structure. Small logo, red "BLACK FRIDAY" label, a huge thin "30% OFF", one line ("The cuff and both chains, already reduced. No code to enter."), square CTA "SHOP 30% OFF", the macro photo fading in underneath. Tests: the offer itself as the hook. Photo: Figma node 3603:95 (W Batch 372 C2 No Text frame, raw image), silver stack on a wrist resting on white linen.
+C2 · One gift, three pieces (gold): gift structure. Photo on top, light panel below: red "BLACK FRIDAY · 30% OFF" label, "ONE GIFT, THREE PIECES.", "Cuff, box chain and square chain, in their own case.", proof chips (case included · free shipping · adjustable S/M/L), CTA "GIFT IT FOR 30% LESS". Tests: gifting angle with the case and free shipping as reassurance. Photo: Figma node 3716:420 (W Batch 385 C3 No Text frame, raw image), gold stack on a wrist against a white silk blouse.
+C3 · 3,000+ reviews, now 30% off (black): social-proof structure. Left-aligned: 4.5 stars + "4.5 ON TRUSTPILOT", "3,000+ REVIEWS. NOW 30% OFF.", three-line benefit list (waterproof, sweat and heat resistant / recycled 316L stainless steel / adjustable S/M/L, case included), red "BLACK FRIDAY · PRICES ALREADY REDUCED", CTA "SHOP THE BLACK STACK", photo underneath. Tests: trust + benefits before the offer. Photo: Figma node 3716:413 (W Batch 385 C2 No Text frame, raw image), black stack on a wrist against a white blouse.
