@@ -1,0 +1,39 @@
+{
+ "job": "W436 C3 voice note v4 (new ending)",
+ "text": "Okay so you know the gold bracelet I wear every day? I literally shower in it, I swim in it... it's waterproof. And it's thirty percent off for Black Friday right now, I'll send you the link.",
+ "output_format": "mp3_44100_128",
+ "settings_by_model": {
+  "eleven_v4": {
+   "stability": 0.3,
+   "similarity_boost": 0.75
+  },
+  "eleven_v3_conversational": {
+   "stability": 0.3,
+   "similarity_boost": 0.75,
+   "use_speaker_boost": true
+  }
+ },
+ "takes": [
+  {
+   "voice": "hope",
+   "voice_id": "uYXf8XasLslADfZ2MB4u",
+   "model_id": "eleven_v3_conversational",
+   "file": "bfcm26/video/vo/W436-C3-vo4-hope-v3conv.mp3",
+   "duration_s": 12.28
+  },
+  {
+   "voice": "hope",
+   "voice_id": "uYXf8XasLslADfZ2MB4u",
+   "model_id": "eleven_v4",
+   "file": "bfcm26/video/vo/W436-C3-vo4-hope-v4.mp3",
+   "duration_s": 12.12
+  },
+  {
+   "voice": "jessa",
+   "voice_id": "yj30vwTGJxSHezdAGsv9",
+   "model_id": "eleven_v3_conversational",
+   "file": "bfcm26/video/vo/W436-C3-vo4-jessa-v3conv.mp3",
+   "duration_s": 11.0
+  }
+ ]
+}
