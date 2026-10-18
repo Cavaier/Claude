@@ -1,12 +1,12 @@
-WC-C · Women · Black Friday · creative swing "Interactive / playful" · 2x Duo Minimal Set (women's), BLACK in every ad
+W Batch 435 (rebuild, WC-C2) · Women · Black Friday · native formats · 2x Duo Minimal Set (women's), BLACK in every ad
 Creative Origin: Ideation (native formats). Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced.
-Photos: real Session 9 Photo set (Women RAW share, folder cebd631f), original 6000x4000 JPGs, light grade only (touch of warmth, mild contrast, saturation 1.04). No generated images.
+Photos: real Session 9 Photo set (Women RAW Frame.io share, folder cebd631f), original 4000x6000 JPGs, light grade only (touch of warmth, mild contrast, saturation 1.03). No generated images. All new frames, not used in the previous W435 build or anywhere else.
 
 Primary text:
-Beach in the morning, white tank by day, all black at night: the black 2x Duo Minimal Set goes with all of it. It's waterproof and sweat and heat resistant, so it stays on in the sea and in the sun. Recycled 316L stainless steel, adjustable S/M/L. This Black Friday it's 30% off sitewide, the prices on the site are already reduced, so there's no code needed. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
+Sea in the morning, gym at noon, a shower, then dinner: the black 2x Duo Minimal Set stays on through all of it. It's waterproof and sweat and heat resistant, made from recycled 316L stainless steel and adjustable S/M/L. This Black Friday everything is 30% off sitewide. The prices on the site are already reduced, so there's no code to remember. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
 
-Headline (≤27): The black duo, 30% off   (22 chars)
-Description (≤27): Waterproof. No code needed.   (27 chars)
+Headline (≤27): The black duo, now 30% off   (26 chars)
+Description (≤27): Waterproof. Stays on.   (21 chars)
 
 Row links (Medium, black women's duo in all three ads; CTA href = EU link):
 C1 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
@@ -16,6 +16,6 @@ C2 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54
 C3 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
            US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
 
-C1 · "3 ways to wear it": red "BLACK FRIDAY · 30% OFF" label, "ONE DUO, THREE WAYS.", three numbered tall photo panels (01 BEACH "Sea, salt and sun" / 02 EVERYDAY "With a white tank" / 03 EVENING "All black, tag out"), line "Black Friday: 30% off sitewide. Prices already reduced." + CTA "SHOP THE BLACK DUO". Tests: versatility / styling as the hook (one product, many outfits). Photos: Session 9 DSC09628 (beach, sea and sky), DSC09772 (white tank), DSC09645 (black top).
-C2 · Poll / quiz card: neutral story-style poll sticker (no platform branding) "Sea, sweat, sun — does it come off?" with "Never" selected (filled black) and "Sometimes" (outline), then an answer card "THE ANSWER · Waterproof, sweat and heat resistant. 30% off this Black Friday." + CTA, over a full-bleed wrist under running sea water. Tests: interactive objection-handling (does it tarnish/come off) as the hook. Photo: Session 9 DSC09880.
-C3 · Packing slip / receipt: slim paper receipt with zigzag edges under a wrist photo: "2x Duo Minimal Set — Black (box chain + square chain)", "Black Friday — 30% off (sitewide, already applied on site)", "Case — Included", "Shipping — Free", "Code — None needed", red "YOU SAVE 30%", decorative barcode; no prices or currencies; CTA "SHOP THE BLACK DUO". Tests: deal transparency / everything-included value framing. Photo: Session 9 DSC09743 (wrist on white linen skirt).
+C1 · Weather widget: generic frosted weather card (no platform branding) "TODAY · BEACH DAY", 29°, Sunny, "UV high · sea 22°", hourly row (09:00/12:00/15:00 + Sea 22°), check line "Your black duo: waterproof, stays on.", red "BLACK FRIDAY" + "30% off sitewide. No code needed." + CTA "SHOP THE DUO", over a full-bleed wet wrist dipping into the sea. Tests: waterproof proof framed as a native phone widget (beach-day context as the hook). Photo: Session 9 DSC09927 (hand dipping into the sea, sky and horizon).
+C2 · Now playing: generic music player screen (no Spotify/Apple branding): "NOW PLAYING · On repeat: the black duo", square album art, track "Black Friday", artist "30% off sitewide · no code needed", progress bar stopped at 30% ("30% off" / "prices already reduced"), player controls, small red heart, CTA "SHOP THE BLACK DUO". Tests: playful pop-culture native format with the offer as the track (offer-first hook, product macro as the art). Photo: Session 9 DSC09852 (macro of the duo on a wet wrist, tag and clasp sharp).
+C3 · Places it's been (route map): white skirt wrist photo on top, red "BLACK FRIDAY · 30% OFF SITEWIDE", headline "PLACES IT'S BEEN TODAY", minimal generic line map with a dotted route and pins Sea → Gym → Shower → Dinner (last pin red), "Waterproof, so it never comes off. Prices already reduced, no code." + CTA "SHOP THE DUO". Tests: everyday durability (wear it everywhere, never take it off) told as a day route. Photo: Session 9 DSC09757 (wrist on a white pleated skirt, blue sky).
