@@ -1,0 +1,46 @@
+{
+ "endpoint": "POST /v1/sound-generation",
+ "output_format": "mp3_44100_128",
+ "takes": [
+  {
+   "file": "bfcm26/video/sfx/chat-sent-a.mp3",
+   "text": "A short soft airy swoosh-pop, like sending a text message on a smartphone. Clean, minimal UI sound, no music.",
+   "duration_seconds": 0.6,
+   "prompt_influence": 0.6,
+   "model_id": "eleven_text_to_sound_v2",
+   "duration_s": 0.63
+  },
+  {
+   "file": "bfcm26/video/sfx/chat-sent-b.mp3",
+   "text": "A short soft airy swoosh-pop, like sending a text message on a smartphone. Clean, minimal UI sound, no music.",
+   "duration_seconds": 0.6,
+   "prompt_influence": 0.6,
+   "model_id": "eleven_text_to_sound_v2",
+   "duration_s": 0.63
+  },
+  {
+   "file": "bfcm26/video/sfx/chat-received-a.mp3",
+   "text": "A short soft two-note glassy ding, like an incoming text message notification on a smartphone. Clean, gentle, no music.",
+   "duration_seconds": 0.6,
+   "prompt_influence": 0.6,
+   "model_id": "eleven_text_to_sound_v2",
+   "duration_s": 0.63
+  },
+  {
+   "file": "bfcm26/video/sfx/chat-received-b.mp3",
+   "text": "A short soft two-note glassy ding, like an incoming text message notification on a smartphone. Clean, gentle, no music.",
+   "duration_seconds": 0.6,
+   "prompt_influence": 0.6,
+   "model_id": "eleven_text_to_sound_v2",
+   "duration_s": 0.63
+  },
+  {
+   "file": "bfcm26/video/sfx/chat-typing-a.mp3",
+   "text": "Very short soft fingertip tapping on a smartphone touchscreen keyboard, light quiet taps, close and clean, no music.",
+   "duration_seconds": 1.0,
+   "prompt_influence": 0.6,
+   "model_id": "eleven_text_to_sound_v2",
+   "duration_s": 1.04
+  }
+ ]
+}
