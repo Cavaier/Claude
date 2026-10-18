@@ -103,7 +103,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Free shipping (both stores, confirmed by Eli).
   - Trustpilot 4.5, 3,000+ reviews.
   - No prices or currencies.
-- **Black Friday is winter (Eli, Oct 18):** Black Friday is the end of November: cold, dark, rain or snow, cozy, holiday shopping. Concepts, copy and scene details (weather, plans, packing lists, captions) must fit that season; no sunny beach-day or summer framing in Black Friday concepts.
+- **Black Friday is winter (Eli, Oct 18):** Black Friday is the end of November: cold, dark, rain or snow, cozy, holiday shopping. Concepts, copy and scene details (weather, plans, packing lists, captions) must fit that season; no sunny beach-day or summer framing in Black Friday concepts. But don't make cold, snow or weather the hook either (Eli rejected the W435 snow weather widget): keep the season neutral and sell the product and the offer.
 - **Offers:** Black Friday is 30% off sitewide, no code needed. The prices on the website are already discounted, so NEVER say "taken off at checkout" (Eli: not true). Evergreen has no offer and no deadline.
 - **Copy note per batch:** primary text, a headline and a description of 27 characters or less each, plus landing pages: EU `https://cavaier.com/products/<handle>`, US `https://us.cavaier.com/products/<handle>`. Handles: men's duo `2x-duo-minimal-set-for-him`, women's duo `2x-duo-minimal-set-for-her`, men's stack `3x-minimal-stack-set-for-him`, women's stack `3x-minimal-stack-set-for-her`.
 - **ROAS check per ad** (roas.js + roas.py):
