@@ -1731,5 +1731,44 @@
   "audio_codec": "aac",
   "prompt_key": "W430V-C3",
   "input": "inputs/W430V-C3.jpg"
+ },
+ "W437V-C2": {
+  "task_id": "cgt-20261020223320-va05a",
+  "model": "dreamina-seedance-2-5-260628",
+  "status": "succeeded",
+  "draft": true,
+  "resolution": "480p",
+  "duration": 5,
+  "generate_audio": true,
+  "prompt_key": "W437V-C2",
+  "input": "inputs/W437V-C2.jpg",
+  "file": "W437V-C2-draft.mp4",
+  "seed": 31780
+ },
+ "W437V-C1": {
+  "task_id": "cgt-20261020223318-jof5b",
+  "model": "dreamina-seedance-2-5-260628",
+  "status": "succeeded",
+  "draft": true,
+  "resolution": "480p",
+  "duration": 5,
+  "generate_audio": true,
+  "prompt_key": "W437V-C1",
+  "input": "inputs/W437V-C1.jpg",
+  "file": "W437V-C1-draft.mp4",
+  "seed": 78295
+ },
+ "W437V-C3": {
+  "task_id": "cgt-20261020223323-ds26h",
+  "model": "dreamina-seedance-2-5-260628",
+  "status": "succeeded",
+  "draft": true,
+  "resolution": "480p",
+  "duration": 5,
+  "generate_audio": true,
+  "prompt_key": "W437V-C3",
+  "input": "inputs/W437V-C3.jpg",
+  "file": "W437V-C3-draft.mp4",
+  "seed": 97366
  }
 }
