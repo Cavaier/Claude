@@ -1289,6 +1289,278 @@
    "w": 1080,
    "h": 1920,
    "title": "W Batch 437 - C3 · video of W435 C3 (you asked about the black duo, Q&A) · FINAL 1080p · SOUND"
+  },
+  "W443-C1.dc.html": {
+   "x": 9900,
+   "y": 43200,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 443 - C1 · Black Friday gift guide card (gold duo)"
+  },
+  "W443-C2.dc.html": {
+   "x": 11060,
+   "y": 43200,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 443 - C2 · Unboxing sequence: open, clasp, keep (gold duo)"
+  },
+  "W443-C3.dc.html": {
+   "x": 12220,
+   "y": 43200,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 443 - C3 · Gift bingo card, every box ticked (gold duo)"
+  },
+  "W444-C1.dc.html": {
+   "x": 9900,
+   "y": 45600,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 444 - C1 · Every day, covered: hand + tick list (black stack)"
+  },
+  "W444-C2.dc.html": {
+   "x": 11060,
+   "y": 45600,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 444 - C2 · Your outfit is done. Your wrist isn’t. (black stack)"
+  },
+  "W444-C3.dc.html": {
+   "x": 12220,
+   "y": 45600,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 444 - C3 · One set in. Every outfit upgraded. (black stack)"
+  },
+  "Refs-W444.dc.html": {
+   "x": 9400,
+   "y": 45600,
+   "w": 420,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 444 · IM8 refs"
+  },
+  "W445-C1.dc.html": {
+   "x": 9900,
+   "y": 48000,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 445 - C1 · How to wear the duo: 3 steps (silver duo)"
+  },
+  "W445-C2.dc.html": {
+   "x": 11060,
+   "y": 48000,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 445 - C2 · Animated static: Alone. Stacked. Always on. (gold duo, mp4 + poster)"
+  },
+  "W445-C3.dc.html": {
+   "x": 12220,
+   "y": 48000,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 445 - C3 · Water editorial: it goes in the water, it stays on (gold duo)"
+  },
+  "W446-C1.dc.html": {
+   "x": 9900,
+   "y": 50400,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 446 - C1 · Look closer: macro with three hairline callouts (gold stack)"
+  },
+  "W446-C2.dc.html": {
+   "x": 11060,
+   "y": 50400,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 446 - C2 · Material passport card (gold stack)"
+  },
+  "W446-C3.dc.html": {
+   "x": 12220,
+   "y": 50400,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 446 - C3 · Same top, add the stack: before/after styling (gold stack)"
+  },
+  "W447-C1.dc.html": {
+   "x": 9900,
+   "y": 52800,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 447 - C1 · Highlighted headline: the black duo, now 30% off (IM8 now yours)"
+  },
+  "W447-C2.dc.html": {
+   "x": 11060,
+   "y": 52800,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 447 - C2 · Officially Black Friday: big caps over photo with a light panel (IM8 official partner)"
+  },
+  "W447-C3.dc.html": {
+   "x": 12220,
+   "y": 52800,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 447 - C3 · Yesterday: full price. Today: 30% off. (IM8 strike-through)"
+  },
+  "Refs-W447.dc.html": {
+   "x": 9400,
+   "y": 52800,
+   "w": 420,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 447 · IM8 refs"
+  },
+  "W448-C1.dc.html": {
+   "x": 9900,
+   "y": 55200,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 448 - C1 · Rated 4.5, now 30% off (photo top, panel bottom)"
+  },
+  "W448-C2.dc.html": {
+   "x": 11060,
+   "y": 55200,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 448 - C2 · 3 pieces, 1 set, 30% off (stat headline over product)"
+  },
+  "W448-C3.dc.html": {
+   "x": 12220,
+   "y": 55200,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 448 - C3 · The silver stack, 30% less (product hero over logo texture)"
+  },
+  "Refs-W448.dc.html": {
+   "x": 9400,
+   "y": 55200,
+   "w": 420,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 448 · IM8 refs"
+  },
+  "W449-C1.dc.html": {
+   "x": 9900,
+   "y": 57600,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 449 - C1 · Outfit formula: black top + gold duo = done"
+  },
+  "W449-C2.dc.html": {
+   "x": 11060,
+   "y": 57600,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 449 - C2 · The outfit / the detail (styling split)"
+  },
+  "W449-C3.dc.html": {
+   "x": 12220,
+   "y": 57600,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 449 - C3 · Everyday jewellery, ranked (tier list)"
+  },
+  "W450-C1.dc.html": {
+   "x": 9900,
+   "y": 60000,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 450 - C1 · Party season, sorted (night-out editorial)"
+  },
+  "W450-C2.dc.html": {
+   "x": 11060,
+   "y": 60000,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 450 - C2 · Three pieces. One move. (animated static mp4)"
+  },
+  "W450-C3.dc.html": {
+   "x": 12220,
+   "y": 60000,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 450 - C3 · The black stack mood (mood board)"
+  },
+  "W451-C1.dc.html": {
+   "x": 9900,
+   "y": 62400,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 451 - C1 · Save 30% on the gold duo (bold offer + tick list)"
+  },
+  "W451-C2.dc.html": {
+   "x": 11060,
+   "y": 62400,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 451 - C2 · The gold duo, up close (3-stage zoom strip + rating bar)"
+  },
+  "W451-C3.dc.html": {
+   "x": 12220,
+   "y": 62400,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 451 - C3 · Claim your Black Friday duo (kit lineup)"
+  },
+  "Refs-W451.dc.html": {
+   "x": 9400,
+   "y": 62400,
+   "w": 420,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 451 · IM8 refs"
+  },
+  "W452-C1.dc.html": {
+   "x": 9900,
+   "y": 64800,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 452 - C1 · Send this to him (share card)"
+  },
+  "W452-C2.dc.html": {
+   "x": 11060,
+   "y": 64800,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 452 - C2 · Hint, hint (three hints)"
+  },
+  "W452-C3.dc.html": {
+   "x": 12220,
+   "y": 64800,
+   "w": 1080,
+   "h": 1920,
+   "is_interactive": true,
+   "title": "W Batch 452 - C3 · The gift I'd keep on (framed wish card)"
   }
  },
  "createdOnFiles": {
@@ -1302,7 +1574,7 @@
  "notes": {
   "activity": {
    "fill": "blue",
-   "text": "ACTIVITY & QUEUE · updated 15:03\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\n81. chat: \"batch names ready in ClickUp\" → DONE: W425 imitation statics · W426 Seedance video · W427 Frame Method · W428 ideation statics · M478 imitation statics · M479 ideation statics · M480 Frame Method · M481 W409-style video\n82. chat: \"push frame and clickup W425, W426, M481, M478, W427, W414\" → DONE 19:58: Frame.io 36/36 clean (EN + No Text) · ClickUp copy, fields, row comments (M478 C1 comment not posted) · mothers to \"ads for review\" (W414 stays \"ready for edit\")\n83. chat: \"URLs in the ad rows with the ad's color variant, not on the mother\" → DONE: 18 rows got variant links (W425/426/414 gold duo, W427 black duo, M478/481 silver duo), mother URL fields cleared; W414 corrected from stack to duo (rule)\n84. chat: \"3 new batches same as W425, Black Friday\" → DONE: W429 silver duo (y16800), W430 black duo (y19200), W431 gold 3x stack (y21600), ROAS ✓; 3 ClickUp \"W Batch\" tasks created (Editor Eli, IMAGE)\n85. chat: \"W429 C1+C2 images not good · W431 C2 deleted, need better · video versions of W430\" → RUNNING: W429 rebuilt in GOLD duo (no real women's silver duo photos exist; Eli's pick), 3 real Figma photos DONE ✓ · W431 new C2 DONE ✓ (IM8 \"Join the squad's daily ritual\", real Figma photo) · W430 videos DONE ✓ as W Batch 432 (W video lane y19200, 1080p, sound)\n86. chat: \"W430 + W431 push frame + clickup\" → DONE: Frame.io 12/12 clean · ClickUp copy, fields, row links (black duo / gold stack variants), row comments · mothers to \"ads for review\"\n87. chat: \"push W432 to clickup and frame\" → DONE: Frame.io 6/6 clean · ClickUp copy, fields, row links (black duo), comments · mother to \"ads for review\"\n88. chat: \"push W429 to frame and clickup\" → DONE: Frame.io 6/6 clean · ClickUp copy, fields, row links (gold duo), comments · mother to \"ads for review\"\n89. Oct 17 chat: \"redo W428 (no generated images) · redo M479 · M480 C1 looks chunky · redo M480 C3 · high-ROAS Black Friday\" → DONE: W428 DONE ✓ (real Figma photos: silver / gold / black stack) · M479 DONE ✓ (real RAW stills, Men Session 1) (Figma / RAW stills), high-converting BF layouts · M480 C1 + C3 DONE ✓ (Session 2 slim wrists, new lines + music)\n90. chat: \"push clickup + frame M480, M479, W428\" → DONE: Frame.io 18/18 clean · ClickUp copy, fields, row variant links, comments · mothers to \"ads for review\"\n91. Oct 17 chat: \"3 men + 3 women Black Friday batches, bigger concept swings (native formats like the Notes ads)\" → DONE: M483, M484, M485, W433, W434, W435 on the canvas ✓; real photos only; 6 ClickUp tasks created (Editor Eli, IMAGE)\n92. chat: \"483 C2 silver image from the men's 3x page, better C3/C1 · 484 C3 more professional image · 485 C1 not a heavy hand · 433 C2 light gold not warm · 434 C1 + C3 better images\" → DONE ✓ 17 Oct: M484 C3 studio image · W433 C2 light gold · M485 C1 slim wrist · M483 C1/C3 new Figma shots + C2 silver 3x stack from the men's page · W434 C1 gold studio + C3 three new black polaroids\n93. chat: \"W433 C3 as a video where the voice note plays, Seedance + ElevenLabs\" → DONE ✓ 22:07 Seedance 1080p wet-wrist clip (slowed to 6.2 s) + Arabella voice note, waveform and timer play in sync, in the W video lane next to W433\n94. chat: \"M483, M484, M485 push to clickup + frame\" → DONE ✓ 22:20 ClickUp filled (Ideation, Black Friday, BOF, 30% Off, row variant links) + Frame.io 18/18 clean, mothers → ads for review\n95. chat: \"video versions of W433 C1 + C2 on the right, new batch number for the W433 videos\" → DONE ✓ 22:30 W Batch 436 C1 chat + C2 wishlist videos (1080p, sound) in the W video lane (C2 re-rendered 22:36 from a clean photo, so the no-text version has no badge)\n96. chat: \"voice note sounds fake and robotic, not like a WhatsApp memo from a friend\" → DONE ✓ 22:20 new voice (ElevenLabs v3, casual young voice \"Siren\"), new memo-style script, 9.7 s, now W Batch 436 C3\n97. chat: \"436 C3 voice sounds like old ElevenLabs, must sound like a real WhatsApp voice message; copy contradicts itself (just bought it / never takes it off)\" → DONE ✓ 22:33 new script (\"the gold bracelet I wear every day? I shower in it, I swim in it…\") + ElevenLabs conversational voice \"Hope\", 12.1 s; 6 other takes sent to Eli to pick\n98. chat: \"that just get it was bad\" → DONE ✓ 22:40 W436 C3 ending now \"…30% off for Black Friday right now, I'll send you the link.\" (Hope voice, 13.3 s)\n99. chat: \"W436-C3-vo4-jessa-v3conv was best\" → DONE ✓ 22:44 W436 C3 now uses the Jessa voice (12.0 s)\n100. chat: \"436 C1 why doesn't it make iMessage sounds on the messages?\" → DONE ✓ 07:55 Oct 18: chat sounds on every message (soft ding for incoming, swoosh for sent; generic sounds, not Apple's)\n101. chat: \"push clickup and frame W436 … and 433\" → DONE ✓ 08:10 Oct 18: ClickUp filled (Ideation, Black Friday, BOF, 30% Off, gold duo links on rows) + Frame.io 12/12 clean, both mothers → ads for review\n102. chat: \"redo a new concept of W434, didn't like that; same with W435\" → DONE ✓ (6 new formats, real photos): W434 DONE ✓ 08:40 (POV caption · pick your finish · packing list), W435 DONE ✓ 09:30 (weather widget · now playing · places it's been)\n103. chat: \"black friday is winter, not sunny beach days · W434 C3 bad image\" → DONE ✓ 10:05 W435 C1 now a 3° light-snow Black Friday widget on a dark wool shot, C3 route Commute → Gym → Shower → Dinner on a cozy armchair shot; W434 C3 winter city-break list on the Shopify silver stack studio shot\n104. chat: \"W435 C1: cold weather and snow is not good marketing, do a different concept\" → DONE ✓ 10:30 W435 C1 is now a woven care label (Shower: yes · Swim: yes · Sweat & heat: yes · Take off: not needed), no season talk\n105. 14:12 comment W435 C1/C3: \"redo W Batch new concept but image good on 435-C1, W435 C3 good image but bad concepts\" → DONE ✓ 14:17: new concepts, C1 The Black Edit (magazine cover) · C2 gift tag \"to me, from me\" (new photo DSC08651) · C3 You asked (FAQ), ROAS ✓\n106. 14:20 comment W435 C1/C2: \"tag claim wrong (both bracelets have a tag) · Black Friday much more presence, drop BLACK FRIDAY ISSUE · C2 new creative concept for CTR/ROAS\" → DONE ✓ 14:23: C1 Black Friday hero (giant 30% OFF, BLACK FRIDAY block, issue framing + tag line removed) · C2 new concept: the usual vs the black duo comparison under a giant 30% OFF · C3 big 30% Black Friday lockup over the FAQ · copy note updated, ROAS ✓\n107. 14:21 comment W434: \"push W434 to clickup+frame\" → DONE ✓ 14:26: ClickUp copy + Style/Angle/Origin/Funnel/Offer + row variant links + comments, mother → ads for review · Frame.io 6/6 clean (EN + No Text)\n108. 14:28 comment W435: \"W435 push to clickup + frame\" → DONE ✓ 14:34: ClickUp copy + Style/Angle/Origin/Funnel/Offer (Black Friday · Ideation · TOF · 30% Off) + row variant links (black duo) + comments, mother → ads for review · Frame.io 6/6 clean (EN + No Text)\n109. 14:31 comment W435: \"make W435 draft video versions\" → DONE ✓ 14:39: W Batch 437 C1–C3 Seedance 480p drafts with sound (C1 dark wool hero, C2 comparison, C3 Q&A), text animates in over the moving photo · video copy note\n110. 14:44 comment W437: \"push W437 to clickup+frame\" → DONE ✓ 15:03: ClickUp task created, automation numbered it W Batch 437 (number kept) · 1080p finals with sound, photo fully visible from frame 1 · ClickUp copy + Style/Angle/Origin/Funnel/Offer (Black Friday · Ideation · TOF · 30% Off) + row links (black duo) + comments, mother → ads for review · Frame.io 6/6 clean (EN + No Text)\nRUNNING\n–\nDONE\n✓ 15:03 W437 delivered (1080p finals, ClickUp + Frame.io 6/6)\n✓ 14:39 W437 draft videos of W435 C1–C3 (480p, sound)\n✓ 14:34 W435 delivered (ClickUp + Frame.io 6/6)\n✓ 14:26 W434 delivered (ClickUp + Frame.io 6/6)\n✓ Oct 17 6 creative-swing Black Friday batches on the canvas (M483–485, W433–435), 18 formats, real photos\n✓ Oct 17 M480, M479, W428 delivered (ClickUp + Frame.io 18/18)\n✓ W429 delivered (ClickUp + Frame.io 6/6)\n✓ W432 delivered (ClickUp + Frame.io 6/6)\n✓ W430 + W431 delivered (ClickUp + Frame.io 12/12)\n✓ W429, W430, W431 women's imitation statics on the canvas\n✓ 19:58 W425, W426, W427, W414, M478, M481 delivered (ClickUp + Frame.io 36/36)\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
+   "text": "ACTIVITY & QUEUE · updated 15:59\n\nQUEUE (comments in the order they arrived)\n1–72. Oct 12–14 · M446–M476, W415–W424, M462–M466 commands → all DONE (full log in git: bfcm26/canvas/canvas.json history)\n73. 07:00 M464 C1 · chat: \"change the music\" → DONE 07:05: new track, deep minimal bass pulse with low cello drone (no guitar)\n74. 07:10 M464 + M466 · chat: \"push to clickup and frame\" → DONE 07:27: ClickUp (copy, fields, row comments) + Frame.io 12/12 clean; M466 C1 re-exported with Eli's headline and stacked as V2\n75. 07:45 M462 + M463 · chat: \"2 imitation method videos, Black Friday\" → DONE 08:50: M462 C1–C3 imitate IM8 video ads (proof card, inset, ritual montage) · M463 C1–C3 imitate the Black Friday montage ref · ClickUp captions on screen, Men Session 2, music\n76. 09:10 M462 + M463 · chat: \"push to frame and clickup\" → DONE 09:35: Frame.io 12/12 clean (EN + No Text) · ClickUp rows Imitation + comments, mothers EU/US URL\n77. 13:05 chat: \"10 batches, mix methods, video/image, 5 W / 5 M, Black Friday\" → RUNNING: videos DONE (W414, W new FM, M465, M new FM, M new W409-style); statics + Seedance batches wait for Figma; 8 ClickUp tasks created, numbers not assigned yet\n78. chat: \"no shadows behind text\" + \"text repeats\" + \"same sessions\" → DONE: veils removed (rule), new lines per scene (rule), W new FM moved to Session 6, W414 to Session 7 (rule: rotate sessions), M479 C3 new surf shots\n79. chat: \"push frame and clickup M Batch 465\" → DONE: Frame.io 6/6 clean, ClickUp URLs + row comments\n80. chat: \"figma is back connected\" → statics: W imitation, W ideation, M ideation DONE on the canvas; M imitation DONE (M lane y19200); W Seedance video DONE (W video lane y16800) → all 10 batches on the canvas\n81. chat: \"batch names ready in ClickUp\" → DONE: W425 imitation statics · W426 Seedance video · W427 Frame Method · W428 ideation statics · M478 imitation statics · M479 ideation statics · M480 Frame Method · M481 W409-style video\n82. chat: \"push frame and clickup W425, W426, M481, M478, W427, W414\" → DONE 19:58: Frame.io 36/36 clean (EN + No Text) · ClickUp copy, fields, row comments (M478 C1 comment not posted) · mothers to \"ads for review\" (W414 stays \"ready for edit\")\n83. chat: \"URLs in the ad rows with the ad's color variant, not on the mother\" → DONE: 18 rows got variant links (W425/426/414 gold duo, W427 black duo, M478/481 silver duo), mother URL fields cleared; W414 corrected from stack to duo (rule)\n84. chat: \"3 new batches same as W425, Black Friday\" → DONE: W429 silver duo (y16800), W430 black duo (y19200), W431 gold 3x stack (y21600), ROAS ✓; 3 ClickUp \"W Batch\" tasks created (Editor Eli, IMAGE)\n85. chat: \"W429 C1+C2 images not good · W431 C2 deleted, need better · video versions of W430\" → RUNNING: W429 rebuilt in GOLD duo (no real women's silver duo photos exist; Eli's pick), 3 real Figma photos DONE ✓ · W431 new C2 DONE ✓ (IM8 \"Join the squad's daily ritual\", real Figma photo) · W430 videos DONE ✓ as W Batch 432 (W video lane y19200, 1080p, sound)\n86. chat: \"W430 + W431 push frame + clickup\" → DONE: Frame.io 12/12 clean · ClickUp copy, fields, row links (black duo / gold stack variants), row comments · mothers to \"ads for review\"\n87. chat: \"push W432 to clickup and frame\" → DONE: Frame.io 6/6 clean · ClickUp copy, fields, row links (black duo), comments · mother to \"ads for review\"\n88. chat: \"push W429 to frame and clickup\" → DONE: Frame.io 6/6 clean · ClickUp copy, fields, row links (gold duo), comments · mother to \"ads for review\"\n89. Oct 17 chat: \"redo W428 (no generated images) · redo M479 · M480 C1 looks chunky · redo M480 C3 · high-ROAS Black Friday\" → DONE: W428 DONE ✓ (real Figma photos: silver / gold / black stack) · M479 DONE ✓ (real RAW stills, Men Session 1) (Figma / RAW stills), high-converting BF layouts · M480 C1 + C3 DONE ✓ (Session 2 slim wrists, new lines + music)\n90. chat: \"push clickup + frame M480, M479, W428\" → DONE: Frame.io 18/18 clean · ClickUp copy, fields, row variant links, comments · mothers to \"ads for review\"\n91. Oct 17 chat: \"3 men + 3 women Black Friday batches, bigger concept swings (native formats like the Notes ads)\" → DONE: M483, M484, M485, W433, W434, W435 on the canvas ✓; real photos only; 6 ClickUp tasks created (Editor Eli, IMAGE)\n92. chat: \"483 C2 silver image from the men's 3x page, better C3/C1 · 484 C3 more professional image · 485 C1 not a heavy hand · 433 C2 light gold not warm · 434 C1 + C3 better images\" → DONE ✓ 17 Oct: M484 C3 studio image · W433 C2 light gold · M485 C1 slim wrist · M483 C1/C3 new Figma shots + C2 silver 3x stack from the men's page · W434 C1 gold studio + C3 three new black polaroids\n93. chat: \"W433 C3 as a video where the voice note plays, Seedance + ElevenLabs\" → DONE ✓ 22:07 Seedance 1080p wet-wrist clip (slowed to 6.2 s) + Arabella voice note, waveform and timer play in sync, in the W video lane next to W433\n94. chat: \"M483, M484, M485 push to clickup + frame\" → DONE ✓ 22:20 ClickUp filled (Ideation, Black Friday, BOF, 30% Off, row variant links) + Frame.io 18/18 clean, mothers → ads for review\n95. chat: \"video versions of W433 C1 + C2 on the right, new batch number for the W433 videos\" → DONE ✓ 22:30 W Batch 436 C1 chat + C2 wishlist videos (1080p, sound) in the W video lane (C2 re-rendered 22:36 from a clean photo, so the no-text version has no badge)\n96. chat: \"voice note sounds fake and robotic, not like a WhatsApp memo from a friend\" → DONE ✓ 22:20 new voice (ElevenLabs v3, casual young voice \"Siren\"), new memo-style script, 9.7 s, now W Batch 436 C3\n97. chat: \"436 C3 voice sounds like old ElevenLabs, must sound like a real WhatsApp voice message; copy contradicts itself (just bought it / never takes it off)\" → DONE ✓ 22:33 new script (\"the gold bracelet I wear every day? I shower in it, I swim in it…\") + ElevenLabs conversational voice \"Hope\", 12.1 s; 6 other takes sent to Eli to pick\n98. chat: \"that just get it was bad\" → DONE ✓ 22:40 W436 C3 ending now \"…30% off for Black Friday right now, I'll send you the link.\" (Hope voice, 13.3 s)\n99. chat: \"W436-C3-vo4-jessa-v3conv was best\" → DONE ✓ 22:44 W436 C3 now uses the Jessa voice (12.0 s)\n100. chat: \"436 C1 why doesn't it make iMessage sounds on the messages?\" → DONE ✓ 07:55 Oct 18: chat sounds on every message (soft ding for incoming, swoosh for sent; generic sounds, not Apple's)\n101. chat: \"push clickup and frame W436 … and 433\" → DONE ✓ 08:10 Oct 18: ClickUp filled (Ideation, Black Friday, BOF, 30% Off, gold duo links on rows) + Frame.io 12/12 clean, both mothers → ads for review\n102. chat: \"redo a new concept of W434, didn't like that; same with W435\" → DONE ✓ (6 new formats, real photos): W434 DONE ✓ 08:40 (POV caption · pick your finish · packing list), W435 DONE ✓ 09:30 (weather widget · now playing · places it's been)\n103. chat: \"black friday is winter, not sunny beach days · W434 C3 bad image\" → DONE ✓ 10:05 W435 C1 now a 3° light-snow Black Friday widget on a dark wool shot, C3 route Commute → Gym → Shower → Dinner on a cozy armchair shot; W434 C3 winter city-break list on the Shopify silver stack studio shot\n104. chat: \"W435 C1: cold weather and snow is not good marketing, do a different concept\" → DONE ✓ 10:30 W435 C1 is now a woven care label (Shower: yes · Swim: yes · Sweat & heat: yes · Take off: not needed), no season talk\n105. 14:12 comment W435 C1/C3: \"redo W Batch new concept but image good on 435-C1, W435 C3 good image but bad concepts\" → DONE ✓ 14:17: new concepts, C1 The Black Edit (magazine cover) · C2 gift tag \"to me, from me\" (new photo DSC08651) · C3 You asked (FAQ), ROAS ✓\n106. 14:20 comment W435 C1/C2: \"tag claim wrong (both bracelets have a tag) · Black Friday much more presence, drop BLACK FRIDAY ISSUE · C2 new creative concept for CTR/ROAS\" → DONE ✓ 14:23: C1 Black Friday hero (giant 30% OFF, BLACK FRIDAY block, issue framing + tag line removed) · C2 new concept: the usual vs the black duo comparison under a giant 30% OFF · C3 big 30% Black Friday lockup over the FAQ · copy note updated, ROAS ✓\n107. 14:21 comment W434: \"push W434 to clickup+frame\" → DONE ✓ 14:26: ClickUp copy + Style/Angle/Origin/Funnel/Offer + row variant links + comments, mother → ads for review · Frame.io 6/6 clean (EN + No Text)\n108. 14:28 comment W435: \"W435 push to clickup + frame\" → DONE ✓ 14:34: ClickUp copy + Style/Angle/Origin/Funnel/Offer (Black Friday · Ideation · TOF · 30% Off) + row variant links (black duo) + comments, mother → ads for review · Frame.io 6/6 clean (EN + No Text)\n109. 14:31 comment W435: \"make W435 draft video versions\" → DONE ✓ 14:39: W Batch 437 C1–C3 Seedance 480p drafts with sound (C1 dark wool hero, C2 comparison, C3 Q&A), text animates in over the moving photo · video copy note\n110. 14:44 comment W437: \"push W437 to clickup+frame\" → DONE ✓ 15:03: ClickUp task created, automation numbered it W Batch 437 (number kept) · 1080p finals with sound, photo fully visible from frame 1 · ClickUp copy + Style/Angle/Origin/Funnel/Offer (Black Friday · Ideation · TOF · 30% Off) + row links (black duo) + comments, mother → ads for review · Frame.io 6/6 clean (EN + No Text)\nP4 · 15:08 BF30 plan package P4: W Batch 438–442 (15 Black Friday ads, W438 IM8 self-treat gold stack · W439 IM8 social-proof gold duo · W440 workwear black stack + C2 motion · W441 native list/question/sticky-note black duo · W442 IM8 set-value gold stack) → RUNNING\nP5 · 15:33 BF30 plan package P5: W Batch 443–447 → DONE ✓ 15:47: 15 ads on the canvas (W443 gift · W444 IM8 busy-woman · W445 how-to + animated C2 mp4 · W446 craft detail · W447 IM8 evening), real photos only, ROAS ✓, ClickUp fields filled (no Frame upload yet)\nP2 · 15:50 BF30 plan package P2: M Batch 492–496 (M492 IM8 proof silver stack · M493 IM8 office silver duo · M494 gym black stack + C2 motion · M495 IM8 first-bracelet silver duo · M496 gift-for-him gold stack) → RUNNING\nP6 · 15:50 BF30 plan package P6: W Batch 448–452 (15 Black Friday ads, W448 IM8 beginner set value · W449 styling formula/tier list gold duo · W450 party black stack + C2 motion · W451 IM8 deal-hunter gold duo · W452 hint-to-him gold stack) → DONE ✓ 15:59: 15 ads on the canvas, real photos only (Session 11 stills, Session 12 originals, Figma camera files, Shopify listing), ROAS ✓, ClickUp fields filled (no Frame upload yet)\nP1 · 15:51 BF30 plan package P1: M Batch 487–491 (M487 IM8 gift silver duo · M488 spec/material black stack · M489 RAW minimalist silver duo + C2 motion · M490 IM8 self-treat gold stack · M491 deal-hunter native black duo) → RUNNING\nRUNNING\n⟳ P1 M487–M491 statics + M489 C2 motion (started 15:51)\n⟳ P2 M492–M496 statics + M494 C2 motion (started 15:50)\n⟳ P4 W438–W442 statics + W440 C2 motion (started 15:08)\n–\nDONE\n✓ P6 15:59 W Batch 448–452 on the canvas (DRAFT), ROAS ✓\n✓ P5 15:47 W Batch 443–447 on the canvas (DRAFT), ROAS ✓\n✓ 15:03 W437 delivered (1080p finals, ClickUp + Frame.io 6/6)\n✓ 14:39 W437 draft videos of W435 C1–C3 (480p, sound)\n✓ 14:34 W435 delivered (ClickUp + Frame.io 6/6)\n✓ 14:26 W434 delivered (ClickUp + Frame.io 6/6)\n✓ Oct 17 6 creative-swing Black Friday batches on the canvas (M483–485, W433–435), 18 formats, real photos\n✓ Oct 17 M480, M479, W428 delivered (ClickUp + Frame.io 18/18)\n✓ W429 delivered (ClickUp + Frame.io 6/6)\n✓ W432 delivered (ClickUp + Frame.io 6/6)\n✓ W430 + W431 delivered (ClickUp + Frame.io 12/12)\n✓ W429, W430, W431 women's imitation statics on the canvas\n✓ 19:58 W425, W426, W427, W414, M478, M481 delivered (ClickUp + Frame.io 36/36)\n✓ 19:30 W Seedance video from the W imitation statics: 3 finals 1080p with sound (W video lane y16800)\n✓ 16:35 M imitation statics on the canvas (M lane y19200), ROAS ✓\n✓ 16:10 W imitation (W lane y14400), W ideation (y12000), M ideation (M lane y16800) statics on the canvas, ROAS ✓\n✓ 09:35 M Batch 462 + 463 videos delivered (ClickUp + Frame.io 12/12)\n✓ 08:50 M Batch 462 + 463 imitation videos on the canvas (6, FINAL 1080p, music)\n✓ 07:27 M Batch 464 + 466 delivered (ClickUp + Frame.io 12/12)\n✓ 21:15 M Batch 464 C1 new slim cut · M466 C1 new still\n✓ 19:55 M Batch 462 / 464 / 466 on the canvas\n✓ 18:20 W Batch 423 + 424 delivered\n(older: git history)",
    "w": 600,
    "x": 18680,
    "y": -1700
@@ -1799,6 +2071,366 @@
    "maxH": 1920,
    "fill": "gray",
    "text": "W Batch 437 · ad copy (Black Friday · video versions of W Batch 435) · delivered Oct 20 (ClickUp + Frame.io)\n\nWomen's 2x Duo Minimal Set, BLACK · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (video of W435 statics). Style/Angle: Black Friday. Offer: 30% off.\n1080p finals with sound, 5 s clip slowed to 6.6 s, photo fully visible from frame 1; same real photos as W435 (DSC08662, DSC08651, DSC08626). The statics stay live.\n\nPrimary text:\nBlack Friday is here: 30% off everything, no code needed. The black duo is a box chain and a square chain made to stay on: waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. The prices on the site are already reduced. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHeadline: The black duo, now 30% off  (26)\nDescription: No code needed  (14)\n\nLanding pages (black women's duo):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\n\nC1 · Hero video: BLACK FRIDAY 30% OFF on screen from frame 1 over the dark wool photo, the wrist settles in slow motion; the subline and the CTA rise in.\nC2 · Comparison video: 30% OFF on top, the photo moves in its box, THE USUAL vs THE BLACK DUO rows tick in one by one, then the CTA.\nC3 · Q&A video: armchair photo moves, 30% BLACK FRIDAY lockup, the four questions and answers appear one by one, then the CTA.\nSafe zones: same text layer as the ROAS-checked W435 statics (key text inside y 270–1536)."
+  },
+  "p4-wip-W438-C1": {
+   "x": 9900,
+   "y": 31200,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 438 - C1\nFull-bleed sofa photo + round 30% sticker (IM8 One drink. 92 ingredients.)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W438-C2": {
+   "x": 11060,
+   "y": 31200,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 438 - C2\nHighlighted headline over photo (IM8 premium daily ritual, now yours)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W438-C3": {
+   "x": 12220,
+   "y": 31200,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 438 - C3\nCaps header over photo (IM8 official partner)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W439-C1": {
+   "x": 9900,
+   "y": 33600,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 439 - C1\nBig caps, photo below (IM8 It's official.)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W439-C2": {
+   "x": 11060,
+   "y": 33600,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 439 - C2\nReviews headline (IM8 Over 10,000 5-star reviews)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W439-C3": {
+   "x": 12220,
+   "y": 33600,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 439 - C3\nTop headline + framed photo (IM8 We listened. We upgraded.)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W440-C1": {
+   "x": 9900,
+   "y": 36000,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 440 - C1\nEditorial: photo + slim white band\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W440-C2": {
+   "x": 11060,
+   "y": 36000,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 440 - C2\nAnimated static mp4: hairline labels on cuff / box chain / square chain\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W440-C3": {
+   "x": 12220,
+   "y": 36000,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 440 - C3\nDiary strip: Monday to Friday\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W441-C1": {
+   "x": 9900,
+   "y": 38400,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 441 - C1\nBlack Friday shopping list with photo clipped on\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W441-C2": {
+   "x": 11060,
+   "y": 38400,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 441 - C2\nStory question box: \"Can I shower with it?\"\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W441-C3": {
+   "x": 12220,
+   "y": 38400,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 441 - C3\nSticky note: Note to self, it's 30% off\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W442-C1": {
+   "x": 9900,
+   "y": 40800,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 442 - C1\nTwo-column comparison (IM8 The Beckham Stack)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W442-C2": {
+   "x": 11060,
+   "y": 40800,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 442 - C2\nItalic headline, product resting on fabric (IM8 The drink behind the 90)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "p4-wip-W442-C3": {
+   "x": 12220,
+   "y": 40800,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nW Batch 442 - C3\nCentred italic + arch photo (IM8 Your welcome kit awaits)\n\nBuilder P4 · Black Friday 30% off"
+  },
+  "copy-w443": {
+   "x": 13380,
+   "y": 43200,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 443 · ad copy (Black Friday · BF30 package P5) · DRAFT, not delivered yet\n\nWomen's 2x Duo - Minimal Set, GOLD · gift for her · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own gift concepts, real Figma camera photos + Shopify case photo). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code needed, prices already reduced. The gold 2x Duo - Minimal Set is an easy gift: adjustable S/M/L so there's no size guessing, waterproof so she never has to take it off, recycled 316L stainless steel. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHeadline: A gift she won't take off  (25)\nDescription: Case included  (13)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC2 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC3 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\n\nC1 · Gift-guide card \"For the one who never takes it off\": No. 01 entry with three gift reasons, 30% off, CTA. Photo Figma DSC00662 (swapped from the planned pool shot DSC00772: swimwear reads summer).\nC2 · Unboxing sequence Open. Clasp. Keep.: case (Shopify jbag3) → clasp close-up → wrist (Figma DSC08259, two crops). Case included, free shipping, 30% off.\nC3 · Gift bingo card: 8 ticked boxes (waterproof, S/M/L, case, free shipping, 30% off, no code, 316L, 4.5 Trustpilot) around a photo \"free space\". Figma DSC00336.\nROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px."
+  },
+  "copy-w444": {
+   "x": 13380,
+   "y": 45600,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 444 · ad copy (Black Friday · BF30 package P5) · DRAFT, not delivered yet\n\nWomen's 3x Minimal - Stack Set, BLACK · busy woman, zero-effort polish · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code needed. The black 3x Minimal - Stack Set finishes any outfit with zero effort: a flat polished cuff bangle, a box chain and a square chain. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Prices already reduced, free shipping.\n\nHeadline: Outfit done. Wrist done.  (24)\nDescription: 30% off sitewide  (16)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\nC2 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\nC3 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\n\nC1 · IM8 \"Every nutrient your GLP-1 depletes\" (hand + caps headline + tick list + wide CTA) → \"Every day your wrist goes through. Covered.\" Session 12 ODI03792.\nC2 · IM8 \"Menopause stole your sleep…\" (portrait + two-line emotional headline) → \"Your outfit is done. Your wrist isn't.\" Session 12 ODI03817, face cropped off.\nC3 · IM8 \"Only 1 year in. Already upgraded.\" (centred big claim, three products) → \"One set in. Every outfit upgraded.\" Session 12 ODI03829 macro.\nROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px."
+  },
+  "copy-w445": {
+   "x": 13380,
+   "y": 48000,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 445 · ad copy (Black Friday · BF30 package P5) · DRAFT, not delivered yet\n\nWomen's 2x Duo - Minimal Set · how to wear it (silver C1, gold C2 + C3) · IMAGE & VIDEO · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own concepts; C2 animated static mp4 + png poster, real Shopify photo, no Seedance). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code needed. The 2x Duo - Minimal Set is a box chain and a square chain in silver, gold or black. Wear it alone or stacked with your other pieces: waterproof, recycled 316L stainless steel, adjustable S/M/L. Prices already reduced, case included, free shipping.\n\nHeadline: Alone. Stacked. Always on.  (26)\nDescription: 30% off, no code  (16)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776990554\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698420025\nC2 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC3 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\n\nC1 · How-to card \"How to wear the duo: 3 steps\" (clasp, adjust S/M/L, leave it on) over the Shopify silver studio photo 12616-532 (the only real women's silver duo photo).\nC2 · Animated static mp4 (7.4 s, 1080x1920, silent) + png poster: the Shopify gold photo moves through three crops with \"Alone.\" \"Stacked.\" \"Always on.\" and ends on Black Friday 30% off + CTA.\nC3 · Water editorial: \"It goes in the water. It stays on.\" on Figma DSC09024 (wrist under water), waterproof + 316L, 30% off.\nROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px."
+  },
+  "copy-w446": {
+   "x": 13380,
+   "y": 50400,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 446 · ad copy (Black Friday · BF30 package P5) · DRAFT, not delivered yet\n\nWomen's 3x Minimal - Stack Set, GOLD · quality and craft nerd · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own material/detail concepts, Session 12 RAW photos, originals). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code needed. Look closer at the gold 3x Minimal - Stack Set: a flat polished cuff bangle, a box chain and a square chain, all recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L. Case included, free shipping.\n\nHeadline: Look closer: recycled 316L  (26)\nDescription: 30% off, no code needed  (23)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\nC2 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\nC3 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\n\nC1 · Macro \"Look closer.\" with three hairline callouts (flat polished cuff, box chain, square chain). Session 12 ODI03902 original.\nC2 · Material passport card: passport photo + fields (made of recycled 316L, waterproof, sweat & heat resistant, S/M/L, gold, case included) + red Black Friday 30% stamp. Session 12 ODI03906.\nC3 · Before/after styling \"Same top. Add the stack.\": the black top alone (ODI03880 crop, no jewellery in frame) vs the gold stack on the same top (ODI03886).\nROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px."
+  },
+  "copy-w447": {
+   "x": 13380,
+   "y": 52800,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 447 · ad copy (Black Friday · BF30 package P5) · DRAFT, not delivered yet\n\nWomen's 2x Duo - Minimal Set, BLACK · evening / dressed-up buyer · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday is here: 30% off sitewide, no code, prices already reduced. The black 2x Duo - Minimal Set is a box chain and a square chain, each with a small bar tag. Waterproof, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHeadline: The black duo, 30% off  (22)\nDescription: Officially Black Friday  (23)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (black):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\nC2 (black):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\nC3 (black):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721\n\nC1 · IM8 \"Inter Miami's premium daily ritual, now yours\" (logo top left, highlighted 3-line headline) → \"The black duo, now 30% off — for Black Friday.\" Women Session 7 camera photo DSC07006 (planned _DSC9870 is the gold duo).\nC2 · IM8 \"Official health supplements partner of INTER MIAMI\" (small caps line + giant caps) → \"It's officially BLACK FRIDAY.\" Figma _DSC9970.\nC3 · IM8 \"Yesterday: 300mg. Today: 600mg.\" (strike-through + rating band) → \"Yesterday: full price / Today: 30% off\", 4.5 Trustpilot · 3,000+ reviews band. Women Session 7 camera photo DSC07018.\nROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px."
+  },
+  "p2-wip-M492-C1": {
+   "x": 500,
+   "y": 43200,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 492 - C1\nPhoto top, colour panel bottom (IM8 Trusted by... Available to you.)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M492-C2": {
+   "x": 1660,
+   "y": 43200,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 492 - C2\nStat headline over product (IM8 95% felt more energy)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M492-C3": {
+   "x": 2820,
+   "y": 43200,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 492 - C3\nProduct hero over big CAVAIER logo texture (IM8 The drink Inter Miami trusts. Now yours to try.)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M493-C1": {
+   "x": 500,
+   "y": 45600,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 493 - C1\nBig claim + photo (IM8 Only 1 year in. Already upgraded.)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M493-C2": {
+   "x": 1660,
+   "y": 45600,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 493 - C2\nTop headline, flat composition (IM8 We listened. We upgraded.)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M493-C3": {
+   "x": 2820,
+   "y": 45600,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 493 - C3\nSerif headline, product resting on fabric (IM8 The drink behind the 90...)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M494-C1": {
+   "x": 500,
+   "y": 48000,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 494 - C1\n24-hour timeline (06:30 shower, 07:15 gym, 13:00 sea, 23:00 sleep) beside the photo\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M494-C2": {
+   "x": 1660,
+   "y": 48000,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 494 - C2\nAnimated static (mp4): water-drop beads slide down a glass layer over the photo while \"Waterproof.\" types in; ends on 30% OFF\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M494-C3": {
+   "x": 2820,
+   "y": 48000,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 494 - C3\nScoreboard / stats card (Gym sessions: all · Showers: all · Removals: 0)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M495-C1": {
+   "x": 500,
+   "y": 50400,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 495 - C1\nProblem photo + text panel (IM8 Your labs say you're fine. But...)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M495-C2": {
+   "x": 1660,
+   "y": 50400,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 495 - C2\nSplit-body photo with story hook (IM8 He lost 40 pounds...)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M495-C3": {
+   "x": 2820,
+   "y": 50400,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 495 - C3\nBold caps statement (IM8 The club Beckham built...)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M496-C1": {
+   "x": 500,
+   "y": 52800,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 496 - C1\nGift-guide page: \"For the man who has everything\" with 3 numbered picks all pointing to the set\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M496-C2": {
+   "x": 1660,
+   "y": 52800,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 496 - C2\nFlowchart / decision tree: Does he wear a watch? Yes / No, both arrows end at the set\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p2-wip-M496-C3": {
+   "x": 2820,
+   "y": 52800,
+   "w": 1080,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 496 - C3\nGifter FAQ card (Size? Adjustable S/M/L. Wrap? Case included. Shipping? Free.)\n\nBuilder P2 · Black Friday 30% off"
+  },
+  "p1-wip-M487": {
+   "x": 500,
+   "y": 31200,
+   "w": 3480,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 487 · C1–C3 (BF30 package P1)\nIM8 imitation (close) · 2x Duo Minimal Set silver\n\nBuilder P1 · Black Friday 30% off"
+  },
+  "p1-wip-M488": {
+   "x": 500,
+   "y": 33600,
+   "w": 3480,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 488 · C1–C3 (BF30 package P1)\nOwn concept: material/spec · 3x Minimal Stack Set black\n\nBuilder P1 · Black Friday 30% off"
+  },
+  "p1-wip-M489": {
+   "x": 500,
+   "y": 36000,
+   "w": 3480,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 489 · C1–C3 (BF30 package P1)\nRAW stills (Men Session 1 photos) + motion · 2x Duo Minimal Set silver\n\nBuilder P1 · Black Friday 30% off"
+  },
+  "p1-wip-M490": {
+   "x": 500,
+   "y": 38400,
+   "w": 3480,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 490 · C1–C3 (BF30 package P1)\nIM8 imitation (close) · 3x Minimal Stack Set gold\n\nBuilder P1 · Black Friday 30% off"
+  },
+  "p1-wip-M491": {
+   "x": 500,
+   "y": 40800,
+   "w": 3480,
+   "maxH": 1920,
+   "fill": "blue",
+   "text": "IN PROGRESS\n\nM Batch 491 · C1–C3 (BF30 package P1)\nOwn concept: native / deal-hunter · 2x Duo Minimal Set black\n\nBuilder P1 · Black Friday 30% off"
+  },
+  "copy-w448": {
+   "x": 13380,
+   "y": 55200,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 448 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet\n\nWomen's 3x Minimal - Stack Set, BLACK / GOLD / SILVER (one finish per ad) · new-to-stacking beginner · set value · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code, prices already reduced. New to stacking? The 3x Minimal - Stack Set does it for you: a flat polished cuff bangle, a box chain and a square chain in black, gold or silver. Waterproof, recycled 316L, adjustable S/M/L. Rated 4.5 on Trustpilot from 3,000+ reviews.\n\nHeadline: Your first stack, 30% off  (25)\nDescription: No code needed  (14)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\nC2 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\nC3 (silver):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825629018\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346681657\n\nC1 · IM8 \"Trusted by Inter Miami CF. Available to you.\" (photo top, colour panel bottom, round logo badge) → \"Rated 4.5 from 3,000+ reviews. Now 30% off.\" Graded still from Women Session 11 Video/Black C2357 (unused clip).\nC2 · IM8 \"Inter Miami's new drink. 95% felt more energy.\" (stat headline over product) → \"3 pieces. 1 set. 30% off.\" Graded still from Session 11 Video/Gold C2516 (unused clip).\nC3 · IM8 \"The drink Inter Miami CF trusts. Now yours to try.\" (product hero over big logo texture) → \"The silver stack. Now yours for 30% less.\" Shopify listing camera shot 12616-41 (the only real silver women's stack photo).\n\nROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three."
+  },
+  "copy-w449": {
+   "x": 13380,
+   "y": 57600,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 449 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet\n\nWomen's 2x Duo - Minimal Set, GOLD · fashion-forward stylist · versatility · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own formats: outfit formula, styling split, tier list). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code. The gold 2x Duo - Minimal Set is the easiest styling move: a box chain and a square chain, each with a small bar tag, that go with everything and stay on. Waterproof, recycled 316L, adjustable S/M/L.\n\nHeadline: Black top + gold duo = done  (27)\nDescription: 30% off sitewide  (16)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC2 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC3 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\n\nC1 · Outfit formula: BLACK TOP + GOLD DUO = DONE token row under the photo (plan said white shirt; the camera photo is a black top, so the formula follows the photo). Figma camera file DSC08282.\nC2 · Styling split \"Every look needs one detail.\": the outfit / the detail, two real photos side by side (planned bare-vs-duo needs a bare-wrist shot we don't have; DSC00277 was already on the canvas). Figma DSC08078 + DSC08120.\nC3 · Tier list \"Everyday jewellery, ranked.\" S tier = the gold duo (waterproof, adjustable, stays on); A–C are generic wearability lines, no brands named. Figma DSC00479.\n\nROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three."
+  },
+  "copy-w450": {
+   "x": 13380,
+   "y": 60000,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 450 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet\n\nWomen's 3x Minimal - Stack Set, BLACK · holiday-party / going-out shopper · occasion · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own formats: night-out editorial, animated static, mood board). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code. The black 3x Minimal - Stack Set is three pieces made to stay on from dinner to dancing: flat polished cuff bangle, box chain and square chain. Waterproof, recycled 316L, adjustable S/M/L.\n\nHeadline: Party season, sorted  (20)\nDescription: The black stack, 30% off  (24)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\nC2 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\nC3 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049\n\nC1 · Night-out editorial: framed photo, slim caption \"Party season, sorted.\" (no weather). Women Session 12 camera original ODI03838.\nC2 · Animated static (mp4 7.8 s, 1080×1920, silent, + png poster): real Session 12 Video/Black clip C3111 in slow motion (2× interpolated), headline fades in. A true freeze-mask cinemagraph was not possible: the camera is handheld and the arm fills the frame, so the whole photo window moves.\nC3 · Mood board: three taped Session 12 crops (ODI03802, ODI03826, ODI03834) + black finish swatch + small red 30% chip.\n\nROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three."
+  },
+  "copy-w451": {
+   "x": 13380,
+   "y": 62400,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 451 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet\n\nWomen's 2x Duo - Minimal Set, GOLD · deal hunter / bundle maximiser · price/offer · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: save 30% on the gold 2x Duo - Minimal Set, no code, prices already reduced. Box chain and square chain with small bar tags, waterproof, recycled 316L, adjustable S/M/L. Case included and free shipping. Rated 4.5 from 3,000+ reviews.\n\nHeadline: Save 30% on the gold duo  (24)\nDescription: No code needed  (14)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC2 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\nC3 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329\n\nC1 · IM8 \"SAVE 30% & get free welcome kit\" (bold offer, tick list, rating line) → \"Save 30% on the gold duo\" + ticks (no code, prices already reduced, case included, free shipping, S/M/L). Figma DSC00852.\nC2 · IM8 \"The bloat dissolving\" (3-stage strip + rating bar) → \"The gold duo, up close\": look / pair / tags zoom strip + Trustpilot bar. Figma DSC00430 + DSC08414 (two crops).\nC3 · IM8 \"Claim your free welcome kit\" (kit lineup) → \"Claim your Black Friday duo\": duo hero + lineup (duo, case included, free shipping). Figma DSC00336 (planned DSC00439 was already on the canvas) + Shopify case shot Final2_5.\n\nROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three."
+  },
+  "copy-w452": {
+   "x": 13380,
+   "y": 64800,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "W Batch 452 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet\n\nWomen's 3x Minimal - Stack Set, GOLD · woman hinting to her partner · gift · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own formats: share card, hint ladder, framed wish card). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code. Want the gold 3x Minimal - Stack Set? Send this to him. Flat polished cuff bangle, box chain and square chain, adjustable S/M/L so he can't get the size wrong, case included and free shipping.\n\nHeadline: Send this to him  (16)\nDescription: Case included  (13)\n\nLanding pages (variant of the finish shown in each ad):\nC1 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\nC2 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\nC3 (gold):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353\n\nC1 · \"Send this to him.\" card: hand-drawn arrow to a generic share icon over the photo. Session 12 ODI03871 (planned ODI03854 shows the white set foam, skipped).\nC2 · Hint, hint: three hints getting louder, the third is the offer. Session 12 ODI03879.\nC3 · Framed wish card \"The gift I'd keep on.\" Session 12 ODI03895.\n\nROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three."
   }
  },
  "order": [
@@ -1966,7 +2598,41 @@
   "V-W436-C2.dc.html",
   "V-W437-C1.dc.html",
   "V-W437-C2.dc.html",
-  "V-W437-C3.dc.html"
+  "V-W437-C3.dc.html",
+  "W443-C1.dc.html",
+  "W443-C2.dc.html",
+  "W443-C3.dc.html",
+  "W444-C1.dc.html",
+  "W444-C2.dc.html",
+  "W444-C3.dc.html",
+  "Refs-W444.dc.html",
+  "W445-C1.dc.html",
+  "W445-C2.dc.html",
+  "W445-C3.dc.html",
+  "W446-C1.dc.html",
+  "W446-C2.dc.html",
+  "W446-C3.dc.html",
+  "W447-C1.dc.html",
+  "W447-C2.dc.html",
+  "W447-C3.dc.html",
+  "Refs-W447.dc.html",
+  "W448-C1.dc.html",
+  "W448-C2.dc.html",
+  "W448-C3.dc.html",
+  "Refs-W448.dc.html",
+  "W449-C1.dc.html",
+  "W449-C2.dc.html",
+  "W449-C3.dc.html",
+  "W450-C1.dc.html",
+  "W450-C2.dc.html",
+  "W450-C3.dc.html",
+  "W451-C1.dc.html",
+  "W451-C2.dc.html",
+  "W451-C3.dc.html",
+  "Refs-W451.dc.html",
+  "W452-C1.dc.html",
+  "W452-C2.dc.html",
+  "W452-C3.dc.html"
  ],
  "pages": [],
  "title": "Cavaier Static Ads Lab"
