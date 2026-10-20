@@ -1770,5 +1770,26 @@
   "input": "inputs/W437V-C3.jpg",
   "file": "W437V-C3-draft.mp4",
   "seed": 97366
+ },
+ "W437V-C1-1080p": {
+  "task_id": "cgt-20261020224558-obp1a",
+  "draft_task_id": "cgt-20261020223318-jof5b",
+  "resolution": "1080p",
+  "status": "succeeded",
+  "file": "W437V-C1-1080p.mp4"
+ },
+ "W437V-C2-1080p": {
+  "task_id": "cgt-20261020224559-ygpew",
+  "draft_task_id": "cgt-20261020223320-va05a",
+  "resolution": "1080p",
+  "status": "succeeded",
+  "file": "W437V-C2-1080p.mp4"
+ },
+ "W437V-C3-1080p": {
+  "task_id": "cgt-20261020224600-oyzyx",
+  "draft_task_id": "cgt-20261020223323-ds26h",
+  "resolution": "1080p",
+  "status": "succeeded",
+  "file": "W437V-C3-1080p.mp4"
  }
 }

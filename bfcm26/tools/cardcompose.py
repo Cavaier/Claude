@@ -13,8 +13,9 @@ if notext:
     ins=['-i',clip]
 else:
     w,h,x,y=b['w'],b['h'],b['x'],b['y']
+    fade=f',fade=t=in:st={tp}:d=0.28:alpha=1' if tp>0 else ''  # photo on screen from frame 1: no fade (a fade from 0 washes out the first frame)
     fc=(f"[0:v]setpts={F:.4f}*PTS,fps=30,scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},setsar=1,tpad=start_duration={tp}:start_mode=clone,format=rgba[c];"
-        f"[2:v]format=rgba,crop={w}:{h}:{x}:{y},alphaextract[m];[c][m]alphamerge,fade=t=in:st={tp}:d=0.28:alpha=1[cm];"
+        f"[2:v]format=rgba,crop={w}:{h}:{x}:{y},alphaextract[m];[c][m]alphamerge{fade}[cm];"
         f"[1:v]fps=30,format=rgba[base];[base][cm]overlay={x}:{y}:format=auto[v1];")
     ins=['-i',clip,'-framerate','15','-i',d+'/a/f%04d.png','-loop','1','-i',d+'/mask.png']
     import os
