@@ -1,0 +1,21 @@
+W Batch 446 · ad copy (Black Friday · REDO Oct 20, new concepts)
+
+W Batch 446 · ad copy (Black Friday · REDO Oct 20 · DRAFT)
+Women · 3x Minimal - Stack Set, GOLD in every ad · Creative Origin: Ideation · Style/Angle: Black Friday · Offer: 30% off sitewide, prices already reduced, no code · Funnel: TOF · Ad type: IMAGE
+
+Primary text:
+Black Friday at Cavaier: 30% off sitewide, prices already reduced, no code needed. The gold 3x Minimal - Stack Set is three pieces you put on once and keep on: a flat polished cuff bangle, a box chain and a square chain. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping.
+
+Headline (≤27): Everyday gold, 30% off   (23)
+Description (≤27): Three pieces. Keep them on.   (27)
+
+Row links (Medium; CTA href = EU link):
+C1 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714  US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C2 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714  US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C3 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714  US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+
+C1 · Recipe card "The everyday stack. Serves one wrist." (ingredients = the three pieces, method = put on, shower, never take off). Tests: piece count + wear-forever habit as a light, playful format. Photo: Women RAW Session 12 camera original ODI03863 (cheek resting on arm, cream sofa), goldfix.
+C2 · Paint swatch chip "Everyday gold." (photo as the swatch, finish row black/silver/gold with gold selected). Tests: the gold finish as the hero. Photo: Session 12 ODI03896 (macro, cuff + box + square chain), goldfix.
+C3 · Mini crossword "Black Friday, solved." (STACK across, CUFF down, OFF across in red). Tests: interactive-feel puzzle hook that lands on the offer. Photo: Session 12 ODI03887 (close wrist, black top), goldfix.
+Why Session 12: Figma has no real camera photos of the women's gold stack (Static Ads 2 fills are AI), and the only real Shopify women's stack image is silver.
+ROAS: all text p10 contrast pass, inside y 270–1536, nothing under 22 px.
