@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+#r{width:1080px;height:1920px;position:relative;overflow:hidden;background:#d8cbbd;font-family:Figtree,sans-serif;color:#141414}
+#ph{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;transform-origin:50% 55%}
+.d{position:absolute;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.95) 0 10%,rgba(255,255,255,.28) 22%,rgba(255,255,255,.06) 48%,rgba(60,45,35,.16) 66%,rgba(255,255,255,.35) 72%,transparent 76%)}
+.tr{position:absolute;width:4px;border-radius:2px;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.22))}
+h1{margin:0;font-size:58px;line-height:1.12;letter-spacing:.04em;font-weight:400;text-transform:uppercase}
+p{margin:0;font-size:30px;line-height:1.6;font-weight:300}
+.w{opacity:0;display:inline-block}
+a{display:inline-flex;align-items:center;justify-content:center;height:80px;padding:0 52px;background:#141414;color:#fff;text-decoration:none;font-size:22px;font-weight:500;letter-spacing:.1em}
+</style></head><body>
+<div id="r"><img id="ph" src="file:///tmp/claude-0/-home-user-Claude/b567cb8d-f2c0-41aa-9874-9f45cdcf74ce/scratchpad/p2/ph/bl_3140-14.jpg">
+<div id="drops"></div>
+<div id="head" style="position:absolute;top:300px;left:80px;width:920px;display:flex;flex-direction:column;gap:14px">
+<h1><span class="w" id="w1">Sweat.</span> <span class="w" id="w2">Showers.</span><br><span class="w" id="w3">Laps.</span></h1>
+<p id="still"></p>
+</div>
+<div id="end" style="position:absolute;top:300px;left:80px;display:flex;flex-direction:column;align-items:flex-start;gap:18px;opacity:0">
+<span style="font-size:22px;font-weight:500;letter-spacing:.1em;color:#141414">BLACK FRIDAY · NO CODE NEEDED</span>
+<h1 style="font-size:50px">30% off sitewide</h1>
+<a>SHOP THE STACK</a></div>
+</div>
+<script>
+let s=7;const R=()=>{s=(s*9301+49297)%233280;return s/233280};
+const D=[];const box=document.getElementById('drops');
+for(let i=0;i<34;i++){const z=12+R()*26;const e=document.createElement('div');e.className='d';e.style.width=e.style.height=z+'px';
+const t=document.createElement('div');t.className='tr';box.appendChild(t);box.appendChild(e);
+D.push({e,t,z,x:R()*1060,y0:-200+R()*2100,v:(40+R()*160)*(z/20),st:R()*5,wob:R()*6.28})}
+const ease=x=>x<0?0:x>1?1:1-Math.pow(1-x,3);
+const STILL='Still on. The black stack is waterproof.';
+window.setT=t=>{
+ document.getElementById('ph').style.transform=`scale(${1+0.06*t/7})`;
+ for(const d of D){const run=Math.max(0,t-d.st);const y=d.y0+d.v*run*run*0.35+ (run>0?d.v*run*0.2:0);
+  const x=d.x+Math.sin(d.wob+y/90)*3;d.e.style.left=x+'px';d.e.style.top=y+'px';
+  const tl=Math.min(220,run*d.v*0.5);d.t.style.left=(x+d.z/2-2)+'px';d.t.style.top=(y-tl)+'px';d.t.style.height=tl+'px';}
+ [[0.5,'w1'],[1.1,'w2'],[1.7,'w3']].forEach(([a,id])=>{const k=ease((t-a)/0.45);const el=document.getElementById(id);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*24}px)`});
+ const n=Math.max(0,Math.min(STILL.length,Math.floor((t-2.5)*22)));document.getElementById('still').textContent=STILL.slice(0,n);
+ const h=ease((t-4.2)/0.5);document.getElementById('head').style.opacity=1-h;const k=ease((t-4.7)/0.7);const end=document.getElementById('end');end.style.opacity=k;end.style.transform=`translateY(${(1-k)*30}px)`;
+};
+</script></body></html>
