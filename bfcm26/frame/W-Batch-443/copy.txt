@@ -1,0 +1,18 @@
+W Batch 443 · ad copy (Black Friday · REDO Oct 20 · DRAFT)
+Women · 2x Duo - Minimal Set, GOLD in every ad · Creative Origin: Ideation · Style/Angle: Black Friday · Offer: 30% off sitewide, prices already reduced, no code · Funnel: TOF · Ad type: IMAGE
+
+Primary text:
+Black Friday: 30% off sitewide, prices already reduced, no code needed. The gold 2x Duo - Minimal Set is a box chain and a square chain with a small bar tag, made to stay on: waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping.
+
+Headline (≤27): The gold duo, 30% off   (21)
+Description (≤27): Waterproof. Adjustable.   (23)
+
+Row links (Medium; CTA href = EU link):
+C1 (gold) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858  US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C2 (gold) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858  US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C3 (gold) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858  US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+
+C1 · Dictionary entry "du·o, noun" with three definitions (what it is, where it stays on, Black Friday 30%). Tests: typographic/editorial stop. Photo: Figma DSC00396 (node 377:370), goldfix.
+C2 · Garment care label "Care instructions: none." (shower, sweat and heat, daily wear, S/M/L, take off: never). Tests: zero-maintenance/waterproof. Photo: Figma DSC08264 (node 345:68), goldfix.
+C3 · Size guide "One set. Three sizes." with a hairline S/M/L ruler under the wrist. Tests: adjustable fit. Photo: Figma DSC08586 (node 312:15, face cropped out), goldfix.
+ROAS: all text p10 contrast pass, inside y 270–1536, nothing under 22 px.

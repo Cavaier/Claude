@@ -1,0 +1,19 @@
+W Batch 447 · ad copy (Black Friday · REDO Oct 20 · DRAFT)
+Women · 2x Duo - Minimal Set, BLACK in every ad · Creative Origin: Imitation (3 new IM8 Health refs, refs board left) · Style/Angle: Black Friday · Offer: 30% off sitewide, prices already reduced, no code · Funnel: TOF · Ad type: IMAGE
+
+Primary text:
+Black goes with everything you own. This Black Friday the black 2x Duo - Minimal Set is 30% off, prices already reduced, no code needed: a box chain and a square chain with a small bar tag. Waterproof, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping.
+
+Headline (≤27): The black duo, 30% off   (22)
+Description (≤27): Goes with every black   (21)
+
+Row links (Medium; CTA href = EU link):
+C1 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250  US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+C2 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250  US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+C3 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250  US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+
+C1 · IM8 "Women Can Lose 30% of Skin Collagen" (photo, headline top left, full-width CTA bar) → "Black goes with everything you own." Tests: versatility hook. Photo: Women RAW Session 7 camera original DSC06853, preset film.
+C2 · IM8 "New Standard In Health" (offer tag block top right, right-aligned headline, tall product left) → "The new standard in black." Tests: offer block + statement. Photo: Session 7 DSC07021, preset film.
+C3 · IM8 "Beckham built Inter Miami from scratch" (stacked caps statement, bold last line, figure right) → "The dress was black. The coat was black. So is the duo." Tests: outfit-story hook. Photo: Session 7 DSC06831, preset film.
+Why Session 7: Figma's only real women's black-duo shots (DSC06832-2, DSC06838, DSC06856) all show a black necklace next to the bracelets, so I used no-necklace frames from the same shoot.
+ROAS: all text p10 contrast pass, inside y 270–1536, nothing under 22 px.

@@ -1,0 +1,26 @@
+M Batch 499 · ad copy (Black Friday · redo Oct 20) · DRAFT
+Men's 2x Duo Minimal Set, SILVER / BLACK · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.
+
+Primary text:
+Black Friday is here: 30% off sitewide at Cavaier, with prices already reduced and no code needed. The 2x Duo Minimal Set pairs a box chain and a square chain in recycled 316L stainless steel, in silver or black. Waterproof, adjustable S/M/L, case included, free shipping.
+
+Headline: Your Black Friday pass  (22)
+Description: 30% off sitewide, no code  (25)
+
+Landing pages (variant of the finish shown, size Medium):
+C1 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C2 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C3 (black):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039438170
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623102265
+
+C1: Postcard "Greetings from Black Friday" (stamp 30% OFF, postmark, short note, photo side). Tests: warm personal format. Photo: Figma DSC02456 (node 345:58), film preset.
+C2: Phone wallet pass "Your Black Friday pass" (offer / code / applies to / shipping fields, photo strip), still static, replaces the old animated mp4. Tests: native-UI offer card. Photo: Figma DSC04850 (node 377:255), film preset.
+C3: Split-flap departure board "Now departing: BLACK FRIDAY · 30% OFF · NONE NEEDED" + black duo photo. Tests: bold typographic offer. Photo: Figma DSC04944 (node 377:258), film preset.
+
+ROAS ✓ (contrast + safe zone, all text inside y 270–1536)

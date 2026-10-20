@@ -1,0 +1,19 @@
+W Batch 442 · ad copy (Black Friday · REDO Oct 20 · DRAFT)
+Women · 3x Minimal - Stack Set, GOLD in every ad · Creative Origin: Imitation (3 new IM8 Health refs, refs board left) · Style/Angle: Black Friday · Offer: 30% off sitewide, prices already reduced, no code · Funnel: TOF · Ad type: IMAGE
+
+Primary text:
+Black Friday at Cavaier: 30% off sitewide, prices already reduced, no code needed. The gold 3x Minimal - Stack Set is three pieces worn as one: a flat polished cuff bangle, a box chain and a square chain. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping.
+
+Headline (≤27): The gold stack, 30% off   (23)
+Description (≤27): Cuff, box and square chain   (26)
+
+Row links (Medium; CTA href = EU link):
+C1 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714  US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C2 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714  US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C3 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714  US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+
+C1 · IM8 "New Year Offer / Up to 30% Off" (label chip, huge light offer type, product cropped off the right) → "30% off the gold stack." Tests: the offer number first. Photo: Women RAW Session 12 camera original ODI03893 (arm across pale wall), goldfix.
+C2 · IM8 "INTER MIAMI CF / Start the Protocol" (photo band, caps label strip, two-tone left headline) → "Put on all three. Keep them on all winter." Tests: wear-all-three habit. Photo: Session 12 ODI03872 (wrist + profile), goldfix.
+C3 · IM8 "Biggest Deal of the Year" (top banner strip, italic kicker, big caps, Save 30% line) → "Cuff. Box chain. Square chain." Tests: piece-by-piece value. Photo: Session 12 ODI03889 (wrist against dark hair), goldfix.
+Why Session 12: Figma has no real camera photos of the women's gold stack (Static Ads 1 Women assets are all duo; Static Ads 2 fills are AI).
+ROAS: all text p10 contrast pass, inside y 270–1536, nothing under 22 px.

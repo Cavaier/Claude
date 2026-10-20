@@ -1,0 +1,18 @@
+W Batch 448 · ad copy (Black Friday · redo Oct 20) · DRAFT
+Women's 3x Minimal - Stack Set, BLACK / GOLD / BLACK · Imitation (three new IM8 Health refs, refs board left) · 30% off sitewide, prices already reduced, no code needed
+
+Primary text:
+Black Friday at Cavaier: 30% off sitewide. The prices are already reduced, so there's no code to remember. The 3x Minimal - Stack Set is three pieces that work as one: a flat polished cuff bangle, a box chain and a square chain in recycled 316L stainless steel. Waterproof, adjustable S/M/L, case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
+
+Headline (22): The stack, now 30% off
+Description (25): Rated 4.5, 3,000+ reviews
+
+Landing pages (variant of the finish shown):
+C1 (black): EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418 · US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049
+C2 (gold): EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714 · US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C3 (black): EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418 · US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049
+
+C1 · IM8 "The edge that keeps Aryna Sabalenka at the top of her game" (photo top, panel split by a cross with a sparkle, caption + logo tiles) → "The detail that keeps her look finished, every single day." Tests an understated editorial caption. Photo: Women RAW Session 12 camera original ODI03833 (chin on hand, black stack).
+C2 · IM8 "If the Pros Trust It, You Can Too." (frosted card at the top over a full-bleed photo) → "If 3,000+ reviews love it, you will too." Tests social proof (Trustpilot 4.5). Photo: Session 12 ODI03882 (wrist to cheek, gold stack).
+C3 · IM8 "The Stiffness. The Fog. The Fatigue. You're Not Imagining It." (three-fragment headline, lower centre) → "The cuff. The chains. The 30%. You're not imagining it." Tests a pattern-interrupt headline on the offer. Photo: Session 12 ODI03822 (manicured hands holding the wrist, black stack). Finish changed from silver: the only real women's silver stack photo (Shopify 12616-41) was the rejected one.
+ROAS ✓ (contrast p10, text in y 270–1536, feed size) on all three.
