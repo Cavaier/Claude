@@ -75,6 +75,7 @@ Before making any new batch, always ask Eli which method to use, with one short 
   - Red `#A82C24` is only a small accent, only on light monochrome Black Friday layouts. Never red in Evergreen.
 - **Figma "Static Ads 2" women's photos are mostly AI-generated (found Oct 18):** their Figma image-fill names say so ("Gemini_3_Nano_Banana_Pro…", "AI_image_generation…", "slightly_change_pose…", "Change_hand_pose…"). Check the fill name before using any Figma photo; only treat it as real when it is a camera file (DSC…, shoot names) or a Shopify listing image. The only real silver women's 3x stack photo is the Shopify studio shot 12616-41.
 - **No generated images unless Eli asks (Eli, Oct 15):** the generated images kept failing, so every ad uses real photos (Figma, Shopify listing, or stills from the RAW footage). If a product or finish has no usable real photos left, tell Eli and offer another finish instead of generating one.
+- **Gold must read as light 14k gold (Eli, Oct 20):** bright, pale warm yellow, never dull, dark or brassy orange. Check every gold ad; if the metal looks dark, run `bfcm26/tools/goldlift.py in.jpg out.jpg [strength 1.0–1.3]` on the photo (lifts only gold tones, keeps skin and chain links) and use the result.
 - **Ideation images:** only when Eli asks; rules in `bfcm26/docs/ideation-images.md`.
 - **Format:** 1080×1920. Key text stays out of the top 270 px and the bottom 384 px.
 - **True claims only:**
