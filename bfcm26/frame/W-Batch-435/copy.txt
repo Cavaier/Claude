@@ -1,12 +1,14 @@
+W Batch 435 · ad copy (Black Friday · fixes Oct 20: tag claim, BF presence, new C2)
+
 W Batch 435 (rebuild, WC-C2) · Women · Black Friday · native formats · 2x Duo Minimal Set (women's), BLACK in every ad
 Creative Origin: Ideation (native formats). Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced.
-Photos: real RAW stills from the Women RAW Frame.io share, original 4000x6000 JPGs. C1 + C3: Session 8 IMAGE (folder 12a1a4c2, indoor studio, dark wool/black dress, cream boucle armchair), cool late-autumn grade (slightly cooler white balance, saturation 0.92). C2: Session 9 Photo (folder cebd631f), light grade. No generated images. All frames dedupe-checked, not used anywhere before.
+Photos: real RAW stills from the Women RAW Frame.io share, Session 8 IMAGE (folder 12a1a4c2, indoor studio). C1 + C3 keep their photos (Eli: good images). C2 photo DSC08651 (black duo on a wrist over a cream chair, light grade). Both bracelets in the duo have a tag: never claim a tag count. No generated images.
 
 Primary text:
-Shower, swim, sweat, repeat: the black 2x Duo Minimal Set comes with the easiest care instructions you'll ever read. It's waterproof and sweat and heat resistant, made from recycled 316L stainless steel and adjustable S/M/L, so taking it off is optional. This Black Friday everything is 30% off sitewide. The prices on the site are already reduced, so there's no code to remember. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
+Black Friday is here: 30% off everything, no code needed. The black 2x Duo Minimal Set is a box chain and a square chain made to stay on: waterproof, sweat and heat resistant, recycled 316L stainless steel and adjustable S/M/L. No taking it off for the shower, no guessing your size. The prices on the site are already reduced. Case included and free shipping. Rated 4.5 on Trustpilot from 3,000+ reviews.
 
 Headline (≤27): The black duo, now 30% off   (26 chars)
-Description (≤27): Waterproof. Stays on.   (21 chars)
+Description (≤27): No code needed   (14 chars)
 
 Row links (Medium, black women's duo in all three ads; CTA href = EU link):
 C1 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
@@ -16,6 +18,8 @@ C2 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54
 C3 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
            US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
 
-C1 · Care label: a large sewn-in garment care label (soft cream woven fabric, stitched edges, folded sewn top) laid over a full-bleed macro of the black duo on a wrist. Label text: CAVAIER logo, "2X DUO MINIMAL SET · BLACK", "Recycled 316L stainless steel", "CARE INSTRUCTIONS" with line icons and dotted leaders: Shower: Yes / Swim: Yes / Sweat & heat: Yes / Take off (crossed-out bracelet symbol): Not needed, "Adjustable S/M/L · Case included", then red "BLACK FRIDAY" + "30% off sitewide / No code needed" and CTA "SHOP THE BLACK DUO". Tests: product facts and durability told as a familiar everyday object (care-label hook, no season talk), offer as a small add-on line. Photo: RAW Session 8 DSC08662 (black duo, box chain + square chain with bar tag, wrist over a dark wool layer, indoor; same real photo as before, cool grade).
-C2 · Now playing: generic music player screen (no Spotify/Apple branding): "NOW PLAYING · On repeat: the black duo", square album art, track "Black Friday", artist "30% off sitewide · no code needed", progress bar stopped at 30% ("30% off" / "prices already reduced"), player controls, small red heart, CTA "SHOP THE BLACK DUO". Tests: playful pop-culture native format with the offer as the track (offer-first hook, product macro as the art). Photo: Session 9 DSC09852 (macro of the duo on a wet wrist, tag and clasp sharp).
-C3 · Places it's been (route map): cozy indoor wrist photo on top, red "BLACK FRIDAY · 30% OFF SITEWIDE", headline "PLACES IT'S BEEN TODAY", minimal generic line map with a dotted route and pins Commute → Gym → Shower → Dinner (last pin red), "Waterproof, so it never comes off. Prices already reduced, no code." + CTA "SHOP THE DUO". Tests: everyday durability through one ordinary day (wear it everywhere, never take it off) told as a day route. Photo: Session 8 DSC08626 (black duo with bar tag, wrist resting on a cream boucle armchair, black dress, indoor).
+C1 · Black Friday hero: full-bleed dark wool wrist shot (DSC08662, unchanged). White "BLACK FRIDAY" block + logo, giant "30% OFF" in white, "EVERYTHING · NO CODE NEEDED", "The black duo: waterproof, made to stay on.", CTA "SHOP THE BLACK DUO". No red (dark photo). Magazine "issue" framing and the wrong tag-count line removed. Tests: the offer as the hero.
+C2 · The usual vs the black duo: black "BLACK FRIDAY" block, giant "30% OFF", "EVERYTHING · NO CODE NEEDED" (red accent), DSC08651 wrist shot, comparison table THE USUAL vs THE BLACK DUO: Off for the shower → Waterproof, stays on · One size, hope it fits → Adjustable S/M/L · Full price → 30% off, no code. CTA "SHOP THE BLACK DUO". Tests: native us-vs-them comparison with the offer on top (replaces the gift tag).
+C3 · You asked: armchair wrist shot (DSC08626, unchanged), big "30%" lockup with "BLACK FRIDAY" block + "OFF SITEWIDE", "YOU ASKED ABOUT THE BLACK DUO", four Q&A rows (shower / fit / material / "Do I need a code? No. Prices are already 30% off."), CTA "SHOP THE BLACK DUO". Tests: objection-handling FAQ with the offer dominant.
+ROAS ✓ all three (contrast, safe zone y 270–1536, feed size).
+Earlier rejected: gift tag "to me, from me" (C2), "BLACK FRIDAY ISSUE" magazine cover framing (C1), snow weather widget, woven care label (C1), now playing (C2), Commute → Gym → Shower → Dinner route (C3).
