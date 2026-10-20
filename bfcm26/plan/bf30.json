@@ -1,0 +1,2784 @@
+{
+ "title": "BF30: 30 Black Friday static batches (90 ads)",
+ "created": "2026-10-20",
+ "angle": "Black Friday: 30% off sitewide, no code, prices already reduced (never \"taken off at checkout\")",
+ "rules": [
+  "Real photos only: Figma Static Ads 1 camera files (DSC...), Shopify listing images, RAW session photos/stills on Frame.io. No AI-filled Figma photos (Static Ads 2), no generated images.",
+  "Men's photos only in men's ads, women's only in women's. One finish per ad (C may differ inside a batch).",
+  "Brand: light, airy, graphite monochrome, Figtree; headline ~50px 300/400 0.04em; body ~27px 300; logo ~110px; slim square black CTA (80px, 22px label); red #A82C24 only as a small accent on light layouts.",
+  "1080x1920; key text inside y 270-1536; ROAS check (roas.js + roas.py) per ad: contrast p10 >= 4.5 (>= 3 for text 24px+).",
+  "True claims only: waterproof; sweat and heat resistant; recycled 316L; adjustable S/M/L; black/silver/gold; case included; free shipping; Trustpilot 4.5, 3,000+ reviews. No prices, no currencies, no deadlines, no tarnish/fade claims, no invented named reviews.",
+  "Both duo bracelets have small bar tags: never claim otherwise. 3x stack = flat polished cuff bangle + box chain + square chain (never \"snake\").",
+  "No weather/snow/season hook; avoid rejected concepts: snow weather widget, care label, commute route, gift tag \"to me from me\", magazine \"issue\" framing.",
+  "Do not repeat formats already on the canvas: group chat, lock-screen notifications, calendar reminder, newspaper front page, anatomy of the duo, search results, comment reply, best-friend chat, wishlist board, voice note, POV caption, pick your finish, packing list, notes list, yesterday/today (men), set and case, checklist on photo.",
+  "IM8 imitation = closer, more literal copy of the referenced IM8 ad's layout, hierarchy and device (sticker, highlight, panel, list), translated into the Cavaier light graphite look. Put an IM8 refs board (420 wide) in each row that has im8_ref entries.",
+  "Motion batches (ad_type IMAGE & VIDEO): C2 is an animated static mp4 (6-8 s, 1080x1920, real photo/footage only, no Seedance, no dark veils behind text) plus a png poster; C1 and C3 are statics.",
+  "Before using any photo: perceptual-hash it against bfcm26/figimg/*, bfcm26/frame/**/no text exports and canvas blobs so nothing already on the canvas is reused."
+ ],
+ "photo_inventory": {
+  "women_session_12_NEW": {
+   "where": "Frame.io RAW Session share https://f.io/SZP85Oib > Women > Session 12 | Women (folder f6d0fd63-2fd7-48c3-8cc4-980a9a0e129f), uploaded 2026-10-19",
+   "Image": "114 camera JPGs (folder fc669c16-ac8d-4492-aab3-a1ce24a97675): ODI03790-ODI03849 = women's 3x stack BLACK (black top/dress, white stairs, grey wall); ODI03854-ODI03909 = women's 3x stack GOLD (cream sofa, black top, profile). Real, sharp, slim wrists. Previews are 933x1400: download the ORIGINAL per file (asset view Download menu, same flow as video-ad/dlorig.js, or Frame.io V4 API) before building 1080x1920.",
+   "Video": "Gold 87 clips (folder 8669bf85-03f6-48b4-8c29-0ac553aa69e4), Black 114 clips (folder 068d2d70-fc83-4f66-a8c1-3a2ff2a65088); index with video-ad/walk.js, grade with grade.py.",
+   "contact_sheets": "not committed; rebuild from the GraphQL listing of the share (see bf30.md)"
+  },
+  "men_raw_sessions": {
+   "Session 1 | Men / IMAGE": "319+ camera JPGs DSC02381-DSC02861: silver duo, beach, linen, sea, sand, water (folder 2f32d86b-4177-4214-94d4-07928b8eed98). Figma Static Ads 1 men photos are a subset of these.",
+   "Session 2 | Men / IMAGE": "~300 camera JPGs DSC04719-DSC05017: silver duo with dark shirt, grey coast, slim wrists; BLACK duo around DSC04957-DSC04984 (folder 04848fb1-6228-45c7-89b6-e7ea8cc8d9bf).",
+   "VIDEO": "Session 1 131 clips, Session 2 143 clips (silver duo).",
+   "note": "No men's 3x stack anywhere on Frame.io or in Figma."
+  },
+  "figma_static_ads_1": {
+   "file": "dEEVzBXoylSdZoRs0gonHn",
+   "page": "17:2 Static Ads 1",
+   "section": "300:1456 Image Assets",
+   "men": "26 camera DSC files (section 300:1482), all silver duo.",
+   "women": "~50 camera DSC files (section 306:93): mostly GOLD duo (DSC00xxx, DSC08xxx, DSC09xxx), BLACK duo _DSC9870/_DSC9909/_DSC9970, DSC08723. Skip AD000x and \"Batch 83/C# No Text\" layers (old exports)."
+  },
+  "shopify_listing": {
+   "2x-duo-minimal-set-for-him": "12616-203_1 (black), ad2_matched_1 (silver), ad-image-17912895281901 (gold)",
+   "2x-duo-minimal-set-for-her": "12616-571 (black), 12616-532 (silver), bracelet_gold_graded1_1 (gold)",
+   "3x-minimal-stack-set-for-him": "12616-511 (black), 12616-512 (gold), 12616-51_kopia_1 (silver) studio; image2/3/4 (black/silver/gold on linen by rocks)",
+   "3x-minimal-stack-set-for-her": "12616-41 (silver, the only real silver women's stack), ad-image-17817299893691 (black), ad-image-17817300810931 (gold)",
+   "jewelry-case": "jbag3_kopia.jpg, Final2_5.jpg (the included case)",
+   "how": "https://<store>/products/<handle>.js -> media[].src (append &width=2048 for full size)"
+  },
+  "gaps": [
+   "Men's 3x stack: only 6 real photos (Shopify). 21 men's stack ads must reuse them with distinct crops and layouts (see each C).",
+   "Men's duo gold and women's stack black/gold Shopify shots are \"ad-image-...\" files: listing images, so allowed by the rule, but not camera files.",
+   "Women's silver duo: only Shopify 12616-532. Women's silver stack: only 12616-41."
+  ]
+ },
+ "packages": {
+  "P1": {
+   "builder": "A",
+   "gender": "M",
+   "batches": [
+    "M Batch 487",
+    "M Batch 488",
+    "M Batch 489",
+    "M Batch 490",
+    "M Batch 491"
+   ]
+  },
+  "P2": {
+   "builder": "B",
+   "gender": "M",
+   "batches": [
+    "M Batch 492",
+    "M Batch 493",
+    "M Batch 494",
+    "M Batch 495",
+    "M Batch 496"
+   ]
+  },
+  "P3": {
+   "builder": "C",
+   "gender": "M",
+   "batches": [
+    "M Batch 497",
+    "M Batch 498",
+    "M Batch 499",
+    "M Batch 500",
+    "M Batch 501"
+   ]
+  },
+  "P4": {
+   "builder": "D",
+   "gender": "W",
+   "batches": [
+    "W Batch 438",
+    "W Batch 439",
+    "W Batch 440",
+    "W Batch 441",
+    "W Batch 442"
+   ]
+  },
+  "P5": {
+   "builder": "E",
+   "gender": "W",
+   "batches": [
+    "W Batch 443",
+    "W Batch 444",
+    "W Batch 445",
+    "W Batch 446",
+    "W Batch 447"
+   ]
+  },
+  "P6": {
+   "builder": "F",
+   "gender": "W",
+   "batches": [
+    "W Batch 448",
+    "W Batch 449",
+    "W Batch 450",
+    "W Batch 451",
+    "W Batch 452"
+   ]
+  }
+ },
+ "canvas": {
+  "section": "BLACK FRIDAY (x 0-18300)",
+  "men_statics_lane_x": 0,
+  "women_statics_lane_x": 9400,
+  "first_new_row_y": 31200,
+  "row_step": 2400,
+  "note": "Lowest used row was y 28800 (W435 / W437). Men batches take rows 31200..64800 in the MEN statics lane, women batches the same rows in the WOMEN statics lane. Video lanes (+4820 / +14220) stay free for later video versions."
+ },
+ "batches": [
+  {
+   "package": "P1",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Gifter buying for him (partner, sister, mum)",
+   "angle": "Gift",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "The gift he keeps on",
+    "description": "30% off, no code needed",
+    "primary_text": "Black Friday: 30% off sitewide, no code needed. The silver 2x Duo Minimal Set is a box chain and a square chain, each with its small bar tag. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included, free shipping."
+   },
+   "C1": {
+    "format": "Itemized gift stack (IM8 $72 in gifts, labels instead of values)",
+    "hook": "Everything he gets, itemized",
+    "headline": "What's in his Black Friday box",
+    "key_copy": "Box chain · Square chain · Case included · Free shipping · 30% off, no code",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02405.JPG",
+    "im8_ref": {
+     "key": "r03",
+     "ad_id": "facebook_1674207180385650",
+     "what": "$72 in welcome gifts, on us (itemized product stack with labels)"
+    },
+    "board_name": "M Batch 487 - C1",
+    "file": "M487-C1.dc.html"
+   },
+   "C2": {
+    "format": "Highlighted-phrase statement (IM8 locker room)",
+    "hook": "If he wears it every day, it's official",
+    "headline": "If it's on his wrist every day, it's official.",
+    "key_copy": "The silver duo, 30% off sitewide. Waterproof, adjustable S/M/L.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02462.JPG",
+    "im8_ref": {
+     "key": "r47",
+     "ad_id": "facebook_1850925142255411",
+     "what": "If it's in the Inter Miami locker room, It's official. (highlighted phrase)"
+    },
+    "board_name": "M Batch 487 - C2",
+    "file": "M487-C2.dc.html"
+   },
+   "C3": {
+    "format": "Gift box hero on fabric (IM8 drink behind... now yours)",
+    "hook": "The gift he won't take off",
+    "headline": "The duo he won't take off. Now 30% off.",
+    "key_copy": "Case included. Free shipping. Prices already reduced.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02626.JPG",
+    "im8_ref": {
+     "key": "r31",
+     "ad_id": "facebook_1528500395457138",
+     "what": "The drink behind Inter Miami CF, now yours (gift box on jersey)"
+    },
+    "board_name": "M Batch 487 - C3",
+    "file": "M487-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 31200,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 31200,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 31200
+    },
+    "C2": {
+     "x": 1660,
+     "y": 31200
+    },
+    "C3": {
+     "x": 2820,
+     "y": 31200
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 31200,
+     "w": 600
+    }
+   },
+   "builder": "A",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nr",
+    "url": "https://app.clickup.com/t/14ykpqtw6nr",
+    "name": "M Batch 487"
+   },
+   "batch": "M Batch 487"
+  },
+  {
+   "package": "P1",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "black",
+   "method": "Own concept: material/spec",
+   "creative_origin": "Ideation",
+   "persona": "Quality and material nerd",
+   "angle": "Quality/Material",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Three pieces. One spec.",
+    "description": "Recycled 316L, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide, prices already reduced. The black 3x Minimal Stack Set is three separate pieces: a flat polished cuff bangle, a box chain and a square chain. Recycled 316L stainless steel, waterproof, sweat and heat resistant, adjustable S/M/L. Case included."
+   },
+   "C1": {
+    "format": "Spec sheet / technical drawing with leader lines",
+    "hook": "Specs before style",
+    "headline": "Three pieces. One spec.",
+    "key_copy": "Flat polished cuff · box chain · square chain. Recycled 316L. Waterproof. Adjustable S/M/L.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png (macro crop on the cuff)",
+    "board_name": "M Batch 488 - C1",
+    "file": "M488-C1.dc.html"
+   },
+   "C2": {
+    "format": "Myth vs fact two-column card",
+    "hook": "\"Steel jewellery can't go in the shower.\" Myth.",
+    "headline": "Myth: you take it off to shower.",
+    "key_copy": "Fact: waterproof, sweat and heat resistant. 30% off this Black Friday.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image2.png",
+    "board_name": "M Batch 488 - C2",
+    "file": "M488-C2.dc.html"
+   },
+   "C3": {
+    "format": "Museum placard / gallery label beside the photo",
+    "hook": "Treat it like an object",
+    "headline": "3x Minimal Stack Set, black. Recycled 316L steel.",
+    "key_copy": "Placard lines: Materials · Finish · Sizes S/M/L · Case included · Black Friday: 30% off",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png (full wrist, different crop from C1)",
+    "board_name": "M Batch 488 - C3",
+    "file": "M488-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 33600,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 33600,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 33600
+    },
+    "C2": {
+     "x": 1660,
+     "y": 33600
+    },
+    "C3": {
+     "x": 2820,
+     "y": 33600
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 33600,
+     "w": 600
+    }
+   },
+   "builder": "A",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nt",
+    "url": "https://app.clickup.com/t/14ykpqtw6nt",
+    "name": "M Batch 488"
+   },
+   "batch": "M Batch 488"
+  },
+  {
+   "package": "P1",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver",
+   "method": "RAW stills (Men Session 1 photos) + motion",
+   "creative_origin": "Ideation",
+   "persona": "Minimalist: one thing he never takes off",
+   "angle": "Everyday Wear",
+   "ad_type": "IMAGE & VIDEO",
+   "copy_note": {
+    "headline": "One rule: keep it on",
+    "description": "Black Friday, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The silver 2x Duo Minimal Set: box chain plus square chain, waterproof, sweat and heat resistant, recycled 316L, adjustable S/M/L. Put it on once and leave it on. Case included, free shipping."
+   },
+   "C1": {
+    "format": "Full-bleed RAW photo, tiny caps line top + square CTA (IM8 They could... layout family)",
+    "hook": "One rule",
+    "headline": "One rule: never take it off.",
+    "key_copy": "30% off sitewide. Waterproof. No code needed.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02444.JPG",
+    "board_name": "M Batch 489 - C1",
+    "file": "M489-C1.dc.html"
+   },
+   "C2": {
+    "format": "Animated static (mp4, 8 s): kinetic type over a still, words drop in one by one: Shower. Gym. Sea. Sleep. then 30% OFF",
+    "hook": "The list that never ends",
+    "headline": "Shower. Gym. Sea. Sleep.",
+    "key_copy": "It stays on. Black Friday, 30% off.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02653.JPG",
+    "motion": "Kinetic type over the still; slow 3% push-in; no Seedance; export 1080x1920 mp4 + png poster",
+    "board_name": "M Batch 489 - C2",
+    "file": "M489-C2.dc.html"
+   },
+   "C3": {
+    "format": "Minimal two-photo split (top/bottom) with hairline divider",
+    "hook": "Day one / day 300",
+    "headline": "Same duo. Day 1 and day 300.",
+    "key_copy": "Waterproof, recycled 316L. 30% off for Black Friday.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02596.JPG + frameio:Men/Session 1/IMAGE:DSC02590.JPG",
+    "board_name": "M Batch 489 - C3",
+    "file": "M489-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 36000,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 36000,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 36000
+    },
+    "C2": {
+     "x": 1660,
+     "y": 36000
+    },
+    "C3": {
+     "x": 2820,
+     "y": 36000
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 36000,
+     "w": 600
+    }
+   },
+   "builder": "A",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nu",
+    "url": "https://app.clickup.com/t/14ykpqtw6nu",
+    "name": "M Batch 489"
+   },
+   "batch": "M Batch 489"
+  },
+  {
+   "package": "P1",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "gold",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Self-treat upgrader (owns one piece, wants the full stack)",
+   "angle": "Set/Bundle Value",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Same set, 30% less",
+    "description": "No code needed",
+    "primary_text": "Black Friday is 30% off sitewide and the prices are already reduced. The gold 3x Minimal Stack Set: flat polished cuff bangle, box chain and square chain. Waterproof, recycled 316L, adjustable S/M/L, case included."
+   },
+   "C1": {
+    "format": "Headline top, product bottom, three-line statement (IM8 Better formula. Same price.)",
+    "hook": "Same set, less",
+    "headline": "Same three pieces. 30% less.",
+    "key_copy": "Prices already reduced on the site. No code needed.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-512.png",
+    "im8_ref": {
+     "key": "r11",
+     "ad_id": "facebook_2159895041213015",
+     "what": "Better formula. Better flavors. Same price. (headline top, product bottom)"
+    },
+    "board_name": "M Batch 490 - C1",
+    "file": "M490-C1.dc.html"
+   },
+   "C2": {
+    "format": "Product + benefit list on cream (IM8 One scoop. 92 ingredients. 8 benefits.)",
+    "hook": "Count what you get",
+    "headline": "One set. Three pieces. Six reasons.",
+    "key_copy": "Waterproof · Sweat resistant · Heat resistant · Recycled 316L · Adjustable S/M/L · Case included",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image4.png",
+    "im8_ref": {
+     "key": "r20",
+     "ad_id": "facebook_1988129385346047",
+     "what": "One scoop. 92 ingredients. 8 benefits. (product + benefit list on cream)"
+    },
+    "board_name": "M Batch 490 - C2",
+    "file": "M490-C2.dc.html"
+   },
+   "C3": {
+    "format": "Open set hero with icon row (IM8 The Beckham Stack set)",
+    "hook": "The full stack, boxed",
+    "headline": "The Stack Set: cuff + box chain + square chain",
+    "key_copy": "Icon row: Waterproof / 316L / S-M-L / Case. Badge: 30% off.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-512.png (tight crop) + shopify:jewelry-case:jbag3_kopia.jpg",
+    "im8_ref": {
+     "key": "r17",
+     "ad_id": "facebook_1426381459365951",
+     "what": "The Beckham Stack: Essentials + Longevity set (open box + icon row)"
+    },
+    "board_name": "M Batch 490 - C3",
+    "file": "M490-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 38400,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 38400,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 38400
+    },
+    "C2": {
+     "x": 1660,
+     "y": 38400
+    },
+    "C3": {
+     "x": 2820,
+     "y": 38400
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 38400,
+     "w": 600
+    }
+   },
+   "builder": "A",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nv",
+    "url": "https://app.clickup.com/t/14ykpqtw6nv",
+    "name": "M Batch 490"
+   },
+   "batch": "M Batch 490"
+  },
+  {
+   "package": "P1",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "black",
+   "method": "Own concept: native / deal-hunter",
+   "creative_origin": "Ideation",
+   "persona": "Deal hunter who waits for Black Friday",
+   "angle": "Price/Offer",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "The black duo, 30% off",
+    "description": "Prices already reduced",
+    "primary_text": "Black Friday: 30% off sitewide. No code, the prices on the site are already reduced. The black 2x Duo Minimal Set: box chain and square chain, each with its bar tag. Waterproof, sweat and heat resistant, recycled 316L, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Shop-window sale sign: big 30% stencil, photo inside the \"window\"",
+    "hook": "The sign you waited for",
+    "headline": "30% OFF. EVERYTHING. NO CODE.",
+    "key_copy": "The black duo, waterproof and adjustable. Prices already reduced.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04960.JPG",
+    "board_name": "M Batch 491 - C1",
+    "file": "M491-C1.dc.html"
+   },
+   "C2": {
+    "format": "Generic social text post (no platform logos): \"unpopular opinion\"",
+    "hook": "Unpopular opinion",
+    "headline": "Unpopular opinion: every man needs one bracelet.",
+    "key_copy": "Make it the black duo. 30% off this Black Friday.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04966.JPG",
+    "board_name": "M Batch 491 - C2",
+    "file": "M491-C2.dc.html"
+   },
+   "C3": {
+    "format": "Price-tag-free \"sale tag\" swing tags on the photo (30% / no code / free shipping / case)",
+    "hook": "Tags that say it all",
+    "headline": "Black Friday, tagged.",
+    "key_copy": "30% off · No code · Free shipping · Case included",
+    "photo": "shopify:2x-duo-minimal-set-for-him:12616-203_1.png",
+    "board_name": "M Batch 491 - C3",
+    "file": "M491-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 40800,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 40800,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 40800
+    },
+    "C2": {
+     "x": 1660,
+     "y": 40800
+    },
+    "C3": {
+     "x": 2820,
+     "y": 40800
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 40800,
+     "w": 600
+    }
+   },
+   "builder": "A",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nw",
+    "url": "https://app.clickup.com/t/14ykpqtw6nw",
+    "name": "M Batch 491"
+   },
+   "batch": "M Batch 491"
+  },
+  {
+   "package": "P2",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "silver",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Skeptic who needs proof",
+   "angle": "Social Proof",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Rated 4.5. Now 30% off.",
+    "description": "3,000+ reviews",
+    "primary_text": "Rated 4.5 on Trustpilot from 3,000+ reviews, and 30% off this Black Friday with no code. The silver 3x Minimal Stack Set: flat polished cuff bangle, box chain and square chain in recycled 316L. Waterproof, adjustable S/M/L, case included."
+   },
+   "C1": {
+    "format": "Photo top, colour panel bottom (IM8 Trusted by... Available to you.)",
+    "hook": "Proof first",
+    "headline": "Cavaier: rated 4.5 from 3,000+ reviews. Now 30% off.",
+    "key_copy": "Panel: light grey, small caps \"BLACK FRIDAY\", square CTA.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-51_kopia_1.png",
+    "im8_ref": {
+     "key": "r23",
+     "ad_id": "facebook_1235659748432600",
+     "what": "Trusted by Inter Miami CF. Available to you. (photo top, colour panel bottom)"
+    },
+    "board_name": "M Batch 492 - C1",
+    "file": "M492-C1.dc.html"
+   },
+   "C2": {
+    "format": "Stat headline over product (IM8 95% felt more energy)",
+    "hook": "A number that matters",
+    "headline": "4.5 on Trustpilot. 3,000+ reviews.",
+    "key_copy": "The silver 3x stack: cuff, box chain, square chain. 30% off sitewide.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image3.png",
+    "im8_ref": {
+     "key": "r26",
+     "ad_id": "facebook_1536498684803887",
+     "what": "Inter Miami's new drink. 95% felt more energy. (stat headline over product)"
+    },
+    "board_name": "M Batch 492 - C2",
+    "file": "M492-C2.dc.html"
+   },
+   "C3": {
+    "format": "Product hero over big CAVAIER logo texture (IM8 The drink Inter Miami trusts. Now yours to try.)",
+    "hook": "Trusted, now yours",
+    "headline": "Rated 4.5 on Trustpilot. The stack, 30% off.",
+    "key_copy": "Logo texture in light grey; product photo cut to a clean rectangle.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-51_kopia_1.png (cuff macro crop)",
+    "im8_ref": {
+     "key": "r10",
+     "ad_id": "facebook_1279712053873847",
+     "what": "The drink Inter Miami CF trusts. Now yours to try. (product hero over big logo texture)"
+    },
+    "board_name": "M Batch 492 - C3",
+    "file": "M492-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 43200,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 43200,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 43200
+    },
+    "C2": {
+     "x": 1660,
+     "y": 43200
+    },
+    "C3": {
+     "x": 2820,
+     "y": 43200
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 43200,
+     "w": 600
+    }
+   },
+   "builder": "B",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nx",
+    "url": "https://app.clickup.com/t/14ykpqtw6nx",
+    "name": "M Batch 492"
+   },
+   "batch": "M Batch 492"
+  },
+  {
+   "package": "P2",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver",
+   "method": "RAW stills (Men Session 2 photos) on IM8 flow",
+   "creative_origin": "Imitation",
+   "persona": "Office / smart-casual professional",
+   "angle": "Versatility",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Desk. Dinner. Done.",
+    "description": "30% off, no code",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The silver 2x Duo Minimal Set sits under a shirt cuff all day: box chain and square chain, waterproof, sweat resistant, recycled 316L, adjustable S/M/L. Free shipping."
+   },
+   "C1": {
+    "format": "Big claim + photo (IM8 Only 1 year in. Already upgraded.)",
+    "hook": "From desk to dinner",
+    "headline": "Desk. Dinner. Done.",
+    "key_copy": "One duo for the whole day. 30% off sitewide.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04740.JPG",
+    "im8_ref": {
+     "key": "r35",
+     "ad_id": "facebook_1239409897691271",
+     "what": "Only 1 year in. Already upgraded. (big claim, three products)"
+    },
+    "board_name": "M Batch 493 - C1",
+    "file": "M493-C1.dc.html"
+   },
+   "C2": {
+    "format": "Top headline, flat composition (IM8 We listened. We upgraded.)",
+    "hook": "Small upgrade, every outfit",
+    "headline": "The smallest upgrade to every shirt.",
+    "key_copy": "Silver duo, recycled 316L, adjustable S/M/L. Black Friday 30% off.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04821.JPG",
+    "im8_ref": {
+     "key": "r24",
+     "ad_id": "facebook_4288021401515688",
+     "what": "We listened. We upgraded. (top headline, product flat lay)"
+    },
+    "board_name": "M Batch 493 - C2",
+    "file": "M493-C2.dc.html"
+   },
+   "C3": {
+    "format": "Serif headline, product resting on fabric (IM8 The drink behind the 90...)",
+    "hook": "The detail that matters most",
+    "headline": "The detail behind the sleeve.",
+    "key_copy": "Box chain + square chain. Waterproof. 30% off.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04872.JPG",
+    "im8_ref": {
+     "key": "r14",
+     "ad_id": "facebook_1208882247864977",
+     "what": "The drink behind the 90 that matters most (product resting on jersey, serif headline)"
+    },
+    "board_name": "M Batch 493 - C3",
+    "file": "M493-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 45600,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 45600,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 45600
+    },
+    "C2": {
+     "x": 1660,
+     "y": 45600
+    },
+    "C3": {
+     "x": 2820,
+     "y": 45600
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 45600,
+     "w": 600
+    }
+   },
+   "builder": "B",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6ny",
+    "url": "https://app.clickup.com/t/14ykpqtw6ny",
+    "name": "M Batch 493"
+   },
+   "batch": "M Batch 493"
+  },
+  {
+   "package": "P2",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "black",
+   "method": "Own concept + motion: proof of use",
+   "creative_origin": "Ideation",
+   "persona": "Gym / active guy",
+   "angle": "Waterproof",
+   "ad_type": "IMAGE & VIDEO",
+   "copy_note": {
+    "headline": "Taken off: 0 times",
+    "description": "Waterproof, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide. The black 3x Minimal Stack Set (cuff, box chain, square chain) is waterproof, sweat and heat resistant, so it stays on through training, showers and the sea. Recycled 316L, adjustable S/M/L, case included."
+   },
+   "C1": {
+    "format": "24-hour timeline (06:30 shower, 07:15 gym, 13:00 sea, 23:00 sleep) beside the photo",
+    "hook": "24 hours, zero removals",
+    "headline": "24 hours. Taken off: 0 times.",
+    "key_copy": "Waterproof, sweat and heat resistant. 30% off Black Friday.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image2.png",
+    "board_name": "M Batch 494 - C1",
+    "file": "M494-C1.dc.html"
+   },
+   "C2": {
+    "format": "Animated static (mp4): water-drop beads slide down a glass layer over the photo while \"Waterproof.\" types in; ends on 30% OFF",
+    "hook": "Watch it stay on",
+    "headline": "Sweat. Salt. Shower.",
+    "key_copy": "Still on. Black Friday 30% off.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png (crop on chains)",
+    "motion": "Animated glass/drop overlay layer + type-on; real photo underneath unchanged",
+    "board_name": "M Batch 494 - C2",
+    "file": "M494-C2.dc.html"
+   },
+   "C3": {
+    "format": "Scoreboard / stats card (Gym sessions: all · Showers: all · Removals: 0)",
+    "hook": "The stat sheet",
+    "headline": "Removals: 0.",
+    "key_copy": "Recycled 316L. Adjustable S/M/L. Case included. 30% off.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image2.png (wrist crop, mirrored layout from C1)",
+    "board_name": "M Batch 494 - C3",
+    "file": "M494-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 48000,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 48000,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 48000
+    },
+    "C2": {
+     "x": 1660,
+     "y": 48000
+    },
+    "C3": {
+     "x": 2820,
+     "y": 48000
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 48000,
+     "w": 600
+    }
+   },
+   "builder": "B",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6nz",
+    "url": "https://app.clickup.com/t/14ykpqtw6nz",
+    "name": "M Batch 494"
+   },
+   "batch": "M Batch 494"
+  },
+  {
+   "package": "P2",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Undecided first-time bracelet wearer",
+   "angle": "Problem → Solution",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "The finishing touch",
+    "description": "30% off sitewide",
+    "primary_text": "Black Friday: 30% off sitewide, no code needed. If you have never worn a bracelet, start with the silver 2x Duo Minimal Set: a box chain and a square chain, low-key and adjustable S/M/L. Waterproof, recycled 316L, case included."
+   },
+   "C1": {
+    "format": "Problem photo + text panel (IM8 Your labs say you're fine. But...)",
+    "hook": "Something's missing",
+    "headline": "Your shirt says sharp. Your wrist says nothing.",
+    "key_copy": "The silver duo fixes that. 30% off this Black Friday.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02614.JPG",
+    "im8_ref": {
+     "key": "r28",
+     "ad_id": "facebook_3525950010890382",
+     "what": "Your labs say you're fine. But your hair is on the bathroom floor. (problem photo, text panel)"
+    },
+    "board_name": "M Batch 495 - C1",
+    "file": "M495-C1.dc.html"
+   },
+   "C2": {
+    "format": "Split-body photo with story hook (IM8 He lost 40 pounds...)",
+    "hook": "Bare vs finished",
+    "headline": "Bare wrist. Finished wrist.",
+    "key_copy": "Same man, same shirt, plus the duo. 30% off sitewide.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02734.JPG (right half) + frameio:Men/Session 1/IMAGE:DSC02611.JPG (left half, bare-looking crop)",
+    "im8_ref": {
+     "key": "r15",
+     "ad_id": "facebook_919840227565545",
+     "what": "He lost 40 pounds on his GLP-1 (split-body photo, story hook)"
+    },
+    "board_name": "M Batch 495 - C2",
+    "file": "M495-C2.dc.html"
+   },
+   "C3": {
+    "format": "Bold caps statement (IM8 The club Beckham built...)",
+    "hook": "A statement",
+    "headline": "THE BRACELET MEN WHO DON'T WEAR BRACELETS WEAR.",
+    "key_copy": "Light grey background, photo strip, 30% OFF in small red accent.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02480.JPG (crop off the face)",
+    "im8_ref": {
+     "key": "r53",
+     "ad_id": "facebook_2517138335404348",
+     "what": "The club Beckham built now runs on the supplement he co-founded. (bold caps statement)"
+    },
+    "board_name": "M Batch 495 - C3",
+    "file": "M495-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 50400,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 50400,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 50400
+    },
+    "C2": {
+     "x": 1660,
+     "y": 50400
+    },
+    "C3": {
+     "x": 2820,
+     "y": 50400
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 50400,
+     "w": 600
+    }
+   },
+   "builder": "B",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p0",
+    "url": "https://app.clickup.com/t/14ykpqtw6p0",
+    "name": "M Batch 495"
+   },
+   "batch": "M Batch 495"
+  },
+  {
+   "package": "P2",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "gold",
+   "method": "Own concept: gift-for-him native",
+   "creative_origin": "Ideation",
+   "persona": "Partner shopping for the man who has everything",
+   "angle": "Gift",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Gifting him, solved",
+    "description": "Case included",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The gold 3x Minimal Stack Set is the easy gift: three pieces (cuff, box chain, square chain), adjustable S/M/L so size is never a guess, case included and free shipping."
+   },
+   "C1": {
+    "format": "Gift-guide page: \"For the man who has everything\" with 3 numbered picks all pointing to the set",
+    "hook": "Gift guide",
+    "headline": "For the man who has everything.",
+    "key_copy": "He doesn't have this. The gold 3x stack, 30% off.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image4.png",
+    "board_name": "M Batch 496 - C1",
+    "file": "M496-C1.dc.html"
+   },
+   "C2": {
+    "format": "Flowchart / decision tree: Does he wear a watch? Yes / No, both arrows end at the set",
+    "hook": "Gifting, solved",
+    "headline": "Not sure what to get him?",
+    "key_copy": "Every answer ends here. Adjustable S/M/L, case included.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-512.png",
+    "board_name": "M Batch 496 - C2",
+    "file": "M496-C2.dc.html"
+   },
+   "C3": {
+    "format": "Gifter FAQ card (Size? Adjustable S/M/L. Wrap? Case included. Shipping? Free.)",
+    "hook": "The 3 questions gifters ask",
+    "headline": "His size? Doesn't matter.",
+    "key_copy": "Adjustable S/M/L · Case included · Free shipping · 30% off",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-512.png (cuff close crop) + shopify:jewelry-case:jbag3_kopia.jpg",
+    "board_name": "M Batch 496 - C3",
+    "file": "M496-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 52800,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 52800,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 52800
+    },
+    "C2": {
+     "x": 1660,
+     "y": 52800
+    },
+    "C3": {
+     "x": 2820,
+     "y": 52800
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 52800,
+     "w": 600
+    }
+   },
+   "builder": "B",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p1",
+    "url": "https://app.clickup.com/t/14ykpqtw6p1",
+    "name": "M Batch 496"
+   },
+   "batch": "M Batch 496"
+  },
+  {
+   "package": "P3",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver + gold",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Style-curious man building a look",
+   "angle": "Versatility",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Bare wrist? Fixed.",
+    "description": "4.5 from 3,000+ reviews",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The 2x Duo Minimal Set is a box chain and a square chain with small bar tags, in silver, gold or black. Waterproof, recycled 316L, adjustable S/M/L. Rated 4.5 from 3,000+ reviews."
+   },
+   "C1": {
+    "format": "3-stage strip + rating bar (IM8 The bloat dissolving)",
+    "hook": "Bare to finished in 3",
+    "headline": "Bare. One chain. The duo.",
+    "key_copy": "Rating bar: 4.5 on Trustpilot · 3,000+ reviews. 30% off.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04746.JPG + frameio:Men/Session 2/IMAGE:DSC04788.JPG",
+    "im8_ref": {
+     "key": "r44",
+     "ad_id": "facebook_2088802291738767",
+     "what": "The bloat dissolving (3-stage before/after strip + rating bar)"
+    },
+    "board_name": "M Batch 497 - C1",
+    "file": "M497-C1.dc.html"
+   },
+   "C2": {
+    "format": "Labelled item grid, light version (IM8 What's included in your kit)",
+    "hook": "What's included",
+    "headline": "What's in your Black Friday duo",
+    "key_copy": "Box chain · square chain · bar tags · case · free shipping",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04893.JPG",
+    "im8_ref": {
+     "key": "r07",
+     "ad_id": "facebook_930744616269265",
+     "what": "What's included in your free kit (labelled item grid)"
+    },
+    "board_name": "M Batch 497 - C2",
+    "file": "M497-C2.dc.html"
+   },
+   "C3": {
+    "format": "One-word question + badge (IM8 MENOBELLY?)",
+    "hook": "One word",
+    "headline": "BARE WRIST?",
+    "key_copy": "Fix it for 30% less. The gold duo.",
+    "photo": "shopify:2x-duo-minimal-set-for-him:ad-image-17912895281901.png",
+    "im8_ref": {
+     "key": "r55",
+     "ad_id": "facebook_1385296473725878",
+     "what": "MENOBELLY? (one-word question, before/after, 30% badge)"
+    },
+    "finish": "gold",
+    "board_name": "M Batch 497 - C3",
+    "file": "M497-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 55200,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 55200,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 55200
+    },
+    "C2": {
+     "x": 1660,
+     "y": 55200
+    },
+    "C3": {
+     "x": 2820,
+     "y": 55200
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 55200,
+     "w": 600
+    }
+   },
+   "builder": "C",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p2",
+    "url": "https://app.clickup.com/t/14ykpqtw6p2",
+    "name": "M Batch 497"
+   },
+   "batch": "M Batch 497"
+  },
+  {
+   "package": "P3",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "black / silver / gold",
+   "method": "Own concept: comparison + listicle",
+   "creative_origin": "Ideation",
+   "persona": "Skeptic comparing cheap vs premium",
+   "angle": "Competitor / Us vs. Them",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Not all steel is equal",
+    "description": "Recycled 316L, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide, prices already reduced. Before you buy any bracelet, check three things: material, water and size. The 3x Minimal Stack Set is recycled 316L, waterproof and adjustable S/M/L, in black, silver or gold."
+   },
+   "C1": {
+    "format": "Listicle \"3 things to check before you buy a bracelet\" (material, water, size)",
+    "hook": "Before you buy",
+    "headline": "3 things to check before you buy a bracelet.",
+    "key_copy": "1. Recycled 316L? 2. Waterproof? 3. Adjustable? Ours: yes, yes, yes.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png (new crop: chains only)",
+    "board_name": "M Batch 498 - C1",
+    "file": "M498-C1.dc.html"
+   },
+   "C2": {
+    "format": "Spec table: generic \"fashion bracelet\" vs the Stack Set (checkmarks only, no brands)",
+    "hook": "Side by side",
+    "headline": "Not all steel is equal.",
+    "key_copy": "Rows: recycled 316L · waterproof · sweat/heat resistant · S/M/L · case included",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-51_kopia_1.png (wrist crop, different from P2)",
+    "board_name": "M Batch 498 - C2",
+    "file": "M498-C2.dc.html"
+   },
+   "C3": {
+    "format": "Three-finish lineup, one per row, \"This or that\" poll style",
+    "hook": "This or that",
+    "headline": "Black, silver or gold?",
+    "key_copy": "All three are 30% off this Black Friday.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png + shopify:3x-minimal-stack-set-for-him:12616-51_kopia_1.png + shopify:3x-minimal-stack-set-for-him:12616-512.png (narrow strips)",
+    "board_name": "M Batch 498 - C3",
+    "file": "M498-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 57600,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 57600,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 57600
+    },
+    "C2": {
+     "x": 1660,
+     "y": 57600
+    },
+    "C3": {
+     "x": 2820,
+     "y": 57600
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 57600,
+     "w": 600
+    }
+   },
+   "builder": "C",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p3",
+    "url": "https://app.clickup.com/t/14ykpqtw6p3",
+    "name": "M Batch 498"
+   },
+   "batch": "M Batch 498"
+  },
+  {
+   "package": "P3",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver / black",
+   "method": "RAW stills (Men Sessions 1+2 water shots) + motion",
+   "creative_origin": "Ideation",
+   "persona": "Traveler / outdoors guy",
+   "angle": "Waterproof",
+   "ad_type": "IMAGE & VIDEO",
+   "copy_note": {
+    "headline": "Straight into the sea",
+    "description": "Waterproof, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The 2x Duo Minimal Set goes where you go: waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping."
+   },
+   "C1": {
+    "format": "Full-bleed water photo, small caps headline in the calm area",
+    "hook": "Into the sea",
+    "headline": "Straight into the sea.",
+    "key_copy": "Waterproof. Recycled 316L. 30% off sitewide.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02581.JPG",
+    "board_name": "M Batch 499 - C1",
+    "file": "M499-C1.dc.html"
+   },
+   "C2": {
+    "format": "Animated static (mp4): before/after slider wipes from dry hand to wet hand; text \"Before the sea / after the sea\", ends on 30% OFF",
+    "hook": "Slide to see",
+    "headline": "Before the sea. After the sea.",
+    "key_copy": "Still on. Black Friday 30% off.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02852.JPG + frameio:Men/Session 1/IMAGE:DSC02858.JPG",
+    "motion": "Wipe/slider transition between two real photos; no generated frames",
+    "board_name": "M Batch 499 - C2",
+    "file": "M499-C2.dc.html"
+   },
+   "C3": {
+    "format": "Polaroid photo dump (3 small real photos, hand-written-style captions in Figtree)",
+    "hook": "Photo dump",
+    "headline": "Still on, everywhere.",
+    "key_copy": "Sea · rocks · shower. 30% off sitewide.",
+    "photo": "frameio:Men/Session 2/IMAGE:DSC04905.JPG + frameio:Men/Session 1/IMAGE:DSC02566.JPG + frameio:Men/Session 1/IMAGE:DSC02599.JPG",
+    "finish": "silver + black",
+    "board_name": "M Batch 499 - C3",
+    "file": "M499-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 60000,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 60000,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 60000
+    },
+    "C2": {
+     "x": 1660,
+     "y": 60000
+    },
+    "C3": {
+     "x": 2820,
+     "y": 60000
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 60000,
+     "w": 600
+    }
+   },
+   "builder": "C",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p4",
+    "url": "https://app.clickup.com/t/14ykpqtw6p4",
+    "name": "M Batch 499"
+   },
+   "batch": "M Batch 499"
+  },
+  {
+   "package": "P3",
+   "gender": "M",
+   "product": "3x Minimal Stack Set",
+   "finish": "black",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Deal hunter who wants the biggest set",
+   "angle": "Price/Offer",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Save 30% on the stack",
+    "description": "No code needed",
+    "primary_text": "Black Friday: save 30% on the black 3x Minimal Stack Set, no code, prices already reduced. Flat polished cuff bangle, box chain and square chain, all recycled 316L, waterproof and adjustable S/M/L. Case included, free shipping."
+   },
+   "C1": {
+    "format": "Bold offer + tick list + rating line (IM8 SAVE 30% & GET FREE WELCOME KIT)",
+    "hook": "The offer, loud",
+    "headline": "SAVE 30% ON THE FULL STACK",
+    "key_copy": "Ticks: no code · prices already reduced · case included · free shipping. 4.5 · 3,000+ reviews",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png (light background crop)",
+    "im8_ref": {
+     "key": "r54",
+     "ad_id": "facebook_1657294242758601",
+     "what": "SAVE 30% & GET FREE WELCOME KIT (bold offer, tick list, rating line)"
+    },
+    "board_name": "M Batch 500 - C1",
+    "file": "M500-C1.dc.html"
+   },
+   "C2": {
+    "format": "Round 30% sticker over a full-bleed texture photo (IM8 One drink. 90 ingredients.)",
+    "hook": "Sticker",
+    "headline": "Three pieces. One price cut.",
+    "key_copy": "Sticker: 30% OFF. Under it: no code needed.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:image2.png",
+    "im8_ref": {
+     "key": "r12",
+     "ad_id": "facebook_1511455640561533",
+     "what": "One drink. 90 ingredients. + round UP TO 30% OFF sticker over texture"
+    },
+    "board_name": "M Batch 500 - C2",
+    "file": "M500-C2.dc.html"
+   },
+   "C3": {
+    "format": "Lineup on a table with \"included\" label (IM8 Free welcome kit valued at...)",
+    "hook": "Everything included",
+    "headline": "Cuff. Box chain. Square chain. Case.",
+    "key_copy": "All included. All 30% off this Black Friday.",
+    "photo": "shopify:3x-minimal-stack-set-for-him:12616-511.png + shopify:jewelry-case:jbag3_kopia.jpg",
+    "im8_ref": {
+     "key": "r40",
+     "ad_id": "facebook_1866034351009921",
+     "what": "Free welcome kit (valued at $60) (lineup on a table)"
+    },
+    "board_name": "M Batch 500 - C3",
+    "file": "M500-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 62400,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 62400,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 62400
+    },
+    "C2": {
+     "x": 1660,
+     "y": 62400
+    },
+    "C3": {
+     "x": 2820,
+     "y": 62400
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 62400,
+     "w": 600
+    }
+   },
+   "builder": "C",
+   "handle": "3x-minimal-stack-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-him",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p5",
+    "url": "https://app.clickup.com/t/14ykpqtw6p5",
+    "name": "M Batch 500"
+   },
+   "batch": "M Batch 500"
+  },
+  {
+   "package": "P3",
+   "gender": "M",
+   "product": "2x Duo Minimal Set",
+   "finish": "silver",
+   "method": "Own concept: editorial minimalism",
+   "creative_origin": "Ideation",
+   "persona": "Aesthetic minimalist",
+   "angle": "Identity",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Less, but better",
+    "description": "The silver duo, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide. The silver 2x Duo Minimal Set is two quiet chains, a box chain and a square chain, made to stay on: waterproof, recycled 316L, adjustable S/M/L. No code, prices already reduced."
+   },
+   "C1": {
+    "format": "Typographic poster: huge \"LESS.\" with the photo as a small window",
+    "hook": "Less",
+    "headline": "Less, but better.",
+    "key_copy": "The silver duo. 30% off sitewide.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02417.JPG",
+    "board_name": "M Batch 501 - C1",
+    "file": "M501-C1.dc.html"
+   },
+   "C2": {
+    "format": "Four-photo grid, one word each (Salt. Linen. Sun. Steel.) — RAW Session 1",
+    "hook": "Four words",
+    "headline": "Salt. Linen. Sun. Steel.",
+    "key_copy": "One duo through all of it. Black Friday 30% off.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02495.JPG + frameio:Men/Session 1/IMAGE:DSC02701.JPG + frameio:Men/Session 1/IMAGE:DSC02716.JPG + frameio:Men/Session 1/IMAGE:DSC02429.JPG",
+    "board_name": "M Batch 501 - C2",
+    "file": "M501-C2.dc.html"
+   },
+   "C3": {
+    "format": "A note from Cavaier (brand letter, signed \"Cavaier\", no invented person)",
+    "hook": "A short note",
+    "headline": "We make one thing: jewellery you keep on.",
+    "key_copy": "This Black Friday it's 30% off. No code.",
+    "photo": "frameio:Men/Session 1/IMAGE:DSC02423.JPG",
+    "board_name": "M Batch 501 - C3",
+    "file": "M501-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 64800,
+    "im8_refs_board": {
+     "x": 0,
+     "y": 64800,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 500,
+     "y": 64800
+    },
+    "C2": {
+     "x": 1660,
+     "y": 64800
+    },
+    "C3": {
+     "x": 2820,
+     "y": 64800
+    },
+    "copy_note": {
+     "x": 3980,
+     "y": 64800,
+     "w": 600
+    }
+   },
+   "builder": "C",
+   "handle": "2x-duo-minimal-set-for-him",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-him",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-him"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p6",
+    "url": "https://app.clickup.com/t/14ykpqtw6p6",
+    "name": "M Batch 501"
+   },
+   "batch": "M Batch 501"
+  },
+  {
+   "package": "P4",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "gold",
+   "method": "RAW photos (Women Session 12, NEW) on IM8 flow",
+   "creative_origin": "Imitation",
+   "persona": "Self-treat: buying for herself",
+   "angle": "Self-Reward",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Your gold, 30% less",
+    "description": "No code needed",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The gold 3x Minimal - Stack Set is a flat polished cuff bangle, a box chain and a square chain. Waterproof, sweat and heat resistant, recycled 316L, adjustable S/M/L. Case included, free shipping."
+   },
+   "C1": {
+    "format": "Full-bleed texture photo + round 30% sticker (IM8 One drink. 92 ingredients.)",
+    "hook": "Three pieces, one sticker",
+    "headline": "Three pieces. One wrist.",
+    "key_copy": "Sticker: 30% OFF. No code needed.",
+    "photo": "frameio:Women/Session 12/Image:ODI03876.JPG",
+    "im8_ref": {
+     "key": "r21",
+     "ad_id": "facebook_1440022714462119",
+     "what": "One drink. 92 ingredients. + UP TO 30% OFF sticker (full-bleed texture)"
+    },
+    "board_name": "W Batch 438 - C1",
+    "file": "W438-C1.dc.html"
+   },
+   "C2": {
+    "format": "Highlighted headline over photo (IM8 premium daily ritual, now yours)",
+    "hook": "Now yours",
+    "headline": "Your everyday gold, now yours for 30% less.",
+    "key_copy": "Cuff, box chain, square chain. Waterproof.",
+    "photo": "frameio:Women/Session 12/Image:ODI03869.JPG (crop: wrist + jaw only)",
+    "im8_ref": {
+     "key": "r02",
+     "ad_id": "facebook_1349738530413538",
+     "what": "Inter Miami's premium daily ritual, now yours (highlighted headline over product box)"
+    },
+    "board_name": "W Batch 438 - C2",
+    "file": "W438-C2.dc.html"
+   },
+   "C3": {
+    "format": "Caps header over photo (IM8 official partner)",
+    "hook": "The set",
+    "headline": "THE GOLD STACK. 30% OFF.",
+    "key_copy": "Recycled 316L · adjustable S/M/L · case included",
+    "photo": "frameio:Women/Session 12/Image:ODI03898.JPG",
+    "im8_ref": {
+     "key": "r50",
+     "ad_id": "facebook_1620535579202420",
+     "what": "INTER MIAMI'S official health supplements partner (caps header over photo)"
+    },
+    "board_name": "W Batch 438 - C3",
+    "file": "W438-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 31200,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 31200,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 31200
+    },
+    "C2": {
+     "x": 11060,
+     "y": 31200
+    },
+    "C3": {
+     "x": 12220,
+     "y": 31200
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 31200,
+     "w": 600
+    }
+   },
+   "builder": "D",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p8",
+    "url": "https://app.clickup.com/t/14ykpqtw6p8",
+    "name": "W Batch 438"
+   },
+   "batch": "W Batch 438"
+  },
+  {
+   "package": "P4",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "gold",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Social-proof follower",
+   "angle": "Social Proof",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "It's official: 30% off",
+    "description": "3,000+ reviews",
+    "primary_text": "It's official: Black Friday is 30% off sitewide, no code. The gold 2x Duo - Minimal Set: a box chain and a square chain, each with its small bar tag. Waterproof, recycled 316L, adjustable S/M/L. Rated 4.5 from 3,000+ reviews."
+   },
+   "C1": {
+    "format": "Big caps, photo below, pill-free square CTA (IM8 It's official.)",
+    "hook": "It's official",
+    "headline": "It's official. Black Friday is 30% off.",
+    "key_copy": "The gold duo, no code needed.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:247:DSC00711",
+    "im8_ref": {
+     "key": "r05",
+     "ad_id": "facebook_2153767062124449",
+     "what": "It's official. The squad's drink is IM8. (big caps, photo below, pill CTA)"
+    },
+    "board_name": "W Batch 439 - C1",
+    "file": "W439-C1.dc.html"
+   },
+   "C2": {
+    "format": "Reviews headline (IM8 Over 10,000 5-star reviews. We made it even better.)",
+    "hook": "Reviews + offer",
+    "headline": "3,000+ reviews. Now 30% off.",
+    "key_copy": "4.5 on Trustpilot. Box chain and square chain, made to stay on.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:312:14:DSC08573",
+    "im8_ref": {
+     "key": "r27",
+     "ad_id": "facebook_1242739231300608",
+     "what": "Over 10,000 5-star reviews. We made it even better."
+    },
+    "board_name": "W Batch 439 - C2",
+    "file": "W439-C2.dc.html"
+   },
+   "C3": {
+    "format": "Top headline + flat composition (IM8 We listened. We upgraded.)",
+    "hook": "You asked",
+    "headline": "You asked for Black Friday. Here it is.",
+    "key_copy": "30% off sitewide, prices already reduced.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:361:DSC00455",
+    "im8_ref": {
+     "key": "r24",
+     "ad_id": "facebook_4288021401515688",
+     "what": "We listened. We upgraded. (top headline, product flat lay)"
+    },
+    "board_name": "W Batch 439 - C3",
+    "file": "W439-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 33600,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 33600,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 33600
+    },
+    "C2": {
+     "x": 11060,
+     "y": 33600
+    },
+    "C3": {
+     "x": 12220,
+     "y": 33600
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 33600,
+     "w": 600
+    }
+   },
+   "builder": "D",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6p9",
+    "url": "https://app.clickup.com/t/14ykpqtw6p9",
+    "name": "W Batch 439"
+   },
+   "batch": "W Batch 439"
+  },
+  {
+   "package": "P4",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "black",
+   "method": "RAW photos (Women Session 12, NEW) + motion",
+   "creative_origin": "Ideation",
+   "persona": "Office / workwear minimalist (black dress, clean lines)",
+   "angle": "Everyday Wear",
+   "ad_type": "IMAGE & VIDEO",
+   "copy_note": {
+    "headline": "The black stack, 30% off",
+    "description": "Made for every day",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The black 3x Minimal - Stack Set is a flat polished cuff bangle, a box chain and a square chain. Clean with workwear, waterproof and sweat resistant, recycled 316L, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Editorial: photo 70%, slim white band with headline and CTA",
+    "hook": "Workwear",
+    "headline": "The black stack goes to work.",
+    "key_copy": "Waterproof, recycled 316L. 30% off this Black Friday.",
+    "photo": "frameio:Women/Session 12/Image:ODI03823.JPG",
+    "board_name": "W Batch 440 - C1",
+    "file": "W440-C1.dc.html"
+   },
+   "C2": {
+    "format": "Animated static (mp4): three labels draw in with hairlines pointing at cuff / box chain / square chain, then 30% OFF",
+    "hook": "Three pieces, named",
+    "headline": "Cuff. Box chain. Square chain.",
+    "key_copy": "All three, 30% off. No code.",
+    "photo": "frameio:Women/Session 12/Image:ODI03811.JPG",
+    "motion": "Line-draw callouts + fade-in labels on the real still",
+    "board_name": "W Batch 440 - C2",
+    "file": "W440-C2.dc.html"
+   },
+   "C3": {
+    "format": "Diary-style \"Monday to Friday\" strip (5 small crops of the same session)",
+    "hook": "Mon to Fri",
+    "headline": "Monday to Friday. Never off.",
+    "key_copy": "Black Friday: the black stack, 30% off.",
+    "photo": "frameio:Women/Session 12/Image:ODI03845.JPG + frameio:Women/Session 12/Image:ODI03803.JPG + frameio:Women/Session 12/Image:ODI03819.JPG",
+    "board_name": "W Batch 440 - C3",
+    "file": "W440-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 36000,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 36000,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 36000
+    },
+    "C2": {
+     "x": 11060,
+     "y": 36000
+    },
+    "C3": {
+     "x": 12220,
+     "y": 36000
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 36000,
+     "w": 600
+    }
+   },
+   "builder": "D",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pa",
+    "url": "https://app.clickup.com/t/14ykpqtw6pa",
+    "name": "W Batch 440"
+   },
+   "batch": "W Batch 440"
+  },
+  {
+   "package": "P4",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "black",
+   "method": "Own concept: native formats",
+   "creative_origin": "Ideation",
+   "persona": "Deal hunter / list maker",
+   "angle": "Price/Offer",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "On her list: the black duo",
+    "description": "30% off, no code",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The black 2x Duo - Minimal Set: a box chain and a square chain with small bar tags. Waterproof, so it can stay on in the shower. Recycled 316L, adjustable S/M/L, free shipping."
+   },
+   "C1": {
+    "format": "Handwritten-style shopping list on paper (Figtree), items ticked, photo clipped to it",
+    "hook": "Her Black Friday list",
+    "headline": "Black Friday list: 1. the black duo.",
+    "key_copy": "30% off. No code. Free shipping.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:312:16:DSC08723",
+    "board_name": "W Batch 441 - C1",
+    "file": "W441-C1.dc.html"
+   },
+   "C2": {
+    "format": "Generic story \"question box\" sticker: \"is it waterproof?\" answered over photo",
+    "hook": "You asked",
+    "headline": "\"Can I shower with it?\"",
+    "key_copy": "Yes. Waterproof, sweat and heat resistant. 30% off now.",
+    "photo": "shopify:2x-duo-minimal-set-for-her:12616-571.png",
+    "board_name": "W Batch 441 - C2",
+    "file": "W441-C2.dc.html"
+   },
+   "C3": {
+    "format": "Sticky note on the photo: \"30% off. Don't forget.\"",
+    "hook": "A reminder to self",
+    "headline": "Note to self: it's 30% off.",
+    "key_copy": "The black duo, prices already reduced.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:306:115:_DSC9909",
+    "board_name": "W Batch 441 - C3",
+    "file": "W441-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 38400,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 38400,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 38400
+    },
+    "C2": {
+     "x": 11060,
+     "y": 38400
+    },
+    "C3": {
+     "x": 12220,
+     "y": 38400
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 38400,
+     "w": 600
+    }
+   },
+   "builder": "D",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pb",
+    "url": "https://app.clickup.com/t/14ykpqtw6pb",
+    "name": "W Batch 441"
+   },
+   "batch": "W Batch 441"
+  },
+  {
+   "package": "P4",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "gold",
+   "method": "IM8 imitation (close) with Session 12 + Shopify",
+   "creative_origin": "Imitation",
+   "persona": "Quality-first buyer comparing pieces",
+   "angle": "Set/Bundle Value",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "The set, 30% off",
+    "description": "Case included",
+    "primary_text": "Black Friday: 30% off sitewide. The gold 3x Minimal - Stack Set is a set of three: a flat polished cuff bangle, a box chain and a square chain. Recycled 316L, waterproof, adjustable S/M/L, case included."
+   },
+   "C1": {
+    "format": "Two-column comparison (IM8 The Beckham Stack two lists): Chains | Cuff",
+    "hook": "Two lists",
+    "headline": "The chains. The cuff. The set.",
+    "key_copy": "Left: box chain + square chain. Right: flat polished cuff. Both recycled 316L.",
+    "photo": "frameio:Women/Session 12/Image:ODI03885.JPG (macro)",
+    "im8_ref": {
+     "key": "r33",
+     "ad_id": "facebook_1443049690618295",
+     "what": "The Beckham Stack two-column comparison (two products, two lists)"
+    },
+    "board_name": "W Batch 442 - C1",
+    "file": "W442-C1.dc.html"
+   },
+   "C2": {
+    "format": "Serif headline, product resting on fabric (IM8 The drink behind the 90...)",
+    "hook": "The detail",
+    "headline": "The gold behind every outfit.",
+    "key_copy": "30% off sitewide. No code.",
+    "photo": "frameio:Women/Session 12/Image:ODI03856.JPG",
+    "im8_ref": {
+     "key": "r14",
+     "ad_id": "facebook_1208882247864977",
+     "what": "The drink behind the 90 that matters most (product resting on jersey, serif headline)"
+    },
+    "board_name": "W Batch 442 - C2",
+    "file": "W442-C2.dc.html"
+   },
+   "C3": {
+    "format": "Centred serif + product (IM8 Your FREE welcome kit awaits!)",
+    "hook": "Waiting for you",
+    "headline": "Your gold stack awaits.",
+    "key_copy": "Case included. Free shipping. 30% off.",
+    "photo": "shopify:3x-minimal-stack-set-for-her:ad-image-17817300810931.png",
+    "im8_ref": {
+     "key": "r41",
+     "ad_id": "facebook_1478294676973348",
+     "what": "Your FREE welcome kit awaits! (kit + bottle, centred serif)"
+    },
+    "board_name": "W Batch 442 - C3",
+    "file": "W442-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 40800,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 40800,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 40800
+    },
+    "C2": {
+     "x": 11060,
+     "y": 40800
+    },
+    "C3": {
+     "x": 12220,
+     "y": 40800
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 40800,
+     "w": 600
+    }
+   },
+   "builder": "D",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pc",
+    "url": "https://app.clickup.com/t/14ykpqtw6pc",
+    "name": "W Batch 442"
+   },
+   "batch": "W Batch 442"
+  },
+  {
+   "package": "P5",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "gold",
+   "method": "RAW/Figma camera photos: gift for her",
+   "creative_origin": "Ideation",
+   "persona": "Partner / friend buying a gift for her",
+   "angle": "Gift",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "The gift she keeps on",
+    "description": "Case included",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The gold 2x Duo - Minimal Set is an easy gift: adjustable S/M/L so no size guessing, waterproof so she never has to take it off, case included and free shipping."
+   },
+   "C1": {
+    "format": "Gift-guide card \"For the one who never takes it off\"",
+    "hook": "Gift guide",
+    "headline": "For the one who keeps it on.",
+    "key_copy": "The gold duo. 30% off, case included.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:248:DSC00772",
+    "board_name": "W Batch 443 - C1",
+    "file": "W443-C1.dc.html"
+   },
+   "C2": {
+    "format": "Unboxing sequence (case photo, then wrist)",
+    "hook": "Unboxing",
+    "headline": "Open. Clasp. Keep.",
+    "key_copy": "Case included. Free shipping. 30% off sitewide.",
+    "photo": "shopify:jewelry-case:jbag3_kopia.jpg + figma:dEEVzBXoylSdZoRs0gonHn:345:67:DSC08259",
+    "board_name": "W Batch 443 - C2",
+    "file": "W443-C2.dc.html"
+   },
+   "C3": {
+    "format": "Gift bingo card (Waterproof / Her size / Case / Free shipping / 30%) all marked",
+    "hook": "Bingo",
+    "headline": "Gift bingo: all boxes ticked.",
+    "key_copy": "Adjustable S/M/L, so no size guessing.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:367:DSC00336",
+    "board_name": "W Batch 443 - C3",
+    "file": "W443-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 43200,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 43200,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 43200
+    },
+    "C2": {
+     "x": 11060,
+     "y": 43200
+    },
+    "C3": {
+     "x": 12220,
+     "y": 43200
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 43200,
+     "w": 600
+    }
+   },
+   "builder": "E",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pd",
+    "url": "https://app.clickup.com/t/14ykpqtw6pd",
+    "name": "W Batch 443"
+   },
+   "batch": "W Batch 443"
+  },
+  {
+   "package": "P5",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "black",
+   "method": "IM8 imitation (close) with Session 12",
+   "creative_origin": "Imitation",
+   "persona": "Busy woman who wants zero-effort polish",
+   "angle": "Problem → Solution",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Outfit done. Wrist done.",
+    "description": "30% off sitewide",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The black 3x Minimal - Stack Set finishes any outfit with zero effort: flat polished cuff bangle, box chain and square chain, waterproof and sweat resistant, recycled 316L, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Hand + tick list (IM8 Every nutrient your GLP-1 depletes)",
+    "hook": "Every day, ticked",
+    "headline": "Every day your wrist goes through. Covered.",
+    "key_copy": "✓ Shower ✓ Sweat ✓ Heat ✓ Sleep — 30% off",
+    "photo": "frameio:Women/Session 12/Image:ODI03792.JPG",
+    "im8_ref": {
+     "key": "r09",
+     "ad_id": "facebook_1947125979217745",
+     "what": "Every nutrient your GLP-1 depletes. Zero nausea triggers. (hand holds product, tick list)"
+    },
+    "board_name": "W Batch 444 - C1",
+    "file": "W444-C1.dc.html"
+   },
+   "C2": {
+    "format": "Portrait + emotional headline (IM8 Menopause stole your sleep...)",
+    "hook": "Outfit done, wrist not",
+    "headline": "Your outfit is done. Your wrist isn't.",
+    "key_copy": "The black stack finishes it. 30% off.",
+    "photo": "frameio:Women/Session 12/Image:ODI03817.JPG (crop off the face)",
+    "im8_ref": {
+     "key": "r37",
+     "ad_id": "facebook_1484217086373862",
+     "what": "Menopause stole your sleep. Brain fog stole your mornings. (portrait, emotional headline)"
+    },
+    "board_name": "W Batch 444 - C2",
+    "file": "W444-C2.dc.html"
+   },
+   "C3": {
+    "format": "Big claim, three pieces (IM8 Only 1 year in. Already upgraded.)",
+    "hook": "One upgrade",
+    "headline": "One set in. Every outfit upgraded.",
+    "key_copy": "Cuff, box chain, square chain. Black Friday 30% off.",
+    "photo": "frameio:Women/Session 12/Image:ODI03829.JPG",
+    "im8_ref": {
+     "key": "r35",
+     "ad_id": "facebook_1239409897691271",
+     "what": "Only 1 year in. Already upgraded. (big claim, three products)"
+    },
+    "board_name": "W Batch 444 - C3",
+    "file": "W444-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 45600,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 45600,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 45600
+    },
+    "C2": {
+     "x": 11060,
+     "y": 45600
+    },
+    "C3": {
+     "x": 12220,
+     "y": 45600
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 45600,
+     "w": 600
+    }
+   },
+   "builder": "E",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pe",
+    "url": "https://app.clickup.com/t/14ykpqtw6pe",
+    "name": "W Batch 444"
+   },
+   "batch": "W Batch 444"
+  },
+  {
+   "package": "P5",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "silver / gold / black",
+   "method": "Own concept + motion: stacking how-to",
+   "creative_origin": "Ideation",
+   "persona": "Minimalist who likes one finish per look",
+   "angle": "Versatility",
+   "ad_type": "IMAGE & VIDEO",
+   "copy_note": {
+    "headline": "Alone. Stacked. Always on.",
+    "description": "30% off, no code",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The 2x Duo - Minimal Set is a box chain and a square chain in silver, gold or black. Wear one finish alone or with your other pieces; it is waterproof, recycled 316L and adjustable S/M/L."
+   },
+   "C1": {
+    "format": "How-to card: \"How to wear the duo\" 3 steps with real photo",
+    "hook": "How to wear it",
+    "headline": "How to wear the duo: 3 steps.",
+    "key_copy": "1. Clasp. 2. Adjust S/M/L. 3. Leave it on. 30% off.",
+    "photo": "shopify:2x-duo-minimal-set-for-her:12616-532.png",
+    "finish": "silver",
+    "board_name": "W Batch 445 - C1",
+    "file": "W445-C1.dc.html"
+   },
+   "C2": {
+    "format": "Animated static (mp4): the gold photo crossfades through 3 crops with lines \"Alone. Stacked. Always on.\", ends on 30% OFF",
+    "hook": "Three ways",
+    "headline": "Alone. Stacked. Always on.",
+    "key_copy": "Black Friday, 30% off.",
+    "photo": "shopify:2x-duo-minimal-set-for-her:bracelet_gold_graded1_1.png",
+    "finish": "gold",
+    "motion": "Crossfade between three real crops + type; mp4 + png",
+    "board_name": "W Batch 445 - C2",
+    "file": "W445-C2.dc.html"
+   },
+   "C3": {
+    "format": "Water-photo editorial (calm area text)",
+    "hook": "Into the water",
+    "headline": "It goes in the water. It stays on.",
+    "key_copy": "Waterproof, recycled 316L. 30% off.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:308:200:DSC09024",
+    "finish": "gold",
+    "board_name": "W Batch 445 - C3",
+    "file": "W445-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 48000,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 48000,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 48000
+    },
+    "C2": {
+     "x": 11060,
+     "y": 48000
+    },
+    "C3": {
+     "x": 12220,
+     "y": 48000
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 48000,
+     "w": 600
+    }
+   },
+   "builder": "E",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pf",
+    "url": "https://app.clickup.com/t/14ykpqtw6pf",
+    "name": "W Batch 445"
+   },
+   "batch": "W Batch 445"
+  },
+  {
+   "package": "P5",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "gold",
+   "method": "Own concept: material / detail",
+   "creative_origin": "Ideation",
+   "persona": "Quality and craft nerd",
+   "angle": "Quality/Material",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Look closer: 316L",
+    "description": "Recycled 316L, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide. Look closer at the gold 3x Minimal - Stack Set: a flat polished cuff bangle, a box chain and a square chain, all recycled 316L stainless steel. Waterproof, sweat and heat resistant, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Macro detail with 3 hairline callouts (cuff edge, box links, square links)",
+    "hook": "Look closer",
+    "headline": "Look closer.",
+    "key_copy": "Flat polished cuff · box chain · square chain. Recycled 316L.",
+    "photo": "frameio:Women/Session 12/Image:ODI03902.JPG (4K original, tight macro)",
+    "board_name": "W Batch 446 - C1",
+    "file": "W446-C1.dc.html"
+   },
+   "C2": {
+    "format": "Material passport card (Material: recycled 316L · Water: yes · Sizes: S/M/L · Case: included)",
+    "hook": "A passport for your jewellery",
+    "headline": "Made of: recycled 316L steel.",
+    "key_copy": "Waterproof · sweat & heat resistant · 30% off Black Friday",
+    "photo": "frameio:Women/Session 12/Image:ODI03906.JPG",
+    "board_name": "W Batch 446 - C2",
+    "file": "W446-C2.dc.html"
+   },
+   "C3": {
+    "format": "Before/after styling: same black top, bare vs stacked (two crops from Session 12)",
+    "hook": "Same outfit",
+    "headline": "Same top. Add the stack.",
+    "key_copy": "Black Friday 30% off, no code.",
+    "photo": "frameio:Women/Session 12/Image:ODI03886.JPG + frameio:Women/Session 12/Image:ODI03880.JPG",
+    "board_name": "W Batch 446 - C3",
+    "file": "W446-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 50400,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 50400,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 50400
+    },
+    "C2": {
+     "x": 11060,
+     "y": 50400
+    },
+    "C3": {
+     "x": 12220,
+     "y": 50400
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 50400,
+     "w": 600
+    }
+   },
+   "builder": "E",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pg",
+    "url": "https://app.clickup.com/t/14ykpqtw6pg",
+    "name": "W Batch 446"
+   },
+   "batch": "W Batch 446"
+  },
+  {
+   "package": "P5",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "black",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Evening / dressed-up buyer",
+   "angle": "Status/Elevated",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "The black duo, 30% off",
+    "description": "Officially Black Friday",
+    "primary_text": "Black Friday is here: 30% off sitewide, no code, prices already reduced. The black 2x Duo - Minimal Set: box chain and square chain with small bar tags. Waterproof, recycled 316L, adjustable S/M/L, case included."
+   },
+   "C1": {
+    "format": "Highlighted headline (IM8 Inter Miami's premium daily ritual, now yours)",
+    "hook": "Now yours",
+    "headline": "The black duo, now 30% off.",
+    "key_copy": "Highlight bar in light grey behind \"now 30% off\".",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:306:114:_DSC9870",
+    "im8_ref": {
+     "key": "r02",
+     "ad_id": "facebook_1349738530413538",
+     "what": "Inter Miami's premium daily ritual, now yours (highlighted headline over product box)"
+    },
+    "board_name": "W Batch 447 - C1",
+    "file": "W447-C1.dc.html"
+   },
+   "C2": {
+    "format": "Big caps over photo with a light panel (IM8 Official health supplements partner)",
+    "hook": "Officially Black Friday",
+    "headline": "OFFICIALLY BLACK FRIDAY.",
+    "key_copy": "30% off sitewide. No code. Prices already reduced.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:306:116:_DSC9970",
+    "im8_ref": {
+     "key": "r25",
+     "ad_id": "facebook_842669908889540",
+     "what": "Official health supplements partner of INTER MIAMI (big caps over photo)"
+    },
+    "board_name": "W Batch 447 - C2",
+    "file": "W447-C2.dc.html"
+   },
+   "C3": {
+    "format": "Strike-through then new line (IM8 Yesterday: 300mg. Today: 600mg.)",
+    "hook": "Strike-through",
+    "headline": "Yesterday: full price. Today: 30% off.",
+    "key_copy": "The black duo, no code.",
+    "photo": "frameio:Women/Session 7/VIDEO (black duo, 120 fps) still: wrist-only frame (no bar necklace in shot), not used in W414/W427/W435",
+    "im8_ref": {
+     "key": "r39",
+     "ad_id": "facebook_1129770682911163",
+     "what": "Yesterday: 300mg. Today: 600mg. (strike-through then new line)"
+    },
+    "board_name": "W Batch 447 - C3",
+    "file": "W447-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 52800,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 52800,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 52800
+    },
+    "C2": {
+     "x": 11060,
+     "y": 52800
+    },
+    "C3": {
+     "x": 12220,
+     "y": 52800
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 52800,
+     "w": 600
+    }
+   },
+   "builder": "E",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6ph",
+    "url": "https://app.clickup.com/t/14ykpqtw6ph",
+    "name": "W Batch 447"
+   },
+   "batch": "W Batch 447"
+  },
+  {
+   "package": "P6",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "black / gold / silver",
+   "method": "RAW stills (Women Session 11 video) on IM8 flow",
+   "creative_origin": "Imitation",
+   "persona": "New-to-stacking beginner",
+   "angle": "Set/Bundle Value",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Your first stack, 30% off",
+    "description": "No code needed",
+    "primary_text": "Black Friday: 30% off sitewide, no code. New to stacking? The 3x Minimal - Stack Set does it for you: a flat polished cuff bangle, a box chain and a square chain in black, gold or silver. Waterproof, recycled 316L, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Photo top, colour panel bottom (IM8 Trusted by... Available to you.)",
+    "hook": "Trusted",
+    "headline": "Rated 4.5 from 3,000+ reviews. Now 30% off.",
+    "key_copy": "Light panel, small caps, square CTA.",
+    "photo": "frameio:Women/Session 11/Video/Black still (grade.py; skip clips used in W421/W422: C2287, C2290, C2352, C2360, C2375, C2376, C2387)",
+    "im8_ref": {
+     "key": "r23",
+     "ad_id": "facebook_1235659748432600",
+     "what": "Trusted by Inter Miami CF. Available to you. (photo top, colour panel bottom)"
+    },
+    "finish": "black",
+    "board_name": "W Batch 448 - C1",
+    "file": "W448-C1.dc.html"
+   },
+   "C2": {
+    "format": "Stat headline over product (IM8 95% felt more energy)",
+    "hook": "A number",
+    "headline": "Three pieces. One set. 30% off.",
+    "key_copy": "4.5 on Trustpilot · 3,000+ reviews.",
+    "photo": "frameio:Women/Session 11/Video/Gold still (grade.py)",
+    "im8_ref": {
+     "key": "r26",
+     "ad_id": "facebook_1536498684803887",
+     "what": "Inter Miami's new drink. 95% felt more energy. (stat headline over product)"
+    },
+    "finish": "gold",
+    "board_name": "W Batch 448 - C2",
+    "file": "W448-C2.dc.html"
+   },
+   "C3": {
+    "format": "Product hero over logo texture (IM8 The drink Inter Miami trusts)",
+    "hook": "The silver one",
+    "headline": "The silver stack. Now yours for 30% less.",
+    "key_copy": "Cuff, box chain, square chain. Waterproof.",
+    "photo": "shopify:3x-minimal-stack-set-for-her:12616-41.png",
+    "im8_ref": {
+     "key": "r10",
+     "ad_id": "facebook_1279712053873847",
+     "what": "The drink Inter Miami CF trusts. Now yours to try. (product hero over big logo texture)"
+    },
+    "finish": "silver",
+    "board_name": "W Batch 448 - C3",
+    "file": "W448-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 55200,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 55200,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 55200
+    },
+    "C2": {
+     "x": 11060,
+     "y": 55200
+    },
+    "C3": {
+     "x": 12220,
+     "y": 55200
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 55200,
+     "w": 600
+    }
+   },
+   "builder": "F",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pj",
+    "url": "https://app.clickup.com/t/14ykpqtw6pj",
+    "name": "W Batch 448"
+   },
+   "batch": "W Batch 448"
+  },
+  {
+   "package": "P6",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "gold",
+   "method": "Own concept: UGC / styling",
+   "creative_origin": "Ideation",
+   "persona": "Fashion-forward stylist",
+   "angle": "Versatility",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "White shirt + gold duo",
+    "description": "30% off sitewide",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The gold 2x Duo - Minimal Set is the easiest styling move: a box chain and a square chain that go with everything and stay on. Waterproof, recycled 316L, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Outfit formula (recipe-card style): white shirt + denim + gold duo = done",
+    "hook": "The formula",
+    "headline": "White shirt + gold duo = done.",
+    "key_copy": "The easiest outfit formula. 30% off.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:312:7:DSC08282",
+    "board_name": "W Batch 449 - C1",
+    "file": "W449-C1.dc.html"
+   },
+   "C2": {
+    "format": "Before/after styling: same outfit, bare vs duo (women)",
+    "hook": "Same look, plus",
+    "headline": "Same look. Plus gold.",
+    "key_copy": "Box chain + square chain. 30% off sitewide.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:365:DSC00277 + figma:dEEVzBXoylSdZoRs0gonHn:345:66:DSC08120",
+    "board_name": "W Batch 449 - C2",
+    "file": "W449-C2.dc.html"
+   },
+   "C3": {
+    "format": "Tier list (S tier: the gold duo; captions only about wearability)",
+    "hook": "Tier list",
+    "headline": "Everyday jewellery, ranked.",
+    "key_copy": "S tier: waterproof, adjustable, stays on. 30% off.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:363:DSC00479",
+    "board_name": "W Batch 449 - C3",
+    "file": "W449-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 57600,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 57600,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 57600
+    },
+    "C2": {
+     "x": 11060,
+     "y": 57600
+    },
+    "C3": {
+     "x": 12220,
+     "y": 57600
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 57600,
+     "w": 600
+    }
+   },
+   "builder": "F",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pk",
+    "url": "https://app.clickup.com/t/14ykpqtw6pk",
+    "name": "W Batch 449"
+   },
+   "batch": "W Batch 449"
+  },
+  {
+   "package": "P6",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "black",
+   "method": "RAW Session 12 (video + photos) + motion",
+   "creative_origin": "Ideation",
+   "persona": "Holiday-party / going-out shopper",
+   "angle": "Seasonal/Occasion",
+   "ad_type": "IMAGE & VIDEO",
+   "copy_note": {
+    "headline": "Party season, sorted",
+    "description": "The black stack, 30% off",
+    "primary_text": "Black Friday: 30% off sitewide, no code. The black 3x Minimal - Stack Set is three pieces made to stay on from dinner to dancing: flat polished cuff bangle, box chain and square chain. Waterproof, recycled 316L, adjustable S/M/L."
+   },
+   "C1": {
+    "format": "Night-out editorial: photo + slim caption \"Party season, sorted\" (no weather)",
+    "hook": "Party season",
+    "headline": "Party season, sorted.",
+    "key_copy": "The black stack. 30% off, no code.",
+    "photo": "frameio:Women/Session 12/Image:ODI03838.JPG",
+    "board_name": "W Batch 450 - C1",
+    "file": "W450-C1.dc.html"
+   },
+   "C2": {
+    "format": "Cinemagraph (mp4) from Session 12 Video/Black: only the hand moves, rest frozen; text fades in",
+    "hook": "Living photo",
+    "headline": "Three pieces. One move.",
+    "key_copy": "Black Friday 30% off.",
+    "photo": "frameio:Women/Session 12/Video/Black (114 clips, NEW; index with walk.js, pick a slow hand move)",
+    "motion": "Cinemagraph: freeze-frame mask + real clip loop, 6-8 s, slow motion",
+    "board_name": "W Batch 450 - C2",
+    "file": "W450-C2.dc.html"
+   },
+   "C3": {
+    "format": "Mood board collage (3 real crops + finish swatch + 30% chip)",
+    "hook": "Mood board",
+    "headline": "The black stack mood.",
+    "key_copy": "Waterproof · recycled 316L · S/M/L · 30% off",
+    "photo": "frameio:Women/Session 12/Image:ODI03802.JPG + frameio:Women/Session 12/Image:ODI03826.JPG + frameio:Women/Session 12/Image:ODI03834.JPG",
+    "board_name": "W Batch 450 - C3",
+    "file": "W450-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 60000,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 60000,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 60000
+    },
+    "C2": {
+     "x": 11060,
+     "y": 60000
+    },
+    "C3": {
+     "x": 12220,
+     "y": 60000
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 60000,
+     "w": 600
+    }
+   },
+   "builder": "F",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pm",
+    "url": "https://app.clickup.com/t/14ykpqtw6pm",
+    "name": "W Batch 450"
+   },
+   "batch": "W Batch 450"
+  },
+  {
+   "package": "P6",
+   "gender": "W",
+   "product": "2x Duo - Minimal Set",
+   "finish": "gold",
+   "method": "IM8 imitation (close)",
+   "creative_origin": "Imitation",
+   "persona": "Deal hunter / bundle maximiser",
+   "angle": "Price/Offer",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Save 30% on the gold duo",
+    "description": "No code needed",
+    "primary_text": "Black Friday: save 30% on the gold 2x Duo - Minimal Set, no code, prices already reduced. Box chain and square chain with small bar tags, waterproof, recycled 316L, adjustable S/M/L. Case included and free shipping. Rated 4.5 from 3,000+ reviews."
+   },
+   "C1": {
+    "format": "Bold offer + tick list + rating line (IM8 SAVE 30% & GET FREE WELCOME KIT)",
+    "hook": "The offer, loud",
+    "headline": "SAVE 30% ON THE GOLD DUO",
+    "key_copy": "Ticks: no code · prices already reduced · case included · free shipping. 4.5 · 3,000+ reviews",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:249:DSC00852",
+    "im8_ref": {
+     "key": "r54",
+     "ad_id": "facebook_1657294242758601",
+     "what": "SAVE 30% & GET FREE WELCOME KIT (bold offer, tick list, rating line)"
+    },
+    "board_name": "W Batch 451 - C1",
+    "file": "W451-C1.dc.html"
+   },
+   "C2": {
+    "format": "3-stage strip + rating bar (IM8 The bloat dissolving)",
+    "hook": "Three stages",
+    "headline": "Bare. One chain. The duo.",
+    "key_copy": "4.5 on Trustpilot · 3,000+ reviews. 30% off.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:312:10:DSC08414 + figma:dEEVzBXoylSdZoRs0gonHn:377:371:DSC00430",
+    "im8_ref": {
+     "key": "r44",
+     "ad_id": "facebook_2088802291738767",
+     "what": "The bloat dissolving (3-stage before/after strip + rating bar)"
+    },
+    "board_name": "W Batch 451 - C2",
+    "file": "W451-C2.dc.html"
+   },
+   "C3": {
+    "format": "Kit lineup (IM8 Claim your free welcome kit)",
+    "hook": "Claim yours",
+    "headline": "Claim your Black Friday duo.",
+    "key_copy": "Case included. Free shipping. 30% off.",
+    "photo": "figma:dEEVzBXoylSdZoRs0gonHn:377:372:DSC00439 + shopify:jewelry-case:jbag3_kopia.jpg",
+    "im8_ref": {
+     "key": "r30",
+     "ad_id": "facebook_986025440602590",
+     "what": "Claim your free welcome kit (kit lineup)"
+    },
+    "board_name": "W Batch 451 - C3",
+    "file": "W451-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 62400,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 62400,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 62400
+    },
+    "C2": {
+     "x": 11060,
+     "y": 62400
+    },
+    "C3": {
+     "x": 12220,
+     "y": 62400
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 62400,
+     "w": 600
+    }
+   },
+   "builder": "F",
+   "handle": "2x-duo-minimal-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/2x-duo-minimal-set-for-her",
+    "US": "https://us.cavaier.com/products/2x-duo-minimal-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pn",
+    "url": "https://app.clickup.com/t/14ykpqtw6pn",
+    "name": "W Batch 451"
+   },
+   "batch": "W Batch 451"
+  },
+  {
+   "package": "P6",
+   "gender": "W",
+   "product": "3x Minimal - Stack Set",
+   "finish": "gold",
+   "method": "Own concept: hint / gift-receiver",
+   "creative_origin": "Ideation",
+   "persona": "Woman hinting to her partner what she wants",
+   "angle": "Gift",
+   "ad_type": "IMAGE",
+   "copy_note": {
+    "headline": "Send this to him",
+    "description": "Case included",
+    "primary_text": "Black Friday: 30% off sitewide, no code. Want the gold 3x Minimal - Stack Set? Send this to him. Flat polished cuff bangle, box chain and square chain, adjustable S/M/L so he can't get the size wrong, case included and free shipping."
+   },
+   "C1": {
+    "format": "\"Send this to him\" card: big arrow + share-icon (generic), the set below",
+    "hook": "Send this",
+    "headline": "Send this to him.",
+    "key_copy": "The gold stack. 30% off. Adjustable S/M/L.",
+    "photo": "frameio:Women/Session 12/Image:ODI03854.JPG",
+    "board_name": "W Batch 452 - C1",
+    "file": "W452-C1.dc.html"
+   },
+   "C2": {
+    "format": "Hint, hint: three increasingly obvious hints on one card",
+    "hook": "Hint, hint",
+    "headline": "Hint #3: it's the gold stack.",
+    "key_copy": "30% off this Black Friday. Case included.",
+    "photo": "frameio:Women/Session 12/Image:ODI03879.JPG",
+    "board_name": "W Batch 452 - C2",
+    "file": "W452-C2.dc.html"
+   },
+   "C3": {
+    "format": "Gift-receiver wish card in a frame (\"I'd keep this one on\")",
+    "hook": "Keep-on wish",
+    "headline": "The gift I'd keep on.",
+    "key_copy": "Waterproof, recycled 316L, case included. 30% off.",
+    "photo": "frameio:Women/Session 12/Image:ODI03895.JPG",
+    "board_name": "W Batch 452 - C3",
+    "file": "W452-C3.dc.html"
+   },
+   "canvas": {
+    "row_y": 64800,
+    "im8_refs_board": {
+     "x": 9400,
+     "y": 64800,
+     "w": 420,
+     "h": 1920
+    },
+    "C1": {
+     "x": 9900,
+     "y": 64800
+    },
+    "C2": {
+     "x": 11060,
+     "y": 64800
+    },
+    "C3": {
+     "x": 12220,
+     "y": 64800
+    },
+    "copy_note": {
+     "x": 13380,
+     "y": 64800,
+     "w": 600
+    }
+   },
+   "builder": "F",
+   "handle": "3x-minimal-stack-set-for-her",
+   "landing": {
+    "EU": "https://cavaier.com/products/3x-minimal-stack-set-for-her",
+    "US": "https://us.cavaier.com/products/3x-minimal-stack-set-for-her"
+   },
+   "clickup": {
+    "task_id": "14ykpqtw6pp",
+    "url": "https://app.clickup.com/t/14ykpqtw6pp",
+    "name": "W Batch 452"
+   },
+   "batch": "W Batch 452"
+  }
+ ]
+}
