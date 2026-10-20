@@ -26,7 +26,7 @@
    "Session 1 | Men / IMAGE": "319+ camera JPGs DSC02381-DSC02861: silver duo, beach, linen, sea, sand, water (folder 2f32d86b-4177-4214-94d4-07928b8eed98). Figma Static Ads 1 men photos are a subset of these.",
    "Session 2 | Men / IMAGE": "~300 camera JPGs DSC04719-DSC05017: silver duo with dark shirt, grey coast, slim wrists; BLACK duo around DSC04957-DSC04984 (folder 04848fb1-6228-45c7-89b6-e7ea8cc8d9bf).",
    "VIDEO": "Session 1 131 clips, Session 2 143 clips (silver duo).",
-   "note": "No men's 3x stack anywhere on Frame.io or in Figma."
+   "note": "No men's 3x stack on Frame.io. Figma has 96 men's stack ad-image photos: see photo_inventory.men_stack_figma."
   },
   "figma_static_ads_1": {
    "file": "dEEVzBXoylSdZoRs0gonHn",
@@ -44,9 +44,1356 @@
    "how": "https://<store>/products/<handle>.js -> media[].src (append &width=2048 for full size)"
   },
   "gaps": [
-   "Men's 3x stack: only 6 real photos (Shopify). 21 men's stack ads must reuse them with distinct crops and layouts (see each C).",
    "Men's duo gold and women's stack black/gold Shopify shots are \"ad-image-...\" files: listing images, so allowed by the rule, but not camera files.",
-   "Women's silver duo: only Shopify 12616-532. Women's silver stack: only 12616-41."
+   "Women's silver duo: only Shopify 12616-532. Women's silver stack: only 12616-41.",
+   "Men's 3x stack: 96 real (ad-image) photos in Figma, see men_stack_figma (silver 41, black 32, gold 23) plus the 6 Shopify listing shots."
+  ],
+  "men_stack_figma": [
+   {
+    "node_id": "3271:42",
+    "page": "Carousel",
+    "frame": "CW Batch 4 - C2",
+    "fill_name": "ad-image-1782209221627 1",
+    "finish": "black",
+    "shot": "wrist close-up, white sand",
+    "export": "download_assets nodeId 3271:42 -> rawImages (original) | image ref a394e52dccd95857124235f346fd90bf44c11dfa"
+   },
+   {
+    "node_id": "3625:377",
+    "page": "Carousel",
+    "frame": "W Batch 381 - CAROUSEL 1 - Identity-Swipe - SA - Elise - W33",
+    "fill_name": "ad-image-1786569990456 1",
+    "finish": "black",
+    "shot": "outfit: hand in pocket, white linen",
+    "export": "download_assets nodeId 3625:377 -> rawImages (original) | image ref 22b273ac70e3907a2bddb91ca1c181ca79549e48"
+   },
+   {
+    "node_id": "2997:102",
+    "page": "Carousel",
+    "frame": "CM Batch 3 - C2",
+    "fill_name": "ad-image-1781353124524 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit, dark bg",
+    "export": "download_assets nodeId 2997:102 -> rawImages (original) | image ref f706eea942b668d9bc9ae6c3433d2e9fc69dc814"
+   },
+   {
+    "node_id": "2997:104",
+    "page": "Carousel",
+    "frame": "CM Batch 3 - C4",
+    "fill_name": "ad-image-1781355008687 1",
+    "finish": "black",
+    "shot": "wrist close-up, wet, light bg",
+    "export": "download_assets nodeId 2997:104 -> rawImages (original) | image ref 51ecad50a4521ef569fc8b504072d7761851d343"
+   },
+   {
+    "node_id": "3644:316",
+    "page": "Carousel",
+    "frame": "M Batch 401 - CAR - C2",
+    "fill_name": "ad-image-1786553551744 1",
+    "finish": "silver",
+    "shot": "wrist close-up, grey sleeve, dark bg",
+    "export": "download_assets nodeId 3644:316 -> rawImages (original) | image ref 4997b7b8e2ace8efc67e26d1597f63d7923be9f9"
+   },
+   {
+    "node_id": "3644:314",
+    "page": "Carousel",
+    "frame": "M Batch 401 - CAR - C1",
+    "fill_name": "ad-image-1786553450512 2",
+    "finish": "black",
+    "shot": "wrist close-up, grey sleeve, dark bg",
+    "export": "download_assets nodeId 3644:314 -> rawImages (original) | image ref d5dbd1d50275f7652099c50293a1f89d41eb1679"
+   },
+   {
+    "node_id": "3644:337",
+    "page": "Carousel",
+    "frame": "M Batch 402 - CAR - C1",
+    "fill_name": "ad-image-1786564226309 1",
+    "finish": "black",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3644:337 -> rawImages (original) | image ref 9f031b331dfe5b21a374e744142b236b57f1a971"
+   },
+   {
+    "node_id": "3644:346",
+    "page": "Carousel",
+    "frame": "M Batch 402 - CAR - C3",
+    "fill_name": "ad-image-1786553558533 1",
+    "finish": "black",
+    "shot": "lifestyle: hand on car steering wheel",
+    "export": "download_assets nodeId 3644:346 -> rawImages (original) | image ref 243919efd5c66bfe194874fed1bef5a6f771555f"
+   },
+   {
+    "node_id": "3271:147",
+    "page": "Carousel",
+    "frame": "M Batch 384 - CAR - C5",
+    "fill_name": "ad-image-1782204244624 1",
+    "finish": "silver",
+    "shot": "wrist close-up, sand",
+    "export": "download_assets nodeId 3271:147 -> rawImages (original) | image ref 0708ec721b2c14f050c616a894857c991594508a"
+   },
+   {
+    "node_id": "3888:1048",
+    "page": "Carousel",
+    "frame": "Frame 1000012228",
+    "fill_name": "ad-image-1786553562503 1",
+    "finish": "silver",
+    "shot": "lifestyle: hand on car steering wheel",
+    "export": "download_assets nodeId 3888:1048 -> rawImages (original) | image ref 5d85a328a7ac99daa4dfaeb6b8d89096f9ac6285"
+   },
+   {
+    "node_id": "3928:64",
+    "page": "Carousel",
+    "frame": "W Batch 408 - Carousel - C2",
+    "fill_name": "ad-image-1782209221627 1",
+    "finish": "black",
+    "shot": "wrist close-up, sand + water splash",
+    "export": "download_assets nodeId 3928:64 -> rawImages (original) | image ref 1725ccf4c1171fd7982114e0e29fa9375fe1bdde"
+   },
+   {
+    "node_id": "730:35",
+    "page": "Static Ads 1",
+    "frame": " M Batch 51 - C3 (No Text)",
+    "fill_name": "ad-image-1764366629023 2",
+    "finish": "gold",
+    "shot": "wrist close-up, water edge",
+    "export": "download_assets nodeId 730:35 -> rawImages (original) | image ref 98f5d62d9634138f850714dc39bb21c5a3d37ade"
+   },
+   {
+    "node_id": "730:189",
+    "page": "Static Ads 1",
+    "frame": "M Batch 45 - C2 (No Text)",
+    "fill_name": "ad-image-1764100170858 1",
+    "finish": "gold",
+    "shot": "wrist close-up, stone ledge, water",
+    "export": "download_assets nodeId 730:189 -> rawImages (original) | image ref 24ec077c66463b1cbbd7fb1d128e879620780aad"
+   },
+   {
+    "node_id": "730:150",
+    "page": "Static Ads 1",
+    "frame": "M Batch 44 - C1 (No Text)",
+    "fill_name": "ad-image-1764365625548 2",
+    "finish": "silver",
+    "shot": "wrist close-up, in water",
+    "export": "download_assets nodeId 730:150 -> rawImages (original) | image ref b545b540cf33874ea03b111adf0488a2d986c6d8"
+   },
+   {
+    "node_id": "730:159",
+    "page": "Static Ads 1",
+    "frame": "M Batch 44 - C2 (No Text)",
+    "fill_name": "ad-image-1764366431720 2",
+    "finish": "black",
+    "shot": "wrist close-up, stone ledge",
+    "export": "download_assets nodeId 730:159 -> rawImages (original) | image ref 266447928e9d7652854fd9aaa618648562465ef3"
+   },
+   {
+    "node_id": "730:56",
+    "page": "Static Ads 1",
+    "frame": "M Batch 52 - C2 (No Text)",
+    "fill_name": "ad-image-1764366641460 1",
+    "finish": "gold",
+    "shot": "wrist close-up, in water",
+    "export": "download_assets nodeId 730:56 -> rawImages (original) | image ref f98bdc63b72f40b5848207b921987f80f93c0451"
+   },
+   {
+    "node_id": "834:193",
+    "page": "Static Ads 1",
+    "frame": "M Batch 2 BFCM - C2",
+    "fill_name": "ad-image-1764365735875 1",
+    "finish": "silver",
+    "shot": "wrist close-up, rocks/water",
+    "export": "download_assets nodeId 834:193 -> rawImages (original) | image ref f651f33f15095ba7d2c1197105ba9832932c9687"
+   },
+   {
+    "node_id": "1091:20",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 60 - C2",
+    "fill_name": "ad-image-1765973949056 1",
+    "finish": "black",
+    "shot": "underwater wrist, bubbles",
+    "export": "download_assets nodeId 1091:20 -> rawImages (original) | image ref 5ba94d7ab237fde268af996622ba8bd35788eadc"
+   },
+   {
+    "node_id": "1091:19",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 60 - C3",
+    "fill_name": "ad-image-1765973477183 1",
+    "finish": "black",
+    "shot": "underwater wrist, bubbles",
+    "export": "download_assets nodeId 1091:19 -> rawImages (original) | image ref a6e3f4558713a6d7fd65a31ad6dd9af44305c638"
+   },
+   {
+    "node_id": "1091:12",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 62 - C1",
+    "fill_name": "ad-image-1765972713005 1",
+    "finish": "gold",
+    "shot": "underwater wrist, bubbles",
+    "export": "download_assets nodeId 1091:12 -> rawImages (original) | image ref 79cfbc481fca6e9a8b05f3db5a2b21607157b56a"
+   },
+   {
+    "node_id": "1091:11",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 62 - C3",
+    "fill_name": "ad-image-1765972573288 1",
+    "finish": "black",
+    "shot": "underwater wrist, bubbles",
+    "export": "download_assets nodeId 1091:11 -> rawImages (original) | image ref f4c65e7483dd3549b610829b154f529bf312e94c"
+   },
+   {
+    "node_id": "1091:7",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 63 - C1",
+    "fill_name": "ad-image-1765972165773 1",
+    "finish": "black",
+    "shot": "underwater wrist, bubbles",
+    "export": "download_assets nodeId 1091:7 -> rawImages (original) | image ref 7f25ae4a6964077fa20e80d245b193733d3c7ae3"
+   },
+   {
+    "node_id": "1089:4",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 63 - C2",
+    "fill_name": "ad-image-1765970800547 1",
+    "finish": "black",
+    "shot": "underwater wrist",
+    "export": "download_assets nodeId 1089:4 -> rawImages (original) | image ref 7cf90c4df8b9c4d6baef538a56c9da129780fd36"
+   },
+   {
+    "node_id": "1091:9",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 63 - C3",
+    "fill_name": "ad-image-1765972307894 1",
+    "finish": "black",
+    "shot": "underwater wrist, grey",
+    "export": "download_assets nodeId 1091:9 -> rawImages (original) | image ref 4b127d24cbf79d8c6170aca119ae328eb3db35d6"
+   },
+   {
+    "node_id": "1090:6",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 64 - C1",
+    "fill_name": "ad-image-1765971257557 1",
+    "finish": "black",
+    "shot": "underwater wrist, blue",
+    "export": "download_assets nodeId 1090:6 -> rawImages (original) | image ref 836d6737c1d59f84e654b4b4444a88a662132f4d"
+   },
+   {
+    "node_id": "1227:205",
+    "page": "Static Ads 1",
+    "frame": "Frame 173",
+    "fill_name": "ad-image-1767101166615 1",
+    "finish": "gold",
+    "shot": "outfit: beige suit, beach",
+    "export": "download_assets nodeId 1227:205 -> rawImages (original) | image ref 9d0841d67002cb9e7f68a31805c49ef11dd503ad"
+   },
+   {
+    "node_id": "1216:135",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 74 - C1",
+    "fill_name": "ad-image-1767101238931 1",
+    "finish": "silver",
+    "shot": "outfit: beige suit, beach",
+    "export": "download_assets nodeId 1216:135 -> rawImages (original) | image ref 1bf671494a90a0f9f7cbaba6080ce575c255f8ab"
+   },
+   {
+    "node_id": "1216:139",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 74 - C3",
+    "fill_name": "ad-image-1767101447333 1",
+    "finish": "silver",
+    "shot": "outfit: beige suit, beach",
+    "export": "download_assets nodeId 1216:139 -> rawImages (original) | image ref 2933812b35aefee274167c24edd2b5c232bc17f8"
+   },
+   {
+    "node_id": "2515:389",
+    "page": "Static Ads 1",
+    "frame": "M Batch 293 - C1 - STATIC - Versatile - SA - David - W19 - No Texts",
+    "fill_name": "ad-image-1777583845372 1",
+    "finish": "black",
+    "shot": "wrist close-up, in sea",
+    "export": "download_assets nodeId 2515:389 -> rawImages (original) | image ref 40dfc52e9992a16d630a405c6fe22cf5856ae518"
+   },
+   {
+    "node_id": "2853:6",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012181",
+    "fill_name": "ad-image-1780480523412 1",
+    "finish": "gold",
+    "shot": "wrist close-up, studio light bg",
+    "export": "download_assets nodeId 2853:6 -> rawImages (original) | image ref 2dd191cad39d64f0a7355158adbbdad0bc83cf39"
+   },
+   {
+    "node_id": "2850:8",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012181",
+    "fill_name": "ad-image-1780480971295 1",
+    "finish": "gold",
+    "shot": "wrist close-up, studio light bg",
+    "export": "download_assets nodeId 2850:8 -> rawImages (original) | image ref c9b16630ca1cd632df7636a8f6531553ca4126ac"
+   },
+   {
+    "node_id": "2850:10",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012181",
+    "fill_name": "ad-image-1780481125659 1",
+    "finish": "gold",
+    "shot": "wrist close-up, studio light bg",
+    "export": "download_assets nodeId 2850:10 -> rawImages (original) | image ref de3328349e0c1ed17eccf7d8671be59e7d8e8cf0"
+   },
+   {
+    "node_id": "2850:16",
+    "page": "Static Ads 1",
+    "frame": "M Batch 318 - C3 - STATIC - No-Tarnish - SA - Daniel - W23",
+    "fill_name": "ad-image-1780481125659 2",
+    "finish": "gold",
+    "shot": "wrist close-up, studio light bg",
+    "export": "download_assets nodeId 2850:16 -> rawImages (original) | image ref 6efc7d14e010388f41bcdd641c5dde7c77793a8c"
+   },
+   {
+    "node_id": "2850:18",
+    "page": "Static Ads 1",
+    "frame": "M Batch 319 - C1 - STATIC - First-Piece - PA - Jake - W23",
+    "fill_name": "ad-image-1780481327096 1",
+    "finish": "gold",
+    "shot": "wrist close-up, wet, dark blue bg",
+    "export": "download_assets nodeId 2850:18 -> rawImages (original) | image ref 76163d0b08b6d4249fd6371bb53a94a790ad55ec"
+   },
+   {
+    "node_id": "2850:19",
+    "page": "Static Ads 1",
+    "frame": "M Batch 319 - C2 - STATIC - First-Piece - PA - Jake - W23",
+    "fill_name": "ad-image-1780481409128 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit",
+    "export": "download_assets nodeId 2850:19 -> rawImages (original) | image ref 72942d85f91bbb1c38659a2958bbd33311af22b7"
+   },
+   {
+    "node_id": "2850:20",
+    "page": "Static Ads 1",
+    "frame": "M Batch 319 - C3 - STATIC - First-Piece - PA - Jake - W23",
+    "fill_name": "ad-image-1780481470708 1",
+    "finish": "gold",
+    "shot": "wrist close-up, wet, dark blue bg",
+    "export": "download_assets nodeId 2850:20 -> rawImages (original) | image ref e83dd8789361fa4a0f66409ea6282c8751625821"
+   },
+   {
+    "node_id": "2851:21",
+    "page": "Static Ads 1",
+    "frame": "M Batch 320 - C1 - STATIC - Masculine-Premium - SA - Marcus - W23",
+    "fill_name": "ad-image-1780481548751 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit, dark bg",
+    "export": "download_assets nodeId 2851:21 -> rawImages (original) | image ref 0c09657302f7acff90a706efe1353024ba5d9ced"
+   },
+   {
+    "node_id": "2851:24",
+    "page": "Static Ads 1",
+    "frame": "M Batch 320 - C2 - STATIC - Masculine-Premium - SA - Marcus - W23",
+    "fill_name": "ad-image-1780481702965 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit, dark bg",
+    "export": "download_assets nodeId 2851:24 -> rawImages (original) | image ref 8c9dc5f11dc1abe77aeb40d7d0d45cce8b6cb5e1"
+   },
+   {
+    "node_id": "2851:23",
+    "page": "Static Ads 1",
+    "frame": "M Batch 320 - C3 - STATIC - Masculine-Premium - SA - Marcus - W23",
+    "fill_name": "ad-image-1780481685925 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit, dark bg",
+    "export": "download_assets nodeId 2851:23 -> rawImages (original) | image ref 594b94f8b74dc006ee3ec355f0850a54363cc755"
+   },
+   {
+    "node_id": "2850:14",
+    "page": "Static Ads 1",
+    "frame": "M Batch 318 - C4 - STATIC - No-Tarnish - SA - Daniel - W23",
+    "fill_name": "ad-image-1780480971295 2",
+    "finish": "gold",
+    "shot": "wrist close-up, studio light bg",
+    "export": "download_assets nodeId 2850:14 -> rawImages (original) | image ref d77765fad14475257832a19160fcb2f99ccc5b8e"
+   },
+   {
+    "node_id": "2920:31",
+    "page": "Static Ads 1",
+    "frame": "M Batch 328 - C1 - STATIC - Waterproof - SA - Leo - W24",
+    "fill_name": "ad-image-1780943872278 1",
+    "finish": "silver",
+    "shot": "wrist close-up, black sand",
+    "export": "download_assets nodeId 2920:31 -> rawImages (original) | image ref b7547e54572d3299ac064256e4f865eeca624007"
+   },
+   {
+    "node_id": "2922:15",
+    "page": "Static Ads 1",
+    "frame": "M Batch 328 - C2 - STATIC - Waterproof - SA - Leo - W24",
+    "fill_name": "ad-image-1780943602494 1",
+    "finish": "silver",
+    "shot": "wrist close-up, black sand",
+    "export": "download_assets nodeId 2922:15 -> rawImages (original) | image ref a0bf51befe04f5bb8baff44ca72164e818c1b037"
+   },
+   {
+    "node_id": "2922:25",
+    "page": "Static Ads 1",
+    "frame": "M Batch 328 - C3 - STATIC - Waterproof - SA - Leo - W24",
+    "fill_name": "ad-image-1780943609387 1",
+    "finish": "silver",
+    "shot": "wrist close-up, black sand",
+    "export": "download_assets nodeId 2922:25 -> rawImages (original) | image ref ccd226d62b4a645f4a29cbd5ff1e46c8c0a714b3"
+   },
+   {
+    "node_id": "2920:23",
+    "page": "Static Ads 1",
+    "frame": "M Batch 329 - C1 - STATIC - Minimal - SA - Marcus - W24",
+    "fill_name": "ad-image-1780944286721 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit",
+    "export": "download_assets nodeId 2920:23 -> rawImages (original) | image ref 94ebc2e38dfaa51bfbc33f192ecf3700c74fbc88"
+   },
+   {
+    "node_id": "2920:27",
+    "page": "Static Ads 1",
+    "frame": "M Batch 329 - C2 - STATIC - Minimal - SA - Marcus - W24",
+    "fill_name": "ad-image-1780552322140 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit",
+    "export": "download_assets nodeId 2920:27 -> rawImages (original) | image ref fc379de052690737197f8fd2e792220d1bf14619"
+   },
+   {
+    "node_id": "2920:29",
+    "page": "Static Ads 1",
+    "frame": "M Batch 329 - C3 - STATIC - Minimal - SA - Marcus - W24",
+    "fill_name": "ad-image-1780944439103 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit",
+    "export": "download_assets nodeId 2920:29 -> rawImages (original) | image ref 92f09a1c529c59bd17209ecf52f23fdb3aba213c"
+   },
+   {
+    "node_id": "2923:175",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012188",
+    "fill_name": "ad-image-1780944928350 1",
+    "finish": "gold",
+    "shot": "wrist close-up, wet, blurred bg",
+    "export": "download_assets nodeId 2923:175 -> rawImages (original) | image ref 422490adddf3621f481aebfe1f767e05f7c42de3"
+   },
+   {
+    "node_id": "2923:214",
+    "page": "Static Ads 1",
+    "frame": "M Batch 332 - C1 - STATIC - Versatility - SA - Marcus - W24",
+    "fill_name": "ad-image-1780552935186 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit, dark bg",
+    "export": "download_assets nodeId 2923:214 -> rawImages (original) | image ref ec8a80d401c3a0ad3145ae0d9be78cd3e5da3929"
+   },
+   {
+    "node_id": "2923:221",
+    "page": "Static Ads 1",
+    "frame": "M Batch 332 - C2 - STATIC - Versatility - SA - Marcus - W24",
+    "fill_name": "ad-image-1780552671406 1",
+    "finish": "silver",
+    "shot": "wrist close-up, dark suit (cuff + extra chains)",
+    "export": "download_assets nodeId 2923:221 -> rawImages (original) | image ref 2be2ef40c93b38d42a529265604e53191ba25ae6"
+   },
+   {
+    "node_id": "3050:41",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012190",
+    "fill_name": "ad-image-1781644852349 1",
+    "finish": "black",
+    "shot": "wrist close-up, white bg",
+    "export": "download_assets nodeId 3050:41 -> rawImages (original) | image ref 6b1fc73dbdbb3d2b83f995bc83c65ca559767484"
+   },
+   {
+    "node_id": "3016:19",
+    "page": "Static Ads 1",
+    "frame": "M Batch 343 - C1",
+    "fill_name": "ad-image-1781549121917 1",
+    "finish": "silver",
+    "shot": "wrist close-up, light grey bg",
+    "export": "download_assets nodeId 3016:19 -> rawImages (original) | image ref 539907aa0b928a9f7bab234eb1992d0bcfdbb8aa"
+   },
+   {
+    "node_id": "3016:20",
+    "page": "Static Ads 1",
+    "frame": "M Batch 343 - C2",
+    "fill_name": "ad-image-1781549957517 1",
+    "finish": "silver",
+    "shot": "arm/hand, light grey bg",
+    "export": "download_assets nodeId 3016:20 -> rawImages (original) | image ref bc09aa866532c5dd6703cb111f688e2ed231f2a7"
+   },
+   {
+    "node_id": "3016:21",
+    "page": "Static Ads 1",
+    "frame": "M Batch 343 - C3",
+    "fill_name": "ad-image-1781550251850 1",
+    "finish": "silver",
+    "shot": "wrist close-up, light grey bg",
+    "export": "download_assets nodeId 3016:21 -> rawImages (original) | image ref 4a115c6fb8caa8692096e41bdd10e553cd9670af"
+   },
+   {
+    "node_id": "3018:28",
+    "page": "Static Ads 1",
+    "frame": "M Batch 343 - C4",
+    "fill_name": "ad-image-1781552065830 1",
+    "finish": "black",
+    "shot": "wrist close-up, light grey bg",
+    "export": "download_assets nodeId 3018:28 -> rawImages (original) | image ref 7e0d545e78c15c3c255f37edb5ac0d46657e2d6e"
+   },
+   {
+    "node_id": "3018:29",
+    "page": "Static Ads 1",
+    "frame": "M Batch 343 - C5",
+    "fill_name": "ad-image-1781552233424 1",
+    "finish": "gold",
+    "shot": "wrist close-up, light grey bg",
+    "export": "download_assets nodeId 3018:29 -> rawImages (original) | image ref 5c830ddb28b133de8d73c70d0dd1ef0784d02e9e"
+   },
+   {
+    "node_id": "3140:14",
+    "page": "Static Ads 2",
+    "frame": "M Batch 343 - ITR1 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782190516210 1",
+    "finish": "black",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3140:14 -> rawImages (original) | image ref 71344da6308cc8f60f15510a369440e32f690945"
+   },
+   {
+    "node_id": "3140:13",
+    "page": "Static Ads 2",
+    "frame": "M Batch 343 - ITR2 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782190761433 1",
+    "finish": "silver",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3140:13 -> rawImages (original) | image ref c9f2feaa131f616c5ac8e093a7917efcfbd1794e"
+   },
+   {
+    "node_id": "3140:15",
+    "page": "Static Ads 2",
+    "frame": "M Batch 343 - ITR3 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782190428684 1",
+    "finish": "gold",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3140:15 -> rawImages (original) | image ref 15fa38395da67a2cde008e0d3a45e622b7121e87"
+   },
+   {
+    "node_id": "3140:17",
+    "page": "Static Ads 2",
+    "frame": "M Batch 343 - ITR4 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782190249648 1",
+    "finish": "silver",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3140:17 -> rawImages (original) | image ref 3411d7316a8da646dd13326cf27809bf817700f3"
+   },
+   {
+    "node_id": "3140:31",
+    "page": "Static Ads 2",
+    "frame": "M Batch 343 - ITR5 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782157347350 2",
+    "finish": "silver",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3140:31 -> rawImages (original) | image ref 92df82d00c5e015cdc6d296949b574ac639cda92"
+   },
+   {
+    "node_id": "3140:37",
+    "page": "Static Ads 2",
+    "frame": "M Batch 343 - ITR6 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782199411273 1",
+    "finish": "silver",
+    "shot": "hand on light stone",
+    "export": "download_assets nodeId 3140:37 -> rawImages (original) | image ref 6f3303df10720ab2ae8a24dfd06c4a67db7f81c8"
+   },
+   {
+    "node_id": "3152:63",
+    "page": "Static Ads 2",
+    "frame": "M Batch 346 - C1 - STATIC - Minimal - Daniel.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782203228731 1",
+    "finish": "gold",
+    "shot": "wrist close-up, pool water",
+    "export": "download_assets nodeId 3152:63 -> rawImages (original) | image ref d48f5dfd65db0a2fd8a0b864b5c5098d44376868"
+   },
+   {
+    "node_id": "3152:67",
+    "page": "Static Ads 2",
+    "frame": "M Batch 346 - C3 - STATIC - Minimal - Marcus.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782204481303 1",
+    "finish": "black",
+    "shot": "wrist close-up, white sand",
+    "export": "download_assets nodeId 3152:67 -> rawImages (original) | image ref 7682054843803a47c3dc12dc776fbfe252d84e7b"
+   },
+   {
+    "node_id": "3152:69",
+    "page": "Static Ads 2",
+    "frame": "M Batch 346 - C4 - STATIC - Waterproof - Daniel.PRA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782203260317 1",
+    "finish": "silver",
+    "shot": "wrist close-up, pool water",
+    "export": "download_assets nodeId 3152:69 -> rawImages (original) | image ref 83dce2252100a71e16ab3d75ec4904d17bccabee"
+   },
+   {
+    "node_id": "3152:71",
+    "page": "Static Ads 2",
+    "frame": "M Batch 346 - C5 - STATIC - Active - Leo.PA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782204548781 1",
+    "finish": "silver",
+    "shot": "wrist close-up, white sand",
+    "export": "download_assets nodeId 3152:71 -> rawImages (original) | image ref 066b600e78a13fe50135bc9aaf68ad8ede33263b"
+   },
+   {
+    "node_id": "3152:73",
+    "page": "Static Ads 2",
+    "frame": "M Batch 345 - C1 - STATIC - Minimal - Marcus.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782204834651 1",
+    "finish": "silver",
+    "shot": "outfit: linen shirt + trousers",
+    "export": "download_assets nodeId 3152:73 -> rawImages (original) | image ref f009e9c37286466142c4411914124d56e6f32ed0"
+   },
+   {
+    "node_id": "3152:75",
+    "page": "Static Ads 2",
+    "frame": "M Batch 345 - C2 - STATIC - Minimal - Marcus.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782206218651 1",
+    "finish": "silver",
+    "shot": "outfit: hand in pocket, linen",
+    "export": "download_assets nodeId 3152:75 -> rawImages (original) | image ref c5e3280f5c645d10cbf9e7915d8c54b022fc3440"
+   },
+   {
+    "node_id": "3152:77",
+    "page": "Static Ads 2",
+    "frame": "M Batch 345 - C3 - STATIC - Minimal - Marcus.SA - MIX - W26 - TOF",
+    "fill_name": "ad-image-1782206821323 1",
+    "finish": "silver",
+    "shot": "outfit: linen, wrist",
+    "export": "download_assets nodeId 3152:77 -> rawImages (original) | image ref 64f4b847eda931656e79608abb896bf63488ed05"
+   },
+   {
+    "node_id": "3321:117",
+    "page": "Static Ads 2",
+    "frame": "Frame 1000012033",
+    "fill_name": "ad-image-1783453799093 1",
+    "finish": "black",
+    "shot": "outfit: adjusting bracelet, black top",
+    "export": "download_assets nodeId 3321:117 -> rawImages (original) | image ref 223b35bebce3b4cc2f45ae090a672af2228aa0d0"
+   },
+   {
+    "node_id": "3321:119",
+    "page": "Static Ads 2",
+    "frame": "Frame 1000012033",
+    "fill_name": "ad-image-1783451319226 1",
+    "finish": "silver",
+    "shot": "outfit: adjusting bracelet, black top",
+    "export": "download_assets nodeId 3321:119 -> rawImages (original) | image ref 14556c94e8067818340f854498a57bc4116d76f7"
+   },
+   {
+    "node_id": "3321:22",
+    "page": "Static Ads 2",
+    "frame": "M Batch 358 - C1 - STATIC - Hypoallergenic - PA - Leo - W28",
+    "fill_name": "ad-image-1783451173840 1",
+    "finish": "silver",
+    "shot": "outfit: adjusting bracelet, black top",
+    "export": "download_assets nodeId 3321:22 -> rawImages (original) | image ref 30fb106caea93975ddb2fad4b5a8e40d612b8d0c"
+   },
+   {
+    "node_id": "3321:24",
+    "page": "Static Ads 2",
+    "frame": "M Batch 358 - C2 - STATIC - Hypoallergenic - PA - Leo - W28",
+    "fill_name": "ad-image-1783451799809 1",
+    "finish": "gold",
+    "shot": "outfit: adjusting bracelet, black top",
+    "export": "download_assets nodeId 3321:24 -> rawImages (original) | image ref 4eab02179c0eb98cab087cfac8436e8ecd89275f"
+   },
+   {
+    "node_id": "3339:12",
+    "page": "Static Ads 2",
+    "frame": "M Batch 359 - C1 - STATIC - Stacked/Set - W28",
+    "fill_name": "ad-image-1783507322634 1",
+    "finish": "black",
+    "shot": "outfit: arm, white tee",
+    "export": "download_assets nodeId 3339:12 -> rawImages (original) | image ref e24d830353677babf1c2b756b9451694a9383516"
+   },
+   {
+    "node_id": "3339:26",
+    "page": "Static Ads 2",
+    "frame": "M Batch 359 - C2 - STATIC - Stacked/Set - W28",
+    "fill_name": "ad-image-1783604787231 1",
+    "finish": "black",
+    "shot": "outfit: wrist, black jeans",
+    "export": "download_assets nodeId 3339:26 -> rawImages (original) | image ref 8e8ed533bd281f954440714814f81f15b78ed3b7"
+   },
+   {
+    "node_id": "3390:384",
+    "page": "Static Ads 2",
+    "frame": "M Batch 372 - C1 - STATIC - W29",
+    "fill_name": "ad-image-1783954132348 1",
+    "finish": "black",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3390:384 -> rawImages (original) | image ref c661fac82ad1e0e4e3378e43c662944eca3cd3c1"
+   },
+   {
+    "node_id": "3390:385",
+    "page": "Static Ads 2",
+    "frame": "M Batch 372 - C2 - STATIC - W29",
+    "fill_name": "ad-image-1783954570779 1",
+    "finish": "black",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3390:385 -> rawImages (original) | image ref 63a1e44473f609d265b9ed55b89a60c9506c2809"
+   },
+   {
+    "node_id": "3390:386",
+    "page": "Static Ads 2",
+    "frame": "M Batch 372 - C3 - STATIC - W29",
+    "fill_name": "ad-image-1783954829934 1",
+    "finish": "black",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3390:386 -> rawImages (original) | image ref 8e4039016b955837cc48fc46afcaf2df3cf41781"
+   },
+   {
+    "node_id": "3405:10",
+    "page": "Static Ads 2",
+    "frame": "M Batch 372 - C4 - STATIC - W29",
+    "fill_name": "ad-image-1784141621828 1",
+    "finish": "silver",
+    "shot": "wrist close-up, light bg",
+    "export": "download_assets nodeId 3405:10 -> rawImages (original) | image ref e996de89443d960d95d76cc75997b807ad35ae8f"
+   },
+   {
+    "node_id": "3586:42",
+    "page": "Static Ads 2",
+    "frame": "M Batch 395 - C1 - STATIC - Occasion-OnTheGo - SA - Leo - W34",
+    "fill_name": "ad-image-1786553574566 1",
+    "finish": "silver",
+    "shot": "lifestyle: driving classic car",
+    "export": "download_assets nodeId 3586:42 -> rawImages (original) | image ref 64c928e374933229daa8b5aed00a1f037c0b7955"
+   },
+   {
+    "node_id": "3587:267",
+    "page": "Static Ads 2",
+    "frame": "M Batch 395 - C1 - STATIC - Occasion-OnTheGo - SA - Leo - W34",
+    "fill_name": "ad-image-1786553437481 1",
+    "finish": "gold",
+    "shot": "lifestyle: driving classic car",
+    "export": "download_assets nodeId 3587:267 -> rawImages (original) | image ref 440681fdabb95e0fe4ebe4b4a0e3d526d105262a"
+   },
+   {
+    "node_id": "3586:45",
+    "page": "Static Ads 2",
+    "frame": "M Batch 391 - C1 - STATIC - Signature-Hero - PRA - Marcus - W34",
+    "fill_name": "ad-image-1786553555307 1",
+    "finish": "gold",
+    "shot": "wrist close-up, grey sleeve, dark bg",
+    "export": "download_assets nodeId 3586:45 -> rawImages (original) | image ref 60427f595a8ebefebc3bc8408cd138f10dccb692"
+   },
+   {
+    "node_id": "3587:270",
+    "page": "Static Ads 2",
+    "frame": "M Batch 392 - C2 - STATIC - Signature-Value - SA - Daniel - W34",
+    "fill_name": "ad-image-1786564232881 1",
+    "finish": "silver",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3587:270 -> rawImages (original) | image ref a4d3758b53239bd86b36da13697c075498fad38d"
+   },
+   {
+    "node_id": "3587:271",
+    "page": "Static Ads 2",
+    "frame": "M Batch 392 - C3 - STATIC - Signature-Value - SA - Daniel - W34",
+    "fill_name": "ad-image-1786564229764 1",
+    "finish": "gold",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3587:271 -> rawImages (original) | image ref b71373058425b6db4f5e1b889c30635d9ece947a"
+   },
+   {
+    "node_id": "3586:47",
+    "page": "Static Ads 2",
+    "frame": "M Batch 393 - C1 - STATIC - Lifestyle-Everyday - SA - Leo - W34",
+    "fill_name": "ad-image-1786553535101 1",
+    "finish": "black",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3586:47 -> rawImages (original) | image ref 27765e50b4d0997d54f979c56128579ebbeed702"
+   },
+   {
+    "node_id": "3586:48",
+    "page": "Static Ads 2",
+    "frame": "M Batch 393 - C2 - STATIC - Lifestyle-Everyday - SA - Leo - W34",
+    "fill_name": "ad-image-1786553526385 1",
+    "finish": "black",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3586:48 -> rawImages (original) | image ref 91d30cf7763c726fd9db139d30b0ee472e737688"
+   },
+   {
+    "node_id": "3586:49",
+    "page": "Static Ads 2",
+    "frame": "M Batch 393 - C3 - STATIC - Lifestyle-Everyday - SA - Leo - W34",
+    "fill_name": "ad-image-1786553517418 1",
+    "finish": "black",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3586:49 -> rawImages (original) | image ref b3ddcde343f04ea1c05d6d3ace303f1e5b8ca7ff"
+   },
+   {
+    "node_id": "3586:52",
+    "page": "Static Ads 2",
+    "frame": "M Batch 394 - C1 - STATIC - Identity-Gentleman - SA - Marcus - W34",
+    "fill_name": "ad-image-1786553486036 1",
+    "finish": "black",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3586:52 -> rawImages (original) | image ref c1d60079c2a2e350583ebbd98bda36619c1762c6"
+   },
+   {
+    "node_id": "3586:50",
+    "page": "Static Ads 2",
+    "frame": "M Batch 394 - C2 - STATIC - Identity-Gentleman - SA - Marcus - W34",
+    "fill_name": "ad-image-1786553508217 1",
+    "finish": "gold",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3586:50 -> rawImages (original) | image ref 8ae2ac22ae79cb549645ed378f4a71432424b66a"
+   },
+   {
+    "node_id": "3586:51",
+    "page": "Static Ads 2",
+    "frame": "M Batch 394 - C3 - STATIC - Identity-Gentleman - SA - Marcus - W34",
+    "fill_name": "ad-image-1786553499265 1",
+    "finish": "silver",
+    "shot": "outfit: hand in pocket, olive coat",
+    "export": "download_assets nodeId 3586:51 -> rawImages (original) | image ref 47d07f4970ffaadb90ad0aaac524ecec2cf850ae"
+   },
+   {
+    "node_id": "740:551",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ad-image-1764365768194 1",
+    "finish": "silver",
+    "shot": "wrist close-up, water, dark sleeve",
+    "export": "download_assets nodeId 740:551 -> rawImages (original) | image ref a778cff4773fbcf388ed9fa6f7e75db493b2553a"
+   },
+   {
+    "node_id": "740:560",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ad-image-1764366015513 1",
+    "finish": "black",
+    "shot": "wrist close-up, pool edge",
+    "export": "download_assets nodeId 740:560 -> rawImages (original) | image ref 9984726ea600ee5a046378a9a787cea2e36f9684"
+   },
+   {
+    "node_id": "740:562",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ad-image-1764367133702 1",
+    "finish": "gold",
+    "shot": "wrist close-up, stone ledge",
+    "export": "download_assets nodeId 740:562 -> rawImages (original) | image ref 3aa6785f839d8eb08fe4007efe2f72bd246b25ba"
+   },
+   {
+    "node_id": "795:70",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1764366076882 1",
+    "finish": "black",
+    "shot": "wrist close-up, water",
+    "export": "download_assets nodeId 795:70 -> rawImages (original) | image ref 0eabf31aeba159be8b413cc24776a0f28ade86cb"
+   },
+   {
+    "node_id": "795:80",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1764365641261 1",
+    "finish": "silver",
+    "shot": "wrist close-up, in water",
+    "export": "download_assets nodeId 795:80 -> rawImages (original) | image ref 576c1e70bc6205c0cab396550922a9bf1ac5f136"
+   },
+   {
+    "node_id": "795:81",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1764366943195 1",
+    "finish": "gold",
+    "shot": "wrist close-up, concrete",
+    "export": "download_assets nodeId 795:81 -> rawImages (original) | image ref 25297e54cb2659401823c5ffe9c5c28ef00f8433"
+   },
+   {
+    "node_id": "3246:2",
+    "page": "Social Media",
+    "frame": "DEC - W2 - 3 - Feed ",
+    "fill_name": "12616-4 1",
+    "finish": "silver",
+    "shot": "wrist close-up, B&W studio",
+    "export": "download_assets nodeId 3246:2 -> rawImages (original) | image ref cdd145f93dbbae63abc0335b19b35f2d8355b853"
+   }
+  ],
+  "men_stack_figma_notes": {
+   "scanned": "2026-10-20, all 11 pages of Figma dEEVzBXoylSdZoRs0gonHn (1921 unique image fills); AI-named fills and pasted \"image N\" layers skipped",
+   "counts": {
+    "black": 32,
+    "silver": 41,
+    "gold": 23,
+    "total": 96
+   },
+   "source": "All men's 3x stack photos (cuff + box chain + square chain on a man) are Shopify \"ad-image-<timestamp>\" files (Eli: count as real), except 3246:2 \"12616-4\" (studio shoot). No DSC camera file of the men's stack exists in Figma.",
+   "pages": {
+    "Carousel": 11,
+    "Static Ads 1": 44,
+    "Static Ads 2": 34,
+    "Website IMG": 3,
+    "Lifestyle Image Assets | AI": 3,
+    "Social Media": 1
+   },
+   "excluded": "multi-chain stacks without cuff (M Batch 314/315/316 C1, 318 C2, Frames 1000012186/7); W Batch 335/348/355 and ITR shots (women's stack); couples (Valentines); UUID/IG/\"image N\" names (e.g. STATICS feb6ce2e…, FEED 13)",
+   "how_to_pull": "Figma MCP download_assets(fileKey, nodeId) returns the original JPG in rawImages; or REST with $FIGMA_TOKEN: GET /v1/files/dEEVzBXoylSdZoRs0gonHn/images -> meta.images[<image ref>] (full-res S3 URL). Node renders (GET /v1/images?ids=…) give the cropped frame only."
+  },
+  "men_duo_figma_extra": [
+   {
+    "node_id": "730:200",
+    "page": "Static Ads 1",
+    "frame": "M Batch 45 - C3 (No Text)",
+    "fill_name": "ad-image-1764197530751 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 730:200 -> rawImages (original) | image ref d11d474411ed2917a0942c2022fc707824946035"
+   },
+   {
+    "node_id": "730:74",
+    "page": "Static Ads 1",
+    "frame": "M Batch 43 - C1 (No Text)",
+    "fill_name": "ad-image-1764364943432 2",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 730:74 -> rawImages (original) | image ref eacf9dfe4a12ee3fdd1d2731409a38dac65a9a9c"
+   },
+   {
+    "node_id": "730:48",
+    "page": "Static Ads 1",
+    "frame": "M Batch 52 - C1 (No Text)",
+    "fill_name": "ad-image-1764365207785 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 730:48 -> rawImages (original) | image ref 918658f8e4af220054fb0517266c8de0d1179c52"
+   },
+   {
+    "node_id": "730:65",
+    "page": "Static Ads 1",
+    "frame": "M Batch 52 - C3 (No Text)",
+    "fill_name": "ad-image-1764365049886 2",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 730:65 -> rawImages (original) | image ref 0ab2aac804532ce79f063819a4888a5d9dad2482"
+   },
+   {
+    "node_id": "1010:5",
+    "page": "Static Ads 1",
+    "frame": "M Batch 70 -C3-EN",
+    "fill_name": "ad-image-1765404216741",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1010:5 -> rawImages (original) | image ref e1614c2792d56c8d526773d210351398ad47949d"
+   },
+   {
+    "node_id": "1010:7",
+    "page": "Static Ads 1",
+    "frame": "M Batch 70 -C1-EN",
+    "fill_name": "ad-image-1765396009846 2 (1)",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1010:7 -> rawImages (original) | image ref e6a9347f38ccaca47f69d25e55c948305aa95d9c"
+   },
+   {
+    "node_id": "1078:345",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 60 - C1",
+    "fill_name": "ad-image-1764197530751 1 (4)-2 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1078:345 -> rawImages (original) | image ref 9272ded5c944565272128737601d484280bd6521"
+   },
+   {
+    "node_id": "1227:190",
+    "page": "Static Ads 1",
+    "frame": "Frame 173",
+    "fill_name": "ad-image-1767103061995 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1227:190 -> rawImages (original) | image ref b92a1fcd81d4176faf90532f68738fc5dfddace4"
+   },
+   {
+    "node_id": "1227:200",
+    "page": "Static Ads 1",
+    "frame": "Frame 173",
+    "fill_name": "ad-image-1767105261459 2",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1227:200 -> rawImages (original) | image ref 69dd5b9657c6f6e5c2a791232138975eba42f0b2"
+   },
+   {
+    "node_id": "1229:3",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 74 - C4",
+    "fill_name": "1767090296317-3 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1229:3 -> rawImages (original) | image ref d54fc8a962fb5a3b640b448d91fdeb9b4809e08e"
+   },
+   {
+    "node_id": "1227:196",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 75 - C3",
+    "fill_name": "ad-image-1767105297823 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1227:196 -> rawImages (original) | image ref 5716c9d71ec96b17b64a20af550928a46d85c504"
+   },
+   {
+    "node_id": "1227:578",
+    "page": "Static Ads 1",
+    "frame": "Frame 174",
+    "fill_name": "1767090296317-3 1",
+    "finish": "gold",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1227:578 -> rawImages (original) | image ref 6079daeed1177a845a95b2a13409e9dff4418471"
+   },
+   {
+    "node_id": "1405:319",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 84 - C1",
+    "fill_name": "ad-image-1769375379505 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1405:319 -> rawImages (original) | image ref 9de1c188ee1184f7245c191df6166f030fc16180"
+   },
+   {
+    "node_id": "1405:320",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 84 - C2",
+    "fill_name": "ad-image-1769375097068 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1405:320 -> rawImages (original) | image ref 6b2e54fd87cace49adbc2c0d33522aac5950cc2d"
+   },
+   {
+    "node_id": "1405:321",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 84 - C3",
+    "fill_name": "ad-image-1769375086717 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1405:321 -> rawImages (original) | image ref a47789efb245c112fe931f911a48e106006482bc"
+   },
+   {
+    "node_id": "1405:322",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 84 - C4",
+    "fill_name": "ad-image-1769375258988 1",
+    "finish": "gold",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1405:322 -> rawImages (original) | image ref 3b254a7771625a97e8e4b25b38255e1ddcdb3323"
+   },
+   {
+    "node_id": "1321:213",
+    "page": "Static Ads 1",
+    "frame": "Frame 49",
+    "fill_name": "ad-image-1764365110183 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1321:213 -> rawImages (original) | image ref e79041abcd976e2d125ed3ac9e3d9f17216a70be"
+   },
+   {
+    "node_id": "1526:241",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 83 - C2",
+    "fill_name": "fdsfdimage 340 (1) 1",
+    "finish": "gold",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1526:241 -> rawImages (original) | image ref 980e98bedfa1b4dfd902fdeeade96127c6aeb219"
+   },
+   {
+    "node_id": "1445:39",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 88 - C2",
+    "fill_name": "ad-image-1769544600418 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1445:39 -> rawImages (original) | image ref b2aead662c2ca0b35510d1b8ae150bd0c34ac0c4"
+   },
+   {
+    "node_id": "1445:40",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 88 - C3",
+    "fill_name": "ad-image-1769544577277 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1445:40 -> rawImages (original) | image ref b54e930361c94f927f10221e3839a9d5514946ae"
+   },
+   {
+    "node_id": "1445:38",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 88 - C1",
+    "fill_name": "ad-image-1769544732886 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1445:38 -> rawImages (original) | image ref 5931c20af942611b8edad5f9e509e498e063cb86"
+   },
+   {
+    "node_id": "1703:1428",
+    "page": "Static Ads 1",
+    "frame": "✅ M Batch 93 - C2",
+    "fill_name": "ad-image-1769544920957 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1703:1428 -> rawImages (original) | image ref 58c54f8bc00b15530566976409638682165879d7"
+   },
+   {
+    "node_id": "2047:810",
+    "page": "Static Ads 1",
+    "frame": "M Batch 103 - C1",
+    "fill_name": "ad-image-1773842354929 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2047:810 -> rawImages (original) | image ref 67d2c16740c73400517cb6de3a0d5e76b749daf0"
+   },
+   {
+    "node_id": "2047:812",
+    "page": "Static Ads 1",
+    "frame": "M Batch 103 - C2",
+    "fill_name": "ad-image-1773842468299 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2047:812 -> rawImages (original) | image ref a0a119269a310307d5c71ec2eff7e3b73f9c5ab9"
+   },
+   {
+    "node_id": "2047:813",
+    "page": "Static Ads 1",
+    "frame": "M Batch 103 - C3",
+    "fill_name": "ad-image-1773842759118 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2047:813 -> rawImages (original) | image ref 274f3accc4ce75ea18fa4398d0e2e6fff5269c11"
+   },
+   {
+    "node_id": "2557:802",
+    "page": "Static Ads 1",
+    "frame": "M Batch 295 - C3 - STATIC - Minimal-jewelry - PA - Rafael - W19 - No Texts",
+    "fill_name": "ad-image-1778059151268 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2557:802 -> rawImages (original) | image ref ab2fc0fa0fbb475d6eea2e60b1ef938d707ac2c8"
+   },
+   {
+    "node_id": "2556:333",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012044",
+    "fill_name": "ad-image-1777591873849-2 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2556:333 -> rawImages (original) | image ref 78dec09682a9cee71cc3cff6f97197f93b3f74db"
+   },
+   {
+    "node_id": "2556:345",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012044",
+    "fill_name": "ad-image-1777590185559-2 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2556:345 -> rawImages (original) | image ref 293aaa48db71e4cd2c36b9aeb3c4ee5a72bbdd6f"
+   },
+   {
+    "node_id": "2556:357",
+    "page": "Static Ads 1",
+    "frame": "Frame 1000012044",
+    "fill_name": "ad-image-1777592478758-2 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 2556:357 -> rawImages (original) | image ref d16ee5caed99954ab39141071b66502752ad9d0a"
+   },
+   {
+    "node_id": "640:178",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764192195611 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 640:178 -> rawImages (original) | image ref 6b7fa7f4c3232015bcf4dcdd714a2a1775047411"
+   },
+   {
+    "node_id": "640:176",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764191437387 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 640:176 -> rawImages (original) | image ref e8b361a5b96e89369aff76200a5c9afd4a09f60a"
+   },
+   {
+    "node_id": "640:179",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764192314760 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 640:179 -> rawImages (original) | image ref 34ec328117013461b72ee66869dad352d093a89d"
+   },
+   {
+    "node_id": "646:191",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764196669452 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 646:191 -> rawImages (original) | image ref c61a1a71be0306978031493c8df5d91007deeca6"
+   },
+   {
+    "node_id": "646:192",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764196699450 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 646:192 -> rawImages (original) | image ref 0b3be780364a6d21b3cbe5f35d89d948d2cc7a84"
+   },
+   {
+    "node_id": "646:193",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764196719915 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 646:193 -> rawImages (original) | image ref ab8c76140cad9a1e0f43f332c2f5feea3a245b20"
+   },
+   {
+    "node_id": "646:194",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764196730352 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 646:194 -> rawImages (original) | image ref 33ec3848be8eac313ca39711c287c63140d3a431"
+   },
+   {
+    "node_id": "646:195",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764196742281 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 646:195 -> rawImages (original) | image ref d42b4b4205aaab725899e9785288856db6dc4f35"
+   },
+   {
+    "node_id": "646:196",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764196751952 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 646:196 -> rawImages (original) | image ref 0499b5accba97ad10d0aa5d5ef48244039011678"
+   },
+   {
+    "node_id": "658:21",
+    "page": "Static Ads 1",
+    "frame": "Eli",
+    "fill_name": "ad-image-1764257787863 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 658:21 -> rawImages (original) | image ref 824a1f5ae106bf2e10a1efdc6380500f4dc8bc85"
+   },
+   {
+    "node_id": "740:509",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ad-image-1764254900303 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 740:509 -> rawImages (original) | image ref d8167c2a717b21648f45503bff86c993e79a4319"
+   },
+   {
+    "node_id": "740:522",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "rolebracelet 1",
+    "finish": "gold+silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 740:522 -> rawImages (original) | image ref bcb52e523183e59aab09c3173a76c0c1527cc203"
+   },
+   {
+    "node_id": "740:526",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ropebraceletsilver 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 740:526 -> rawImages (original) | image ref 9310e0afca03f010ad5337b3e1d19d8cba96cff5"
+   },
+   {
+    "node_id": "740:527",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ropebracelet 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 740:527 -> rawImages (original) | image ref 7d9610cfca585593dd130ac1ca44d04171e0bd00"
+   },
+   {
+    "node_id": "740:537",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "adsUntitled-1 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 740:537 -> rawImages (original) | image ref 3ad2dc28589512d625c806fae8c1c315fb12d7a7"
+   },
+   {
+    "node_id": "740:564",
+    "page": "Website IMG",
+    "frame": "Frame 121",
+    "fill_name": "ad-image-1764369503692 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 740:564 -> rawImages (original) | image ref 4de17d843a29828392af17b5f5c0f187679751e5"
+   },
+   {
+    "node_id": "795:74",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1764364856787 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 795:74 -> rawImages (original) | image ref 4c7574b1279ee9bcc5b06b83743b538f927f966b"
+   },
+   {
+    "node_id": "795:75",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1764364936165 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 795:75 -> rawImages (original) | image ref c1a63e4e093a537e52009f70594c9ed6895d19eb"
+   },
+   {
+    "node_id": "1009:4",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1765402825151 1",
+    "finish": "black",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1009:4 -> rawImages (original) | image ref f538151ea0abe2c4409a5fdf88da7d3d40dd3783"
+   },
+   {
+    "node_id": "998:3",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1765395988165 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 998:3 -> rawImages (original) | image ref b853e8767986c78d874a3fd45e55ad21e4479cbb"
+   },
+   {
+    "node_id": "998:4",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1765395952812 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 998:4 -> rawImages (original) | image ref 56b39df6bd0152ae1583e90bdf20cca191bd7dd9"
+   },
+   {
+    "node_id": "1003:6",
+    "page": "Lifestyle Image Assets | AI",
+    "frame": "IMAGES",
+    "fill_name": "ad-image-1765397344923 1",
+    "finish": "silver",
+    "shot": "wrist close-up",
+    "export": "download_assets nodeId 1003:6 -> rawImages (original) | image ref b2b97b7ca1e834e714ba18e4f2d17f0453f972af"
+   }
   ]
  },
  "packages": {
