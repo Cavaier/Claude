@@ -209,7 +209,8 @@
     "fill_name": "ad-image-1765973949056 1",
     "finish": "black",
     "shot": "underwater wrist, bubbles",
-    "export": "download_assets nodeId 1091:20 -> rawImages (original) | image ref 5ba94d7ab237fde268af996622ba8bd35788eadc"
+    "export": "download_assets nodeId 1091:20 -> rawImages (original) | image ref 5ba94d7ab237fde268af996622ba8bd35788eadc",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1091:19",
@@ -218,7 +219,8 @@
     "fill_name": "ad-image-1765973477183 1",
     "finish": "black",
     "shot": "underwater wrist, bubbles",
-    "export": "download_assets nodeId 1091:19 -> rawImages (original) | image ref a6e3f4558713a6d7fd65a31ad6dd9af44305c638"
+    "export": "download_assets nodeId 1091:19 -> rawImages (original) | image ref a6e3f4558713a6d7fd65a31ad6dd9af44305c638",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1091:12",
@@ -227,7 +229,8 @@
     "fill_name": "ad-image-1765972713005 1",
     "finish": "gold",
     "shot": "underwater wrist, bubbles",
-    "export": "download_assets nodeId 1091:12 -> rawImages (original) | image ref 79cfbc481fca6e9a8b05f3db5a2b21607157b56a"
+    "export": "download_assets nodeId 1091:12 -> rawImages (original) | image ref 79cfbc481fca6e9a8b05f3db5a2b21607157b56a",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1091:11",
@@ -236,7 +239,8 @@
     "fill_name": "ad-image-1765972573288 1",
     "finish": "black",
     "shot": "underwater wrist, bubbles",
-    "export": "download_assets nodeId 1091:11 -> rawImages (original) | image ref f4c65e7483dd3549b610829b154f529bf312e94c"
+    "export": "download_assets nodeId 1091:11 -> rawImages (original) | image ref f4c65e7483dd3549b610829b154f529bf312e94c",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1091:7",
@@ -245,7 +249,8 @@
     "fill_name": "ad-image-1765972165773 1",
     "finish": "black",
     "shot": "underwater wrist, bubbles",
-    "export": "download_assets nodeId 1091:7 -> rawImages (original) | image ref 7f25ae4a6964077fa20e80d245b193733d3c7ae3"
+    "export": "download_assets nodeId 1091:7 -> rawImages (original) | image ref 7f25ae4a6964077fa20e80d245b193733d3c7ae3",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1089:4",
@@ -254,7 +259,8 @@
     "fill_name": "ad-image-1765970800547 1",
     "finish": "black",
     "shot": "underwater wrist",
-    "export": "download_assets nodeId 1089:4 -> rawImages (original) | image ref 7cf90c4df8b9c4d6baef538a56c9da129780fd36"
+    "export": "download_assets nodeId 1089:4 -> rawImages (original) | image ref 7cf90c4df8b9c4d6baef538a56c9da129780fd36",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1091:9",
@@ -263,7 +269,8 @@
     "fill_name": "ad-image-1765972307894 1",
     "finish": "black",
     "shot": "underwater wrist, grey",
-    "export": "download_assets nodeId 1091:9 -> rawImages (original) | image ref 4b127d24cbf79d8c6170aca119ae328eb3db35d6"
+    "export": "download_assets nodeId 1091:9 -> rawImages (original) | image ref 4b127d24cbf79d8c6170aca119ae328eb3db35d6",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1090:6",
@@ -272,7 +279,8 @@
     "fill_name": "ad-image-1765971257557 1",
     "finish": "black",
     "shot": "underwater wrist, blue",
-    "export": "download_assets nodeId 1090:6 -> rawImages (original) | image ref 836d6737c1d59f84e654b4b4444a88a662132f4d"
+    "export": "download_assets nodeId 1090:6 -> rawImages (original) | image ref 836d6737c1d59f84e654b4b4444a88a662132f4d",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "1227:205",
@@ -317,7 +325,8 @@
     "fill_name": "ad-image-1780480523412 1",
     "finish": "gold",
     "shot": "wrist close-up, studio light bg",
-    "export": "download_assets nodeId 2853:6 -> rawImages (original) | image ref 2dd191cad39d64f0a7355158adbbdad0bc83cf39"
+    "export": "download_assets nodeId 2853:6 -> rawImages (original) | image ref 2dd191cad39d64f0a7355158adbbdad0bc83cf39",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2850:8",
@@ -326,7 +335,8 @@
     "fill_name": "ad-image-1780480971295 1",
     "finish": "gold",
     "shot": "wrist close-up, studio light bg",
-    "export": "download_assets nodeId 2850:8 -> rawImages (original) | image ref c9b16630ca1cd632df7636a8f6531553ca4126ac"
+    "export": "download_assets nodeId 2850:8 -> rawImages (original) | image ref c9b16630ca1cd632df7636a8f6531553ca4126ac",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2850:10",
@@ -335,7 +345,8 @@
     "fill_name": "ad-image-1780481125659 1",
     "finish": "gold",
     "shot": "wrist close-up, studio light bg",
-    "export": "download_assets nodeId 2850:10 -> rawImages (original) | image ref de3328349e0c1ed17eccf7d8671be59e7d8e8cf0"
+    "export": "download_assets nodeId 2850:10 -> rawImages (original) | image ref de3328349e0c1ed17eccf7d8671be59e7d8e8cf0",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2850:16",
@@ -344,7 +355,8 @@
     "fill_name": "ad-image-1780481125659 2",
     "finish": "gold",
     "shot": "wrist close-up, studio light bg",
-    "export": "download_assets nodeId 2850:16 -> rawImages (original) | image ref 6efc7d14e010388f41bcdd641c5dde7c77793a8c"
+    "export": "download_assets nodeId 2850:16 -> rawImages (original) | image ref 6efc7d14e010388f41bcdd641c5dde7c77793a8c",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2850:18",
@@ -353,7 +365,8 @@
     "fill_name": "ad-image-1780481327096 1",
     "finish": "gold",
     "shot": "wrist close-up, wet, dark blue bg",
-    "export": "download_assets nodeId 2850:18 -> rawImages (original) | image ref 76163d0b08b6d4249fd6371bb53a94a790ad55ec"
+    "export": "download_assets nodeId 2850:18 -> rawImages (original) | image ref 76163d0b08b6d4249fd6371bb53a94a790ad55ec",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2850:19",
@@ -362,7 +375,8 @@
     "fill_name": "ad-image-1780481409128 1",
     "finish": "silver",
     "shot": "wrist close-up, dark suit",
-    "export": "download_assets nodeId 2850:19 -> rawImages (original) | image ref 72942d85f91bbb1c38659a2958bbd33311af22b7"
+    "export": "download_assets nodeId 2850:19 -> rawImages (original) | image ref 72942d85f91bbb1c38659a2958bbd33311af22b7",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2850:20",
@@ -371,7 +385,8 @@
     "fill_name": "ad-image-1780481470708 1",
     "finish": "gold",
     "shot": "wrist close-up, wet, dark blue bg",
-    "export": "download_assets nodeId 2850:20 -> rawImages (original) | image ref e83dd8789361fa4a0f66409ea6282c8751625821"
+    "export": "download_assets nodeId 2850:20 -> rawImages (original) | image ref e83dd8789361fa4a0f66409ea6282c8751625821",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2851:21",
@@ -407,7 +422,8 @@
     "fill_name": "ad-image-1780480971295 2",
     "finish": "gold",
     "shot": "wrist close-up, studio light bg",
-    "export": "download_assets nodeId 2850:14 -> rawImages (original) | image ref d77765fad14475257832a19160fcb2f99ccc5b8e"
+    "export": "download_assets nodeId 2850:14 -> rawImages (original) | image ref d77765fad14475257832a19160fcb2f99ccc5b8e",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2920:31",
@@ -470,7 +486,8 @@
     "fill_name": "ad-image-1780944928350 1",
     "finish": "gold",
     "shot": "wrist close-up, wet, blurred bg",
-    "export": "download_assets nodeId 2923:175 -> rawImages (original) | image ref 422490adddf3621f481aebfe1f767e05f7c42de3"
+    "export": "download_assets nodeId 2923:175 -> rawImages (original) | image ref 422490adddf3621f481aebfe1f767e05f7c42de3",
+    "NOT_A_STACK": "shows only 2 pieces (cuff + one chain); never use as 3x stack (audit Oct 20)"
    },
    {
     "node_id": "2923:214",
