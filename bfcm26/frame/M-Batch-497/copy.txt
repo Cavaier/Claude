@@ -1,0 +1,27 @@
+M Batch 497 · ad copy (Black Friday · redo Oct 20) · DRAFT
+Men's 2x Duo Minimal Set, SILVER · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Imitation (IM8 Health close copies, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.
+
+Primary text:
+Black Friday at Cavaier: 30% off sitewide, prices already reduced, no code needed. The 2x Duo Minimal Set is a box chain and a square chain, each with a small bar tag, in recycled 316L stainless steel. Waterproof, adjustable S/M/L, case included and free shipping.
+
+Headline: Two chains, 30% off  (19)
+Description: No code. Case included.  (23)
+
+Landing pages (variant of the finish shown, size Medium):
+C1 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C2 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C3 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+
+C1: Centred first-person quote "Waited all year for this one." over a blurred light texture + hairline what's-included frame (IM8 "Felt slower every year. Then I didn't.", 286K). Tests: quote hook + what's in the set. Photo: Figma DSC02439 (node 300:1484), film preset.
+C2: Stat headline "Chains it takes to finish the look: two." lower centre over a light-faded wrist photo, slim wide CTA "SHOP THE DUO · 30% OFF" (IM8 "Average Weight Regain After Stopping GLP-1: 20 Pounds", 329K). Tests: stat-style fact hook. Photo: Figma DSC04797 (node 345:63), film preset. (Redo Oct 20: replaces the rejected one-piece-short question.)
+C3: Caps headline "Now on his wrist — and 30% off." + photo + oversized BLACK FRIDAY band (IM8 "Now powering Inter Miami CF — and Sunday FC", 290K). Tests: big offer type. Photo: Figma DSC04766 (node 77:130), film preset.
+Finish note: C3 was gold; no unused real men's gold duo photo is left in Figma (only box-chain packshots), so C3 is silver.
+
+ROAS ✓ (contrast + safe zone, all text inside y 270–1536)
