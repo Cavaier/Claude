@@ -1,0 +1,182 @@
+{
+ "boards": {
+  "M497-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 497 - C1 · 3-stage strip WORK › WEEKEND › EVENING + rating bar (IM8 The bloat dissolving) · DRAFT",
+   "w": 1080,
+   "x": 500,
+   "y": 55200
+  },
+  "M497-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 497 - C2 · What’s in your Black Friday duo: labelled detail grid (IM8 What’s included in your kit) · DRAFT",
+   "w": 1080,
+   "x": 1660,
+   "y": 55200
+  },
+  "M497-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 497 - C3 · BARE WRIST? before/after + round 30% badge (IM8 MENOBELLY?) · DRAFT",
+   "w": 1080,
+   "x": 2820,
+   "y": 55200
+  },
+  "Refs-M497.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 497 · IM8 refs",
+   "w": 420,
+   "x": 0,
+   "y": 55200
+  },
+  "M498-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 498 - C1 · Listicle: 3 things to check before you buy a bracelet · DRAFT",
+   "w": 1080,
+   "x": 500,
+   "y": 57600
+  },
+  "M498-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 498 - C2 · Spec table: fashion bracelet vs the Stack Set · DRAFT",
+   "w": 1080,
+   "x": 1660,
+   "y": 57600
+  },
+  "M498-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 498 - C3 · This or that: black, silver or gold poll rows · DRAFT",
+   "w": 1080,
+   "x": 2820,
+   "y": 57600
+  },
+  "M499-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 499 - C1 · Full-bleed water photo: Into the water. Still on. · DRAFT",
+   "w": 1080,
+   "x": 500,
+   "y": 60000
+  },
+  "M499-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 499 - C2 · Animated static mp4 (7 s): slider wipes dry → in the water, ends on 30% OFF · NO CODE · DRAFT",
+   "w": 1080,
+   "x": 1660,
+   "y": 60000
+  },
+  "M499-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 499 - C3 · Polaroid photo dump: Under. On the rocks. Soaked. · DRAFT",
+   "w": 1080,
+   "x": 2820,
+   "y": 60000
+  },
+  "M500-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 500 - C1 · SAVE 30% on the full stack: tick list + rating line (IM8 SAVE 30% & GET FREE WELCOME KIT) · DRAFT",
+   "w": 1080,
+   "x": 500,
+   "y": 62400
+  },
+  "M500-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 500 - C2 · Round 30% sticker over the underwater photo (IM8 One drink. 90 ingredients.) · DRAFT",
+   "w": 1080,
+   "x": 1660,
+   "y": 62400
+  },
+  "M500-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 500 - C3 · Lineup with case + Included label (IM8 Free welcome kit) · DRAFT",
+   "w": 1080,
+   "x": 2820,
+   "y": 62400
+  },
+  "Refs-M500.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 500 · IM8 refs",
+   "w": 420,
+   "x": 0,
+   "y": 62400
+  },
+  "M501-C1.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 501 - C1 · Typographic poster: huge LESS. with the photo as a window · DRAFT",
+   "w": 1080,
+   "x": 500,
+   "y": 64800
+  },
+  "M501-C2.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 501 - C2 · Four-photo grid: Salt. Linen. Stone. Steel. · DRAFT",
+   "w": 1080,
+   "x": 1660,
+   "y": 64800
+  },
+  "M501-C3.dc.html": {
+   "h": 1920,
+   "is_interactive": true,
+   "title": "M Batch 501 - C3 · A short note from Cavaier (brand letter) · DRAFT",
+   "w": 1080,
+   "x": 2820,
+   "y": 64800
+  }
+ },
+ "notes": {
+  "copy-m497": {
+   "x": 3980,
+   "y": 55200,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "M Batch 497 · ad copy (Black Friday · BF30 package P3) · DRAFT, not delivered yet\n\nMen's 2x Duo Minimal Set, SILVER / GOLD · Style-curious man building a look · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Imitation (IM8 Health close copies, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code. The 2x Duo Minimal Set is a box chain and a square chain with small bar tags, in silver, gold or black. Waterproof, recycled 316L, adjustable S/M/L. Rated 4.5 from 3,000+ reviews.\n\nHeadline: Bare wrist? Fixed.  (18)\nDescription: 4.5 from 3,000+ reviews  (23)\n\nLanding pages (variant of the finish shown in each ad, size Medium):\nC1 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\nC2 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\nC3 (gold):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039634778\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623298873\n\nC1: 3-stage strip WORK › WEEKEND › EVENING + rating bar (IM8 The bloat dissolving)\nC2: What’s in your Black Friday duo: labelled detail grid (IM8 What’s included in your kit)\nC3: BARE WRIST? before/after + round 30% badge (IM8 MENOBELLY?)\n\nROAS ✓ (contrast + safe zone, all text inside y 270–1536)"
+  },
+  "copy-m498": {
+   "x": 3980,
+   "y": 57600,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "M Batch 498 · ad copy (Black Friday · BF30 package P3) · DRAFT, not delivered yet\n\nMen's 3x Minimal Stack Set, BLACK / SILVER · Skeptic comparing cheap vs premium · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.\n\nPrimary text:\nBlack Friday: 30% off sitewide, prices already reduced. Before you buy any bracelet, check three things: material, water and size. The 3x Minimal Stack Set is recycled 316L, waterproof and adjustable S/M/L, in black, silver or gold.\n\nHeadline: Not all steel is equal  (22)\nDescription: Recycled 316L, 30% off  (22)\n\nLanding pages (variant of the finish shown in each ad, size Medium):\nC1 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137\nC2 (silver):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54372875796826\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346288441\nC3 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137\n\nC1: Listicle: 3 things to check before you buy a bracelet\nC2: Spec table: fashion bracelet vs the Stack Set\nC3: This or that: black, silver or gold poll rows\n\nROAS ✓ (contrast + safe zone, all text inside y 270–1536)"
+  },
+  "copy-m499": {
+   "x": 3980,
+   "y": 60000,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "M Batch 499 · ad copy (Black Friday · BF30 package P3) · DRAFT, not delivered yet\n\nMen's 2x Duo Minimal Set, SILVER / BLACK · Traveler / outdoors guy · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE & VIDEO.\n\nPrimary text:\nBlack Friday: 30% off sitewide, no code. The 2x Duo Minimal Set goes where you go: into the water, the shower and the gym. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included and free shipping.\n\nHeadline: Goes in. Stays on.  (18)\nDescription: Waterproof, 30% off  (19)\n\nLanding pages (variant of the finish shown in each ad, size Medium):\nC1 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\nC2 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\nC3 (black):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039438170\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623102265\n\nC1: Full-bleed water photo: Into the water. Still on.\nC2: Animated static mp4 (7 s): slider wipes dry → in the water, ends on 30% OFF · NO CODE\nC3: Polaroid photo dump: Under. On the rocks. Soaked.\n\nROAS ✓ (contrast + safe zone, all text inside y 270–1536)"
+  },
+  "copy-m500": {
+   "x": 3980,
+   "y": 62400,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "M Batch 500 · ad copy (Black Friday · BF30 package P3) · DRAFT, not delivered yet\n\nMen's 3x Minimal Stack Set, BLACK · Deal hunter who wants the biggest set · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Imitation (IM8 Health close copies, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.\n\nPrimary text:\nBlack Friday: save 30% on the black 3x Minimal Stack Set, no code, prices already reduced. Flat polished cuff bangle, box chain and square chain, all recycled 316L, waterproof and adjustable S/M/L. Case included, free shipping.\n\nHeadline: Save 30% on the stack  (21)\nDescription: No code needed  (14)\n\nLanding pages (variant of the finish shown in each ad, size Medium):\nC1 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137\nC2 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137\nC3 (black):\nEU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826\nUS https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137\n\nC1: SAVE 30% on the full stack: tick list + rating line (IM8 SAVE 30% & GET FREE WELCOME KIT)\nC2: Round 30% sticker over the underwater photo (IM8 One drink. 90 ingredients.)\nC3: Lineup with case + Included label (IM8 Free welcome kit)\n\nROAS ✓ (contrast + safe zone, all text inside y 270–1536)"
+  },
+  "copy-m501": {
+   "x": 3980,
+   "y": 64800,
+   "w": 600,
+   "maxH": 1920,
+   "fill": "gray",
+   "text": "M Batch 501 · ad copy (Black Friday · BF30 package P3) · DRAFT, not delivered yet\n\nMen's 2x Duo Minimal Set, SILVER · Aesthetic minimalist · 30% off sitewide, prices already reduced, no code needed\nCreative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.\n\nPrimary text:\nBlack Friday: 30% off sitewide. The silver 2x Duo Minimal Set is two quiet chains, a box chain and a square chain, made to stay on: waterproof, recycled 316L, adjustable S/M/L. No code, prices already reduced.\n\nHeadline: Less, but better  (16)\nDescription: The silver duo, 30% off  (23)\n\nLanding pages (variant of the finish shown in each ad, size Medium):\nC1 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\nC2 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\nC3 (silver):\nEU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474\nUS https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569\n\nC1: Typographic poster: huge LESS. with the photo as a window\nC2: Four-photo grid: Salt. Linen. Stone. Steel.\nC3: A short note from Cavaier (brand letter)\n\nROAS ✓ (contrast + safe zone, all text inside y 270–1536)"
+  }
+ }
+}
