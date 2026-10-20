@@ -194,7 +194,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   (bracelets, necklaces, rings, sets; adjustable; free shipping over €35; lifetime warranty; 4.96/5
   from 14k reviews; Trustpilot 4.9 from 3.4k). "vacier" searches in our account: ~80 impressions
   all time, 1 purchase. Bidding on "vacier" risks Vacier bidding on "cavaier".
-- Proposals: P-010 misspellings, P-011 UK non-brand search test, P-012 Customer Match +
+- Proposals: P-010 misspellings, P-011 UK non-brand search test (ran Oct 11–20, paused: no sales), P-012 Customer Match +
   new-customer goal, P-013 hold on Vacier. Shopping/PMax (after feed fix) is the main Google
   route to cold buyers for a visual product.
 
@@ -266,6 +266,7 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-20** Paused Search | Men | UK (Eli OK). Verdict P-011: Worse (ROAS 0.82 Google, 0 add-to-carts Shopify).
 - **2026-10-20** Review Oct 11–20. Brand Search: 2,406 SEK, 49 purchases, 35.7k SEK (ROAS 14.9), IS 84–92%,
   CPC 4–5. UK non-brand: 2,269 SEK, 291 clicks, Google 2 purchases (1,871 SEK, ROAS 0.82, both Oct 14, before
   the landing change); Shopify 256 sessions, 0 add-to-carts, 0 orders with its utm. Since Oct 15 impression
