@@ -266,6 +266,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-20** Review Oct 11–20. Brand Search: 2,406 SEK, 49 purchases, 35.7k SEK (ROAS 14.9), IS 84–92%,
+  CPC 4–5. UK non-brand: 2,269 SEK, 291 clicks, Google 2 purchases (1,871 SEK, ROAS 0.82, both Oct 14, before
+  the landing change); Shopify 256 sessions, 0 add-to-carts, 0 orders with its utm. Since Oct 15 impression
+  share stuck at 10% (90% lost to rank, "bidding strategy limited" by the 8 SEK cap). Quality Scores 1–5,
+  landing page experience BELOW AVERAGE on every keyword (worst: mens bracelet / bracelet for men / mens
+  bangle QS 1). Recommendation: pause. Google Ads API v22 retired Oct 20 → scripts now use v23.
 - **2026-10-15** Review: Brand Search Oct 11–15 1,164 SEK, 26 purchases, ~21k SEK value (ROAS ~18), IS 74–91%.
   UK non-brand Oct 12–15: 197 clicks, 2,013 SEK, 0 purchases, 0 add-to-carts in ~177 Shopify sessions.
   New 2x Duo landing (Oct 15): 15 sessions, bounce 60% (was 80%), avg 103 s (was 20 s), still 0 add-to-cart.
