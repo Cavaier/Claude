@@ -1,0 +1,26 @@
+M Batch 488 · ad copy (Black Friday · BF30 package P1) · DRAFT, not delivered yet
+
+Men's 3x Minimal Stack Set, BLACK · Quality and material nerd · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.
+
+Primary text:
+Black Friday: 30% off sitewide, prices already reduced. The black 3x Minimal Stack Set is three separate pieces: a flat polished cuff bangle, a box chain and a square chain. Recycled 316L stainless steel, waterproof, sweat and heat resistant, adjustable S/M/L. Case included.
+
+Headline: Three pieces. One spec.  (23)
+Description: Recycled 316L, 30% off  (22)
+
+Landing pages (variant of the finish shown in each ad, size Medium):
+C1 (black):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137
+C2 (black):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137
+C3 (black):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137
+
+C1 · Spec sheet with leader lines on the three pieces + spec table. Figma ad-image 3390:384.
+C2 · Myth vs fact two-column card: "You take it off to shower" vs waterproof. Figma ad-image 2997:104.
+C3 · Museum placard beside a framed photo. Figma ad-image 3152:67.
+ROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px.

@@ -1,0 +1,26 @@
+M Batch 491 · ad copy (Black Friday · BF30 package P1) · DRAFT, not delivered yet
+
+Men's 2x Duo Minimal Set, BLACK · Deal hunter who waits for Black Friday · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.
+
+Primary text:
+Black Friday: 30% off sitewide. No code, the prices on the site are already reduced. The black 2x Duo Minimal Set: box chain and square chain, each with its bar tag. Waterproof, sweat and heat resistant, recycled 316L, adjustable S/M/L.
+
+Headline: The black duo, 30% off  (22)
+Description: Prices already reduced  (22)
+
+Landing pages (variant of the finish shown in each ad, size Medium):
+C1 (black):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039438170
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623102265
+C2 (black):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039438170
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623102265
+C3 (black):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039438170
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623102265
+
+C1 · Shop-window sale sign: big 30%, photo inside the window, hanging "sale on" sign. Session 2 DSC04960.
+C2 · Generic social text post (no platform logos): "Unpopular opinion: every man needs one bracelet." Session 2 DSC04966.
+C3 · Swing tags hanging from the bracelet: 30% off / no code / free shipping / case included. Figma ad-image 2557:802.
+ROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px.

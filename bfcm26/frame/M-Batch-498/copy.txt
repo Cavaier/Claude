@@ -1,0 +1,27 @@
+M Batch 498 · ad copy (Black Friday · BF30 package P3) · DRAFT, not delivered yet
+
+Men's 3x Minimal Stack Set, BLACK / SILVER · Skeptic comparing cheap vs premium · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.
+
+Primary text:
+Black Friday: 30% off sitewide, prices already reduced. Before you buy any bracelet, check three things: material, water and size. The 3x Minimal Stack Set is recycled 316L, waterproof and adjustable S/M/L, in black, silver or gold.
+
+Headline: Not all steel is equal  (22)
+Description: Recycled 316L, 30% off  (22)
+
+Landing pages (variant of the finish shown in each ad, size Medium):
+C1 (black):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137
+C2 (silver):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54372875796826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346288441
+C3 (black):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137
+
+C1: Listicle: 3 things to check before you buy a bracelet
+C2: Spec table: fashion bracelet vs the Stack Set
+C3: This or that: black, silver or gold poll rows
+
+ROAS ✓ (contrast + safe zone, all text inside y 270–1536)

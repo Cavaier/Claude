@@ -1,0 +1,20 @@
+M Batch 494 · ad copy (Black Friday · BF30 package P2) · DRAFT, not delivered yet
+
+Men's 3x Minimal Stack Set, BLACK · gym / active guy · Waterproof · IMAGE & VIDEO · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own proof-of-use concepts with real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.
+
+Primary text:
+Black Friday: 30% off sitewide. The black 3x Minimal Stack Set (cuff, box chain, square chain) is waterproof, sweat and heat resistant, so it stays on through training, showers and pool laps. Recycled 316L, adjustable S/M/L, case included.
+
+Headline: Taken off: 0 times  (18)
+Description: Waterproof, 30% off  (19)
+
+Landing pages (black, all three C):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54309699092826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346190137
+
+C1 · 24-hour timeline beside the photo (06:30 shower → 23:00 sleep, "ON" all day) → "24 hours. Taken off: 0 times." · photo Figma ad-image 2515:389
+C2 · Animated static mp4 (7 s, 1080x1920, + png poster): water drops slide down a glass layer over the photo, "Sweat. Showers. Laps." then "Still on." types in, ends on "Black Friday · 30% off sitewide" · photo Figma ad-image 3140:14
+C3 · Scoreboard / stat sheet (gym sessions, showers, pool laps, nights: all · removals: 0) → "Removals: 0." · photo Figma ad-image 1091:20
+
+ROAS ✓ (contrast p10, text in y 270–1536, feed size) · real photos only

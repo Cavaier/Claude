@@ -1,0 +1,26 @@
+M Batch 487 · ad copy (Black Friday · BF30 package P1) · DRAFT, not delivered yet
+
+Men's 2x Duo Minimal Set, SILVER · Gifter buying for him (partner, sister, mum) · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE.
+
+Primary text:
+Black Friday: 30% off sitewide, no code needed. The silver 2x Duo Minimal Set is a box chain and a square chain, each with its small bar tag. Waterproof, sweat and heat resistant, recycled 316L stainless steel, adjustable S/M/L. Case included, free shipping.
+
+Headline: The gift he keeps on  (20)
+Description: 30% off, no code needed  (23)
+
+Landing pages (variant of the finish shown in each ad, size Medium):
+C1 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C2 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C3 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+
+C1 · IM8 "$72 in welcome gifts" (itemized stack, labels instead of values) → "What's in his Black Friday box". Session 1 DSC02399 + case.
+C2 · IM8 "If it's in the Inter Miami locker room, it's official" (highlighted phrase) → "If it's on his wrist every day, it's official." Session 1 DSC02462.
+C3 · IM8 "The drink behind Inter Miami CF, now yours" (headline + gift hero) → "The duo he won't take off. Now 30% off." Session 1 DSC02626 + case.
+ROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px.

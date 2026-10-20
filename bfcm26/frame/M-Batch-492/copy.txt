@@ -1,0 +1,20 @@
+M Batch 492 · ad copy (Black Friday · BF30 package P2) · DRAFT, not delivered yet
+
+Men's 3x Minimal Stack Set, SILVER · skeptic who needs proof · Social proof · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.
+
+Primary text:
+Rated 4.5 on Trustpilot from 3,000+ reviews, and 30% off this Black Friday with no code. The silver 3x Minimal Stack Set: flat polished cuff bangle, box chain and square chain in recycled 316L. Waterproof, adjustable S/M/L, case included.
+
+Headline: Rated 4.5. Now 30% off.  (23)
+Description: 3,000+ reviews  (14)
+
+Landing pages (silver, all three C):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54372875796826
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346288441
+
+C1 · IM8 "Trusted by Inter Miami CF. Available to you." (photo top, colour panel bottom) → "Trusted by 3,000+ reviews. Now 30% off." · photo Figma ad-image 3140:13
+C2 · IM8 "95% felt more energy" (stat headline over product) → "4.5 on Trustpilot. 3,000+ reviews." · photo Figma ad-image 3016:21 (mirrored)
+C3 · IM8 "The drink Inter Miami CF trusts. Now yours to try." (product hero over big logo texture) → "Rated 4.5 on Trustpilot. The stack, 30% off." · photo Figma ad-image 3405:10
+
+ROAS ✓ (contrast p10, text in y 270–1536, feed size) · real photos only

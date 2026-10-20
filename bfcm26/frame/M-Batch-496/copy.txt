@@ -1,0 +1,20 @@
+M Batch 496 · ad copy (Black Friday · BF30 package P2) · DRAFT, not delivered yet
+
+Men's 3x Minimal Stack Set, GOLD · partner shopping for the man who has everything · Gift · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own gift-for-him native formats with real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.
+
+Primary text:
+Black Friday: 30% off sitewide, no code. The gold 3x Minimal Stack Set is the easy gift: three pieces (cuff, box chain, square chain), adjustable S/M/L so size is never a guess, case included and free shipping.
+
+Headline: Gifting him, solved  (19)
+Description: Case included  (13)
+
+Landing pages (gold, all three C):
+EU https://cavaier.com/products/3x-minimal-stack-set-for-him?variant=54372875895130
+US https://us.cavaier.com/products/3x-minimal-stack-set-for-him?variant=53480346386745
+
+C1 · Gift-guide page: "For the man who has everything", 3 numbered picks (cuff, box chain, square chain) that add up to the set · photo Figma ad-image 3587:271
+C2 · Flowchart: "Does he wear a watch?" Yes / No, both arrows end at the set · photo Figma ad-image 2850:14
+C3 · Gifter FAQ card: size, box, shipping, shower → "His size? Doesn't matter." · photo Figma ad-image 2850:16 + Shopify case jbag3
+
+ROAS ✓ (contrast p10, text in y 270–1536, feed size) · real photos only

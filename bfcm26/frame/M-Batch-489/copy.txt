@@ -1,0 +1,26 @@
+M Batch 489 · ad copy (Black Friday · BF30 package P1) · DRAFT, not delivered yet
+
+Men's 2x Duo Minimal Set, SILVER · Minimalist: one thing he never takes off · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own concepts, real photos). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF. Ad type: IMAGE & VIDEO.
+
+Primary text:
+Black Friday: 30% off sitewide, no code. The silver 2x Duo Minimal Set: box chain plus square chain, waterproof, sweat and heat resistant, recycled 316L, adjustable S/M/L. Put it on once and leave it on. Case included, free shipping.
+
+Headline: One rule: keep it on  (20)
+Description: Black Friday, 30% off  (21)
+
+Landing pages (variant of the finish shown in each ad, size Medium):
+C1 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C2 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+C3 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-him?variant=54745039536474
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-him?variant=54444623200569
+
+C1 · Full-bleed RAW still, tiny caps line + square CTA. Session 1 DSC02444.
+C2 · Animated static mp4 (8 s, 1080x1920, no sound): Shower. Gym. Work. Sleep. drop in one by one over a slow push-in, ends on the offer + CTA. Session 1 DSC02396 (linen shirt, no beach). Poster png on the board.
+C3 · Two-photo split, work / weekend (linen shirt, no beach), light middle band: "Work or weekend. It stays on." Session 1 DSC02411 + DSC02438.
+ROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px.
