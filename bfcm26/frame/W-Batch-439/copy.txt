@@ -1,0 +1,26 @@
+W Batch 439 · ad copy (Black Friday · BF30 package P4 · DRAFT)
+
+W Batch 439 · Women · Black Friday · 2x Duo - Minimal Set, GOLD in every ad · IM8 imitation (close) · social proof
+Creative Origin: Imitation. Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced. Funnel: TOF. Ad type: IMAGE.
+Photos: Figma Static Ads 1 camera files: C1 DSC00711, C2 DSC08414, C3 DSC08573 (DSC00455 from the plan was already on the canvas in W425, swapped). Real photos only, no generated images.
+
+Primary text:
+It's official: Black Friday is 30% off sitewide, no code. The gold 2x Duo - Minimal Set: a box chain and a square chain, each with its small bar tag. Waterproof, recycled 316L, adjustable S/M/L. Rated 4.5 from 3,000+ reviews.
+
+Headline (≤27): It's official: 30% off   (22 chars)
+Description (≤27): 3,000+ reviews   (14 chars)
+
+Row links (Medium; CTA href = EU link):
+C1 (gold) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+           US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C2 (gold) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+           US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C3 (gold) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+           US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+
+Concepts:
+C1 IM8 "It's official." big caps, photo below → "IT'S OFFICIAL. BLACK FRIDAY IS 30% OFF."
+C2 IM8 "Over 10,000 5-star reviews" → photo top, review panel: "3,000+ REVIEWS. NOW 30% OFF." (4.5 Trustpilot)
+C3 IM8 "We listened. We upgraded." top headline + composition → "You asked for Black Friday. Here it is." framed photo + 30% seal
+
+ROAS check (roas.js + roas.py): all text p10 contrast pass, inside y 270–1536, readable at feed size.

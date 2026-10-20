@@ -1,0 +1,27 @@
+W Batch 449 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet
+
+Women's 2x Duo - Minimal Set, GOLD · fashion-forward stylist · versatility · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own formats: outfit formula, styling split, tier list). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.
+
+Primary text:
+Black Friday: 30% off sitewide, no code. The gold 2x Duo - Minimal Set is the easiest styling move: a box chain and a square chain, each with a small bar tag, that go with everything and stay on. Waterproof, recycled 316L, adjustable S/M/L.
+
+Headline: Black top + gold duo = done  (27)
+Description: 30% off sitewide  (16)
+
+Landing pages (variant of the finish shown in each ad):
+C1 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C2 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C3 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+
+C1 · Outfit formula: BLACK TOP + GOLD DUO = DONE token row under the photo (plan said white shirt; the camera photo is a black top, so the formula follows the photo). Figma camera file DSC08282.
+C2 · Styling split "Every look needs one detail.": the outfit / the detail, two real photos side by side (planned bare-vs-duo needs a bare-wrist shot we don't have; DSC00277 was already on the canvas). Figma DSC08078 + DSC08120.
+C3 · Tier list "Everyday jewellery, ranked." S tier = the gold duo (waterproof, adjustable, stays on); A–C are generic wearability lines, no brands named. Figma DSC00479.
+
+ROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three.

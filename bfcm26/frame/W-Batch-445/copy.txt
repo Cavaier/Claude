@@ -1,0 +1,26 @@
+W Batch 445 · ad copy (Black Friday · BF30 package P5) · DRAFT, not delivered yet
+
+Women's 2x Duo - Minimal Set · how to wear it (silver C1, gold C2 + C3) · IMAGE & VIDEO · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Ideation (own concepts; C2 animated static mp4 + png poster, real Shopify photo, no Seedance). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.
+
+Primary text:
+Black Friday: 30% off sitewide, no code needed. The 2x Duo - Minimal Set is a box chain and a square chain in silver, gold or black. Wear it alone or stacked with your other pieces: waterproof, recycled 316L stainless steel, adjustable S/M/L. Prices already reduced, case included, free shipping.
+
+Headline: Alone. Stacked. Always on.  (26)
+Description: 30% off, no code  (16)
+
+Landing pages (variant of the finish shown in each ad):
+C1 (silver):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776990554
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698420025
+C2 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C3 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+
+C1 · How-to card "How to wear the duo: 3 steps" (clasp, adjust S/M/L, leave it on) over the Shopify silver studio photo 12616-532 (the only real women's silver duo photo).
+C2 · Animated static mp4 (7.4 s, 1080x1920, silent) + png poster: the Shopify gold photo moves through three crops with "Alone." "Stacked." "Always on." and ends on Black Friday 30% off + CTA.
+C3 · Water editorial: "It goes in the water. It stays on." on Figma DSC09024 (wrist under water), waterproof + 316L, 30% off.
+ROAS check: all text inside y 270–1536, contrast p10 ≥ 4.5 (≥ 3 for 24 px+), nothing under 21 px.

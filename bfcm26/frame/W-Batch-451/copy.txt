@@ -1,0 +1,27 @@
+W Batch 451 · ad copy (Black Friday · BF30 package P6) · DRAFT, not delivered yet
+
+Women's 2x Duo - Minimal Set, GOLD · deal hunter / bundle maximiser · price/offer · 30% off sitewide, prices already reduced, no code needed
+Creative Origin: Imitation (each C copies its own IM8 Health ad, refs board left). Style/Angle: Black Friday. Offer: 30% Off. Funnel: TOF.
+
+Primary text:
+Black Friday: save 30% on the gold 2x Duo - Minimal Set, no code, prices already reduced. Box chain and square chain with small bar tags, waterproof, recycled 316L, adjustable S/M/L. Case included and free shipping. Rated 4.5 from 3,000+ reviews.
+
+Headline: Save 30% on the gold duo  (24)
+Description: No code needed  (14)
+
+Landing pages (variant of the finish shown in each ad):
+C1 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C2 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+C3 (gold):
+EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997777088858
+US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698518329
+
+C1 · IM8 "SAVE 30% & get free welcome kit" (bold offer, tick list, rating line) → "Save 30% on the gold duo" + ticks (no code, prices already reduced, case included, free shipping, S/M/L). Figma DSC00852.
+C2 · IM8 "The bloat dissolving" (3-stage strip + rating bar) → "The gold duo, up close": look / pair / tags zoom strip + Trustpilot bar. Figma DSC00430 + DSC08414 (two crops).
+C3 · IM8 "Claim your free welcome kit" (kit lineup) → "Claim your Black Friday duo": duo hero + lineup (duo, case included, free shipping). Figma DSC00336 (planned DSC00439 was already on the canvas) + Shopify case shot Final2_5.
+
+ROAS ✓ (contrast p10, safe zone 270–1536, feed size) on all three.

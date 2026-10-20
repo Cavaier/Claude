@@ -1,0 +1,26 @@
+W Batch 438 · ad copy (Black Friday · BF30 package P4 · DRAFT)
+
+W Batch 438 · Women · Black Friday · 3x Minimal - Stack Set, GOLD in every ad · IM8 imitation (close) · self-treat
+Creative Origin: Imitation. Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced. Funnel: TOF. Ad type: IMAGE.
+Photos: Women Session 12 RAW originals (Frame.io): C1 ODI03898 (cream sofa), C2 ODI03869 (wrist + face), C3 ODI03876 (black top). Real photos only, no generated images.
+
+Primary text:
+Black Friday: 30% off sitewide, no code. The gold 3x Minimal - Stack Set is a flat polished cuff bangle, a box chain and a square chain. Waterproof, sweat and heat resistant, recycled 316L, adjustable S/M/L. Case included, free shipping.
+
+Headline (≤27): Your gold, 30% less   (19 chars)
+Description (≤27): No code needed   (14 chars)
+
+Row links (Medium; CTA href = EU link):
+C1 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714
+           US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C2 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714
+           US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+C3 (gold) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54372825530714
+           US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346583353
+
+Concepts:
+C1 IM8 "One drink. 92 ingredients." full-bleed + round UP TO 30% sticker → "Three pieces. One wrist." + 30% OFF / NO CODE sticker
+C2 IM8 "Inter Miami's premium daily ritual, now yours" highlighted lines → "Your everyday gold, now yours for 30% less."
+C3 IM8 "INTER MIAMI'S official partner" caps header → "THE GOLD STACK." caps header panel over photo
+
+ROAS check (roas.js + roas.py): all text p10 contrast pass, inside y 270–1536, readable at feed size.

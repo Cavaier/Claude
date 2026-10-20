@@ -1,0 +1,26 @@
+W Batch 440 · ad copy (Black Friday · BF30 package P4 · DRAFT)
+
+W Batch 440 · Women · Black Friday · 3x Minimal - Stack Set, BLACK in every ad · Own concept (Ideation) + motion · office / workwear minimalist
+Creative Origin: Ideation. Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced. Funnel: TOF. Ad type: IMAGE & VIDEO.
+Photos: Women Session 12 RAW originals: C1 ODI03823, C2 ODI03811 (mp4 + png poster), C3 strip ODI03845 / 03803 / 03819 / 03807 / 03847. Real photos only, no generated images.
+
+Primary text:
+Black Friday: 30% off sitewide, no code. The black 3x Minimal - Stack Set is a flat polished cuff bangle, a box chain and a square chain. Clean with workwear, waterproof and sweat resistant, recycled 316L, adjustable S/M/L.
+
+Headline (≤27): The black stack, 30% off   (24 chars)
+Description (≤27): Made for every day   (18 chars)
+
+Row links (Medium; CTA href = EU link):
+C1 (black) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418
+           US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049
+C2 (black) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418
+           US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049
+C3 (black) EU https://cavaier.com/products/3x-minimal-stack-set-for-her?variant=54326091907418
+           US https://us.cavaier.com/products/3x-minimal-stack-set-for-her?variant=53480346485049
+
+Concepts:
+C1 editorial: photo 57% + slim white band "The black stack goes to work."
+C2 animated static mp4 (7 s, 30 fps, no sound): slow push-in, hairlines draw to SQUARE CHAIN / BOX CHAIN / FLAT CUFF, then "ALL THREE, 30% OFF." + CTA; no veils behind text
+C3 diary strip MON–FRI, five crops: "Monday to Friday. Never off."
+
+ROAS check (roas.js + roas.py): all text p10 contrast pass, inside y 270–1536, readable at feed size.

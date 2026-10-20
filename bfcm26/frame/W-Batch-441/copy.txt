@@ -1,0 +1,26 @@
+W Batch 441 · ad copy (Black Friday · BF30 package P4 · DRAFT)
+
+W Batch 441 · Women · Black Friday · 2x Duo - Minimal Set, BLACK in every ad · Own concept (Ideation) · native formats · deal hunter / list maker
+Creative Origin: Ideation. Style/Angle: Black Friday. Offer: 30% off sitewide, no code needed, prices already reduced. Funnel: TOF. Ad type: IMAGE.
+Photos: C1 Women Session 8 RAW DSC08710 (Frame.io), C2 Shopify listing 12616-571, C3 Women Session 8 RAW DSC08762. (Plan photos DSC08723 was already on the canvas and _DSC9909 is not the black duo, so both were swapped.) Real photos only, no generated images.
+
+Primary text:
+Black Friday: 30% off sitewide, no code. The black 2x Duo - Minimal Set: a box chain and a square chain with small bar tags. Waterproof, so it can stay on in the shower. Recycled 316L, adjustable S/M/L, free shipping.
+
+Headline (≤27): On her list: the black duo   (26 chars)
+Description (≤27): 30% off, no code   (16 chars)
+
+Row links (Medium; CTA href = EU link):
+C1 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
+           US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+C2 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
+           US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+C3 (black) EU https://cavaier.com/products/2x-duo-minimal-set-for-her?variant=54997776892250
+           US https://us.cavaier.com/products/2x-duo-minimal-set-for-her?variant=67679698321721
+
+Concepts:
+C1 Black Friday shopping list on paper, items ticked (black duo 30% off, waterproof, no code, case, free shipping), photo clipped on
+C2 story question box "Can I shower with it?" → "Yes. Waterproof, sweat and heat resistant."
+C3 sticky note on the photo: "Note to self: it's 30% off. Don't forget."
+
+ROAS check (roas.js + roas.py): all text p10 contrast pass, inside y 270–1536, readable at feed size.
