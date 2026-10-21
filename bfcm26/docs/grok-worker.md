@@ -73,3 +73,8 @@ Keep replies to Eli to one or two lines: what changed, where, and whether ROAS p
   - OpenAI key, only if ideation images are wanted.
 - **Not available to the worker:** Trendtrack (IM8 reference search) is a claude.ai connector. Either give the worker its own Trendtrack API access or ask Claude for the references.
 - **Runtime:** a machine or container with Node, Python 3 (numpy, Pillow), Playwright Chromium and ffmpeg.
+
+## Canvas access via its own seat (Eli, Oct 21)
+- The worker has its own claude.ai seat in the Cavaier org (not Eli's login). Eli shares the canvas with it as editor.
+- In the canvas it views ads and gives orders by comment (C key, send to Claude), exactly like Eli; Claude executes, publishes, tags and backs up.
+- Split work by lane/batch with Claude so two writers never publish the same boards.
