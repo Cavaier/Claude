@@ -13,7 +13,7 @@ Repo `Cavaier/Claude`, branch `claude/focused-davinci-41clp5`:
 
 ## 2. Where the work lives
 - **Ads:** one HTML file per ad, 1080×1920 (`bfcm26/canvas/<Batch>-C#.dc.html`), plus `canvas.json` (board positions and notes). These files are the backup of Eli's design canvas on claude.ai.
-- **Canvas access:** you cannot open or edit the claude.ai canvas; only a Claude session can publish to it. Work on the repo copies, then hand off (section 4).
+- **Canvas access:** you can VIEW the canvas in a browser (Eli shares the link with your account), but claude.ai has no public API, so only a Claude session can publish to it. You edit the repo copies; a Claude routine publishes them to the canvas automatically (section 4).
 - **Assets:** images are referenced as `/_blob/<id>`. `bfcm26/tools/blobmap.json` maps each id to a file. New images go in the repo, referenced by relative path until a Claude session uploads them.
 - **Tools** (`bfcm26/tools/`, Node + Python + Playwright/Chromium + ffmpeg):
   - `render.js` renders an ad to PNG; `nt.js` makes the No Text version.
@@ -23,6 +23,18 @@ Repo `Cavaier/Claude`, branch `claude/focused-davinci-41clp5`:
   - `vidcard.js` + `cardcompose.py` make animated card videos.
   - `sync.sh "<msg>"` commits and pushes.
 - **Deliverables:** `bfcm26/frame/<Batch>/{EN,no text}/`, plus `copy.txt`.
+
+## 2b. Everything we do, and where the full how-to is
+| Job | How-to | Keys (in your secret store) |
+|---|---|---|
+| Static batches (Imitation: copy IM8 Health ads with real Cavaier photos) | CLAUDE.md "Statics" | Figma token |
+| Photo grade (light 14k gold, house "Film" filter) | `goldfix.py`, `preset.py film` | none |
+| Seedance 2.5 videos (480p draft with sound → 1080p final) | `bfcm26/docs/video-voice.md` | `SEEDANCE_API_KEY` |
+| ElevenLabs voice-overs and WhatsApp-style voice notes (Jessa, eleven_v3_conversational) | `bfcm26/docs/video-voice.md` | `ELEVENLABS_API_KEY` |
+| Animated card videos (Seedance clip in the photo box, iMessage sounds, voice-note waveform) | `vidcard.js`, `cardcompose.py`, `ovframes.js` | none |
+| Frame Method videos (RAW Frame.io footage, graded, slow-mo, white Figtree lockups, music) | `bfcm26/docs/frame-method.md`, `bfcm26/video-ad/FRAME_METHOD.md` | Frame.io broker secret, ElevenLabs |
+| Delivery "push to clickup and frame" | `bfcm26/docs/delivery.md` | ClickUp token, `FRAMEIO_OAUTH_CLIENT_SECRET` |
+| Generated images (only when Eli asks) | `bfcm26/docs/ideation-images.md` | OpenAI key |
 
 ## 3. Hard rules (summary; CLAUDE.md wins on any conflict)
 - **Language:** English everywhere.
@@ -42,7 +54,7 @@ Repo `Cavaier/Claude`, branch `claude/focused-davinci-41clp5`:
 There is no direct chat line between you and Claude. Coordinate through the repo:
 1. Commit your changes to the branch (`bfcm26/tools/sync.sh "<msg>"`).
 2. Add a line to `bfcm26/handoff/queue.md`, for example: `- [ ] PUBLISH W460-C1..C3 (new photos in bfcm26/handoff/W460/) — grok, 2026-10-21 14:05`.
-3. Eli (or a scheduled Claude routine) tells Claude "process the handoff queue". Claude publishes to the canvas, uploads the assets, updates ACTIVITY & QUEUE and ticks the line.
+3. A scheduled Claude routine checks the queue (or Eli says "process the handoff queue"). Claude publishes to the canvas, uploads the assets, updates ACTIVITY & QUEUE and ticks the line.
 4. Claude adds back any canvas comments from Eli that need your work as `- [ ] FOR GROK: …` lines. Always `git pull` before you start.
 
 ## 5. Reporting
