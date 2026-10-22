@@ -266,6 +266,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-22** Brand Search 10 days after vs before the makeover (Oct 12–21 vs Oct 2–11): cost 3,085 → 2,417
+  SEK, purchases 24 → 50, value 14.5k → 36.5k SEK, ROAS 4.7 → 15.1, CTR 16.9% → 25.6%, CPC 6.84 → 4.23.
+  New English RSA CTR 25.7% vs old 15.7%. Local ad groups now serve 30–65% of impressions in their
+  countries (DE, JP, HK, ES, PL, FR); Sweden stays English. Misspellings: 6 purchases. Exact 'cavaier
+  necklace' matched 'van cleef necklace' / 'vca necklace' / 'carabiner necklace' (close variants) → added
+  campaign negatives van cleef, vca, carabiner. UK non-brand paused, 0 spend.
 - **2026-10-20** Paused Search | Men | UK (Eli OK). Verdict P-011: Worse (ROAS 0.82 Google, 0 add-to-carts Shopify).
 - **2026-10-20** Review Oct 11–20. Brand Search: 2,406 SEK, 49 purchases, 35.7k SEK (ROAS 14.9), IS 84–92%,
   CPC 4–5. UK non-brand: 2,269 SEK, 291 clicks, Google 2 purchases (1,871 SEK, ROAS 0.82, both Oct 14, before
