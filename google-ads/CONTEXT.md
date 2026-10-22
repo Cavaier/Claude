@@ -184,7 +184,8 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   4.8k SEK / 2 purchases; generic search women UK 2.5k / 0; DSA 2.8k 0.48.
 - Non-brand search terms all time: 11,099 SEK, 17.5 purchases; 12 of them from "caviar bracelet"
   (186 clicks, 694 SEK) = people mishearing "Cavaier" → treat as brand misspelling.
-- Keyword Planner is not available via API (developer token has explorer access only).
+- Keyword Planner works via API since Oct 22, 2026 (Basic access, 15,000 ops/day). Auction insights metrics are
+  still refused (Google allowlists them separately) → read them in the Google Ads UI.
 - Shopify 90d: 5,457 orders, €393k, AOV €72.8; 4,419 new vs 955 returning customers. 3x Minimal
   Stack Set (men + women) = ~2,670 orders / €242k (~60% of sales, AOV ~€91). Then Cube, Rope,
   Minimal Cuff, Role bracelets (~€20–35).
@@ -272,6 +273,10 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   domain/policies) and applied for Basic → **denied: needs a verified OAuth brand**. Internal apps can't be
   brand-verified; it would need user type External + In production, then brand verification. Not done: Explorer
   (2,880 ops/day) covers our work; Basic only adds Keyword Planner + auction insights. API checked working after.
+- **2026-10-22 (later)** Eli made the app External + In production, brand verification passed in minutes,
+  branding published, re-applied → **Basic access granted** (15,000 ops/day). Tested: generateKeywordIdeas works
+  (UK/month: vacier 2,400, cavaier 170, mens jewelry 18,100, mens bracelet 33,100). Auction insight metrics still
+  'developer doesn't have access' (separate allowlist). Standard access not needed.
 - **2026-10-22** Brand Search 10 days after vs before the makeover (Oct 12–21 vs Oct 2–11): cost 3,085 → 2,417
   SEK, purchases 24 → 50, value 14.5k → 36.5k SEK, ROAS 4.7 → 15.1, CTR 16.9% → 25.6%, CPC 6.84 → 4.23.
   New English RSA CTR 25.7% vs old 15.7%. Local ad groups now serve 30–65% of impressions in their
