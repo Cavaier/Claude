@@ -266,6 +266,12 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
 
 ## 6. Log (newest first)
 
+- **2026-10-22** API access: developer token is not an env var (proxy injects it); env has GOOGLE_ADS_CLIENT_ID/
+  SECRET/REFRESH_TOKEN/CUSTOMER_ID. Access level now lives in Cloud console (project cavaier-ads → Google Ads API),
+  not the MCC API Center. Eli filled OAuth branding (app 'Cavaier Ads Tool', internal user type, cavaier.com
+  domain/policies) and applied for Basic → **denied: needs a verified OAuth brand**. Internal apps can't be
+  brand-verified; it would need user type External + In production, then brand verification. Not done: Explorer
+  (2,880 ops/day) covers our work; Basic only adds Keyword Planner + auction insights. API checked working after.
 - **2026-10-22** Brand Search 10 days after vs before the makeover (Oct 12–21 vs Oct 2–11): cost 3,085 → 2,417
   SEK, purchases 24 → 50, value 14.5k → 36.5k SEK, ROAS 4.7 → 15.1, CTR 16.9% → 25.6%, CPC 6.84 → 4.23.
   New English RSA CTR 25.7% vs old 15.7%. Local ad groups now serve 30–65% of impressions in their
