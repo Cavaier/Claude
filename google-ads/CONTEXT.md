@@ -277,6 +277,9 @@ Facebook 971 · "cavaier" (own) 706 · Google search 648 (€44k, organic + paid
   branding published, re-applied → **Basic access granted** (15,000 ops/day). Tested: generateKeywordIdeas works
   (UK/month: vacier 2,400, cavaier 170, mens jewelry 18,100, mens bracelet 33,100). Auction insight metrics still
   'developer doesn't have access' (separate allowlist). Standard access not needed.
+- **2026-10-23** Developer tokens were sunset Sept 2026: access level now belongs to the Cloud project that owns
+  the OAuth client (cavaier-ads); a developer-token header is ignored. A second tool (Eli's Grok bot) only gets
+  Basic access if it uses an OAuth client from cavaier-ads. Advised: separate Google user, account-only access.
 - **2026-10-22** Brand Search 10 days after vs before the makeover (Oct 12–21 vs Oct 2–11): cost 3,085 → 2,417
   SEK, purchases 24 → 50, value 14.5k → 36.5k SEK, ROAS 4.7 → 15.1, CTR 16.9% → 25.6%, CPC 6.84 → 4.23.
   New English RSA CTR 25.7% vs old 15.7%. Local ad groups now serve 30–65% of impressions in their
