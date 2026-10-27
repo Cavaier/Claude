@@ -81,12 +81,17 @@ class R:
     # ---------------- links and images
     def shop(self): return self.gender(f'{self.base}/collections/for-her', f'{self.base}/collections/for-him')
     def link(self, label=''):
+        if isinstance(label, dict):  # copy that changes by period or gender gets a link per variant, not one link for all
+            if set(label) <= {'W', 'M'}: return self.gender(self.link(label.get('W', '')), self.link(label.get('M', '')))
+            return self.t({k: self.link(v) for k, v in label.items()})
         f, L = self.flow, re.sub(r'<[^>]+>', '', str(label)).lower()
         if 'gift card' in L or 'send the link' in L or 'send a gift' in L: return f'{self.base}/products/cavaier-gift-card'
         if f == 'F5': return "{{ event.extra.checkout_url|default:'" + self.base + "/cart' }}"
         if f == 'F4' and ('cart' in L or 'yours' in L or 'finish' in L or 'it now' in L): return self.base + '/cart'
         if f in ('F2', 'F4') and ('it' in L.split() or 'shop it' in L or 'back to' in L): return "{{ event.URL|default:'" + self.base + "' }}"
         if f == 'F9': return "{{ event.URL|default:'" + self.base + "' }}"
+        if 'for her' in L: return f'{self.base}/collections/for-her'
+        if 'for him' in L: return f'{self.base}/collections/for-him'
         if 'set' in L: return self.gender(f'{self.base}/collections/womens-sets', f'{self.base}/collections/mens-sets')
         return self.shop()
     def img(self, k, w=600, style=''):
@@ -121,7 +126,7 @@ class R:
         return self.row(f'<div style="text-align:{al}">{o}</div>', '44px 32px 0')
     def m_big_type(self, m):
         o = self.lab(m['kicker']) if m.get('kicker') else ''
-        o += f'<div style="font:200 120px/0.9 {FONT};letter-spacing:-6px;color:{BLACK};margin:8px 0 6px">{self.t(m["big"])}</div>'
+        o += f'<div class="big" style="font:200 120px/0.9 {FONT};letter-spacing:-6px;color:{BLACK};margin:8px 0 6px">{self.t(m["big"])}</div>'
         if m.get('title'): o += f'<h2 style="margin:0;font:300 28px/1.12 {FONT};letter-spacing:-.5px;color:{BLACK}">{self.t(m["title"])}</h2>'
         if m.get('sub'): o += f'<p style="margin:10px 0 0;font:300 14.5px/1.6 {FONT};color:{INK2}">{self.t(m["sub"])}</p>'
         return self.row(f'<div style="text-align:center">{o}</div>', '48px 24px 0')
@@ -133,7 +138,7 @@ class R:
     def m_split(self, m):
         txt = (self.lab(m['kicker']) if m.get('kicker') else '') + \
               f'<h3 style="margin:8px 0 10px;font:300 24px/1.12 {FONT};color:{BLACK}">{self.t(m["title"])}</h3><p style="margin:0;font:300 13.5px/1.55 {FONT};color:{INK2}">{self.t(m["body"])}</p>'
-        if m.get('cta'): txt += f'<p style="margin:14px 0 0"><a href="{self.link(m["cta"])}" style="font:500 10.5px/1 {FONT};letter-spacing:1.8px;text-transform:uppercase;color:{BLACK};text-decoration:none;border-bottom:1px solid {BLACK};padding-bottom:5px">{self.t(m["cta"])} &rarr;</a></p>'
+        if m.get('cta'): txt += f'<p style="margin:14px 0 0"><a class="tl" href="{self.link(m["cta"])}" style="font:500 10.5px/1 {FONT};letter-spacing:1.8px;text-transform:uppercase;color:{BLACK};text-decoration:none;border-bottom:1px solid {BLACK};padding-bottom:5px">{self.t(m["cta"])} &rarr;</a></p>'
         im = f'<td width="50%" valign="middle">{self.img(m["img"], 276)}</td>'
         tx = f'<td width="50%" valign="middle" style="padding:24px">{txt}</td>'
         cells = tx + im if m.get('reverse') else im + tx
@@ -196,7 +201,7 @@ class R:
         else: body = grid(its)
         return self.row(body, '18px 18px 0')
     def m_gift_guide(self, m):
-        cells = [f'<a href="{self.shop()}" style="text-decoration:none;color:{BLACK}">{self.img(tl["img"], 270)}'
+        cells = [f'<a href="{self.link(tl["label"])}" style="text-decoration:none;color:{BLACK}">{self.img(tl["img"], 270)}'
                  f'<div style="margin-top:10px;padding-bottom:8px;border-bottom:1px solid {BLACK};font:300 18px/1.1 {FONT}">{self.t(tl["label"])} <span style="float:right;font:400 11px/1.6 {FONT};color:{GREY}">{self.t(tl.get("sub")) or "&rarr;"}</span></div></a>'
                  for tl in m['tiles']]
         rows = ''.join(self.cols(cells[i:i + 2] + [''] * (2 - len(cells[i:i + 2]))) + '<div style="height:12px"></div>' for i in range(0, len(cells), 2))
@@ -310,8 +315,9 @@ class R:
         pre = self.plain(e['preview'])
         head = ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
                 '<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;500;600&display=swap" rel="stylesheet">'
-                '<style>body{margin:0;padding:0}img{-ms-interpolation-mode:bicubic}@media (max-width:620px){.wrap{width:100%!important}}</style></head>')
+                '<style>body{margin:0;padding:0}img{-ms-interpolation-mode:bicubic}@media (max-width:620px){.wrap{width:100%!important}.big{font-size:64px!important;letter-spacing:-3px!important;line-height:1!important}.s10{font-size:11px!important}.tl{display:inline-block!important;padding-top:14px!important}}</style></head>')
         top = '' if self.ctx else "{% today '%Y-%m-%d' as d %}"
+        rows = re.sub(r'<(\w+) style="([^"]*font:\s*\d+ 10(?:\.5)?px)', r'<\1 class="s10" style="\2', rows)  # 10px labels read at 11px on phones
         return (head + f'<body style="margin:0;padding:0;background:{FOG2}">{top}'
                 f'<div style="display:none;max-height:0;overflow:hidden">{pre}</div>'
                 f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{FOG2}"><tr><td align="center" style="padding:0">'
