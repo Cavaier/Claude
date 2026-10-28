@@ -327,9 +327,9 @@ class R:
             rows += h
         rows += self.footer()
         pre = self.plain(e['preview'])
-        head = ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+        head = ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light only">'
                 '<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;500;600&display=swap" rel="stylesheet">'
-                '<style>body{margin:0;padding:0}img{-ms-interpolation-mode:bicubic}@media (max-width:620px){.wrap{width:100%!important}.big{font-size:64px!important;letter-spacing:-3px!important;line-height:1!important}.s10{font-size:11px!important}.tl{display:inline-block!important;padding-top:14px!important;font-size:11px!important}.bar{font-size:10.5px!important;letter-spacing:.4px!important;padding-left:3px!important;padding-right:3px!important}}@media (max-width:360px){.big{font-size:52px!important;letter-spacing:-2px!important}.bar{font-size:9.5px!important;letter-spacing:0!important;padding-left:2px!important;padding-right:2px!important}}</style></head>')
+                '<style>:root{color-scheme:light only;supported-color-schemes:light only}body{margin:0;padding:0}img{-ms-interpolation-mode:bicubic}@media (max-width:620px){.wrap{width:100%!important}.big{font-size:64px!important;letter-spacing:-3px!important;line-height:1!important}.s10{font-size:11px!important}.tl{display:inline-block!important;padding-top:14px!important;font-size:11px!important}.bar{font-size:10.5px!important;letter-spacing:.4px!important;padding-left:3px!important;padding-right:3px!important}}@media (max-width:360px){.big{font-size:52px!important;letter-spacing:-2px!important}.bar{font-size:9.5px!important;letter-spacing:0!important;padding-left:2px!important;padding-right:2px!important}}</style></head>')
         top = '' if self.ctx else "{% today '%Y-%m-%d' as d %}"
         rows = re.sub(r'<(\w+)((?: [\w-]+="[^"]*")*?) style="([^"]*font:\s*\d+ (?:9|9\.5|10|10\.5)px)', r'<\1\2 class="s10" style="\3', rows)  # under-11px text reads at 11px on phones
         return (head + f'<body style="margin:0;padding:0;background:{FOG2}">{top}'
