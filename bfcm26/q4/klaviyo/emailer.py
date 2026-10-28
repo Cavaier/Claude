@@ -270,7 +270,7 @@ class R:
         return self.row(f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {LINE};background:{WHITE}"><tr><td width="128" style="padding:16px">{self.img(m.get("img", "p_case"), 128)}</td>'
                         f'<td valign="middle" style="padding:16px 16px 16px 2px">{self.lab(m["kicker"])}<div style="margin:6px 0;font:400 12px/1.3 {FONT};letter-spacing:1.4px;text-transform:uppercase">{self.t(m["title"])}</div><div style="font:300 13px/1.5 {FONT};color:{INK2}">{self.t(m["text"])}</div></td></tr></table>', '36px 24px 0')
     def m_gift_card(self, m):
-        card = (f'<table role="presentation" width="280" cellpadding="0" cellspacing="0" align="center" style="background:{WHITE};border:1px solid {LINE}"><tr><td style="padding:18px;height:139px" valign="top">'
+        card = (f'<table role="presentation" width="280" cellpadding="0" cellspacing="0" align="center" style="width:100%;max-width:280px;background:{WHITE};border:1px solid {LINE}"><tr><td style="padding:18px;height:139px" valign="top">'
                 f'<img src="{self.IMG["logo"]}" width="84" alt="Cavaier" style="display:block;border:0"><div style="height:80px"></div><div style="font:300 13px/1 {FONT};color:{GREY}">Gift card &middot; {"$10 to $1,000" if self.acct == "US" else "€10 to €1,000"}</div></td></tr></table>')
         o = card + f'<h3 style="margin:18px 0 0;font:300 24px/1.1 {FONT};color:{BLACK}">{self.t(m["title"])}</h3><p style="margin:12px 0 18px;font:300 13.5px/1.55 {FONT};color:{INK2}">{self.t(m["text"])}</p>' + self.btn(m['cta'], f'{self.base}/products/cavaier-gift-card')
         return self.row(f'<div style="background:{FOG};padding:26px 24px 28px;text-align:center">{o}</div>', '36px 24px 0')
@@ -329,9 +329,9 @@ class R:
         pre = self.plain(e['preview'])
         head = ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
                 '<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;500;600&display=swap" rel="stylesheet">'
-                '<style>body{margin:0;padding:0}img{-ms-interpolation-mode:bicubic}@media (max-width:620px){.wrap{width:100%!important}.big{font-size:64px!important;letter-spacing:-3px!important;line-height:1!important}.s10{font-size:11px!important}.tl{display:inline-block!important;padding-top:14px!important}}</style></head>')
+                '<style>body{margin:0;padding:0}img{-ms-interpolation-mode:bicubic}@media (max-width:620px){.wrap{width:100%!important}.big{font-size:64px!important;letter-spacing:-3px!important;line-height:1!important}.s10{font-size:11px!important}.tl{display:inline-block!important;padding-top:14px!important}}@media (max-width:360px){.big{font-size:52px!important;letter-spacing:-2px!important}}</style></head>')
         top = '' if self.ctx else "{% today '%Y-%m-%d' as d %}"
-        rows = re.sub(r'<(\w+) style="([^"]*font:\s*\d+ 10(?:\.5)?px)', r'<\1 class="s10" style="\2', rows)  # 10px labels read at 11px on phones
+        rows = re.sub(r'<(\w+)((?: [\w-]+="[^"]*")*?) style="([^"]*font:\s*\d+ (?:9|9\.5|10|10\.5)px)', r'<\1\2 class="s10" style="\3', rows)  # under-11px text reads at 11px on phones
         return (head + f'<body style="margin:0;padding:0;background:{FOG2}">{top}'
                 f'<div style="display:none;max-height:0;overflow:hidden">{pre}</div>'
                 f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:{FOG2}"><tr><td align="center" style="padding:0">'
