@@ -274,12 +274,25 @@ def build_gender(kind):
     pf = [{'conditions': [{'type': 'profile-property', 'property': "properties['Gender']", 'filter': {'type': 'existence', 'operator': 'not-set'}}]}]
     return dict(triggers=[{'type': 'metric', 'id': mid, 'trigger_filter': None}], profile_filter={'condition_groups': pf}, actions=fb.acts,
                 entry_action_id=fb.acts[0]['temporary_id'], reentry_criteria=None)
+def live_update(fid):  # a live flow is never deleted: copy each email's current template HTML into the flow's own copy
+    d = call(f'flows/{fid}/?additional-fields[flow]=definition')['data']['attributes']['definition']; n = 0
+    for a in d['actions']:
+        if a['type'] != 'send-email': continue
+        msg = a['data']['message']; eid = (msg.get('name') or '').split(' · ')[0]
+        if eid not in K['templates']: continue
+        html = call(f'templates/{K["templates"][eid]["id"]}/')['data']['attributes']['html']
+        tid = msg['template_id']
+        if call(f'templates/{tid}/')['data']['attributes']['html'] != html:
+            call(f'templates/{tid}/', {'data': {'type': 'template', 'id': tid, 'attributes': {'html': html}}}, 'PATCH'); n += 1
+    return n
 def step_flows():
     F = K.setdefault('flows', {})
     for f, d in [(f, build_flow(f)) for f in Q.FLOWS + [Q.S1] if not f.get('campaign')] + [(Q.G1, build_gender('G1')), (Q.G2, build_gender('G2'))]:
         if d is None: F[f['id']] = dict(id=None, note='build by hand: Back in Stock trigger, templates are ready'); save(); continue
         h = H([d, f['name'], [K['templates'].get(e['id'], {}).get('hash') for e in f['emails']]]); cur = F.get(f['id'])
         if cur and cur.get('hash') == h: continue
+        if cur and cur.get('id') and call(f'flows/{cur["id"]}/')['data']['attributes']['status'] != 'draft':
+            n = live_update(cur['id']); F[f['id']]['hash'] = h; save(); print('live flow', f['id'], cur['id'], 'kept, emails updated in place:', n); continue
         if cur and cur.get('id'):  # flows can't be edited through the API: replace our own draft
             try: call(f'flows/{cur["id"]}/', method='DELETE')
             except Exception as ex: print('delete failed', cur['id'], str(ex)[:200])
@@ -301,6 +314,8 @@ def step_dated():
     for eid, (seg, when) in DATED.items():
         f, e, d = build_dated(eid); h = H([d, e['name'], when, K['templates'][eid]['hash']]); cur = F.get(eid)
         if cur and cur.get('hash') == h: continue
+        if cur and cur.get('id') and call(f'flows/{cur["id"]}/')['data']['attributes']['status'] != 'draft':
+            n = live_update(cur['id']); F[eid]['hash'] = h; save(); print('live dated flow', eid, 'kept, emails updated in place:', n); continue
         if cur and cur.get('id'):
             try: call(f'flows/{cur["id"]}/', method='DELETE')
             except Exception as ex: print('delete failed', cur['id'], str(ex)[:200])

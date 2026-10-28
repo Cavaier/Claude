@@ -49,16 +49,15 @@ for key, exp in plan:
     if not fid: print(key, 'NOT IN KLAVIYO'); bad += 1; continue
     got = call(f'flows/{fid}/?additional-fields[flow]=definition')['data']
     st, d = got['attributes']['status'], got['attributes']['definition']
-    LIVE_OK = {'G1', 'G2'}  # switched live by Eli on Oct 9
-    errs = [] if st == 'draft' or (st == 'live' and key in LIVE_OK) else [f'status {st}']
-    if key in LIVE_OK: exp = json.loads(json.dumps(exp).replace('"status": "draft"', f'"status": "{st}"'))
+    errs = [] if st in ('draft', 'live') else [f'status {st}']  # Eli switches flows live in Klaviyo; any other status is a problem
+    if st == 'live': exp = json.loads(json.dumps(exp).replace('"status": "draft"', '"status": "live"'))
     errs += sub(exp['triggers'], d['triggers'], 'trigger') + sub(exp.get('profile_filter'), d.get('profile_filter'), 'filter')
     ea, ga = walk(exp), walk(d)
     if [a['type'] for a in ea] != [a['type'] for a in ga]: errs.append(f'steps {[a["type"] for a in ea]} vs {[a["type"] for a in ga]}')
     else:
         for i, (a, b) in enumerate(zip(ea, ga)): errs += sub(a['data'], b['data'], f'step{i + 1}.{a["type"]}')
     n_mail = sum(a['type'] == 'send-email' for a in ga); n_sms = sum(a['type'] == 'send-sms' for a in ga)
-    print(key, 'OK' if not errs else 'DIFF', f'({len(ga)} steps, {n_mail} emails, {n_sms} texts)'); bad += len(errs)
+    print(key, ('OK' if not errs else 'DIFF') + (' LIVE' if st == 'live' else ''), f'({len(ga)} steps, {n_mail} emails, {n_sms} texts)'); bad += len(errs)
     for e in errs[:8]: print('   ', e)
 
 # real events: do the fields the emails use exist on recent events?

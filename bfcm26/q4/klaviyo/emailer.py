@@ -84,6 +84,20 @@ class R:
         if isinstance(label, dict):  # copy that changes by period or gender gets a link per variant, not one link for all
             if set(label) <= {'W', 'M'}: return self.gender(self.link(label.get('W', '')), self.link(label.get('M', '')))
             return self.t({k: self.link(v) for k, v in label.items()})
+        if '«' in str(label):  # day-token copy («cta»): pick the link from each day's actual words
+            fill = lambda d: re.sub(r'«(\w+)»', lambda m: (d or {}).get(m.group(1), ''), str(label))
+            if self.ctx: return self.link(fill(self.ctx['day']))
+            out, first, seen = '', True, set()
+            for d in DAYS:
+                if d['phase'] in ('pre', 'post'): continue
+                if re.fullmatch(r'\d{4}-\d\d-\d\d', d['id']): c = f"d == '{d['id']}'"
+                elif d['id'] in DAYRANGE: a, b = DAYRANGE[d['id']]; c = f"d >= '{a}' and d < '{b}'"
+                else: continue
+                u = self.link(fill(d)); seen.add(u)
+                out += ('{% if ' if first else '{% elif ') + c + ' %}' + u; first = False
+            base = self.link(fill({}))
+            if seen <= {base}: return base
+            return out + '{% else %}' + base + '{% endif %}'
         f, L = self.flow, re.sub(r'<[^>]+>', '', str(label)).lower()
         if 'gift card' in L or 'send the link' in L or 'send a gift' in L: return f'{self.base}/products/cavaier-gift-card'
         if f == 'F5': return "{{ event.extra.checkout_url|default:'" + self.base + "/cart' }}"
