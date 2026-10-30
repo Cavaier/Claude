@@ -1,0 +1,16 @@
+<div class="cv-cookies" style="max-width:640px;margin:0 auto;">
+<p>We use cookies to run this store, for example to keep items in your cart and remember your settings. With your consent, we also use cookies for personalization, analytics and marketing.</p>
+<p>You can change or withdraw your consent at any time.</p>
+<p style="margin:24px 0;"><a href="/pages/data-sharing-opt-out" data-cv-link="pages/data-sharing-opt-out" data-cv-cookie-settings style="display:inline-block;padding:14px 28px;border:1px solid currentColor;color:inherit;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:12px;line-height:1.3;background:none;box-shadow:none;">Cookie settings</a></p>
+<p>Read more in our <a href="/policies/privacy-policy" data-cv-link="policies/privacy-policy">Privacy Policy</a>.</p>
+</div>
+<script>
+(function () {
+  var root = (window.Shopify && Shopify.routes && Shopify.routes.root) || '/';
+  document.querySelectorAll('.cv-cookies [data-cv-link]').forEach(function (a) { a.href = root + a.getAttribute('data-cv-link'); });
+  var b = document.querySelector('.cv-cookies [data-cv-cookie-settings]');
+  if (b) b.addEventListener('click', function (e) {
+    if (window.privacyBanner && typeof window.privacyBanner.showPreferences === 'function') { e.preventDefault(); window.privacyBanner.showPreferences(); }
+  });
+})();
+</script>
